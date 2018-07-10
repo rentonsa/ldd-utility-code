@@ -466,6 +466,47 @@
 <div class="tab-list3">
     <div class="container">
         <div class="row">
+            <p class="tab-h2">Digitisation Projects</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <figure class="clickbox">
+                    <img
+                        src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/Atiz.jpg"
+                        alt="Scottish Session Papers" class="img-responsive">
+
+                    <div>
+                        <h2><span>Court of Scottish Session Papers</span></h2>
+                        <i class="fa fa-camera"></i>
+                        <i class="ion-arrow-right-c"></i>
+
+                        <div class="curl"></div>
+                        <a href="./csp" title="Court of Scottish Session Papers"></a>
+                    </div>
+                </figure>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <figure class="clickbox">
+                    <img
+                        src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/IMG_0506.jpg"
+                        alt="Mahabharata Scroll" class="img-responsive">
+
+                    <div>
+                        <h2><span>Mahabharata Scroll</span></h2>
+                        <i class="ion-arrow-right-c"></i>
+
+                        <div class="curl"></div>
+                        <a href="./mahabharata" title="Mahabharata Scroll"></a>
+                    </div>
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="tab-list4">
+    <div class="container">
+        <div class="row">
             <p class="tab-h2">Additional Collection Resources</p>
         </div>
         <div class="row">
@@ -758,26 +799,10 @@
                         </div>
                     </figure>
                 </div>
-
-
             </div>
         </div>
     </div>
 </div>
-
-<!--<div class="tab-exhibitions">
-    <a class="container-full">
-        <div class="cldmenu">
-            <ul>
-                <li>
-                    <a href="https://exhibitions.ed.ac.uk/" title="Exhibitions" target="_blank">
-                        <h2><span>Visit the current Main Library Exhibition</span></h2>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>-->
 
 <div class="tab-participate" id="collapseGroup">
     <div class="container-full">

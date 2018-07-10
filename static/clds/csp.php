@@ -1,4 +1,4 @@
-<div class="tab-list2">
+<div class="tab-list">
   <div class="container">
     <h1>The Scottish Court of Session Papers</h1>
         <div align="left">
@@ -18,7 +18,7 @@
         </p>
         <p>From October 2016 to April 2017 – and in partnership with the Faculty of Advocates and the Signet Library –
            the University led a pilot project which captured 13,500 images from the three collections.
-           A follow-up project is now underway and more images will be added here later in 2018
+           A follow-up project is now underway and more images will be added here later in 2018.
         </p>
         </div>
   </div>
@@ -31,7 +31,7 @@
             <p class="tab-h2">Volumes</p>
         </div>
         <div class="row">
-            <div class="col-lg-12 col-md-16 col-sm-24 col-xs-48">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h4 align="left">University of Edinburgh Library</h4>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
@@ -71,7 +71,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 col-md-16 col-sm-24 col-xs-48">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h4 align="left">Signet Library</h4>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
@@ -202,9 +202,9 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 col-md-16 col-sm-24 col-xs-48">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h4 align="left">Advocates Library</h4>
-            </div>  
+            </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 <figure class="clickbox">
                     <img
@@ -222,10 +222,7 @@
                     </div>
                 </figure>
             </div>
-            
+
         </div>
     </div>
 </div>
-
-
-
