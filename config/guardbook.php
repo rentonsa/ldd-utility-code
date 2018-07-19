@@ -45,6 +45,13 @@ $config['skylight_fields'] = array('Title' => 'dc.title.en',
     'Link' => 'dc.identifier.uri.en'
 );
 
+$config['skylight_schema_links'] = array(
+      'Title'=>'name',
+      'Subject'=>'about',
+      'Shelfmark'=>'identifier',
+      'Link'=>'url'
+);
+
 $config['skylight_date_filters'] = array();
 $config['skylight_filters'] = array('A-Z' => 'subject_filter');
 $config['skylight_filter_delimiter'] = ':';

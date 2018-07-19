@@ -40,6 +40,20 @@ $config['skylight_fields'] = array('Title' => 'dc.title.en',
     'Shelfmark'=>'dc.identifier.en'
 );
 
+$config['skylight_schema_links'] = array(
+      'Title'=>'name',
+      'Author'=>'creator',
+      'Subject'=>'about',
+      'Tags'=>'keywords',
+      'Link'=>'url',
+      'Abstract'=>'description',
+      'Date'=>'dateCreated',
+      'Thumbnail'=>'thumbnail',
+      'Description'=>'description',
+      'Identifier'=>'identifier',
+      'Shelfmark'=>'identifier'
+);
+
 $config['skylight_date_filters'] = array();
 $config['skylight_filters'] = array('Subject' => 'subject_filter', 'Type' => 'type_filter',  'Tags' => 'tags_filter' );
 $config['skylight_filter_delimiter'] = ':';

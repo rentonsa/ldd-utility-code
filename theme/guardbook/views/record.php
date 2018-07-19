@@ -7,10 +7,13 @@ $filters = array_keys($this->config->item("skylight_filters"));
 
 $numBitstreams = 0;
 $bitstreamLinks = array();
-
+//Insert Schema.org
+$schema = $this->config->item("skylight_schema_links");
 
 ?>
 <div class="col-md-9 col-sm-9 col-xs-12">
+  <!--Insert Schema-->
+  <div itemscope itemtype ="http://schema.org/CreativeWork">
     <h1 class="itemtitle"><?php echo $record_title ?></h1>
 
 <table>
@@ -28,11 +31,26 @@ $bitstreamLinks = array();
                     $orig_filter = urlencode($metadatavalue);
                     $lower_orig_filter = strtolower($metadatavalue);
                     $lower_orig_filter = urlencode($lower_orig_filter);
+                    //Insert Schema.org
+                    if (isset ($schema[$key]))
+                    {
+                        echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                    }
+                    else {
+                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                    }
 
-                    echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
                 }
                 else {
-                    echo $metadatavalue;
+                  if (isset ($schema[$key]))
+                  {
+                      echo '<span itemprop="'.$schema[$key].'">'. $metadatavalue. "</span>";
+                  }
+                  else
+                  {
+                      echo $metadatavalue;
+                  }
+
                 }
                 if($index < sizeof($solr[$element]) - 1) {
                     echo '; ';
@@ -44,6 +62,7 @@ $bitstreamLinks = array();
     ?>
     </tbody>
 </table>
+</div>
 
 <?php
 if(isset($solr[$bitstream_field]) && $link_bitstream) {
@@ -101,4 +120,3 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
         <button class="btn btn-info" onClick="history.go(-1);"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Back to Search Results</button>
     </div>
 </div>
-

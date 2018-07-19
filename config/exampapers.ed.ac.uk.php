@@ -47,6 +47,18 @@ $config['skylight_fields'] = array(
     'Accession Date' => 'dc.date.accessioned_dt'
 );
 
+$config['skylight_schema_links'] = array(
+        'School'=>'creator',
+        'Subject'=>'about',
+        'Year'=>'temporalCoverage',
+        'Title'=>'name',
+        'Course Code'=>'identifier',
+        'Version'=>'description',
+        'Abstract'=>'description',
+        'Date'=>'datePublished',
+        'Accession Date'=>'identifier'
+);
+
 $config['skylight_date_filters'] = array();
 //$config['skylight_date_filters'] = array('Date' => 'dateIssued.year_sort');
 $config['skylight_filters'] = array('School' => 'creator_filter', 'Subject' => 'subject_filter', 'Year' => 'temporal_filter', 'Title' => 'title_filter');

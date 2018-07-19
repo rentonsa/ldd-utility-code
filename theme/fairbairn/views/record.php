@@ -12,9 +12,13 @@ $link_uri_field = $this->skylight_utilities->getField("Link");
 $mainImageTest = false;
 $numThumbnails = 0;
 $bitstreamLinks = array();
+//Insert Schema.org
+$schema = $this->config->item("skylight_schema_links");
 ?>
 
 <div class="content">
+  <!--Insert Schema-->
+  <div itemscope itemtype ="http://schema.org/CreativeWork">
 
     <div class="full-title">
         <h1 class="itemtitle"><?php echo $record_title ?></h1>
@@ -43,11 +47,26 @@ $bitstreamLinks = array();
                             if(in_array($key, $filters)) {
 
                                 $orig_filter = urlencode($metadatavalue);
+                                //Insert Schema.org
+                                if (isset ($schema[$key]))
+                                {
+                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                }
+                                else
+                                {
+                                    echo '<a href="./search/*:*/' . $key . ':%22'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                }
 
-                                echo '<a href="./search/*:*/' . $key . ':%22'.$orig_filter.'%22">'.$metadatavalue.'</a>';
                             }
                             else {
-                                echo $metadatavalue;
+                              if (isset ($schema[$key]))
+                              {
+                                  echo '<span itemprop="'.$schema[$key].'">'. $metadatavalue. "</span>";
+                              }
+                              else
+                              {
+                                  echo $metadatavalue;
+                              }
 
                             }
 
@@ -76,9 +95,10 @@ $bitstreamLinks = array();
                 </tr>
             </tbody>
         </table>
-    </div>
     <div class="clearfix"></div>
 
 
     <input type="button" value="Back to Search Results" class="backbtn" onClick="history.go(-1);">
+</div>
+</div>
 </div>

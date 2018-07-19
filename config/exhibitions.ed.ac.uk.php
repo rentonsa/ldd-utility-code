@@ -52,6 +52,27 @@ $config['skylight_fields'] = array('Title' => 'dc.title.en',
     'Exhibition' => 'dc.relation.ispartofexhibition.en'
 );
 
+$config['skylight_schema_links'] = array(
+        'Title' => 'name',
+        'Creator' => 'creator',
+        'Subject' => 'about',
+        'Abstract' => 'description',
+        'Date Issued' => 'dateModified',
+        'Date' => 'dateCreated',
+        'Location' => 'location',
+        'Thumbnail' => 'thumbnail',
+        'Description' => 'description',
+        'Collection' => 'Collection',
+        'Rights' => 'copyrightHolder',
+        'Link' => 'url',
+        'Alternative' => 'alternateName',
+        'Identifier' => 'identifier',
+        'Shelfmark' => 'identifier',
+        'Tags' => 'keywords',
+        //'Exhibition' => 'Collection'
+
+);
+
 $config['skylight_date_filters'] = array();
 $config['skylight_filters'] = array('Exhibition' => 'exhibition_filter','Creator' => 'author_filter', 'Subject' => 'subject_filter', 'Type' => 'type_filter',  'Tags' => 'tags_filter' );
 $config['skylight_filter_delimiter'] = ':';
