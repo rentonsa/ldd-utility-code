@@ -7,7 +7,10 @@ $version_field = $this->skylight_utilities->getField("Version");
 $course_field = $this->skylight_utilities->getField('Course Code');
 $filters = array_keys($this->config->item("skylight_filters"));
 $bitstreamLinks = array();
+//Insert Schema.org
+$schema = $this->config->item("skylight_schema_links");
 ?>
+
 
 <h1 class="itemtitle"><?php echo $record_title ?>
     <?php if(isset($solr[$year_field])) {
@@ -19,6 +22,8 @@ $bitstreamLinks = array();
 </h1>
 
     <div class="content">
+      <!--Insert Schema-->
+      <div itemscope itemtype ="http://schema.org/CreativeWork">
         <table>
             <tbody>
             <?php foreach($recorddisplay as $key) {
@@ -34,16 +39,39 @@ $bitstreamLinks = array();
                             $orig_filter = urlencode($metadatavalue);
                             $lower_orig_filter = strtolower($metadatavalue);
                             $lower_orig_filter = urlencode($lower_orig_filter);
+                            //Insert Schema.org
+                            if (isset ($schema[$key]))
+                            {
+                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                            }
+                            else
+                            {
+                              echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                            }
 
-                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
                         }
-                        else {
-                            if($key == "Course Code") {
-                                echo strtoupper($metadatavalue);
+                        else if($key == "Course Code") {
+                              if (isset ($schema[$key]))
+                              {
+                                  echo '<span itemprop="'.$schema[$key].'">'. strtoupper($metadatavalue). "</span>";
+                                }
+                                else
+                                {
+                                  echo strtoupper($metadatavalue);
+                                }
                             }
-                            else {
-                                echo $metadatavalue;
-                            }
+                            else
+                            {
+
+                              if (isset ($schema[$key]))
+                              {
+                                  echo '<span itemprop="'.$schema[$key].'">'. $metadatavalue. "</span>";
+                                }
+                                else
+                                {
+                                  echo $metadatavalue;
+                                }
+
                         }
 
                         if($index < sizeof($solr[$element]) - 1) {
@@ -76,6 +104,7 @@ $bitstreamLinks = array();
             </tbody>
         </table>
 
+
         <?php if(isset($solr[$bitstream_field]) && $link_bitstream) {
             ?><div class="record_bitstreams"><?php
             foreach($solr[$bitstream_field] as $bitstream) {
@@ -99,6 +128,6 @@ $bitstreamLinks = array();
         } ?>
 
     </div>
+  </div>
 
 <input type="button" value="Back to Search Results" class="backbtn" onClick="history.go(-1);">
-

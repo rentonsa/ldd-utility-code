@@ -47,6 +47,23 @@ $config['skylight_fields'] = array('Title' => 'dc.title.en',
 
 );
 
+$config['skylight_schema_links'] = array(
+        'Title'=>'name',
+        'Author'=>'author',
+        'Pamphlet Author'=>'author',
+        'Subject'=>'keywords',
+        'Doc Author'=>'contributor',
+        'Type'=>'about',
+        'Number of Pages'=>'numberOfPages',
+        'Date Scanned'=>'dateModified',
+        'Document Date'=>'dateCreated',
+        'Shelfmark'=>'identifier',
+        'Pamphlet Title'=>'alternateName',
+        'Collection'=>'Collection',
+        'Link'=>'url'
+
+);
+
 $config['skylight_date_filters'] = array();
 $config['skylight_filters'] = array('Author' => 'authorza_filter', 'Subject' => 'subject_filter', 'Collection' => 'collection_filter','Date' => 'datetemporal_filter');
 $config['skylight_filter_delimiter'] = ':';

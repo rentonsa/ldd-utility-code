@@ -68,6 +68,21 @@ $config['skylight_fields'] = array('Title' => 'title',
 
 );
 
+$config['skylight_schema_links'] = array(
+      'Title'=>'name',
+      'Creator'=>'creator',
+      'Subject'=>'keywords',
+      'Agent'=>'creator',
+      'Notes'=>'description',
+      'Language'=>'inLanguage',
+      'Scope and Contents'=>'text',
+      'Related'=>'isRelatedTo',
+      'Extent'=>'about',
+      'Identifier'=>'identifier',
+      'Id'=>'identifier',
+      'Physical Description'=>'description'
+);
+
 $config['skylight_date_filters'] = array();
 $config['skylight_filters'] = array('Subject' => 'subjects', 'Agent' => 'agents');
 $config['skylight_filter_delimiter'] = ':';
