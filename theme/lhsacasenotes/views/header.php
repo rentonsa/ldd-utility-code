@@ -109,6 +109,7 @@
                         <li><a href="./catalogues" title="Catalogues Link">Catalogues</a></li>
                         <li><a href="./people" title="People Link">People</a></li>
                         <li><a href="./achievements" title="Achievements Link">Achievements</a></li>
+                        <li><a href="./tuberculosis" title="Tuberculosis Link">Tuberculosis</a></li>
                         <li><a href="http://lhsa.blogspot.co.uk/" title="LHSA Blog Link" target="_blank">LHSA Blog</a></li>
                         <li><a href="./feedback" title="Feedback Form">Feedback</a></li>
                     </ul>

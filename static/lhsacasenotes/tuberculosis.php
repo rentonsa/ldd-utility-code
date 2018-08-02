@@ -12,8 +12,8 @@ sought out for examination and followed up by nurses and health visitors.</p>
 <img src="<?php echo base_url()?>/theme/lhsacasenotes/images/Image_1.jpg" alt="Anti tuberculosis measures" class="img-responsive" />
 </br>
 <p>In the years following, specialist hospitals (such as the Royal Victoria Hospital and Southfield Sanatorium) were built
-where patients could either recuperate or (in the case of the City Hospital) be separated from the general population to
-live out their days. Until the development of antibiotics (1940s), treatment involved bed-rest and exercise. Artificial
+where patients could either recuperate or (in the case of the City Hospital) be separated from the general population if their cases 
+were very serious. Until the development of antibiotics (1940s), treatment involved bed-rest and exercise. Artificial
 pneumothorax (the surgical collapse of a lung), drug therapies and chemotherapy were added as the years went on.</p>
 <img src="<?php echo base_url()?>/theme/lhsacasenotes/images/Image_11.jpg" alt="Covered Shelter in Grounds" class="img-responsive" />
 </br>
