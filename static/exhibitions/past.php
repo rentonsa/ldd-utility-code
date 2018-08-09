@@ -4,6 +4,43 @@
         <h1>Past Exhibitions:</h1>
         <div class="past-list">
             <div>
+                <h2><a href="./dawnera" alt="Shored Against Ruin" title="Shored Against Ruin Information Page">Shored Against Ruin: Fragments from the University of Edinburgh Collections</a></h2>
+                <p>13th April - 15 August 2018</p>
+                <a href="./dawnera" alt="Shored Against Ruin" title="Shored Against Ruin">
+                    <div id="exhib-tile-18"></div>
+                </a>
+
+                <p>The NHS was born on 5 July 1948. From Scotland’s pre-1948 experiments in state health care, to medical breakthroughs,
+                    public health challenges and patient power, this display highlights the past 70 years of our region’s medical history
+                    through the collections of Lothian Health Services Archive (LHSA).
+                </p>
+            </div>
+            <div>
+                <h2><a href="./howwhywhat" alt="How Why What" title="How Why What Information Page">Shored Against Ruin: Fragments from the University of Edinburgh Collections</a></h2>
+                <p>30th March - 30th June 2018</p>
+                <a href="./howwhywhat" alt="How Why What" title="How Why What">
+                    <div id="exhib-tile-17"></div>
+                </a>
+
+                <p>Filled with illustrated school texts, how-to-guides, scientific diagrams, and children’s picture books, How? Why? What?
+                    explores the many ways in which drawn and painted images were used to enhance different forms and stages of learning
+                    in the mid-20th century. Curated in partnership with Edinburgh College of Art.</p>
+            </div>
+            <div>
+                <h2><a href="./travellingimages" alt="Travelling Images" title="Travelling Images Information Page">Shored Against Ruin: Fragments from the University of Edinburgh Collections</a></h2>
+                <p>13th April - 15 June 2018</p>
+                <a href="./travellingimages" alt="Travelling Images" title="Travelling Images">
+                    <div id="exhib-tile-16"></div>
+                </a>
+
+                <p>During the Renaissance, Venice was one most important European centres for book production and trade.
+                    Writers, scholars and artists worked there in collaboration with specialised artisans to produce perfected editions,
+                    which were often lavishly illustrated. In this small display we present three of our most interesting Venetian illustrated books
+                    and trace the paths they took in their travels from Venice, to our own institution.
+                </p>
+            </div>
+
+            <div>
                 <h2><a href="./sar" alt="Shored Against Ruin" title="Shored Against Ruin Information Page">Shored Against Ruin: Fragments from the University of Edinburgh Collections</a></h2>
                 <p>8 December 2017 – 24 February 2018</p>
                 <a href="./sar" alt="Shored Against Ruin" title="Shored Against Ruin">

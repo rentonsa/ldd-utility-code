@@ -24,8 +24,8 @@
             redaction of potentially identifying details. This resource acts as a gateway to these anonymised case note
             catalogues. It will guide you in using the catalogues for the first time, give context to key people,
             subjects and places, and will provide information for legitimate researchers on applying to access the
-            confidential documents that they describe. At present, only finding aids for neurosurgical case notes can be
-            accessed, but new catalogues will be added as they are completed.
+            confidential documents that they describe. At present, finding aids for neurosurgical and tuberculosis case notes can be accessed,
+            but new catalogues will be added as they are completed.
 
         </p>
 
