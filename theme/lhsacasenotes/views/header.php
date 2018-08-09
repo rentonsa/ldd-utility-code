@@ -106,6 +106,7 @@
                         <li><a href="./" title="Medical Case Notes Home Link">Home</a></li>
                         <li><a href="./about" title="About Link">About</a></li>
                         <li><a href="./history" title="History Link">History</a></li>
+                        <li><a href="./tuberculosis" title="Tuberculosis">Tuberculosis</a></li>
                         <li><a href="./catalogues" title="Catalogues Link">Catalogues</a></li>
                         <li><a href="./people" title="People Link">People</a></li>
                         <li><a href="./achievements" title="Achievements Link">Achievements</a></li>

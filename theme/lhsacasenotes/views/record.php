@@ -41,7 +41,7 @@ $bitstreamLinks = array();
             ?>
 
             <?php $excludes = array("");
-
+            $idset = false;
             foreach($recorddisplay as $key) {
                 $element = $this->skylight_utilities->getField($key);
 
@@ -51,6 +51,7 @@ $bitstreamLinks = array();
                         foreach($solr[$element] as $index => $metadatavalue) {
                             // if it's a facet search
                             // make it a clickable search link
+
                             if(in_array($key, $filters)) {
 
                                 $orig_filter = urlencode($metadatavalue);
@@ -58,8 +59,16 @@ $bitstreamLinks = array();
                                 echo '<a href="./search/*:*/' . $key . ':%22'.$orig_filter.'%22">'.$metadatavalue.'</a>';
                             }
                             else {
-                                echo $metadatavalue;
+                                if ($key == 'Identifier') {
+                                    if ($idset == false) {
+                                        echo $metadatavalue;
+                                        $idset = true;
+                                    }
+                                }
+                                else{
 
+                                    echo $metadatavalue;
+                                }
                             }
 
                             if($index < sizeof($solr[$element]) - 1) {

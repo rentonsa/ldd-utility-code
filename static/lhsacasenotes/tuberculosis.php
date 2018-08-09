@@ -12,8 +12,8 @@ sought out for examination and followed up by nurses and health visitors.</p>
 <img src="<?php echo base_url()?>/theme/lhsacasenotes/images/Image_1.jpg" alt="Anti tuberculosis measures" class="img-responsive" />
 </br>
 <p>In the years following, specialist hospitals (such as the Royal Victoria Hospital and Southfield Sanatorium) were built
-where patients could either recuperate or (in the case of the City Hospital) be separated from the general population if their cases 
-were very serious. Until the development of antibiotics (1940s), treatment involved bed-rest and exercise. Artificial
+where patients could either recuperate or (in the case of the City Hospital) be separated from the general population if their cases were very serious.
+    Until the development of antibiotics (1940s), treatment involved bed-rest and exercise. Artificial
 pneumothorax (the surgical collapse of a lung), drug therapies and chemotherapy were added as the years went on.</p>
 <img src="<?php echo base_url()?>/theme/lhsacasenotes/images/Image_11.jpg" alt="Covered Shelter in Grounds" class="img-responsive" />
 </br>
@@ -43,7 +43,7 @@ city-wide MMR campaign. Each one of these cases has been catalogued.<p>
 </br>
 <p>Cases have been catalogued using LHSA’s <a href="https://collections.ed.ac.uk/lhsacasenotes/about" title="methodolgy" alt="methodology">methodology</a>
 developed for neurosurgical case notes. However, adaptations have been made to reflect the infectious nature of tuberculosis: the location of a patient is recorded in slightly
-more detail, using Westminster electoral districts, and any family history of tuberculosis mentioned in the case is recorded.<p>
+more detail, using Westminster electoral districts, and any family history of tuberculosis mentioned in the case is recorded.</p>
 </br>
 <img src="<?php echo base_url()?>/theme/lhsacasenotes/images/TB_case.jpg" alt="TB Case" class="img-responsive" />
 
@@ -62,6 +62,6 @@ strict conditions on the use of patient-identifiable data. Access to the unredac
 case notes is determined by means of an application to NHS Lothian through the LHSA Archivist. These highly confidential
 resources can only be consulted in person in our reading room in the Centre for Research Collections, University of Edinburgh.
 Please contact us at <a href="mailto:lhsa@ed.ac.uk">lhsa@ed.ac.uk</a> for further details.</p>
-<p>To place the case notes in context, LHSA’s related (non-case note) here is a link to <a href="http://www.lhsa.lib.ed.ac.uk/collections/LHB41/lhb41_index.htm" title="RVH collection" alt="RVH collection" target="_blank">RVH collection </a>. </p>
+<p>To place the case notes in context, LHSA’s related (non-case note) collection for the RVH is <a href="http://www.lhsa.lib.ed.ac.uk/collections/LHB41/lhb41_index.htm" title="RVH case note" alt="RVH case note" target=""_blank">here</a>.</p>
     </div>
 </div>

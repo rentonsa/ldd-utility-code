@@ -1,21 +1,6 @@
 <div class="record">
     <div class="content byEditor">
-        <h1>CURRENT EXHIBITIONS:</h1><h1> <a href="./howwhywhat" alt="How Why What"
-                                   title="How Why What">How? Why? What? Education Illustration from University Collections</a></h1>
-        <h3>Main Library Exhibition Gallery – Ground Floor<br/>
-            30th March 2018- 30th June 2018; Monday - Saturday, 10:00 - 17:00</h3>
-        <h3>Curated by: John Brown, Edinburgh College of Art</h3>
-            <div id="howwhywhat-banner"></div>
-            <div id="eca-banner"></div>
-            <div class="clearfix"></div>
-        <h1><a href="./dawnera" alt="Dawn of a New Era" title="Dawn of a New Era">Dawn of a New Era: 70 Years of the NHS in the Lothians</a></h1>
-        <h3>Binks Trust Display Wall – 6th Floor Main Library<br/>
-                    13th April 2018- 15th August 2018; Monday - Friday, 09:00 - 17:00</h3>
-        <h3></h3>
-            <div id="dawnera-banner"></div>
-            <div class="clearfix"></div>
-
-        <h1>COMING SOON: <a href="./astronomyvictorious" alt="Astronomy Victorious"
+        <h1>CURRENT EXHIBITIONS:</h1><h1> <a href="./astronomyvictorious" alt="Astronomy Victorious"
                                            title="Astronomy Victorious">Astronomy Victorious: Understanding our Universe</a></h1>
         <h3>Main Library Exhibition Gallery – Ground Floor<br/>
             27 July – 27 October 2018; Monday - Saturday, 10:00 - 17:00</h3>
@@ -27,10 +12,28 @@
 
                     <ul class="ex-list">
                         <li class="past-ex">
-                            <a href="./sar" alt="Shored Against Ruin" title="Shored Against Ruin">
+                            <a href="./dawnera" alt="Dawn of a New Era" title="Dawn of a New Era">
+                                <div id="exhib-tile-18"></div>
+                            </a>
+                            <h3><a href="./dawnera" alt="Dawn of a New Era" title="Dawn of a New Era">Dawn of a New Era</a></h3>
+                            <h3><i class="fa fa-search">&nbsp;</i> Coming Soon</h3>
+                            <p> 13th Apr - 15th Aug 2018</p>
+
+                        </li>
+                        <li class="past-ex">
+                            <a href="./howwhywhat" alt="How Why What" title="How Why What">
+                                <div id="exhib-tile-17"></div>
+                            </a>
+                            <h3><a href="./howwhywhat" alt="How Why What" title="How Why What">How? Why? What?</a></h3>
+                            <h3><i class="fa fa-search">&nbsp;</i> Coming Soon</h3>
+                            <p>30th Mar  – 30th Jun 2018</p>
+
+                        </li>
+                        <li class="past-ex">
+                            <a href="./travellingimages" alt="Travelling Images" title="Travelling Images">
                                 <div id="exhib-tile-16"></div>
                             </a>
-                            <h3><a href="./sar" alt="Shored Against Ruin" title="Shored Against Ruin">Travelling Images</a></h3>
+                            <h3><a href="./travellingimages" alt="Travelling Images" title="Travelling Images">Travelling Images</a></h3>
                             <h3><i class="fa fa-search">&nbsp;</i> Coming Soon</h3>
                             <p> 13th Apr - 15th Jun 2018</p>
 
@@ -44,6 +47,11 @@
                             <p>8 Dec 2017 – 24 Feb 2018</p>
 
                         </li>
+                    </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div>
+                <ul class="ex-list">
                         <li class="past-ex">
                             <a href="./incend" alt="Incendiary Texts" title="Incendiary Texts">
                                 <div id="exhib-tile-14"></div>
@@ -62,11 +70,7 @@
                             <p>28th Jul - 4th Nov 2017</p>
 
                         </li>
-                    </ul>
-            </div>
-            <div class="clearfix"></div>
-            <div>
-                <ul class="ex-list">
+
 
                         <li class="past-ex">
                             <a href="./soundbody" alt="Sound Body Sound Mind" title="Sound Body Sound Mind">
@@ -90,6 +94,11 @@
                             <p>29th Jul - 26th Nov 2016</p>
 
                         </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div>
+                <ul class="ex-list">
                         <li class="past-ex">
                             <a href="./revel" alt="Brown Paper and Imagination" title="Brown Paper and Imaginationn">
                                 <div id="exhib-tile-10"></div>
@@ -108,11 +117,6 @@
                             <p>4 Dec 2015 - 5 Mar 2016</p>
 
                         </li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-            <div>
-                <ul class="ex-list">
 
                         <li class="past-ex">
                             <a href="./towardsdolly" alt="Towards Dolly" title="Towards Dolly">
@@ -133,6 +137,11 @@
                             <p>2 Apr - 27 Jun 2015</p>
 
                         </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div>
+                <ul class="ex-list">
                         <li class="past-ex">
                             <a href="./emmagillies" alt="Emma Gillies" title="Emma Gillies">
                                 <div id="exhib-tile-6"></div>
@@ -152,11 +161,7 @@
                             <p>2 Aug - 31 Oct 2014</p>
 
                         </li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-            <div>
-                <ul class="ex-list">
+
                         <li class="past-ex">
                             <a href="./50years" alt="50 Years, 50 Books" title="50 Years, 50 Books">
                                 <div id="exhib-tile-2"></div>
@@ -176,6 +181,11 @@
                             <p>6 Dec 2013 - 1 Mar 2014</p>
 
                         </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div>
+                <ul class="ex-list">
                         <li class="past-ex">
                             <a href="./cradle" alt="Cradle of Chemistry" title="Cradle of Chemistry">
                                 <div id="exhib-tile-4"></div>
