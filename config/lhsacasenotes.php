@@ -14,7 +14,9 @@ if (strpos($_SERVER['HTTP_HOST'], "localhost") !== false) {
 else if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
     $config['skylight_ga_code'] = '';
     $config['skylight_solrbase'] = 'http://lac-repo-test14.is.ed.ac.uk:8090/';
-    $config['skylight_link_url'] = 'http://lac-archives-test.is.ed.ac.uk:8081';
+    $config['skylight_link_url'] = 'http://lac-archives-live.is.ed.ac.uk:8081';
+    //$config['skylight_solrbase'] = 'http://lac-repo-live14.is.ed.ac.uk:8090/';
+    //$config['skylight_link_url'] = 'http://archives.collections.ed.ac.uk';
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-9';
@@ -40,7 +42,7 @@ $config['skylight_oaipmhallowed'] = true;
 
 // Container ID and the field used in solr index to store this ID. Used for restricting search/browse scope.
 $config['skylight_container_id'] = array(
-    '"/repositories/13/resources/86679"', '"/repositories/13/resources/86697", '"/repositories/13/resources/86795"');
+     '"/repositories/13/resources/86795"', '"/repositories/13/resources/86679"', '"/repositories/9/resources/86697"');
 $config['skylight_container_field'] = 'resource';
 $config['skylight_sitemap_type'] = 'external';
 

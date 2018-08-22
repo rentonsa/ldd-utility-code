@@ -83,6 +83,7 @@
 
                 <div>
                     <h2>Directory of Collections</h2><i class="fa fa-file-pdf-o"></i>
+                    <i class="fa fa-camera"></i>
                     <i class="ion-arrow-right-c"></i>
 
                     <div class="curl"></div>
@@ -886,7 +887,7 @@
                             <i class="ion-arrow-right-c"></i>
 
                             <div class="curl"></div>
-                            <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc/volunteers-interns-honorary-fellows"
+                            <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc/volunteers-interns"
                                title="Volunteering" target="_blank"></a>
                         </div>
                     </figure>
