@@ -79,6 +79,44 @@ $config['skylight_fields'] = array(
     'Specific Type' => 'dc.type.specific.en',
 );
 
+$config['skylight_schema_links'] = array(
+      'Title' => 'name',
+      'Alternative Title' => 'alternateName',
+      'Author' => 'creator',
+      'Subject' => 'about',
+      'Instrument' => 'name',
+      //'Abstract' => 'description',
+      'Date' => 'dateCreated',
+      'Thumbnail' => 'thumbnail',
+      'Place Made' => 'locationCreated',
+      'Date Made' => 'dateCreated',
+      'Period' => 'temporalCoverage',
+      'Accession Number' => 'identifier',
+      'Technical Description' => 'description',
+      'Collection' => 'Collection',
+      'Notes' => 'musicalKey',
+      'Rights Holder' => 'copyrightHolder',
+      'Instrument Family' => 'category',
+      'Genus' => 'category',
+      'Link' => 'url',
+      //'Maker Biography' => 'description',
+      'Associated Musician Name' => 'creator',
+      'Associated Musician' => 'creator',
+      //'Piccolo Description' => 'description',
+      //'Short Description' => 'description',
+      'Description'=> 'description',
+      //'Associated Musician Biography' => 'description',
+      'Instrument Type' => 'Category',
+      'ImageURI' => 'image',
+      'Rights Statement' => 'copyrightHolder',
+      'Case' => 'location',
+      'Gallery'=> 'location',
+      'Maker Name' => 'creator',
+      'Hornbostel Sachs Classification' => 'identifier'
+
+);
+
+
 $config['skylight_recorddisplay'] = array(
     'Title',
     'Alternative Title',

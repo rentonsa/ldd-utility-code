@@ -22,6 +22,12 @@ $media_uri = $this->config->item("skylight_media_url_prefix");
 $theme = $this->config->item("skylight_theme");
 $acc_no_field = $this->skylight_utilities->getField("Accession Number");
 
+//Insert Schema.org
+$schema = $this->config->item("skylight_schema_links");
+if(isset($solr[$type_field])) {
+    $type = "media-" . strtolower(str_replace(' ','-',$solr[$type_field][0]));
+}
+
 $type = 'Unknown';
 $mainImageTest = false;
 $numThumbnails = 0;
@@ -64,6 +70,8 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
         $b_uri = './record/' . $b_handle_id . '/' . $b_seq . '/' . $b_filename;
 
         if ((strpos($b_uri, ".mp3") > 0) or (strpos($b_uri, ".MP3") > 0)) {
+            //Insert Schema for deetcting Audio
+            echo '<div itemprop="audio" itemscope itemtype="http://schema.org/AudioObject"></div>';
             $audioLink .= '<audio controls>';
             $audioLink .= '<source src="' . $b_uri . '" type="audio/mpeg" />Audio loading...';
             $audioLink .= '</audio>';
@@ -78,6 +86,8 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                 $mp4ok = true;
             }
             if ($mp4ok == true) {
+                //Insert Schema for deetcting Video
+                echo '<div itemprop="video" itemscope itemtype="http://schema.org/VideoObject"></div>';
                 $videoLink .= '<div class="flowplayer" data-analytics="' . $ga_code . '" title="' . $record_title . ": " . $b_filename . '">';
                 $videoLink .= '<video preload=auto loop width="100%" height="auto" controls preload="true" width="660">';
                 $videoLink .= '<source src="' . $b_uri . '" type="video/mp4" />Video loading...';
@@ -90,6 +100,8 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
             //Microsoft Edge needs to be dealt with. Chrome calls itself Safari too, but that doesn't matter.
             if (strpos($_SERVER['HTTP_USER_AGENT'], 'Edge') == false) {
                 if (strpos($_SERVER['HTTP_USER_AGENT'], 'Chrome') == true) {
+                    //Insert Schema for deetcting Video
+                    echo '<div itemprop="video" itemscope itemtype="http://schema.org/VideoObject"></div>';
                     $b_uri = $media_uri . $b_handle_id . '/' . $b_seq . '/' . $b_filename;
                     // if it's chrome, use webm if it exists
                     $videoLink .= '<div class="flowplayer" data-analytics="' . $ga_code . '" title="' . $record_title . ": " . $b_filename . '">';
@@ -187,9 +199,9 @@ foreach($recorddisplay as $key)
 </div>
 
 <div id="stc-section2" class="container-fluid">
-<?php
-if (isset($solr[$link_uri_field]))
-{
+    <?php
+    if (isset($solr[$link_uri_field]))
+    {
     $imageCounter = 0;
     foreach($solr[$link_uri_field] as $linkURI)
     {
@@ -222,7 +234,7 @@ if (isset($solr[$link_uri_field]))
     }
 
     echo "<div id='imageCounter' style='display:none;'>$imageCounter</div>";
-?>
+    ?>
 
 
     <div id='toolbarDiv'>
@@ -240,7 +252,7 @@ if (isset($solr[$link_uri_field]))
                     OpenSeadragon({
                         id: "openseadragon<?php echo $divCounter;?>",
                         prefixUrl: "<?php echo base_url() ?>theme/stcecilia/images/buttons/",
-                        zoomPerScroll: 1,
+                        zoomPerScroll: 1.2,
                         toolbar:       "toolbarDiv",
                         showNavigator:  true,
                         autoHideControls: false,
@@ -286,7 +298,7 @@ if (isset($solr[$link_uri_field]))
     $thumbnailLink = array();
 
     $countThumbnails = count($solr[$link_uri_field]);
-    echo '<div class="thumb-strip">';
+    echo '<div itemscope itemtype ="http://schema.org/CreativeWork"><div class="thumb-strip">';
     if ($countThumbnails > 1)
     {
         foreach ($solr[$link_uri_field] as $linkURI)
@@ -297,6 +309,9 @@ if (isset($solr[$link_uri_field]))
             $thumbnailLink[$numThumbnails] .= '<input type="radio" name="options" id="option'.$numThumbnails.'">';
 
             list($width, $height) = getimagesize($linkURI);
+            $imagesmall = str_replace ('full/full/0/default.jpg', 'full/150,/0/default.jpg', $linkURI);
+            //Insert Schema for thumbnail
+            echo '<span itemprop="thumbnail" style="display:none;">'. $imagesmall. '</span>';
             $portrait = true;
             if ($width > $height)
             {
@@ -349,18 +364,36 @@ if (isset($solr[$link_uri_field]))
 
         }
     }
-
-    ?>
-        </div>
-    <?php
+    else if ($countThumbnails == 1)
+    {
+        foreach ($solr[$link_uri_field] as $linkURI)
+        {
+            $imagefull = $linkURI;
+            list($fullwidth, $fullheight) = getimagesize($imagefull);
+            if ($fullwidth > $fullheight)
+            {
+                $parms = '/150,/0/';
+            }
+            else 
+            {
+                $parms = '/,150/0/';
+            }
+            $imagesmall = str_replace('/full/0/', $parms, $imagefull);
+            //Insert Schema for thumbnail
+            echo '<span itemprop="thumbnail" style="display:none;">' . $imagesmall . '</span>';
+        }
     }
     ?>
-    <div class = "json-link">
-        <p>
-            <?php if (isset($jsonLink)){echo $jsonLink;} ?>
-        </p>
-    </div>
 </div>
+<?php
+}
+?>
+<div class = "json-link">
+    <p>
+        <?php if (isset($jsonLink)){echo $jsonLink;} ?>
+    </p>
+</div>
+
 
 <div id="stc-section3" class="container-fluid">
     <!--TODO Display Short description and description-->
@@ -410,8 +443,13 @@ if (isset($solr[$link_uri_field]))
     }
     ?>
 </div>
-<?php
 
+
+<!--Insert Schema.org-->
+<div class="full-metadata">
+
+
+            <?php
 if(isset($solr[$bitstream_field]) && $link_bitstream) {
 
     if (!$audioLink == '')
@@ -464,11 +502,30 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                         $lower_orig_filter = strtolower($metadatavalue);
                                         $lower_orig_filter = urlencode($lower_orig_filter);
 
-                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                        //Insert Schema.org
+                                        if (isset ($schema[$key]))
+                                        {
+                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                        }
+                                        else
+                                        {
+                                            echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a>';
+                                        }
                                     }
                                     else {
-                                        echo $metadatavalue;
+
+                                        //Insert Schema.org
+
+                                        if (isset ($schema[$key]))
+                                        {
+                                            echo '<span itemprop="' . $schema[$key] . '">' . $metadatavalue . "</span>";
+                                        }
+
+                                        else {
+                                            echo $metadatavalue;
+                                        }
                                     }
+
                                     if($index < sizeof($solr[$element]) - 1) {
 
                                         echo '; ';
@@ -488,8 +545,8 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                     <h3>Date Information</h3>
                     <dl class="dl-horizontal">
                         <?php
-                            $infofound = false;
-                            foreach($datedisplay as $key) {
+                        $infofound = false;
+                        foreach($datedisplay as $key) {
 
                             $element = $this->skylight_utilities->getField($key);
 
@@ -507,12 +564,28 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                         $lower_orig_filter = strtolower($metadatavalue);
                                         $lower_orig_filter = urlencode($lower_orig_filter);
 
-                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                        //Insert Schema.org
+                                        if (isset ($schema[$key]))
+                                        {
+                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                        }
+                                        else
+                                        {
+                                            echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a>';
+                                        }
                                     }
                                     else {
-                                        echo $metadatavalue;
-                                    }
+                                        //Insert Schema.org
 
+                                        if (isset ($schema[$key]))
+                                        {
+                                            echo '<span itemprop="' . $schema[$key] . '">' . $metadatavalue . "</span>";
+                                        }
+
+                                        else {
+                                            echo $metadatavalue;
+                                        }
+                                    }
                                     if($index < sizeof($solr[$element]) - 1) {
 
                                         echo '; ';
@@ -553,10 +626,28 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                         $lower_orig_filter = strtolower($metadatavalue);
                                         $lower_orig_filter = urlencode($lower_orig_filter);
 
-                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                        //Insert Schema.org
+                                        if (isset ($schema[$key]))
+                                        {
+                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                        }
+                                        else
+                                        {
+                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                        }
                                     }
+
                                     else {
-                                        echo $metadatavalue;
+                                        //Insert Schema.org
+
+                                        if (isset ($schema[$key]))
+                                        {
+                                            echo '<span itemprop="' . $schema[$key] . '">' . $metadatavalue . "</span>";
+                                        }
+                                        else
+                                        {
+                                            echo $metadatavalue;
+                                        }
                                     }
                                     if($index < sizeof($solr[$element]) - 1) {
 
@@ -596,10 +687,28 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                         $lower_orig_filter = strtolower($metadatavalue);
                                         $lower_orig_filter = urlencode($lower_orig_filter);
 
-                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                        //Insert Schema.org
+                                        if (isset ($schema[$key]))
+                                        {
+                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                        }
+                                        else
+                                        {
+                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                        }
                                     }
                                     else {
-                                        echo $metadatavalue;
+
+                                        //Insert Schema.org
+
+                                        if (isset ($schema[$key]))
+                                        {
+                                            echo '<span itemprop="' . $schema[$key] . '">' . $metadatavalue . "</span>";
+                                        }
+                                        else
+                                        {
+                                            echo $metadatavalue;
+                                        }
                                     }
                                     if($index < sizeof($solr[$element]) - 1) {
 
@@ -639,11 +748,30 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                         $lower_orig_filter = strtolower($metadatavalue);
                                         $lower_orig_filter = urlencode($lower_orig_filter);
 
-                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                        //Insert Schema.org
+                                        if (isset ($schema[$key]))
+                                        {
+                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                        }
+                                        else
+                                        {
+                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                        }
                                     }
                                     else {
-                                        echo $metadatavalue;
+
+                                        //Insert Schema.org
+
+                                        if (isset ($schema[$key]))
+                                        {
+                                            echo '<span itemprop="' . $schema[$key] . '">' . $metadatavalue . "</span>";
+                                        }
+                                        else
+                                        {
+                                            echo $metadatavalue;
+                                        }
                                     }
+
                                     if($index < sizeof($solr[$element]) - 1) {
 
                                         echo '; ';
@@ -682,10 +810,26 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                         $lower_orig_filter = strtolower($metadatavalue);
                                         $lower_orig_filter = urlencode($lower_orig_filter);
 
-                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                        //Insert Schema.org
+                                        if (isset ($schema[$key]))
+                                        {
+                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                        }
+                                        else
+                                        {
+                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                        }
                                     }
                                     else {
-                                        echo $metadatavalue;
+
+                                        if (isset ($schema[$key]))
+                                        {
+                                            echo '<span itemprop="' . $schema[$key] . '">' . $metadatavalue . "</span>";
+                                        }
+                                        else
+                                        {
+                                            echo $metadatavalue;
+                                        }
                                     }
                                     if($index < sizeof($solr[$element]) - 1) {
 
@@ -725,11 +869,28 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                         $lower_orig_filter = strtolower($metadatavalue);
                                         $lower_orig_filter = urlencode($lower_orig_filter);
 
-                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                        //Insert Schema.org
+                                        if (isset ($schema[$key]))
+                                        {
+                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                        }
+                                        else
+                                        {
+                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                        }
                                     }
                                     else {
-                                        echo $metadatavalue;
+
+                                        if (isset ($schema[$key]))
+                                        {
+                                            echo '<span itemprop="' . $schema[$key] . '">' . $metadatavalue . "</span>";
+                                        }
+                                        else
+                                        {
+                                            echo $metadatavalue;
+                                        }
                                     }
+
                                     if($index < sizeof($solr[$element]) - 1) {
 
                                         echo '; ';
@@ -752,37 +913,53 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                         $infofound = false;
                         foreach($measurementdisplay as $key) {
 
-                            $element = $this->skylight_utilities->getField($key);
+                        $element = $this->skylight_utilities->getField($key);
 
-                            if(isset($solr[$element])) {
+                        if(isset($solr[$element])) {
 
-                                echo '<dt>' . $key . '</dt>';
+                            echo '<dt>' . $key . '</dt>';
 
-                                echo '<dd>';
-                                foreach($solr[$element] as $index => $metadatavalue) {
-                                    // if it's a facet search
-                                    // make it a clickable search link
-                                    if(in_array($key, $filters)) {
-
-                                        $orig_filter = urlencode($metadatavalue);
-                                        $lower_orig_filter = strtolower($metadatavalue);
-                                        $lower_orig_filter = urlencode($lower_orig_filter);
-
-                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
-                                    }
-                                    else {
-                                        echo $metadatavalue;
-                                    }
-                                    if($index < sizeof($solr[$element]) - 1) {
-
-                                        echo '; ';
+                            echo '<dd>';
+                            foreach($solr[$element] as $index => $metadatavalue)
+                            {
+                                // if it's a facet search
+                                // make it a clickable search link
+                                if(in_array($key, $filters)) {
+                                    $orig_filter = urlencode($metadatavalue);
+                                    $lower_orig_filter = strtolower($metadatavalue);
+                                    $lower_orig_filter = urlencode($lower_orig_filter);
+                                    //insert Schema
+                                    if (isset ($schema[$key])) {
+                                        echo '<span itemprop="' . $schema[$key] . '"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                    } else {
+                                        echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a>';
                                     }
                                 }
-                                $infofound = true;
-                                echo '</dd>';
+                                else
+                                {
+
+                                        if (isset ($schema[$key]))
+                                        {
+                                            echo '<span itemprop="' . $schema[$key] . '">' . $metadatavalue . "</span>";
+                                        }
+                                        else
+                                        {
+                                            echo $metadatavalue;
+                                        }
+                                }
+
+                                if($index < sizeof($solr[$element]) - 1)
+                                {
+
+                                    echo '; ';
+                                }
                             }
+                            $infofound = true;
+                            echo '</dd>';
                         }
-                        if (!$infofound) {
+                        }
+                        if (!$infofound)
+                        {
                             echo '<p>No information recorded.</p>';
                         }?>
                     </dl>
@@ -811,10 +988,27 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                         $lower_orig_filter = strtolower($metadatavalue);
                                         $lower_orig_filter = urlencode($lower_orig_filter);
 
-                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                        //insert schema
+
+                                        if (isset ($schema[$key]))
+                                        {
+                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                        }
+                                        else
+                                        {
+                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                        }
                                     }
                                     else {
-                                        echo $metadatavalue;
+
+                                        if (isset ($schema[$key]))
+                                        {
+                                            echo '<span itemprop="' . $schema[$key] . '">' . $metadatavalue . "</span>";
+                                        }
+                                        else
+                                        {
+                                            echo $metadatavalue;
+                                        }
                                     }
                                     if($index < sizeof($solr[$element]) - 1) {
 
@@ -836,3 +1030,4 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
         </div> <!-- panel body -->
     </div>
 </div>
+
