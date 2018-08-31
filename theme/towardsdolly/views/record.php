@@ -31,7 +31,7 @@ $bitstreamLinks = array();
         <table>
             <tbody>
             <?php $excludes = array("");
-
+            $idset = false;
             foreach($recorddisplay as $key) {
                 $element = $this->skylight_utilities->getField($key);
 
@@ -47,8 +47,20 @@ $bitstreamLinks = array();
 
                                 echo '<a href="./search/*:*/' . $key . ':%22'.$orig_filter.'%22">'.$metadatavalue.'</a>';
                             }
-                            else {
-                                echo $metadatavalue;
+                            else
+                            {
+                                if ($key == 'Identifier')
+                                {
+                                    if ($idset == false)
+                                    {
+                                        echo $metadatavalue;
+                                        $idset = true;
+                                    }
+                                }
+                                else
+                                {
+                                    echo $metadatavalue;
+                                }
 
                             }
 
