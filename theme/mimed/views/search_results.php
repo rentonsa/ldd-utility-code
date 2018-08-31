@@ -134,6 +134,8 @@
                     {
                         foreach ($doc[$image_uri_field] as $imageUri)
                         {
+                            //change to stop LUNA erroring on redirect
+                            $imageUri = str_replace('http://', 'https://', $imageUri);
                             list($width, $height) = getimagesize($imageUri);
                             //echo 'WIDTH'.$width.'HEIGHT'.$height
                             $portrait = true;

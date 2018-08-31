@@ -261,7 +261,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
         $i = 0;
         foreach ($solr[$image_uri_field] as $imageURI)
         {
-            $imageURI = str_replace('http', 'https', $imageURI);
+            $imageURI = str_replace('http://', 'https://', $imageURI);
             $imagefull[$i] = $imageURI;
             list($fullwidth, $fullheight) = getimagesize($imagefull[$i]);
             //echo 'WIDTH'.$width.'HEIGHT'.$height

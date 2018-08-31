@@ -49,6 +49,8 @@
 
                     if (strpos($linkURI, 'luna') > 0 )
                     {
+                        //change to stop LUNA erroring on redirect
+                        $linkURI = str_replace('http://', 'https://', $linkURI);
                         if (false === $content) {
                             $thumbnailLink  =  'href="./record/'.$doc['id'].'" title = "'. $doc[$title_field][0].'"';
                             $thumbnailImg = '<img class="img-responsive record-thumbnail-search" src="../theme/stcecilia/images/comingsoon.gif"  title="' . $doc[$title_field][0] . '" />';

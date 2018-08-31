@@ -304,6 +304,8 @@ foreach($recorddisplay as $key)
         foreach ($solr[$link_uri_field] as $linkURI)
         {
             $linkURI = $solr[$link_uri_field][$numThumbnails];
+            //change to stop LUNA erroring on redirect
+            $linkURI = str_replace('http://', 'https://', $linkURI);
 
             $thumbnailLink[$numThumbnails] = '<label class="image-toggler" data-image-id="#openseadragon'.$numThumbnails.'">';
             $thumbnailLink[$numThumbnails] .= '<input type="radio" name="options" id="option'.$numThumbnails.'">';
@@ -374,7 +376,7 @@ foreach($recorddisplay as $key)
             {
                 $parms = '/150,/0/';
             }
-            else 
+            else
             {
                 $parms = '/,150/0/';
             }

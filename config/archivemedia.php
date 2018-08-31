@@ -8,8 +8,8 @@ if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
     $config['skylight_container_id'] = '6';
 }
 else {
-    $config['skylight_ga_code'] = 'UA-25737241-18';
-    $config['skylight_container_id'] = '33';
+    $config['skylight_ga_code'] = 'UA-25737241-23';
+    $config['skylight_container_id'] = '6';
 }
 
 $config['skylight_theme'] = 'archivemedia';
@@ -20,7 +20,7 @@ $config['skylight_fullname'] = 'Archivemedia';
 
 $config['skylight_adminemail'] = 'lddt@mlist.is.ed.ac.uk';
 
-$config['skylight_oaipmhcollection'] = 'hdl_10683_52783';
+$config['skylight_oaipmhcollection'] = 'hdl_10683_22154';
 
 $config['skylight_oaipmhallowed'] = true;
 
