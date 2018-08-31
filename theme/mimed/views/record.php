@@ -260,7 +260,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
         $i = 0;
         foreach ($solr[$image_uri_field] as $imageURI)
         {
-            $imageURI = str_replace('http', 'https', $imageURI);
+            $imageURI = str_replace('http://', 'https://', $imageURI);
             $imagefull[$i] = $imageURI;
             list($fullwidth, $fullheight) = getimagesize($imagefull[$i]);
             //echo 'WIDTH'.$width.'HEIGHT'.$height
@@ -477,33 +477,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                 }
 
             } ?>
-            <?php
-            $i = 0;
-            $lunalink = false;
-            if (isset($solr[$link_uri_field])) {
-                foreach($solr[$link_uri_field] as $linkURI) {
-                    $linkURI = str_replace('"', '%22', $linkURI);
-                    $linkURI = str_replace('|', '%7C', $linkURI);
 
-                    if (strpos($linkURI,"images.is.ed.ac.uk") != false)
-                    {
-                        $lunalink = true;
-
-                        if($i == 0) {
-                            echo '<tr><td><h4>Zoomable Image(s)</h4>';
-                        }
-
-                        echo '<a href="'. $linkURI . '" target="_blank"><i class="fa fa-file-image-o fa-2x">&nbsp;</i></a>';
-
-                        $i++;
-                    }
-
-                }
-
-                if($lunalink) {
-                    echo '</td></tr>';
-                }
-            }?>
 
             </tbody>
         </table>

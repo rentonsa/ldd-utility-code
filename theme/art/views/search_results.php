@@ -46,7 +46,7 @@ else {
                         <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>">newest</a> |
                 <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>">oldest</a>
                     <?php } } } ?>
-            
+
         </span>
 
 </div>
@@ -139,6 +139,8 @@ else {
 
                             if (strpos($imageUri, 'luna') > 0)
                             {
+                                //change to stop LUNA erroring on redirect
+                                $imageUri = str_replace('http://', 'https://', $imageUri);
                                 $iiifurlsmall = str_replace('/full/0/', '/!250,250/0/', $imageUri);
                                 $thumbnailLink[$numThumbnails]  = '<a title = "' . $doc[$title_field][0] . '" class="fancybox" rel="group" href="' . $imageUri . '"> ';
                                 $thumbnailLink[$numThumbnails] .= '<img src = "' . $iiifurlsmall . '" class="record-thumbnail-search" title="' . $doc[$title_field][0] . '" /></a>';
@@ -170,3 +172,4 @@ else {
             <strong><?php echo $rows ?></strong> results </span>
     <?php echo $pagelinks ?>
 </div>
+
