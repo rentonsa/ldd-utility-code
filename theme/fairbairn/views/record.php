@@ -34,7 +34,7 @@ $schema = $this->config->item("skylight_schema_links");
         <table>
             <tbody>
             <?php $excludes = array("");
-
+            $idset = false;
             foreach($recorddisplay as $key) {
                 $element = $this->skylight_utilities->getField($key);
 
@@ -59,15 +59,25 @@ $schema = $this->config->item("skylight_schema_links");
 
                             }
                             else {
-                              if (isset ($schema[$key]))
-                              {
-                                  echo '<span itemprop="'.$schema[$key].'">'. $metadatavalue. "</span>";
-                              }
-                              else
-                              {
-                                  echo $metadatavalue;
-                              }
-
+                                if ($key == 'Identifier')
+                                {
+                                    if ($idset == false)
+                                    {
+                                        echo '<span itemprop="'.$schema[$key].'">'. $metadatavalue. "</span>";
+                                        $idset = true;
+                                    }
+                                }
+                                else
+                                {
+                                    if (isset ($schema[$key]))
+                                    {
+                                        echo '<span itemprop="'.$schema[$key].'">'. $metadatavalue. "</span>";
+                                    }
+                                    else
+                                    {
+                                        echo $metadatavalue;
+                                    }
+                                }
                             }
 
                             if($index < sizeof($solr[$element]) - 1) {
