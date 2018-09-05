@@ -37,6 +37,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
     $mainImage = false;
     $videoFile = false;
     $audioFile = false;
+    $pdfFile = false;
     $audioLink = "";
     $videoLink = "";
     $jsonLink = "";
@@ -113,8 +114,8 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
         {
             $bitstreamLink = $this->skylight_utilities->getBitstreamLink($bitstream);
             $bitstreamUri = $this->skylight_utilities->getBitstreamUri($bitstream);
-            $pdfLink = '<br><object class="pdfviewer" width="650" height="800" data="'.$b_uri.'" type="application/pdf"><p><span class="label">It appears you do not have a PDF plugin for this browser.</span> </p></object><br>';
-            $pdfLink .= 'Click ' . $bitstreamLink . ' to download. (<span class="bitstream_size">' . getBitstreamSize($bitstream) . '</span>)';
+            //$pdfLink .= '<br><object class="pdfviewer" width="650" height="800" data="'.$b_uri.'" type="application/pdf"><p><span class="label">It appears you do not have a PDF plugin for this browser.</span> </p></object><br>';
+            $pdfLink .= 'Click ' . $bitstreamLink . ' to download. (<span class="bitstream_size">' . getBitstreamSize($bitstream) . '</span>)<br>';
             $pdfFile = true;
         }
         else if ((strpos($b_uri, ".json") > 0) or (strpos($b_uri, ".JSON") > 0))
