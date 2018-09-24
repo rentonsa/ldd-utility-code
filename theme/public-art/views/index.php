@@ -13,10 +13,11 @@
             <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button><br>
             Search art on campus
         </form>
-        <a href="./search/*:*/&type=locations" class="home-search col-xs-4">
-            <i class="fa fa-map-marker" aria-hidden="true"></i><br>
+        <form action = "./search/*:*/" class="home-search col-xs-4" method ="get">
+            <input type="hidden" name ="type" value = "locations"/>
+            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button><br>
             Search by location
-        </a>
+        </form>
         <a href="./paolozzi" class="home-search col-xs-4">
             <i class="fa fa-info" aria-hidden="true"></i><br>
             Paolozzi Mosaic Project
