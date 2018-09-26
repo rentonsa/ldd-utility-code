@@ -59,7 +59,7 @@ $config['skylight_schema_links'] = array(
         'Document Date'=>'dateCreated',
         'Shelfmark'=>'identifier',
         'Pamphlet Title'=>'alternateName',
-        'Collection'=>'Collection',
+        'Collection'=>'isPartOf',
         'Link'=>'url'
 
 );
