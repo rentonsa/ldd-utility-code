@@ -1,6 +1,7 @@
 <div class="content">
     <!-- todo replace two with sass or less -->
 <div class="home">
+    <!--to have images set up-->
     <ul class="cb-slideshow">
         <li><span></span><div><h3></h3></div></li>
         <li><span></span></li>

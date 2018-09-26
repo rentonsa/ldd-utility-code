@@ -5,6 +5,8 @@ $title_field = $this->skylight_utilities->getField('Title');
 $image_uri = $this->skylight_utilities->getField("Image URI");
 $spatiallocation = $this->skylight_utilities->getField("Location");
 //$locations = array("Old College", "Central Campus and George Square", "Pollock Halls", "King’s Buildings", "Easter Bush","ECA", "Moray House", "Medical School", "Location TBC");
+
+//This is temporary as a test until such times as we have correct locations coming through.
 $locations = array (array("King's Buildings","Ashworth Building, Kings Building Campus"),
     array("Central Campus","Bristo Square"),
     array("King's Buildings","Crew Building/King's Buildings"),
