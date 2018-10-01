@@ -145,6 +145,7 @@ for($i=0;$i<$imagetot;$i++){
     <div id="map" class="col-md-5 col-md-offset-1">
         <script>
             $(window).bind("load", function() {
+                console.log('test');
                 <?php
                 echo 'initMap(convertToCoordinates("' . $solr[$location][0] . '"));';
                 $location = $solr[$location][0] . '", "' . addslashes($title) . '", 0, "../theme/public-art/images/pinpoint.png", 1';
