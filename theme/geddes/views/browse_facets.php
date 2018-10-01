@@ -1,4 +1,4 @@
-
+<div>
     <div class="pagination browse_pagination">
         <span class="no-results">
         <strong><?php echo $startrow ?>-<?php echo $endrow ?></strong> of
