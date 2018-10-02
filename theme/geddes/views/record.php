@@ -235,8 +235,8 @@ $bitstreamLinks = array();
         <?php
         if ($mainImage) { ?>
             <div class="main-image">
-                <img src = "<?php echo $image_filename ;?>"/>
-                <div id="openseadragon" style = "width:600px; height= 450px;">
+                <!--<img src = "<?php //echo $image_filename ;?>"/>-->
+                <div id="openseadragon"> <!--style = "width:600px; height= 450px;">-->
                     <script src="<?php echo base_url() ?>assets/openseadragon/openseadragon.min.js"></script>
                     <script type="text/javascript">
                         OpenSeadragon({
