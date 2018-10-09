@@ -4,7 +4,7 @@ $config['skylight_appname'] = 'geddes';
 
 // set the base url and ga code
 if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
-    $config['skylight_container_id'] = '80';
+    $config['skylight_container_id'] = '82';
 }
 else {
     $config['base_url'] = 'https://openbooks.is.ed.ac.uk/';

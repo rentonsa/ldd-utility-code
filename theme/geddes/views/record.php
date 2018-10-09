@@ -224,15 +224,20 @@ $bitstreamLinks = array();
 
     }
     if (isset($solr[$image_uri_field])) {
-        $image_uri = explode("|", $solr[$image_uri_field][0]);
-        $image_filename = $image_uri[0];
-        if ($image_filename )
-        $image_title = $image_uri[1];
+        if (strpos($solr[$image_uri_field][0], "|") > 0) {
+            $image_uri = explode("|", $solr[$image_uri_field][0]);
+            $image_filename = $image_uri[0];
+            $image_title = $image_uri[1];
+        }
+        else
+        {
+            $image_uri = $solr[$image_uri_field][0];
+            $image_filename = $image_uri[0];
+            $image_title = '';
+        }
 
         $mainImage = true;
-        ?>
 
-        <?php
         if ($mainImage) { ?>
             <div class="main-image">
                 <!--<img src = "<?php //echo $image_filename ;?>"/>-->
@@ -267,7 +272,6 @@ $bitstreamLinks = array();
 
                 <?php
             }
-
         }
     }
         // echo $bitstreamLink;
