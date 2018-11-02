@@ -158,6 +158,24 @@
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 <figure class="clickbox">
                     <img
+                        src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/shakespeare.jpg"
+                        alt="Shakespeare" class="img-responsive">
+
+                    <div>
+                        <h2><span>Early</span> English Drama </h2>
+                        <i class="fa fa-camera"></i>
+                        <i class="ion-arrow-right-c"></i>
+
+                        <div class="curl"></div>
+                        <a href="https://images.is.ed.ac.uk/luna/servlet/UoEsha~1~1" title="Shakespeare"
+                           target="_blank"></a>
+                    </div>
+                </figure>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <figure class="clickbox">
+                    <img
                         src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/rarebooks.jpg"
                         alt="ECA Rare Books">
 
@@ -371,23 +389,7 @@
                 </figure>
             </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                <figure class="clickbox">
-                    <img
-                        src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/shakespeare.jpg"
-                        alt="Shakespeare" class="img-responsive">
 
-                    <div>
-                        <h2><span>Shakespeare</span> Folios </h2>
-                        <i class="fa fa-camera"></i>
-                        <i class="ion-arrow-right-c"></i>
-
-                        <div class="curl"></div>
-                        <a href="https://images.is.ed.ac.uk/luna/servlet/UoEsha~1~1" title="Shakespeare"
-                           target="_blank"></a>
-                    </div>
-                </figure>
-            </div>
 
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 <figure class="clickbox">
