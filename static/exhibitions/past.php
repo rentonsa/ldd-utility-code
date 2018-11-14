@@ -4,9 +4,21 @@
         <h1>Past Exhibitions:</h1>
         <div class="past-list">
             <div>
-                <h2><a href="./dawnera" alt="Shored Against Ruin" title="Shored Against Ruin Information Page">Shored Against Ruin: Fragments from the University of Edinburgh Collections</a></h2>
+                <h2><a href="./astronomyvictorious" alt="Astronomy Victorious" title="Astronomy Victorious">Astronomy Victorious: Understanding our Universe</a></h2>
+                <p>27 July - 27 October 2018</p>
+                <a href="./astronomyvictorious" alt="Astronomy Victorious" title="Astronomy Victorious">
+                    <div id="exhib-tile-19"></div>
+                </a>
+
+                <p>Featuring Copernicus’ 1543 ground-breaking book On the Revolutions of Heavenly Spheres, meteorites, star charts,
+                    scientific instruments and Katie Paterson’s contemporary artwork Timepieces, this exhibition charts our fascination with,
+                    exploration of and responses to outer space.
+                </p>
+            </div>
+            <div>
+                <h2><a href="./dawnera" alt="Dawn of a New Era" title="Dawn of a New Era Information Page">Dawn of a New Era</a></h2>
                 <p>13th April - 15 August 2018</p>
-                <a href="./dawnera" alt="Shored Against Ruin" title="Shored Against Ruin">
+                <a href="./dawnera" alt="Dawn of a New Era" title="Dawn of a New Era">
                     <div id="exhib-tile-18"></div>
                 </a>
 
