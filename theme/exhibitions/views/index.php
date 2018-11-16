@@ -3,7 +3,8 @@
         <h1>CURRENT EXHIBITIONS:</h1><h1> <a href="./rarebooks" alt="Rare Books"
                                            title="Rare Books">Rare Books? Expect the Unexpected</a></h1>
         <h3>Main Library Exhibition Gallery – Ground Floor<br/>
-            30 November 2018 – 2 March 2019; Monday - Saturday, 10:00 - 17:00</h3>
+            30 November 2018 – 2 March 2019; Monday - Saturday, 10:00 - 17:00<br/>
+            Christmas closure dates : 23 December – 2 January</h3>
             <div id="rare-banner"></div>
 
         <div id="past-exhib-block">
