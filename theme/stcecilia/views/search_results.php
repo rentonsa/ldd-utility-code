@@ -57,9 +57,19 @@
                         }
                         else
                         {
-
-
-                            $linkURI = str_replace('full/full', 'full/!300,300', $linkURI);
+                            $linkURI = str_replace('full/full', 'full/96,', $linkURI);
+                            list($width, $height) = getimagesize($linkURI);
+                            $portrait = true;
+                            if ($width > $height)
+                            {
+                                $parms = '/180,';
+                            }
+                            else
+                            {
+                                $parms = '/,220';
+                            }
+                            $linkURI = str_replace('full/96,', 'full'.$parms, $linkURI);
+                            
                             $thumbnailLink = 'href="./record/' . $doc['id'] . '" title = "' . $doc[$title_field][0] . '"';
                             $thumbnailImg = '<img class="img-responsive record-thumbnail-search" src="' . $linkURI . '"  title="' . $doc[$title_field][0] . '" />';
                         }
