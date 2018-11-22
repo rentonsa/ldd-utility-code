@@ -391,4 +391,8 @@ q:after                             { content: close-quote;  }
     }
 
 }
-
+#openseadragon {
+    height: 700px;
+    width:100%;
+    text-align:center;
+}

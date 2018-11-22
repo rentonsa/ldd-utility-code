@@ -15,13 +15,13 @@
             foreach ($related_items as $index => $doc) {
             ?>
                 <li class="list-group-item">
-                    <a class="related-record" href="./record/<?php echo $doc['id']?>/<?php echo $doc['types'][0]?>"><?php echo strip_tags($doc[$title_field][0]); ?></a>
+                    <a class="related-record" href="./record/<?php echo $doc['id']?>/<?php //echo $doc['types'][0]?>"><?php echo strip_tags($doc[$title_field][0]); ?></a>
                     <?php
                     if (isset($doc["component_id"])) {
                         $component_id = $doc["component_id"];
                         echo'<div class="component_id">' . $component_id . '</div>';
                     } ?>
-                    <?php echo $doc["dates"]; ?>
+                    <?php //echo $doc["dates"]; ?>
                 </li>
             <?php }
 

@@ -1,16 +1,26 @@
 <div class="record">
     <div class="content byEditor">
-        <h1>CURRENT EXHIBITIONS:</h1><h1> <a href="./astronomyvictorious" alt="Astronomy Victorious"
-                                           title="Astronomy Victorious">Astronomy Victorious: Understanding our Universe</a></h1>
+        <h1>CURRENT EXHIBITIONS:</h1><h1> <a href="./rarebooks" alt="Rare Books"
+                                           title="Rare Books">Rare Books? Expect the Unexpected</a></h1>
         <h3>Main Library Exhibition Gallery – Ground Floor<br/>
-            27 July – 27 October 2018; Monday - Saturday, 10:00 - 17:00</h3>
-            <div id="astro-banner"></div>
+            30 November 2018 – 2 March 2019; Monday - Saturday, 10:00 - 17:00<br/>
+            Christmas closure dates : 23 December – 2 January</h3>
+            <div id="rare-banner"></div>
 
         <div id="past-exhib-block">
             <h1><a href="./past" alt="Past Exhibitions" title="Past Exhibitions">Past Exhibitions</a>:</h1>
             <div>
 
                     <ul class="ex-list">
+                        <li class="past-ex">
+                            <a href="./astronomyvictorious" alt="Astronomy Victorious" title="Astronomy Victorious">
+                                <div id="exhib-tile-19"></div>
+                            </a>
+                            <h3><a href="./astronomyvictorious" alt="Astronomy Victorious" title="Astronomy Victorious">Astronomy Victorious</a></h3>
+                            <h3><i class="fa fa-search">&nbsp;</i> Coming Soon</h3>
+                            <p> 27th Jul - 27th Oct 2018</p>
+
+                        </li>
                         <li class="past-ex">
                             <a href="./dawnera" alt="Dawn of a New Era" title="Dawn of a New Era">
                                 <div id="exhib-tile-18"></div>
@@ -38,6 +48,11 @@
                             <p> 13th Apr - 15th Jun 2018</p>
 
                         </li>
+                    </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div>
+                <ul class="ex-list">
                         <li class="past-ex">
                             <a href="./sar" alt="Shored Against Ruin" title="Shored Against Ruin">
                                 <div id="exhib-tile-15"></div>
@@ -47,11 +62,7 @@
                             <p>8 Dec 2017 – 24 Feb 2018</p>
 
                         </li>
-                    </ul>
-            </div>
-            <div class="clearfix"></div>
-            <div>
-                <ul class="ex-list">
+
                         <li class="past-ex">
                             <a href="./incend" alt="Incendiary Texts" title="Incendiary Texts">
                                 <div id="exhib-tile-14"></div>
@@ -82,7 +93,11 @@
 
                         </li>
 
-
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div>
+                <ul class="ex-list">
 
 
                         <li class="past-ex">
@@ -94,11 +109,6 @@
                             <p>29th Jul - 26th Nov 2016</p>
 
                         </li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-            <div>
-                <ul class="ex-list">
                         <li class="past-ex">
                             <a href="./revel" alt="Brown Paper and Imagination" title="Brown Paper and Imaginationn">
                                 <div id="exhib-tile-10"></div>
@@ -127,7 +137,11 @@
                             <p>31 Jul - 31 Oct 2015</p>
 
                         </li>
-
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div>
+                <ul class="ex-list">
                         <li class="past-ex">
                             <a href="./somethingblue" alt="...Something Blue" title="...Something Blue">
                                 <div id="exhib-tile-7"></div>
@@ -137,11 +151,6 @@
                             <p>2 Apr - 27 Jun 2015</p>
 
                         </li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-            <div>
-                <ul class="ex-list">
                         <li class="past-ex">
                             <a href="./emmagillies" alt="Emma Gillies" title="Emma Gillies">
                                 <div id="exhib-tile-6"></div>
@@ -172,6 +181,11 @@
                             <p>28 Mar - 14 Jun 2014</p>
 
                         </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div>
+                <ul class="ex-list">
                     <li class="past-ex">
                             <a href="./collected" alt="Collect.ed" title="Collect.ed">
                                 <div id="exhib-tile-3"></div>
@@ -181,11 +195,6 @@
                             <p>6 Dec 2013 - 1 Mar 2014</p>
 
                         </li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-            <div>
-                <ul class="ex-list">
                         <li class="past-ex">
                             <a href="./cradle" alt="Cradle of Chemistry" title="Cradle of Chemistry">
                                 <div id="exhib-tile-4"></div>

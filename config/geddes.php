@@ -4,7 +4,7 @@ $config['skylight_appname'] = 'geddes';
 
 // set the base url and ga code
 if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
-    $config['skylight_container_id'] = '72';
+    $config['skylight_container_id'] = '82';
 }
 else {
     $config['base_url'] = 'https://openbooks.is.ed.ac.uk/';
@@ -33,14 +33,16 @@ $config['skylight_fields'] = array('Title' => 'dc.title.en',
     'Description' => 'dc.description.en',
     'Extent' => 'dc.extent.en',
     'Related Work' => 'dc.relation.en',
-    'Places' => 'dc.coverage',
+    'Places' => 'dc.coverage.en',
     'Identifier' => 'dc.identifier.en',
     'Publisher' => 'dc.publisher.en',
     'Link' => 'dc.identifier.uri.en',
     'Subject' => 'dc.subject.en',
-    'Date' => 'dc.date.en',
+    'Date' => 'dc.date.issued.en', //should be dc.coverage.temporal.en
     'Rights' => 'dc.rights.en',
-    'Source' => 'dc.source.en'
+    'Source' => 'dc.source.en',
+    'Parent' => 'dc.relation.ispartof.en',
+    'ImageUri' => 'dc.identifier.imageUri.en'
 
 );
 
@@ -49,7 +51,7 @@ $config['skylight_schema_links'] = array(
 );
 
 $config['skylight_date_filters'] = array();
-$config['skylight_filters'] = array('Author' => 'author_filter', 'Subject' => 'subject_filter', 'Collection' => 'collection_filter','Date' => 'datetemporal_filter');
+$config['skylight_filters'] = array('Author' => 'creator_filter', 'Subject' => 'subject_filter', 'Collection' => 'publisher_filter','Date' => 'datetemporal_filter');
 $config['skylight_filter_delimiter'] = ':';
 
 $config['skylight_meta_fields'] = array('Title' => 'dc.title.en',
@@ -70,7 +72,8 @@ $config['skylight_recorddisplay'] = array('Title',
     'Subject',
     'Date',
     'Rights',
-    'Source');
+    'Source',
+    'Parent');
 
 $config['skylight_searchresult_display'] = array('Title',
     'Author' ,    'Subject',
@@ -96,7 +99,7 @@ $config['skylight_feed_fields'] = array('Title' => 'Title',
     'Description' => 'Abstract',
     'Date' => 'Date');
 
-$config['skylight_results_per_page'] = 10;
+$config['skylight_results_per_page'] = 30;
 $config['skylight_share_buttons'] = false;
 
 $config['skylight_homepage_recentitems'] = false;

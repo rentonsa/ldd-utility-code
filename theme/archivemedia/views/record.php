@@ -20,7 +20,8 @@ $image_id = "";
 $accno = '';
 //Insert Schema.org
 $schema = $this->config->item("skylight_schema_links");
-if(isset($solr[$type_field])) {
+if(isset($solr[$type_field]))
+{
     $type = "media-" . strtolower(str_replace(' ','-',$solr[$type_field][0]));
 }
 
@@ -33,6 +34,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
         $b_seq = $b_segments[4];
         $bitstream_array[$b_seq] = $bitstream_for_array;
     }
+
     ksort($bitstream_array);
     $mainImage = false;
     $videoFile = false;
@@ -43,6 +45,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
     $jsonLink = "";
     $pdfLink = "";
     $b_seq =  "";
+
     foreach($bitstream_array as $bitstream)
     {
         $mp4ok = false;
@@ -56,6 +59,35 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
         $b_seq = $b_segments[4];
         $b_handle_id = preg_replace('/^.*\//', '',$b_handle);
         $b_uri = './record/'.$b_handle_id.'/'.$b_seq.'/'.$b_filename;
+        if ((strpos($b_uri, ".jpg") > 0) or (strpos($b_uri, ".JPG") > 0))
+        {
+            // if there are thumbnails
+            if(isset($solr[$thumbnail_field]))
+            {
+                foreach ($solr[$thumbnail_field] as $thumbnail)
+                {
+                    $t_segments = explode("##", $thumbnail);
+                    $t_filename = $t_segments[1];
+
+                    if ($t_filename === $b_filename . ".jpg")
+                    {
+                        $t_handle = $t_segments[3];
+                        $t_seq = $t_segments[4];
+                        $t_uri = './record/'.$b_handle_id.'/'.$t_seq.'/'.$t_filename;
+
+                        $thumbnailLink[$numThumbnails] = '<div class="thumbnail-tile';
+
+                        if($numThumbnails % 4 === 0)
+                        {
+                            $thumbnailLink[$numThumbnails] .= ' first';
+                        }
+                        $thumbnailLink[$numThumbnails] .= '"><a title = "' . $record_title . '" class="fancybox" rel="group" href="' . $b_uri . '"> ';
+                        $thumbnailLink[$numThumbnails] .= '<img src = "'.$t_uri.'" class="record-thumbnail" title="'. $record_title .'" /></a></div>';
+                        $numThumbnails++;
+                    }
+                }
+            }
+        }
         if ((strpos($b_uri, ".mp3") > 0) or (strpos($b_uri, ".MP3") > 0))
         {
             //Insert Schema for deetcting Audio
@@ -160,381 +192,31 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
         </div>
     </div>
 
-    <?php
-    $numThumbnails = 0;
-    $imageCounter = 0;
-    if (isset($solr[$image_uri_field])) {
-        foreach ($solr[$image_uri_field] as $imageUri) {
-            if (strpos($imageUri, 'luna') > 0) {
-                $tileSource = str_replace('full/full/0/default.jpg', 'info.json', $imageUri);
-                $iiifmax = $imageUri;
-                //check portrait or landscape to generate tile size
-                list($width, $height) = getimagesize($iiifmax);
-                $portrait = true;
-                if ($width > $height) {
-                    $portrait = false;
-                }
-                $json = file_get_contents($tileSource);
-                $jobj = json_decode($json, true);
-                $error = json_last_error();
-                $jsoncontext[$imageCounter] = $jobj['@context'];
-                $jsonid[$imageCounter] = $jobj['@id'];
-                $jsonheight[$imageCounter] = $jobj['height'];
-                $jsonwidth[$imageCounter] = $jobj['width'];
-                $jsonprotocol[$imageCounter] = $jobj['protocol'];
-                $jsontiles[$imageCounter] = $jobj['tiles'];
-                $jsonprofile[$imageCounter] = $jobj['profile'];
-                $portrait = true;
-                if ($width > $height) {
-                    $jsontilesize[$imageCounter] = $jsontiles[$imageCounter][0]['width'];
-                    $portrait = false;
-                } else {
-                    $jsontilesize[$imageCounter] = $jsontiles[$imageCounter][0]['height'];
-                }
-
-                $imageCounter++;
-            }
-        }
-        echo "<div id='imageCounter' style='display:none;'>$imageCounter</div>";
-        echo "<div class ='imageContainer'>";
-        $divCounter = 0;
-        $freshIn = true;
-        while ($divCounter < $imageCounter) {
-
-            if (!$mainImage) {
-                $mainImageTest = true;
-                ?>
-                <div class="full-image">
-                    <div id="openseadragon<?php echo $divCounter; ?>" class="image-toggle"<?php if (!$freshIn) {
-                        echo ' style="display:none;"';
-                    } else {
-                        echo ' style="display:block;"';
-                    } ?>>
-                        <script type="text/javascript">
-                            OpenSeadragon({
-                                id: "openseadragon<?php echo $divCounter; ?>",
-                                prefixUrl: "<?php echo base_url();?>theme/mimed/images/buttons/",
-                                preserveViewport: false,
-                                visibilityRatio: 1,
-                                minZoomLevel: 0,
-                                defaultZoomLevel: 0,
-                                panHorizontal: true,
-                                sequenceMode: true,
-                                tileSources: [{
-                                    "@context": "<?php echo $jsoncontext[$divCounter] ?>",
-                                    "@id": "<?php echo $jsonid[$divCounter] ?>",
-                                    "height": <?php echo $jsonheight[$divCounter] ?>,
-                                    "width": <?php echo $jsonwidth[$divCounter] ?>,
-                                    "profile": ["http://iiif.io/api/image/2/level2.json",
-                                        {
-                                            "formats": ["gif", "pdf"]
-                                        }
-                                    ],
-                                    "protocol": "<?php echo $jsonprotocol[$divCounter] ?>",
-                                    "tiles": [{
-                                        "scaleFactors": [1, 2, 8, 16, 32],
-                                        "width": <?php echo $jsonheight[$divCounter];?>,
-                                        "height": <?php echo $jsonwidth[$divCounter];?>
-                                    }],
-                                    "tileSize":<?php echo $jsontilesize[$divCounter];?>
-                                }]
-                            });
-                        </script>
-                    </div>
-                </div>
-
-
-                <?php
-            }
-            $divCounter++;
-            $freshIn = false;
-        }
-
-        echo '</div>';
-        if(isset($solr[$acc_no_field])) {
-            $accno =  $solr[$acc_no_field][0];
-        }
-
-        $manifestURI = "https://test.librarylabs.ed.ac.uk/files/".$accno.".json";
-        $numThumbnails = 0;
-        $imageset = false;
-        $thumbnailLink = array();
-        $countThumbnails = count($solr[$image_uri_field]);
-
-        $widthtotal = 0;
-        $i = 0;
-        foreach ($solr[$image_uri_field] as $imageURI)
-        {
-            $imageURI = str_replace('http', 'https', $imageURI);
-            $imagefull[$i] = $imageURI;
-            list($fullwidth, $fullheight) = getimagesize($imagefull[$i]);
-            //echo 'WIDTH'.$width.'HEIGHT'.$height
-            if ($fullwidth > $fullheight) {
-                $parms = '/150,/0/';
-            } else {
-                $parms = '/,150/0/';
-            }
-
-            $imagesmall[$i] = str_replace('/full/0/', $parms, $imagefull[$i]);
-            //Insert Schema
-            echo '<span itemprop="thumbnail" style="display:none;">'. $imagesmall[$i]. '</span>';
-            list($width, $height) = getimagesize($imagesmall[$i]);
-            $widthtotal = $widthtotal + $width;
-
-            $i++;
-        }
-        if ($countThumbnails > 1)
-        {
-            if ($widthtotal > 540)
-            {
-                echo '<div class="jcarousel-wrapper">
-               <div class="jcarousel" data-jcarousel="true">
-               <ul >';
-            }
-            else
-            {
-                echo ' <div class="thumb-strip">';
-            }
-
-            for ($numThumbnails = 0; $numThumbnails<$countThumbnails; $numThumbnails++)
-            {
-                if ($widthtotal > 540)
-                {
-                    $thumbnailLink[$numThumbnails] = '<li>';
-                }
-                else
-                {
-                    $thumbnailLink[$numThumbnails] = '';
-                }
-                $thumbnailLink[$numThumbnails] .= '<label class="image-toggler" data-image-id="#openseadragon' . $numThumbnails . '">';
-                $thumbnailLink[$numThumbnails] .= '<input type="radio" name="options" id="option' . $numThumbnails . '">';
-
-                $thumbnailLink[$numThumbnails] .= '<img src = "' . $imagesmall[$numThumbnails] . '" class="record-thumb-strip" title="' . $solr[$title_field][0];
-
-                $manifest = str_replace("iiif/", "iiif/m/", $imagefull[$numThumbnails]);
-                $manifest = str_replace("full/full/0/default.jpg", "manifest", $manifest);
-
-                $json = file_get_contents($manifest);
-
-                $jobj = json_decode($json, true);
-                //print_r ($jobj);
-                $error = json_last_error();
-                $jsonMD = $jobj['sequences'][0]['canvases'][0]['metadata'];
-                $rights = '';
-                $photographer = '';
-                $photoline = '';
-                foreach ($jsonMD as $jsonMDPair)
-                {
-
-                    if ($jsonMDPair['label'] == 'Repro Creator Name')
-                    {
-                        $photographer = str_replace("<span>", "", $jsonMDPair['value']);
-                        $photographer = str_replace("</span>", "", $photographer);
-                    }
-                    if ($jsonMDPair['label'] == 'Repro Rights Statement')
-                    {
-                        $rights = str_replace("<span>", "", $jsonMDPair['value']);
-                        $rights = 'Photograph '.str_replace("</span>", "", $rights);
-                    }
-
-                }
-                if ($photographer !== '')
-                {
-                    $photoline = ' Photo by '.$photographer;
-                }
-                $thumbnailLink[$numThumbnails] .= '. '. $photoline.' '.$rights.'"/></label>';
-
-                if ($widthtotal > 540)
-                {
-                    $thumbnailLink[$numThumbnails] .= '</li>';
-                }
-                else
-                {
-                    $thumbnailLink[$numThumbnails] .= '';
-                }
-                echo $thumbnailLink[$numThumbnails];
-
-                $imageset = true;
-
-            }
-
-            if ($widthtotal > 540)
-            {
-                echo '</ul>
-                </div>
-                <a class="jcarousel-control-prev" href="'.$_SERVER['REQUEST_URI'].'/#" data-jcarouselcontrol="true">‹</a>
-                <a class="jcarousel-control-next" href="'.$_SERVER['REQUEST_URI'].'/#" data-jcarouselcontrol="true">›</a>';
-            }
-            echo '</div>';
-        }
-
-        else
-        {
-
-            $imageUri = $solr[$image_uri_field] ;
-
-            $manifest = str_replace("iiif/", "iiif/m/", $imageURI);
-            $manifest = str_replace("full/full/0/default.jpg", "manifest", $manifest);
-
-            $json = file_get_contents($manifest);
-
-            $jobj = json_decode($json, true);
-            //print_r ($jobj);
-            $error = json_last_error();
-            $jsonMD = $jobj['sequences'][0]['canvases'][0]['metadata'];
-            $rights = '';
-            $photographer = '';
-            $photoline = '';
-            $mdexists = false;
-            foreach ($jsonMD as $jsonMDPair)
-            {
-
-                if ($jsonMDPair['label'] == 'Repro Creator Name')
-                {
-                    $photographer = str_replace("<span>", "", $jsonMDPair['value']);
-                    $photographer = ' Photo by '.str_replace("</span>", "", $photographer).' ';
-                    $mdexists = true;
-                }
-                if ($jsonMDPair['label'] == 'Repro Rights Statement')
-                {
-                    $rights = str_replace("<span>", "", $jsonMDPair['value']);
-                    $rights = "Photograph ". str_replace("</span>", "", $rights);
-                    $mdexists = true;
-                }
-            }
-            if ($mdexists)
-            {
-                echo '<div class="json-link">';
-                echo '<p>'.$photographer.$rights.'</p>';
-                echo '</div>';
-            }
-        }
-        ?>
-
-
-
-
-        <div class = "json-link">
-            <p>
-                <?php if (isset($jsonLink)){echo $jsonLink;} ?>
-            </p>
-        </div>
-    <?php } ?>
-
-<!--Insert Schema.org-->
     <div class="full-metadata">
 
             <table>
                 <tbody>
                 <?php $excludes = array(""); ?>
                 <?php
-                $viafvalue = '';
-                $isnivalue = '';
-                $lcvalue = '';
-                $isni = '';
-                $viaf = '';
-                $lc = '';
 
-                $artistcount = 0;
-                foreach($recorddisplay as $key)
-                {
-                    //Find out how many artists we have for authority permalink generation
-                    if ($key == 'Artist')
-                    {
-                        $artistcount++;
-                    }
-                }
                 foreach($recorddisplay as $key) {
                     $element = $this->skylight_utilities->getField($key);
-                    if(isset($solr[$element])) {
-                        if(!in_array($key, $excludes)) {
-                            //Generate Permalinks for artist name
-                            if ($key == "Permalink")
+                    if(isset($solr[$element]))
+                    {
+                        echo '<tr><th>' . $key . '</th><td>';
+                        foreach ($solr[$element] as $index => $metadatavalue)
+                        {
+                            echo $metadatavalue;
+                            if ($index < sizeof($solr[$element]) - 1)
                             {
-                                //Do not attempt to attribute authority link if we have > 1 artist, as there is no direct relationship in the metadata
-                                if ($artistcount == 1) {
-                                    foreach ($solr[$element] as $index => $metadatavalue) {
-                                        if (strpos($metadatavalue, "viaf") > 0) {
-                                            $viafvalue = $metadatavalue;
-                                        } else if (strpos($metadatavalue, "isni") > 0) {
-                                            $isnivalue = $metadatavalue;
-                                        } else if (strpos($metadatavalue, "gov") > 0) {
-                                            $lcvalue = $metadatavalue;
-                                        }
-                                    }
-                                }
-                            }
-                            else
-                            {
-                                echo '<tr><th>' . $key . '</th><td>';
-                                foreach ($solr[$element] as $index => $metadatavalue) {
-                                    // if it's a facet search
-                                    // make it a clickable search link
-                                    if (in_array($key, $filters) && $key != "Artist") {
-                                        $orig_filter = urlencode($metadatavalue);
-                                        $lower_orig_filter = strtolower($metadatavalue);
-                                        $lower_orig_filter = urlencode($lower_orig_filter);
-
-                                        //Insert Schema.org
-                                        if (isset ($schema[$key]))
-                                        {
-                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
-                                        }
-                                        else
-                                        {
-                                            echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a>';
-                                        }
-
-                                    } else {
-                                        if ($key == "Artist") {
-                                            //for artist, add superscript authority links if available
-                                            if ($viafvalue !== '') {
-                                                $viaf = '<a href = "' . $viafvalue . '" target = "_blank"><sup>VIAF</sup></a>';
-                                            }
-                                            if ($isnivalue !== '') {
-                                                $isni = '<a href = "' . $isnivalue . '" target = "_blank"><sup>ISNI</sup></a>';
-                                            }
-                                            if ($lcvalue !== '') {
-                                                $lc = '<a href = "' . $lcvalue . '" target = "_blank"><sup>LC</sup></a>';
-                                            }
-
-                                            //Insert Schema.org
-
-                                            if (isset ($schema[$key]))
-                                            {
-                                                echo '<span itemprop="' . $schema[$key] . '">' . $metadatavalue . ' ' . $viaf . ' ' . $isni . ' ' . $lc . "</span>";
-                                            }
-
-                                            else
-
-                                            {
-                                                echo $metadatavalue . ' ' . $viaf . ' ' . $isni . ' ' . $lc;
-                                            }
-
-                                        }
-                                        else {
-
-                                            if (isset ($schema[$key]))
-                                            {
-                                                echo '<span itemprop="'.$schema[$key].'">'. $metadatavalue. "</span>";
-                                            }
-                                            else
-                                            {
-                                                echo $metadatavalue;
-                                            }
-
-                                        }
-                                    }
-                                    if ($index < sizeof($solr[$element]) - 1) {
-                                        echo '; ';
-                                    }
-                                }
-                                echo '</td></tr>';
+                                echo '; ';
                             }
 
+                            echo '</td></tr>';
                         }
                     }
-                } ?>
+                }
+                 ?>
 
                 <?php
                 $i = 0;
@@ -553,6 +235,39 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
     if(isset($solr[$bitstream_field]) && $link_bitstream)
     {
         echo '<div class="record_bitstreams">';
+
+        $i = 0;
+        $newStrip = false;
+
+        if($numThumbnails > 0) {
+
+            echo '<div class="thumbnail-strip">';
+
+            foreach($thumbnailLink as $thumb) {
+
+                if($newStrip)
+                {
+
+                    echo '</div><div class="clearfix"></div>';
+                    echo '<div class="thumbnail-strip">';
+                    echo $thumb;
+                    $newStrip = false;
+                }
+                else {
+
+                    echo $thumb;
+                }
+
+                $i++;
+
+                // if we're starting a new thumbnail strip
+                if($i % 4 === 0) {
+                    $newStrip = true;
+                }
+            }
+            echo '</div><div class="clearfix"></div>';
+        }
+
         if($audioFile) {
             echo '<br><br>'.$audioLink;
         }
