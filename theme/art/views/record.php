@@ -273,7 +273,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
 
             $imagesmall[$i] = str_replace('/full/0/', $parms, $imagefull[$i]);
             //Insert Schema
-            echo '<span itemprop="thumbnail" style="display:none;">'. $imagesmall[$i]. '</span>';
+            echo '<span itemprop="thumbnailUrl" style="display:none;">'. $imagesmall[$i]. '</span>';
             list($width, $height) = getimagesize($imagesmall[$i]);
             $widthtotal = $widthtotal + $width;
 
