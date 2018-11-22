@@ -313,7 +313,7 @@ foreach($recorddisplay as $key)
             list($width, $height) = getimagesize($linkURI);
             $imagesmall = str_replace ('full/full/0/default.jpg', 'full/150,/0/default.jpg', $linkURI);
             //Insert Schema for thumbnail
-            echo '<span itemprop="thumbnail" style="display:none;">'. $imagesmall. '</span>';
+            echo '<span itemprop="thumbnailUrl" style="display:none;">'. $imagesmall. '</span>';
             $portrait = true;
             if ($width > $height)
             {

@@ -47,12 +47,11 @@
                     $linkURI = $doc[$link_uri_field][0];
                     //$linkURI = str_replace('/full/full/0/default.jpg','', $linkURI);
 
-                    if (strpos($linkURI, 'luna') > 0 )
-                    {
+                    if (strpos($linkURI, 'luna') > 0 ) {
                         //change to stop LUNA erroring on redirect
                         $linkURI = str_replace('http://', 'https://', $linkURI);
                         if (false === $content) {
-                            $thumbnailLink  =  'href="./record/'.$doc['id'].'" title = "'. $doc[$title_field][0].'"';
+                            $thumbnailLink = 'href="./record/' . $doc['id'] . '" title = "' . $doc[$title_field][0] . '"';
                             $thumbnailImg = '<img class="img-responsive record-thumbnail-search" src="../theme/stcecilia/images/comingsoon.gif"  title="' . $doc[$title_field][0] . '" />';
                         }
                         else
@@ -60,6 +59,7 @@
                             $linkURI = str_replace('full/full', 'full/96,', $linkURI);
                             list($width, $height) = getimagesize($linkURI);
                             $portrait = true;
+
                             if ($width > $height)
                             {
                                 $parms = '/180,';
@@ -69,7 +69,7 @@
                                 $parms = '/,220';
                             }
                             $linkURI = str_replace('full/96,', 'full'.$parms, $linkURI);
-                            
+
                             $thumbnailLink = 'href="./record/' . $doc['id'] . '" title = "' . $doc[$title_field][0] . '"';
                             $thumbnailImg = '<img class="img-responsive record-thumbnail-search" src="' . $linkURI . '"  title="' . $doc[$title_field][0] . '" />';
                         }
