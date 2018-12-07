@@ -11,65 +11,86 @@ $location = $this->skylight_utilities->getField("Map Reference");
 $iiifJson = isset( $solr[$imageURI] ) ? $solr[$imageURI][0] : "";
 
 //Image setup
-$image_name = isset( $solr[$coverImageName][0] ) ? $solr[$coverImageName][0] : "missing.jpg";
+if (isset( $solr[$coverImageName][0] )){
+    $image_name = $solr[$coverImageName][0];
+}
+else{
+    $collection_id = '10683';
+    $id = end(explode('/', $_SERVER['REQUEST_URI']));
+    $image_name = get_dspace_bitstream($collection_id, $id);
+}
+
 $imageServer = $this->config->item('skylight_image_server');
 
 if($iiifJson != "") {
     $coverImageJSON = str_replace($iiifJson, '/full/full/0/default.jpg', '/info.json');
     $json = file_get_contents($iiifJson);
-} else {
-    $coverImageJSON = $imageServer . "/iiif/2/" . $image_name;
-    $json = file_get_contents($coverImageJSON);
 }
-
-////Image variables setup
-//$coverImageJSON = "http://test.cantaloupe.is.ed.ac.uk/iiif/2/" . $solr[$coverImageName][0];
-//$coverImageURL = $coverImageJSON . '/full/full/0/default.jpg';
-//$coverImage = '<img class="record-image" src ="' .$coverImageURL .'"/>';
-//Image variables setup
-//$imageNames = [];
-//$imageNames = ['1.jpg', '2.jpg', '3.jpeg', '4.jpg'];
-echo '<script>var imageSource = [];</script>';
-$imagetot = 0;
-foreach($solr[$imageURI] as $imageno)
-{
-    $imagetot++;
+else {
+    $coverImageJSON = $image_name;
 }
-for($i=0;$i<$imagetot;$i++){
-   // $coverImageJSON = "http://127.0.0.1:8182/iiif/2/" . $imageNames[$i];
-   // $coverImageURL = $coverImageJSON . '/full/full/0/default.jpg';
-    $coverImageURL = $solr[$imageURI][$i];
-    $coverImageURL = str_replace('http', 'https', $coverImageURL);
-    $coverImageJSON = str_replace('/full/full/0/default.jpg','/info.json', $coverImageURL);
-    $coverImage = '<img class="record-image" src ="' .$coverImageURL .'"/>';
-    $osjsonid = str_replace('/info.json','', $coverImageJSON);
-    $json =  file_get_contents($coverImageJSON);
-    $jobj = json_decode($json, true);
-    $error = json_last_error();
-    $jsonheight = $jobj['height'];
-    $jsonwidth = $jobj['width'];
+if(isset($solr[$coverImageName][0])) {
+  echo '<script>var imageSource = [];</script>';
+  $imagetot = 0;
+  foreach($solr[$imageURI] as $imageno)
+  {
+      $imagetot++;
+  }
+  for($i=0;$i<$imagetot;$i++){
+      $coverImageURL = $solr[$imageURI][$i];
+      $coverImageURL = str_replace('http', 'https', $coverImageURL);
+      $coverImageJSON = str_replace('/full/full/0/default.jpg','/info.json', $coverImageURL);
+      $coverImage = '<img class="record-image" src ="' .$coverImageURL .'"/>';
+      $osjsonid = str_replace('/info.json','', $coverImageJSON);
+      $json =  file_get_contents($coverImageJSON);
+      $jobj = json_decode($json, true);
+      $error = json_last_error();
+      $jsonheight = $jobj['height'];
+      $jsonwidth = $jobj['width'];
+      $size = $jsonheight;
+      if ($size < $jsonwidth){
+        $size = $jsonwidth;
+      }
+      echo '
+      <script>
+      imageSource[' . $i . '] = {
+          "@context": "http://iiif.io/api/image/2/context.json",
+              "@id": "' . $osjsonid . '",
+              "height": ' . $jsonheight . ',
+              "width": ' . $jsonwidth . ',
+              "profile": ["http://iiif.io/api/image/2/level2.json",
+                  {
+                      "formats": ["jpg"]
+                  }
+              ],
+              "protocol": "http://iiif.io/api/image",
+              "tiles": [{
+              "scaleFactors": [1, 2, 8, 16, 32],
+                  "width": "'. $jsonwidth .'",
+                  "height": "'. $jsonheight .'"
+              }],
+              "tileSize": '. $size .'
+          };
+          </script>';
+  }
+}
+else{
+    echo '<script>var imageSource = [];</script>';
+    $collection_id = '10683';
+    $id = end(explode('/', $_SERVER['REQUEST_URI']));
+    $image_name = get_dspace_bitstream($collection_id, $id);
+    $coverImage = '<img class="record-image" src ="' .$image_name .'"/>';
     echo '
     <script>
-    imageSource[' . $i . '] = {
-        "@context": "http://iiif.io/api/image/2/context.json",
-            "@id": "' . $osjsonid . '",
-            "height": ' . $jsonheight . ',
-            "width": ' . $jsonwidth . ',
-            "profile": ["http://iiif.io/api/image/2/level2.json",
-                {
-                    "formats": ["jpg"]
-                }
-            ],
-            "protocol": "http://iiif.io/api/image",
-            "tiles": [{
-            "scaleFactors": [1, 2, 8, 16, 32],
-                "width": "750",
-                "height": "750"
-            }],
-            "tileSize": 750
-        };
-        </script>';
+    imageSource[0] = {
+      type: "image",
+      url:  "'.$image_name.'",
+      buildPyramid: true
+      };
+      </script>';
 }
+
+
 ?>
 
 
@@ -95,11 +116,7 @@ for($i=0;$i<$imagetot;$i++){
         <h2 id="next-pic"></h2>
     </div>
 
-    <div id="openseadragon" class="cover-image-container full-width">
-    </div>
-
-
-    <!--Page-specific script to load the record image-->
+    <div id="openseadragon" class="cover-image-container full-width"></div>
     <script>
         var imageURL = <?php echo json_encode($osjsonid); ?>;
         var imageHeight = <?php echo json_encode($jsonheight); ?>;
@@ -107,20 +124,39 @@ for($i=0;$i<$imagetot;$i++){
     </script>
     <script src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/js/openseadragon.min.js"></script>
     <script src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/js/openseadragonconfig.js"></script>
-
-
-
-
-    <h3 class="more-info" onclick="$.scrollify.next();">&#x1D55A;</h3>
+    <h3 class="more-info" onclick="$.scrollify.next();">Information</h3>
 </section>
 <section class="section-divisor hidden-sm hidden-xs"></section>
 
 <section class="info-view full-height-section scroll">
-    <div class="record-info col-xs-12 col-md-5 col-md-offset-1">
+    <div class="record-info col-md-4 col-md-offset-2">
         <h2 class="itemtitle">
             <?php echo $solr[$title][0] ?>
         </h2>
+        <?php echo '<img style="display: block; box-shadow: 5px 5px 5px rgb(220, 220, 220); margin-bottom: 10px;" width = "100%" src ="' .$coverImageURL .'"/>'; ?>
+
         <div class="description">
+            <?php
+            $id = end(explode('/', $_SERVER['REQUEST_URI']));
+            if ($id == "124625"){
+              echo '<video width="100%"  controls>
+                    <source src="../theme/public-art/videos/william_darrell.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>';
+            }
+            if ($id == "124626"){
+              echo '<video width="100%"  controls>
+                    <source src="../theme/public-art/videos/david_forsyth.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>';
+            }
+            if ($id == "156608"){
+              echo '<video width="100%"  controls>
+                    <source src="../theme/public-art/videos/nathan_coley.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>';
+            }
+            ?>
             <?php
             foreach($recorddisplay as $key) {
                 $element = $this->skylight_utilities->getField($key);
@@ -142,23 +178,16 @@ for($i=0;$i<$imagetot;$i++){
             });
         })(jQuery);
     </script>
-    <div id="map" class="col-md-5 col-md-offset-1">
-        <script>
-            $(window).bind("load", function() {
-                console.log('test');
-                <?php
-                echo 'initMap(convertToCoordinates("' . $solr[$location][0] . '"));';
-                $location = $solr[$location][0] . '", "' . addslashes($title) . '", 0, "../theme/public-art/images/pinpoint.png", 1';
-                echo 'addLocation("' . $location . ');';
-                ?>
-            });
-        </script>
-        <!--<script>
-            $(window).bind("load", function() {
-                initMap(); addLocation("<?php //echo $solr[$location][0] ?>");
-            });
-        </script>-->
-    </div>
+    <div id="map" class="col-md-2"></div>
+
+    <script>
+    //this gets the location from solr
+    <?php $map_location = explode(',',$solr[$location][0]);?>
+    //this takes the appropriate latitude and longitude from $map_location
+    lon = <?php echo $map_location[1];?>;
+    lat = <?php echo $map_location[0];?>;
+    </script>
+    <script src="../theme/public-art/map/bundle.js" ></script>
     <h4 class="back-to-search" value="Back to Search Results" onClick="history.go(-1);">Back to search</h4>
 </section>
 <div class="content hidden">

@@ -9,16 +9,14 @@
         <li><span></span></li>
     </ul>
     <div class="text-center home-search-buttons col-xs-12">
-        <form action = "./search/*:*/" class="home-search col-xs-4" method ="get">
-            <input type="hidden" name ="type" value = "images"/>
-            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button><br>
+        <a href= "./search/*:*/" class="home-search col-xs-4">
+            <i class="fa fa-search" aria-hidden="true"></i><br>
             Search art on campus
-        </form>
-        <form action = "./search/*:*/" class="home-search col-xs-4" method ="get">
-            <input type="hidden" name ="type" value = "locations"/>
-            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button><br>
-            Search by location
-        </form>
+        </a>
+        <a href= "./search/*:*/?map=true" class="home-search col-xs-4">
+            <i class="fa fa-search" aria-hidden="true"></i><br>
+            View by location
+        </a>
         <a href="./paolozzi" class="home-search col-xs-4">
             <i class="fa fa-info" aria-hidden="true"></i><br>
             Paolozzi Mosaic Project
@@ -39,4 +37,3 @@
             });
         });
     </script>
-

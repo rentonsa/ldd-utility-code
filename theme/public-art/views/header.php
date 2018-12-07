@@ -1,3 +1,6 @@
+<?php
+error_reporting(0);
+?>
 <!doctype html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
@@ -10,15 +13,13 @@
 
     <base href="<?php echo base_url() . index_page(); if (index_page() !== '') { echo '/'; } if ($this->config->item('skylight_url_prefix') != "") { echo $this->config->item('skylight_url_prefix'); echo '/'; } ?>">
 
-    <title><?php echo $page_title; ?></title>
-
     <link rel="pingback" href="<?php echo base_url() . index_page(); if (index_page() !== '') { echo '/'; } echo 'pingback'; ?>" />
 
     <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
     Remove this if you use the .htaccess -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Stuart Sounds</title>
+    <title><?php echo $page_title; ?></title>
 
     <meta name="description" content="">
     <meta name="author" content="">
@@ -41,9 +42,10 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/css/animate.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/css/loader.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/css/jquery.mCustomScrollbar.min.css">
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/lightSlider/css/lightslider.css" />
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/lightSlider/css/lightslider-custom.css" />
 
     <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA29rpRdgUXPQoVfAhO5KlO4cV55CMSMi0&callback=initMap" async defer></script>
     <script src="<?php echo base_url()?>assets/modernizr/modernizr-1.7.min.js"></script>
     <script src="<?php echo base_url()?>assets/jquery-1.11.0/jquery-1.11.0.min.js"></script>
     <script src="<?php echo base_url()?>assets/jquery-ui-1.10.4/ui/minified/jquery-ui.min.js"></script>
@@ -59,6 +61,11 @@
 
     <script src="<?php echo base_url()?>assets/google-analytics/analytics.js"></script>
 
+    <!-- Scripts added by Andy Taylor-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/lightSlider/js/lightslider.js"></script>
+    <link rel="stylesheet" href="https://openlayers.org/en/latest/css/ol.css" type="text/css">
     <!-- Google Analytics -->
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -102,6 +109,15 @@
 </head>
 
 <body>
+  <?php
+  //helper functions
+  function get_dspace_bitstream($collection_id, $item_id){
+    $url_prefix = "https://test.collectionsmanager.is.ed.ac.uk";
+    $primary_image = $url_prefix . "/" . "bitstream" . "/" . $collection_id ."/". $item_id . '/1/1.jpg';
+    $bitstreams = $primary_image;
+    return $bitstreams;
+  }
+  ?>
     <div id="loader"></div>
     <nav class="navbar navbar-fixed-top">
         <div class="container-fluid">
@@ -119,13 +135,15 @@
                     <li class="active dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Home <span class="caret"></span></a>
                         <ul class="dropdown-menu">
+                            <li><a href="https://test.collections.ed.ac.uk/public-art/#">Home</a></li>
                             <li><a href="./about">About</a></li>
                             <li><a href="./paolozzi">Paolozzi Mosaics</a></li>
                             <li><a href="./licensing">Licensing</a></li>
-                            <li><a href="./licensing">Art Collection</a></li>
+                            <li><a href="https://test.collections.ed.ac.uk/public-art/search/*:*/?map=true">Map</a></li>
                         </ul>
                     </li>
                     <li><a href="./feedback">Contact</a></li>
+                    <li><a href="https://test.collections.ed.ac.uk/public-art/search/*:*/?map=true">Map</a></li>
                     <li class="search">
                         <form role="search" action="./redirect/" method="post">
 
@@ -142,6 +160,3 @@
             </div>
         </div>
     </nav>
-
-
-

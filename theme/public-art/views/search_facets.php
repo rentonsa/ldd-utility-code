@@ -1,29 +1,27 @@
-<div class="col-md-3 col-sm-3 col-xs-12 hidden-xs" >
+<?php
+if (isset($_GET['map'])){
+  $type = 'map';
+  }
+/*
+if ($type != 'map') { ?>
+
+<div class="col-md-2 col-sm-2 col-xs-12 hidden-xs" >
 <?php if (isset($facets)) {?>
 
         <div class="sidebar-nav">
 
-            <ul class="list-group">
-                <li class="list-group-item active">
-                    <a href="">Map</a>
-                    <button class="pull-right" onclick="toggleViewMode();">Open map view</button>
-                </li>
-                <li class="list-group-item toggle-map">
-                    <div id="map">
-
-                    </div>
-                </li>
-
         <?php foreach ($facets as $facet) {
-
+        //end of quick hack
         $inactive_terms = array();
         $active_terms = array();
 
-        ?>
+        ?>      <div style="margin-top:5px; display:block; clear:both; width: 200px;">
+                <ul class="list-group">
                 <li class="list-group-item active">
                     <a href="./browse/<?php echo $facet['name']; ?>">
-                        <?php echo $facet['name'] ?>
-                    </a></li>
+                        <h4><?php echo $facet['name'] ?><h4>
+                    </a>
+                </li>
 
 
             <?php if(preg_match('/Date/',$base_search) && $facet['name'] == 'Date') {
@@ -40,6 +38,7 @@
             <?php }
             $numterms = 0;
             foreach($facet['terms'] as $term) {
+
                 if($term['active']) {
                     $active_terms[] = $term;
                 } else {
@@ -52,7 +51,7 @@
                     <?php foreach($active_terms as $term) {
                         $pattern =  '#\/'.rawurlencode($facet['name']).':%22'.preg_quote($term['name'],-1).'%22#';
                         $remove = preg_replace($pattern,'',$base_search, -1);
-                        ?><li class="list-group-item"><span class="badge"><?php echo $term['count']; ?></span>
+                        ?><li class="list-group-item"><!--<span class="badge"><?php echo $term['count']; ?></span>-->
                         <?php echo $term['display_name'];?>
                             <a class="deselect" href='<?php echo $remove;?>'><i class="fa fa-close"></i>&nbsp;</a></li>
                         <?php
@@ -61,8 +60,8 @@
             }
              foreach($inactive_terms as $term) { ?>
                     <li class="list-group-item">
-                        <span class="badge"><?php echo $term['count']; ?></span>
-                        <a href='<?php echo $base_search; ?>/<?php echo $facet['name']; ?>:"<?php echo $term['name']; ?>"<?php echo $base_parameters ?>'><?php echo $term['display_name'];?>
+                        <!--<span class="badge"><?php echo $term['count']; ?></span>-->
+                        <a href='<?php echo $base_search; ?>/<?php echo $facet['name']; ?>:"<?php echo $term['name']; ?>"<?php echo $base_parameters ?>'><span style="font-size:16px; display:block; width:200px;"><?php echo $term['display_name'];?></span>
                         </a>
                     </li>
                     <?php
@@ -78,8 +77,8 @@
                     if($term['count'] > 0) {
                         ?>
                         <li class="list-group-item">
-                            <span class="badge"><?php echo $term['count']; ?></span>
-                            <a class="deselect" href='<?php echo $remove; ?>/<?php echo $facet['name']; ?>:<?php echo $term['name']; ?><?php if(isset($operator)) echo '?operator='.$operator; ?>'><?php echo $term['display_name'];?>
+                            <!--<span class="badge" ><?php echo $term['count'];?></span>-->
+                            <a class="deselect" href='<?php echo $remove; ?>/<?php echo $facet['name']; ?>:<?php echo $term['name']; ?><?php if(isset($operator)) echo '?operator='.$operator; ?>'><h4><?php echo $term['display_name'];?></h4>
                             </a></li>
                         <?php
                     }
@@ -93,10 +92,11 @@
                         <li class="list-group-item"><a href="./browse/<?php echo $facet['name']; ?>">More ...</a></li>
                     <?php }
                 } ?>
-            </ul>
+        </ul></div>
         <?php } ?>
+
         </div>
 
 <?php } ?>
 </div>
-
+<?php } */?>

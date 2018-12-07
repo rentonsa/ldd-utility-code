@@ -21,7 +21,7 @@ $locations = array("Old College", "Central Campus and George Square", "Pollock H
                     $image_name = isset($doc[$coverImageName][0]) ? $doc[$coverImageName][0] : 'missing.jpg';
                     $title = isset($doc[$title_field][0]) ? $doc[$title_field][0] : "Untitled";
 
-                    $coverImageJSON = "http://127.0.0.1:8182/iiif/2/" . $image_name;
+                    $coverImageJSON = "https://127.0.0.1:8182/iiif/2/" . $image_name;
                     $coverImageURL = $coverImageJSON . '/full/,400/0/default.jpg';
                     $thumbnailLink = '<a  class= "record-link" href="./record/' . $doc['id'] . '" title = "' . $title . '"> ';
                     $thumbnailLink .= '<img class="img-responsive" src ="' . $coverImageURL . '" title="' . $title . '" /></a>';
@@ -47,9 +47,9 @@ $locations = array("Old College", "Central Campus and George Square", "Pollock H
 
                 <div id="map">
                     <script>
-                        $(window).bind("load", function() {
+                        /*$(window).bind("load", function() {
                             initMap(); addLocation("");
-                        });
+                        });*/
                     </script>
                 </div>
             </div>
@@ -65,9 +65,9 @@ $locations = array("Old College", "Central Campus and George Square", "Pollock H
 
             <div id="map">
                 <script>
-                    $(window).bind("load", function() {
+                    /*$(window).bind("load", function() {
                         initMap(); addLocation("");
-                    });
+                    });*/
                 </script>
             </div>
         </div>
@@ -99,5 +99,3 @@ $locations = array("Old College", "Central Campus and George Square", "Pollock H
     </section>
     <?php }} ?>
 </div>
-
-
