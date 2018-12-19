@@ -47,5 +47,5 @@
   <div class="container">
 <!--<div class="uv" data-locale="en-GB:English (GB),cy-GB:Cymraeg" data-config="/config.json" data-uri="https://librarylabs.ed.ac.uk/iiif/manifest/mahabharataFinal.json" data-collectionindex="0" data-manifestindex="0" data-sequenceindex="0" data-canvasindex="0" data-zoom="-1.0064,0,3.0128,1.3791" data-rotation="0" style="height:800px; background-color: #000"></div></div>
 <script type="text/javascript" id="embedUV" src="http://universalviewer.io/uv/lib/embed.js"></script><script type="text/javascript">/* wordpress fix */</script>-->
-      <iframe src="https://librarylabs.ed.ac.uk/iiif/uv/?manifest=https://librarylabs.ed.ac.uk/iiif/manifest/mahabharataFinal.json" width="100%" height = "800" ></iframe>
+      <iframe src="https://librarylabs.ed.ac.uk/iiif/uv/?manifest=https://librarylabs.ed.ac.uk/iiif/manifest/mahabharataFinal.json" width="100%" height = "800" allowfullscreen = "true"></iframe>
       </div>

@@ -24,7 +24,6 @@ if(isset($solr[$type_field]))
 {
     $type = "media-" . strtolower(str_replace(' ','-',$solr[$type_field][0]));
 }
-
 //we are IIIF, so the only bitstreams we're interested in are video and audio (if art ever generate any!)
 if(isset($solr[$bitstream_field]) && $link_bitstream)
 {
@@ -34,7 +33,6 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
         $b_seq = $b_segments[4];
         $bitstream_array[$b_seq] = $bitstream_for_array;
     }
-
     ksort($bitstream_array);
     $mainImage = false;
     $videoFile = false;
@@ -45,7 +43,6 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
     $jsonLink = "";
     $pdfLink = "";
     $b_seq =  "";
-
     foreach($bitstream_array as $bitstream)
     {
         $mp4ok = false;
@@ -68,15 +65,12 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
                 {
                     $t_segments = explode("##", $thumbnail);
                     $t_filename = $t_segments[1];
-
                     if ($t_filename === $b_filename . ".jpg")
                     {
                         $t_handle = $t_segments[3];
                         $t_seq = $t_segments[4];
                         $t_uri = './record/'.$b_handle_id.'/'.$t_seq.'/'.$t_filename;
-
                         $thumbnailLink[$numThumbnails] = '<div class="thumbnail-tile';
-
                         if($numThumbnails % 4 === 0)
                         {
                             $thumbnailLink[$numThumbnails] .= ' first';
@@ -163,7 +157,6 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
             $jsonLink .= '<span class ="json-link-item"><a href="https://images.is.ed.ac.uk/luna/servlet/view/search?search=SUBMIT&q='.$accno.'" class="lunalogo" title="View in LUNA"></a></span>';
             $jsonLink .= '<span class ="json-link-item"><a href="'.$manifest.'" target="_blank"  class="iiiflogo" title="IIIF manifest"></a></span>';
         }
-
     }
 }
 ?>
@@ -198,7 +191,6 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
                 <tbody>
                 <?php $excludes = array(""); ?>
                 <?php
-
                 foreach($recorddisplay as $key) {
                     $element = $this->skylight_utilities->getField($key);
                     if(isset($solr[$element]))
@@ -211,7 +203,6 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
                             {
                                 echo '; ';
                             }
-
                             echo '</td></tr>';
                         }
                     }
@@ -230,36 +221,26 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
 <?php
     $i = 0;
     $newStrip = false;
-
     echo '<div class="clearfix"></div>';
     if(isset($solr[$bitstream_field]) && $link_bitstream)
     {
         echo '<div class="record_bitstreams">';
-
         $i = 0;
         $newStrip = false;
-
         if($numThumbnails > 0) {
-
             echo '<div class="thumbnail-strip">';
-
             foreach($thumbnailLink as $thumb) {
-
                 if($newStrip)
                 {
-
                     echo '</div><div class="clearfix"></div>';
                     echo '<div class="thumbnail-strip">';
                     echo $thumb;
                     $newStrip = false;
                 }
                 else {
-
                     echo $thumb;
                 }
-
                 $i++;
-
                 // if we're starting a new thumbnail strip
                 if($i % 4 === 0) {
                     $newStrip = true;
@@ -267,7 +248,6 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
             }
             echo '</div><div class="clearfix"></div>';
         }
-
         if($audioFile) {
             echo '<br><br>'.$audioLink;
         }
