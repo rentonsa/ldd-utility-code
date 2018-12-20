@@ -14,7 +14,7 @@ else if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
     $config['skylight_container_id'] = '67';
 }
 else {
-    $config['skylight_ga_code'] = 'UA-25737241-18';
+    $config['skylight_ga_code'] = 'UA-25737241-9';
     $config['skylight_container_id'] = '51';
 }
 
