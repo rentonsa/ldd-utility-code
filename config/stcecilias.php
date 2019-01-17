@@ -12,7 +12,7 @@ $config['skylight_fullname'] = 'St Cecilia\'s Hall';
 // set ga code
 if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
     $config['skylight_ga_code'] = '';
-    $config['skylight_container_id'] = '54';
+    $config['skylight_container_id'] = '84';
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-9';
