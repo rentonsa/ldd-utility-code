@@ -7,9 +7,7 @@ if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
     $config['skylight_container_id'] = '87';
 }
 else {
-    $config['base_url'] = 'https://openbooks.is.ed.ac.uk/';
-    $config['skylight_ga_code'] = 'UA-25737241-18';
-    $config['skylight_container_id'] = '33';
+    $config['skylight_container_id'] = '73';
 }
 
 $config['skylight_theme'] = 'geddes';
@@ -20,7 +18,7 @@ $config['skylight_fullname'] = 'Evergreen - Geddes Project';
 
 $config['skylight_adminemail'] = 'lddt@mlist.is.ed.ac.uk';
 
-$config['skylight_oaipmhcollection'] = 'hdl_10683_52783';
+$config['skylight_oaipmhcollection'] = 'hdl_10683_103618';
 
 $config['skylight_oaipmhallowed'] = true;
 
