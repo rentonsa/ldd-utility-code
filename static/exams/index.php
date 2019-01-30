@@ -1,6 +1,6 @@
 <div class="record homepage">
 
-    <h1>University of Edinburgh Exam Papers Online: 2004-05 to 2017-18</h1>
+    <h1>University of Edinburgh Exam Papers Online: 2004-05 to 2018-19</h1>
     <hr />
     <h3>To find a paper, use the search box above or select a school from the list on the right:-</h3>
     <div class="info-box">
@@ -22,7 +22,7 @@
     <p>The Library does not hold any marking guides or sample solutions to exam papers. We suggest that you contact the course secretary or course organiser to check if these have been created for your course and how they have been made available.</p>
     <hr />
     <p>
-        The very latest papers added are from the 2017-18 diet. These pages will be updated periodically, as more papers become available.
+        The very latest papers added are from the 2018-19 diet. These pages will be updated periodically, as more papers become available.
         If you cannot find the paper you are looking for, please email <a href="mailto:exam.papers@ed.ac.uk">exam.papers@ed.ac.uk</a>, or try visiting again at a later date.
     </p>
     <hr />
