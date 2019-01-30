@@ -119,8 +119,8 @@
                    <!-- <div style="max-width:90px;">
                         <img src="http://images.is.ed.ac.uk/luna/servlet/iiif/UoEart~1~1~4493~100412/full/,96/0/default.jpg" alt="Patrick Geddes" class="Patrick Geddes" />
                     </div>-->
-                    <div id="collection-title">Evergreen:
-                        <div id="collection-sub-title">The Patrick Geddes Archive</div>
+                    <div id="collection-title"><!--Evergreen:
+                        <div id="collection-sub-title">The Patrick Geddes Archive</div>-->
                     </div>
 
 
