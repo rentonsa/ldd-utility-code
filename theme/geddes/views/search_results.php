@@ -10,6 +10,7 @@ $date_field = $this->skylight_utilities->getField('Date');
 $type_field = $this->skylight_utilities->getField('Type');
 $abstract_field = $this->skylight_utilities->getField('Agents');
 $subject_field = $this->skylight_utilities->getField('Subject');
+$image_uri_field = $this->skylight_utilities->getField("ImageUri");
 
 $base_parameters = preg_replace("/[?&]sort_by=[_a-zA-Z+%20. ]+/","",$base_parameters);
 if($base_parameters == "") {
@@ -68,6 +69,7 @@ else {
     foreach ($docs as $index => $doc) {
         ?>
         <div class="row search-row">
+            <div class="text">
             <h3><a href="./record/<?php echo $doc['id']?>/<?php //echo $doc['types'][0]?>"><?php echo strip_tags($doc[$title_field][0]); ?></a></h3>
 
             <?php
@@ -110,7 +112,64 @@ else {
                     ?>
                 </div>
             <?php } ?>
-        </div> <!-- close row-->
+            </div>
+            <div class = "thumbnail-image">
+
+                <?php
+                $numThumbnails = 0;
+                $imageset = false;
+                $thumbnailLink = array();
+                if (isset($doc[$image_uri_field]))
+                {
+                    foreach ($doc[$image_uri_field] as $imageUri)
+                    {
+                        if (strpos($imageUri, "|") > 0) {
+                            $image_uri = explode("|", $imageUri);
+                            $imageUri = $image_uri[0];
+                            $image_title = $image_uri[1];
+                        }
+                        list($fullwidth, $fullheight) = getimagesize($imageUri);
+                        //echo 'WIDTH'.$width.'HEIGHT'.$height
+                        if ($fullwidth > $fullheight) {
+                            $dims ='width = "40"';
+                            $parms = '40,';
+
+                        } else {
+                            $dims ='height = "40"';
+                            $parms = ',40';
+                        }
+
+                        if (strpos($imageUri, 'iiif') > 0)
+                        {
+
+                            //change to stop LUNA erroring on redirect
+                            $imageUri = str_replace('http://', 'https://', $imageUri);
+                            $iiifurlsmall = str_replace('/full/0/', '/'.$parms.'/0/', $imageUri);
+                            echo $iiifurlsmall;
+                            $thumbnailLink[$numThumbnails]  = '<a title = "' . $doc[$title_field][0] . '" href="./record/'.$doc['id'].'"> ';
+                            $thumbnailLink[$numThumbnails] .= '<img src = "' . $iiifurlsmall . '" class="record-thumbnail-search" title="' . $doc[$title_field][0] . '" /></a>';
+                            $numThumbnails++;
+                            $imageset = true;
+                        }
+                        else
+                        {
+                            $thumbnailLink[$numThumbnails]  = '<a title = "' . $doc[$title_field][0] . '" href="./record/'.$doc['id'].'"> ';
+                            $thumbnailLink[$numThumbnails] .= '<img src = "' . $imageUri . '" '.$dims.' class="record-thumbnail-search" title="' . $doc[$title_field][0] . '" /></a>';
+                            $numThumbnails++;
+                            $imageset = true;
+                        }
+                    }
+                    if ($imageset == true) {
+                        echo $thumbnailLink[0];
+                    }
+                }
+                ?>
+                <!--</div>-->
+
+            </div><!-- close row-->
+        </div>
+
+
         <?php
 
     } // end for each search result

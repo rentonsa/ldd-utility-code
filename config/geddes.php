@@ -4,12 +4,10 @@ $config['skylight_appname'] = 'geddes';
 
 // set the base url and ga code
 if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
-    $config['skylight_container_id'] = '82';
+    $config['skylight_container_id'] = '87';
 }
 else {
-    $config['base_url'] = 'https://openbooks.is.ed.ac.uk/';
-    $config['skylight_ga_code'] = 'UA-25737241-18';
-    $config['skylight_container_id'] = '33';
+    $config['skylight_container_id'] = '73';
 }
 
 $config['skylight_theme'] = 'geddes';
@@ -20,7 +18,7 @@ $config['skylight_fullname'] = 'Evergreen - Geddes Project';
 
 $config['skylight_adminemail'] = 'lddt@mlist.is.ed.ac.uk';
 
-$config['skylight_oaipmhcollection'] = 'hdl_10683_52783';
+$config['skylight_oaipmhcollection'] = 'hdl_10683_103618';
 
 $config['skylight_oaipmhallowed'] = true;
 
@@ -31,14 +29,14 @@ $config['skylight_sitemap_type'] = 'external';
 $config['skylight_fields'] = array('Title' => 'dc.title.en',
     'Author' => 'dc.creator.en',
     'Description' => 'dc.description.en',
-    'Extent' => 'dc.extent.en',
+    'Extent' => 'dc.format.extent.en',
     'Related Work' => 'dc.relation.en',
-    'Places' => 'dc.coverage.en',
+    'Places' => 'dc.coverage.spatial.en',
     'Identifier' => 'dc.identifier.en',
     'Publisher' => 'dc.publisher.en',
     'Link' => 'dc.identifier.uri.en',
     'Subject' => 'dc.subject.en',
-    'Date' => 'dc.date.issued.en', //should be dc.coverage.temporal.en
+    'Date' => 'dc.coverage.temporal.en', //should be dc.coverage.temporal.en
     'Rights' => 'dc.rights.en',
     'Source' => 'dc.source.en',
     'Parent' => 'dc.relation.ispartof.en',
@@ -66,14 +64,11 @@ $config['skylight_recorddisplay'] = array('Title',
     'Extent',
     'Related Work',
     'Places',
-    'Identifier',
     'Publisher',
-    'Link',
     'Subject',
     'Date',
     'Rights',
-    'Source',
-    'Parent');
+    'Source');
 
 $config['skylight_searchresult_display'] = array('Title',
     'Author' ,    'Subject',

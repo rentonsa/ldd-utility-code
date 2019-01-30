@@ -24,11 +24,10 @@ $bitstreamLinks = array();
         <h1 class="itemtitle"><?php echo strip_tags($record_title) ?></h1>
     </div>
 
-    <!--<div class="row">
-    <button class="btn btn-info"><a href ="<?php echo $link_uri_prefix ?><?php echo $solr[$id][0] ?>"
-                                    title="Full record at archives online " target="_blank">
-            View full record in University of Edinburgh Archives Online <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></button>
-    </div>-->
+    <div class="row">
+            <button class="btn btn-info"><a href ="<?php echo $solr[$link_uri_field][0]?>" target="_blank"><b>View item in context</b></a></button>
+    </div>
+
     <div class="row full-metadata">
         <table class="table">
             <tbody>
