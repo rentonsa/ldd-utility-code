@@ -23,7 +23,7 @@
             $('.main-categories li:nth-child(' + (i + 1) + ')').addClass('active');
             $('.parallax').fadeTo('slow', 0.7, function () {
                 $('.parallax').css('background-image', 'url(' + images[i] + ')');
-            }).delay(500).fadeTo(400, 1);
+            }).delay(10).fadeTo(10, 1);
         }
         i == 6 ? i = 0 : i++;
         hovered = false;
@@ -37,7 +37,7 @@
         i = $('.main-categories li').index($(this));
         $('.parallax').fadeTo('slow', 0.7, function(){
             $('.parallax').css('background-image', 'url(' + images[i] + ')');
-        }).fadeTo(400, 1);
+        }).fadeTo(10, 1);
         hovered = true;
     });
 })(jQuery);
