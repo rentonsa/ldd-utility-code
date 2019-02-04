@@ -7,12 +7,16 @@
 
 var map;
 
-function initMap(elementid, zoom, center){
-
-    // Setting the default value in the function definition doesn't work for some reason
-    elementid === undefined ? 'map' : elementid;
-    zoom === undefined ? 4 : zoom;
-    center === undefined ? {lat:51.509865, lng:-0.118092} : center;
+function initMap(elementid, zoom, lat, lng){
+    console.log("Arguments: "+arguments[0]+arguments[1]+arguments[2]+arguments[3])
+    elementid = 'map';
+    //zoom = 18;
+    center = {};
+    console.log(zoom);
+    console.log(lat);
+    console.log(lng);
+    center.lat = lat;
+    center.lng = lng;
 
     map = new google.maps.Map(document.getElementById(elementid), {
         zoom: zoom,

@@ -4,17 +4,9 @@
  */
 
 window.onload = function(){
-    $('#loader').fadeOut(2000);
+    $('#loader').fadeOut(10);
     $('#loader').click(function(){ $('#loader').fadeOut(); });
 
     $('.cover-image-container').addClass("loaded");
     $('.record-info').addClass("showing");
 };
-
-
-
-
-
-
-
-

@@ -45,7 +45,9 @@ $config['skylight_fields'] = array(
     'Artist Biography'          => 'dc.contributor.authorbio.en',
     'Map Reference'             => 'dc.coverage.spatialcoord.en',
     'Location'                  => 'dc.coverage.spatialloc.en',
-    'Alt Image'                 => 'dc.image.primary.en'
+    'Alt Image'                 => 'dc.image.primary.en',
+    'Bitstream'                 => 'dc.format.original.en',
+    'Thumbnail'                 => 'dc.format.thumbnail.en'
 );
 $config['skylight_date_filters'] = array();
 $config['skylight_filters'] = array('Title' => 'title_filter');
