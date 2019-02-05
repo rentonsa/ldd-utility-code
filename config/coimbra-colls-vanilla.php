@@ -7,7 +7,7 @@ if (strpos($_SERVER['HTTP_HOST'], "test") !== false || strpos($_SERVER['HTTP_HOS
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-6';
-    $config['skylight_container_id'] = '50';
+    $config['skylight_container_id'] = '74';
     $config['skylight_image_server'] = 'http://cantaloupe.is.ed.ac.uk';
 }
 
