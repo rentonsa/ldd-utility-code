@@ -62,8 +62,10 @@ $config['skylight_fields'] = array(
     'Date of Submission'                    => 'dc.date.submitted.en',
     'Items accumulated (date)'              => 'cld.accumulationDateRange.en',
     'Items created (date)'                  => 'cld.contentsDateRange',
-    'Image rights'                          => 'dc.rights.en'
-
+    'Image rights'                          => 'dc.rights.en',
+    'Type'                                  => 'cld.type.en',
+    'Physical Location'                     => 'cld.hasLocation.en',
+    'Caption'                               => 'dc.title.alternative.en'
 );
 
 $config['skylight_date_filters'] = array();
@@ -79,6 +81,7 @@ $config['skylight_meta_fields'] = array('Title' => 'dc.title',
 $config['skylight_recorddisplay'] = array(
     'Creator',
     'Institution',
+    'Type',
     'Place of Origin',
     'Date',
     'Description',
@@ -94,10 +97,13 @@ $config['skylight_descriptiondisplay'] = array(
     'Category',
     'Institutional Link to Object',
     'Institutional Link to Online Portal',
+    'Physical Location',
+    'Caption',
     'Image License',
     'Image Rights Holder',
     'Photographic Credits',
-    'Metadata Rights');
+    'Metadata Rights',
+    'Contact email');
 
 $config['skylight_searchresult_display'] = array('Title','Instrument','Maker','Subject','Abstract', 'Bitstream', 'Thumbnail');
 
