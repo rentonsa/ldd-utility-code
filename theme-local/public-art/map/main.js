@@ -16,7 +16,7 @@ var poi = new Feature({
 poi.setStyle(new Style({
         image: new Icon(/** @type {module:ol/style/Icon~Options} */ ({
           crossOrigin: 'anonymous',
-          src: 'https://test.collections.ed.ac.uk/theme/public-art/map/pinpoint.png'
+          src: 'https://collections.ed.ac.uk/theme/public-art/map/pinpoint.png'
         }))
       }));
 
