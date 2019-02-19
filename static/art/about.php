@@ -59,17 +59,17 @@
         <p>
             For further information about the University of Edinburgh Art Collections please contact:
         </p>
-        <p><strong>Neil Lebeter</strong><br />
+        <p><strong>Julie-Ann Delaney</strong><br />
             Art Collections Curator<br />
             University of Edinburgh,<br />
             Main Library,<br />
             30 George Square,<br />
             Edinburgh,<br />
             EH8 9LJ<br />
-            <a class="email" href="mailto:neil.lebeter@ed.ac.uk">neil.lebeter@ed.ac.uk</a><br />
+            <a class="email" href="mailto:julie-ann.delaney@ed.ac.uk">julie-ann.delaney@ed.ac.uk</a><br />
             <br />
             <a href="https://twitter.com/UoEArtArchives" title="Art Collections on Twitter">Art Collections on Twitter</a><br />
-            <a href="http://uoeartandarchives.tumblr.com/" title="Art Collections on Tumblr">Art Collections on Tumblr</a><br />
+            <a href="http://uoeartandarchives.tumblr.com/" title="Art Collections on Tumblr">Art Collections on Tumblr</a><br /></p>
 
     </div>
 </div>
