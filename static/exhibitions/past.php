@@ -4,6 +4,16 @@
         <h1>Past Exhibitions:</h1>
         <div class="past-list">
             <div>
+                <h2><a href="./rarebooks" alt="Rare Books? Expect The Unexpected" title="Rare Books? Expect The Unexpected">Rare Books? Expect The Unexpected</a></h2>
+                <p>30 October 2018 - 2 March 2019</p>
+                <a href="./rarebooks" alt="Rare Books? Expect The Unexpected" title="Rare Books? Expect The Unexpected">
+                    <div id="exhib-tile-20"></div>
+                </a>
+                <p>
+                    An exhibition of things you wouldn’t expect to find in Rare Books.  We have some unlikely-sounding things in the collections: comics; ephemeral-looking pamphlets; cheaply-printed books; things which are not that old and appear run-of-the-mill; things which aren’t even books. They are all here for a reason…
+                </p>
+            </div>
+            <div>
                 <h2><a href="./astronomyvictorious" alt="Astronomy Victorious" title="Astronomy Victorious">Astronomy Victorious: Understanding our Universe</a></h2>
                 <p>27 July - 27 October 2018</p>
                 <a href="./astronomyvictorious" alt="Astronomy Victorious" title="Astronomy Victorious">

@@ -1,17 +1,25 @@
 <div class="record">
     <div class="content byEditor">
-        <h1>CURRENT EXHIBITIONS:</h1><h1> <a href="./rarebooks" alt="Rare Books"
-                                           title="Rare Books">Rare Books? Expect the Unexpected</a></h1>
+        <h1>CURRENT EXHIBITIONS:</h1><h1> <a href="./conectando" alt="Conectando"
+                                           title="Conectando">Conectando: Scottish Encounters with Spanish & Portuguese</a></h1>
         <h3>Main Library Exhibition Gallery – Ground Floor<br/>
-            30 November 2018 – 2 March 2019; Monday - Saturday, 10:00 - 17:00<br/>
-            Christmas closure dates : 23 December – 2 January</h3>
-            <div id="rare-banner"></div>
+            5 April 2018 – 29 June 2019; Monday - Saturday, 10:00 - 17:00</h3>
+            <div id="conectando-banner"></div>
 
         <div id="past-exhib-block">
             <h1><a href="./past" alt="Past Exhibitions" title="Past Exhibitions">Past Exhibitions</a>:</h1>
             <div>
 
                     <ul class="ex-list">
+                        <li class="past-ex">
+                            <a href="./rarebooks" alt="Rare Books? Expect The Unexpected" title="Rare Books? Expect The Unexpected">
+                                <div id="exhib-tile-20"></div>
+                            </a>
+                            <h3><a href="./rarebooks" alt="Rare Books? Expect The Unexpected" title="Rare Books? Expect The Unexpected">Rare Books? Expect The Unexpected</a></h3>
+                            <h3><i class="fa fa-search">&nbsp;</i> Coming Soon</h3>
+                            <p> 30th Nov 2018 - 2nd Mar 2019</p>
+
+                        </li>
                         <li class="past-ex">
                             <a href="./astronomyvictorious" alt="Astronomy Victorious" title="Astronomy Victorious">
                                 <div id="exhib-tile-19"></div>
@@ -39,6 +47,11 @@
                             <p>30th Mar  – 30th Jun 2018</p>
 
                         </li>
+                    </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div>
+                <ul class="ex-list">
                         <li class="past-ex">
                             <a href="./travellingimages" alt="Travelling Images" title="Travelling Images">
                                 <div id="exhib-tile-16"></div>
@@ -48,11 +61,7 @@
                             <p> 13th Apr - 15th Jun 2018</p>
 
                         </li>
-                    </ul>
-            </div>
-            <div class="clearfix"></div>
-            <div>
-                <ul class="ex-list">
+
                         <li class="past-ex">
                             <a href="./sar" alt="Shored Against Ruin" title="Shored Against Ruin">
                                 <div id="exhib-tile-15"></div>
@@ -81,7 +90,11 @@
                             <p>28th Jul - 4th Nov 2017</p>
 
                         </li>
-
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div>
+                <ul class="ex-list">
 
                         <li class="past-ex">
                             <a href="./soundbody" alt="Sound Body Sound Mind" title="Sound Body Sound Mind">
@@ -92,12 +105,6 @@
                             <p>6th Apr - 1st Jul 2017</p>
 
                         </li>
-
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-            <div>
-                <ul class="ex-list">
 
 
                         <li class="past-ex">
@@ -127,6 +134,11 @@
                             <p>4 Dec 2015 - 5 Mar 2016</p>
 
                         </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div>
+                <ul class="ex-list">
 
                         <li class="past-ex">
                             <a href="./towardsdolly" alt="Towards Dolly" title="Towards Dolly">
@@ -137,11 +149,7 @@
                             <p>31 Jul - 31 Oct 2015</p>
 
                         </li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-            <div>
-                <ul class="ex-list">
+
                         <li class="past-ex">
                             <a href="./somethingblue" alt="...Something Blue" title="...Something Blue">
                                 <div id="exhib-tile-7"></div>
@@ -170,7 +178,11 @@
                             <p>2 Aug - 31 Oct 2014</p>
 
                         </li>
-
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div>
+                <ul class="ex-list">
                         <li class="past-ex">
                             <a href="./50years" alt="50 Years, 50 Books" title="50 Years, 50 Books">
                                 <div id="exhib-tile-2"></div>
@@ -181,11 +193,7 @@
                             <p>28 Mar - 14 Jun 2014</p>
 
                         </li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-            <div>
-                <ul class="ex-list">
+
                     <li class="past-ex">
                             <a href="./collected" alt="Collect.ed" title="Collect.ed">
                                 <div id="exhib-tile-3"></div>
