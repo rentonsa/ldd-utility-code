@@ -11,6 +11,7 @@ $tags_field = $this->skylight_utilities->getField("Tags");
 $media_uri = $this->config->item("skylight_media_url_prefix");
 $image_uri_field = $this->skylight_utilities->getField('ImageUri');
 $permalink_field = $this->skylight_utilities->getField('Permalink');
+$sketchfab_field = $this->skylight_utilities->getField('SketchFabURI');
 $type = 'Unknown';
 $mainImage = false;
 $mainImageTest = false;
@@ -125,7 +126,8 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
             $jsonLink  = '<span class ="json-link-item"><a href="https://librarylabs.ed.ac.uk/iiif/uv/?manifest='.$manifest.'" target="_blank" class="uvlogo" title="View in UV"></a></span>';
             $jsonLink .= '<span class ="json-link-item"><a target="_blank" href="https://librarylabs.ed.ac.uk/iiif/mirador/?manifest='.$manifest.'" class="miradorlogo" title="View in Mirador"></a></span>';
             $jsonLink .= '<span class ="json-link-item"><a href="https://images.is.ed.ac.uk/luna/servlet/view/search?search=SUBMIT&q='.$accno.'" class="lunalogo" title="View in LUNA"></a></span>';
-            $jsonLink .= '<span class ="json-link-item"><a href="'.$manifest.'" target="_blank"  class="iiiflogo" title="IIIF manifest"></a></span>';
+            $jsonLink .= '<span class ="json-link-item"><a href="'.$manifest.'" target="_blank"  class="iiiflogo" title="View IIIF manifest"></a></span>';
+            //$jsonLink .= '<span class ="json-link-item"><a href="http://www.example.com/'.$manifest.'" target="_blank"  class="iiifdndlogo" title="Drag and drop IIIF manifest"></a></span>'; $jsonLink .= '<span class ="json-link-item"><a href="http://www.example.com/'.$manifest.'" target="_blank"  class="iiifdndlogo" title="Drag and drop IIIF manifest"></a></span>';
         }
 
     }
@@ -155,8 +157,9 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
             ?>
         </div>
     </div>
+      <?php
 
-    <?php
+
     $numThumbnails = 0;
     $imageCounter = 0;
     if (isset($solr[$image_uri_field])) {
@@ -543,6 +546,22 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
     <div class="clearfix"></div>
     <!-- print out crowdsourced tags -->
     <?php
+    if (isset($solr[$sketchfab_field]))
+    {
+        $sketchfab_hash = substr($solr[$sketchfab_field][0],-32);
+        $sketchfab_embed = "https://sketchfab.com/models/" . $sketchfab_hash. "/embed";
+        ?>
+        <br>
+        <div class="sketchfab-embed-wrapper"><iframe width="660" height="480" src="<?php echo $sketchfab_embed?>" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+            <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                <a href="<?php echo $solr[$sketchfab_field][0]?>" target="blank">See <?php echo $record_title?> at Sketchfab</a>
+                <!--<a href="https://sketchfab.com/openededinburgh?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">The University of Edinburgh</a>
+                <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>-->
+            </p>
+        </div>
+        <?php
+    }
     if(isset($solr[$tags_field])) {?>
         <div class="crowd-tags"><span class="crowd-title" title="User generated tags created through crowd sourcing games"><i class="fa fa-users fa-lg" >&nbsp;</i>Tags:</span>
             <?php foreach($solr[$tags_field] as $tag) {
@@ -595,6 +614,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
         echo '<!--</div>-->
     <div class="clearfix"></div>';
     }
+
     ?>
 
     <input type="button" value="Back to Search Results" class="backbtn" onClick="history.go(-1);">
