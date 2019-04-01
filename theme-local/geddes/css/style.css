@@ -90,7 +90,7 @@ input:valid, textarea:valid   								{  } /* Colors for form validity */
 input:invalid, textarea:invalid 							{ border-radius: 1px; -moz-box-shadow: 0 0 5px red; -webkit-box-shadow: 0 0 5px red; box-shadow: 0 0 5px red; }
 .no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
 
-::-moz-selection 	{ background: #3e541f;  color: #fff; text-shadow: none; } /* These selection declarations have to be separate No text-shadow: twitter.com/miketaylr/status/12228805301 Also: hot pink! */
+::-moz-selection 	{ background: #3e541f;  color: #fff; text-shadow: none;font-weight:normal; } /* These selection declarations have to be separate No text-shadow: twitter.com/miketaylr/status/12228805301 Also: hot pink! */
 ::selection 		{ background: #3e541f;  color: #fff; text-shadow: none; }
 a:link 				{ -webkit-tap-highlight-color: #3e541f; } /* j.mp/webkit-tap-highlight-color */
 
@@ -164,12 +164,20 @@ header .container   { padding: 0;}
 .content a:visited              { color: #3e541f;}
 .content a:hover                { color: #3a8f44;}
 
-.btn-info                       { background-color: #3e541f; color: #FFFFFF; letter-spacing: 1px; margin-bottom: 5px;}
+/*.content a                      { color: #3e541f}
+.content a:visited              { color: #ffffff;}
+.content a:hover                { color: #ffffff;}*/
+
+.btn-info                       { background-color: #3e541f; border-color: #3e541f;color: #FFFFFF;  margin-bottom: 5px;font-weight: normal;}
 .btn-info:hover                 { background-color: #3a8f44; color: #FFFFFF;}
+.btn-primary                    { background-color: #3e541f; border-color: #3e541f;color: #FFFFFF;  margin-bottom: 5px;font-weight: normal;}
+.btn-primary:hover                 { background-color: #3a8f44; color: #FFFFFF;}
 
 .btn-info a                     { color: #FFFFFF; letter-spacing: 1px;}
 .btn-info a:active              { color: #FFFFFF; letter-spacing: 1px;}
 .btn-info a:visited             { color: #FFFFFF; letter-spacing: 1px;}
+
+
 
 .item-div                       { width: 660px; text-align: left; display: block; }
 .iteminfo                       { display: block; min-height:40px; text-align: left; width: 100%; float:left; }
@@ -679,3 +687,4 @@ tr:nth-child(odd) { background: #e6e6e6; }
 .search-row  { background: #f7f7f7 }
 .search-row:nth-child(odd) { background: #e6e6e6; }
 .search-row .text {padding-left:5px;width:90%; float:left;}
+.warning {color:red;}

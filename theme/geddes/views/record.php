@@ -10,6 +10,9 @@ $filters = array_keys($this->config->item("skylight_filters"));
 $link_uri_field = $this->skylight_utilities->getField("Link");
 $image_uri_field = $this->skylight_utilities->getField("ImageUri");
 $id = $this->skylight_utilities->getField("Id");
+//Insert Schema.org
+$schema = $this->config->item("skylight_schema_links");
+
 
 $link_uri_prefix  = $this->config->item("skylight_link_url");
 
@@ -20,15 +23,18 @@ $bitstreamLinks = array();
 ?>
 
 <div class="col-md-9 col-sm-9 col-xs-12" xmlns="http://www.w3.org/1999/html">
+
+    <div itemscope itemtype ="http://schema.org/CreativeWork">
     <div class="row">
         <h1 class="itemtitle"><?php echo strip_tags($record_title) ?></h1>
     </div>
 
     <div class="row">
-            <button class="btn btn-info"><a href ="<?php echo $solr[$link_uri_field][0]?>" target="_blank"><b>View item in context</b></a></button>
+            <div class="btn btn-info"><a href ="<?php echo $solr[$link_uri_field][0]?>" target="_blank">View in context</a></div>
     </div>
 
     <div class="row full-metadata">
+
         <table class="table">
             <tbody>
 
@@ -42,39 +48,61 @@ $bitstreamLinks = array();
 
             <?php $excludes = array("");
             $idset = false;
+            $nullid = false;
             foreach($recorddisplay as $key) {
                 $element = $this->skylight_utilities->getField($key);
 
                 if(isset($solr[$element])) {
-                    if(!in_array($key, $excludes)) {
-                        echo '<tr><th>'.$key.'</th><td>';
-                        foreach($solr[$element] as $index => $metadatavalue) {
+                    if (!in_array($key, $excludes)) {
+                        echo '<tr><th>' . $key . '</th><td>';
+                        foreach ($solr[$element] as $index => $metadatavalue) {
                             // if it's a facet search
                             // make it a clickable search link
 
-                            if(in_array($key, $filters)) {
+                            if (in_array($key, $filters)) {
 
                                 $orig_filter = urlencode($metadatavalue);
 
-                                echo '<a href="./search/*:*/' . $key . ':%22'.$orig_filter.'%22">'.$metadatavalue.'</a>';
-                            }
-                            else {
+                                echo '<a href="./search/*:*/' . $key . ':%22' . $orig_filter . '%22">' . $metadatavalue . '</a>';
+                            } else
+                            {/*
                                 if ($key == 'Identifier' || $key == 'Link' || $key == 'Parent') {
                                     if (strpos($metadatavalue, "http:") !== null) {
                                         echo '<a href="'.$metadatavalue.'" target="_blank">'.$metadatavalue.'</a>';
                                         $idset = true;
                                     }
-                                    else{
+                                    else*/
+                                if ($key == 'Identifier')
+                                {
+                                  /*  if (ctype_digit($metadatavalue))
+                                    {
+                                        echo $metadatavalue . " is a number";
+                                    }
+                                    else
+                                    {
+                                        echo $metadatavalue . " is not a number";
+                                    }*/
+
+                                    $nullid = false;
+                                    if ((!ctype_digit($metadatavalue)) and (strpos($metadatavalue, "oai:") !== 0) and (strpos($metadatavalue, "http:") !== 0))
+                                    {
                                         echo $metadatavalue;
                                     }
+                                    else
+                                    {
+                                        $nullid = true;
+                                    }
                                 }
-                                else{
-                                    echo $metadatavalue;
+                                else
+                                {
+                                    echo '<span itemprop="'.$schema[$key].'">'. $metadatavalue. "</span>";
                                 }
                             }
 
-                            if($index < sizeof($solr[$element]) - 1) {
-                                echo '<br/>';
+                            if ($index < sizeof($solr[$element]) - 1) {
+                                if(!$nullid) {
+                                    echo '<br/>';
+                                }
                             }
                         }
                         echo '</td></tr>';
@@ -85,6 +113,7 @@ $bitstreamLinks = array();
 
             </tbody>
         </table>
+
     </div>
 
     <?php
@@ -178,6 +207,7 @@ $bitstreamLinks = array();
                 // if there are thumbnails
                 if (isset($solr[$thumbnail_field])) {
                     foreach ($solr[$thumbnail_field] as $thumbnail) {
+
                         $t_segments = explode("##", $thumbnail);
                         $t_filename = $t_segments[1];
                         if ($t_filename === $b_filename . ".jpg") {
@@ -239,6 +269,7 @@ $bitstreamLinks = array();
 
         if ($mainImage) { ?>
             <div class="main-image">
+                <?php echo '<span itemprop="thumbnailUrl" style="display:none;">'. $image_filename. '</span>';?>
                 <!--<img src = "<?php //echo $image_filename ;?>"/>-->
                 <div id="openseadragon"> <!--style = "width:600px; height= 450px;">-->
                     <script src="<?php echo base_url() ?>assets/openseadragon/openseadragon.min.js"></script>
@@ -260,8 +291,10 @@ $bitstreamLinks = array();
                             }]
                         });
                     </script>
+
                 </div>
             </div>
+            <br>
             <?php
             if (!$image_title == '') {
                 ?>
@@ -281,3 +314,4 @@ $bitstreamLinks = array();
         <button class="btn btn-info" onClick="history.go(-1);"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Back to Search Results</button>
     </div>
 </div>
+    </div>

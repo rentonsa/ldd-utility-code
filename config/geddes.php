@@ -27,10 +27,9 @@ $config['skylight_container_field'] = 'location.coll';
 $config['skylight_sitemap_type'] = 'external';
 
 $config['skylight_fields'] = array('Title' => 'dc.title.en',
-    'Author' => 'dc.creator.en',
+    'Creator' => 'dc.creator.en',
     'Description' => 'dc.description.en',
-    'Extent' => 'dc.format.extent.en',
-    'Related Work' => 'dc.relation.en',
+    'Extent and Media' => 'dc.format.en',
     'Places' => 'dc.coverage.spatial.en',
     'Identifier' => 'dc.identifier.en',
     'Publisher' => 'dc.publisher.en',
@@ -40,16 +39,24 @@ $config['skylight_fields'] = array('Title' => 'dc.title.en',
     'Rights' => 'dc.rights.en',
     'Source' => 'dc.source.en',
     'Parent' => 'dc.relation.ispartof.en',
-    'ImageUri' => 'dc.identifier.imageUri.en'
+    'ImageUri' => 'dc.identifier.imageUri.en',
+    'Language' => 'dc.language.en'
 
 );
 
 $config['skylight_schema_links'] = array(
-    'Title'=>'name'
+    'Title'=> 'name',
+    'Creator'=> 'creator',
+    'Description'=> 'description',
+    'Date'=>'dateCreated',
+    'ImageUri'=>'thumbnailUrl',
+    'Rights'=>'copyrightHolder',
+    'Subject'=> 'about',
+    'Places'=> 'locationCreated'
 );
 
 $config['skylight_date_filters'] = array();
-$config['skylight_filters'] = array('Author' => 'creator_filter', 'Subject' => 'subject_filter', 'Collection' => 'publisher_filter','Date' => 'datetemporal_filter');
+$config['skylight_filters'] = array('Author' => 'creator_filter', 'Subject' => 'subject_filter', 'Place'=> 'place_filter', 'Collection' => 'publisher_filter','Date' => 'datetemporal_filter');
 $config['skylight_filter_delimiter'] = ':';
 
 $config['skylight_meta_fields'] = array('Title' => 'dc.title.en',
@@ -59,16 +66,17 @@ $config['skylight_meta_fields'] = array('Title' => 'dc.title.en',
     'Type' => 'dc.type');
 
 $config['skylight_recorddisplay'] = array('Title',
-    'Author' ,
+    'Creator' ,
     'Description',
-    'Extent',
-    'Related Work',
+    'Identifier',
+    'Extent and Media',
     'Places',
     'Publisher',
     'Subject',
     'Date',
     'Rights',
-    'Source');
+    'Source',
+    'Language');
 
 $config['skylight_searchresult_display'] = array('Title',
     'Author' ,    'Subject',
@@ -81,12 +89,11 @@ $config['skylight_search_fields'] = array(
     'Collection' => 'dc.relation.ispartof.en',
 );
 
-$config['skylight_sort_fields'] = array('Author' => 'dc.contributor.authorza_sort ',
-    'Title' => 'dc.title_sort',
-    'Date' => 'dc.date.issued_dt'
+$config['skylight_sort_fields'] = array(
+    'Title' => 'dc.title_sort'
 );
 
-$config['skylight_related_fields'] = array('Type' => 'dc.type.en', 'Author' => 'dc.creator.en', 'Subject' => 'dc.subject.en', 'Title' => 'dc.title.en', );
+$config['skylight_related_fields'] = array('Creator' => 'dc.creator.en', 'Subject' => 'dc.subject.en', 'Title' => 'dc.title.en', );
 
 $config['skylight_feed_fields'] = array('Title' => 'Title',
     'Author' => 'Author',
@@ -121,6 +128,7 @@ $config['skylight_language_options'] = array('en', 'ko', 'jp');
 $config['skylight_homepage_recentitems'] = false;
 $config['skylight_homepage_randomitems'] = false;
 $config['skylight_homepage_fullwidth'] = true;
+$config['skylight_facet_limit'] = 5;
 
 
 ?>

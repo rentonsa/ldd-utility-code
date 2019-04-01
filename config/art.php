@@ -54,7 +54,8 @@ $config['skylight_fields'] = array(
     'Link' => 'dc.identifier.uri',
     'Tags' => 'dc.subject.crowdsourced.en',
     'ImageUri' => 'dc.identifier.imageUri.en',
-    'Permalink' => 'dc.contributor.authorpermalink.en'
+    'Permalink' => 'dc.contributor.authorpermalink.en',
+	'SketchFabURI' => 'dc.identifier.sketchuri.en'
 );
 
 $config['skylight_schema_links'] = array(

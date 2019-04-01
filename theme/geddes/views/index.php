@@ -1,5 +1,6 @@
 <!--<div class="col-lg-12 col-md-10 col-sm-12 col-xs-12">-->
 <div class="col-xl">
+    <h1 class="warning">THIS SITE IS IN BETA TESTING AND IS NOT YET AN AUTHORITATIVE RESOURCE</h1>
     <h1 class="itemtitle">An online portal to the Patrick Geddes Archives.</h1>
     <div id="cf">
         <img src="https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~99338~100004/1696,226,4475,1959/1074,/0/default.jpg"/>
