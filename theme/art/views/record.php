@@ -21,6 +21,7 @@ $image_id = "";
 $accno = '';
 //Insert Schema.org
 $schema = $this->config->item("skylight_schema_links");
+
 if(isset($solr[$type_field])) {
     $type = "media-" . strtolower(str_replace(' ','-',$solr[$type_field][0]));
 }
@@ -163,37 +164,24 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
     $numThumbnails = 0;
     $imageCounter = 0;
     if (isset($solr[$image_uri_field])) {
-        foreach ($solr[$image_uri_field] as $imageUri) {
-            if (strpos($imageUri, 'luna') > 0) {
-                $tileSource = str_replace('full/full/0/default.jpg', 'info.json', $imageUri);
-                $iiifmax = $imageUri;
-                //check portrait or landscape to generate tile size
-                list($width, $height) = getimagesize($iiifmax);
-                $portrait = true;
-                if ($width > $height) {
-                    $portrait = false;
-                }
-                $json = file_get_contents($tileSource);
-                $jobj = json_decode($json, true);
-                $error = json_last_error();
-                $jsoncontext[$imageCounter] = $jobj['@context'];
-                $jsonid[$imageCounter] = $jobj['@id'];
-                $jsonheight[$imageCounter] = $jobj['height'];
-                $jsonwidth[$imageCounter] = $jobj['width'];
-                $jsonprotocol[$imageCounter] = $jobj['protocol'];
-                $jsontiles[$imageCounter] = $jobj['tiles'];
-                $jsonprofile[$imageCounter] = $jobj['profile'];
-                $portrait = true;
-                if ($width > $height) {
-                    $jsontilesize[$imageCounter] = $jsontiles[$imageCounter][0]['width'];
-                    $portrait = false;
-                } else {
-                    $jsontilesize[$imageCounter] = $jsontiles[$imageCounter][0]['height'];
-                }
+            foreach($solr[$image_uri_field] as $linkURI)
+            {
+                if (strpos($linkURI, 'luna') > 0) {
+                    $tileSource[$imageCounter] = str_replace('full/full/0/default.jpg', 'info.json', $linkURI);
+                    $tileSource[$imageCounter] = str_replace('http', 'https', $tileSource[$imageCounter]);
 
-                $imageCounter++;
+                    list($width, $height) = getimagesize($linkURI);
+                    $portrait = true;
+                    if ($width > $height) {
+                        $portrait = false;
+                    }
+
+                    $imageCounter++;
+                }
             }
-        }
+
+
+
         echo "<div id='imageCounter' style='display:none;'>$imageCounter</div>";
         echo "<div class ='imageContainer'>";
         $divCounter = 0;
@@ -219,24 +207,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
                                 defaultZoomLevel: 0,
                                 panHorizontal: true,
                                 sequenceMode: true,
-                                tileSources: [{
-                                    "@context": "<?php echo $jsoncontext[$divCounter] ?>",
-                                    "@id": "<?php echo $jsonid[$divCounter] ?>",
-                                    "height": <?php echo $jsonheight[$divCounter] ?>,
-                                    "width": <?php echo $jsonwidth[$divCounter] ?>,
-                                    "profile": ["http://iiif.io/api/image/2/level2.json",
-                                        {
-                                            "formats": ["gif", "pdf"]
-                                        }
-                                    ],
-                                    "protocol": "<?php echo $jsonprotocol[$divCounter] ?>",
-                                    "tiles": [{
-                                        "scaleFactors": [1, 2, 8, 16, 32],
-                                        "width": <?php echo $jsonheight[$divCounter];?>,
-                                        "height": <?php echo $jsonwidth[$divCounter];?>
-                                    }],
-                                    "tileSize":<?php echo $jsontilesize[$divCounter];?>
-                                }]
+                                tileSources: ["<?php echo $tileSource[$divCounter]; ?>"]
                             });
                         </script>
                     </div>
@@ -254,7 +225,6 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
             $accno =  $solr[$acc_no_field][0];
         }
 
-        $manifestURI = "https://test.librarylabs.ed.ac.uk/files/".$accno.".json";
         $numThumbnails = 0;
         $imageset = false;
         $thumbnailLink = array();
@@ -267,7 +237,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
             $imageURI = str_replace('http://', 'https://', $imageURI);
             $imagefull[$i] = $imageURI;
             list($fullwidth, $fullheight) = getimagesize($imagefull[$i]);
-            //echo 'WIDTH'.$width.'HEIGHT'.$height
+
             if ($fullwidth > $fullheight) {
                 $parms = '/150,/0/';
             } else {

@@ -203,33 +203,19 @@ foreach($recorddisplay as $key)
     if (isset($solr[$link_uri_field]))
     {
     $imageCounter = 0;
+
     foreach($solr[$link_uri_field] as $linkURI)
     {
-        $tileSource = str_replace('full/full/0/default.jpg', 'info.json', $linkURI);
-        $json =  file_get_contents($tileSource);
-        $jobj = json_decode($json, true);
-        $error = json_last_error();
-
-        $jsoncontext[$imageCounter] = $jobj['@context'];
-        $jsonid[$imageCounter] = $jobj['@id'];
-        $jsonheight[$imageCounter] = $jobj['height'];
-        $jsonwidth[$imageCounter] = $jobj['width'];
-        $jsonprotocol[$imageCounter] = $jobj['protocol'];
-        $jsontiles[$imageCounter]= $jobj['tiles'];
-        $jsonprofile[$imageCounter] = $jobj['profile'];
+        $tileSource[$imageCounter] = str_replace('full/full/0/default.jpg', 'info.json', $linkURI);
+        $tileSource[$imageCounter] = str_replace('http', 'https', $tileSource[$imageCounter]);
 
         list($width, $height) = getimagesize($linkURI);
-        //echo 'WIDTH'.$width.'HEIGHT'.$height
         $portrait = true;
         if ($width > $height)
         {
-            $jsontilesize[$imageCounter] = $jsontiles[$imageCounter][0]['width'];
             $portrait = false;
         }
-        else
-        {
-            $jsontilesize[$imageCounter] = $jsontiles[$imageCounter][0]['height'];
-        }
+
         $imageCounter++;
     }
 
@@ -246,7 +232,9 @@ foreach($recorddisplay as $key)
         <?php  $divCounter = 0;
         $freshIn = true;
         while ($divCounter < $imageCounter)
-        {?>
+
+        { ?>
+
             <div id="openseadragon<?php echo $divCounter; ?>" class="image-toggle"<?php if (!$freshIn) { echo ' style="display:none;"'; } else { echo ' style="display:block;"'; }?>>
                 <script type="text/javascript">
                     OpenSeadragon({
@@ -262,24 +250,7 @@ foreach($recorddisplay as $key)
                         fullPageButton: "full-page",
                         nextButton:     "next",
                         previousButton: "previous",
-                        tileSources: [{
-                            "@context": "<?php echo $jsoncontext[$divCounter] ?>",
-                            "@id": "<?php echo $jsonid[$divCounter] ?>",
-                            "height": <?php echo $jsonheight[$divCounter] ?>,
-                            "width": <?php echo $jsonwidth[$divCounter] ?>,
-                            "profile": ["http://iiif.io/api/image/2/level2.json",
-                                {
-                                    "formats": ["jpg"]
-                                }
-                            ],
-                            "protocol": "<?php echo $jsonprotocol[$divCounter] ?>",
-                            "tiles": [{
-                                "scaleFactors": [1, 2, 8, 16, 32],
-                                "width": "<?php echo $jsontiles[$divCounter][0]['width'];?>",
-                                "height": "<?php echo $jsontiles[$divCounter][0]['height'];?>"
-                            }],
-                            "tileSize":<?php echo $jsontilesize[$divCounter];?>
-                        }]
+                        tileSources: ["<?php echo $tileSource[$divCounter]; ?>"]
                     });
                 </script>
             </div>

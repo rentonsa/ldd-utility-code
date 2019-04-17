@@ -35,6 +35,7 @@ if(isset($solr[$type_field])) {
                 //just for test, this line!
                 //$tileSource = str_replace('images.is.ed.ac.uk', 'lac-luna-test2.is.ed.ac.uk:8181', $linkURI);
                 $tileSource = str_replace('detail', 'iiif', $linkURI) . '/info.json';
+                $tileSource = str_replace('http', 'https', $tileSource);
                 $iiifmax = str_replace('info.json', 'full/full/0/default.jpg', $tileSource);
                 list($width, $height) = getimagesize($iiifmax);
                 //echo 'WIDTH'.$width.'HEIGHT'.$height
@@ -43,16 +44,7 @@ if(isset($solr[$type_field])) {
                     $portrait = false;
                 }
                 $mainImage = false;
-                $json = file_get_contents($tileSource);
-                $jobj = json_decode($json, true);
-                $error = json_last_error();
-                $jsoncontext = $jobj['@context'];
-                $jsonid = $jobj['@id'];
-                $jsonheight = $jobj['height'];
-                $jsonwidth = $jobj['width'];
-                $jsonprotocol = $jobj['protocol'];
-                $jsontiles = $jobj['tiles'];
-                $jsonprofile = $jobj['profile'];
+
                 if (!$mainImage) {
                     $mainImageTest = true;
                     ?>
@@ -69,23 +61,7 @@ if(isset($solr[$type_field])) {
                                     panHorizontal: true,
                                     sequenceMode: true,
                                     tileSize: 500,
-                                    tileSources: [{
-                                        "@context": "<?php echo $jsoncontext ?>",
-                                        "@id": "<?php echo $jsonid ?>",
-                                        "height": <?php echo $jsonheight ?>,
-                                        "width": <?php echo $jsonwidth ?>,
-                                        "profile": ["http://iiif.io/api/image/2/level2.json",
-                                            {
-                                                "formats": ["gif", "pdf"]
-                                            }
-                                        ],
-                                        "protocol": "<?php echo $jsonprotocol ?>",
-                                        "tiles": [{
-                                            "scaleFactors": [1, 2, 8, 16, 32],
-                                            "width": 512
-                                        }]
-                                        //minLevel: 2
-                                    }]
+                                    tileSources: ["<?php echo $tileSource; ?>"]
                                 });
                             </script>
                         </div>
