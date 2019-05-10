@@ -12,11 +12,11 @@ $config['skylight_fullname'] = 'Special Collections';
 // set ga code
 if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
     $config['skylight_ga_code'] = '';
-    $config['skylight_container_id'] = '69';
+    $config['skylight_container_id'] = '90';
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-9';
-    $config['skylight_container_id'] = '69';
+    $config['skylight_container_id'] = '90';
 }
 
 $config['skylight_adminemail'] = 'lddt@mlist.is.ed.ac.uk';
@@ -39,7 +39,8 @@ $config['skylight_fields'] = array(
     'Collection' => 'dc.relation.ispartof.en',
     'Bitstream'=> 'dc.format.original.en',
     'ImageURI'=> 'dc.identifier.imageUri.en',
-    'Images'=>'dc.format.extent.en'
+    'Images'=>'dc.format.extent.en',
+    'Manifest'=> 'dc.identifier.manifest.en'
 );
 
 $config['skylight_recorddisplay'] = array(
@@ -73,7 +74,7 @@ $config['skylight_search_fields'] = array(
 
 );
 
-$config['skylight_related_fields'] = array('Author' => 'dc.contributor.author.en');
+$config['skylight_related_fields'] = array('Title' => 'dc.title.en',  'Author' => 'dc.contributor.author.en','Shelfmark' => 'dc.identifier.en',);
 
 //only by title, no date at the moment
 $config['skylight_sort_fields'] = array(
