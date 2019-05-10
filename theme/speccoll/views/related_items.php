@@ -1,6 +1,6 @@
 <div id="stc-section6" class="col-xs-12 related inactive container-fluid">
-    <h2 class="itemtitle hidden-sm hidden-xs">Related Instruments</h2>
-    <h4 class="itemtitle hidden-md hidden-lg">Related Instruments</h4>
+    <h2 class="itemtitle hidden-sm hidden-xs">Related Items</h2>
+    <h4 class="itemtitle hidden-md hidden-lg">Related Items</h4>
     <?php
     $numrel = count($related_items);
     // if there are related items

@@ -79,6 +79,10 @@ body
 .col-xs-8 .record-title {
     font-size: 15px;
 }
+.cat-link
+{
+    color: #0e7ba6;
+}
 
 .items-link {
     width: 100%;
@@ -910,7 +914,7 @@ div[id^="openseadragon"] {
 }
 
 
-@media only screen and (max-width : 1800px) {
+@media only screen and (min-width : 1501px) {
 
     div[id^="openseadragon"] {
         height: 1000px;
@@ -920,6 +924,10 @@ div[id^="openseadragon"] {
     {
         width: 33.33%;
         height: 450px;
+    }
+    .uv-sizer {
+        width:1500px;
+        height:900px;
     }
 
 }
@@ -935,6 +943,10 @@ div[id^="openseadragon"] {
         width: 33.33%;
         height: 400px;
     }
+    .uv-sizer {
+        width:979px;
+        height:750px;
+    }
 
 }
 
@@ -948,6 +960,10 @@ div[id^="openseadragon"] {
     {
         width: 50%;
         height: 350px;
+    }
+    .uv-sizer {
+        width:767px;
+        height:600px;
     }
 
 }
@@ -974,6 +990,10 @@ div[id^="openseadragon"] {
         border-radius: 4px 4px 0 0 !important;
         margin-bottom: 0 !important;
     }
+    .uv-sizer {
+        width:480px;
+        height:350px;
+    }
 }
 
 @media only screen and (max-width : 480px) {
@@ -998,6 +1018,11 @@ div[id^="openseadragon"] {
         padding-right: 10px;
     }
 
+    .uv-sizer {
+        width:320px;
+        height:150px;
+    }
+
 }
 
 @media only screen and (max-width : 320px) {
@@ -1015,6 +1040,10 @@ div[id^="openseadragon"] {
     .sch-link-xs a {
         font-size: 17px;
         padding-right: 10px;
+    }
+    .uv-sizer {
+        width:200px;
+        height:100px;
     }
 }
 
@@ -1068,4 +1097,18 @@ label
 sup a
 {
     color: #0e7ba6;
+}
+
+.uv-cell
+{
+    text-align:center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.uv-fill{
+    /*border-top: solid 15px #000;
+    border-bottom: solid 15px #000;*/
+    background-color: #000;
 }

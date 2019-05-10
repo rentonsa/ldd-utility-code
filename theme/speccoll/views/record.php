@@ -90,6 +90,7 @@ $date_field = $this->skylight_utilities->getField("Date");
 $media_uri = $this->config->item("skylight_media_url_prefix");
 $theme = $this->config->item("skylight_theme");
 $acc_no_field = $this->skylight_utilities->getField("Accession Number");
+$manifest_field =  $this->skylight_utilities->getField("Manifest");
 
 $type = 'Unknown';
 $mainImageTest = false;
@@ -105,6 +106,7 @@ $audioLink = "";
 $videoLink = "";
 
 require_once('SimpleRDFElement.php');
+
 
 if(isset($solr[$bitstream_field]) && $link_bitstream) {
 
@@ -177,7 +179,60 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
             }
         }
     }
+
 }
+else
+{
+    $manifest = 'https://librarylabs.ed.ac.uk/iiif/speccollprototype/manifest/'.$solr[$manifest_field][0].'.json';
+}
+
+
+$json = file_get_contents($manifest);
+$jobj = json_decode($json, true);
+$error = json_last_error();
+
+$linkURI = $jobj['related'];
+$linkURI = str_replace('detail', 'iiif', $linkURI);
+$linkURI = $linkURI.'/full/!300,300/0/default.jpg';
+
+$jsonLink = '<span class ="json-link-item"><a href="https://librarylabs.ed.ac.uk/iiif/uv/?manifest=' . $manifest . '" target="_blank" class="uvlogo" title="View in UV"></a></span>';
+$jsonLink .= '<span class ="json-link-item"><a target="_blank" title="View in Mirador" href="https://librarylabs.ed.ac.uk/iiif/mirador/?manifest='.$manifest.'" class="miradorlogo"></a></span>';
+//  $jsonLink .= '<span class ="json-link-item"><a href="https://images.is.ed.ac.uk/luna/servlet/view/search?search=SUBMIT&q=' . $accno . '" class="lunalogo" title="View in LUNA"></a></span>';
+$jsonLink .= '<span class ="json-link-item"><a href="' . $manifest . '" target="_blank"  class="iiiflogo" title="IIIF manifest"></a></span>';
+//$jsonLink .= '<span class ="json-link-item"><a href = "https://creativecommons.org/licenses/by/3.0/" class ="ccbylogo" title="All images CC-BY" target="_blank" ></a></span>';
+$hasprimo = '';
+$hasalma ='';
+$catalogue_link = '';
+foreach ( $jobj['sequences'][0]['canvases'][0]['metadata']as $metadatapair) {
+    $label = $metadatapair['label'];
+    $value = $metadatapair['value'];
+
+    if (strpos($value, "discovered") !== false) {
+        $value = str_replace("<span>", "", $value);
+        $value = str_replace("</span>", "", $value);
+        $primourl = $value;
+        $hasprimo = 'Y';
+
+    }
+
+    if ($label == 'Catalogue Number') {
+        $value = str_replace("<span>", "", $value);
+        $value = str_replace("</span>", "", $value);
+        $almaurl = "https://open-na.hosted.exlibrisgroup.com/alma/44UOE_INST/bibs/" . $value;
+
+        $hasalma = 'Y';
+    }
+
+
+    if ($label == 'Catalogue Link') {
+        $value = str_replace("<span>", "", $value);
+        $value = str_replace("</span>", "", $value);
+        if ($value !== 'N/A') {
+            $catalogue_link = '<h3><a  class ="cat-link"href="' . $value . '" target = "_blank">See the item in context</a></h3>';
+        }
+    }
+}
+
 ?>
 
 <nav class="navbar navbar-fixed-top second-navbar">
@@ -256,7 +311,7 @@ foreach($recorddisplay as $key)
 <?php
 if (isset($jsonLink)) {
 
-    $viewlink = '<td><iframe src="https://librarylabs.ed.ac.uk/iiif/uv/?manifest='.$manifest.'" width = "1300" height = "800" ></iframe></td>';
+    $viewlink = '<div class="uv-cell"><div class="uv-fill"><iframe class ="uv-sizer" allowfullscreen="true" src="https://librarylabs.ed.ac.uk/iiif/uv/?manifest='.$manifest.'" ></iframe></div></div>';
 
 echo $viewlink;
 }
@@ -283,8 +338,13 @@ echo $viewlink;
 
 
     <?php
+    if ($catalogue_link !== '' and $catalogue_link !== 'N/A')
+    {
+        echo $catalogue_link;
+    }
     if ($hasalma == 'Y' or $hasprimo == 'Y')
     {
+
 
         if ($hasprimo == 'Y') {
             echo '<p><a href= "' . $primourl . '" target="_blank">See this item on DiscoverEd.</a></p>';
