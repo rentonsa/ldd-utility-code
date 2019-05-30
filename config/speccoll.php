@@ -12,11 +12,11 @@ $config['skylight_fullname'] = 'Special Collections';
 // set ga code
 if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
     $config['skylight_ga_code'] = '';
-    $config['skylight_container_id'] = '90';
+    $config['skylight_container_id'] = '91';
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-9';
-    $config['skylight_container_id'] = '90';
+    $config['skylight_container_id'] = '91';
 }
 
 $config['skylight_adminemail'] = 'lddt@mlist.is.ed.ac.uk';

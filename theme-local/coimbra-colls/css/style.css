@@ -62,7 +62,7 @@ body {
 ------------------------*/
 .navbar {
   border-radius: 0;
-  background-color: rgba(0, 120, 0, 0.9);
+  background-color: rgba(8, 68, 102, 0.9);
 }
 .navbar-toggle span {
   background-color: white !important;
@@ -78,7 +78,7 @@ body {
 @media screen and (min-width: 1200px) {
   .navbar {
     height: 40px;
-    background-color: rgba(0, 120, 0, 0.9);
+    background-color: rgba(8, 68, 102, 0.9);
   }
   .navbar .navbar-brand {
     margin-left: 20px;
@@ -157,7 +157,7 @@ body {
   height: 1px;
   width: 1px;
   border: 5px solid transparent;
-  border-right: 8px solid rgba(0, 120, 0, 0.9);
+  border-right: 8px solid rgba(8, 68, 102, 0.9);
 }
 #myNavbar .search button {
   display: inline;
@@ -274,7 +274,7 @@ body {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  background-color: rgb(0, 120, 0);
+  background-color: rgb(8, 62, 102);
   color: white;
   clear: both;
   z-index: 10;
@@ -333,25 +333,43 @@ body {
   background-size: cover;
 }
 .parallax.img0 {
-  background-image: url("../images/web_hent_bilde.jpg");
+  background-image: url(https://test.cantaloupe.is.ed.ac.uk/iiif/2/POITIERS_Patrimoineprehistorique_basse_def.jpg/full/full/0/default.jpg);
 }
 .parallax.img1 {
-  background-image: url("../images/JU_Astrolabe.jpg");
+  background-image: url("https://test.cantaloupe.is.ed.ac.uk/iiif/2/UPPSALA_ATTACHMENT-0001.jpg/full/full/0/default.jpg");
 }
 .parallax.img2 {
-  background-image: url("../images/MS58_130r_HI_CROP.jpg");
+  background-image: url("https://test.cantaloupe.is.ed.ac.uk/iiif/2/LEUVEN_12_-_Pierre_ALECHINSK.jpg/full/full/0/default.jpg");
 }
 .parallax.img3 {
-  background-image: url("../images/Goe04_MathMod.jpg");
+  background-image: url("https://test.cantaloupe.is.ed.ac.uk/iiif/2/BRISTOL_Coimbra_ill.jpg/full/full/0/default.jpg");
 }
 .parallax.img4 {
-  background-image: url("../images/01_unibo.jpg");
+  background-image: url("https://test.cantaloupe.is.ed.ac.uk/iiif/2/TARTU_photo6.jpg/full/full/0/default.jpg");
 }
 .parallax.img5 {
-  background-image: url("../images/Wuerzburg_submission1_tyrannicide.jpg");
+  background-image: url("https://test.cantaloupe.is.ed.ac.uk/iiif/2/TRINITY_MS58_034r_LO.jpg/full/full/0/default.jpg");
 }
 .parallax.img6 {
-  background-image: url("../images/old-bug-boxes-33.jpg");
+  background-image: url("https://test.cantaloupe.is.ed.ac.uk/iiif/2/BOLOGNA_ostetricia_78.jpg/full/full/0/default.jpg");
+}
+.parallax.img7 {
+  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEart~2~2~61475~104997/full/full/0/default.jpg");
+}
+.parallax.img8 {
+  background-image: url("https://test.cantaloupe.is.ed.ac.uk/iiif/2/LORAND_Bio_Paleo_Coll_ELTE.jpg/full/full/0/default.jpg");
+}
+.parallax.img9 {
+  background-image: url("https://sammlungen.uni-goettingen.de/rest/image/record_kuniweb_906303/record_kuniweb_906303_382772.jpg/full/full/0/default.jpg");
+}
+.parallax.img10 {
+  background-image: url("https://sammlungen.uni-goettingen.de/rest/image/record_kuniweb_592351/record_kuniweb_592351_351928.jpg/full/full/0/default.jpg");
+}
+.parallax.img11 {
+  background-image: url("https://test.cantaloupe.is.ed.ac.uk/iiif/2/TARTU_UT190124AT120-Pano.jpg/full/full/0/default.jpg");
+}
+.parallax.img12 {
+  background-image: url("https://test.cantaloupe.is.ed.ac.uk/iiif/2/PADUA_UniPd_Macchine.jpg/full/full/0/default.jpg");
 }
 .parallax.active {
   opacity: 1;
@@ -371,40 +389,41 @@ body {
 }
 .main-categories a {
   color: white;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
 }
 @media screen and (min-width: 768px) {
   .main-categories {
     margin-top: calc(75vh - 50px);
+    /*width: 80vw;*/
     width: 100vw;
     padding: 0px;
-
   }
   .main-categories a {
-    width: 13.5%;
+    width: 7.69%;
     height: 25vh;
-    border-right: 1px solid rgba(240, 240, 240, 0.3);
+    /*border-right: 1px solid rgba(240, 240, 240, 0.3);*/
     border-bottom: 5px solid white;
     color: white;
-    background: rgba(0, 120, 0, 0.8);
+    background: rgba(8, 68, 102, 0.8);
     font-size: 14px;
     word-wrap: break-word;
     text-align: center;
     line-height: 25vh;
-    font-weight: bold;
+    /*font-weight: bold;*/
     list-style: none;
-    -webkit-transition: all 1s ease-in-out;
+    /*-webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;*/
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
   }
   .main-categories a.active {
-    border-bottom: none;
-    width: 19%;
-    background-color: rgb(0, 120, 0);
-    font-size: 22px;
+    /*border-bottom: none;
+    /*width: 19%;*/
+    background-color: rgb(8, 62, 102);
+    /*font-size: 22px;*/
+
   }
 }
 @media screen and (max-width: 768px) {
@@ -416,7 +435,7 @@ body {
   .main-categories a {
     height: 50px;
     color: white;
-    background: rgba(0, 120, 0, 0.4);
+    background: rgba(8, 68, 102, 0.4);
     font-size: 12px;
     word-wrap: break-word;
     text-align: center;
@@ -428,9 +447,11 @@ body {
     -o-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
   }
   .main-categories a.active {
-    background-color: rgb(0, 120, 0);
+    background-color: rgb(8, 62, 102);
   }
 }
 /* ---------------------
@@ -523,13 +544,13 @@ nav #overflow li a:hover {
     border: 0px;
     border-radius: 0px !important;
     font-weight: bold;
-    color: rgba(0, 120, 0, 0.9);
+    color: rgba(8, 68, 102, 0.9);
   }
   .list-group-item.active {
     background-color: transparent;
   }
   .list-group-item.active a {
-    color: rgb(0, 120, 0);
+    color: rgb(8, 68, 102);
     font-weight: bold;
   }
   .list-group-item:nth-of-type(2) {
@@ -583,7 +604,7 @@ nav #overflow li a:hover {
     transition-delay: 0.8s;
   }
   .row.record img.active {
-    border: 3px solid rgba(0, 120, 0, 0.9);
+    border: 3px solid rgba(8, 68, 102, 0.9);
     border-radius: 20px;
   }
   .row.record {
@@ -616,7 +637,7 @@ nav #overflow li a:hover {
     position: relative;
     overflow: hidden;
     padding: 0.5em 0;
-    color: rgb(0, 120, 0);
+    color: rgb(8, 68, 102);
     font-weight: bold;
     background-color: transparent;
     text-transform: uppercase;
@@ -628,7 +649,7 @@ nav #overflow li a:hover {
   .row.record .record-title a {
     width: 100%;
     height: 100%;
-    color: rgb(0, 120, 0);
+    color: rgb(8, 68, 102);
     opacity: 0;
     filter: alpha(opacity=0);
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -655,7 +676,7 @@ nav #overflow li a:hover {
     opacity: 1;
   }
   .row.record .record-title {
-    background-color: rgba(0, 120, 0, 0.9);
+    background-color: rgba(8, 68, 102, 0.9);
     padding: 10px 0px 10px 0px;
     margin: 0px;
     color: white;
@@ -732,6 +753,7 @@ nav #overflow li a:hover {
   }
   #openseadragon {
     width: 60%;
+    /*height: calc(100vh - 50px);*/
   }
   .record-info {
     position: absolute;
@@ -740,7 +762,7 @@ nav #overflow li a:hover {
     height: calc(100vh - 80px);
     width: calc(40% - 20px) !important;
     opacity: 0;
-    border: 1px solid rgba(0, 120, 0, 0.2);
+    border: 1px solid rgba(8, 68, 102, 0.2);
     background: rgba(61, 95, 117, 1);
     box-shadow: 5px 5px 5px rgb(220, 220, 220);
     color: white;
@@ -901,8 +923,8 @@ nav #overflow li a:hover {
     width: 30%;
     text-align: center;
     border-radius: 5px;
-    border: 1px solid rgba(0, 120, 0, 0.9);
-    color: rgba(0, 120, 0, 0.9);
+    border: 1px solid rgba(8, 68, 102, 0.9);
+    color: rgba(8, 68, 102, 0.9);
     background-color: transparent;
     top: calc(100vh - 80px);
     left: 35%;
@@ -911,7 +933,7 @@ nav #overflow li a:hover {
   .record-info {
     width: calc(100vw - 30px) !important;
     margin: 0 auto;
-    color: rgb(0, 120, 0);
+    color: rgb(8, 68, 102);
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
@@ -924,7 +946,7 @@ nav #overflow li a:hover {
     position: relative;
     margin: 0px;
     padding: 10px 10px 10px 35px;
-    color: rgb(0, 120, 0);
+    color: rgb(8, 68, 102);
     text-align: center;
     font-size: 16px;
     font-weight: bold;
@@ -937,7 +959,7 @@ nav #overflow li a:hover {
     height: 100%;
     width: 50px;
     border: 0px;
-    color: rgb(0, 120, 0);
+    color: rgb(8, 68, 102);
     font-size: 18px;
   }
   .record-info .itemtitle i {
@@ -970,7 +992,7 @@ nav #overflow li a:hover {
   .record-info .description .field {
     width: 100%;
     display: block;
-    color: rgb(0, 120, 0);
+    color: rgb(8, 68, 102);
     font-size: 0.9em;
     font-weight: bold;
   }
@@ -1062,7 +1084,7 @@ nav #overflow li a:hover {
 }
 .big-title {
   display: block;
-  background-color: rgb(0, 120, 0);
+  background-color: rgb(8, 62, 102);
   color: white;
   padding: 15px;
 }
@@ -1073,7 +1095,7 @@ nav #overflow li a:hover {
 }
 .information-container .content a{
   padding: 10px;
-  background-color: rgba(0, 120, 0, 0.9);
+  background-color: rgba(8, 68, 102, 0.9);
   color: white;
   text-decoration: underline;
   display: block;

@@ -28,7 +28,7 @@ if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
         51  => base_url() ."iconicsdeepzoom/",
         50  => base_url() ."anatomy/",
         84  => base_url() ."stcecilias/",
-        90  => base_url() ."speccoll/",
+        91  => base_url() ."speccoll/",
         49  => base_url() ."cockburn/"
     );
 
@@ -43,7 +43,7 @@ if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
         51  => "Iconics Collection",
         50  => "Anatomy Collection",
         84  => "St Cecilia's Hall",
-        90  => "Archives, Rare Books & Manuscripts",
+        91  => "Archives, Rare Books & Manuscripts",
         49  => "Cockburn Collection"
     );
 }
