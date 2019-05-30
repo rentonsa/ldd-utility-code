@@ -3,12 +3,12 @@
 if (strpos($_SERVER['HTTP_HOST'], "test") !== false || strpos($_SERVER['HTTP_HOST'], "localhost") !== false) {
     $config['skylight_ga_code'] = 'UA-25737241-6';
     $config['skylight_container_id'] = '63';
-    $config['skylight_image_server'] = 'http://test.cantaloupe.is.ed.ac.uk';
+    $config['skylight_image_server'] = 'https://test.cantaloupe.is.ed.ac.uk';
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-6';
     $config['skylight_container_id'] = '50';
-    $config['skylight_image_server'] = 'http://cantaloupe.is.ed.ac.uk';
+    $config['skylight_image_server'] = 'https://cantaloupe.is.ed.ac.uk';
 }
 
 $config['skylight_appname'] = 'coimbra';
