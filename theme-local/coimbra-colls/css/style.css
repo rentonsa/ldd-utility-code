@@ -333,31 +333,31 @@ body {
   background-size: cover;
 }
 .parallax.img0 {
-  background-image: url(https://test.cantaloupe.is.ed.ac.uk/iiif/2/POITIERS_Patrimoineprehistorique_basse_def.jpg/full/full/0/default.jpg);
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/POITIERS_Patrimoineprehistorique_basse_def.jpg/full/full/0/default.jpg");
 }
 .parallax.img1 {
-  background-image: url("https://test.cantaloupe.is.ed.ac.uk/iiif/2/UPPSALA_ATTACHMENT-0001.jpg/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/UPPSALA_ATTACHMENT-0001.jpg/full/full/0/default.jpg");
 }
 .parallax.img2 {
-  background-image: url("https://test.cantaloupe.is.ed.ac.uk/iiif/2/LEUVEN_12_-_Pierre_ALECHINSK.jpg/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/LEUVEN_12_-_Pierre_ALECHINSK.jpg/full/full/0/default.jpg");
 }
 .parallax.img3 {
-  background-image: url("https://test.cantaloupe.is.ed.ac.uk/iiif/2/BRISTOL_Coimbra_ill.jpg/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/BRISTOL_Coimbra_ill.jpg/full/full/0/default.jpg");
 }
 .parallax.img4 {
-  background-image: url("https://test.cantaloupe.is.ed.ac.uk/iiif/2/TARTU_photo6.jpg/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/TARTU_photo6.jpg/full/full/0/default.jpg");
 }
 .parallax.img5 {
-  background-image: url("https://test.cantaloupe.is.ed.ac.uk/iiif/2/TRINITY_MS58_034r_LO.jpg/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/TRINITY_MS58_034r_LO.jpg/full/full/0/default.jpg");
 }
 .parallax.img6 {
-  background-image: url("https://test.cantaloupe.is.ed.ac.uk/iiif/2/BOLOGNA_ostetricia_78.jpg/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/BOLOGNA_ostetricia_78.jpg/full/full/0/default.jpg");
 }
 .parallax.img7 {
   background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEart~2~2~61475~104997/full/full/0/default.jpg");
 }
 .parallax.img8 {
-  background-image: url("https://test.cantaloupe.is.ed.ac.uk/iiif/2/LORAND_Bio_Paleo_Coll_ELTE.jpg/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/LORAND_Bio_Paleo_Coll_ELTE.jpg/full/full/0/default.jpg");
 }
 .parallax.img9 {
   background-image: url("https://sammlungen.uni-goettingen.de/rest/image/record_kuniweb_906303/record_kuniweb_906303_382772.jpg/full/full/0/default.jpg");
@@ -366,10 +366,10 @@ body {
   background-image: url("https://sammlungen.uni-goettingen.de/rest/image/record_kuniweb_592351/record_kuniweb_592351_351928.jpg/full/full/0/default.jpg");
 }
 .parallax.img11 {
-  background-image: url("https://test.cantaloupe.is.ed.ac.uk/iiif/2/TARTU_UT190124AT120-Pano.jpg/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/TARTU_UT190124AT120-Pano.jpg/full/full/0/default.jpg");
 }
 .parallax.img12 {
-  background-image: url("https://test.cantaloupe.is.ed.ac.uk/iiif/2/PADUA_UniPd_Macchine.jpg/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/PADUA_UniPd_Macchine.jpg/full/full/0/default.jpg");
 }
 .parallax.active {
   opacity: 1;
