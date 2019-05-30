@@ -9,5 +9,6 @@
         </p>
         <p><a href="https://www.ed.ac.uk/literatures-languages-cultures/delc/splas/news-and-events/conectando" target="_blank" alt="Conectando at LLC" title="Conectando at LLC">Conectando at Literatures, Languages and Cultures</a></p>
         <p><a href="https://soundcloud.com/user-127781924/public-art-oscar-romero-plaque"  target="_blank" alt="Oscar Romero Plaque podcast" title="Oscar Romero Plaque podcast">Podcast about the Oscar Romero plaque</a> </p>
+        <p><a href="https://images.is.ed.ac.uk/luna/servlet/detail/UoEart~1~1~75484~199489"  target="_blank" alt="Oscar Romero Plaque" title="Oscar Romero Plaque"><img src="https://images.is.ed.ac.uk/luna/servlet/iiif/UoEart~1~1~75484~199489/full/660,/0/default.jpg"/></a>&nbsp;
     </div>
 </div>
