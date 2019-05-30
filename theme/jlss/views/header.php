@@ -39,16 +39,36 @@
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/flowplayer-7.0.4/skin/skin.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/css/style.css?v=2">
-        <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
-
+        <link rel="stylesheet" href="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/css/picgallery.css">
+ 
         <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
         <script src="<?php echo base_url()?>assets/modernizr/modernizr-1.7.min.js"></script>
         <script src="<?php echo base_url()?>assets/jquery-1.11.0/jquery-1.11.0.min.js"></script>
         <script src="<?php echo base_url()?>assets/jquery-ui-1.10.4/ui/minified/jquery-ui.min.js"></script>
-        <script src="<?php echo base_url()?>assets/jquery-1.11.0/jcarousel/jquery.jcarousel.min.js"></script>
         <script src="<?php echo base_url()?>assets/bootstrap/js/bootstrap.min.js"></script>
-
+        <script src="<?php echo base_url()?>assets/jquery-1.11.0/jcarousel/jquery.jcarousel.min.js"></script>
         <script src="<?php echo base_url()?>assets/google-analytics/analytics.js"></script>
+        <script src="<?php echo base_url()?>assets/openseadragon/openseadragon.min.js"></script>
+
+        <!-- JavaScript for disabling right-click on page to protect images -->
+        <script>
+        var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+
+        if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+
+        function mischandler(){
+        return false;
+        }
+
+        function mousehandler(e){
+        var myevent = (isNS) ? e : event;
+        var eventbutton = (isNS) ? myevent.which : myevent.button;
+        if((eventbutton==2)||(eventbutton==3)) return false;
+        }
+        document.oncontextmenu = mischandler;
+        document.onmousedown = mousehandler;
+        document.onmouseup = mousehandler;
+        </script>
 
         <!-- Google Analytics -->
         <script>
@@ -103,38 +123,37 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="./" title="Medical Case Notes Home Link">Home</a></li>
+                        <li><a href="./" title="Scottish Jewish Archives Centre">Home</a></li>
                         <li><a href="./about" title="About Link">About</a></li>
-                        <li><a href="./history" title="History Link">History</a></li>
-                        <li><a href="./tuberculosis" title="Tuberculosis">Tuberculosis</a></li>
-                        <li><a href="./catalogues" title="Catalogues Link">Catalogues</a></li>
-                        <li><a href="./people" title="People Link">People</a></li>
-                        <li><a href="./achievements" title="Achievements Link">Achievements</a></li>
-                        <li><a href="http://lhsa.blogspot.co.uk/" title="LHSA Blog Link" target="_blank">LHSA Blog</a></li>
+                        <li><a href="https://www.sjac.org.uk/" title="SJAC Home Page" target="_blank">SJAC</a></li>
+                        <li><a href="http://jewishmigrationtoscotland.is.ed.ac.uk/" title="JLSS Blog Link" target="_blank">JLSS Blog</a></li>
+                        <!--<li><a href="./contact" title="Contact Details">Contact</a></li>-->
+                        <li><a href="https://www.sjac.org.uk/about/donations/" title="Donate" target="_blank">Donate</a></li>
                         <li><a href="./feedback" title="Feedback Form">Feedback</a></li>
                     </ul>
-                </div><!--/.nav-collapse -->
+                </div>
             </div>
         </nav>
         <header>
             <div class="container">
 
                 <div class="header-normal">
-                    <div id="collection-title">Medical Records Revived:
-                        <div id="collection-sub-title">Case Note Catalogues at <br />Lothian Health Services Archive</div>
+                    <a href="<?php echo base_url() .'jlss'; ?>">
+                        <div id="collection-title">Scottish Jewish Archives Centre <br>
+                            <div id="collection-sub-title">Digital Collection </div>
+                        </div>
+                    </a>
+                        
+                    <div id="collection-logo">
+                        <a href="<?php echo base_url() . 'jlss'; ?>">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/sjac_logo.png" alt="Scottish Jewish Archives Logo" class="img-responsive pull-right img-circle">
+                        </a>
                     </div>
-
-                    <div id="collection-search">
-                        <form action="./redirect/" method="post" class="navbar-form">
-                            <div class="input-group search-box">
-                                <input type="text" class="form-control" placeholder="Search" name="q" value="<?php if (isset($searchbox_query)) echo urldecode($searchbox_query); ?>" id="q" />
-                                <span class="input-group-btn">
-                                    <button type="submit" class="btn btn-default" name="submit_search" value="Search" id="submit_search"><i class="glyphicon glyphicon-search"></i></button>
-                                </span>
-                            </div>
-                        </form>
-                    </div>
+                    
                 </div>
+
+                <div class="content-divider"><p>divider</p></div>
+                
             </div>
         </header>
 

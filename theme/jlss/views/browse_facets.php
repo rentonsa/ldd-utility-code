@@ -17,6 +17,7 @@
             </form>
         </div>
         <br />
+        
         <div class="browse_facets">
             <ul class="list-group">
                 <?php foreach($facet['terms'] as $term) { ?>
