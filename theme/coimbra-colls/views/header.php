@@ -18,7 +18,7 @@
     Remove this if you use the .htaccess -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Stuart Sounds</title>
+    <title>Coimbra Collections</title>
 
     <meta name="description" content="">
     <meta name="author" content="">
@@ -32,9 +32,6 @@
 
     <!-- CSS: implied media="all" -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bootstrap/css/bootstrap.min.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/fancybox/source/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/flowplayer-7.0.4/skin/skin.css">
     <link rel="stylesheet" href="<?php echo base_url()?>assets/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/css/style.css">
@@ -47,19 +44,12 @@
     <script src="<?php echo base_url()?>assets/jquery-ui-1.10.4/ui/minified/jquery-ui.min.js"></script>
     <script src="<?php echo base_url()?>assets/jquery-1.11.0/jcarousel/jquery.jcarousel.min.js"></script>
     <script src="<?php echo base_url()?>assets/bootstrap/js/bootstrap.min.js"></script>
-
-
-    <!--    Scripts added by Kristiyan Tsvetanov-->
-    <script src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/js/visible.js"></script>
-    <script src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/js/viewportchecker.js"></script>
-
-
     <script src="<?php echo base_url()?>assets/google-analytics/analytics.js"></script>
 
     <!-- Google Analytics -->
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','<?php echo base_url()?>assets/google-analytics/analytics.js','ga');
 
@@ -99,77 +89,43 @@
 </head>
 
 <body>
-<nav class="navbar navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="http://www.coimbra-group.eu/" title="Coimbra Group Website link" target="_blank"></a>
+    <div id="loader">
+        <img class="logo" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logo.png">
+        <h1>Coimbra Collections</h1>
+    </div>
+    <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://www.coimbra-group.eu/" title="Coimbra Group Website link" target="_blank"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active dropdown"><a href="#">Home</a></li>
+                    <li><a href="./feedback">Feedback</a></li>
+                    <li><a href="./about">About</a></li>
+                    <li><a href="./virtual-exhibition">Virtual Exhibition</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="./search">All records</a></li>
+                    <li class="search">
+                        <form role="search" action="./redirect/" method="post">
+                            <input id="uoe-search" type="text"
+                                   placeholder="Search..." name="q"
+                                   value="<?php if (isset($searchbox_query)) echo urldecode($searchbox_query); ?>"
+                                   id="q"/><button type="submit" name="submit_search" value="Search">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li class="active dropdown"><a href="#">Home</a></li>
-                <li><a href="./feedback">Feedback</a></li>
-                <li><a href="./about">About</a></li>
-                <li><a href="./intro">Intro</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="./search">All records</a></li>
-                <li class="search">
-                    <form role="search" action="./redirect/" method="post">
-
-                        <input id="uoe-search" type="text"
-                               placeholder="Search..." name="q"
-                               value="<?php if (isset($searchbox_query)) echo urldecode($searchbox_query); ?>"
-                               id="q"/>
-                        <button type="submit" name="submit_search" value="Search">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </button>
-                    </form>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    </nav>
 
 
 
-<div class="information-container col-xs-12 col-md-8 col-md-offset-2">
-    <b class="big-title">Feedback</b>
-    <div class="content">
-
-    <p>Please contact us with your suggestions or questions at info@coimbra-group.eu</p>
-
-    </div>
-</div>
-
-<div class="information-container col-xs-12 col-md-8 col-md-offset-2">
-    <b class="big-title">Privacy Statement</b>
-    <div class="content">
-        <p>Information about you: how we use it and with whom we share it
-        </p>
-        <p>
-            The information you provide in this form will be used only for purposes of your enquiry. We will not share your personal information with any third party or use it for any other purpose.
-            We are using information about you because it is necessary to contact you regarding your enquiry. By providing your personal data when submitting an enquiry to us, consent for your personal data to be used in this way is implied.
-        </p>
-        <p>
-            For digitisation orders, your personal data is necessary for the performance of our contract to provide you with services that charge a fee.
-        </p>
-        <p>
-            We will hold the personal data you provided us for 6 years. We do not use profiling or automated decision-making processes.
-        </p>
-        <p>
-            If you have any questions, please contact: <a href="mailto:info@coimbra-group.eu">info@coimbra-group.eu</a>
-        </p>
-        <p><a href="https://www.ed.ac.uk/records-management/notice" target="_blank">University of Edinburgh privacy statement</a></p>
-    </div>
-
-</div>
-
-
-
-</body>
-</html>

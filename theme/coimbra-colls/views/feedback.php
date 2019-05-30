@@ -114,7 +114,7 @@
                 <li class="active dropdown"><a href="#">Home</a></li>
                 <li><a href="./feedback">Feedback</a></li>
                 <li><a href="./about">About</a></li>
-                <li><a href="./intro">Intro</a></li>
+                <li><a href="./virtual-exhibition">Virtual Exhibition</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="./search">All records</a></li>
@@ -141,7 +141,7 @@
     <b class="big-title">Feedback</b>
     <div class="content">
 
-    <p>Please contact us with your suggestions or questions at info@coimbra-group.eu</p>
+        <p>Please contact us with your suggestions or questions at info@coimbra-group.eu</p>
 
     </div>
 </div>
