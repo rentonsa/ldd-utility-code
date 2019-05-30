@@ -6,11 +6,15 @@ $config['skylight_appname'] = 'jlss';
 $config['skylight_url_prefix'] = 'jlss';
 
 // set ga code
-if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
+if (strpos($_SERVER['HTTP_HOST'], "test") !== false || strpos($_SERVER['HTTP_HOST'], "localhost") !== false) {
     $config['skylight_ga_code'] = 'UA-25737241-6';
+    $config['skylight_container_id'] = '89';
+    $config['skylight_image_server'] = 'https://test.cantaloupe.is.ed.ac.uk';
 }
 else {
-    $config['skylight_ga_code'] = 'UA-25737241-9';
+    $config['skylight_ga_code'] = 'UA-25737241-6';
+    $config['skylight_container_id'] = '77';
+    $config['skylight_image_server'] = 'https://cantaloupe.is.ed.ac.uk';
 }
 
 $config['skylight_adminemail'] = 'is-crc@ed.ac.uk';
@@ -27,7 +31,6 @@ $config['skylight_oaipmhallowed'] = true;
 
 
 // Container ID and the field used in solr index to store this ID. Used for restricting search/browse scope.
-$config['skylight_container_id'] = '89';
 $config['skylight_container_field'] = 'location.coll';
 
 $config['skylight_fields'] = array(
@@ -38,7 +41,7 @@ $config['skylight_fields'] = array(
     'Classification' => 'dc.subject.classification.en',
     'Type' => 'dc.type.en',
     'Abstract' => 'dc.description.abstract.en',
-    'Date' => 'dc.coverage.temporal.en',
+    'OldDate' => 'dc.coverage.temporal.en',
     'Bitstream'=> 'dc.format.original.en',
     'Thumbnail'=> 'dc.format.thumbnail.en',
     'Description'=>'dc.description.en',
@@ -57,7 +60,10 @@ $config['skylight_fields'] = array(
     'Tags' => 'dc.subject.crowdsourced.en',
     'ImageUri' => 'dc.identifier.imageUri.en',
     'Permalink' => 'dc.contributor.authorpermalink.en',
-    'SketchFabURI' => 'dc.identifier.sketchuri.en'
+    'SketchFabURI' => 'dc.identifier.sketchuri.en',
+    'Collection-Description' => 'dc.description.other.en',
+    'ItemImage' => 'dc.format.bitstream.en',
+    'Date' => 'dc.date.created.en',
 );
 
 $config['skylight_schema_links'] = array(
@@ -79,12 +85,13 @@ $config['skylight_schema_links'] = array(
     'Period'=> 'temporalCoverage',
     'Link'=> 'url',
     'ImageUri'=> 'image',
-    'Tags'=> 'keywords'
+    'Tags'=> 'keywords',
+    'ItemDate' => 'itemDate'
 
 );
 
 $config['skylight_date_filters'] = array();
-$config['skylight_filters'] = array('Artist' => 'author_filter', 'Classification' => 'classification_filter', 'Collection'=> 'collection_filter', 'Period' => 'period_filter', 'Tags' => 'tags_filter');
+$config['skylight_filters'] = array('Collection'=> 'collection_filter');
 
 $config['skylight_filter_delimiter'] = ':';
 
@@ -98,7 +105,7 @@ $config['skylight_meta_fields'] = array(
     'Tags' => 'dc.subject.crowdsourced.en',
 );
 
-$config['skylight_recorddisplay'] = array( 'Permalink','Artist','Title','Alternative Title','Date','Period','Description','Material','Dimensions','Type','Place Made','Subject','Collection','Classification','Signature', 'Inscription','Accession Number');
+$config['skylight_recorddisplay'] = array( 'Permalink','Artist','Title','Alternative Title','OldDate','Period','Description','Material','Dimensions','Type','Place Made','Date','Subject','Collection','Classification','Signature', 'Inscription','Accession Number');
 
 $config['skylight_searchresult_display'] = array('Author','Title','Medium','Type','Description', 'Bitstream', 'Thumbnail', 'Date');
 
@@ -114,7 +121,7 @@ $config['skylight_related_fields'] = array('Artist' => 'dc.contributor.authorful
 $config['skylight_related_number'] = 5;
 
 $config['skylight_sort_fields'] = array(
-    'Artist' => 'dc.contributor.author_sort ', 'Title' => 'dc.title_sort'
+    'Subject' => 'dc.subject_sort ', 'Title' => 'dc.title_sort'
 );
 
 $config['skylight_default_sort'] = 'dc.contributor.author_sort+asc';
@@ -128,6 +135,8 @@ $config['skylight_feed_fields'] = array('Title' => 'Title',
 
 $config['skylight_results_per_page'] = 10;
 $config['skylight_share_buttons'] = false;
+
+$config['skylight_facet_limit'] = 15;
 
 $config['skylight_homepage_recentitems'] = false;
 $config['skylight_homepage_randomitems'] = false;

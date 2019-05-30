@@ -1,42 +1,216 @@
-    <div class="col-md-9 col-sm-9 col-xs-12">
-    <h1 class="itemtitle">Medical records revived: <small>Case Note Catalogues at Lothian Health Services Archive</small></h1>
+<div class="col-md-9 col-sm-9 col-xs-12">
+   
+   
+    <div id="index-blurb">
         <p>
-            Lothian Health Services Archive (LHSA) is the archive of NHS Lothian, based in the Centre for Research
-            Collections, University of Edinburgh. The Archive collects evidence of the history of healthcare in
-            Edinburgh and the Lothians, from records of how Edinburgh’s NHS hospitals were founded and managed to
-            privately donated collections gifted by individuals and organisations shaping the region’s medical history.
-            LHSA records date from 1594 to the present day.
+        SJAC’s diverse collections include old Synagogue minute books and registers, membership lists, photographs, oral histories, 
+        testimonies, annual reports of communal organisations, books of Scottish Jewish interest, friendly society regalia, personal 
+        papers, war medals, ceremonial keys, newspapers, magazines, trophies, plaques, paintings and sculptures, immigration and 
+        naturalisation papers, passports and correspondence.
 
+        We also hold copies of records of all of the 17 Jewish cemeteries in Scotland, indexed on our computer database.
+
+        We have a computer database of almost 40,000 Scottish Jews. Information is constantly being added to this database, which 
+        includes information from over 70 sources such as cemetery lists, synagogue registers, charity subscription lists and census 
+        records.
         </p>
-        <img src="<?php echo base_url()?>/theme/lhsacasenotes/images/P_PL1_B_E_101-RIE-Exterior-1985.gif" alt="Royal Infirmary Edinburgh Exterior" class="img-responsive pull-right img-circle" />
+    </div>
 
-        <p>
-            Patient records are an invaluable way of bringing Edinburgh’s historic breakthroughs in medical treatment and
-            care to light. As well as bound accounts of treatment (dating back to the eighteenth century), LHSA holds over one million
-            twentieth-century patient case notes in folders in one of the largest medical archives in the UK.
-            The majority of these cases (although by no means all) were written in the Royal Infirmary of Edinburgh.
-            They cover both specific medical specialisms (from neurosurgery, respiratory disease and psychiatric care
-            to orthopaedics and obstetrics) and more general medicine and surgery.
-        </p>
-        <p>
-        In 2012, LHSA developed a methodology for cataloguing these modern archival case notes. Catalogues describe
-            individual cases for researchers whilst protecting the privacy of patients through careful
-            redaction of potentially identifying details. This resource acts as a gateway to these anonymised case note
-            catalogues. It will guide you in using the catalogues for the first time, give context to key people,
-            subjects and places, and will provide information for legitimate researchers on applying to access the
-            confidential documents that they describe. At present, finding aids for neurosurgical and tuberculosis case notes can be accessed,
-            but new catalogues will be added as they are completed.
+    <h1>Collections</h1>
+    <div class="content-divider-index"><p>divider</p></div>
 
-        </p>
+    <!--<?php print_r($docs);?>-->
+   
+    <div class="row">
+            <div class="col-sm-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="clickbox-margin">
+                    <figure class="clickbox">
+                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/theatre-clickbox.jpg" alt="Theatre" class="img-responsive">
 
-        <p>
-        The support of the <a href="https://wellcome.ac.uk/" alt="Welcome Trust" target="_blank">Wellcome Trust</a> is
-            gratefully acknowledged. Research Resources funding has enabled the ongoing
-            cataloguing of Norman Dott’s neurosurgical case notes and those of the Royal Victoria Hospital, the Royal
-            Victoria Dispensary for Diseases of the Chest, the Regional Hospital National X-ray Campaign and Southfield
-            Sanitorium. <a href="http://www.lhsa.lib.ed.ac.uk/projects/Projects-WTProjects.htm" target="_blank">Find out more about these projects here.</a>
-        </p>
-        <img src="<?php echo base_url()?>/theme/lhsacasenotes/images/dott-index-image.gif" alt="Norman Dott Case Notes" class="img-responsive pull-right index-img" />
+                        <div class="clickbox-text">
+                            <div class="clickbox-text-background">
+                                <h3><span><br>Theatre</span></h3>
+                                <i class="fa fa-camera"></i>
+                                <i class="ion-arrow-right-c"></i>
+                            </div>
 
+                            <div class="curl"></div>
+                            <a href="./search/*:*/Collection:&quot;theatre%7C%7C%7CTheatre&quot;" title="Theatre"></a>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="clickbox-margin">
+                    <figure class="clickbox">
+                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/serving-clickbox.jpg" alt="Serving Their Country" class="img-responsive">
+
+                        <div class="clickbox-text">
+                            <div class="clickbox-text-background">
+                                <h3><span >Serving <br>Their Country</span></h3>
+                                <i class="fa fa-camera"></i>
+                                <i class="ion-arrow-right-c"></i>
+                            </div>
+
+                            <div class="curl"></div>
+                            <a href="./search/*:*/Collection:&quot;serving+their+country%7C%7C%7CServing+Their+Country&quot;" title="Serving Their Country"></a>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="clickbox-margin">
+                    <figure class="clickbox">
+                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/migration-clickbox.jpg" alt="Migration" class="img-responsive">
+
+                        <div class="clickbox-text">
+                            <div class="clickbox-text-background">
+                                <h3><span><br>Migration</span></h3>
+                                <i class="fa fa-camera"></i>
+                                <i class="ion-arrow-right-c"></i>
+                            </div>
+
+                            <div class="curl"></div>
+                            <a href="./search/*:*/Collection:&quot;migration%7C%7C%7CMigration&quot;" title="Migration"></a>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="clickbox-margin">
+                    <figure class="clickbox">
+                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/refugee-clickbox.jpg" alt="Refugee Period" class="img-responsive">
+
+                        <div class="clickbox-text">
+                            <div class="clickbox-text-background">
+                                <h3><span><br>Refugee Period</span></h3>
+                                <i class="fa fa-camera"></i>
+                                <i class="ion-arrow-right-c"></i>
+                            </div>
+
+                            <div class="curl"></div>
+                            <a href="./search/*:*/Collection:&quot;refugee+period%7C%7C%7CRefugee+Period&quot;" title="Refugee Period"></a>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="clickbox-margin">
+                    <figure class="clickbox">
+                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/religion-clickbox.jpg" alt="Religious Life" class="img-responsive">
+
+                        <div class="clickbox-text">
+                            <div class="clickbox-text-background">
+                                <h3><span><br>Religious Life</span></h3>
+                                <i class="fa fa-camera"></i>
+                                <i class="ion-arrow-right-c"></i>
+                            </div>    
+
+                            <div class="curl"></div>
+                            <a href="./search/*:*/Collection:&quot;religious+life%7C%7C%7CReligious+life&quot;" title="Religious Life"></a>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="clickbox-margin">
+                    <figure class="clickbox">
+                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/art-clickbox.jpg" alt="Art" class="img-responsive">
+
+                        <div class="clickbox-text">
+                            <div class="clickbox-text-background">
+                                <h3><span><br>Art</span></h3>
+                                <i class="fa fa-camera"></i>
+                                <i class="ion-arrow-right-c"></i>
+                            </div>
+
+                            <div class="curl"></div>
+                            <a href="./search/*:*/Collection:&quot;art%7C%7C%7CArt&quot;" title="Art"></a>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="clickbox-margin">
+                    <figure class="clickbox">
+                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/soviet-clickbox.jpg" alt="Soviet jewry" class="img-responsive">
+
+                        <div class="clickbox-text">
+                            <div class="clickbox-text-background">
+                                <h3><span><br>Soviet Jewry</span></h3>
+                                <i class="fa fa-camera"></i>
+                                <i class="ion-arrow-right-c"></i>
+                            </div>
+
+                            <div class="curl"></div>
+                            <a href="./search/*:*/Collection:&quot;soviet+jewry%7C%7C%7CSoviet+Jewry&quot;" title="Soviet Jewry"></a>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="clickbox-margin">
+                    <figure class="clickbox">
+                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/community-clickbox.jpg" alt="Scottish Communities" class="img-responsive">
+
+                        <div class="clickbox-text">
+                            <div class="clickbox-text-background">
+                                <h3><span>Scottish <br>Jewish Communities</span></h3>
+                                <i class="fa fa-camera"></i>
+                                <i class="ion-arrow-right-c"></i>
+                            </div>
+
+                            <div class="curl"></div>
+                            <a href="./search/*:*/Collection:&quot;scottish+communities%7C%7C%7CScottish+Communities&quot;" title="Scottish Communities"></a>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="clickbox-margin">
+                    <figure class="clickbox">
+                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/women-clickbox.jpg" alt="Women" class="img-responsive">
+
+                        <div class="clickbox-text"> 
+                            <div class="clickbox-text-background">
+                                <h3><span><br>Women</span></h3>
+                                <i class="fa fa-camera"></i>
+                                <i class="ion-arrow-right-c"></i>
+                            </div>
+
+                            <div class="curl"></div>
+                            <a href="./search/*:*/Collection:&quot;women%7C%7C%7CWomen&quot;" title="Women"></a>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="clickbox-margin">
+                    <figure class="clickbox">
+                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/relations-clickbox.jpg" alt="Wider Relations" class="img-responsive">
+
+                        <div class="clickbox-text">
+                            <div class="clickbox-text-background">
+                                <h3><span>Relations with the<br>Wider Community</span></h3>
+                                <i class="fa fa-camera"></i>
+                                <i class="ion-arrow-right-c"></i>
+                            </div>
+
+                            <div class="curl"></div>
+                            <a href="./search/*:*/Collection:&quot;relations+with+wider+community%7C%7C%7CRelations+with+wider+community&quot;" title="Wider Relations"></a>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+    </div>
 
     </div>
