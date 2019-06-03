@@ -1,11 +1,8 @@
 <div class="content">
     <div class="about-container">
-        <div class="information-container col-xs-12 col-md-8 col-md-offset-2">
-            <b class="big-title">The Virtual Exhibition can be found at <a>https://collections.ed.ac.uk/coimbra</a></b>
-        </div>
 
         <div class="information-container col-xs-12 col-md-8 col-md-offset-2">
-            <b class="big-title">About the Exhibition</b>
+            <b class="big-title">The Virtual Exhibition : <a href="https://collections.ed.ac.uk/coimbra" target="_blank">https://collections.ed.ac.uk/coimbra</a></b>
             <div class="content">
                 This online exhibition celebrates shared cultural heritage across the Coimbra Group of
                 European universities. To coincide with the June 2017 Coimbra Conference, hosted at the
