@@ -25,7 +25,7 @@
         <a class="col-xs-6 col-md-6" href='./search/*:*/Category:%22language+and+languages%7C%7C%7CLanguage+and+languages%22'><div class="border-top"></div>Language</a>
         <a class="col-xs-6 col-md-6" href='./search/*:*/Category:%22manuscripts%7C%7C%7CManuscripts%22'><div class="border-top"></div>Manuscripts</a>
         <a class="col-xs-6 col-md-6" href='./search/*:*/Category:%22medicine%7C%7C%7CMedicine%22'><div class="border-top"></div>Medicine</a>
-        <a class="col-xs-6 col-md-6" href='./search/*:*/Category:%22musical+instruments%7C%7C%7C%Musical+Instruments%22'><div class="border-top"></div>Music</a>
+        <a class="col-xs-6 col-md-6" href='./search/*:*/Category:%22musical+instruments%7C%7C%7CMusical+Instruments%22'><div class="border-top"></div>Music</a>
         <a class="col-xs-6 col-md-6" href='./search/*:*/Category:%22natural+history%7C%7C%7CNatural+history%22'><div class="border-top"></div>Natural history</a>
         <a class="col-xs-6 col-md-6" href='./search/*:*/Category:%22politics+and+government%7C%7C%7CPolitics+and+government%22'><div class="border-top"></div>Politics</a>
         <a class="col-xs-6 col-md-6" href='./search/*:*/Category:%22social+history%7C%7C%7CSocial+History%22'><div class="border-top"></div>Social History</a>
