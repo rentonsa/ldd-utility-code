@@ -91,7 +91,7 @@
 <body>
     <div id="loader">
         <img class="logo" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logo.png">
-        <h1>Coimbra Collections</h1>
+        <h1>Coimbra Group Collections</h1>
     </div>
     <nav class="navbar navbar-fixed-top">
         <div class="container-fluid">
