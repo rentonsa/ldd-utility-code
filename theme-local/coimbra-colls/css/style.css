@@ -447,8 +447,6 @@ body {
     -o-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
   }
   .main-categories a.active {
     background-color: rgb(8, 62, 102);
