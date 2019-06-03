@@ -18,7 +18,7 @@
 
 
     <div class="main-categories">
-        <a class="col-xs-6 col-md-6" href='./search/*:*/Category:%22anthropology%7C%7C%7CAnthropology%22'><div class="border-top"></div>Anthropology</a>
+        <a class="col-xs-6 col-md-6" href='./search/*:*/Category:%22anthropology%7C%7C%7CAnthropology%22'>Anthropology</a>
         <a class="col-xs-6 col-md-6" href='./search/*:*/Category:%22antiquities%7C%7C%7CAntiquities%22'><div class="border-top"></div>Antiquities</a>
         <a class="col-xs-6 col-md-6" href='./search/*:*/Category:%22art%7C%7C%7CArt%22'><div class="border-top"></div>Art</a>
         <a class="col-xs-6 col-md-6" href='./search/*:*/Category:%22early+printed+books%7C%7C%7CEarly+printed+books%22'><div class="border-top"></div>Early books</a>
