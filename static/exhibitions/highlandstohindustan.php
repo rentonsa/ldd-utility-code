@@ -1,27 +1,37 @@
-<div class="content">
+<div class="content" id="static-exhibition">
     <div class="content byEditor">
-        <h1>Highlands to Hindustan: Indian Art from University of Edinburgh Collections</a></h1>
-        <div id="highlands-banner"></div>
-        <h2>About the Exhibition</h2>
-        <h3>Opening: 28th July 2017 | Where: Exhibition Gallery, Main Library, George Square | Closing: 4th November 2017 |
-            Curated by: Dr. Yuthika Sharma, Lecturer in Indian/South Asian Art, Edinburgh College of Art</h3>
-        <p>
+        <h1>Highlands to Hindustan: Indian Art from University of Edinburgh Collections</h1>
+        <div id="highlands-banner" class="exhibition-image"></div>
+        <h4 id="individual-exhibition-h" class="right-align-h">28th July 2017 - 4th November 2017<br>Exhibition Gallery<br>Main Library<br>George Square</h4>
+        <p id="individual-exhibition-p" class="right-align-p">
+            Curated by: Dr. Yuthika Sharma, Lecturer in Indian/South Asian Art, Edinburgh College of Art
+        </p>
+        <br>
+        <p id="individual-exhibition-p" class="right-align-p">
             The University of Edinburgh enjoys a long-standing
             and productive relationship with India and an
             exhibition in the Library opening during the Fringe Festival
             this year, the 70th anniversary of Indian Independence,
             provides an excellent opportunity to showcase and
             celebrate the University’s historic collections relating
-            to the sub-continent.
+            to the sub-continent
         </p>
-        <p>
+        <br>
+        <p id="individual-exhibition-p" class="right-align-p">
             These objects – books, manuscripts, sculptures and
             paintings – collected over a period of 300 years, span
             two millennia of art and culture and are rich both in
             variety and depth. Most of the objects have never been
             exhibited in public before; this will be the first ever
             public exhibition of University Collections devoted
-            to the art and culture of South Asia.
+            to the art and culture of South Asia
         </p>
+
+        <a href="<?php echo base_url() ?>past#highlandhindustan-anchor">
+            <button id="exhibition-back" class="exhibit-button">
+                <p>Back to full list</p>
+            </button>
+        </a>
+
     </div>
 </div>

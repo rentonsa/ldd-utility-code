@@ -5,8 +5,8 @@
         <div id="about-image">
             <img src="http://localhost//theme/jlss/images/sjac-temp.jpg" alt="Garnethill Synagogue" class="img-responsive">
         </div>
-
-        <h1 class="itemtitle">About The Scottish Jewish Archives Centre</h1>
+        <br>
+        <br>
         
         <h1> The Scottish Jewish Archives Centre</h1>
         <div class="content-divider-inline"><p>divider</p></div>

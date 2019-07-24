@@ -13,6 +13,8 @@
         $thumbnail_field = $this->skylight_utilities->getField('Thumbnail');
         $subject_field = $this->skylight_utilities->getField('Subject');
 
+        $item_count = 1;
+
         $base_parameters = preg_replace("/[?&]sort_by=[_a-zA-Z+%20. ]+/","",$base_parameters);
         if($base_parameters == "") {
             $sort = '?sort_by=';
@@ -22,33 +24,42 @@
         }
     ?>
     <div class="listing-filter">
-        <span class="no-results">
-            <strong><?php echo $startrow ?>-<?php echo $endrow ?></strong> of
-            <strong><?php echo $rows ?></strong> results
-        </span>
+        <div class="listing-block" id="num">
+            <span class="no-results">
+                <strong><?php echo $startrow ?>-<?php echo $endrow ?></strong> of
+                <strong><?php echo $rows ?></strong> results
+            </span>
+        </div>
 
-        <span class="sort">
-            <strong>Sort by</strong>
-            <?php foreach($sort_options as $label => $field) {
-                if($label == 'Relevancy')
-                {
-                    ?>
-                    <em><a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc'?>"><?php echo $label ?></a></em>
-                    <?php
-                }
-                else {
-            ?>
+        <div class="listing-block" id="page">
+            <?php echo $pagelinks ?>
+        </div>
 
-                <em><?php echo $label ?></em>
-                <?php if($label != "Date") { ?>
-                <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>">A-Z</a> |
-                <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>">Z-A</a>
-            <?php } else { ?>
-                <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>">newest</a> |
-                <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>">oldest</a>
-          <?php } } } ?>
-            
-        </span>
+        <div class="listing-block" id="sort">
+            <span class="sort">
+                <strong>Sort by</strong>
+                <?php foreach($sort_options as $label => $field) {
+                    if($label == 'Relevancy')
+                    {
+                        ?>
+                        <em><a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc'?>"><?php echo $label ?></a></em>
+                        <?php
+                    }
+                    else {
+                ?>
+
+                    <em><?php echo $label ?></em>
+                    <?php if($label != "Date") { ?>
+                    <a id="a-z" href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>">A-Z</a> |
+                    <a id="z-a" href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>">Z-A</a>
+                    <br>
+                <?php } else { ?>
+                    <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>">newest</a> |
+                    <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>">oldest</a>
+            <?php } } } ?>
+                
+            </span>
+        </div>
 
     </div>
 
@@ -63,10 +74,21 @@
 
         <li<?php if($index == 0) { echo ' class="first"'; } elseif($index == sizeof($docs) - 1) { echo ' class="last"'; } ?>>
             <!--span class="icon <?php echo $type?>"></span-->
-        <div class="item-div">
+        <div class="item-div" >
 
-            <div class = "iteminfo">
-                <h3><a href="./record/<?php echo $doc['id']?>?highlight=<?php echo $query ?>"><?php echo $doc[$title_field][0]; ?>
+            <?php 
+                    if ($item_count == 1) {
+                        echo '<div class = "iteminfo" id="first-item">';
+                        $item_count = $item_count +1;
+                    }
+                    else {
+                        echo '<div class = "iteminfo" id="second-item">';
+                        $item_count = 1;
+                    }
+            ?>
+            <!--<div class = "iteminfo" > data-100-bottom-top="transform: translateY(0px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"-->
+            <div class="item-info-block">
+                <h3 class="item-header"><a><?php echo $doc[$title_field][0]; ?> <!-- href="./record/<?php echo $doc['id']?>?highlight=<?php echo $query ?>" -->
                 <?php if(array_key_exists($date_field, $doc)) { ?>
                 <?php
                 echo '(' . $doc[$date_field][0] . ')';
@@ -79,6 +101,7 @@
 
 
                 <div class="tags">
+                    <p class="item-tags">Tags:</p>
                     <?php if(array_key_exists($exhibition_field,$doc)) { ?>
                         <?php
 
@@ -126,8 +149,14 @@
 
                 </div> <!-- close tags div -->
 
+                <a id="search-item-view" href="./record/<?php echo $doc['id']?>?highlight=<?php echo $query ?>">
+                    <button class="exhibit-button">
+                        <p>View Item</p>
+                    </button>
+                </a>
 
             </div> <!-- close item-info -->
+            
 
             <div class = "thumbnail-image">
                 <?php
@@ -205,9 +234,12 @@
                 } //end if there are bitstreams ?>
 
             </div>
-            <div class="clearfix"></div>
+            </div> <!-- close block -->
+            
+            
             </div> <!-- close item div -->
         </li>
+
             <?php
 
             $j++;
@@ -215,12 +247,36 @@
         } // end for each search result
 
         ?>
+        <div class="listing-block" id="page-bottom">
+            <?php echo $pagelinks ?>
+        </div>
+
+        <a href="./past">
+            <button id="results-button" class="exhibit-button">
+                <p>Back to Past Exhibitions</p>
+            </button>
+        </a>
+        <?php
+            $current_url = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
+            if (strpos($current_url, '/*') == true){
+                echo '<a href="./search">
+                    <button id="results-button" class="exhibit-button">
+                        <p>Back to Full Item List</p>
+                    </button>
+                </a>';
+            }
+        ?>
     </ul>
 
+        
 
-    <div class="pagination">
+
+    </div>
+
+
+    <!--<div class="listing-filter">
         <span class="no-results">
             <strong><?php echo $startrow ?>-<?php echo $endrow ?></strong> of
             <strong><?php echo $rows ?></strong> results </span>
         <?php echo $pagelinks ?>
-    </div>
+    </div>-->
