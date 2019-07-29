@@ -536,27 +536,28 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
         </div>
         <?php
     }
-    $imageCount = 0;
-    foreach($solr[$image_uri_field] as $linkURI) {
-        if (strpos($linkURI, 'luna') > 0) {
+    $crowd_image = '';
+    if (isset($solr[$image_uri_field])) {
+        foreach ($solr[$image_uri_field] as $linkURI) {
+            if (strpos($linkURI, 'luna') > 0) {
 
-            $manifest = str_replace('full/full/0/default.jpg', 'manifest', $linkURI);
-            $manifest = str_replace('iiif/', 'iiif/m/', $manifest);
-            $json = file_get_contents($manifest);
+                $manifest = str_replace('full/full/0/default.jpg', 'manifest', $linkURI);
+                $manifest = str_replace('iiif/', 'iiif/m/', $manifest);
+                $json = file_get_contents($manifest);
 
-            $jobj = json_decode($json, true);
-            //print_r ($jobj);
-            $error = json_last_error();
-            $jsonMD = $jobj['sequences'][0]['canvases'][0]['metadata'];
-            $crowd_image = '';
-            foreach ($jsonMD as $jsonMDPair) {
-                if ($jsonMDPair['label'] == 'Work Record ID') {
-                    $crowd_image = str_replace("<span>", "", $jsonMDPair['value']);
-                    $crowd_image = str_replace("</span>", "", $crowd_image)."c";
+                $jobj = json_decode($json, true);
+                //print_r ($jobj);
+                $error = json_last_error();
+                $jsonMD = $jobj['sequences'][0]['canvases'][0]['metadata'];
+                $crowd_image = '';
+                foreach ($jsonMD as $jsonMDPair) {
+                    if ($jsonMDPair['label'] == 'Work Record ID') {
+                        $crowd_image = str_replace("<span>", "", $jsonMDPair['value']);
+                        $crowd_image = str_replace("</span>", "", $crowd_image) . "c";
+                    }
                 }
             }
         }
-        $imageCount++;
     }
     if(isset($solr[$tags_field])) { ?>
         <div class="crowd-tags"><span class="crowd-title"
