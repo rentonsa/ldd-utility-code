@@ -255,7 +255,7 @@
                 <div id="coming-exhibit-info" >
                     <div data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
                         <h2 class="right-align-h">
-                            Needlework Development Scheme
+                            Embroidered Stories
                         </h2>
             
                         <p class="right-align-p" >                       
