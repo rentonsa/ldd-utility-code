@@ -371,8 +371,6 @@ body {
 }
 .main-categories a {
   color: white;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
 }
 @media screen and (min-width: 768px) {
   .main-categories {
