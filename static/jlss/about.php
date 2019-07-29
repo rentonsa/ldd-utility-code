@@ -26,9 +26,9 @@
 
         <div class="about-para">
             <p><a href="http://gtr.rcuk.ac.uk/project/CBEEB0C2-2F73-4D86-B95A-04D906257602" target="_blank">Jewish Lives, Scottish 
-                Spaces</a> is a research project funded by the <a href="http://www.ahrc.ac.uk/Pages/Home.aspx" target="_blank">Arts 
-                and Humanities Research Council</a>. It is a joint project between the Universities of Edinburgh and Glasgow and runs for 
-                three years from September 2015 until August 2018.
+                Spaces</a> was a research project funded by the <a href="http://www.ahrc.ac.uk/Pages/Home.aspx" target="_blank">Arts 
+                and Humanities Research Council</a>. It was a joint project between the Universities of Edinburgh and Glasgow that ran 
+                from September 2015 until April 2018.
             </p>
             <p>As Jews in Scotland moved between and within, into and out of local and transnational spaces, the objects they saved, used 
                 and created reveal how Jews self-identified as they negotiated issues such as antisemitism, assimilation, cultural loss, 
