@@ -1,5 +1,5 @@
 
-<div class="content">
+<div class="content" id="static-exhibition">
     <div class="content byEditor">
         <h1><a href = 'search/*:*/Exhibition:"rashid+al-din%26%2339%3Bs+world+history%7C%7C%7CRashid+al-Din%26%2339%3Bs+World+History"'>The World History of Rashid al-Din, 1314</a></h1>
         <div id="rashid-block">
@@ -53,23 +53,61 @@
                 </tr>
             </table>
 
-        </div>
-        <h2><a href='./search/*:*/Exhibition:"rashid+al-din|||Rashid+al-Din"'><i class="fa fa-search fa-lg">&nbsp;</i>View all items</a></h2>
-        <h2>About the Exhibition</h2>
-        <h3>Opening: 2nd August 2014 | Where: Exhibition Gallery, Main Library, George Square | Closing: 31st October 2014 | Curated by: Dr Yuka Kadoi, Postdoctoral Fellow at The Alwaleed Bin Talal Centre for the Study of Islam in the Contemporary World</h3>
-        <p>
-            This festival exhibition highlights the Jami' al-Tawarikh (World History or Compendium of Chronicles) of Rashid al-Din, one of the masterpieces of medieval Islamic manuscripts. Celebrating the 700th anniversary of its production (1314/2014), the exhibition features approximately 15 folios from Edinburgh University Library’s manuscript (Or.MS.20). Curated and organised in collaboration with the Centre for Research Collections and the Alwaleed Centre for the Study of Islam in the Contemporary World, both at the University of Edinburgh.</p>
+        </div >
+        <h4 id="individual-exhibition-h" class="right-align-h">2nd August 2014 - 31st October 2014<br>Exhibition Gallery<br>Main Library<br>George Square</h4>
+        <p id="individual-exhibition-p" class="right-align-p">
+            Curated by: Dr Yuka Kadoi, Postdoctoral Fellow at The Alwaleed Bin Talal Centre for the Study of Islam in the Contemporary World
         </p>
-        <p>Arguably the greatest treasure in the library, the Jami’ al-Tawarikh is a world history which encompasses a range of cultures, from China in the East, to Ireland in the West, from the time of Adam. It is written in the Naskh script and contains 70 illustrated folios. Written by the scholar and courtier Rashid al-Din (d.1318), there is some debate as to the exact date of this manuscript, but it was almost certainly completed within the author’s lifetime, making it one of the earliest copies in existence. It is one of the three main sources for the life of Genghis Khan and is considered to be one of the most important medieval documents in the world. </p>
-        <h2>Resources</h2>
+        <br>
+        <p id="individual-exhibition-p" class="right-align-p">
+            This festival exhibition highlights the Jami' al-Tawarikh (World History or Compendium of Chronicles) of Rashid al-Din, one of the masterpieces of medieval Islamic manuscripts. Celebrating the 700th anniversary of its production (1314/2014), the exhibition features approximately 15 folios from Edinburgh University Library’s manuscript (Or.MS.20). Curated and organised in collaboration with the Centre for Research Collections and the Alwaleed Centre for the Study of Islam in the Contemporary World, both at the University of Edinburgh
+        </p>
+        <br>
+        <p id="individual-exhibition-p" class="right-align-p">Arguably the greatest treasure in the library, the Jami’ al-Tawarikh is a world history which encompasses a range of cultures, from China in the East, to Ireland in the West, from the time of Adam. It is written in the Naskh script and contains 70 illustrated folios. Written by the scholar and courtier Rashid al-Din (d.1318), there is some debate as to the exact date of this manuscript, but it was almost certainly completed within the author’s lifetime, making it one of the earliest copies in existence. It is one of the three main sources for the life of Genghis Khan and is considered to be one of the most important medieval documents in the world
+        </p>
+        <br>
 
-        <h3><a href = "http://images.is.ed.ac.uk/luna/servlet/view/search?search=Search&q=World+History" target = "_blank" title = "High resolution Rashid images" alt="High resolution Rashid images"><i class="fa fa-picture-o fa-lg">&nbsp;</i>High resolution images</a> of all of the pages in the LUNA imaging platform.</h3>
+        <a href="<?php echo base_url() ?>past#rashid-anchor">
+            <button id="exhibition-back" class="exhibit-button">
+                <p>Back to full list</p>
+            </button>
+        </a>
+        
+        <a href='./search/*:*/Exhibition:"rashid+al-din|||Rashid+al-Din"'>
+            <button class="exhibit-button">
+                <p>View all items</p>
+            </button>
+        </a>
+        <div id="object-divider-1" class="divider" data-100-bottom-top="transform: translateY(0px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
 
-        <h3>
-            <a href = "http://images.is.ed.ac.uk/luna/servlet/s/kwl89a" target = "_blank"  title = "World History book reader" alt = "World History book reader"><i class="fa fa-book fa-lg">&nbsp;</i>The full book</a>, using LUNA's page-turning software.
-        </h3>
-        <h3>
-            <a href = "http://vimeo.com/103231632" target = "_blank"  title = "Rashid al-din Exhibition Installation" alt = "Rashid al-din Exhibition Installation"><i class="fa fa-video-camera fa-lg">&nbsp;</i>The time lapse film</a> by the Digital Imaging Unit of the Exhibition installation on Vimeo.
-        </h3>
+        <h4 class="object-h" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">Resources</h2>
+        <br>
+        <div data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
+            <a href="http://images.is.ed.ac.uk/luna/servlet/view/search?search=Search&q=World+History" target = "_blank" title = "High res images" alt = "High res images">
+                <button class="exhibit-button" id="object-button">
+                    <p>High resolution images</p>
+                </button>
+            </a>
+            <h3 id="object-divide">on the LUNA imaging platform</h3>
+            <br>
+
+            <a href="http://images.is.ed.ac.uk/luna/servlet/s/kwl89a" target = "_blank" title = "High res images" alt = "High res images">
+                <button class="exhibit-button" id="object-button">
+                    <p>The full book</p>
+                </button>
+            </a>
+            <h3 id="object-divide">using LUNA's page-turning software</h3>
+            <br>
+            <a href="http://vimeo.com/103231632" target = "_blank" title = "High res images" alt = "High res images">
+                <button class="exhibit-button" id="object-button">
+                    <p>The time lapse film</p>
+                </button>
+            </a>
+            <h3 id="object-divide">by the Digital Imaging Unit of the Exhibition installation on Vime</h3>
+            <br>
+        </div>
+
+        
+        
     </div>
 </div>

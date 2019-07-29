@@ -1,11 +1,7 @@
-<div class="content">
+<div class="content" id="static-exhibition">
     <div class="content byEditor">
-        <h1><a href='./search/*:*/Exhibition:"towards+dolly%7C%7C%7CTowards+Dolly"'>Towards Dolly: A Century of Animal Genetics in Edinburgh</a></h1>
-        <div id="head-info">
-            <h2>About the Exhibition</h2>
-            <h3>Opening: 31st July 2015 | Where: Exhibition Gallery, Main Library, George Square | Closing: 31st October 2015 | Opening Times: Monday - Saturday, 10:00 - 17:00 | Curated by: Clare Button (Project Archivist)</h3>
-        </div>
 
+    <h1>Towards Dolly: A Century of Animal Genetics in Edinburgh</h1>
         <?php
 
         $mp4ok = false;
@@ -34,7 +30,7 @@
         if ($mp4ok == true) {
             $videoLink = '<div class="flowplayer"  title="' . $record_title . '">';
             $videoLink .= '<video id="video-' . $b_seq. '" title="' . $record_title . '" ';
-            $videoLink .= 'controls preload="true" width="660">';
+            $videoLink .= 'controls preload="true" width="330">';
             $videoLink .= '<source src="' . $b_uri.'" type="video/mp4" />Video loading...';
             $videoLink .= '</video>';
             $videoLink .= '</div>';
@@ -45,7 +41,7 @@
         {
             $videoLink = '<div class="flowplayer"  title="' . $record_title . '">';
             $videoLink .= '<video id="video-' . $b_seq. '" title="' . $record_title . '" ';
-            $videoLink .= 'controls preload="true" width="660">';
+            $videoLink .= 'controls preload="true" width="330">';
             $videoLink .= '<source src="' . $b_filename . 'webm" type="video/webm" />Video loading...';
             $videoLink .= '</video>';
             $videoLink .= '</div>';
@@ -54,14 +50,37 @@
 
         ?>
 
-        <div class="content">
-            <p>Edinburgh has played a vital role in the science which tells us who we are – genetics.</p>
-            <p>Dolly the sheep is a scientific icon and a household name. However, she is also a single chapter in a wider story which spans a century. Pioneers at Edinburgh and Roslin have embedded concepts like genetic engineering and stem cell research in the public consciousness, stimulating debate and revolutionising science and medicine.</p>
-            <p>This exhibition celebrates the individuals and institutions who made, and continue to make, extraordinary advances in animal and human health. It will take you on a journey ‘Towards Dolly’ and beyond.</p>
+        
+        <div id="head-info">
+            <h4 id="individual-exhibition-h" class="right-align-h">31st July 2015 - 31st October 2015<br>Monday - Saturday, 10:00 - 17:00 <br>Exhibition Gallery<br>Main Library<br>George Square</h3>
+        </div>
+        <p id="individual-exhibition-p" class="right-align-p">
+            Curated by: Clare Button (Project Archivist)
+        </p>
+        <br>
+        <p id="individual-exhibition-p" class="right-align-p">Edinburgh has played a vital role in the science which tells us who we are – genetics
+        </p>
+        <br>
+        <p id="individual-exhibition-p" class="right-align-p">Dolly the sheep is a scientific icon and a household name. However, she is also a single chapter in a wider story which spans a century. Pioneers at Edinburgh and Roslin have embedded concepts like genetic engineering and stem cell research in the public consciousness, stimulating debate and revolutionising science and medicine
+        </p>
+        <br>
+        <p id="individual-exhibition-p" class="right-align-p">This exhibition celebrates the individuals and institutions who made, and continue to make, extraordinary advances in animal and human health. It will take you on a journey ‘Towards Dolly’ and beyond</p>
+
+        <a href="<?php echo base_url() ?>past#towardsdolly-anchor">
+            <button id="exhibition-back" class="exhibit-button">
+                <p>Back to full list</p>
+            </button>
+        </a>
+        
+        <div id="object-divider-1" class="divider" data-100-bottom-top="transform: translateY(0px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
 
 
-            <h3>Exhibition Clips</h3>
-            <p>These audio clips accompany specific objects in the exhibition.</p>
+        <h4 class="object-h" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">Exhibition Clips</h4>
+        <br>
+        <div class="audio-content" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
+        <p>These audio clips accompany specific objects in the exhibition.</p>
+        <br>
+       
         <?php
 
             $record_title = 'Social Science: \'The Old Time Gene\', sung by Institute of Animal Genetics staff, 1956';
@@ -118,5 +137,8 @@
 
         ?>
         </div>
+
+        
+
     </div>
 </div>

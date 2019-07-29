@@ -7,6 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
         <base href="<?php echo base_url() . index_page(); if (index_page() !== '') { echo '/'; } if ($this->config->item('skylight_url_prefix') != "") { echo $this->config->item('skylight_url_prefix'); echo '/'; } ?>">
 
@@ -36,19 +37,28 @@
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/flowplayer-7.0.4/skin/skin.css">
-        <link rel="stylesheet" href="<?php echo base_url()?>assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/font-awesome/css/font-awesome.min.css">
+
+        <!-- PARALLAX STYLES -->
+        <!-- CSS FILES -->
+        <link rel="stylesheet" href="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/css/parallax_styles.css">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/css/custom_styles.css">
 
         <!-- Uncomment if you are specifically targeting less enabled mobile browsers
         <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
 
-        <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+        <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects--> 
         <script src="<?php echo base_url()?>assets/modernizr/modernizr-1.7.min.js"></script>
         <script src="<?php echo base_url()?>assets/jquery-1.11.0/jquery-1.11.0.min.js"></script>
         <script src="<?php echo base_url()?>assets/jquery-ui-1.10.4/ui/minified/jquery-ui.min.js"></script>
         <script src="<?php echo base_url()?>assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="<?php echo base_url()?>assets/jquery-1.11.0/jcarousel/jquery.jcarousel.min.js"></script>
-        <script src="<?php echo base_url()?>assets/google-analytics/analytics.js"></script>
-
+        <script src="http://www.google-analytics.com/analytics.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+        <script src="https://cdn.rawgit.com/mejackreed/Leaflet-IIIF/master/leaflet-iiif.js"></script>
+        <script src="<?php echo base_url()?>assets/openseadragon/openseadragon.min.js"></script>
+        
+        
         <!-- Google Analytics -->
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -95,22 +105,257 @@
 
     <body>
 
-        <div id="container">
-            <header>
-               <div id="collection-title">
-                <a href="http://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh Home" target="_blank"></a>
-                <a href="<?php echo base_url(); ?>" class="exlogo" title="University of Edinburgh Exhibitions Home"></a>
-                <a href="<?php echo base_url(); ?>" class="menulogo" title="University of Edinburgh Exhibitions Home"></a>
-               </div>
-               <div id="collection-search">
-                <form action="./redirect/" method="post">
-                    <fieldset class="search">
-                        <input type="text" name="q" value="<?php if (isset($searchbox_query)) echo urldecode($searchbox_query); ?>" id="q" />
-                        <input type="submit" name="submit_search" class="btn" value="Search" id="submit_search" />
-                        <a href="./advanced" class="advanced">Advanced search</a>
-                    </fieldset>
-                </form>
-               </div>
-            </header>
+    <div class="header"></div>
 
-            <div id="main" role="main" class="clearfix">
+    <?php
+    
+
+    // Conditional to compare current and root url and serve up parallax styles accordingly
+    $current_url = trim( "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}", "http");
+    $base_string = trim(base_url(), "https");
+
+    if ($current_url == $base_string) {
+          
+        echo 
+        '
+    <!-- PARALLAX WRAPPERS FOR BACKGROUND IMAGES -->
+    <!-- Associated with the block before the gap appears -->
+
+    <!-- Wrapper for head image -->
+    <div
+        id="head-wrapper"
+        class="parallax-image-wrapper"
+        data-anchor-target="#page-gap"
+        data-bottom-top="transform:translateY(200%)"
+        data-top-bottom="transform:translateY(0)"
+        >
+        <div
+            class="parallax-image"
+            style="background-image:url(' .  base_url() . 'theme/' . $this->config->item('skylight_theme') . '/images/background/library_entrance.jpg)"
+            data-anchor-target="#page-gap"
+            data-bottom-top="transform: translateY(-100%);"
+            data-top-bottom="transform: translateY(50%);"
+            >
+        </div>
+    </div>
+
+    <!-- Wrapper for visit us image -->
+    <div
+        id="visit-block-wrapper"
+        class="parallax-image-wrapper"
+        data-anchor-target="#block-one + .gap"
+        data-bottom-top="transform:translateY(200%)"
+        data-top-bottom="transform:translateY(0)"
+        >
+        <div
+            class="parallax-image"
+            style="background-image:url(' .  base_url() . 'theme/' . $this->config->item('skylight_theme') . '/images/background/visit_us.png)"
+            data-anchor-target="#block-one + .gap"
+            data-bottom-top="transform: translateY(-80%);"
+            data-top-bottom="transform: translateY(80%);"
+            >
+        </div>
+    </div>
+
+    <!-- Wrapper for exhibitions image -->
+    <div
+        id="exhibitions-block-wrapper"
+        class="parallax-image-wrapper"
+        data-anchor-target="#block-two + .gap"
+        data-bottom-top="transform:translateY(200%)"
+        data-top-bottom="transform:translateY(0)"
+        >
+        <div
+            class="parallax-image"
+            style="background-image:url(' .  base_url() . 'theme/' . $this->config->item('skylight_theme') . '/images/background/current_exhibition.jpg)"
+            data-anchor-target="#block-two + .gap"
+            data-bottom-top="transform: translateY(-80%);"
+            data-top-bottom="transform: translateY(80%);"
+            >
+        </div>
+    </div>
+
+    <!--  Wrapper for events image -->
+    <div
+        id="events-block-wrapper"
+        class="parallax-image-wrapper"
+        data-anchor-target="#block-three + .gap"
+        data-bottom-top="transform:translateY(200%)"
+        data-top-bottom="transform:translateY(0)"
+        >
+        <div
+            class="parallax-image"
+            style="background-image:url(' .  base_url() . 'theme/' . $this->config->item('skylight_theme') . '/images/background/events.jpg)"
+            data-anchor-target="#block-three + .gap"
+            data-bottom-top="transform: translateY(-80%);"
+            data-top-bottom="transform: translateY(80%);"
+            >
+        </div>
+    </div>
+
+    <div
+        id="support-block-wrapper"
+        class="parallax-image-wrapper"
+        data-anchor-target="#block-four + .gap"
+        data-bottom-top="transform:translateY(200%)"
+        data-top-bottom="transform:translateY(0)"
+        >
+        <div
+            class="parallax-image"
+            style="background-image:url(' .  base_url() . 'theme/' . $this->config->item('skylight_theme') . '/images/background/support.jpg)"
+            data-anchor-target="#block-four + .gap"
+            data-bottom-top="transform: translateY(-80%);"
+            data-top-bottom="transform: translateY(80%);"
+            >
+        </div>
+    </div>'
+        
+        ;
+    }
+    elseif (strpos("http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}", 'event') !== false ){
+        echo '
+        <div id="container">
+
+            <div
+                id="head-wrapper"
+                class="parallax-image-wrapper"
+                data-anchor-target="#page-gap"
+                data-bottom-top="transform:translateY(200%)"
+                data-top-bottom="transform:translateY(0)"
+                >
+                <div
+                    class="parallax-image"
+                    style="background-image:url(' .  base_url() . 'theme/' . $this->config->item('skylight_theme') . '/images/background/events-list.jpg)"
+                    data-anchor-target="#page-gap"
+                    data-bottom-top="transform: translateY(-100%);"
+                    data-top-bottom="transform: translateY(50%);"
+                    >
+                </div>
+            </div>
+                <header id="page-gap" class="gap">
+
+                <!-- MAIN UNIVERSITY LOGO -->
+                <div id="non-index" class="logo-container">
+                    <a href="' . base_url() . '">
+                        <img src="' . base_url() . 'theme/' . $this->config->item('skylight_theme') . '/images/logos/uofe_logo.png" alt="University of Edinburgh Logo">
+                    </a>
+                </div>
+                <!--<div id="collection-title">
+                    <a href="http://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh Home" target="_blank"></a>
+                    <a href="' . base_url() . '" class="exlogo" title="University of Edinburgh Exhibitions Home"></a>
+                    <a href="' . base_url() . '" class="menulogo" title="University of Edinburgh Exhibitions Home"></a>
+                </div>-->
+                <div class="nav-search">
+                    <div id="collection-search">
+                        <form action="./redirect/" method="post">
+                            <fieldset class="search">
+                                <input type="text" name="q" value="'; 
+                                if (isset($searchbox_query)){echo urldecode($searchbox_query);}
+                                echo '" id="q" />
+                                <a id="info-gap" href="https://exhibitions.ed.ac.uk/conectando">
+                                    <button type="submit" id="submit_search" class="search-button">
+                                        <p>Search</p>
+                                    </button>
+                                </a>
+                                <!--<input type="submit" name="submit_search" class="btn" value="Search" id="submit_search" />-->
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="nav-adv-search">
+                        <div id="adv-search">
+                            <a class="nav-link" href="./advanced">Advanced search</a>
+                        </div>
+                    </div>
+                    <div class="nav-adv-search">
+                        <div id="adv-search">
+                            <a class="nav-link" href="./event">Upcoming Events</a>
+                        </div>
+                    </div>
+                    <div class="nav-adv-search">
+                        <div id="adv-search">
+                            <a class="nav-link" href="./eventlist">Past Events List</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block-title">
+                    <h1  class="block-title-head">Library Events</h1>    
+                </div>
+                </header>
+
+                ';
+
+    }
+    else { echo '
+        <div id="container">
+
+            <div
+                id="head-wrapper"
+                class="parallax-image-wrapper"
+                data-anchor-target="#page-gap"
+                data-bottom-top="transform:translateY(200%)"
+                data-top-bottom="transform:translateY(0)"
+                >
+                <div
+                    class="parallax-image"
+                    style="background-image:url(' .  base_url() . 'theme/' . $this->config->item('skylight_theme') . '/images/background/library_entrance.jpg)"
+                    data-anchor-target="#page-gap"
+                    data-bottom-top="transform: translateY(-100%);"
+                    data-top-bottom="transform: translateY(50%);"
+                    >
+                </div>
+            </div>
+                <header id="page-gap" class="gap">
+
+                <!-- MAIN UNIVERSITY LOGO -->
+                <div id="non-index" class="logo-container">
+                    <a href="' . base_url() . '">
+                        <img src="' . base_url() . 'theme/' . $this->config->item('skylight_theme') . '/images/logos/uofe_logo.png" alt="University of Edinburgh Logo">
+                    </a>
+                </div>
+                <!--<div id="collection-title">
+                    <a href="http://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh Home" target="_blank"></a>
+                    <a href="' . base_url() . '" class="exlogo" title="University of Edinburgh Exhibitions Home"></a>
+                    <a href="' . base_url() . '" class="menulogo" title="University of Edinburgh Exhibitions Home"></a>
+                </div>-->
+                <div class="nav-search">
+                    <div id="collection-search">
+                        <form action="./redirect/" method="post">
+                            <fieldset class="search">
+                                <input type="text" name="q" value="'; 
+                                if (isset($searchbox_query)){echo urldecode($searchbox_query);}
+                                echo '" id="q" />
+                                <a id="info-gap" href="https://exhibitions.ed.ac.uk/conectando">
+                                    <button type="submit" id="submit_search" class="search-button">
+                                        <p>Search</p>
+                                    </button>
+                                </a>
+                                <!--<input type="submit" name="submit_search" class="btn" value="Search" id="submit_search" />-->
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="nav-adv-search">
+                        <div id="adv-search">
+                            <a class="nav-link" href="./advanced">Advanced search</a>
+                        </div>
+                    </div>
+                    <div class="nav-adv-search">
+                        <div id="adv-search">
+                            <a class="nav-link" href="./past">Past Exhibitions</a>
+                        </div>
+                    </div>
+                    <div class="nav-adv-search">
+                        <div id="adv-search">
+                            <a class="nav-link" href="./search">View All Items</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block-title">
+                    <h1  class="block-title-head">Library Exhibitions</h1>
+                </div>
+                </header>
+
+                ';
+    }
+        

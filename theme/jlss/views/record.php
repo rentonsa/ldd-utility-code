@@ -118,7 +118,7 @@ $bitstreamLinks = array();
                                 $lower_orig_filter = strtolower($metadatavalue);
                                 $lower_orig_filter = urlencode($lower_orig_filter);
 
-                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a></span>';
+                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/'.$orig_filter.'">'.$metadatavalue.'</a></span>';
                             }
                             else {
 
