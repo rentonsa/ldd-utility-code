@@ -370,6 +370,10 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
                     $rights = "Photograph ". str_replace("</span>", "", $rights);
                     $mdexists = true;
                 }
+                if ($jsonMDPair['label'] == 'Repro Link ID')
+                {
+                    $crowd_image = str_replace("<span>", "", $jsonMDPair['value']);
+                }
             }
             if ($mdexists)
             {
@@ -532,40 +536,78 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
         </div>
         <?php
     }
-    if(isset($solr[$tags_field])) {?>
-        <div class="crowd-tags"><span class="crowd-title" title="User generated tags created through crowd sourcing games"><i class="fa fa-users fa-lg" >&nbsp;</i>Tags:</span>
-            <?php foreach($solr[$tags_field] as $tag) {
-                $orig_filter = urlencode($tag);
-                $lower_orig_filter = strtolower($tag);
-                $lower_orig_filter = urlencode($lower_orig_filter);
-                echo '<span class="crowd-tag">' . '<a href="./search/*:*/Tags:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22"><i class="fa fa-tags fa-lg">&nbsp;</i>'.$tag.'</a>' . '</span>';
-            } ?>
+    $imageCount = 0;
+    foreach($solr[$image_uri_field] as $linkURI) {
+        if (strpos($linkURI, 'luna') > 0) {
+
+            $manifest = str_replace('full/full/0/default.jpg', 'manifest', $linkURI);
+            $manifest = str_replace('iiif/', 'iiif/m/', $manifest);
+            $json = file_get_contents($manifest);
+
+            $jobj = json_decode($json, true);
+            //print_r ($jobj);
+            $error = json_last_error();
+            $jsonMD = $jobj['sequences'][0]['canvases'][0]['metadata'];
+            $crowd_image = '';
+            foreach ($jsonMD as $jsonMDPair) {
+                if ($jsonMDPair['label'] == 'Work Record ID') {
+                    $crowd_image = str_replace("<span>", "", $jsonMDPair['value']);
+                    $crowd_image = str_replace("</span>", "", $crowd_image)."c";
+                }
+            }
+        }
+        $imageCount++;
+    }
+    if(isset($solr[$tags_field])) { ?>
+        <div class="crowd-tags"><span class="crowd-title"
+                                      title="User generated tags created through crowd sourcing games"><i
+                class="fa fa-users fa-lg">&nbsp;</i>Tags:</span>
+        <?php foreach ($solr[$tags_field] as $tag) {
+            $orig_filter = urlencode($tag);
+            $lower_orig_filter = strtolower($tag);
+            $lower_orig_filter = urlencode($lower_orig_filter);
+            echo '<span class="crowd-tag">' . '<a href="./search/*:*/Tags:%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22"><i class="fa fa-tags fa-lg">&nbsp;</i>' . $tag . '</a>' . '</span>';
+        }
+
+
+        if ($crowd_image !== '') { ?>
             <div class="crowd-info">
-                <form id="libraylabs" method="get" action="http://librarylabs.ed.ac.uk/games/gameCrowdSourcing.php" target="_blank">
-                    <input type="hidden" name="image_id" value="<?php echo $image_id ?>">
+                <form id="libraylabs" method="get" action="http://librarylabs.ed.ac.uk/games/gameCrowdSourcing.php"
+                      target="_blank">
+                    <input type="hidden" name="image_id" value="<?php echo $crowd_image ?>">
                     <input type="hidden" name="theme" value="art">
-                    Add more tags at <a href="#" onclick="document.forms[1].submit();return false;" title="University of Edinburgh, Library Labs Metadata Games">Library Labs Games</a>
-                    (Create a login at <a href="https://www.ease.ed.ac.uk/friend/" target="_blank" title="EASE Friend">Edinburgh Friend Account</a>)
+                    Add more tags at <a href="#" onclick="document.forms[1].submit();return false;"
+                                        title="University of Edinburgh, Library Labs Metadata Games">Library Labs
+                        Games</a>
+                    (Create a login at <a href="https://www.ease.ed.ac.uk/friend/" target="_blank" title="EASE Friend">Edinburgh
+                        Friend Account</a>)
                 </form>
             </div>
-        </div>
+            </div>
 
-    <?php }
+        <?php
+        }
+    }
     else {
-        ?>
+    if ($crowd_image !== '') { ?>
         <div class="crowd-tags">
             <div class="crowd-info">
-                <form id="libraylabs" method="get" action="http://librarylabs.ed.ac.uk/games/gameCrowdSourcing.php" target="_blank">
-                    <input type="hidden" name="image_id" value="<?php echo $image_id ?>">
+                <form id="libraylabs" method="get" action="http://librarylabs.ed.ac.uk/games/gameCrowdSourcing.php"
+                      target="_blank">
+                    <input type="hidden" name="image_id" value="<?php echo $crowd_image ?>">
                     <input type="hidden" name="theme" value="art">
-                    Add tags to this image at <a href="#" onclick="document.forms[1].submit();return false;" title="University of Edinburgh, Library Labs Metadata Games">Library Labs Games</a>
-                    (Create a login at <a href="https://www.ease.ed.ac.uk/friend/" target="_blank" title="EASE Friend">Edinburgh Friend Account</a>)
+                    Add tags to this image at <a href="#" onclick="document.forms[1].submit();return false;"
+                                                 title="University of Edinburgh, Library Labs Metadata Games">Library
+                        Labs Games</a>
+                    (Create a login at <a href="https://www.ease.ed.ac.uk/friend/" target="_blank" title="EASE Friend">Edinburgh
+                        Friend Account</a>)
                 </form>
             </div>
         </div>
 
 
         <?php
+    }
     }
     $i = 0;
     $newStrip = false;
