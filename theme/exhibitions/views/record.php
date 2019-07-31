@@ -66,8 +66,8 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
 
                 $bitstreamLink = '<div class="main-image">';
 
-                $bitstreamLink .= '<a title = "' . $record_title . '" class="fancybox" rel="group" href="' . $b_uri . '"> ';
-                $bitstreamLink .= '<img class="record-main-image" src = "'. $b_uri .'">';
+                $bitstreamLink .= '<a title = "' . $record_title . '" class="fancybox" rel="group" href="' . $b_uri . '" alt="link to full size view of item"> ';
+                $bitstreamLink .= '<img class="record-main-image" src = "'. $b_uri .'" alt="item image">';
                 $bitstreamLink .= '</a>';
 
                 $bitstreamLink .= '</div>';
@@ -171,14 +171,14 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
   <div class="itemscope" itemscope itemtype ="http://schema.org/CreativeWork">
 
     <?php if($mainImageTest === true) { ?>
-    <div class="full-title">
+    <div class="full-title" alt="item title">
     <?php } ?>
         <h1 class="itemtitle"><?php echo $record_title ?>
         <?php if(isset($solr[$date_field])) {
               echo " (" . $solr[$date_field][0] . ")";
             } ?>
         </h1>
-        <div class="tags">
+        <div class="tags" alt="item tags">
             <p class="item-tags" id="full-item-tags">Tags:</p>
             <?php
 
@@ -190,7 +190,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                     $lower_orig_filter = strtolower($author);
                     $lower_orig_filter = urlencode($lower_orig_filter);
 
-                    echo '<a class="artist" href="./search/*:*/Creator:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$author.'</a>';
+                    echo '<a class="artist" href="./search/*:*/Creator:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22" alt="filter by item tag">'.$author.'</a>';
                 }
             }
 
@@ -201,8 +201,8 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
 
         $bitstreamLink = '<div class="main-image">';
 
-        $bitstreamLink .= '<a title = "' . $record_title . '" class="fancybox" rel="group" href="' . $solr[$imageuri_field] . '"> ';
-        $bitstreamLink .= '<img class="record-main-image" src = "'. $solr[$imageuri_field] .'">';
+        $bitstreamLink .= '<a title = "' . $record_title . '" class="fancybox" rel="group" href="' . $solr[$imageuri_field] . '" alt="link to full size view of item"> ';
+        $bitstreamLink .= '<img class="record-main-image" src = "'. $solr[$imageuri_field] .'" alt="item image">';
         $bitstreamLink .= '</a>';
 
         $bitstreamLink .= '</div>';
@@ -220,7 +220,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
     <?php } ?>
 
     <?php if($mainImageTest === true) { ?>
-    <div class="full-metadata">
+    <div class="full-metadata" alt="full item details">
     <?php } ?>
     <div id="table-container">
         <table>
@@ -231,7 +231,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                 $element = $this->skylight_utilities->getField($key);
                 if(isset($solr[$element])) {
                     if(!in_array($key, $excludes)) {
-                        echo '<tr><th>'.$key.'</th><td>';
+                        echo '<tr><th alt="item' . $key . '">'.$key.'</th><td>';
                         foreach($solr[$element] as $index => $metadatavalue) {
                             // if it's a facet search
                             // make it a clickable search link
@@ -248,7 +248,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                 }
                                 else
                                 {
-                                  echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                  echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22" alt="link to filter by item detail">'.$metadatavalue.'</a>';
                                 }
                             }
                             else {
@@ -339,8 +339,8 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
             <form id="libraylabs" method="get" action="http://librarylabs.ed.ac.uk/games/gameCrowdSourcing.php" target="_blank">
                 <input type="hidden" name="image_id" value="<?php echo $image_id ?>">
                 <input type="hidden" name="theme" value="classic">
-                <p>Add more tags at <a href="#" onclick="document.forms[1].submit();return false;" title="University of Edinburgh, Library Labs Metadata Games">Library Labs Games</a></p>
-                <p>(Create a login at <a href="https://www.ease.ed.ac.uk/friend/" target="_blank" title="EASE Friend">Edinburgh Friend Account</a>)</p>
+                <p>Add more tags at <a href="#" onclick="document.forms[1].submit();return false;" title="University of Edinburgh, Library Labs Metadata Games" alt="click to add tags to item">Library Labs Games</a></p>
+                <p>(Create a login at <a href="https://www.ease.ed.ac.uk/friend/" target="_blank" title="EASE Friend" alt="click to add create EASE friend login">Edinburgh Friend Account</a>)</p>
             </form>
         </div>
     </div>
@@ -357,8 +357,8 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                     <input type="hidden" name="theme" value="classic">
                 </form>
                 <form id="libraylabs" method="get" action="http://librarylabs.ed.ac.uk/games/gameCrowdSourcing.php" target="_blank">
-                <p>Add tags to this image at <a href="#" onclick="document.forms[1].submit();return false;" title="University of Edinburgh, Library Labs Metadata Games">Library Labs Games</a></p>
-                <p>(Create a login at <a href="https://www.ease.ed.ac.uk/friend/" target="_blank" title="EASE Friend">Edinburgh Friend Account</a>)</p>
+                <p>Add tags to this image at <a href="#" onclick="document.forms[1].submit();return false;" title="University of Edinburgh, Library Labs Metadata Games" alt="click to add tags to item">Library Labs Games</a></p>
+                <p>(Create a login at <a href="https://www.ease.ed.ac.uk/friend/" target="_blank" title="EASE Friend" alt="click to add create EASE friend login">Edinburgh Friend Account</a>)</p>
                 </form>
             </div>
         </div>
@@ -424,6 +424,8 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
 
     <!--<input id="item-view-button" type="button" value="Back to Search Results" class="backbtn" onClick="history.go(-1);">-->
 
+    <!-- RETURN BUTTON -->
+    <!-- HAS CONDITIONAL TO DETERMINE USER ROUTE TO ITEM -->
     <a <?php $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
                             if (strpos($actual_link, 'highlight=*:*') == true){
                                 foreach($recorddisplay as $key) {
@@ -451,7 +453,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                 $search_filter = substr($actual_link, strpos($actual_link, '=') +1);
                                 echo  'href="/search/' .$search_filter . '"';          
                             }?>>
-        <button id="record-button" class="exhibit-button">
+        <button id="record-button" class="exhibit-button" alt="return button">
             <p>Back to Search Results</p>
         </button>
     </a>

@@ -1,5 +1,5 @@
 
-<h1 id="search-title">Advanced Search</h1>
+<h1 id="search-title" alt="page title">Advanced Search</h1>
 
 <?php if($formhidden) {
     // We're hiding the form in search results
@@ -7,9 +7,9 @@
     <p><strong><a href="#" id="showform">Change Advanced Search options</a></strong></p>
 <?php } ?>
 
-<div class="searchform" style="display:<?php echo $formhidden == true ? 'none' : 'block'; ?>">
+<div class="searchform" style="display:<?php echo $formhidden == true ? 'none' : 'block'; ?>" >
     <p id="search-hint"><strong>Hint: </strong> To match an exact phrase, try using quotation marks, eg. <em>"a search phrase"</em></p>
-    <div id="seach-form-div">
+    <div id="seach-form-div" alt="advanced search form">
         <?php echo $form; ?>
     </div>
 

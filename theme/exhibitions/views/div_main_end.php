@@ -4,12 +4,12 @@
 
             <div class="footer-container">
                 <ul id="footer-list-l">
-                    <div class="footer-link"><li><a href="https://www.ed.ac.uk/about/website/website-terms-conditions">Terms &amp; conditions</a></li></div>
-                    <div class="footer-link"><li><a href="https://www.ed.ac.uk/about/website/privacy">Privacy &amp; cookies</a></li></div>
-                    <div class="footer-link"><li><a href="https://www.ed.ac.uk/about/website/accessibility">Website accessibility</a></li></div>
+                    <div class="footer-link"><li><a href="https://www.ed.ac.uk/about/website/website-terms-conditions" alt="link to terms and conditions">Terms &amp; conditions</a></li></div>
+                    <div class="footer-link"><li><a href="https://www.ed.ac.uk/about/website/privacy" alt="link to privacy and cookies">Privacy &amp; cookies</a></li></div>
+                    <div class="footer-link"><li><a href="https://www.ed.ac.uk/about/website/accessibility" alt="link to website accessibilty">Website accessibility</a></li></div>
                 </ul>
                 <ul id="footer-list-r">
-                    <div class="footer-link"><li><a href="https://www.myed.ed.ac.uk/"><span class="glyphicon glyphicon-log-in"></span>MyEd Login</a></li></div>
+                    <div class="footer-link"><li><a href="https://www.myed.ed.ac.uk/" alt="link to myed login"><span class="glyphicon glyphicon-log-in"></span>MyEd Login</a></li></div>
                 </ul>
             </div>
 

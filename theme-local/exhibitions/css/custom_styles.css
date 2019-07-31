@@ -121,11 +121,11 @@ body {
 .logo-container img {
     width: 75%;
     padding: 25px 10px 10px;
-    background: rgb(182,1,92,0.9);
+    background: rgb(182,1,92);
     transition: 0.4s;    
 }
 .logo-container :hover {
-    background: rgb(182,1,92);
+    background: rgb(219, 0, 110); 
     padding-top: 40px; 
 }
 .nav-container {
@@ -134,12 +134,12 @@ body {
     min-width: 100px;
 }
 .nav-container ul {
-    display: -webkit-inline-box;
+    display: inline-flex;
     float: right;
     list-style: none; 
 }
 .nav-container a {
-    display: -webkit-inline-box;
+    display: inline-block;
     padding: 15px 35px 10px;
     color: #FFF;
     font-size: 18px;
@@ -147,13 +147,13 @@ body {
     text-decoration: none;
 }
 .nav-container div {
-    background: rgb(182,1,92,0.9);
+    background: rgb(182,1,92);
 }
 .smol {
     padding: 0 2.5vh;
 }
 .nav-container div:hover {
-    background: rgb(182,1,92); 
+    background: rgb(219, 0, 110); 
 }
 .nav-link:hover {
     text-decoration: none;
@@ -161,13 +161,13 @@ body {
 .nav-search {
     display: flex;
     float: right;
-    background:  rgb(182,1,92,0.9);
+    background:  rgb(182,1,92);
 }
 .nav-adv-search a {
     font-size: 18px;
     text-transform: uppercase;
 }.nav-search div:hover {
-    background: rgb(182,1,92); 
+    background: rgb(219, 0, 110); ; 
 }
 #adv-search {
     margin: 52px 10px 0 10px;
@@ -176,7 +176,7 @@ body {
     float: right;
     border: 2px solid #FFF;
     border-radius: 5px;
-    background:  rgb(182,1,92,0.0);
+    background:  rgb(182,1,92);
 }
 .search-button p {
     font-size: 20px;

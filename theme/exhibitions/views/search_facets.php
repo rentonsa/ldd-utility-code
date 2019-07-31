@@ -6,7 +6,7 @@
          $active_terms = array();
 
          ?>
-        <h4 class="accordion"><a><?php echo $facet['name'] ?></a></h4>
+        <h4 class="accordion" alt="search bar section title"><a alt="dropdown menu on click"><?php echo $facet['name'] ?></a></h4>
 
         <?php if(preg_match('/Date/',$base_search) && $facet['name'] == 'Date') {
             $fpattern =  '#\/'.$facet['name'].'.*\]#';
@@ -16,9 +16,9 @@
             $fremove = preg_replace($fpattern,'',$fremove, -1);
         ?>
 
-        <ul class="selected">
+        <ul class="selected" alt="currently selected filter">
             <li>
-                Clear <?php echo $facet['name']; ?> filters <a class="deselect" href='<?php echo $fremove;?>'></a>
+                Clear <?php echo $facet['name']; ?> filters <a class="deselect" href='<?php echo $fremove;?>' alt="deselect filter on click"></a>
             </li>
         </ul>
              
@@ -36,7 +36,7 @@
         }
 
         if(sizeof($active_terms) > 0) { ?>
-        <ul class="selected">
+        <ul class="selected" alt="currently selected filter">
             <?php foreach($active_terms as $term) {
                 //SR May 19
                 if (strpos($term['display_name'],"|||") > 0)
@@ -52,7 +52,7 @@
         ?> </ul> <?php
         }
         ?>
-        <ul class="panel">
+        <ul class="panel" alt="list of filters">
         
         <?php foreach($inactive_terms as $term) {
             //SR May 19
@@ -61,7 +61,7 @@
                 $term['display_name'] = ucfirst(substr($term['display_name'], strpos($term['display_name'], ' ||| ') + 5, 100));
             }?>
                 <li class="siderbar-list-item">
-                    <a href='<?php echo $base_search; ?>/<?php echo $facet['name']; ?>:"<?php echo $term['name']; ?>"<?php echo $base_parameters ?>'><?php echo $term['display_name'];?> (<?php echo $term['count']; ?>)
+                    <a href='<?php echo $base_search; ?>/<?php echo $facet['name']; ?>:"<?php echo $term['name']; ?>"<?php echo $base_parameters ?>' alt="apply filter on click"><?php echo $term['display_name'];?> (<?php echo $term['count']; ?>)
                     </a>
                 </li>
             <?php
@@ -77,7 +77,7 @@
             if($term['count'] > 0) {
             ?>
             <li>
-                <a class="deselect" href='<?php echo $remove; ?>/<?php echo $facet['name']; ?>:<?php echo $term['name']; ?><?php if(isset($operator)) echo '?operator='.$operator; ?>'><?php echo $term['display_name'];?> (<?php echo $term['count']; ?>)
+                <a class="deselect" href='<?php echo $remove; ?>/<?php echo $facet['name']; ?>:<?php echo $term['name']; ?><?php if(isset($operator)) echo '?operator='.$operator; ?>' alt="remove filter on click"><?php echo $term['display_name'];?> (<?php echo $term['count']; ?>)
                 </a>
             </li>
             <?php
@@ -89,7 +89,7 @@
        <?php }
        else {
            if($numterms == $this->config->item('skylight_facet_limit')) { ?>
-           <li><a href="./browse/<?php echo $facet['name']; ?>">More ...</a></li>
+           <li><a href="./browse/<?php echo $facet['name']; ?>" alt="view full list of filter for this section">More ...</a></li>
        <?php }
             } ?>
         </ul>
