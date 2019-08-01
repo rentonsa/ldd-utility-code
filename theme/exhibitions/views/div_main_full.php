@@ -1,8 +1,9 @@
-
+<!-- GENERATES FULL SIZE BODY -->
 <?php
     $current_url = trim( "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}", "http");
     $base_string = trim(base_url(), "https");
 
+    // CONDITION TO GENERATE FULL BODY DIV IF ON INDEX PAGE 
     if ($current_url !== $base_string) {
           echo '<div id="skrollr-body">
                 <div class="body-text content" id="short-body"> 

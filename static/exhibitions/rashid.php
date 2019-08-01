@@ -1,7 +1,7 @@
 
 <div class="content" id="static-exhibition">
     <div class="content byEditor">
-        <h1><a href = 'search/*:*/Exhibition:"rashid+al-din%26%2339%3Bs+world+history%7C%7C%7CRashid+al-Din%26%2339%3Bs+World+History"'>The World History of Rashid al-Din, 1314</a></h1>
+        <h1 alt="exhibition title"><a href = 'search/*:*/Exhibition:"rashid+al-din%26%2339%3Bs+world+history%7C%7C%7CRashid+al-Din%26%2339%3Bs+World+History"'>The World History of Rashid al-Din, 1314</a></h1>
         <div id="rashid-block">
             <table>
                 <tr class="indextr">
@@ -54,12 +54,12 @@
             </table>
 
         </div >
-        <h4 id="individual-exhibition-h" class="right-align-h">2nd August 2014 - 31st October 2014<br>Exhibition Gallery<br>Main Library<br>George Square</h4>
-        <p id="individual-exhibition-p" class="right-align-p">
+        <h4 id="individual-exhibition-h" class="right-align-h" alt="exhibition details and location">2nd August 2014 - 31st October 2014<br>Exhibition Gallery<br>Main Library<br>George Square</h4>
+        <p id="individual-exhibition-p" class="right-align-p" alt="exhibition curator">
             Curated by: Dr Yuka Kadoi, Postdoctoral Fellow at The Alwaleed Bin Talal Centre for the Study of Islam in the Contemporary World
         </p>
         <br>
-        <p id="individual-exhibition-p" class="right-align-p">
+        <p id="individual-exhibition-p" class="right-align-p" alt="exhibition description">
             This festival exhibition highlights the Jami' al-Tawarikh (World History or Compendium of Chronicles) of Rashid al-Din, one of the masterpieces of medieval Islamic manuscripts. Celebrating the 700th anniversary of its production (1314/2014), the exhibition features approximately 15 folios from Edinburgh University Library’s manuscript (Or.MS.20). Curated and organised in collaboration with the Centre for Research Collections and the Alwaleed Centre for the Study of Islam in the Contemporary World, both at the University of Edinburgh
         </p>
         <br>
@@ -68,13 +68,13 @@
         <br>
 
         <a href="<?php echo base_url() ?>past#rashid-anchor">
-            <button id="exhibition-back" class="exhibit-button">
+            <button id="exhibition-back" class="exhibit-button" alt="link back to full past exhibiton list">
                 <p>Back to full list</p>
             </button>
         </a>
         
         <a href='./search/*:*/Exhibition:"rashid+al-din|||Rashid+al-Din"'>
-            <button class="exhibit-button">
+            <button class="exhibit-button" alt="link to view exhibition items">
                 <p>View all items</p>
             </button>
         </a>
@@ -84,7 +84,7 @@
         <br>
         <div data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
             <a href="http://images.is.ed.ac.uk/luna/servlet/view/search?search=Search&q=World+History" target = "_blank" title = "High res images" alt = "High res images">
-                <button class="exhibit-button" id="object-button">
+                <button class="exhibit-button" id="object-button" alt="link to high resolution images">
                     <p>High resolution images</p>
                 </button>
             </a>
@@ -92,14 +92,14 @@
             <br>
 
             <a href="http://images.is.ed.ac.uk/luna/servlet/s/kwl89a" target = "_blank" title = "High res images" alt = "High res images">
-                <button class="exhibit-button" id="object-button">
+                <button class="exhibit-button" id="object-button" alt="link to online version of the full book">
                     <p>The full book</p>
                 </button>
             </a>
             <h3 id="object-divide">using LUNA's page-turning software</h3>
             <br>
             <a href="http://vimeo.com/103231632" target = "_blank" title = "High res images" alt = "High res images">
-                <button class="exhibit-button" id="object-button">
+                <button class="exhibit-button" id="object-button" alt="link to time lapse of exhibition install">
                     <p>The time lapse film</p>
                 </button>
             </a>

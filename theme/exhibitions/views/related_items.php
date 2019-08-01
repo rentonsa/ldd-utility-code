@@ -1,6 +1,6 @@
-    <h4 id="related-items">Related Items</h4>
+    <h4 id="related-items" alt="sidebar section title">Related Items</h4>
 
-    <ul class="related">
+    <ul class="related" alt="list of related items">
 
        
     <?php
@@ -36,7 +36,7 @@
                             $lower_orig_filter = strtolower($author);
                             $lower_orig_filter = urlencode($lower_orig_filter);
 
-                            echo '<a href="./search/*:*/Creator:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$author.'</a>';
+                            echo '<a href="./search/*:*/Creator:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22" alt="link to related item">'.$author.'</a>';
                             $num_authors++;
                             if($num_authors < sizeof($doc[$author_field])) {
                                 echo ' ';
@@ -55,7 +55,7 @@
         // else there aren't any related items
         else { ?>
 
-            <li>None.</li>
+            <li alt="no related items">None.</li>
 
         <?php }?>
     </ul>

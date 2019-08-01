@@ -3,10 +3,10 @@
         <a href ='./search/*:*/Exhibition:"something+blue|||Something+Blue"' id = "smallbanner-blue"></a>
         <div id="head-info">
 
-            <h2>About the Exhibition</h2>
+            <h2 alt="exhibition title" alt="exhibition details and location">About the Exhibition</h2>
             <h3>Dates: 2nd April - 27th June 2015<br />
                 Where: Exhibition Gallery, Main Library, George Square<br />
-                Curated by: Emma Smith<br />
+                Curated by: Emma Smith<br  alt="exhibition curator"/>
                 <a href ='./search/*:*/Exhibition:"something+blue|||Something+Blue"'><i class="fa fa-search">&nbsp;</i>View Items</a></h3>
         </div>
 
@@ -59,16 +59,16 @@
 
 ?>
         <div class = "content">
-        <p>
+        <p alt="exhibition description">
         Blue has delighted and captivated humanity for thousands of years. It is used to describe immeasurable concepts, such as the depth of the sea or the colour of the sky. Despite this, it only occurs in nature very rarely and is the most difficult natural pigment to obtain.
 </p>
-        <p>
+        <p alt="exhibition description">
         This exhibition in the Main Library Exhibition Gallery presents an exploration of the University’s Collections on the colour and concept of blue. From blue stockings and opals to lullabies and rhapsodies, this exhibition offers new opportunities for academic and abstract associations.
         </p>
-        <p>
+        <p alt="exhibition description">
         “The blue colour is everlastingly appointed by the Deity to be a source of delight; and whether seen perpetually over your head, or crystallised once in a thousand years into a single and incomparable stone, your acknowledgment of its beauty is equally natural, simple, and instantaneous.”
         </p>
-        <p>
+        <p alt="exhibition description">
         <i>John Ruskin (1819 - 1900)</i>
         </p>
         </div>

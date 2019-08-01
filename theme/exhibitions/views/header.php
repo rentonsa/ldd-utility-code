@@ -105,15 +105,16 @@
 
     <body>
 
+    <!-- HEADER DIV -->
     <div class="header"></div>
 
+    <!-- CONDITION BLOCK TO DETERMINE HOW TO SERVE UP PARALLAX 'BACKGROUND' GAPS BASED ON URL -->
     <?php
-    
-
     // Conditional to compare current and root url and serve up parallax styles accordingly
     $current_url = trim( "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}", "http");
     $base_string = trim(base_url(), "https");
 
+    // IF ON LANDING/INDEX PAGE
     if ($current_url == $base_string) {
           
         echo 
@@ -121,13 +122,14 @@
     <!-- PARALLAX WRAPPERS FOR BACKGROUND IMAGES -->
     <!-- Associated with the block before the gap appears -->
 
-    <!-- Wrapper for head image -->
+    <!-- WRAPPER FOR TOP PARALLAX IMAGE -->
     <div
         id="head-wrapper"
         class="parallax-image-wrapper"
         data-anchor-target="#page-gap"
         data-bottom-top="transform:translateY(200%)"
         data-top-bottom="transform:translateY(0)"
+        alt="parallax background image wrapper"
         >
         <div
             class="parallax-image"
@@ -135,17 +137,19 @@
             data-anchor-target="#page-gap"
             data-bottom-top="transform: translateY(-100%);"
             data-top-bottom="transform: translateY(50%);"
+            alt="parallax background image"
             >
         </div>
     </div>
 
-    <!-- Wrapper for visit us image -->
+    <!-- WRAPPER FOR VISIT US PARALLAX IMAGE -->
     <div
         id="visit-block-wrapper"
         class="parallax-image-wrapper"
         data-anchor-target="#block-one + .gap"
         data-bottom-top="transform:translateY(200%)"
         data-top-bottom="transform:translateY(0)"
+        alt="parallax background image wrapper"
         >
         <div
             class="parallax-image"
@@ -153,17 +157,19 @@
             data-anchor-target="#block-one + .gap"
             data-bottom-top="transform: translateY(-80%);"
             data-top-bottom="transform: translateY(80%);"
+            alt="parallax background image"
             >
         </div>
     </div>
 
-    <!-- Wrapper for exhibitions image -->
+    <!-- WRAPPER FOR EXHIBITIONS PARALLAX IMAGE -->
     <div
         id="exhibitions-block-wrapper"
         class="parallax-image-wrapper"
         data-anchor-target="#block-two + .gap"
         data-bottom-top="transform:translateY(200%)"
         data-top-bottom="transform:translateY(0)"
+        alt="parallax background image wrapper"
         >
         <div
             class="parallax-image"
@@ -171,17 +177,19 @@
             data-anchor-target="#block-two + .gap"
             data-bottom-top="transform: translateY(-80%);"
             data-top-bottom="transform: translateY(80%);"
+            alt="parallax background image"
             >
         </div>
     </div>
 
-    <!--  Wrapper for events image -->
+    <!--  WRAPPER FOR EVENTS PARALLAX IMAGE -->
     <div
         id="events-block-wrapper"
         class="parallax-image-wrapper"
         data-anchor-target="#block-three + .gap"
         data-bottom-top="transform:translateY(200%)"
         data-top-bottom="transform:translateY(0)"
+        alt="parallax background image wrapper"
         >
         <div
             class="parallax-image"
@@ -189,16 +197,19 @@
             data-anchor-target="#block-three + .gap"
             data-bottom-top="transform: translateY(-80%);"
             data-top-bottom="transform: translateY(80%);"
+            alt="parallax background image"
             >
         </div>
     </div>
 
+    <!--  WRAPPER FOR SUPPORT US PARALLAX IMAGE -->
     <div
         id="support-block-wrapper"
         class="parallax-image-wrapper"
         data-anchor-target="#block-four + .gap"
         data-bottom-top="transform:translateY(200%)"
         data-top-bottom="transform:translateY(0)"
+        alt="parallax background image wrapper"
         >
         <div
             class="parallax-image"
@@ -206,22 +217,27 @@
             data-anchor-target="#block-four + .gap"
             data-bottom-top="transform: translateY(-80%);"
             data-top-bottom="transform: translateY(80%);"
+            alt="parallax background image"
             >
         </div>
     </div>'
         
         ;
     }
+
+    // IF ON PAGES RELATING TO LIBRARY EVENTS
     elseif (strpos("http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}", 'event') !== false ){
         echo '
         <div id="container">
 
+            <!-- WRAPPER FOR TOP PARALLAX IMAGE -->
             <div
                 id="head-wrapper"
                 class="parallax-image-wrapper"
                 data-anchor-target="#page-gap"
                 data-bottom-top="transform:translateY(200%)"
                 data-top-bottom="transform:translateY(0)"
+                alt="parallax background image wrapper"
                 >
                 <div
                     class="parallax-image"
@@ -229,22 +245,22 @@
                     data-anchor-target="#page-gap"
                     data-bottom-top="transform: translateY(-100%);"
                     data-top-bottom="transform: translateY(50%);"
+                    alt="parallax background image"
                     >
                 </div>
             </div>
                 <header id="page-gap" class="gap">
 
+                <!-- EVENTS NAVIGATION BAR -->
+
                 <!-- MAIN UNIVERSITY LOGO -->
                 <div id="non-index" class="logo-container">
-                    <a href="' . base_url() . '">
+                    <a href="' . base_url() . '" alt="link to home page">
                         <img src="' . base_url() . 'theme/' . $this->config->item('skylight_theme') . '/images/logos/uofe_logo.png" alt="University of Edinburgh Logo">
                     </a>
                 </div>
-                <!--<div id="collection-title">
-                    <a href="http://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh Home" target="_blank"></a>
-                    <a href="' . base_url() . '" class="exlogo" title="University of Edinburgh Exhibitions Home"></a>
-                    <a href="' . base_url() . '" class="menulogo" title="University of Edinburgh Exhibitions Home"></a>
-                </div>-->
+
+                <!-- SEARCH FORM -->
                 <div class="nav-search">
                     <div id="collection-search">
                         <form action="./redirect/" method="post">
@@ -261,19 +277,21 @@
                             </fieldset>
                         </form>
                     </div>
+
+                    <!-- NAVIGATION LINKS -->
                     <div class="nav-adv-search">
                         <div id="adv-search">
-                            <a class="nav-link" href="./advanced">Advanced search</a>
+                            <a class="nav-link" href="./advanced" alt="navigation link">Advanced search</a>
                         </div>
                     </div>
                     <div class="nav-adv-search">
                         <div id="adv-search">
-                            <a class="nav-link" href="./event">Upcoming Events</a>
+                            <a class="nav-link" href="./event" alt="navigation link">Upcoming Events</a>
                         </div>
                     </div>
                     <div class="nav-adv-search">
                         <div id="adv-search">
-                            <a class="nav-link" href="./eventlist">Past Events List</a>
+                            <a class="nav-link" href="./eventlist" alt="navigation link">Past Events List</a>
                         </div>
                     </div>
                 </div>
@@ -286,15 +304,19 @@
                 ';
 
     }
+
+    // ALL OTHER PAGES
     else { echo '
         <div id="container">
 
+            <!-- WRAPPER FOR TOP PARALLAX IMAGE -->
             <div
                 id="head-wrapper"
                 class="parallax-image-wrapper"
                 data-anchor-target="#page-gap"
                 data-bottom-top="transform:translateY(200%)"
                 data-top-bottom="transform:translateY(0)"
+                alt="parallax background image wrapper"
                 >
                 <div
                     class="parallax-image"
@@ -302,10 +324,13 @@
                     data-anchor-target="#page-gap"
                     data-bottom-top="transform: translateY(-100%);"
                     data-top-bottom="transform: translateY(50%);"
+                    alt="parallax background image"
                     >
                 </div>
             </div>
                 <header id="page-gap" class="gap">
+
+                <!-- EXHIBITIONS NAVIGATION BAR -->
 
                 <!-- MAIN UNIVERSITY LOGO -->
                 <div id="non-index" class="logo-container">
@@ -313,11 +338,8 @@
                         <img src="' . base_url() . 'theme/' . $this->config->item('skylight_theme') . '/images/logos/uofe_logo.png" alt="University of Edinburgh Logo">
                     </a>
                 </div>
-                <!--<div id="collection-title">
-                    <a href="http://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh Home" target="_blank"></a>
-                    <a href="' . base_url() . '" class="exlogo" title="University of Edinburgh Exhibitions Home"></a>
-                    <a href="' . base_url() . '" class="menulogo" title="University of Edinburgh Exhibitions Home"></a>
-                </div>-->
+
+                <!-- SEARCH FORM -->
                 <div class="nav-search">
                     <div id="collection-search">
                         <form action="./redirect/" method="post">
@@ -334,19 +356,21 @@
                             </fieldset>
                         </form>
                     </div>
+
+                    <!-- NAVIGATION LINKS -->
                     <div class="nav-adv-search">
                         <div id="adv-search">
-                            <a class="nav-link" href="./advanced">Advanced search</a>
+                            <a class="nav-link" href="./advanced" alt="navigation link">Advanced search</a>
                         </div>
                     </div>
                     <div class="nav-adv-search">
                         <div id="adv-search">
-                            <a class="nav-link" href="./past">Past Exhibitions</a>
+                            <a class="nav-link" href="./past" alt="navigation link">Past Exhibitions</a>
                         </div>
                     </div>
                     <div class="nav-adv-search">
                         <div id="adv-search">
-                            <a class="nav-link" href="./search">View All Items</a>
+                            <a class="nav-link" href="./search" alt="navigation link">View All Items</a>
                         </div>
                     </div>
                 </div>

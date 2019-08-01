@@ -1,3 +1,4 @@
+<!-- GENERATES STANDARD BODY DIV -->
 <div id="skrollr-body">
 <div class="body-text content" id="short-body"> 
 

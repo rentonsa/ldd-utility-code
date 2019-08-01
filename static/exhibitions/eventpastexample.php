@@ -2,22 +2,22 @@
 <div class="content" id="static-exhibition">
     <div class="content byEditor">
 
-        <h1>This is an Example of a Event Page</h1>
+        <h1 alt="event title">This is an Example of a Event Page</h1>
 
         <div class="event-image-box">
-            <img id="indiviual-event-image" class="event-image" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/event-temp-logo.jpg" >
+            <img id="indiviual-event-image" class="event-image" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/event-temp-logo.jpg" alt="event logo">
         </div>
 
         <div id="smol-image-block" >
             <div id="event-text" class="text-box-smol">
-                <h4 id="event-details" class="past-exhibit-h">Entry</h4>
+                <h4 id="event-details" class="past-exhibit-h" alt="event details">Entry</h4>
                 <p class="past-exhibit-p">
                     Free Admission<br>
                     (Booking Required)
                 </p>
             </div>
             <div id="event-text" class="text-box-smol">
-                <h4 id="event-details" class="past-exhibit-h">Dates</h4>
+                <h4 id="event-details" class="past-exhibit-h" alt="event details">Dates</h4>
                 <p class="past-exhibit-p">
                     12:00 & 14:00<br>
                     2nd May - 5th May<br>
@@ -25,7 +25,7 @@
                 </p>
             </div>
             <div id="event-text" class="text-box-smol">
-                <h4 id="event-details" class="past-exhibit-h">Location</h4>
+                <h4 id="event-details" class="past-exhibit-h" alt="event location">Location</h4>
                 <p class="past-exhibit-p">
                     Main Library<br>
                     30 George Square<br/>
