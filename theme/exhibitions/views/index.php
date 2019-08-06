@@ -481,130 +481,104 @@
         <!-- EVENTS BLOCK -->
         <div id="block-four" class="body-text content">
 
-            <div class="anchor" id="current-events-anchor" ></div>
+            <!-- SECTION TITLE -->
+            <h1 id="current-exhibitions" class="left-align-h1" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">Current Events</h1>
 
-            <h2 id="current-events" class="left-align-h" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1" alt="library events details">Coming Soon...</h2>
-
-            <!-- COMMENTED OUT UNTIL WE RECIEVE CONTENT -->
-            <!--<h2 id="current-events" class="left-align-h" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">Up-Coming Events</h2>
-
+            <!-- SECTION CONTAINER -->
             <div class="exhibition-container">
+
+                <!-- SECTION LOGO -->
                 <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">         
-                    <a href="https://test.exhibitions.ed.ac.uk">
+                    <a href="https://test.exhibitions.ed.ac.uk/conectando">
                         <div class="image-box" >
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/eventboxes/box_1.png" >
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo">
                         </div>
                     </a>
                 </div>
 
+                <!-- SECTION INFO -->
                 <div id="info-container" class="exhibit-info" data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
-                    <h2 id="first-event" class="right-align-h">
-                        Event Example One
-                    </h2>
+                <div class="anchor" id="current-exhibition-anchor" ></div>
+                    <h2 class="right-align-h" alt="current main exhibition title">Body Language: Exhibition Tours </h2>
 
-                    <p class="right-align-p" >                       
-                        A strong and clear event description excites punters: tell them what will happen at the event, who will be speaking, and what they might get out of attending. Your event may be brilliant, but no one else will know without you telling and convincing them.
-                    </p>
-
-                    <p id="info-gap" class="right-align-p" >                       
-                            MAIN LIBRARY EXHIBITION GALLERY
-                    </p>
-                    <p class="right-align-p">
-                            5 APRIL 2018 - 29 JUNE 2019
-                    </p>
-                    <p class="right-align-p">
-                            Ground Floor - Monday to Saturday
+                    <p class="right-align-p" alt="current main exhibition description">                       
+                        JJoin our exhibitions officer for a tour of Body Language. Featuring gym wear, films, photographs and trophies, this display explores the pioneering role women play in Scotland’s physical education and dance.
                     </p>
 
-                    <a id="info-gap" href="https://test.exhibitions.ed.ac.uk/conectando">
+                    <p id="info-gap" class="right-align-p" alt="current main exhibition location">                       
+                            MAIN LIBRARY EXHIBITION GALLERY<br>
+                            GROUND FLOOR<br>
+                    </p>
+                    <br>
+                    <p class="right-align-p" alt="current main exhibition dates">
+                        7 AUGUST 15:00  |  14 AUGUST 14:00  |  21 AUGUST 14:00  |  27 AUGUST 14:00 (2019)<br>
+                        <br>
+                        10 SEPTEMBER 14:00 | 11 SEPTEMBER 14:00 | 13 SEPTEMBER 14:00 (2019)<br>
+                        <br>
+                        16 OCTOBER 14:00 (2019)<br>
+                        <br>
+                        FREE ENTRY
+                    </p>
+
+                    <!-- BUTTON TO CURRENT EXHIBITION COLLECTION -->
+                    <!-- * commented out as none exists currently -->
+                    <a id="info-gap" href="<?php base_url()?>bltoursevent">
                         <button class="exhibit-button">
-                            <p id="event-button">View Event</p>
+                            <p>View Event</p>
                         </button>
                     </a>
 
                 </div>
+                    
             </div>
 
-            <div id="central-event" class="exhibition-container">
+            <!-- SECTION DIVIDER -->
+            <div id="past-container" class="divider" data-100-bottom-top="transform: translateY(0px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
+
+            <!-- SECTION CONTAINER -->
+            <div class="exhibition-container" id="event-container">
+
+                <!-- SECTION LOGO -->
                 <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">         
-                    <a href="https://test.exhibitions.ed.ac.uk">
-                        <div class="image-box" >
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/eventboxes/box_2.png" >
+                    <a href="https://test.exhibitions.ed.ac.uk/conectando">
+                        <div class="image-box" id="event-divide" >
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo">
                         </div>
                     </a>
                 </div>
 
+                <!-- SECTION INFO -->
                 <div id="info-container" class="exhibit-info" data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
-                    <h2 id="first-event" class="right-align-h">
-                        Event Example Two
-                    </h2>
+                <div class="anchor" id="current-exhibition-anchor" ></div>
+                    <h2 class="right-align-h" id="event-divide" alt="current main exhibition title">Body Language: Design Your Own Gym Wear </h2>
 
-                    <p class="right-align-p" >                       
-                        A strong and clear event description excites punters: tell them what will happen at the event, who will be speaking, and what they might get out of attending. Your event may be brilliant, but no one else will know without you telling and convincing them.
-                    </p>
-
-                    <p id="info-gap" class="right-align-p" >                       
-                            MAIN LIBRARY EXHIBITION GALLERY
-                    </p>
-                    <p class="right-align-p">
-                            5 APRIL 2018 - 29 JUNE 2019
-                    </p>
-                    <p class="right-align-p">
-                            Ground Floor - Monday to Saturday
+                    <p class="right-align-p" alt="current main exhibition description">                       
+                        From heavy calico dresses worn with woolen tights to spandex and lyrca, women’s gym wear has certainly changed over the last century! Delve into the archives of Dunfermline College of Physical Education, Scottish Gymnastics, and the dancer Margaret Morris, to discover the different trends of the 20th century before taking to the coloured pens and paper to create your own gym-ready trend!
                     </p>
 
-                    <a id="info-gap" href="https://test.exhibitions.ed.ac.uk/conectando">
+                    <p id="info-gap" class="right-align-p" alt="current main exhibition location">                       
+                        MAIN LIBRARY<br>
+                    </p>
+                    <br>
+                    <p class="right-align-p" alt="current main exhibition dates">
+                        6 SEPTEMBER 14:00 - 16:00 (2019)<br>
+                        <br>
+                        2 OCTOBER 14:00 - 16:00 (2019)<br>
+                        <br>
+                        FREE ENTRY
+                    </p>
+
+                    <!-- BUTTON TO CURRENT EXHIBITION COLLECTION -->
+                    <!-- * commented out as none exists currently -->
+                    <a id="info-gap" href="<?php base_url()?>gymwearevent">
                         <button class="exhibit-button">
-                            <p id="event-button">View Event</p>
+                            <p>View Event</p>
                         </button>
                     </a>
 
                 </div>
+                    
             </div>
-
-            <div id="last-event" class="exhibition-container">
-                <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">         
-                    <a href="https://test.exhibitions.ed.ac.uk">
-                        <div class="image-box" >
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/eventboxes/box_3.png" >
-                        </div>
-                    </a>
-                </div>
-
-                <div id="info-container" class="exhibit-info" data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
-                    <h2 id="first-event" class="right-align-h">
-                        Event Example Three
-                    </h2>
-
-                    <p class="right-align-p" >                       
-                        A strong and clear event description excites punters: tell them what will happen at the event, who will be speaking, and what they might get out of attending. Your event may be brilliant, but no one else will know without you telling and convincing them.
-                    </p>
-
-                    <p id="info-gap" class="right-align-p" >                       
-                            MAIN LIBRARY EXHIBITION GALLERY
-                    </p>
-                    <p class="right-align-p">
-                            5 APRIL 2018 - 29 JUNE 2019
-                    </p>
-                    <p class="right-align-p">
-                            Ground Floor - Monday to Saturday
-                    </p>
-
-                    <a id="info-gap" href="https://test.exhibitions.ed.ac.uk/conectando">
-                        <button class="exhibit-button">
-                            <p id="event-button">View Event</p>
-                        </button>
-                    </a>
-
-                </div>
-            </div>
-
-            <div id="event-icon" class="past-icon" data-100-bottom-top="transform: translateY(50px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
-                <a href="https://test.exhibitions.ed.ac.uk/past">
-                    <img id="past-list" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/list.png">
-                    <p class="left-align-p">View the full events programme</p>
-                </a>
-            </div>-->
 
         </div>
 
