@@ -140,7 +140,3 @@
         $grid.masonry('layout');
     });
 </script>
-
-
-
-
