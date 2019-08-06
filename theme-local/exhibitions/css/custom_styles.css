@@ -521,6 +521,12 @@ body {
 #event-button {
     margin: 5px 32px;
 }
+#event-divide {
+    margin-top: 80px;
+}
+#event-container {
+    margin-bottom: 0;
+}
 
 
 /* Support Us Block */
