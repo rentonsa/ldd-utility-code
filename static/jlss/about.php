@@ -71,7 +71,7 @@
                 Glasgow<br>
                 G3 6UB<br>
                 <strong>Tel:</strong> +44 (0)141 332 4911<br>
-                <strong>Email:</strong> <a class="email" href="info@sjac.org.uk">linfo@sjac.org.uk</a><br/>
+                <strong>Email:</strong> <a class="email" href="info@sjac.org.uk">info@sjac.org.uk</a><br/>
             </p>
         </div>
 
