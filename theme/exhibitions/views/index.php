@@ -511,11 +511,11 @@
                     </p>
                     <br>
                     <p class="right-align-p" alt="current main exhibition dates">
-                        7 AUGUST 15:00  |  14 AUGUST 14:00  |  21 AUGUST 14:00  |  27 AUGUST 14:00 (2019)<br>
+                        7 AUGUST 2019 15:00  |  14 AUGUST 2019 14:00  |  21 AUGUST 2019 14:00  |  27 AUGUST 2019 14:00<br>
                         <br>
-                        10 SEPTEMBER 14:00 | 11 SEPTEMBER 14:00 | 13 SEPTEMBER 14:00 (2019)<br>
+                        10 SEPTEMBER 2019 14:00 | 11 SEPTEMBER 2019 14:00 | 13 SEPTEMBER 2019 14:00<br>
                         <br>
-                        16 OCTOBER 14:00 (2019)<br>
+                        16 OCTOBER 2019 14:00<br>
                         <br>
                         FREE ENTRY
                     </p>
@@ -561,9 +561,9 @@
                     </p>
                     <br>
                     <p class="right-align-p" alt="current main exhibition dates">
-                        6 SEPTEMBER 14:00 - 16:00 (2019)<br>
+                        6 SEPTEMBER 2019 14:00 - 16:00<br>
                         <br>
-                        2 OCTOBER 14:00 - 16:00 (2019)<br>
+                        2 OCTOBER 2019 14:00 - 16:00<br>
                         <br>
                         FREE ENTRY
                     </p>
@@ -578,6 +578,13 @@
 
                 </div>
                     
+            </div>
+
+            <div class="past-icon skrollable skrollable-after" data-100-bottom-top="transform: translateY(50px); opacity: 0" data-center-top="transform: translateX(50px); opacity: 1" style="transform: translateX(0px); opacity: 1;">
+                <a href="events" alt="link to full list of past exhibitions">
+                    <img id="past-link" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/list.png" alt="list icon">
+                    <p class="left-align-p">View the full events list</p>
+                </a>
             </div>
 
         </div>
