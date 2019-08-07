@@ -580,7 +580,7 @@
                     
             </div>
 
-            <div class="past-icon skrollable skrollable-after" data-100-bottom-top="transform: translateY(50px); opacity: 0" data-center-top="transform: translateX(50px); opacity: 1" style="transform: translateX(0px); opacity: 1;">
+            <div class="past-icon skrollable skrollable-after" data-100-bottom-top="transform: translateY(50px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1" style="transform: translateX(0px); opacity: 1;">
                 <a href="events" alt="link to full list of past exhibitions">
                     <img id="past-link" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/list.png" alt="list icon">
                     <p class="left-align-p">View the full events list</p>
