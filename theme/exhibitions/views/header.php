@@ -289,11 +289,6 @@
                             <a class="nav-link" href="./events" alt="navigation link">Upcoming Events</a>
                         </div>
                     </div>
-                    <div class="nav-adv-search">
-                        <div id="adv-search">
-                            <a class="nav-link" href="./eventslistnone" alt="navigation link">Past Events List</a>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="block-title">

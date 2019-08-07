@@ -20,9 +20,9 @@
                 <p id="info-gap" class="right-align-p" alt="event location and dates">                       
                         MAIN LIBRARY<br>
                         <br>
-                        6 SEPTEMBER 14:00 - 16:00 (2019)<br>
+                        6 SEPTEMBER 2019 14:00 - 16:00<br>
                         <br>
-                        2 OCTOBER 14:00 - 16:00 (2019)<br>
+                        2 OCTOBER 2019 14:00 - 16:00<br>
                         <br>
                         FREE ENTRY
                 </p>
