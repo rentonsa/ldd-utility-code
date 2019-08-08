@@ -421,8 +421,13 @@ body {
     margin: 0 8vh;
 }
 #smol-image-block {
-    margin: 8vh 0 8vh 0;
-    height: 125px;
+    margin: 8vh 0 0 0;
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+#smol-text-block {
+    margin-top: 0;
     text-align: justify;
     -ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines;
@@ -476,9 +481,6 @@ body {
     margin: 14px;
     white-space: nowrap;
     text-decoration: none;
-}
-#past-icon {
-    margin-top: 12vh;
 }
 #past-link {
     float: left;

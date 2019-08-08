@@ -409,7 +409,7 @@
                     </div>
 
                     <!-- SECTION INFO -->
-                    <div id="smol-image-block" >
+                    <div id="smol-text-block" >
                         <div class="text-box-smol">
                             <h3 class="past-exhibit-h" alt="past exhibition title">Highlands to Hindustan</h3>
                             <p class="past-exhibit-p" alt="past exhibition dates">Jul 2017 - Nov 2017</p>
