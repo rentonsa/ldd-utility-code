@@ -80,7 +80,7 @@
                         No matches<br><br>
                     <?php }
                     else {
-                        if($numterms == $this->config->item('skylight_results_per_page')) { ?>
+                        if($numterms == $this->config->item('skylight_facet_limit')) { ?>
                             <a href="./browse/<?php echo $facet['name']; ?>">More ...</a><br><br>
                         <?php }
                     } ?>

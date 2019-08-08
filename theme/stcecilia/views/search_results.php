@@ -67,7 +67,6 @@
                             $linkURI = str_replace('full/full', 'full/96,', $linkURI);
                             list($width, $height) = getimagesize($linkURI);
                             $portrait = true;
-
                             if ($width > $height)
                             {
                                 $parms = '/180,';
