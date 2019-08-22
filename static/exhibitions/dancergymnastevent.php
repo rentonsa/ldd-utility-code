@@ -2,7 +2,7 @@
 <div class="content" id="static-exhibition">
     <div class="content byEditor">
 
-    <h1 alt="event title">Body Language: Exhibition Tours</h1>
+    <h1 alt="event title">The Dancer & the Gymnast</h1>
 
     <div class="event-list">
 
@@ -14,17 +14,16 @@
             </div>
 
                 <p class="event-p" alt="event description">
-                    Join our exhibitions officer for a tour of Body Language. Featuring gym wear, films, photographs and trophies, this display explores the pioneering role women play in Scotland’s physical education and dance.
+                    In this talk, Richard Emerson examines how the dancer, Margaret Morris transformed her London stage school into a worldwide movement 
+                    promoting the remedial benefits of dance and exercise. Central to this change was the meeting in 1918 between Morris and Loïs Hutton, 
+                    a gymnast, sportswoman and Physical Education teacher, would who go on to become Morris’ principal dancer.
                 </p>
 
                 <p id="info-gap" class="right-align-p" alt="event location and dates">                       
-                    GROUND FLOOR, MAIN LIBRARY<br>
+                    CENTRE FOR RESEARCH COLLECTIONS<br>
+                    6TH FLOOR, MAIN LIBRARY<br>
                     <br>
-                    7 AUGUST 2019 15:00  |  14 AUGUST 2019 14:00  |  21 AUGUST 2019 14:00  |  27 AUGUST 2019 14:00<br>
-                    <br>
-                    10 SEPTEMBER 2019 14:00 | 11 SEPTEMBER 2019 14:00 | 13 SEPTEMBER 2019 14:00<br>
-                    <br>
-                    16 OCTOBER 2019 14:00<br>
+                    24 OCTOBER 12:30 - 13:30 (2019)<br>
                     <br>
                     FREE ENTRY
                 </p>
@@ -33,7 +32,7 @@
                         <p>View Event Details</p>
                     </button>
                 </a>-->
-                <a id="info-gap" href="https://bit.ly/31bT4Uo" alt="Event Related Buttons" title="Event Related Buttons">
+                <a id="info-gap" href="https://bit.ly/2TNb0T0" alt="Event Related Buttons" title="Event Related Buttons">
                     <button id="eventlist-button" class="exhibit-button" alt="book or buy tickets link">
                         <p>Book / Buy Tickets</p>
                     </button>

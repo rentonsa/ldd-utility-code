@@ -506,8 +506,8 @@
                     </p>
 
                     <p id="info-gap" class="right-align-p" alt="current main exhibition location">                       
-                            MAIN LIBRARY EXHIBITION GALLERY<br>
-                            GROUND FLOOR<br>
+                            EXHIBITION GALLERY<br>
+                            GROUND FLOOR, MAIN LIBRARY<br>
                     </p>
                     <br>
                     <p class="right-align-p" alt="current main exhibition dates">
@@ -536,7 +536,7 @@
             <div id="past-container" class="divider" data-100-bottom-top="transform: translateY(0px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
 
             <!-- SECTION CONTAINER -->
-            <div class="exhibition-container" id="event-container">
+            <div class="exhibition-container">
 
                 <!-- SECTION LOGO -->
                 <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">         
@@ -571,6 +571,51 @@
                     <!-- BUTTON TO CURRENT EXHIBITION COLLECTION -->
                     <!-- * commented out as none exists currently -->
                     <a id="info-gap" href="<?php base_url()?>gymwearevent">
+                        <button class="exhibit-button">
+                            <p>View Event</p>
+                        </button>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- SECTION DIVIDER -->
+            <div id="past-container" class="divider" data-100-bottom-top="transform: translateY(0px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
+
+            <!-- SECTION CONTAINER -->
+            <div class="exhibition-container" id="event-container">
+
+                <!-- SECTION LOGO -->
+                <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">         
+                    <a href="https://test.exhibitions.ed.ac.uk/conectando">
+                        <div class="image-box" id="event-divide" >
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo">
+                        </div>
+                    </a>
+                </div>
+
+                <!-- SECTION INFO -->
+                <div id="info-container" class="exhibit-info" data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
+                <div class="anchor" id="current-exhibition-anchor" ></div>
+                    <h2 class="right-align-h" id="event-divide" alt="current main exhibition title">The Dancer & the Gymnast</h2>
+
+                    <p class="right-align-p" alt="current main exhibition description">                       
+                    In this talk, Richard Emerson examines how the dancer, Margaret Morris transformed her London stage school into a worldwide movement promoting the remedial benefits of dance and exercise.
+                    </p>
+                    <br>
+                    <p class="right-align-p" alt="current main exhibition dates">
+                        CENTRE FOR RESEARCH COLLECTIONS<br>
+                        <br>
+                        6TH FLOOR, MAIN LIBRARY<br>
+                        <br>
+                        24 OCTOBER 2019 12:30 - 13:30 <br>
+                        <br>
+                        FREE ENTRY
+                    </p>
+
+                    <!-- BUTTON TO CURRENT EXHIBITION COLLECTION -->
+                    <!-- * commented out as none exists currently -->
+                    <a id="info-gap" href="<?php base_url()?>dancergymnastevent">
                         <button class="exhibit-button">
                             <p>View Event</p>
                         </button>

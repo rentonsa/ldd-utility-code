@@ -51,11 +51,11 @@
             <div>
                 <div class="anchor" id="firstpaevent-anchor"></div>
 
-                <div class="event-image-box">
+                <div class="event-image-box" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
                     <img class="event-image" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="event logo">
                 </div>
 
-                
+                <div class="exhibit-info" data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
                     <h2 alt="event title">Body Language: Design your own Gym Wear</h2>
                     <p class="event-p" alt="event description">
                         From heavy calico dresses worn with woolen tights to spandex and lyrca, women’s gym wear has certainly changed over the last century! Delve into the archives of Dunfermline College of Physical Education, Scottish Gymnastics, and the dancer Margaret Morris, to discover the different trends of the 20th century before taking to the coloured pens and paper to create your own gym-ready trend!
@@ -79,49 +79,57 @@
                         <button id="eventlist-button" class="exhibit-button" alt="book or buy tickets link">
                             <p>Book / Buy Tickets</p>
                         </button>
-                    </a>     
+                    </a> 
+                </div>    
             </div>
             
           
         </div>
         <div id="event-divider" class="divider" data-100-bottom-top="transform: translateY(0px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
 
-        <!--<div class="event-list">
+        <div class="event-list">
 
             <div>
                 <div class="anchor" id="firstpaevent-anchor"></div>
 
-                <div class="event-image-box">
+                <div class="event-image-box" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
                     <img class="event-image" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="event logo">
                 </div>
 
-                
-                    <h2 alt="event title">This Is An Upcoming Event</h2>
+                <div class="exhibit-info" data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
+
+                    <h2 alt="event title">The Dancer & the Gymnast</h2>
                     <p alt="event description">
-                        An event where things are going to happen that are great! Come and join in all the super fun stuff that will happen at this event.
+                        In this talk, Richard Emerson examines how the dancer, Margaret Morris transformed her London stage school into a worldwide movement 
+                        promoting the remedial benefits of dance and exercise. Central to this change was the meeting in 1918 between Morris and Loïs Hutton, 
+                        a gymnast, sportswoman and Physical Education teacher, would who go on to become Morris’ principal dancer.
                     </p>
 
                     <p id="info-gap" class="right-align-p" alt="event location and dates" >                       
-                        MAIN LIBRARY<br>
-                        GROUND FLOOR<br>
-                        APRIL 2020<br>
-                        10:00 - 17:00
+                        CENTRE FOR RESEARCH COLLECTIONS<br>
+                        <br>
+                        6TH FLOOR, MAIN LIBRARY<br>
+                        <br>
+                        24 OCTOBER 12:30 - 13:30 (2019)<br>
+                        <br>
+                        FREE ENTRY
                     </p>
-                    <a id="info-gap" href="./eventexample" alt="Event Related Buttons" title="Event Related Buttons">
+                    <!--<a id="info-gap" href="./eventexample" alt="Event Related Buttons" title="Event Related Buttons">
                         <button id="eventlist-button" class="exhibit-button" alt="view event link">
                             <p>View Event Details</p>
                         </button>
-                    </a>
-                    <a id="info-gap" href="" alt="Event Related Buttons" title="Event Related Buttons">
+                    </a>-->
+                    <a id="info-gap" href="https://bit.ly/2TNb0T0" alt="Event Related Buttons" title="Event Related Buttons">
                         <button id="eventlist-button" class="exhibit-button" alt="book or buy tickets link">
                             <p>Book / Buy Tickets</p>
                         </button>
-                    </a>     
+                    </a> 
+                </div>    
             </div>
             
           
         </div>
-        <div id="event-divider" class="divider" data-100-bottom-top="transform: translateY(0px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>-->
+        <div id="event-divider" class="divider" data-100-bottom-top="transform: translateY(0px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
 
     </div>
 </div>
