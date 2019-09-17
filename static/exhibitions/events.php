@@ -131,5 +131,85 @@
         </div>
         <div id="event-divider" class="divider" data-100-bottom-top="transform: translateY(0px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
 
+        <div class="event-list">
+
+            <div>
+                <div class="anchor" id="firstpaevent-anchor"></div>
+
+                <div class="event-image-box" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
+                    <img class="event-image" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="event logo">
+                </div>
+
+                <div class="exhibit-info" data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
+
+                    <h2 alt="event title">Introduction to Margaret Morris Movement (Pleasance)</h2>
+                    <p alt="event description">
+                        Join Sara Lockwood for an introduction to Margaret Morris Movement and look after your health and well-being through creative dance.
+                    </p>
+
+                    <p id="info-gap" class="right-align-p" alt="event location and dates" >                       
+                        PLEASANCE SPORTS COMPLEX & GYM<br>
+                        <br>
+                        11 OCTOBER 2019 14:00 - 16:00<br>
+                        <br>
+                        FREE ENTRY
+                    </p>
+                    <!--<a id="info-gap" href="./eventexample" alt="Event Related Buttons" title="Event Related Buttons">
+                        <button id="eventlist-button" class="exhibit-button" alt="view event link">
+                            <p>View Event Details</p>
+                        </button>
+                    </a>-->
+                    <a id="info-gap" href="https://www.eventbrite.co.uk/e/introduction-to-margaret-morris-movement-tickets-72360621567" alt="Event Related Buttons" title="Event Related Buttons">
+                        <button id="eventlist-button" class="exhibit-button" alt="book or buy tickets link">
+                            <p>Book / Buy Tickets</p>
+                        </button>
+                    </a> 
+                </div>    
+            </div>
+            
+          
+        </div>
+        <div id="event-divider" class="divider" data-100-bottom-top="transform: translateY(0px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
+
+        <div class="event-list">
+
+            <div>
+                <div class="anchor" id="firstpaevent-anchor"></div>
+
+                <div class="event-image-box" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
+                    <img class="event-image" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="event logo">
+                </div>
+
+                <div class="exhibit-info" data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
+
+                    <h2 alt="event title">Introduction to Margaret Morris Movement (Dance Base)</h2>
+                    <p alt="event description">
+                        Join Sara Lockwood for an introduction to Margaret Morris Movement and look after your health and well-being through creative dance.
+                    </p>
+
+                    <p id="info-gap" class="right-align-p" alt="event location and dates" >                       
+                        PLEASANCE SPORTS COMPLEX & GYM<br>
+                        <br>
+                        27 OCTOBER 2019 10:00 - 12:00<br>
+                        <br>
+                        FREE ENTRY
+                    </p>
+                    <!--<a id="info-gap" href="./eventexample" alt="Event Related Buttons" title="Event Related Buttons">
+                        <button id="eventlist-button" class="exhibit-button" alt="view event link">
+                            <p>View Event Details</p>
+                        </button>
+                    </a>-->
+                    <a id="info-gap" href="https://www.eventbrite.co.uk/e/introduction-to-margaret-morris-movement-tickets-72940467903" alt="Event Related Buttons" title="Event Related Buttons">
+                        <button id="eventlist-button" class="exhibit-button" alt="book or buy tickets link">
+                            <p>Book / Buy Tickets</p>
+                        </button>
+                    </a> 
+                </div>    
+            </div>
+            
+          
+        </div>
+        <div id="event-divider" class="divider" data-100-bottom-top="transform: translateY(0px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
+
     </div>
 </div>
