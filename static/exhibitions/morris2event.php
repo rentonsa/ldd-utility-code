@@ -2,7 +2,7 @@
 <div class="content" id="static-exhibition">
     <div class="content byEditor">
 
-    <h1 alt="event title">Body Language: Exhibition Tours</h1>
+    <h1 alt="event title">Introduction to Margaret Morris Movement (Dance Base)</h1>
 
     <div class="event-list">
 
@@ -14,17 +14,17 @@
             </div>
 
                 <p class="event-p" alt="event description">
-                    Join our exhibitions officer for a tour of Body Language. Featuring gym wear, films, photographs and trophies, this display explores the pioneering role women play in Scotland’s physical education and dance.
+                Margaret Morris was a pioneer of modern dance. She developed Margaret Morris Movement as a holistic dance philosophy combining artistic expression and movements to support health and well-being. In this workshop you will get an introduction to Margaret Morris Movement and find out how we can take care of ourselves through creative movement.
+                <br>
+                The workshop will take place in the 'Salle' at the University of Edinburgh's Pleasance Sports & Gym Complex. All are welcome. Non gym members should report to the reception, where staff will guide you to the correct room. Please note that you will dance bare foot. Please wear comfortable clothes.
                 </p>
 
                 <p id="info-gap" class="right-align-p" alt="event location and dates">                       
-                    GROUND FLOOR, MAIN LIBRARY<br>
+                    DANCE BASE<br>
                     <br>
-                    7 AUGUST 2019 15:00  |  14 AUGUST 2019 14:00  |  21 AUGUST 2019 14:00  |  27 AUGUST 2019 14:00<br>
+                    14-16 GRASSMARKET, EH1 2JU<br>
                     <br>
-                    10 SEPTEMBER 2019 14:00 | 11 SEPTEMBER 2019 14:00 | 13 SEPTEMBER 2019 14:00<br>
-                    <br>
-                    16 OCTOBER 2019 14:00<br>
+                    27 OCTOBER 2019 10:00 - 12:00<br>
                     <br>
                     FREE ENTRY
                 </p>
@@ -33,7 +33,7 @@
                         <p>View Event Details</p>
                     </button>
                 </a>-->
-                <a id="info-gap" href="https://bit.ly/31bT4Uo" alt="Event Related Buttons" title="Event Related Buttons">
+                <a id="info-gap" href="https://www.eventbrite.co.uk/e/introduction-to-margaret-morris-movement-tickets-72360621567" alt="Event Related Buttons" title="Event Related Buttons">
                     <button id="eventlist-button" class="exhibit-button" alt="book or buy tickets link">
                         <p>Book / Buy Tickets</p>
                     </button>

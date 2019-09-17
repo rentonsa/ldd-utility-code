@@ -177,18 +177,22 @@ body {
     border: 2px solid #FFF;
     border-radius: 5px;
     background:  rgb(182,1,92);
+    z-index: 999;
 }
 .search-button p {
     font-size: 20px;
     margin: 5px 8px;
     color: #FFF;
+    z-index: 999;
 }
 .search-button:hover {
     background-color: #ff0080;
     box-shadow: 0 0 10px #fc62af;
+    z-index: 999;
 }
 .search-button:focus {
     outline:0;
+    z-index: 999;
 }
 
 
@@ -376,20 +380,24 @@ body {
     border: 2px solid #FFF;
     border-radius: 5px;
     background: #b6015c;
+    z-index: 999;
 }
 .exhibit-button p {
     font-size: 20px;
     margin: 5px 8px;
+    z-index: 999;
 }
 .exhibit-button:hover {
     background-color: #ff0080;
     box-shadow: 0 0 10px #fc62af;
+    z-index: 999;
 }
 .exhibit-button:focus {
     outline:0;
 }
 #past-button {
     float: left;
+    z-index: 999;
 }
 .associated-logo {
     float: right;
@@ -421,8 +429,13 @@ body {
     margin: 0 8vh;
 }
 #smol-image-block {
-    margin: 8vh 0 8vh 0;
-    height: 125px;
+    margin: 8vh 0 0 0;
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+#smol-text-block {
+    margin-top: 0;
     text-align: justify;
     -ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines;
@@ -477,9 +490,6 @@ body {
     white-space: nowrap;
     text-decoration: none;
 }
-#past-icon {
-    margin-top: 12vh;
-}
 #past-link {
     float: left;
     margin-right: 10px;
@@ -520,6 +530,7 @@ body {
 }
 #event-button {
     margin: 5px 32px;
+    z-index: 999;
 }
 #event-divide {
     margin-top: 80px;
@@ -587,6 +598,7 @@ body {
 #revel-button {
     float: left;
     margin-left: 8vh;
+    z-index: 999;
 }
 .object-h {
     margin-top: 50px;
@@ -606,6 +618,7 @@ body {
 }
 #object-button {
     float: left;
+    z-index: 999;
 }
 #object-divide {
     margin-left: 20vh;
@@ -748,6 +761,7 @@ body {
 #results-button {
     float: left;
     margin-right: 25px;
+    z-index: 999;
 }
 
 /* Advanced Search */
@@ -840,10 +854,12 @@ body {
     border: solid 2px;
     padding: 5px 10px;
     border-radius: 5px;
+    z-index: 999;
 }
 #item-view-button:hover {
     background-color: #ff0080;
     box-shadow: 0 0 10px #fc62af;
+    z-index: 999;
 }
 .record-main-image {
     margin: 80px 0;
@@ -895,6 +911,7 @@ body {
 #record-button {
     float: left;
     margin: 40px 8vh;
+    z-index: 999;
 }
 
 /* Browse Styles */
@@ -917,6 +934,7 @@ body {
 #facet-button {
     margin: 10px 0 0 0;
     float: left;
+    z-index: 999;
 }
 #facet-submit {
     background: #b6015d;
@@ -958,6 +976,8 @@ body {
 }
 #eventlist-button {
     margin-left: 20px;
+    margin-bottom: 140px;
+    z-index: 999;
 }
 
 /* Individual Event Styles */
@@ -985,10 +1005,12 @@ body {
 .event-button-wrapper {
     margin: 0 40px 0 0;
     float: left;
+    z-index: 999;
 }
 #event-button {
     float: left;
     margin: 0;
+    z-index: 999;
 }
 .xtra-smol {
     margin: 0;
@@ -1013,6 +1035,7 @@ body {
     float: left;
     margin-right: 40px;
     margin-left: 0;
+    z-index: 999;
 }
 
 /* Sidebar Styles */
