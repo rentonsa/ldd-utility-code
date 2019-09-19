@@ -652,9 +652,9 @@
                     <p class="right-align-p" alt="current main exhibition dates">
                         V/A LOCATIONS<br>
                         <br>
-                        PLEASANCE SPORT COMPLEX : 11 OCTOBER 2019 14:00 - 16:00<br>
+                        <strong>PLEASANCE SPORT COMPLEX</strong> : 11 OCTOBER 2019 14:00 - 16:00<br>
                         <br>
-                        DANCE BASE : 27 OCTOBER 2019 10:00 - 12:00<br>
+                        <strong>DANCE BASE</strong> : 27 OCTOBER 2019 10:00 - 12:00<br>
                         <br>
                         FREE ENTRY<br>
                     </p>
