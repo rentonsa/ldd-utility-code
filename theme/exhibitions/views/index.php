@@ -227,7 +227,7 @@
 
                 <!-- SECTION LOGO -->
                 <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">         
-                    <a href="https://test.exhibitions.ed.ac.uk/conectando">
+                    <a>
                         <div class="image-box" >
                             <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo">
                         </div>
@@ -652,7 +652,7 @@
                     <p class="right-align-p" alt="current main exhibition dates">
                         V/A LOCATIONS<br>
                         <br>
-                        <strong>PLEASANCE SPORT COMPLEX</strong> : 11 OCTOBER 2019 14:00 - 16:00<br>
+                        <strong>PLEASANCE SPORTS COMPLEX</strong> : 11 OCTOBER 2019 14:00 - 16:00<br>
                         <br>
                         <strong>DANCE BASE</strong> : 27 OCTOBER 2019 10:00 - 12:00<br>
                         <br>

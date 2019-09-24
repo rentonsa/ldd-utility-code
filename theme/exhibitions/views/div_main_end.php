@@ -3,9 +3,9 @@
 
             <div class="footer-container">
                 <ul id="footer-list-l">
-                    <div class="footer-link"><li><a href="https://www.ed.ac.uk/about/website/website-terms-conditions" alt="link to terms and conditions">Terms &amp; conditions</a></li></div>
-                    <div class="footer-link"><li><a href="https://www.ed.ac.uk/about/website/privacy" alt="link to privacy and cookies">Privacy &amp; cookies</a></li></div>
-                    <div class="footer-link"><li><a href="https://www.ed.ac.uk/about/website/accessibility" alt="link to website accessibilty">Website accessibility</a></li></div>
+                    <div class="footer-link"><li><a href="<?php echo base_url(); ?>/privacy" alt="link to terms and conditions">Terms &amp; conditions</a></li></div>
+                    <div class="footer-link"><li><a href="<?php echo base_url(); ?>/privacy" alt="link to privacy and cookies">Privacy &amp; cookies</a></li></div>
+                    <div class="footer-link"><li><a href="<?php echo base_url(); ?>/privacy" alt="link to website accessibilty">Website accessibility</a></li></div>
                 </ul>
                 <ul id="footer-list-r">
                     <div class="footer-link"><li><a href="https://www.myed.ed.ac.uk/" alt="link to myed login"><span class="glyphicon glyphicon-log-in"></span>MyEd Login</a></li></div>
@@ -25,6 +25,10 @@
             <script src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/js/skrollr.menu.js"></script>
             <script type="text/javascript">
                 var s = skrollr.init();
+                if (s.isMobile()) {
+                    s.destroy();
+                }
+                else {
                 skrollr.menu.init(s, {
                     animate: true,
                     scale: 2,
@@ -32,7 +36,7 @@
                     return 250;
                     return Math.abs(currentTop - targetTop) * 40;
                     },
-                });
+                })};
             </script>
             <!-- OTHER PARALLAX RELATED SCRIPTS -->
             <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
