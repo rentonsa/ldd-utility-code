@@ -123,13 +123,13 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="./" title="Scottish Jewish Archives Centre">Home</a></li>
-                        <li><a href="./about" title="About Link">About</a></li>
-                        <li><a href="https://www.sjac.org.uk/" title="SJAC Home Page" target="_blank">SJAC</a></li>
-                        <li><a href="http://jewishmigrationtoscotland.is.ed.ac.uk/" title="JLSS Blog Link" target="_blank">JLSS Blog</a></li>
+                        <li><a href="./" title="Scottish Jewish Archives Centre" class="nav-link">Home</a></li>
+                        <li><a href="./about" title="About Link" class="nav-link">About</a></li>
+                        <li><a href="https://www.sjac.org.uk/" title="Open new window to SJAC Home Page" target="_blank" class="nav-link">SJAC</a></li>
+                        <li><a href="http://jewishmigrationtoscotland.is.ed.ac.uk/" title="Open new window to JLSS Blog" target="_blank" class="nav-link">JLSS Blog</a></li>
                         <!--<li><a href="./contact" title="Contact Details">Contact</a></li>-->
-                        <li><a href="https://www.sjac.org.uk/about/donations/" title="Donate" target="_blank">Donate</a></li>
-                        <li><a href="./feedback" title="Feedback Form">Feedback</a></li>
+                        <li><a href="https://www.sjac.org.uk/about/donations/" title="Open new window to SJAC Donation page" target="_blank" class="nav-link">Donate</a></li>
+                        <li><a href="./feedback" title="Feedback Information" class="nav-link">Feedback</a></li>
                     </ul>
                 </div>
             </div>
@@ -138,14 +138,14 @@
             <div class="container">
 
                 <div class="header-normal">
-                    <a href="<?php echo base_url() .'jlss'; ?>">
-                        <div id="collection-title">Scottish Jewish Archives Centre <br>
-                            <div id="collection-sub-title">Digital Collection </div>
+                    <a href="<?php echo base_url(); ?>">
+                        <div id="collection-title" alt="Website title">Scottish Jewish Archives Centre <br>
+                            <div id="collection-sub-title"alt="Website sub-title">Digital Collection </div>
                         </div>
                     </a>
                         
                     <div id="collection-logo">
-                        <a href="<?php echo base_url() . 'jlss'; ?>">
+                        <a href="<?php echo base_url(); ?>">
                             <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/sjac_logo.png" alt="Scottish Jewish Archives Logo" class="img-responsive pull-right img-circle">
                         </a>
                     </div>

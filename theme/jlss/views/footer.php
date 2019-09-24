@@ -17,10 +17,10 @@
 
                 <div class="col-sm-12 col-xs-12 footer-disclaimer">
                     <div class="footer-policies">
-                        <a class="footer-policies" href="./privacy" title="Privacy and Cookies Link">Privacy &amp; Cookies</a>
-                        &nbsp;&nbsp;<a class="footer-policies" href="./privacy#takedown" title="Takedown Policy Link">Takedown Policy</a>
-                        &nbsp;&nbsp;<a class="footer-policies" href="./privacy#copyright" title="Licensing and Copyright Link">Licensing &amp; Copyright</a>
-                        &nbsp;&nbsp;<a class="footer-policies" href="./about" title="Website Accessibility Link">Accessibility</a>
+                        <a class="footer-policies" href="https://www.ed.ac.uk/about/website/privacy" target="_blank" title="Privacy and Cookies Link">Privacy &amp; Cookies</a>
+                        &nbsp;&nbsp;<a class="footer-policies" href="takedown" title="Takedown Policy Link">Takedown Policy</a>
+                        &nbsp;&nbsp;<a class="footer-policies" href="licensing" title="Licensing and Copyright Link">Licensing &amp; Copyright</a>
+                        &nbsp;&nbsp;<a class="footer-policies" href="accessibility" title="Website Accessibility Link">Accessibility</a>
                         <p class="footer-copyright">Unless explicitly stated otherwise, all material is copyright &copy; <?php echo date("Y"); ?> <a class="footer-policies" href="https://www.sjac.org.uk" title="Scottish Jewish Archives Centre" target="_blank">Scottish Jewish Archives Centre</a></p>
                     </div>
                 </div>

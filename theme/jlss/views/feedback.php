@@ -9,8 +9,10 @@
             ?>
 
             <div id="about-image">
-                <img src="http://localhost//theme/jlss/images/sjac-temp.jpg" alt="Garnethill Synagogue" class="img-responsive">
-            </div>
+            
+	    <div id="about-image">
+            	<img src="../../theme/jlss/images/sjac-temp.jpg" alt="Garnethill Synagogue" class="img-responsive">
+            </div>	
             <br>
             <br>
 
