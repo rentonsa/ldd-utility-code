@@ -52,7 +52,7 @@ else {
             if(!strpos($_SERVER['REQUEST_URI'],'/Collection:')){
             }
             else {
-                echo'<h1 class="collection-title-h1">' . $collection_title . '</h1>';  
+                echo'<h1 class="collection-title-h1" alt="collection title">' . $collection_title . '</h1>';  
             }
         }
    
@@ -66,10 +66,10 @@ else {
         }
         else {
             echo '<div class="content-divider-search"><p>divider</p></div>';
-            echo '<img class="collection-title-image" src="'.base_url() .'theme/' . $this->config->item('skylight_theme') . '/images/clickboxes/' . $collection_title . '-1.jpg" class="img-responsive">';
-            echo '<img class="collection-title-image" src="'.base_url() .'theme/' . $this->config->item('skylight_theme') . '/images/clickboxes/' . $collection_title . '-2.jpg" class="img-responsive">';
-            echo '<img class="collection-title-image" src="'.base_url() .'theme/' . $this->config->item('skylight_theme') . '/images/clickboxes/' . $collection_title . '-3.jpg" class="img-responsive">';
-            echo'<p class="collection-description-p">' . $collection_description . '</p>'; 
+            echo '<img class="collection-title-image" src="'.base_url() .'theme/' . $this->config->item('skylight_theme') . '/images/clickboxes/' . $collection_title . '-1.jpg" class="img-responsive" alt="' . $collection_title . ' collection example image">';
+            echo '<img class="collection-title-image" src="'.base_url() .'theme/' . $this->config->item('skylight_theme') . '/images/clickboxes/' . $collection_title . '-2.jpg" class="img-responsive" alt="' . $collection_title . ' collection example image">';
+            echo '<img class="collection-title-image" src="'.base_url() .'theme/' . $this->config->item('skylight_theme') . '/images/clickboxes/' . $collection_title . '-3.jpg" class="img-responsive" alt="' . $collection_title . ' collection example image">';
+            echo'<p class="collection-description-p" alt="description of the content of this collection">' . $collection_description . '</p>'; 
         } 
     }
     ?>
@@ -98,7 +98,7 @@ else {
                     if($label == 'Relevancy')
                     {
                         ?>
-                        <em><a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc'?>"><?php echo $label ?></a></em>
+                        <em><a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc'?>" alt="sort items in this collection by <?php echo $label ?>"><?php echo $label ?></a></em>
                         <?php
                     }
                     else {
@@ -106,11 +106,11 @@ else {
 
                         <em><?php echo $label ?></em>
                         <?php if($label != "Date") { ?>
-                            <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>">A-Z</a> |
-                            <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>">Z-A</a>
+                            <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>" alt="sort items in this collection A-Z">A-Z</a> |
+                            <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>" alt="sort items in this collection Z-A">Z-A</a>
                         <?php } else { ?>
-                            <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>">newest</a> |
-                            <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>">oldest</a>
+                            <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>" alt="sort items in this collection by newest first">newest</a> |
+                            <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>" alt="sort items in this collection by oldest first">oldest</a>
                         <?php } } } ?>
             </h5>
         </div>
@@ -119,7 +119,7 @@ else {
     <?php
     foreach ($docs as $index => $doc) {
         ?>
-        <div class="row search-row">
+        <div class="row search-row" alt="An item from this collection">
             <?php 
                 echo'
                 <div class="collection-image-box">
@@ -128,10 +128,9 @@ else {
 
                     <div class="clickbox-text">
                         <i class="fa fa-camera"></i>
-                        <i class="ion-arrow-right-c"></i>
 
                         <div class="curl"></div>
-                        <a class="component_image_link" href="./record/'.  $doc['id'] . '"></a>
+                        <a class="component_image_link" href="./record/'.  $doc['id'] . '" alt="link to this item" ></a>
                     </div>
                 </figure>
                 </div>

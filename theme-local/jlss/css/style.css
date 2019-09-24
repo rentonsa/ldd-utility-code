@@ -151,6 +151,7 @@ header .container   { padding: 0;}
                                                                                         }
 
 .navbar-default     {  border: 0;  }
+.nav-link   {  color: #000;  }
 
 
 
@@ -228,7 +229,7 @@ header .container   { padding: 0;}
     background: #0950a0;
     padding-bottom: 15px;
     border-top: #0950a0 100px;
-    opacity: 0.85;
+    opacity: 0.98;
 }
 
 /* search bar */
@@ -340,6 +341,7 @@ footer                          { padding-top: 10px; padding-bottom: 10px;}
 .tags a:hover			            { background: #0950a0; color: #ffffff; text-decoration: none; }
 .tags a:visited			            { background: #999; color: #ffffff; text-decoration: none; }
 .tags a:visited:hover		        { background: #0950a0; color: #ffffff; text-decoration: none; }
+.tag a:focus                        { border: #0950a0; color: #ffffff; text-decoration: none; }
 
 
 /** pagination */
