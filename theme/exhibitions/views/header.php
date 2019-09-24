@@ -265,7 +265,7 @@
                     <div id="collection-search">
                         <form action="./redirect/" method="post">
                             <fieldset class="search">
-                                <input type="text" name="q" value="'; 
+                                <input type="text" name="q" value=" spellcheck="true"'; 
                                 if (isset($searchbox_query)){echo urldecode($searchbox_query);}
                                 echo '" id="q" />
                                 <a id="info-gap" href="https://exhibitions.ed.ac.uk/conectando">
@@ -339,7 +339,7 @@
                     <div id="collection-search">
                         <form action="./redirect/" method="post">
                             <fieldset class="search">
-                                <input type="text" name="q" value="'; 
+                                <input type="text" name="q" value=" spellcheck="true"'; 
                                 if (isset($searchbox_query)){echo urldecode($searchbox_query);}
                                 echo '" id="q" />
                                 <a id="info-gap" href="https://exhibitions.ed.ac.uk/conectando">
