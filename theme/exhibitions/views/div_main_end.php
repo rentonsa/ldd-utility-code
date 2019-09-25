@@ -1,4 +1,14 @@
-        <footer>
+<footer>
+            <div class="footer-container">
+                <ul id="footer-list-l">
+                    <div class="footer-link"><li><a href="<?php echo base_url(); ?>/privacy" alt="link to terms and conditions">Terms &amp; conditions</a></li></div>
+                    <div class="footer-link"><li><a href="<?php echo base_url(); ?>/privacy" alt="link to privacy and cookies">Privacy &amp; cookies</a></li></div>
+                    <div class="footer-link"><li><a href="<?php echo base_url(); ?>/privacy" alt="link to website accessibilty">Website accessibility</a></li></div>
+                </ul>
+                <ul id="footer-list-r">
+                    <div class="footer-link"><li><a href="https://www.myed.ed.ac.uk/" alt="link to myed login"><span class="glyphicon glyphicon-log-in"></span>MyEd Login</a></li></div>
+                </ul>
+            </div>
             <div class="footer-links">
                 <div class="site-links">
                     <a href="./">Exhibitions Home</a>
