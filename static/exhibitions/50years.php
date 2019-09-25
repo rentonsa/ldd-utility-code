@@ -29,14 +29,14 @@
             <a href = "http://university-of-edinburgh-crc-images.culturalspot.org/home" target = "_blank" title = "Fifty Years, Fifty Books at Google" alt = "Fifty Years, Fifty Books at Google"> Fifty Years, Fifty Books Exhibition</a> at Google Open Gallery.</p>
         </p>
 
-        <a href="<?php echo base_url() ?>past#50years-anchor">
-            <button id="exhibition-back" class="exhibit-button" alt="link back to full past exhibiton list">
+        <a href="<?php echo base_url() ?>past#50years-anchor" alt="link back to full past exhibiton list" title="Link back to full past exhibiton list">
+            <button id="exhibition-back" class="exhibit-button">
                 <p>Back to full list</p>
             </button>
         </a>
 
-        <a href='./search/*:*/Exhibition:"50+years+50+books|||50+Years+50+Books"'>
-            <button class="exhibit-button" alt="link to view exhibition items">
+        <a href='./search/*:*/Exhibition:"50+years+50+books|||50+Years+50+Books"' alt="link to view all items" title="Link to view all items">
+            <button class="exhibit-button">
                 <p>View all items</p>
             </button>
         </a>

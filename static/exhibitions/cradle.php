@@ -15,14 +15,14 @@
             Highlights will include Joseph Black's balance (Black was the first to employ the analytical balance in chemical investigations) and Alexander Crum Brown's first model of sodium chloride, made with knitting needles and balls of wool! The exhibition will be opened by a VIP guest, to be announced
         </p>
 
-        <a href="<?php echo base_url() ?>past#cradle-anchor">
-            <button id="exhibition-back" class="exhibit-button" alt="link back to full past exhibiton list">
+        <a href="<?php echo base_url() ?>past#cradle-anchor" alt="link back to full past exhibiton list" title="Link back to full past exhibiton list">
+            <button id="exhibition-back" class="exhibit-button">
                 <p>Back to full list</p>
             </button>
         </a>
 
-        <a href='./search/*:*/Exhibition:"edinburgh+300+cradle+of+chemistry|||Edinburgh+300+Cradle+of+Chemistry"'>
-            <button class="exhibit-button" alt="link to view exhibition items">
+        <a href='./search/*:*/Exhibition:"edinburgh+300+cradle+of+chemistry|||Edinburgh+300+Cradle+of+Chemistry"' alt="link to all items in this collection" title="Link to all items in this collection">
+            <button class="exhibit-button">
                 <p>View all items</p>
             </button>
         </a>

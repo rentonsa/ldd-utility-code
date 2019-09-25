@@ -11,8 +11,8 @@
             Incendiary Texts examines how these printed texts fuelled debate and controversy across 16th century Europe.
         </p>
 
-        <a href="<?php echo base_url() ?>past#incend-anchor">
-            <button id="exhibition-back" class="exhibit-button" alt="link back to full past exhibiton list">
+        <a href="<?php echo base_url() ?>past#incend-anchor" alt="link back to full past exhibiton list" title="Link back to full past exhibiton list">
+            <button id="exhibition-back" class="exhibit-button">
                 <p>Back to full list</p>
             </button>
         </a>

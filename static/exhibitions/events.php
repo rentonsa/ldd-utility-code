@@ -9,7 +9,7 @@
                 <div class="anchor" id="firstpaevent-anchor"></div>
 
                 <div class="event-image-box">
-                    <img class="event-image" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="event logo">
+                    <img class="event-image" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="event logo" title="Body Language logo">
                 </div>
 
                 
@@ -35,8 +35,8 @@
                             <p>View Event Details</p>
                         </button>
                     </a>-->
-                    <a id="info-gap" href="https://bit.ly/31bT4Uo" alt="Event Related Buttons" title="Event Related Buttons">
-                        <button id="eventlist-button" class="exhibit-button" alt="book or buy tickets link">
+                    <a id="info-gap" href="https://bit.ly/31bT4Uo" alt="Event Related Buttons" title="Event Related Buttons" alt="book or buy tickets link" title="External link to book space on event" traget="_blank">
+                        <button id="eventlist-button" class="exhibit-button">
                             <p>Book / Buy Tickets</p>
                         </button>
                     </a>     
@@ -52,7 +52,7 @@
                 <div class="anchor" id="firstpaevent-anchor"></div>
 
                 <div class="event-image-box" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
-                    <img class="event-image" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="event logo">
+                    <img class="event-image" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="event logo" title="Body Language logo">
                 </div>
 
                 <div class="exhibit-info" data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
@@ -75,8 +75,8 @@
                             <p>View Event Details</p>
                         </button>
                     </a>-->
-                    <a id="info-gap" href="https://bit.ly/2OzIvsY" alt="Event Related Buttons" title="Event Related Buttons">
-                        <button id="eventlist-button" class="exhibit-button" alt="book or buy tickets link">
+                    <a id="info-gap" href="https://bit.ly/2OzIvsY" alt="Event Related Buttons" title="Event Related Buttons" alt="book or buy tickets link" title="External link to book space on event" traget="_blank">
+                        <button id="eventlist-button" class="exhibit-button">
                             <p>Book / Buy Tickets</p>
                         </button>
                     </a> 
@@ -93,7 +93,7 @@
                 <div class="anchor" id="firstpaevent-anchor"></div>
 
                 <div class="event-image-box" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
-                    <img class="event-image" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="event logo">
+                    <img class="event-image" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="event logo" title="Body Language logo">
                 </div>
 
                 <div class="exhibit-info" data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
@@ -119,8 +119,8 @@
                             <p>View Event Details</p>
                         </button>
                     </a>-->
-                    <a id="info-gap" href="https://bit.ly/2TNb0T0" alt="Event Related Buttons" title="Event Related Buttons">
-                        <button id="eventlist-button" class="exhibit-button" alt="book or buy tickets link">
+                    <a id="info-gap" href="https://bit.ly/2TNb0T0" alt="Event Related Buttons" title="Event Related Buttons" alt="book or buy tickets link" title="External link to book space on event" traget="_blank">
+                        <button id="eventlist-button" class="exhibit-button">
                             <p>Book / Buy Tickets</p>
                         </button>
                     </a> 
@@ -137,7 +137,7 @@
                 <div class="anchor" id="firstpaevent-anchor"></div>
 
                 <div class="event-image-box" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
-                    <img class="event-image" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="event logo">
+                    <img class="event-image" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="event logo" title="Body Language logo">
                 </div>
 
                 <div class="exhibit-info" data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
@@ -159,8 +159,8 @@
                             <p>View Event Details</p>
                         </button>
                     </a>-->
-                    <a id="info-gap" href="https://www.eventbrite.co.uk/e/introduction-to-margaret-morris-movement-tickets-72360621567" alt="Event Related Buttons" title="Event Related Buttons">
-                        <button id="eventlist-button" class="exhibit-button" alt="book or buy tickets link">
+                    <a id="info-gap" href="https://www.eventbrite.co.uk/e/introduction-to-margaret-morris-movement-tickets-72360621567" alt="book or buy tickets link" title="External link to book space on event" traget="_blank">
+                        <button id="eventlist-button" class="exhibit-button">
                             <p>Book / Buy Tickets</p>
                         </button>
                     </a> 
@@ -177,7 +177,7 @@
                 <div class="anchor" id="firstpaevent-anchor"></div>
 
                 <div class="event-image-box" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
-                    <img class="event-image" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="event logo">
+                    <img class="event-image" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="event logo" title="Body Language logo">
                 </div>
 
                 <div class="exhibit-info" data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
@@ -199,8 +199,8 @@
                             <p>View Event Details</p>
                         </button>
                     </a>-->
-                    <a id="info-gap" href="https://www.eventbrite.co.uk/e/introduction-to-margaret-morris-movement-tickets-72940467903" alt="Event Related Buttons" title="Event Related Buttons">
-                        <button id="eventlist-button" class="exhibit-button" alt="book or buy tickets link">
+                    <a id="info-gap" href="https://www.eventbrite.co.uk/e/introduction-to-margaret-morris-movement-tickets-72940467903" alt="book or buy tickets link" title="External link to book space on event" traget="_blank">
+                        <button id="eventlist-button" class="exhibit-button">
                             <p>Book / Buy Tickets</p>
                         </button>
                     </a> 

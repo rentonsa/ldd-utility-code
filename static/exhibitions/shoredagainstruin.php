@@ -11,8 +11,8 @@
             the nature of a fragment and examines why we care for them, whilst also considering the hidden histories they can tell us.
         </p>
 
-        <a href="<?php echo base_url() ?>past#shoredagainst-anchor">
-            <button id="exhibition-back" class="exhibit-button" alt="link back to full past exhibiton list">
+        <a href="<?php echo base_url() ?>past#shoredagainst-anchor" alt="link back to full past exhibiton list" title="Link back to full past exhibiton list">
+            <button id="exhibition-back" class="exhibit-button">
                 <p>Back to full list</p>
             </button>
         </a>

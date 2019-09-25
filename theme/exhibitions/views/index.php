@@ -48,13 +48,13 @@
 
                 <!-- SECTION INFO -->
                 <div id="info-container" class="exhibit-info">
-                    <h2 class="right-align-h">Welcome to the University of Edinburgh Library Exhibitions</h2>
+                    <h2 class="right-align-h" alt="welocme statement">Welcome to the University of Edinburgh Library Exhibitions</h2>
 
-                    <p class="right-align-p" >                       
+                    <p class="right-align-p" alt="description of collections">                       
                         From meteorites, to World War II escape maps, rare books, anatomical specimens, and contemporary art, our exciting exhibition programme showcases the University’s vast and varied heritage collections<br>    
                     </p>
-                    <p id="link-p" class="right-align-p">
-                        If you would like find out more about the University’s collections, please visit the <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc" alt="Link to the University of Edinburgh's Centre for Research Collection site" title="External link to the University of Edinburgh's Centre for Research Collection site">Centre for Research Collections</a>
+                    <p id="link-p" class="right-align-p" alt="description of collections">
+                        If you would like find out more about the University’s collections, please visit the <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc" alt="Link to the University of Edinburgh's Centre for Research Collection site" title="External link to the University of Edinburgh's Centre for Research Collection site" target="_blank">Centre for Research Collections</a>
                     </p>
 
                     <div class="image-box-xtra-smol">
@@ -79,7 +79,7 @@
                         </a>
                         <a href="#current-exhibition-anchor" alt="Link to current main exhibition" title="Link to current main exhibition section">
                             <button id="quick-button" class="exhibit-button">
-                                <p>Curent Exhibition</p>
+                                <p>Current Exhibition</p>
                             </button>
                         </a>
                     </div>
@@ -176,7 +176,7 @@
                     </p>
                     <img id="email" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/email.png" alt="Email icon" title="Email icon">
                     <p id="visit-first-email" class="left-align-p">
-                        <a id="email-link" href="mailto: museums@ed.ac.uk" title="click to email library exhibtions">museums@ed.ac.uk</a><br/>
+                        <a id="email-link" href="mailto: museums@ed.ac.uk" title="click to email library exhibtions" target="_blank">museums@ed.ac.uk</a><br/>
                     </p>
                     <img id="phone" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/phone.png" alt="Phone icon" title="Phone icon">
                     <p id="visit-second-phone" class="left-align-p" alt="library phone number" title="click to call library exhibitions">                             
@@ -229,7 +229,7 @@
                 <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">         
                     <a>
                         <div class="image-box" >
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo" title="Body Language logo">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Current main library exhibition logo" title="Body Language logo">
                         </div>
                     </a>
                 </div>
@@ -303,7 +303,7 @@
                         </p>
                         <br>
                         <p class="right-align-p" alt="forthcoming exhibition description continued"> 
-                            Explore this collection at Edinburgh College of Art’s <strong><a href="https://embroideredstories.eca.ed.ac.uk/" alt="link to forthcoming exhibition contributors external website" title="External link Edinburgh College of Art’s Embroided Stories extenal collection website">Embroidered Stories Collection</a></strong>
+                            Explore this collection at Edinburgh College of Art’s <strong><a href="https://embroideredstories.eca.ed.ac.uk/" alt="link to forthcoming exhibition contributors external website" title="External link Edinburgh College of Art’s Embroided Stories extenal collection website" target="_blank">Embroidered Stories Collection</a></strong>
                         </p> 
 
                         <p id="info-gap" class="right-align-p" alt="forthcoming exhibition location">                       
@@ -358,7 +358,7 @@
                         </p>
                         <br>
                         <p class="right-align-p" alt="forthcoming exhibition description continued">                       
-                            Courtesy of the <a href="http://mubaneducationaltrust.org/" alt="link to forthcoming exhibition contributors website" title="External link to Muban Educational Trust website">Muban Educational Trust</a>.
+                            Courtesy of the <a href="http://mubaneducationaltrust.org/" alt="link to forthcoming exhibition contributors website" title="External link to Muban Educational Trust website" target="_blank">Muban Educational Trust</a>.
                         </p>
                         <p id="info-gap" class="right-align-p" alt="forthcoming exhibition location">                       
                             MAIN LIBRARY EXHIBITION GALLERY<br>
@@ -491,7 +491,7 @@
                 <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">         
                     <a href="https://test.exhibitions.ed.ac.uk/conectando">
                         <div class="image-box" >
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo" title="Body Language logo">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Current main library exhibition logo" title="Body Language logo">
                         </div>
                     </a>
                 </div>
@@ -542,7 +542,7 @@
                 <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">         
                     <a href="https://test.exhibitions.ed.ac.uk/conectando">
                         <div class="image-box" id="event-divide" >
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo" title="Body Language logo">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Current main library exhibition logo" title="Body Language logo">
                         </div>
                     </a>
                 </div>
@@ -588,7 +588,7 @@
                 <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">         
                     <a href="https://test.exhibitions.ed.ac.uk/conectando">
                         <div class="image-box" id="event-divide" >
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo" title="Body Language logo">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Current main library exhibition logo" title="Body Language logo">
                         </div>
                     </a>
                 </div>
@@ -634,7 +634,7 @@
                 <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">         
                     <a href="https://test.exhibitions.ed.ac.uk/conectando">
                         <div class="image-box" id="event-divide" >
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo" title="Body Language logo">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Current main library exhibition logo" title="Body Language logo">
                         </div>
                     </a>
                 </div>
@@ -721,18 +721,18 @@
                 <!-- SOCIAL MEDIA LOGOS -->
                 <div id="social-image-block" >
                     <div class="social-image-box">
-                        <a href=" https://twitter.com/UoE_Exhibitions?lang=en" alt="external link to library exhibitions twitter account">
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/socialicons/twittericon.png" alt="Twitter Icon" title="External link to Library Exhibitions Twitter account">
+                        <a href=" https://twitter.com/UoE_Exhibitions?lang=en" alt="external link to library exhibitions twitter account" title="External link to Library Exhibitions Twitter account" target="_blank">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/socialicons/twittericon.png" alt="Twitter Icon">
                         </a>
                     </div>
                     <div class="social-image-box">
-                        <a href=" https://en-gb.facebook.com/crc.edinburgh/" alt="external link to library exhibitions facebook account">
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/socialicons/facebookicon.png" alt="Facebook Icon" title="External link to Library Exhibitions Facebook account">
+                        <a href=" https://en-gb.facebook.com/crc.edinburgh/" alt="external link to library exhibitions facebook account" title="External link to Library Exhibitions Facebook account" target="_blank">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/socialicons/facebookicon.png" alt="Facebook Icon">
                         </a>
                     </div>
                     <div class="social-image-box">
-                        <a href="http://libraryblogs.is.ed.ac.uk/" alt="link to library exhibitions wordpress account">
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/socialicons/wordpressicon.png" alt="Wordpress Icon" title="External link to Library Exhibitions Wordpress account">
+                        <a href="http://libraryblogs.is.ed.ac.uk/" alt="link to library exhibitions wordpress account"title="External link to Library Exhibitions Wordpress account" target="_blank">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/socialicons/wordpressicon.png" alt="Wordpress Icon" >
                         </a>
                     </div>
                     
@@ -740,7 +740,7 @@
 
                 <p id="support-p" class="right-align-p" alt="supporting the library description">
                     Opportunities are available throughout the year to help with visitor experience, events, exhibition installs, and evaluation. If you are interested in volunteering with us please complete our 
-                    <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc/volunteers-interns/volunteer-enquiry-form" alt="link to volunteer enquirery form for those that wish to get involved" title="Link to volunteer enquirery form">volunteering enquiry form</a> 
+                    <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc/volunteers-interns/volunteer-enquiry-form" alt="link to volunteer enquirery form for those that wish to get involved" title="Link to volunteer enquirery form" traget="_blank">volunteering enquiry form</a> 
                 </p>               
         
             </div>

@@ -9,8 +9,8 @@
             An exhibition of things you wouldn’t expect to find in Rare Books.  We have some unlikely-sounding things in the collections: comics; ephemeral-looking pamphlets; cheaply-printed books; things which are not that old and appear run-of-the-mill; things which aren’t even books. They are all here for a reason…
         </p>
 
-        <a href="<?php echo base_url() ?>past#rarebooks-anchor">
-            <button id="exhibition-back" class="exhibit-button" alt="link back to full past exhibiton list">
+        <a href="<?php echo base_url() ?>past#rarebooks-anchor" alt="link back to full past exhibiton list" title="Link back to full past exhibiton list">
+            <button id="exhibition-back" class="exhibit-button">
                 <p>Back to full list</p>
             </button>
         </a>
