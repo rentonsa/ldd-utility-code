@@ -10,7 +10,7 @@
             <p>Bowse All Items</p>
         </button>
     </a>
-    <a href='./past' id="pagenotfound-button" alt="button to return to full exhibition list" title="Link back to full past exhibitions list">
+    <a href='./past' id="pagenotfound-button" alt="button to return to full exhibition list" title="Link back to full past exhibitionsgit list">
         <button class="exhibit-button">
             <p>Return to Exhibitions List</p>
         </button>
