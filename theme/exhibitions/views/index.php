@@ -7,18 +7,18 @@
  
             <!-- MAIN UNIVERSITY LOGO -->
             <div id="#home-anchor" class="logo-container">
-                <a href="<?php base_url() ?>" alt="Home button">
-                    <img id="top-nav" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/uofe_logo.png" alt="University of Edinburgh Logo">
+                <a href="<?php base_url() ?>" alt="Home button to return you to library exhibitions home page">
+                    <img id="top-nav" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/uofe_logo.png" alt="University of Edinburgh Logo" title="Link to University of Edinburgh Library Exhibitions Home Page">
                 </a>
             </div>
 
             <!-- STATIC NAVIGATION BAR TEMPLATE -->
             <div id="top-nav" class="nav-container">
                 <ul>
-                    <div class="smol"><a class="nav-link" href="#visit-anchor" alt="Jump to visit us section" alt="Jump to visit us section"><li>Visit Us</li></a></div>
-                    <div><a class="nav-link" href="#exhibitions-anchor" alt="Jump to exhibitions section" alt="Jump to exhibitions section"><li>Exhibitions</li></a></div>
-                    <div class="smol"><a class="nav-link" href="#events-anchor" alt="Jump to events section" alt="Jump to events section"><li>Events</li></a></div>
-                    <div><a class="nav-link" href="#support-anchor" alt="Jump to support us section" alt="Jump to support us section"><li>Support Us</li></a></div>
+                    <div class="smol"><a class="nav-link" href="#visit-anchor" alt="Jump to visit us section" title="Jump to visit us section"><li>Visit Us</li></a></div>
+                    <div><a class="nav-link" href="#exhibitions-anchor" alt="Jump to exhibitions section" title="Jump to exhibitions section"><li>Exhibitions</li></a></div>
+                    <div class="smol"><a class="nav-link" href="#events-anchor" alt="Jump to events section" title="Jump to events section"><li>Events</li></a></div>
+                    <div><a class="nav-link" href="#support-anchor" alt="Jump to support us section" title="Jump to support us section"><li>Support Us</li></a></div>
                 </ul>
             </div>
             
@@ -43,7 +43,7 @@
 
                 <!-- SECTION LOGO -->
                 <div id="exhibit-logo">         
-                    <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/discover_ed_logo.png" alt="Library Discovery Logo">
+                    <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/discover_ed_logo.png" alt="University of Edinurgh Library Discovery Logo" title="University of Edinurgh Library Discovery Logo">
                 </div>
 
                 <!-- SECTION INFO -->
@@ -54,11 +54,11 @@
                         From meteorites, to World War II escape maps, rare books, anatomical specimens, and contemporary art, our exciting exhibition programme showcases the University’s vast and varied heritage collections<br>    
                     </p>
                     <p id="link-p" class="right-align-p">
-                        If you would like find out more about the University’s collections, please visit the <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc" alt="Link to the University of Edinburgh's Centre for Research Collection site">Centre for Research Collections</a>
+                        If you would like find out more about the University’s collections, please visit the <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc" alt="Link to the University of Edinburgh's Centre for Research Collection site" title="External link to the University of Edinburgh's Centre for Research Collection site">Centre for Research Collections</a>
                     </p>
 
                     <div class="image-box-xtra-smol">
-                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Current main exhibition logo">
+                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Current main exhibition logo" title="current exhibtion logo">
                     </div>
 
                     <p class="right-align-p" alt="Current main exhibition title">
@@ -72,12 +72,12 @@
 
                     <!-- SECTION BUTTONS -->
                     <div id="quick-links">
-                        <a href="#events-anchor" alt="Jump to events section" alt="Link to upcoming events section">
+                        <a href="#events-anchor" alt="Jump to events section" title="Jump to events section" alt="Link to upcoming events section" title="Link to upcoming events section">
                             <button id="" class="exhibit-button">
                                 <p>Upcoming Events</p>
                             </button>
                         </a>
-                        <a href="#current-exhibition-anchor" alt="Link to current main exhibition">
+                        <a href="#current-exhibition-anchor" alt="Link to current main exhibition" title="Link to current main exhibition section">
                             <button id="quick-button" class="exhibit-button">
                                 <p>Curent Exhibition</p>
                             </button>
@@ -98,11 +98,11 @@
             <!-- * only used for blocks that are scrolled over -->
             <div class="nav-container" data-100-bottom-top="transform: translateY(-500px); opacity: -10" data-center-top="transform: translateX(0px); opacity: 1">
                 <ul>
-                    <div class="smol"><a class="nav-link" href="#visit-anchor" alt="Jump to visit us section"><li>Visit Us</li></a></div>
-                    <div><a class="nav-link" href="#exhibitions-anchor" alt="Jump to exhibitions section"><li>Exhibitions</li></a></div>
-                    <div class="smol"><a class="nav-link" href="#events-anchor" alt="Jump to events section"><li>Events</li></a></div>
-                    <div><a class="nav-link" href="#support-anchor" alt="Jump to support us section" alt="Jump to support us section"><li>Support Us</li></a></div>
-                    <div><a class="nav-link" href="#home-anchor" alt="Jump to top of page"><li>Back to Top</li></a></div>
+                    <div class="smol"><a class="nav-link" href="#visit-anchor" alt="Jump to visit us section" title="Jump to visit us section"><li>Visit Us</li></a></div>
+                    <div><a class="nav-link" href="#exhibitions-anchor" alt="Jump to exhibitions section" title="Jump to exhibitions section"><li>Exhibitions</li></a></div>
+                    <div class="smol"><a class="nav-link" href="#events-anchor" alt="Jump to events section" title="Jump to events section"><li>Events</li></a></div>
+                    <div><a class="nav-link" href="#support-anchor" alt="Jump to support us section" title="Jump to support us section"><li>Support Us</li></a></div>
+                    <div><a class="nav-link" href="#home-anchor" alt="Jump to top of page" title="jump back to the top of the page"><li>Back to Top</li></a></div>
                 </ul>
             </div>
 
@@ -124,16 +124,16 @@
                         FREE ADMISSION<br/>
                         <!--OPEN TO ALL<br/>-->
                     </p>
-                    <p id="visit-main-2" class="left-align-p">
+                    <p id="visit-main-2" class="left-align-p" alt="exhibition space accessibility">
                         OPEN TO ALL
                     </p>
-                    <img id="open" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/open.png" alt="Open door icon">
-                    <p id="visit-first" class="left-align-p" id="opening">   
-                        Monday  to Saturday<br/> 
+                    <img id="open" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/open.png" alt="Opening times icon" title="Opening times icon">
+                    <p id="visit-first" class="left-align-p" id="opening" alt="opening times for main library exhibition gallery">   
+                        Monday to Saturday<br/> 
                         10am - 5pm<br/> 
                     </p>
-                    <img id="wheelchair" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/wheelchair.png" alt="Wheelchair access icon">
-                    <p id="visit-second" class="left-align-p" alt="Wheelchair access details">
+                    <img id="wheelchair" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/wheelchair.png" alt="Wheelchair access icon" title="Wheelchair access icon">
+                    <p id="visit-second" class="left-align-p" alt="Wheelchair access details" alt="Wheelchair access details for main library exhibition gallery">
                         Wheelchair accessible via ramp at front of the building. Push pad door entry.
                     </p>
                 </div>
@@ -143,23 +143,23 @@
                     <p id="visit-main" class="left-align-p" >                       
                         FACILITIES<br/>
                     </p>
-                    <img id="cafe" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/cafe.png" alt="Cafe icon"> 
+                    <img id="cafe" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/cafe.png" alt="Cafe icon" title="Cafe icon"> 
                     <p id="visit-first" class="left-align-p">                           
-                        The Library Caféis accessed to the right of the building's main entrance. 
+                        The Library Café is accessed to the right of the building's main entrance. 
                     </p>
-                    <img id="toilet" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/toilet.png" alt="Toilets icon">
+                    <img id="toilet" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/toilet.png" alt="Toilets icon" title="Toilet facilities icon">
                     <p id="visit-second" class="left-align-p"> 
-                    Toilets, including accessible toilets, are located in the Library café. Term time Mon-Sun. Non term time Mon-Fri.
+                        Toilets, including accessible toilets, are located in the Library café. Term time Monday to Sunday. Non term time Monday to Friday.
                     </p>
                 </div>
 
                 <!-- LIBRARY EXHIBITIONS SPACE LOCATION -->
-                <div class="visit-block" id="address" alt="Main library address">
+                <div class="visit-block" id="address" alt="Main library location details">
                     <p id="visit-main" class="left-align-p" >                       
                         HOW TO FIND US<br/>
                     </p>
-                    <img id="floor" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/location.png" alt="Map location icon">
-                    <p id="visit-first" class="left-align-p">
+                    <img id="floor" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/location.png" alt="Map location icon" title="Location pon icon">
+                    <p id="visit-first" class="left-align-p" alt="Main library exhibition gallery address">
                         Ground Floor<br/>
                         University of Edinburgh<br>
                         Main Library<br/>                          
@@ -174,20 +174,20 @@
                     <p id="visit-main" class="left-align-p" >                       
                         CONTACT US<br/>
                     </p>
-                    <img id="email" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/email.png" alt="Email icon">
+                    <img id="email" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/email.png" alt="Email icon" title="Email icon">
                     <p id="visit-first-email" class="left-align-p">
-                        <a id="email-link" href="museums@ed.ac.uk">museums@ed.ac.uk</a><br/>
+                        <a id="email-link" href="mailto: museums@ed.ac.uk" title="click to email library exhibtions">museums@ed.ac.uk</a><br/>
                     </p>
-                    <img id="phone" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/phone.png" alt="Phone icon">
-                    <p id="visit-second-phone" class="left-align-p">                             
-                        0131 6502600<br>(Tue-Sat) 
+                    <img id="phone" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/phone.png" alt="Phone icon" title="Phone icon">
+                    <p id="visit-second-phone" class="left-align-p" alt="library phone number" title="click to call library exhibitions">                             
+                        <a id="email-link" href="tel:(0131) 650 2600" aria-label="(0 1 3 1) 0 5 0 2 6 0 0">(0131) 650 2600</a><br>(Tueday to Saturday) 
                     </p>
 
                 </div>
 
                 <!-- GOOGLE MAPS API DIV -->
                 <!-- generated by javascript "googlemaps.js" -->
-                <div id="google-map" alt="Interactive Google Map"></div>
+                <div id="google-map" alt="Interactive Google Map" title="Interactive Google Map"></div>
             </div>
                
         </div>
@@ -201,11 +201,11 @@
             <!-- ANIMATED NAVIGATION BAR -->
             <div class="nav-container" data-100-bottom-top="transform: translateY(-500px); opacity: -10" data-center-top="transform: translateX(0px); opacity: 1">
                 <ul>
-                    <div class="smol"><a class="nav-link" href="#visit-anchor" alt="Jump to visit us section"><li>Visit Us</li></a></div>
-                    <div><a class="nav-link" href="#exhibitions-anchor" alt="Jump to exhibitions section"><li>Exhibitions</li></a></div>
-                    <div class="smol"><a class="nav-link" href="#events-anchor" alt="Jump to events section"><li>Events</li></a></div>
-                    <div><a class="nav-link" href="#support-anchor" alt="Jump to support us section"><li>Support Us</li></a></div>
-                    <div><a class="nav-link" href="#home-anchor" alt="Jump to top of page"><li>Back to Top</li></a></div>
+                    <div class="smol"><a class="nav-link" href="#visit-anchor" alt="Jump to visit us section" title="Jump to visit us section"><li>Visit Us</li></a></div>
+                    <div><a class="nav-link" href="#exhibitions-anchor" alt="Jump to exhibitions section" title="Jump to exhibitions section"><li>Exhibitions</li></a></div>
+                    <div class="smol"><a class="nav-link" href="#events-anchor" alt="Jump to events section" title="Jump to events section"><li>Events</li></a></div>
+                    <div><a class="nav-link" href="#support-anchor" alt="Jump to support us section" title="Jump to support us section"><li>Support Us</li></a></div>
+                    <div><a class="nav-link" href="#home-anchor" alt="Jump to top of page" title="jump back to the top of the page"><li>Back to Top</li></a></div>
                 </ul>
             </div>
 
@@ -227,9 +227,9 @@
 
                 <!-- SECTION LOGO -->
                 <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">         
-                    <a href="https://test.exhibitions.ed.ac.uk/conectando">
+                    <a>
                         <div class="image-box" >
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo" title="Body Language logo">
                         </div>
                     </a>
                 </div>
@@ -244,14 +244,14 @@
                     </p>
 
                     <p id="info-gap" class="right-align-p" alt="current main exhibition location">                       
-                            MAIN LIBRARY EXHIBITION GALLERY<br>
-                            GROUND FLOOR
+                        MAIN LIBRARY EXHIBITION GALLERY<br>
+                        GROUND FLOOR
                     </p>
-                    <p class="right-align-p" alt="current main exhibition dates">
-                            26 JULY 2019 - 26 OCTOBER 2019
+                    <p class="right-align-p" alt="current main exhibition open dates">
+                        26 JULY 2019 - 26 OCTOBER 2019
                     </p>
                     <p class="right-align-p" id="last-p" alt="current main exhibition opening times">
-                            MONDAY to SATURDAY 10:00 - 17:00 (Plus Sundays Throughout August)
+                        MONDAY to SATURDAY 10:00 - 17:00 (Plus Sundays Throughout August)
                     </p>
 
                     <!-- BUTTON TO CURRENT EXHIBITION COLLECTION -->
@@ -263,9 +263,9 @@
                     </a>-->
 
                     <!-- SECTION ADDITIONAL LOGOS -->
-                    <img class="associated-logo" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/welcome-trust-logo-long.png" alt="The Welcome Trust Logo">
-                    <img class="associated-logo" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/fringe-logo-white.png" alt="Edinburgh Fringe Festival Logo">
-                    <img class="associated-logo" id="pandk" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/culture-perth-kinross-logo.png" alt="Culture: Perth and Kinroos Logo">
+                    <img class="associated-logo" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/welcome-trust-logo-long.png" alt="The Welcome Trust Logo" title="The Welcome Trust Logo">
+                    <img class="associated-logo" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/fringe-logo-white.png" alt="Edinburgh Fringe Festival Logo" title="Edinburgh Fringe Festival Logo">
+                    <img class="associated-logo" id="pandk" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/culture-perth-kinross-logo.png" alt="Culture: Perth and Kinroos Logo" title="Culture: Perth and Kinroos Logo">
 
                 </div>
                     
@@ -284,7 +284,7 @@
                 <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
                     <a>
                         <div class="image-box" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitboxes/box_2.png" alt="Forthcoming Exhibit logo">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitboxes/box_2.png" alt="Forthcoming Exhibit logo" title="Embroidered Stories logo">
                         </div>
                     </a>
                 </div>
@@ -303,14 +303,14 @@
                         </p>
                         <br>
                         <p class="right-align-p" alt="forthcoming exhibition description continued"> 
-                            Explore this collection at Edinburgh College of Art’s <strong><a href="https://embroideredstories.eca.ed.ac.uk/" alt="link to forthcoming exhibition contributors website">Embroidered Stories Collection</a></strong>
+                            Explore this collection at Edinburgh College of Art’s <strong><a href="https://embroideredstories.eca.ed.ac.uk/" alt="link to forthcoming exhibition contributors external website" title="External link Edinburgh College of Art’s Embroided Stories extenal collection website">Embroidered Stories Collection</a></strong>
                         </p> 
 
                         <p id="info-gap" class="right-align-p" alt="forthcoming exhibition location">                       
                             MAIN LIBRARY EXHIBITION GALLERY<br>
                             GROUND FLOOR 
                         </p>
-                        <p class="right-align-p" alt="forthcoming exhibition dates">
+                        <p class="right-align-p" alt="forthcoming exhibition open dates">
                             29 NOVEMBER 2019 – 29 FEBUARY 2020
                         </p>
                         <p class="right-align-p" alt="forthcoming exhibition opening times">
@@ -339,7 +339,7 @@
                 <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
                     <a>
                         <div class="image-box" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitboxes/box_3.png" alt="Forthcoming Exhibit logo">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitboxes/box_3.png" alt="Forthcoming Exhibit logo" title="Lu Xun: A Legacy In Print logo">
                         </div>
                     </a>
                 </div>
@@ -358,7 +358,7 @@
                         </p>
                         <br>
                         <p class="right-align-p" alt="forthcoming exhibition description continued">                       
-                            Courtesy of the <a href="http://mubaneducationaltrust.org/" alt="link to forthcoming exhibition contributors website">Muban Educational Trust</a>.
+                            Courtesy of the <a href="http://mubaneducationaltrust.org/" alt="link to forthcoming exhibition contributors website" title="External link to Muban Educational Trust website">Muban Educational Trust</a>.
                         </p>
                         <p id="info-gap" class="right-align-p" alt="forthcoming exhibition location">                       
                             MAIN LIBRARY EXHIBITION GALLERY<br>
@@ -372,7 +372,7 @@
                         </p>
 
                         <!-- SECTION ADDITIONAL LOGOS -->
-                        <img class="associated-logo" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/muban-trust-logo.png" alt="Muban Trust Logo">
+                        <img class="associated-logo" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/muban-trust-logo.png" alt="Muban Trust Logo" title="Muban Trust Logo">
 
                     </div>
 
@@ -394,16 +394,16 @@
                     <!-- SECTION LOGOS --> 
                     <div id="smol-image-block" >
                         <div class="image-box-smol" >
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitboxes/past_1.jpg" alt="Past Exhibit logo">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitboxes/past_1.jpg" alt="Highlands to Hindustan Exhibit logo" title="Highlands to Hindustan Exhibit logo">
                         </div>
                         <div class="image-box-smol" >
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitboxes/past_2.jpg" alt="Past Exhibit logo">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitboxes/past_2.jpg" alt="Towards Dolly Exhibit logo" title="Towards Dolly Exhibit logo">
                         </div>
                         <div class="image-box-smol" >
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitboxes/past_3.jpg" alt="Past Exhibit logo">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitboxes/past_3.jpg" alt="Rashid-al-Din Exhibit logo" title="Rashid-al-Din Exhibit logo">
                         </div>
                         <div class="image-box-smol" >
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitboxes/past_4.jpg" alt="Past Exhibit logo">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitboxes/past_4.jpg" alt="Emma Gillies Exhibit logo" title="Emma Gillies Exhibit logo">
                         </div>
                         <span class="stretch"></span>
                     </div>
@@ -413,28 +413,28 @@
                         <div class="text-box-smol">
                             <h3 class="past-exhibit-h" alt="past exhibition title">Highlands to Hindustan</h3>
                             <p class="past-exhibit-p" alt="past exhibition dates">Jul 2017 - Nov 2017</p>
-                            <a href="./highlandstohindustan"><button id="past-button" class="exhibit-button" alt="link to past exhibition details">
+                            <a href="./highlandstohindustan"><button id="past-button" class="exhibit-button" alt="link to past exhibition details" title="link to Highlands to Hindustan exhibition page">
                                 <p>View Exhibition</p>
                             </button></a>
                         </div>
                         <div class="text-box-smol">
                             <h3 class="past-exhibit-h" alt="past exhibition title">Towards Dolly</h3>
                             <p class="past-exhibit-p" alt="past exhibition dates">Nov 2017 - Mar 2018</p>
-                            <a href="./towardsdolly"><button id="past-button" class="exhibit-button" alt="link to past exhibition details">
+                            <a href="./towardsdolly"><button id="past-button" class="exhibit-button" alt="link to past exhibition details" title="link to Towards Dolly exhibition page">
                                 <p>View Exhibition</p>
                             </button></a>
                         </div>
                         <div class="text-box-smol">
                             <h3 class="past-exhibit-h" alt="past exhibition title">Rashid-al-Din</h3>
                             <p class="past-exhibit-p" alt="past exhibition dates">Jan 2017 - Aug 2017</p>
-                            <a href="./rashid"><button id="past-button" class="exhibit-button" alt="link to past exhibition details">
+                            <a href="./rashid"><button id="past-button" class="exhibit-button" alt="link to past exhibition details" title="link to Rashid-al-Din exhibition page">
                                 <p>View Exhibition</p>
                             </button></a>
                         </div>
                         <div class="text-box-smol">
                             <h3 class="past-exhibit-h" alt="past exhibition title">Emma Gillies</h3>
                             <p class="past-exhibit-p" alt="past exhibition dates">Dec 2014 - Mar 2015</p>
-                            <a href="./emmagillies"><button id="past-button" class="exhibit-button" alt="link to past exhibition details">
+                            <a href="./emmagillies"><button id="past-button" class="exhibit-button" alt="link to past exhibition details" title="link to Emma Gillies exhibition page">
                                 <p>View Exhibition</p>
                             </button></a>
                         </div>
@@ -445,8 +445,8 @@
             </div>
 
             <!-- BUTTON TO PAST EXHIBITIONS COLLECTION -->
-            <div id="past-icon" class="past-icon" data-100-bottom-top="transform: translateY(50px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
-                <a href="<?php base_url()?>past" alt="link to full list of past exhibitions">
+            <div id="past-icon" class="past-icon">
+                <a href="<?php base_url()?>past" alt="link to full list of past exhibitions" title="Link to view a list off all past exhibitions">
                     <img id="past-link" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/list.png" alt="list icon">
                     <p class="left-align-p">View the full past exhibitions list</p>
                 </a>
@@ -463,11 +463,11 @@
             <!-- ANIMATED NAVIGATION -->
             <div class="nav-container" data-100-bottom-top="transform: translateY(-500px); opacity: -10" data-center-top="transform: translateX(0px); opacity: 1">
                 <ul>
-                    <div class="smol"><a class="nav-link" href="#visit-anchor" alt="Jump to visit us section"><li>Visit Us</li></a></div>
-                    <div><a class="nav-link" href="#exhibitions-anchor" alt="Jump to exhibitions section"><li>Exhibitions</li></a></div>
-                    <div class="smol"><a class="nav-link" href="#events-anchor" alt="Jump to events section"><li>Events</li></a></div>
-                    <div><a class="nav-link" href="#support-anchor" alt="Jump to support us section"><li>Support Us</li></a></div>
-                    <div><a class="nav-link" href="#home-anchor" alt="Jump to top of page"><li>Back to Top</li></a></div>
+                    <div class="smol"><a class="nav-link" href="#visit-anchor" alt="Jump to visit us section" title="Jump to visit us section"><li>Visit Us</li></a></div>
+                    <div><a class="nav-link" href="#exhibitions-anchor" alt="Jump to exhibitions section" title="Jump to exhibitions section"><li>Exhibitions</li></a></div>
+                    <div class="smol"><a class="nav-link" href="#events-anchor" alt="Jump to events section" title="Jump to events section"><li>Events</li></a></div>
+                    <div><a class="nav-link" href="#support-anchor" alt="Jump to support us section" title="Jump to support us section"><li>Support Us</li></a></div>
+                    <div><a class="nav-link" href="#home-anchor" alt="Jump to top of page" title="jump back to the top of the page"><li>Back to Top</li></a></div>
                 </ul>
             </div>
 
@@ -491,7 +491,7 @@
                 <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">         
                     <a href="https://test.exhibitions.ed.ac.uk/conectando">
                         <div class="image-box" >
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo" title="Body Language logo">
                         </div>
                     </a>
                 </div>
@@ -522,7 +522,7 @@
 
                     <!-- BUTTON TO CURRENT EXHIBITION COLLECTION -->
                     <!-- * commented out as none exists currently -->
-                    <a id="info-gap" href="<?php base_url()?>bltoursevent">
+                    <a id="info-gap" href="<?php base_url()?>bltoursevent" alt="Link to view full event details" title="Link to view full event details">
                         <button class="exhibit-button">
                             <p>View Event</p>
                         </button>
@@ -542,7 +542,7 @@
                 <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">         
                     <a href="https://test.exhibitions.ed.ac.uk/conectando">
                         <div class="image-box" id="event-divide" >
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo" title="Body Language logo">
                         </div>
                     </a>
                 </div>
@@ -569,8 +569,7 @@
                     </p>
 
                     <!-- BUTTON TO CURRENT EXHIBITION COLLECTION -->
-                    <!-- * commented out as none exists currently -->
-                    <a id="info-gap" href="<?php base_url()?>gymwearevent">
+                    <a id="info-gap" href="<?php base_url()?>gymwearevent" alt="Link to view full event details" title="Link to view full event details">
                         <button class="exhibit-button">
                             <p>View Event</p>
                         </button>
@@ -583,13 +582,13 @@
             <div id="past-container" class="divider" data-100-bottom-top="transform: translateY(0px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
 
             <!-- SECTION CONTAINER -->
-            <div class="exhibition-container" id="event-container">
+            <div class="exhibition-container">
 
                 <!-- SECTION LOGO -->
                 <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">         
                     <a href="https://test.exhibitions.ed.ac.uk/conectando">
                         <div class="image-box" id="event-divide" >
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo" title="Body Language logo">
                         </div>
                     </a>
                 </div>
@@ -615,7 +614,7 @@
 
                     <!-- BUTTON TO CURRENT EXHIBITION COLLECTION -->
                     <!-- * commented out as none exists currently -->
-                    <a id="info-gap" href="<?php base_url()?>dancergymnastevent">
+                    <a id="info-gap" href="<?php base_url()?>dancergymnastevent" alt="Link to view full event details" title="Link to view full event details">
                         <button class="exhibit-button">
                             <p>View Event</p>
                         </button>
@@ -629,13 +628,13 @@
             <div id="past-container" class="divider" data-100-bottom-top="transform: translateY(0px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
 
             <!-- SECTION CONTAINER -->
-            <div class="exhibition-container" id="event-container">
+            <div class="exhibition-container">
 
                 <!-- SECTION LOGO -->
                 <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">         
                     <a href="https://test.exhibitions.ed.ac.uk/conectando">
                         <div class="image-box" id="event-divide" >
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo" title="Body Language logo">
                         </div>
                     </a>
                 </div>
@@ -661,7 +660,7 @@
 
                     <!-- BUTTON TO CURRENT EXHIBITION COLLECTION -->
                     <!-- * commented out as none exists currently -->
-                    <a id="info-gap" href="<?php base_url()?>morrisevent">
+                    <a id="info-gap" href="<?php base_url()?>morrisevent" alt="Link to view full event details" title="Link to view full event details">
                         <button class="exhibit-button">
                             <p>View Event</p>
                         </button>
@@ -671,8 +670,8 @@
                     
             </div>
 
-            <div class="past-icon skrollable skrollable-after" data-100-bottom-top="transform: translateY(50px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1" style="transform: translateX(0px); opacity: 1;">
-                <a href="events" alt="link to full list of past exhibitions">
+            <div class="past-icon skrollable skrollable-after">
+                <a href="events" alt="link to full list of past exhibitions" title="Link to view all events">
                     <img id="past-link" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/list.png" alt="list icon">
                     <p class="left-align-p">View the full events list</p>
                 </a>
@@ -689,11 +688,11 @@
             <!-- ANIMATED NAVIGATION BAR -->       
             <div class="nav-container" data-100-bottom-top="transform: translateY(-500px); opacity: -10" data-center-top="transform: translateX(0px); opacity: 1">
                 <ul>
-                    <div class="smol"><a class="nav-link" href="#visit-anchor" alt="Jump to visit us section"><li>Visit Us</li></a></div>
-                    <div><a class="nav-link" href="#exhibitions-anchor" alt="Jump to exhibitions section"><li>Exhibitions</li></a></div>
-                    <div class="smol"><a class="nav-link" href="#events-anchor" alt="Jump to events section"><li>Events</li></a></div>
-                    <div><a class="nav-link" href="#support-anchor" alt="Jump to support us section"><li>Support Us</li></a></div>
-                    <div><a class="nav-link" href="#home-anchor" alt="Jump to top of page"><li>Back to Top</li></a></div>
+                    <div class="smol"><a class="nav-link" href="#visit-anchor" alt="Jump to visit us section" title="Jump to visit us section"><li>Visit Us</li></a></div>
+                    <div><a class="nav-link" href="#exhibitions-anchor" alt="Jump to exhibitions section" title="Jump to exhibitions section"><li>Exhibitions</li></a></div>
+                    <div class="smol"><a class="nav-link" href="#events-anchor" alt="Jump to events section" title="Jump to events section"><li>Events</li></a></div>
+                    <div><a class="nav-link" href="#support-anchor" alt="Jump to support us section" title="Jump to support us section"><li>Support Us</li></a></div>
+                    <div><a class="nav-link" href="#home-anchor" alt="Jump to top of page" title="jump back to the top of the page"><li>Back to Top</li></a></div>
                 </ul>
             </div>
 
@@ -710,7 +709,7 @@
 
             <!-- SECTION LOGO -->
             <div id="discover-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
-                <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/discover_ed_logo.png" alt="library discovery logo">
+                <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/discover_ed_logo.png" alt="library Discovery logo" title="Library Discovery logo">
             </div>
 
             <!-- SECTION INFO -->
@@ -722,31 +721,26 @@
                 <!-- SOCIAL MEDIA LOGOS -->
                 <div id="social-image-block" >
                     <div class="social-image-box">
-                        <a href=" https://twitter.com/UoE_Exhibitions?lang=en" alt="link to library social media account">
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/socialicons/twittericon.png" alt="twittericon.png">
+                        <a href=" https://twitter.com/UoE_Exhibitions?lang=en" alt="external link to library exhibitions twitter account">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/socialicons/twittericon.png" alt="Twitter Icon" title="External link to Library Exhibitions Twitter account">
                         </a>
                     </div>
                     <div class="social-image-box">
-                        <a href=" https://en-gb.facebook.com/crc.edinburgh/" alt="link to library social media account">
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/socialicons/facebookicon.png" alt="facebookicon.png">
+                        <a href=" https://en-gb.facebook.com/crc.edinburgh/" alt="external link to library exhibitions facebook account">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/socialicons/facebookicon.png" alt="Facebook Icon" title="External link to Library Exhibitions Facebook account">
                         </a>
                     </div>
                     <div class="social-image-box">
-                        <a href="http://libraryblogs.is.ed.ac.uk/" alt="link to library social media account">
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/socialicons/wordpressicon.png" alt="wordpress.png">
+                        <a href="http://libraryblogs.is.ed.ac.uk/" alt="link to library exhibitions wordpress account">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/socialicons/wordpressicon.png" alt="Wordpress Icon" title="External link to Library Exhibitions Wordpress account">
                         </a>
                     </div>
-                    <!--<div class="social-image-box">
-                        <a href="http://libraryblogs.is.ed.ac.uk/" alt="link to library social media account">
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/socialicons/flickricon.png" alt="flickr.png">
-                        </a>
-                    </div>-->
                     
                 </div>
 
                 <p id="support-p" class="right-align-p" alt="supporting the library description">
                     Opportunities are available throughout the year to help with visitor experience, events, exhibition installs, and evaluation. If you are interested in volunteering with us please complete our 
-                    <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc/volunteers-interns/volunteer-enquiry-form" alt="link to volunteer enquirery form">volunteering enquiry form</a> 
+                    <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc/volunteers-interns/volunteer-enquiry-form" alt="link to volunteer enquirery form for those that wish to get involved" title="Link to volunteer enquirery form">volunteering enquiry form</a> 
                 </p>               
         
             </div>

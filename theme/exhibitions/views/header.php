@@ -255,7 +255,7 @@
 
                 <!-- MAIN UNIVERSITY LOGO -->
                 <div id="non-index" class="logo-container">
-                    <a href="' . base_url() . '" alt="link to home page">
+                    <a href="' . base_url() . '" alt="Link to Library Exhibitions home page" title="Link back to Library Exhibitions home page">
                         <img src="' . base_url() . 'theme/' . $this->config->item('skylight_theme') . '/images/logos/uofe_logo.png" alt="University of Edinburgh Logo">
                     </a>
                 </div>
@@ -268,7 +268,7 @@
                                 <input type="text" name="q" value="'; 
                                 if (isset($searchbox_query)){echo urldecode($searchbox_query);}
                                 echo '" id="q" />
-                                <a id="info-gap" href="https://exhibitions.ed.ac.uk/conectando">
+                                <a id="info-gap" alt="Submit search" title="Click to submit search">
                                     <button type="submit" id="submit_search" class="search-button">
                                         <p>Search</p>
                                     </button>
@@ -281,12 +281,12 @@
                     <!-- NAVIGATION LINKS -->
                     <div class="nav-adv-search">
                         <div id="adv-search">
-                            <a class="nav-link" href="./advanced" alt="navigation link">Advanced search</a>
+                            <a class="nav-link" href="./advanced" alt="navigation link" title="Link to advanced search page">Advanced search</a>
                         </div>
                     </div>
                     <div class="nav-adv-search">
                         <div id="adv-search">
-                            <a class="nav-link" href="./events" alt="navigation link">Upcoming Events</a>
+                            <a class="nav-link" href="./events" alt="navigation link" title="Link to upcoming events list">Upcoming Events</a>
                         </div>
                     </div>
                 </div>
@@ -329,7 +329,7 @@
 
                 <!-- MAIN UNIVERSITY LOGO -->
                 <div id="non-index" class="logo-container">
-                    <a href="' . base_url() . '">
+                    <a href="' . base_url() . '" alt="Link to Library Exhibitions home page" title="Link back to Library Exhibitions home page">
                         <img src="' . base_url() . 'theme/' . $this->config->item('skylight_theme') . '/images/logos/uofe_logo.png" alt="University of Edinburgh Logo">
                     </a>
                 </div>
@@ -342,7 +342,7 @@
                                 <input type="text" name="q" value="'; 
                                 if (isset($searchbox_query)){echo urldecode($searchbox_query);}
                                 echo '" id="q" />
-                                <a id="info-gap" href="https://exhibitions.ed.ac.uk/conectando">
+                                <a id="info-gap" alt="Submit search" title="Click to submit search">
                                     <button type="submit" id="submit_search" class="search-button">
                                         <p>Search</p>
                                     </button>
@@ -355,17 +355,17 @@
                     <!-- NAVIGATION LINKS -->
                     <div class="nav-adv-search">
                         <div id="adv-search">
-                            <a class="nav-link" href="./advanced" alt="navigation link">Advanced search</a>
+                            <a class="nav-link" href="./advanced" alt="navigation link" title="Link to advanced search page">Advanced search</a>
                         </div>
                     </div>
                     <div class="nav-adv-search">
                         <div id="adv-search">
-                            <a class="nav-link" href="./past" alt="navigation link">Past Exhibitions</a>
+                            <a class="nav-link" href="./past" alt="navigation link" title="Link to past exhibitions list">Past Exhibitions</a>
                         </div>
                     </div>
                     <div class="nav-adv-search">
                         <div id="adv-search">
-                            <a class="nav-link" href="./search" alt="navigation link">View All Items</a>
+                            <a class="nav-link" href="./search" alt="navigation link" title="Link to view all the items from all collections">View All Items</a>
                         </div>
                     </div>
                 </div>
