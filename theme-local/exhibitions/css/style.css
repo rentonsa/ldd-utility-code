@@ -201,7 +201,7 @@ header				{ position: relative; height: 25vh; }
 audio[id^="audio-"]             { margin: 5px 0; }
 span[id^="video-"]              { margin: 5px 0; }
 
-.col-sidebar h4						{ padding: 14px; background: #cc528d; text-transform: uppercase; font-size: 18px; }
+.col-sidebar h4						{ padding: 14px; background: #cc528d; font-size: 18px; }
 .col-sidebar h4 a 					{  }
 /*.col-sidebar h4 a:hover             { background: #b81e15  url(../images/bg-arrows.png) no-repeat 100% -92px; color: #ffffff; }*/
 .col-sidebar ul 					{ list-style-type: none; border: solid #cc518d 5px; }
@@ -384,7 +384,7 @@ li.past-ex                  { display: inline; float: left; width: 160px; text-a
 .listing-filter						{ padding: 0; border: none; line-height: 33px; text-align: right; position: relative; margin: 0 8vh; margin-bottom: 80px; font-size: 24px; }
 .listing-filter .no-results			{ position: absolute; top: 0; left: 0; }
 .ie7 .listing-filter .no-results	{ top: -10px; }
-.listing-filter .sort				{ text-transform: uppercase;  }
+.listing-filter .sort				{ }
 .listing-filter .sort a 			{ text-decoration: none; background: #b6015d; color: #ffffff; border: solid 2px; border-radius: 5px; font-size: 20px; padding: 3px 12px; margin: 0 10px; }
 .listing-filter .sort a:hover		{ background-color: #ff0080; box-shadow: 0 0 10px #fc62af; }
 .listing-filter .sort strong		{ color: #fff }

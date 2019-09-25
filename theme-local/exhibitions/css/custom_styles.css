@@ -382,7 +382,6 @@ body {
     color: #FFF;
 }
 #current-exhibitions, #coming-exhibitions, #past-exhibitions, #current-events {
-    text-transform: uppercase;
     white-space: nowrap;
 }
 #coming-exhibitions, #past-exhibitions{

@@ -54,8 +54,8 @@
 
                     <em><?php echo $label ?></em>
                     <?php if($label != "Date") { ?>
-                    <a id="a-z" href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>" alt="sort by a-z" title="Sort by a-z">A-Z</a> |
-                    <a id="z-a" href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>" alt="sort by z-a" title="Sort by z-a">Z-A</a>
+                    <a id="a-z" href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>" alt="sort by a-z" title="Sort by a-z">a-z</a> |
+                    <a id="z-a" href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>" alt="sort by z-a" title="Sort by z-a">z-a</a>
                     <br>
                 <?php } else { ?>
                     <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>" alt="sort by newest first" title="Sort by newest first">newest</a> |
