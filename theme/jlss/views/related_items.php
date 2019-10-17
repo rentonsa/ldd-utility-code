@@ -15,7 +15,8 @@
             foreach ($related_items as $index => $doc) {
             ?>
                 <li class="list-group-item">
-                    <a class="related-record" href="./record/<?php echo $doc['id']?>"><?php echo strip_tags($doc[$title_field][0]); ?></a>
+                    <a class="related-record" href="./record/<?php echo $doc['id']?>" alt="link to items with the same subject"
+                            title="Click to view the related item: <?php echo strip_tags($doc[$title_field][0]); ?>"><?php echo strip_tags($doc[$title_field][0]); ?></a>
                     <?php
                     if (isset($doc["component_id"])) {
                         $component_id = $doc["component_id"];

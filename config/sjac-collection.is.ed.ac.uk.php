@@ -13,7 +13,7 @@ if (strpos($_SERVER['HTTP_HOST'], "test") !== false || strpos($_SERVER['HTTP_HOS
     $config['base_url'] = 'https://test.sjac-collection.is.ed.ac.uk/';
 }
 else {
-    $config['skylight_ga_code'] = 'UA-25737241-6';
+    $config['skylight_ga_code'] = 'UA-25737241-14';
     $config['skylight_container_id'] = '77';
     $config['skylight_image_server'] = 'https://cantaloupe.is.ed.ac.uk';
     $config['base_url'] = 'https://sjac-collection.is.ed.ac.uk/';

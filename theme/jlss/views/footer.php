@@ -17,11 +17,11 @@
 
                 <div class="col-sm-12 col-xs-12 footer-disclaimer">
                     <div class="footer-policies">
-                        <a class="footer-policies" href="https://www.ed.ac.uk/about/website/privacy" target="_blank" title="Privacy and Cookies Link">Privacy &amp; Cookies</a>
-                        &nbsp;&nbsp;<a class="footer-policies" href="takedown" title="Takedown Policy Link">Takedown Policy</a>
-                        &nbsp;&nbsp;<a class="footer-policies" href="licensing" title="Licensing and Copyright Link">Licensing &amp; Copyright</a>
-                        &nbsp;&nbsp;<a class="footer-policies" href="accessibility" title="Website Accessibility Link">Accessibility</a>
-                        <p class="footer-copyright">Unless explicitly stated otherwise, all material is copyright &copy; <?php echo date("Y"); ?> <a class="footer-policies" href="https://www.sjac.org.uk" title="Scottish Jewish Archives Centre" target="_blank">Scottish Jewish Archives Centre</a></p>
+                        <a class="footer-policies" href="https://www.ed.ac.uk/about/website/privacy" target="_blank" title="External link to Privacy and Cookies policy">Privacy &amp; Cookies</a>
+                        &nbsp;&nbsp;<a class="footer-policies" href="takedown" title="External link to Takedown policy">Takedown Policy</a>
+                        &nbsp;&nbsp;<a class="footer-policies" href="licensing" title="External link to Licensing and Copyright policy">Licensing &amp; Copyright</a>
+                        &nbsp;&nbsp;<a class="footer-policies" href="accessibility" title=" Link to Accessibility statement">Accessibility</a>
+                        <p class="footer-copyright">Unless explicitly stated otherwise, all material is copyright &copy; <?php echo date("Y"); ?> <a class="footer-policies" href="https://www.sjac.org.uk" title="External link to Scottish Jewish Archives Centre website" target="_blank">Scottish Jewish Archives Centre</a></p>
                     </div>
                 </div>
             </footer>
