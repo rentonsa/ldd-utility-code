@@ -69,6 +69,9 @@
                     <!-- generated using javascript file "openingtimes.js" -->
                     <p id="opening-times" class="right-align-p" alt="Library opening times for today">
                     </p>
+                    <p class="right-align-p">
+                        (The gallery will be closed from 27 October to 29 November for exhibition changeover)
+                    </p>
 
                     <!-- SECTION BUTTONS -->
                     <div id="quick-links">
@@ -284,7 +287,7 @@
                 <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
                     <a>
                         <div class="image-box" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitboxes/box_2.png" alt="Forthcoming Exhibit logo" title="Embroidered Stories logo">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitboxes/box_2.jpg" alt="Forthcoming Exhibit logo" title="Embroidered Stories logo">
                         </div>
                     </a>
                 </div>
@@ -293,7 +296,7 @@
                 <div id="coming-exhibit-info" >
                     <div data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
                         <h2 class="right-align-h" alt="forthcoming exhibition title">
-                            Embroidered Stories
+                            Touching Stitches
                         </h2>
             
                         <p class="right-align-p" alt="forthcoming exhibition description">                       
