@@ -2,7 +2,7 @@
    
    
     <div id="index-blurb">
-        <p>
+        <p alt="SJAC site blurb">
         SJAC’s diverse collections include old Synagogue minute books and registers, membership lists, photographs, oral histories, 
         testimonies, annual reports of communal organisations, books of Scottish Jewish interest, friendly society regalia, personal 
         papers, war medals, ceremonial keys, newspapers, magazines, trophies, plaques, paintings and sculptures, immigration and 
@@ -16,7 +16,7 @@
         </p>
     </div>
 
-    <h1>Collections</h1>
+    <h1 alt="SJAC Jewish Lives, Scottish Spaces Collections list">Collections</h1>
     <div class="content-divider-index"><p>divider</p></div>
 
     <!--<?php print_r($docs);?>-->
@@ -25,7 +25,7 @@
             <div class="col-sm-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="clickbox-margin">
                     <figure class="clickbox">
-                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/theatre-clickbox.jpg" alt="Theatre" class="img-responsive">
+                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/theatre-clickbox.jpg" alt="Link to the Theatre Collection" class="img-responsive">
 
                         <div class="clickbox-text">
                             <div class="clickbox-text-background">
@@ -35,7 +35,7 @@
                             </div>
 
                             <div class="curl"></div>
-                            <a href="./search/*:*/Collection:&quot;theatre%7C%7C%7CTheatre&quot;" title="Theatre"></a>
+                            <a href="./search/*:*/Collection:&quot;theatre%7C%7C%7CTheatre&quot;" title="Theatre" alt="Link to the Theatre Collection"></a>
                         </div>
                     </figure>
                 </div>
@@ -44,17 +44,17 @@
             <div class="col-sm-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="clickbox-margin">
                     <figure class="clickbox">
-                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/serving-clickbox.jpg" alt="Serving Their Country" class="img-responsive">
+                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/serving-clickbox.jpg" alt="Link to the Serving Their Country Collection" class="img-responsive">
 
                         <div class="clickbox-text">
                             <div class="clickbox-text-background">
-                                <h3><span >Serving <br>Their Country</span></h3>
+                                <h3 alt="Collection title"><span >Serving <br>Their Country</span></h3>
                                 <i class="fa fa-camera"></i>
                                 <i class="ion-arrow-right-c"></i>
                             </div>
 
                             <div class="curl"></div>
-                            <a href="./search/*:*/Collection:&quot;serving+their+country%7C%7C%7CServing+Their+Country&quot;" title="Serving Their Country"></a>
+                            <a href="./search/*:*/Collection:&quot;serving+their+country%7C%7C%7CServing+Their+Country&quot;" title="Serving Their Country" alt="Link to the Serving Their Country Collection"></a>
                         </div>
                     </figure>
                 </div>
@@ -63,17 +63,17 @@
             <div class="col-sm-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="clickbox-margin">
                     <figure class="clickbox">
-                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/migration-clickbox.jpg" alt="Migration" class="img-responsive">
+                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/migration-clickbox.jpg" alt="Link to the Migration Collection" class="img-responsive">
 
                         <div class="clickbox-text">
                             <div class="clickbox-text-background">
-                                <h3><span><br>Migration</span></h3>
+                                <h3 alt="Collection title"><span><br>Migration</span></h3>
                                 <i class="fa fa-camera"></i>
                                 <i class="ion-arrow-right-c"></i>
                             </div>
 
                             <div class="curl"></div>
-                            <a href="./search/*:*/Collection:&quot;migration%7C%7C%7CMigration&quot;" title="Migration"></a>
+                            <a href="./search/*:*/Collection:&quot;migration%7C%7C%7CMigration&quot;" title="Migration" alt="Link to the Migration Collection"></a>
                         </div>
                     </figure>
                 </div>
@@ -82,17 +82,17 @@
             <div class="col-sm-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="clickbox-margin">
                     <figure class="clickbox">
-                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/refugee-clickbox.jpg" alt="Refugee Period" class="img-responsive">
+                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/refugee-clickbox.jpg" alt="Link to the Refugee Period Collection" class="img-responsive">
 
                         <div class="clickbox-text">
                             <div class="clickbox-text-background">
-                                <h3><span><br>Refugee Period</span></h3>
+                                <h3 alt="Collection title"><span><br>Refugee Period</span></h3>
                                 <i class="fa fa-camera"></i>
                                 <i class="ion-arrow-right-c"></i>
                             </div>
 
                             <div class="curl"></div>
-                            <a href="./search/*:*/Collection:&quot;refugee+period%7C%7C%7CRefugee+Period&quot;" title="Refugee Period"></a>
+                            <a href="./search/*:*/Collection:&quot;refugee+period%7C%7C%7CRefugee+Period&quot;" title="Refugee Period" alt="Link to the Refugee Period Collection"></a>
                         </div>
                     </figure>
                 </div>
@@ -101,17 +101,17 @@
             <div class="col-sm-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="clickbox-margin">
                     <figure class="clickbox">
-                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/religion-clickbox.jpg" alt="Religious Life" class="img-responsive">
+                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/religion-clickbox.jpg" alt="Link to the Religious Life Collection" class="img-responsive">
 
                         <div class="clickbox-text">
                             <div class="clickbox-text-background">
-                                <h3><span><br>Religious Life</span></h3>
+                                <h3 alt="Collection title"><span><br>Religious Life</span></h3>
                                 <i class="fa fa-camera"></i>
                                 <i class="ion-arrow-right-c"></i>
                             </div>    
 
                             <div class="curl"></div>
-                            <a href="./search/*:*/Collection:&quot;religious+life%7C%7C%7CReligious+life&quot;" title="Religious Life"></a>
+                            <a href="./search/*:*/Collection:&quot;religious+life%7C%7C%7CReligious+life&quot;" title="Religious Life" alt="Link to the Religious Life Collection"></a>
                         </div>
                     </figure>
                 </div>
@@ -120,17 +120,17 @@
             <div class="col-sm-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="clickbox-margin">
                     <figure class="clickbox">
-                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/art-clickbox.jpg" alt="Art" class="img-responsive">
+                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/art-clickbox.jpg" alt="Link to the Art Collection" class="img-responsive">
 
                         <div class="clickbox-text">
                             <div class="clickbox-text-background">
-                                <h3><span><br>Art</span></h3>
+                                <h3 alt="Collection title"><span><br>Art</span></h3>
                                 <i class="fa fa-camera"></i>
                                 <i class="ion-arrow-right-c"></i>
                             </div>
 
                             <div class="curl"></div>
-                            <a href="./search/*:*/Collection:&quot;art%7C%7C%7CArt&quot;" title="Art"></a>
+                            <a href="./search/*:*/Collection:&quot;art%7C%7C%7CArt&quot;" title="Art" alt="Link to the Art Collection"></a>
                         </div>
                     </figure>
                 </div>
@@ -139,17 +139,17 @@
             <div class="col-sm-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="clickbox-margin">
                     <figure class="clickbox">
-                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/soviet-clickbox.jpg" alt="Soviet jewry" class="img-responsive">
+                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/soviet-clickbox.jpg" alt="Link to the Soviet Jewry Collection" class="img-responsive">
 
                         <div class="clickbox-text">
                             <div class="clickbox-text-background">
-                                <h3><span><br>Soviet Jewry</span></h3>
+                                <h3 alt="Collection title"><span><br>Soviet Jewry</span></h3>
                                 <i class="fa fa-camera"></i>
                                 <i class="ion-arrow-right-c"></i>
                             </div>
 
                             <div class="curl"></div>
-                            <a href="./search/*:*/Collection:&quot;soviet+jewry%7C%7C%7CSoviet+Jewry&quot;" title="Soviet Jewry"></a>
+                            <a href="./search/*:*/Collection:&quot;soviet+jewry%7C%7C%7CSoviet+Jewry&quot;" title="Soviet Jewry" alt="Link to the Soviet Jewry Collection"></a>
                         </div>
                     </figure>
                 </div>
@@ -158,17 +158,17 @@
             <div class="col-sm-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="clickbox-margin">
                     <figure class="clickbox">
-                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/community-clickbox.jpg" alt="Scottish Communities" class="img-responsive">
+                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/community-clickbox.jpg" alt="Link to the Scottish Communities Collection" class="img-responsive">
 
                         <div class="clickbox-text">
                             <div class="clickbox-text-background">
-                                <h3><span>Scottish <br>Jewish Communities</span></h3>
+                                <h3 alt="Collection title"><span>Scottish <br>Jewish Communities</span></h3>
                                 <i class="fa fa-camera"></i>
                                 <i class="ion-arrow-right-c"></i>
                             </div>
 
                             <div class="curl"></div>
-                            <a href="./search/*:*/Collection:&quot;scottish+communities%7C%7C%7CScottish+Communities&quot;" title="Scottish Communities"></a>
+                            <a href="./search/*:*/Collection:&quot;scottish+communities%7C%7C%7CScottish+Communities&quot;" title="Scottish Communities" alt="Link to the Scottish Communities Collection"></a>
                         </div>
                     </figure>
                 </div>
@@ -177,17 +177,17 @@
             <div class="col-sm-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="clickbox-margin">
                     <figure class="clickbox">
-                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/women-clickbox.jpg" alt="Women" class="img-responsive">
+                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/women-clickbox.jpg" alt="Link to the Women Collection" class="img-responsive">
 
                         <div class="clickbox-text"> 
                             <div class="clickbox-text-background">
-                                <h3><span><br>Women</span></h3>
+                                <h3 alt="Collection title"><span><br>Women</span></h3>
                                 <i class="fa fa-camera"></i>
                                 <i class="ion-arrow-right-c"></i>
                             </div>
 
                             <div class="curl"></div>
-                            <a href="./search/*:*/Collection:&quot;women%7C%7C%7CWomen&quot;" title="Women"></a>
+                            <a href="./search/*:*/Collection:&quot;women%7C%7C%7CWomen&quot;" title="Women" alt="Link to the Women Collection"></a>
                         </div>
                     </figure>
                 </div>
@@ -196,17 +196,17 @@
             <div class="col-sm-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="clickbox-margin">
                     <figure class="clickbox">
-                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/relations-clickbox.jpg" alt="Wider Relations" class="img-responsive">
+                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/relations-clickbox.jpg" alt="Link to the Wider Relations Collection" class="img-responsive">
 
                         <div class="clickbox-text">
                             <div class="clickbox-text-background">
-                                <h3><span>Relations with the<br>Wider Community</span></h3>
+                                <h3 alt="Collection title"><span>Relations with the<br>Wider Community</span></h3>
                                 <i class="fa fa-camera"></i>
                                 <i class="ion-arrow-right-c"></i>
                             </div>
 
                             <div class="curl"></div>
-                            <a href="./search/*:*/Collection:&quot;relations+with+wider+community%7C%7C%7CRelations+with+wider+community&quot;" title="Wider Relations"></a>
+                            <a href="./search/*:*/Collection:&quot;relations+with+wider+community%7C%7C%7CRelations+with+wider+community&quot;" title="Wider Relations" alt="Link to the Wider Relations Collection"></a>
                         </div>
                     </figure>
                 </div>

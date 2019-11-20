@@ -24,7 +24,7 @@ $bitstreamLinks = array();
 <div itemscope itemtype ="http://schema.org/CreativeWork">
 <div class="col-md-9 col-sm-9 col-xs-12" xmlns="http://www.w3.org/1999/html">
     <div class="row">
-        <h1 class="itemtitle"><?php echo strip_tags($record_title) ?></h1>
+        <h1 class="itemtitle" alt="Title of the current item" alt="item title"><?php echo strip_tags($record_title) ?></h1>
     </div>
 
     <!--<div class="row">
@@ -44,7 +44,7 @@ $bitstreamLinks = array();
             if(isset($solr[$parent_id_field])) {
 
                 echo '<tr><th>Hierarchy</th><td>';
-                echo '<a href ="./record/' . $solr[$parent_id_field][0] .'/'. $solr[$parent_type_field][0] . '" > Parent Record </a>';
+                echo '<a href ="./record/' . $solr[$parent_id_field][0] .'/'. $solr[$parent_type_field][0] . '" alt="Link to parent collection"> Parent Record </a>';
                 echo '</td><tr>';
             }
             ?>
@@ -64,7 +64,7 @@ $bitstreamLinks = array();
 
             
             
-            <div class="full-image">
+            <div class="full-image" alt="zoomable full size image for this item">
                     <div id="openseadragon" class="image-toggle">
                         <script type="text/javascript">
                             OpenSeadragon({
@@ -118,14 +118,14 @@ $bitstreamLinks = array();
                                 $lower_orig_filter = strtolower($metadatavalue);
                                 $lower_orig_filter = urlencode($lower_orig_filter);
 
-                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a></span>';
+                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/'.$orig_filter.'" alt="View items witch share the same subject">'.$metadatavalue.'</a></span>';
                             }
                             else {
 
                                 //Insert Schema.org
                                 if (isset ($schema[$key]))
                                 {
-                                    echo '<span itemprop="'.$schema[$key].'">' . $metadatavalue . '</span>';
+                                    echo '<span itemprop="'.$schema[$key].'" alt="Items ' .$schema[$key].'">' . $metadatavalue . '</span>';
                                 }
                                 else
                                 {
@@ -151,7 +151,7 @@ $bitstreamLinks = array();
     <?php
     $title = preg_replace('/\s/', "+", $colName);
     echo '<div class="row">
-        <a href="' . base_url() . $this->config->item('skylight_theme') . '/search/*:*/Collection:%22' .strtolower(preg_replace('/([A-Z]+)/', "$1", $title)) .'%7C%7C%7C' . $title .'%22"><button class="btn btn-info"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Back to '. $colName .'</button>
+        <a href="' . base_url() . $this->config->item('skylight_theme') . '/search/*:*/Collection:%22' .strtolower(preg_replace('/([A-Z]+)/', "$1", $title)) .'%7C%7C%7C' . $title .'%22"><button class="btn btn-info" alt="Link back to items parent collection"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Back to '. $colName .'</button>
     </div>'
     ?>
 
