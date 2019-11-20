@@ -5,7 +5,9 @@
 **/
 
 /* Custom Styles */
-
+*:focus {
+    box-shadow: 0 0 20px #fc62af;
+}
 body {
     margin-top: -25px;
     width: 100%;
@@ -380,7 +382,6 @@ body {
     color: #FFF;
 }
 #current-exhibitions, #coming-exhibitions, #past-exhibitions, #current-events {
-    text-transform: uppercase;
     white-space: nowrap;
 }
 #coming-exhibitions, #past-exhibitions{
@@ -639,12 +640,11 @@ body {
     z-index: 999;
 }
 #object-divide {
-    margin-left: 20vh;
+    margin-left: 25vh;
 }
 #object-list {
     list-style: none;
     margin-top: -30px;
-    display: flex;
 }
 #object-list li {
     margin-top: 33px;
@@ -1116,6 +1116,7 @@ footer{
     color: #FFF; 
     text-decoration: none;
     font-weight: normal;
+    font-size: 18px;
 }
 .footer-link {
     padding: 0px 25px 0px 25px;

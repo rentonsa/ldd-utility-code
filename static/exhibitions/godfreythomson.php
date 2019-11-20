@@ -43,14 +43,14 @@
             </p>
         </div>
 
-        <a href="<?php echo base_url() ?>past#godfreythomson-anchor">
-            <button id="exhibition-back" class="exhibit-button" alt="link back to full past exhibiton list">
+        <a href="<?php echo base_url() ?>past#godfreythomson-anchor" alt="link back to full past exhibiton list" title="Link back to full past exhibiton list">
+            <button id="exhibition-back" class="exhibit-button">
                 <p>Back to full list</p>
             </button>
         </a>
 
-        <a href='./search/*:*/Exhibition:"godfrey+thomson%3A+the+man+who+tested+scotland%27s+iq|||Godfrey+Thomson%3A+The+Man+Who+Tested+Scotland%27s+IQ"'>
-            <button class="exhibit-button" alt="link to view exhibition items">
+        <a href='./search/*:*/Exhibition:"godfrey+thomson%3A+the+man+who+tested+scotland%27s+iq|||Godfrey+Thomson%3A+The+Man+Who+Tested+Scotland%27s+IQ"' alt="link to all items in this collection" title="Link to all items in this collection">
+            <button class="exhibit-button">
                 <p>View all items</p>
             </button>
         </a>

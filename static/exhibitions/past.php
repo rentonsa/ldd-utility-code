@@ -19,13 +19,13 @@
                 </p>
 
                 <!-- EXHIBITION BUTTON -->
-                <a id="info-gap" href="./rarebooks" alt="Rare Books? Expect The Unexpected" title="Rare Books? Expect The Unexpected">
+                <a id="info-gap" href="./rarebooks" alt="Rare Books? Expect The Unexpected" title="Link to Rare Books? Expect The Unexpected page">
                     <button class="exhibit-button" alt="link to view exhibition deatils">
                         <p>View Exhibition</p>
                     </button>
                 </a>
             </div>
-            <a href="./rarebooks" alt="Rare Books? Expect The Unexpected" title="Rare Books? Expect The Unexpected">
+            <a href="./rarebooks" alt="Rare Books? Expect The Unexpected" title="Link to Rare Books? Expect The Unexpected page">
                 <div id="exhib-tile-20" ></div>
             </a>
 
@@ -44,13 +44,13 @@
                     scientific instruments and Katie Paterson’s contemporary artwork Timepieces, this exhibition charts our fascination with,
                     exploration of and responses to outer space
                 </p>
-                <a href="./astronomyvictorious" alt="Astronomy Victorious" title="Astronomy Victorious">
+                <a href="./astronomyvictorious" alt="Astronomy Victorious" title="Link to Astronomy Victorious Information Page">
                     <button class="exhibit-button" alt="link to view exhibition deatils">
                         <p>View Exhibition</p>
                     </button>
                 </a>
             </div>
-            <a href="./astronomyvictorious" alt="Astronomy Victorious" title="Astronomy Victorious">
+            <a href="./astronomyvictorious" alt="Astronomy Victorious" title="Link to Astronomy Victorious Information Page">
                 <div id="exhib-tile-19" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
             </a>
 
@@ -71,13 +71,13 @@
                 </p>
 
                 <!-- EXHIBITION BUTTON -->
-                <a href="./dawnera" alt="Dawn of a New Era" title="Dawn of a New Era Information Page">
+                <a href="./dawnera" alt="Dawn of a New Era" title="Link to Dawn of a New Era Information Page">
                     <button class="exhibit-button" alt="link to view exhibition deatils">
                         <p>View Exhibition</p>
                     </button>
                 </a>
             </div>
-            <a href="./dawnera" alt="Dawn of a New Era" title="Dawn of a New Era">
+            <a href="./dawnera" alt="Dawn of a New Era" title="Link to Dawn of a New Era Information Page">
                 <div id="exhib-tile-18" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
             </a>
 
@@ -96,13 +96,13 @@
                     explores the many ways in which drawn and painted images were used to enhance different forms and stages of learning
                     in the mid-20th century. Curated in partnership with Edinburgh College of Art
                 </p>
-                <a href="./howwhywhat" alt="How Why What" title="How Why What Information Page">
+                <a href="./howwhywhat" alt="How Why What" title="Link to How Why What Information Page">
                     <button class="exhibit-button" alt="link to view exhibition deatils">
                         <p>View Exhibition</p>
                     </button>
                 </a>
             </div>
-            <a href="./howwhywhat" alt="How Why What" title="How Why What">
+            <a href="./howwhywhat" alt="How Why What" title="Link to How Why What Information Page">
                 <div id="exhib-tile-17" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
             </a>
 
@@ -126,13 +126,13 @@
                 </p>
 
                 <!-- EXHIBITION BUTTON -->
-                <a href="./travellingimages" alt="Travelling Images" title="Travelling Images Information Page">
+                <a href="./travellingimages" alt="Travelling Images" title="Link to Travelling Images Information Page">
                     <button class="exhibit-button" alt="link to view exhibition deatils">
                         <p>View Exhibition</p>
                     </button>
                 </a>
             </div>
-            <a href="./travellingimages" alt="Travelling Images" title="Travelling Images">
+            <a href="./travellingimages" alt="Travelling Images" title="Link to Travelling Images Information Page">
                 <div id="exhib-tile-16" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
             </a>
 
@@ -156,13 +156,13 @@
                 </p>
 
                 <!-- EXHIBITION BUTTON -->
-                <a href="./sar" alt="Shored Against Ruin" title="Shored Against Ruin Information Page">
+                <a href="./sar" alt="Shored Against Ruin" title="Link to Shored Against Ruin Information Page">
                     <button class="exhibit-button" alt="link to view exhibition deatils">
                         <p>View Exhibition</p>
                     </button>
                 </a>
             </div>
-            <a href="./sar" alt="Shored Against Ruin" title="Shored Against Ruin">
+            <a href="./sar" alt="Shored Against Ruin" title="Link to Shored Against Ruin Information Page">
                 <div id="exhib-tile-15" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
             </a>
 
@@ -185,13 +185,13 @@
                 </p>
 
                 <!-- EXHIBITION BUTTON -->
-                <a href="./incend" alt="Incendiary Texts" title="Incendiary Texts Information Page">
+                <a href="./incend" alt="Incendiary Texts" title="Link to Incendiary Texts Information Page">
                     <button class="exhibit-button" alt="link to view exhibition deatils">
                         <p>View Exhibition</p>
                     </button>
                 </a>
             </div>
-            <a href="./incend" alt="Incendiary Texts" title="Incendiary Texts">
+            <a href="./incend" alt="Incendiary Texts" title="Link to Incendiary Texts Information Page">
                 <div id="exhib-tile-14" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
             </a>
 
@@ -228,13 +228,13 @@
                 </p>
 
                 <!-- EXHIBITION BUTTON -->
-                <a href="./highlandstohindustan" alt="Highlands To Hindustan" title="Highlands To Hindustan">
+                <a href="./highlandstohindustan" alt="Highlands To Hindustan" title="Link to Highlands To Hindustan">
                     <button class="exhibit-button" alt="link to view exhibition deatils">
                         <p>View Exhibition</p>
                     </button>
                 </a>
             </div>
-            <a href="./highlandstohindustan" alt="Highlands To Hindustan" title="Highlands To Hindustan">
+            <a href="./highlandstohindustan" alt="Highlands To Hindustan" title="Link to Highlands To Hindustan Information Page">
                 <div id="exhib-tile-13" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
             </a>
 
@@ -262,13 +262,13 @@
                 </p>
 
                 <!-- EXHIBITION BUTTON -->
-                <a href="./soundbody" alt="Sound Body Sound Mind" title="Sound Body Sound Mind Information Page">
+                <a href="./soundbody" alt="Sound Body Sound Mind" title="Link to Sound Body Sound Mind Information Page">
                     <button class="exhibit-button" alt="link to view exhibition deatils">
                         <p>View Exhibition</p>
                     </button>
                 </a>
             </div>
-            <a href="./soundbody" alt="Sound Body Sound Mind" title="Sound Body Sound Mind">
+            <a href="./soundbody" alt="Sound Body Sound Mind" title="Link to Sound Body Sound Mind Information Page">
                 <div id="exhib-tile-12" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
             </a>
 
@@ -313,18 +313,18 @@
                 </p>
 
                 <!-- EXHIBITION BUTTONS -->
-                <a href='./search/*:*/Exhibition:"godfrey+thomson%3A+the+man+who+tested+scotland%27s+iq|||Godfrey+Thomson%3A+The+Man+Who+Tested+Scotland%27s+IQ"'>
+                <a href='./search/*:*/Exhibition:"godfrey+thomson%3A+the+man+who+tested+scotland%27s+iq|||Godfrey+Thomson%3A+The+Man+Who+Tested+Scotland%27s+IQ"' title="Link to Godfrey H Thomson collection">
                     <button class="exhibit-button" alt="link to view all items in the collection">
                         <p>View all items</p>
                     </button>
                 </a>
-                <a href="./godfreythomson" alt="Godfrey H Thomson" title="Godfrey H Thomson Information Page">
+                <a href="./godfreythomson" alt="Godfrey H Thomson" title="Link to Godfrey H Thomson Information Page">
                     <button id="view-gap" class="exhibit-button" alt="link to view exhibition deatils">
                         <p>View Exhibition</p>
                     </button>
                 </a>
             </div>
-            <a href="./godfreythomson" alt="Godfrey H Thomson" title="Godfrey H Thomson">
+            <a href="./godfreythomson" alt="Godfrey H Thomson" title="Link to Godfrey H Thomson Information Page">
                 <div id="exhib-tile-11" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
             </a>
 
@@ -358,18 +358,13 @@
                 </p>
 
                 <!-- EXHIBITION BUTTONS -->
-                <a>
-                    <button class="exhibit-button" alt="link to view all items in the collection">
-                        <p>Coming Soon</p>
-                    </button>
-                </a>
-                <a href="./revel" alt="Visual Dissection" title="Brown Paper and Imagination Information Page">
-                    <button id="view-gap" class="exhibit-button" alt="link to view exhibition deatils">
+                <a href="./revel" alt="Visual Dissection" title="Link to Brown Paper and Imagination Information Page">
+                    <button class="exhibit-button" alt="link to view exhibition deatils">
                         <p>View Exhibition</p>
                     </button>
                 </a>
             </div>
-            <a href="./revel" alt="Visual Dissection" title="Brown Paper and Imagination">
+            <a href="./revel" alt="Visual Dissection" title="Link to Brown Paper and Imagination Information Page">
                 <div id="exhib-tile-10" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
             </a>
 
@@ -395,17 +390,17 @@
 
                 <!-- EXHIBITION BUTTONS -->
                 <a href='./search/*:*/Exhibition:"visual+dissection|||Visual+Dissection"'>
-                    <button class="exhibit-button" alt="link to view all items in the collection">
+                    <button class="exhibit-button" alt="link to view all items in the collection" title="Link to Visual Dissection Information collection">
                         <p>View all items</p>
                     </button>
                 </a>
-                <a href="./visualdissection" alt="Visual Dissection" title="Visual Dissection Information Page">
+                <a href="./visualdissection" alt="Visual Dissection" title="Link to Visual Dissection Information Page">
                     <button id="view-gap" class="exhibit-button" alt="link to view exhibition deatils">
                         <p>View Exhibition</p>
                     </button>
                 </a>
             </div>
-            <a href="./visualdissection" alt="Visual Dissection" title="Visual Dissection">
+            <a href="./visualdissection" alt="Visual Dissection" title="Link to Visual Dissection Information Page">
                 <div id="exhib-tile-9" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
             </a>
 
@@ -437,13 +432,13 @@
                 </p>
 
                 <!-- EXHIBITION BUTTON -->
-                <a href="./towardsdolly" alt="Towards Dolly" title="Towards Dolly: A Century of Animal Genetics in Edinburgh Page">
-                    <button id="view-gap" class="exhibit-button" alt="link to view exhibition deatils">
+                <a href="./towardsdolly" alt="Towards Dolly" title="Link to Towards Dolly: A Century of Animal Genetics in Edinburgh Page">
+                    <button class="exhibit-button" alt="link to view exhibition deatils">
                         <p>View Exhibition</p>
                     </button>
                 </a>
             </div>
-            <a href="./towardsdolly" alt="Towards Dolly" title="Towards Dolly">
+            <a href="./towardsdolly" alt="Towards Dolly" title="Link to Towards Dolly Information Page">
                 <div id="exhib-tile-8" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
             </a>
 
@@ -472,18 +467,18 @@
                 </p>
 
                 <!-- EXHIBITION BUTTONS -->
-                <a href='./search/*:*/Exhibition:"emma+gillies%3A+rediscovered|||Emma+Gillies%3A+Rediscovered"'>
+                <a href='./search/*:*/Exhibition:"emma+gillies%3A+rediscovered|||Emma+Gillies%3A+Rediscovered"' title="Link to Emma Gillies collection">
                     <button class="exhibit-button" alt="link to view all items in the collection">
                         <p>View all items</p>
                     </button>
                 </a>
-                <a href="./emmagillies" alt="Emma Gillies" title="Emma Gillies Information Page">
+                <a href="./emmagillies" alt="Emma Gillies" title="Link to Emma Gillies Information Page">
                     <button id="view-gap" class="exhibit-button" alt="link to view exhibition deatils">
                         <p>View Exhibition</p>
                     </button>
                 </a>
             </div>
-            <a href="./emmagillies" alt="Emma Gillies" title="Emma Gillies">
+            <a href="./emmagillies" alt="Emma Gillies" title="Link to Emma Gillies Information Page">
                 <div id="exhib-tile-6" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
             </a>
 
@@ -516,18 +511,18 @@
                 </p>
 
                 <!-- EXHIBITION BUTTONS -->
-                <a href='./search/*:*/Exhibition:"rashid+al-din|||Rashid+al-Din"'>
+                <a href='./search/*:*/Exhibition:"rashid+al-din|||Rashid+al-Din"' title="Link to Rashid al-Din collection">
                     <button class="exhibit-button" alt="link to view all items in the collection">
                         <p>View all items</p>
                     </button>
                 </a>
-                <a href="./rashid" alt="Rashid al-Din" title="Rashid al-Din Information Page">
+                <a href="./rashid" alt="Rashid al-Din" title="Link to Rashid al-Din Information Page">
                     <button id="view-gap" class="exhibit-button" alt="link to view exhibition deatils">
                         <p>View Exhibition</p>
                     </button>
                 </a>
             </div>
-            <a href="./rashid" alt="Rashid al-Din" title="Rashid al-Din">
+            <a href="./rashid" alt="Rashid al-Din" title="Link to Rashid al-Din Information Page">
                 <div id="exhib-tile-1" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
             </a>
 
@@ -553,18 +548,18 @@
                 </p>
 
                 <!-- EXHIBITION BUTTONS -->
-                <a href='./search/*:*/Exhibition:"50+years+50+books|||50+Years+50+Books"'>
+                <a href='./search/*:*/Exhibition:"50+years+50+books|||50+Years+50+Books"' title="Link to 50 Years, 50 Books collection">
                     <button class="exhibit-button" alt="link to view all items in the collection">
                         <p>View all items</p>
                     </button>
                 </a>
-                <a href="./50years" alt="50 Years, 50 Books" title="50 Years, 50 Books Information Page">
+                <a href="./50years" alt="50 Years, 50 Books" title="Link to 50 Years, 50 Books Information Page">
                     <button id="view-gap" class="exhibit-button" alt="link to view exhibition deatils">
                         <p>View Exhibition</p>
                     </button>
                 </a>
             </div>
-            <a href="./50years" alt="50 Years, 50 Books" title="50 Years, 50 Books">
+            <a href="./50years" alt="50 Years, 50 Books" title="Link to 50 Years, 50 Books Information Page">
                 <div id="exhib-tile-2" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
             </a>
 
@@ -589,18 +584,18 @@
                 </p>
 
                 <!-- EXHIBITION BUTTONS -->
-                <a href='./search/*:*/Exhibition:"collect.ed|||Collect.ed"'>
+                <a href='./search/*:*/Exhibition:"collect.ed|||Collect.ed"' title="Link to Collect.ed collection">
                     <button class="exhibit-button" alt="link to view all items in the collection">
                         <p>View all items</p>
                     </button>
                 </a>
-                <a href="./collected" alt="Collect.ed" title="Collect.ed Information Page">
+                <a href="./collected" alt="Collect.ed" title="Link to Collect.ed Information Page">
                     <button id="view-gap" class="exhibit-button" alt="link to view exhibition deatils">
                         <p>View Exhibition</p>
                     </button>
                 </a>
             </div>
-            <a href="./collected" alt="Collect.ed" title="Collect.ed">
+            <a href="./collected" alt="Collect.ed" title="Link to Collect.ed Information Page">
                 <div id="exhib-tile-3" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
             </a>
 
@@ -629,18 +624,18 @@
                 </p>
 
                 <!-- EXHIBITION BUTTONS -->
-                <a href='./search/*:*/Exhibition:"edinburgh+300+cradle+of+chemistry|||Edinburgh+300+Cradle+of+Chemistry"'>
+                <a href='./search/*:*/Exhibition:"edinburgh+300+cradle+of+chemistry|||Edinburgh+300+Cradle+of+Chemistry"' title="Link to Cradle of Chemistry collection">
                     <button class="exhibit-button" alt="link to view all items in the collection">
                         <p>View all items</p>
                     </button>
                 </a>
-                <a href="./cradle" alt="Cradle of Chemistry" title="Cradle of Chemistry Information Page">
+                <a href="./cradle" alt="Cradle of Chemistry" title="Link to Cradle of Chemistry Information Page">
                     <button id="view-gap" class="exhibit-button" alt="link to view exhibition deatils">
                         <p>View Exhibition</p>
                     </button>
                 </a>
             </div>
-            <a href="./cradle" alt="Cradle of Chemistry" title="Cradle of Chemistry">
+            <a href="./cradle" alt="Cradle of Chemistry" title="Link to Cradle of Chemistry Information Page">
                 <div id="exhib-tile-4" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
             </a>
 
@@ -667,18 +662,18 @@
                 </p>
 
                 <!-- EXHIBITION BUTTONS -->
-                <a href='/search/*:*/Exhibition:"object+lessons|||Object+Lessons"'>
+                <a href='/search/*:*/Exhibition:"object+lessons|||Object+Lessons"' title="Link to Object Lessons collection">
                     <button class="exhibit-button" alt="link to view all items in the collection">
                         <p>View all items</p>
                     </button>
                 </a>
-                <a href="./objectlessons" alt="Object Lessons" title="Object LessonsInformation Page">
+                <a href="./objectlessons" alt="Object Lessons" title="Link to Object Lessons Information Page">
                     <button id="view-gap" class="exhibit-button" alt="link to view exhibition deatils" alt="link to view exhibition deatils">
                         <p>View Exhibition</p>
                     </button>
                 </a>
             </div>
-            <a href="./objectlessons" alt="Object Lessons" title="Object Lessons">
+            <a href="./objectlessons" alt="Object Lessons" title="Link to Object Lessons Information Page">
                 <div id="exhib-tile-5" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
             </a>
 

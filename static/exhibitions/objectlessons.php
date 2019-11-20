@@ -7,13 +7,13 @@
             Curated by: Duncan Macmillan
         </p>
         <br>
-        <a href="<?php echo base_url() ?>past#object-anchor">
-            <button id="exhibition-back" class="exhibit-button" alt="link back to full past exhibiton list">
+        <a href="<?php echo base_url() ?>past#object-anchor" alt="link back to full past exhibiton list" title="Link back to full past exhibiton list">
+            <button id="exhibition-back" class="exhibit-button">
                 <p>Back to full list</p>
             </button>
         </a>
-        <a href='/search/*:*/Exhibition:"object+lessons|||Object+Lessons"'>
-            <button class="exhibit-button" alt="link to view exhibition items">
+        <a href='/search/*:*/Exhibition:"object+lessons|||Object+Lessons"' alt="link to all items in this collection" title="Link to all items in this collection">
+            <button class="exhibit-button">
                 <p>View all items</p>
             </button>
         </a>
@@ -80,49 +80,49 @@
             
             <ul id="object-list">
                 <li>
-                    <a href="http://www.objectlessons.lib.ed.ac.uk/hi_res_panos/main.htm" target = "_blank" title = "High res images" alt = "High res images">
+                    <a href="http://www.objectlessons.lib.ed.ac.uk/hi_res_panos/main.htm" target = "_blank" title = "High res video" alt = "High res video">
                         <button class="exhibit-button" id="object-button"  alt="link to quicktime video">
                             <p>Bodies, inside and out</p>
                         </button>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.objectlessons.lib.ed.ac.uk/hi_res_panos/face.htm" target = "_blank" title = "High res images" alt = "High res images">
+                    <a href="http://www.objectlessons.lib.ed.ac.uk/hi_res_panos/face.htm" target = "_blank" title = "High res video" alt = "High res video">
                         <button class="exhibit-button" id="object-button" alt="link to quicktime video">
                             <p>From bones to boards and housing knowledge</p>
                         </button>
                     </a>    
                 </li>
                 <li>
-                    <a href="http://www.objectlessons.lib.ed.ac.uk/hi_res_panos/face.htm" target = "_blank" title = "High res images" alt = "High res images">
+                    <a href="http://www.objectlessons.lib.ed.ac.uk/hi_res_panos/face.htm" target = "_blank" title = "High res video" alt = "High res video">
                         <button class="exhibit-button" id="object-button" alt="link to quicktime video">
                             <p>The human face</p>
                         </button>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.objectlessons.lib.ed.ac.uk/hi_res_panos/sound.htm" target = "_blank" title = "High res images" alt = "High res images">
+                    <a href="http://www.objectlessons.lib.ed.ac.uk/hi_res_panos/sound.htm" target = "_blank" title = "High res video" alt = "High res video">
                         <button class="exhibit-button" id="object-button" alt="link to quicktime video">
                             <p>Sound</p>
                         </button>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.objectlessons.lib.ed.ac.uk/hi_res_panos/figures1.htm" target = "_blank" title = "High res images" alt = "High res images">
+                    <a href="http://www.objectlessons.lib.ed.ac.uk/hi_res_panos/figures1.htm" target = "_blank" title = "High res video" alt = "High res video">
                         <button class="exhibit-button" id="object-button" alt="link to quicktime video">
                             <p>Figures in the landscape (1)</p>
                         </button>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.objectlessons.lib.ed.ac.uk/hi_res_panos/figures2.htm" target = "_blank" title = "High res images" alt = "High res images">
+                    <a href="http://www.objectlessons.lib.ed.ac.uk/hi_res_panos/figures2.htm" target = "_blank" title = "High res video" alt = "High res video">
                         <button class="exhibit-button" id="object-button" alt="link to quicktime video">
                             <p>Figures in the landscape (2)</p>
                         </button>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.objectlessons.lib.ed.ac.uk/hi_res_panos/barker.htm" target = "_blank" title = "High res images" alt = "High res images">
+                    <a href="http://www.objectlessons.lib.ed.ac.uk/hi_res_panos/barker.htm" target = "_blank" title = "High res video" alt = "High res video">
                         <button class="exhibit-button" id="object-button" alt="link to quicktime video">
                             <p>Barker's Panorama</p>
                         </button>

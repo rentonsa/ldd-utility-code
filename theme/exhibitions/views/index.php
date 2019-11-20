@@ -48,26 +48,30 @@
 
                 <!-- SECTION INFO -->
                 <div id="info-container" class="exhibit-info">
-                    <h2 class="right-align-h">Welcome to the University of Edinburgh Library Exhibitions</h2>
+                    <h2 class="right-align-h" alt="welocme statement">Welcome to the University of Edinburgh Library Exhibitions</h2>
 
-                    <p class="right-align-p" >                       
+                    <p class="right-align-p" alt="description of collections">                       
                         From meteorites, to World War II escape maps, rare books, anatomical specimens, and contemporary art, our exciting exhibition programme showcases the University’s vast and varied heritage collections<br>    
                     </p>
-                    <p id="link-p" class="right-align-p">
-                        If you would like find out more about the University’s collections, please visit the <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc" alt="Link to the University of Edinburgh's Centre for Research Collection site" title="External link to the University of Edinburgh's Centre for Research Collection site">Centre for Research Collections</a>
+                    <p id="link-p" class="right-align-p" alt="description of collections">
+                        If you would like find out more about the University’s collections, please visit the <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc" alt="Link to the University of Edinburgh's Centre for Research Collection site" title="External link to the University of Edinburgh's Centre for Research Collection site" target="_blank">Centre for Research Collections</a>
                     </p>
 
                     <div class="image-box-xtra-smol">
-                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Current main exhibition logo" title="current exhibtion logo">
+                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitboxes/box_2.jpg" alt="Current main exhibition logo" title="current exhibtion logo">
                     </div>
 
                     <p class="right-align-p" alt="Current main exhibition title">
-                    CURRENT EXHIBITION: BODY LANGUAGE                      
+                        NEXT EXHIBITION: TOUCHING STITCHES                      
                     </p>
 
                     <!-- OPENING TIMES FOR TODAY -->
                     <!-- generated using javascript file "openingtimes.js" -->
-                    <p id="opening-times" class="right-align-p" alt="Library opening times for today">
+                    <!--<p id="opening-times" class="right-align-p" alt="Library opening times for today">
+                    </p>-->
+                    <p class="right-align-p">
+                        CLOSED<br/> 
+                        (The gallery is closed from 27 October to 29 November for exhibition changeover)
                     </p>
 
                     <!-- SECTION BUTTONS -->
@@ -79,7 +83,7 @@
                         </a>
                         <a href="#current-exhibition-anchor" alt="Link to current main exhibition" title="Link to current main exhibition section">
                             <button id="quick-button" class="exhibit-button">
-                                <p>Curent Exhibition</p>
+                                <p>Current Exhibition</p>
                             </button>
                         </a>
                     </div>
@@ -176,7 +180,7 @@
                     </p>
                     <img id="email" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/email.png" alt="Email icon" title="Email icon">
                     <p id="visit-first-email" class="left-align-p">
-                        <a id="email-link" href="mailto: museums@ed.ac.uk" title="click to email library exhibtions">museums@ed.ac.uk</a><br/>
+                        <a id="email-link" href="mailto: museums@ed.ac.uk" title="click to email library exhibtions" target="_blank">museums@ed.ac.uk</a><br/>
                     </p>
                     <img id="phone" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/phone.png" alt="Phone icon" title="Phone icon">
                     <p id="visit-second-phone" class="left-align-p" alt="library phone number" title="click to call library exhibitions">                             
@@ -221,62 +225,7 @@
 
             <!-- SECTION TITLE -->
             <h1 id="current-exhibitions" class="left-align-h1" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">Current Exhibition</h1>
-
-            <!-- SECTION CONTAINER -->
-            <div class="exhibition-container">
-
-                <!-- SECTION LOGO -->
-                <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">         
-                    <a>
-                        <div class="image-box" >
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo" title="Body Language logo">
-                        </div>
-                    </a>
-                </div>
-
-                <!-- SECTION INFO -->
-                <div id="info-container" class="exhibit-info" data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
-                <div class="anchor" id="current-exhibition-anchor" ></div>
-                    <h2 class="right-align-h" alt="current main exhibition title">Body Language</h2>
-
-                    <p class="right-align-p" alt="current main exhibition description">                       
-                        Delve into the archives of Dunfermline College of Physical Education, Scottish Gymnastics, and the influential dance pioneer Margaret Morris (1891-1980), and discover Scotland’s significant contributions to movement and dance
-                    </p>
-
-                    <p id="info-gap" class="right-align-p" alt="current main exhibition location">                       
-                        MAIN LIBRARY EXHIBITION GALLERY<br>
-                        GROUND FLOOR
-                    </p>
-                    <p class="right-align-p" alt="current main exhibition open dates">
-                        26 JULY 2019 - 26 OCTOBER 2019
-                    </p>
-                    <p class="right-align-p" id="last-p" alt="current main exhibition opening times">
-                        MONDAY to SATURDAY 10:00 - 17:00 (Plus Sundays Throughout August)
-                    </p>
-
-                    <!-- BUTTON TO CURRENT EXHIBITION COLLECTION -->
-                    <!-- * commented out as none exists currently -->
-                    <!--<a id="info-gap" href="<?php base_url()?>bodylanguage">
-                        <button class="exhibit-button">
-                            <p>View Exhibition</p>
-                        </button>
-                    </a>-->
-
-                    <!-- SECTION ADDITIONAL LOGOS -->
-                    <img class="associated-logo" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/welcome-trust-logo-long.png" alt="The Welcome Trust Logo" title="The Welcome Trust Logo">
-                    <img class="associated-logo" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/fringe-logo-white.png" alt="Edinburgh Fringe Festival Logo" title="Edinburgh Fringe Festival Logo">
-                    <img class="associated-logo" id="pandk" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/culture-perth-kinross-logo.png" alt="Culture: Perth and Kinroos Logo" title="Culture: Perth and Kinroos Logo">
-
-                </div>
-                    
-            </div>
-
-            <!-- SECTION DIVIDER -->
-            <div id="past-container" class="divider" data-100-bottom-top="transform: translateY(0px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
-
-            <!-- SECTION TITLE --> 
-            <h1 id="coming-exhibitions" class="left-align-h1" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1" alt="exhibitons coming soon">Coming Soon</h1>
-
+            
             <!-- SECTION CONTAINER -->
             <div class="exhibition-container">
 
@@ -284,7 +233,7 @@
                 <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
                     <a>
                         <div class="image-box" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitboxes/box_2.png" alt="Forthcoming Exhibit logo" title="Embroidered Stories logo">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitboxes/box_2.jpg" alt="Forthcoming Exhibit logo" title="Embroidered Stories logo">
                         </div>
                     </a>
                 </div>
@@ -293,7 +242,7 @@
                 <div id="coming-exhibit-info" >
                     <div data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
                         <h2 class="right-align-h" alt="forthcoming exhibition title">
-                            Embroidered Stories
+                            Touching Stitches
                         </h2>
             
                         <p class="right-align-p" alt="forthcoming exhibition description">                       
@@ -303,7 +252,7 @@
                         </p>
                         <br>
                         <p class="right-align-p" alt="forthcoming exhibition description continued"> 
-                            Explore this collection at Edinburgh College of Art’s <strong><a href="https://embroideredstories.eca.ed.ac.uk/" alt="link to forthcoming exhibition contributors external website" title="External link Edinburgh College of Art’s Embroided Stories extenal collection website">Embroidered Stories Collection</a></strong>
+                            Explore this collection at Edinburgh College of Art’s <strong><a href="https://embroideredstories.eca.ed.ac.uk/" alt="link to forthcoming exhibition contributors external website" title="External link Edinburgh College of Art’s Embroided Stories extenal collection website" target="_blank">Embroidered Stories Collection</a></strong>
                         </p> 
 
                         <p id="info-gap" class="right-align-p" alt="forthcoming exhibition location">                       
@@ -316,6 +265,9 @@
                         <p class="right-align-p" alt="forthcoming exhibition opening times">
                             MONDAY to SATURDAY 10:00 - 17:00
                         </p>
+                        <p class="right-align-p" alt="forthcoming exhibition opening times">
+                            (The gallery will be closed from 25 December to 3 January for the winter holidays)
+                        </p>
 
                         <!-- BUTTON TO CURRENT EXHIBITION COLLECTION -->
                         <!-- * commented out as none exists currently -->
@@ -327,10 +279,13 @@
 
                     </div>
                 </div>
-            </div>
+            </div>    
 
             <!-- SECTION DIVIDER -->
             <div id="past-container" class="divider" data-100-bottom-top="transform: translateY(0px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
+
+            <!-- SECTION TITLE --> 
+            <h1 id="coming-exhibitions" class="left-align-h1" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1" alt="exhibitons coming soon">Coming Soon</h1>
 
             <!-- SECTION CONTAINER -->
             <div class="exhibition-container" id="exhibition-divide">
@@ -358,7 +313,7 @@
                         </p>
                         <br>
                         <p class="right-align-p" alt="forthcoming exhibition description continued">                       
-                            Courtesy of the <a href="http://mubaneducationaltrust.org/" alt="link to forthcoming exhibition contributors website" title="External link to Muban Educational Trust website">Muban Educational Trust</a>.
+                            Courtesy of the <a href="http://mubaneducationaltrust.org/" alt="link to forthcoming exhibition contributors website" title="External link to Muban Educational Trust website" target="_blank">Muban Educational Trust</a>.
                         </p>
                         <p id="info-gap" class="right-align-p" alt="forthcoming exhibition location">                       
                             MAIN LIBRARY EXHIBITION GALLERY<br>
@@ -491,7 +446,7 @@
                 <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">         
                     <a href="https://test.exhibitions.ed.ac.uk/conectando">
                         <div class="image-box" >
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo" title="Body Language logo">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitboxes/box_2.jpg" alt="Current main library exhibition logo" title="Body Language logo">
                         </div>
                     </a>
                 </div>
@@ -499,30 +454,22 @@
                 <!-- SECTION INFO -->
                 <div id="info-container" class="exhibit-info" data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
                 <div class="anchor" id="current-exhibition-anchor" ></div>
-                    <h2 class="right-align-h" alt="current main exhibition title">Body Language: Exhibition Tours </h2>
+                    <h2 class="right-align-h" alt="current main exhibition title">Embroidery Workshop</h2>
 
                     <p class="right-align-p" alt="current main exhibition description">                       
-                        JJoin our exhibitions officer for a tour of Body Language. Featuring gym wear, films, photographs and trophies, this display explores the pioneering role women play in Scotland’s physical education and dance.
+                        Join us to create your own embroidery design inspired by the exhibition. No experience necessary, tutors will be on hand to help. Refreshments provided.
                     </p>
 
-                    <p id="info-gap" class="right-align-p" alt="current main exhibition location">                       
-                            EXHIBITION GALLERY<br>
-                            GROUND FLOOR, MAIN LIBRARY<br>
-                    </p>
                     <br>
                     <p class="right-align-p" alt="current main exhibition dates">
-                        7 AUGUST 2019 15:00  |  14 AUGUST 2019 14:00  |  21 AUGUST 2019 14:00  |  27 AUGUST 2019 14:00<br>
-                        <br>
-                        10 SEPTEMBER 2019 14:00 | 11 SEPTEMBER 2019 14:00 | 13 SEPTEMBER 2019 14:00<br>
-                        <br>
-                        16 OCTOBER 2019 14:00<br>
+                        30 JANUARY 2020 14:30 - 16.30
                         <br>
                         FREE ENTRY
                     </p>
 
                     <!-- BUTTON TO CURRENT EXHIBITION COLLECTION -->
                     <!-- * commented out as none exists currently -->
-                    <a id="info-gap" href="<?php base_url()?>bltoursevent" alt="Link to view full event details" title="Link to view full event details">
+                    <a id="info-gap" href="<?php base_url()?>embroideryworkshopevent" alt="Link to view full event details" title="Link to view full event details">
                         <button class="exhibit-button">
                             <p>View Event</p>
                         </button>
@@ -542,7 +489,7 @@
                 <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">         
                     <a href="https://test.exhibitions.ed.ac.uk/conectando">
                         <div class="image-box" id="event-divide" >
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo" title="Body Language logo">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitboxes/box_2.jpg" alt="Current main library exhibition logo" title="Body Language logo">
                         </div>
                     </a>
                 </div>
@@ -550,26 +497,23 @@
                 <!-- SECTION INFO -->
                 <div id="info-container" class="exhibit-info" data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
                 <div class="anchor" id="current-exhibition-anchor" ></div>
-                    <h2 class="right-align-h" id="event-divide" alt="current main exhibition title">Body Language: Design Your Own Gym Wear </h2>
+                    <h2 class="right-align-h" id="event-divide" alt="current main exhibition title">Talk and Object Handling Session with Lindy Richardson</h2>
 
                     <p class="right-align-p" alt="current main exhibition description">                       
-                        From heavy calico dresses worn with woolen tights to spandex and lyrca, women’s gym wear has certainly changed over the last century! Delve into the archives of Dunfermline College of Physical Education, Scottish Gymnastics, and the dancer Margaret Morris, to discover the different trends of the 20th century before taking to the coloured pens and paper to create your own gym-ready trend!
-                    </p>
-
-                    <p id="info-gap" class="right-align-p" alt="current main exhibition location">                       
-                        MAIN LIBRARY<br>
+                        Discover the history of the Needlework Development Scheme and its uses today and participate in an object handling session using the collections.
                     </p>
                     <br>
+
                     <p class="right-align-p" alt="current main exhibition dates">
-                        6 SEPTEMBER 2019 14:00 - 16:00<br>
+                        1 FEBRUARY 2020 11:00 - 12:30<br>
                         <br>
-                        2 OCTOBER 2019 14:00 - 16:00<br>
+                        5 FEBRUARY 2020 13:30 - 15:00<br>
                         <br>
                         FREE ENTRY
                     </p>
 
                     <!-- BUTTON TO CURRENT EXHIBITION COLLECTION -->
-                    <a id="info-gap" href="<?php base_url()?>gymwearevent" alt="Link to view full event details" title="Link to view full event details">
+                    <a id="info-gap" href="<?php base_url()?>embroiderytalkevent" alt="Link to view full event details" title="Link to view full event details">
                         <button class="exhibit-button">
                             <p>View Event</p>
                         </button>
@@ -588,7 +532,7 @@
                 <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">         
                     <a href="https://test.exhibitions.ed.ac.uk/conectando">
                         <div class="image-box" id="event-divide" >
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo" title="Body Language logo">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitboxes/box_2.jpg" alt="Current main library exhibition logo" title="Body Language logo">
                         </div>
                     </a>
                 </div>
@@ -596,71 +540,29 @@
                 <!-- SECTION INFO -->
                 <div id="info-container" class="exhibit-info" data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
                 <div class="anchor" id="current-exhibition-anchor" ></div>
-                    <h2 class="right-align-h" id="event-divide" alt="current main exhibition title">The Dancer & the Gymnast</h2>
+                    <h2 class="right-align-h" id="event-divide" alt="current main exhibition title">Touching stitches: Exhibition Tours</h2>
 
                     <p class="right-align-p" alt="current main exhibition description">                       
-                    In this talk, Richard Emerson examines how the dancer, Margaret Morris transformed her London stage school into a worldwide movement promoting the remedial benefits of dance and exercise.
+                        Join us for a 30 minute tour of the exhibition on any of the above dates. A member of staff will also be present in the gallery on these days from 2-4pm.                    
                     </p>
                     <br>
                     <p class="right-align-p" alt="current main exhibition dates">
-                        CENTRE FOR RESEARCH COLLECTIONS<br>
+                        EXHIBITION GALLERY
                         <br>
-                        6TH FLOOR, MAIN LIBRARY<br>
+                        GROUND FLOOR, MAIN LIBRARY<br>
                         <br>
-                        24 OCTOBER 2019 12:30 - 13:30 <br>
+                        11 DECEMBER 2019 14:30<br>
+                        <br>
+                        15 JANUARY 2020 14:30<br>
+                        <br>
+                        12 FEBRUARY 2020 14:30 | 26 FEBRUARY 2020 14:30<br>
                         <br>
                         FREE ENTRY
                     </p>
 
                     <!-- BUTTON TO CURRENT EXHIBITION COLLECTION -->
                     <!-- * commented out as none exists currently -->
-                    <a id="info-gap" href="<?php base_url()?>dancergymnastevent" alt="Link to view full event details" title="Link to view full event details">
-                        <button class="exhibit-button">
-                            <p>View Event</p>
-                        </button>
-                    </a>
-
-                </div>
-                    
-            </div>
-
-            <!-- SECTION DIVIDER -->
-            <div id="past-container" class="divider" data-100-bottom-top="transform: translateY(0px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
-
-            <!-- SECTION CONTAINER -->
-            <div class="exhibition-container">
-
-                <!-- SECTION LOGO -->
-                <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">         
-                    <a href="https://test.exhibitions.ed.ac.uk/conectando">
-                        <div class="image-box" id="event-divide" >
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Curent main library exhibition logo" title="Body Language logo">
-                        </div>
-                    </a>
-                </div>
-
-                <!-- SECTION INFO -->
-                <div id="info-container" class="exhibit-info" data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
-                <div class="anchor" id="current-exhibition-anchor" ></div>
-                    <h2 class="right-align-h" id="event-divide" alt="current main exhibition title">Introduction to Margaret Morris Movement</h2>
-
-                    <p class="right-align-p" alt="current main exhibition description">                       
-                        Join Sara Lockwood for an introduction to Margaret Morris Movement and look after your health and well-being through creative dance.
-                    </p>
-                    <br>
-                    <p class="right-align-p" alt="current main exhibition dates">
-                        V/A LOCATIONS<br>
-                        <br>
-                        <strong>PLEASANCE SPORT COMPLEX</strong> : 11 OCTOBER 2019 14:00 - 16:00<br>
-                        <br>
-                        <strong>DANCE BASE</strong> : 27 OCTOBER 2019 10:00 - 12:00<br>
-                        <br>
-                        FREE ENTRY<br>
-                    </p>
-
-                    <!-- BUTTON TO CURRENT EXHIBITION COLLECTION -->
-                    <!-- * commented out as none exists currently -->
-                    <a id="info-gap" href="<?php base_url()?>morrisevent" alt="Link to view full event details" title="Link to view full event details">
+                    <a id="info-gap" href="<?php base_url()?>embroiderytoursevent" alt="Link to view full event details" title="Link to view full event details">
                         <button class="exhibit-button">
                             <p>View Event</p>
                         </button>
@@ -721,18 +623,18 @@
                 <!-- SOCIAL MEDIA LOGOS -->
                 <div id="social-image-block" >
                     <div class="social-image-box">
-                        <a href=" https://twitter.com/UoE_Exhibitions?lang=en" alt="external link to library exhibitions twitter account">
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/socialicons/twittericon.png" alt="Twitter Icon" title="External link to Library Exhibitions Twitter account">
+                        <a href=" https://twitter.com/UoE_Exhibitions?lang=en" alt="external link to library exhibitions twitter account" title="External link to Library Exhibitions Twitter account" target="_blank">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/socialicons/twittericon.png" alt="Twitter Icon">
                         </a>
                     </div>
                     <div class="social-image-box">
-                        <a href=" https://en-gb.facebook.com/crc.edinburgh/" alt="external link to library exhibitions facebook account">
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/socialicons/facebookicon.png" alt="Facebook Icon" title="External link to Library Exhibitions Facebook account">
+                        <a href=" https://en-gb.facebook.com/crc.edinburgh/" alt="external link to library exhibitions facebook account" title="External link to Library Exhibitions Facebook account" target="_blank">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/socialicons/facebookicon.png" alt="Facebook Icon">
                         </a>
                     </div>
                     <div class="social-image-box">
-                        <a href="http://libraryblogs.is.ed.ac.uk/" alt="link to library exhibitions wordpress account">
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/socialicons/wordpressicon.png" alt="Wordpress Icon" title="External link to Library Exhibitions Wordpress account">
+                        <a href="http://libraryblogs.is.ed.ac.uk/" alt="link to library exhibitions wordpress account"title="External link to Library Exhibitions Wordpress account" target="_blank">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/socialicons/wordpressicon.png" alt="Wordpress Icon" >
                         </a>
                     </div>
                     
@@ -740,7 +642,7 @@
 
                 <p id="support-p" class="right-align-p" alt="supporting the library description">
                     Opportunities are available throughout the year to help with visitor experience, events, exhibition installs, and evaluation. If you are interested in volunteering with us please complete our 
-                    <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc/volunteers-interns/volunteer-enquiry-form" alt="link to volunteer enquirery form for those that wish to get involved" title="Link to volunteer enquirery form">volunteering enquiry form</a> 
+                    <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc/volunteers-interns/volunteer-enquiry-form" alt="link to volunteer enquirery form for those that wish to get involved" title="Link to volunteer enquirery form" traget="_blank">volunteering enquiry form</a> 
                 </p>               
         
             </div>

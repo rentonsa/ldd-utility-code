@@ -54,12 +54,12 @@
 
                     <em><?php echo $label ?></em>
                     <?php if($label != "Date") { ?>
-                    <a id="a-z" href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>" alt="sort by a-z">A-Z</a> |
-                    <a id="z-a" href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>" alt="sort by z-a">Z-A</a>
+                    <a id="a-z" href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>" alt="sort by a-z" title="Sort by a-z">a-z</a> |
+                    <a id="z-a" href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>" alt="sort by z-a" title="Sort by z-a">z-a</a>
                     <br>
                 <?php } else { ?>
-                    <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>" alt="sort by newest first">newest</a> |
-                    <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>" alt="sort by oldest first">oldest</a>
+                    <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>" alt="sort by newest first" title="Sort by newest first">newest</a> |
+                    <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>" alt="sort by oldest first" title="Sort by oldest first">oldest</a>
             <?php } } } ?>
                 
             </span>
@@ -123,7 +123,7 @@
                             $lower_orig_filter = strtolower($exhibition);
                             $lower_orig_filter = urlencode($lower_orig_filter);
 
-                            echo '<a class="reverse" href="./search/*:*/Exhibition:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22" alt="item exhibition tag filter">'.$exhibition.'</a>';
+                            echo '<a class="reverse" href="./search/*:*/Exhibition:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22" alt="item exhibition tag filter" title="Filter by tag">'.$exhibition.'</a>';
                             $num_ex++;
                             if($num_ex < sizeof($doc[$exhibition_field])) {
                                 echo ' ';
@@ -146,7 +146,7 @@
                             $lower_orig_filter = strtolower($author);
                             $lower_orig_filter = urlencode($lower_orig_filter);
 
-                            echo '<a href="./search/*:*/Creator:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22" alt="item author tag filter">'.$author.'</a>';
+                            echo '<a href="./search/*:*/Creator:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22" alt="item author tag filter" title="Filter by tag">'.$author.'</a>';
                             $num_authors++;
                             if($num_authors < sizeof($doc[$author_field])) {
                                 echo ' ';
@@ -159,7 +159,7 @@
                 </div> <!-- close tags div -->
 
                 <!-- VIEW ITEM BUTTON -->
-                <a id="search-item-view" href="./record/<?php echo $doc['id']?>?highlight=<?php echo $query ?>" alt="view item button">
+                <a id="search-item-view" href="./record/<?php echo $doc['id']?>?highlight=<?php echo $query ?>" alt="view item button" title="Lick to item details page">
                     <button class="exhibit-button">
                         <p>View Item</p>
                     </button>

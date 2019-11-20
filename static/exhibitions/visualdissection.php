@@ -46,14 +46,14 @@
     <br>
     <p id="individual-exhibition-p" class="right-align-p"><a id="anatomy" href="http://www.ed.ac.uk/biomedical-sciences/anatomy/" target="_blank" title="Anatomy@Edinburgh Link">Anatomy@Edinburgh</a> </p>
 
-    <a href="<?php echo base_url() ?>past#visualdissection-anchor">
-            <button id="exhibition-back" class="exhibit-button" alt="link back to full past exhibiton list">
+    <a href="<?php echo base_url() ?>past#visualdissection-anchor" alt="link back to full past exhibiton list" title="Link back to full past exhibiton list">
+            <button id="exhibition-back" class="exhibit-button">
                 <p>Back to full list</p>
             </button>
         </a>
 
-    <a href='./search/*:*/Exhibition:"visual+dissection|||Visual+Dissection"'>
-        <button class="exhibit-button" alt="link to view exhibition items">
+    <a href='./search/*:*/Exhibition:"visual+dissection|||Visual+Dissection"' alt="link to all items in this collection" title="Link to all items in this collection">
+        <button class="exhibit-button">
             <p>View all items</p>
         </button>
     </a>

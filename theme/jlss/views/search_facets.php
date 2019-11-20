@@ -11,7 +11,7 @@
                 ?>
                 <ul class="list-group">
                     <li class="list-group-item active">
-                        <a href="./browse/<?php echo $facet['name']; ?>">
+                        <a href="./browse/<?php echo $facet['name']; ?>" alt="sidae bar facet link" title="Click to view all <?php echo $facet['name'] ?>s">
                             <?php echo $facet['name'] ?>
                         </a></li>
 
@@ -54,7 +54,8 @@
                     foreach($inactive_terms as $term) { ?>
                         <li class="list-group-item">
                             <span class="badge"><?php echo $term['count']; ?></span>
-                            <a href='<?php echo $base_search; ?>/<?php echo $facet['name']; ?>:"<?php echo $term['name']; ?>"<?php echo $base_parameters ?>'><?php echo $term['display_name'];?>
+                            <a href='<?php echo $base_search; ?>/<?php echo $facet['name']; ?>:"<?php echo $term['name']; ?>"<?php echo $base_parameters ?>'
+                            alt="link to a collection" title="Click to view all items in the collection: <?php echo $term['display_name'];?>"><?php echo $term['display_name'];?>
                             </a>
                         </li>
                         <?php
@@ -71,7 +72,8 @@
                             ?>
                             <li class="list-group-item">
                                 <span class="badge"><?php echo $term['count']; ?></span>
-                                <a class="deselect" href='<?php echo $remove; ?>/<?php echo $facet['name']; ?>:<?php echo $term['name']; ?><?php if(isset($operator)) echo '?operator='.$operator; ?>'><?php echo $term['display_name'];?>
+                                <a class="deselect" href='<?php echo $remove; ?>/<?php echo $facet['name']; ?>:<?php echo $term['name']; ?><?php if(isset($operator)) echo '?operator='.$operator; ?>'
+                                    alt="link to a collection" title="Click to view all items in the collection: <?php echo $term['display_name'];?>"><?php echo $term['display_name'];?>
                                 </a></li>
                             <?php
                         }

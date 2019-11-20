@@ -85,7 +85,8 @@ $bitstreamLinks = array();
                 <div class="image-disclaimer">
                     <p class="image-disclaimer">
                         * All reasonable steps have been taken to establish copyright on the above image. If you feel that copyright has been infringed 
-                        and would like to request that this image be taken down, please contact a member of <a href="https://www.sjac.org.uk/contact/" class="image-disclaimer">SJAC</a>
+                        and would like to request that this image be taken down, please contact a member of <a href="https://www.sjac.org.uk/contact/" 
+                        alt="link to sjac website" title="Click to contact SJAC via their website" class="image-disclaimer">SJAC</a>
                     </p>
 
             <!--echo '<img class="record_image" src="' .  . 'http://test.cantaloupe.is.ed.ac.uk/iiif/2/info.json">';-->
@@ -118,7 +119,8 @@ $bitstreamLinks = array();
                                 $lower_orig_filter = strtolower($metadatavalue);
                                 $lower_orig_filter = urlencode($lower_orig_filter);
 
-                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/'.$orig_filter.'" alt="View items witch share the same subject">'.$metadatavalue.'</a></span>';
+                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/'.$orig_filter.'" alt="View items witch share the same subject" 
+                                        title="Click to view items with the subject ' . $metadatavalue .'">'.$metadatavalue.'</a></span>';
                             }
                             else {
 
@@ -146,12 +148,13 @@ $bitstreamLinks = array();
             }
             ?>
             </tbody>
-        </table>
+        </table>    
     </div>
     <?php
     $title = preg_replace('/\s/', "+", $colName);
     echo '<div class="row">
-        <a href="' . base_url() . $this->config->item('skylight_theme') . '/search/*:*/Collection:%22' .strtolower(preg_replace('/([A-Z]+)/', "$1", $title)) .'%7C%7C%7C' . $title .'%22"><button class="btn btn-info" alt="Link back to items parent collection"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Back to '. $colName .'</button>
+        <a href="' . base_url() . $this->config->item('skylight_theme') . '/search/*:*/Collection:%22' .strtolower(preg_replace('/([A-Z]+)/', "$1", $title)) .'%7C%7C%7C' . $title .'%22">
+        <button class="btn btn-info" alt="Link back to items parent collection" title="Click to return to the ' . preg_replace('/[^a-zA-Z0-9\']/', ' ', $title) .' collection"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Back to '. $colName .'</button>
     </div>'
     ?>
 

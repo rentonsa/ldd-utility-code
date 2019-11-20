@@ -10,7 +10,7 @@
             <div class="anchor" id="firstpaevent-anchor"></div>
 
             <div class="event-image-box">
-                <img class="event-image" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="event logo">
+                <img class="event-image" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="event logo" title="Body Language logo">
             </div>
 
                 <p class="event-p" alt="event description">
@@ -40,18 +40,18 @@
                     FREE ENTRY
                 </p>
 
-                <!--<a id="info-gap" href="./eventexample" alt="Event Related Buttons" title="Event Related Buttons">
+                <!--<a id="info-gap" href="./eventexample" alt="book or buy tickets link" title="External link to book space on event">
                     <button id="eventlist-button" class="exhibit-button" alt="view event link">
                         <p>View Event Details</p>
                     </button>
                 </a>-->
-                <a id="info-gap" href="https://www.eventbrite.co.uk/e/introduction-to-margaret-morris-movement-tickets-72360621567" alt="Event Related Buttons" title="Event Related Buttons">
-                    <button id="eventlist-button" class="exhibit-button" alt="book or buy tickets link">
+                <a id="info-gap" href="https://www.eventbrite.co.uk/e/introduction-to-margaret-morris-movement-tickets-72360621567" alt="book or buy tickets link" title="External link to book space on event">
+                    <button id="eventlist-button" class="exhibit-button">
                         <p>Book (Dance Base)</p>
                     </button>
                 </a> 
-                <a id="info-gap" href="https://www.eventbrite.co.uk/e/introduction-to-margaret-morris-movement-tickets-72360621567" alt="Event Related Buttons" title="Event Related Buttons">
-                    <button id="eventlist-button" class="exhibit-button" alt="book or buy tickets link">
+                <a id="info-gap" href="https://www.eventbrite.co.uk/e/introduction-to-margaret-morris-movement-tickets-72360621567" alt="book or buy tickets link" title="External link to book space on event">
+                    <button id="eventlist-button" class="exhibit-button">
                         <p>Book (Pleasance)</p>
                     </button>
                 </a>

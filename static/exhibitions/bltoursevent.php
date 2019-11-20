@@ -10,7 +10,7 @@
             <div class="anchor" id="firstpaevent-anchor"></div>
 
             <div class="event-image-box">
-                <img class="event-image" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="event logo">
+                <img class="event-image" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="event logo" title="Body Language logo">
             </div>
 
                 <p class="event-p" alt="event description">
@@ -33,8 +33,8 @@
                         <p>View Event Details</p>
                     </button>
                 </a>-->
-                <a id="info-gap" href="https://bit.ly/31bT4Uo" alt="Event Related Buttons" title="Event Related Buttons">
-                    <button id="eventlist-button" class="exhibit-button" alt="book or buy tickets link">
+                <a id="info-gap" href="https://bit.ly/31bT4Uo" alt="book or buy tickets link" title="External link to book space on event" traget="_blank">
+                    <button id="eventlist-button" class="exhibit-button">
                         <p>Book / Buy Tickets</p>
                     </button>
                 </a>     

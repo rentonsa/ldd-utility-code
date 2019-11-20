@@ -21,15 +21,9 @@
         </p>
     </div>
 
-    <a href="<?php echo base_url() ?>past#revel-anchor">
-            <button id="revel-back" class="exhibit-button" alt="link back to full past exhibiton list">
+    <a href="<?php echo base_url() ?>past#revel-anchor" alt="link back to full past exhibiton list" title="Link back to full past exhibiton list">
+            <button id="exhibition-back" class="exhibit-button">
                 <p>Back to full list</p>
             </button>
         </a>
-
-    <a id="revel-button">
-        <button class="exhibit-button">
-            <p>Coming Soon</p>
-        </button>
-    </a>
 </div>

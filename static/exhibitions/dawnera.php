@@ -7,8 +7,8 @@
             The NHS was born on 5 July 1948. From Scotland’s pre-1948 experiments in state health care, to medical breakthroughs, public health challenges and patient power, this display highlights the past 70 years of our region’s medical history through the collections of Lothian Health Services Archive (LHSA).
         </p>
 
-        <a href="<?php echo base_url() ?>past#dawnera-anchor">
-            <button id="exhibition-back" class="exhibit-button" alt="link back to full past exhibiton list">
+        <a href="<?php echo base_url() ?>past#dawnera-anchor" alt="link back to full past exhibiton list" title="Link back to full past exhibiton list">
+            <button id="exhibition-back" class="exhibit-button">
                 <p>Back to full list</p>
             </button>
         </a>

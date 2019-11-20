@@ -124,12 +124,12 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li><a href="./" title="Scottish Jewish Archives Centre" class="nav-link">Home</a></li>
-                        <li><a href="./about" title="About Link" class="nav-link">About</a></li>
+                        <li><a href="./about" title="Link to about page" class="nav-link">About</a></li>
                         <li><a href="https://www.sjac.org.uk/" title="Open new window to SJAC Home Page" target="_blank" class="nav-link">SJAC</a></li>
                         <li><a href="http://jewishmigrationtoscotland.is.ed.ac.uk/" title="Open new window to JLSS Blog" target="_blank" class="nav-link">JLSS Blog</a></li>
                         <!--<li><a href="./contact" title="Contact Details">Contact</a></li>-->
                         <li><a href="https://www.sjac.org.uk/about/donations/" title="Open new window to SJAC Donation page" target="_blank" class="nav-link">Donate</a></li>
-                        <li><a href="./feedback" title="Feedback Information" class="nav-link">Feedback</a></li>
+                        <li><a href="./feedback" title="Link to feedback information page" class="nav-link">Feedback</a></li>
                     </ul>
                 </div>
             </div>
@@ -138,14 +138,14 @@
             <div class="container">
 
                 <div class="header-normal">
-                    <a href="<?php echo base_url(); ?>">
+                    <a href="<?php echo base_url(); ?>" title="Click to return to home page">
                         <div id="collection-title" alt="Website title">Scottish Jewish Archives Centre <br>
                             <div id="collection-sub-title"alt="Website sub-title">Digital Collection </div>
                         </div>
                     </a>
                         
                     <div id="collection-logo">
-                        <a href="<?php echo base_url(); ?>">
+                        <a href="<?php echo base_url(); ?>" title="Click to return to home page">
                             <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/sjac_logo.png" alt="Scottish Jewish Archives Logo" class="img-responsive pull-right img-circle">
                         </a>
                     </div>

@@ -67,14 +67,14 @@
         </p>
         <br>
 
-        <a href="<?php echo base_url() ?>past#rashid-anchor">
-            <button id="exhibition-back" class="exhibit-button" alt="link back to full past exhibiton list">
+        <a href="<?php echo base_url() ?>past#rashid-anchor" alt="link back to full past exhibiton list" title="Link back to full past exhibiton list">
+            <button id="exhibition-back" class="exhibit-button">
                 <p>Back to full list</p>
             </button>
         </a>
         
-        <a href='./search/*:*/Exhibition:"rashid+al-din|||Rashid+al-Din"'>
-            <button class="exhibit-button" alt="link to view exhibition items">
+        <a href='./search/*:*/Exhibition:"rashid+al-din|||Rashid+al-Din"' alt="link to all items in this collection" title="Link to all items in this collection">
+            <button class="exhibit-button">
                 <p>View all items</p>
             </button>
         </a>
@@ -91,14 +91,14 @@
             <h3 id="object-divide">on the LUNA imaging platform</h3>
             <br>
 
-            <a href="http://images.is.ed.ac.uk/luna/servlet/s/kwl89a" target = "_blank" title = "High res images" alt = "High res images">
-                <button class="exhibit-button" id="object-button" alt="link to online version of the full book">
+            <a href="http://images.is.ed.ac.uk/luna/servlet/s/kwl89a" target = "_blank" title = "link to high resolution online version of the full book" alt="link to online version of the full book">
+                <button class="exhibit-button" id="object-button">
                     <p>The full book</p>
                 </button>
             </a>
             <h3 id="object-divide">using LUNA's page-turning software</h3>
             <br>
-            <a href="http://vimeo.com/103231632" target = "_blank" title = "High res images" alt = "High res images">
+            <a href="http://vimeo.com/103231632" target = "_blank" title = "Link to the time lapse film" alt = "Link to the time lapse film">
                 <button class="exhibit-button" id="object-button" alt="link to time lapse of exhibition install">
                     <p>The time lapse film</p>
                 </button>

@@ -12,12 +12,12 @@
         <div class="content-divider-inline"><p>divider</p></div>
 
         <div class="about-para">
-            <p> <a href="https://www.sjac.org.uk/" target="_blank">Scottish Jewish Archives Centre</a> 
+            <p> <a href="https://www.sjac.org.uk/" target="_blank" alt="link to the SJAC website" title="Click to visit the SJAC home page">Scottish Jewish Archives Centre</a> 
                 is dedicated to preserving Scotland's Jewish heritage. Since 1987 we have 
                 been collecting historic material relating to the experiences of Jewish people in Scotland over the past 200 
                 years. We document, preserve, exhibit and publish aspects of the collections and make the collections available 
                 for education, academic research, tourists and visitors of all kinds.  We welcome research enquiries and visitors 
-                and organise regular <a href="https://www.sjac.org.uk/news-events/" target="_blank">Open Days</a> and events.
+                and organise regular <a href="https://www.sjac.org.uk/news-events/" target="_blank" alt="link to the SJAC website" title="Click to visit the SJAC news and events page">Open Days</a> and events.
             </p>
         </div>
         
@@ -25,8 +25,10 @@
         <div class="content-divider-inline"><p>divider</p></div>
 
         <div class="about-para">
-            <p><a href="http://gtr.rcuk.ac.uk/project/CBEEB0C2-2F73-4D86-B95A-04D906257602" target="_blank">Jewish Lives, Scottish 
-                Spaces</a> was a research project funded by the <a href="http://www.ahrc.ac.uk/Pages/Home.aspx" target="_blank">Arts 
+            <p><a href="http://gtr.rcuk.ac.uk/project/CBEEB0C2-2F73-4D86-B95A-04D906257602" target="_blank" 
+                alt="link to the JLSS blog page" title="Click to visit the JLSS blog">Jewish Lives, Scottish 
+                Spaces</a> was a research project funded by the <a href="http://www.ahrc.ac.uk/Pages/Home.aspx" target="_blank" 
+                alt="link to the HRC home page" title="Click to visit the Humanities Research Council home page">Arts 
                 and Humanities Research Council</a>. It was a joint project between the Universities of Edinburgh and Glasgow that ran 
                 from September 2015 until April 2018.
             </p>
@@ -71,7 +73,7 @@
                 Glasgow<br>
                 G3 6UB<br>
                 <strong>Tel:</strong> +44 (0)141 332 4911<br>
-                <strong>Email:</strong> <a class="email" href="info@sjac.org.uk">info@sjac.org.uk</a><br/>
+                <strong>Email:</strong> <a class="email" href="mailto:info@sjac.org.uk" alt="email link to SJAC" title="Click to email the SJAC team">info@sjac.org.uk</a><br/>
             </p>
         </div>
 

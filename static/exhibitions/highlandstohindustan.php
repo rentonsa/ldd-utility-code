@@ -27,8 +27,8 @@
             to the art and culture of South Asia
         </p>
 
-        <a href="<?php echo base_url() ?>past#highlandhindustan-anchor">
-            <button id="exhibition-back" class="exhibit-button" alt="link back to full past exhibiton list">
+        <a href="<?php echo base_url() ?>past#highlandhindustan-anchor" alt="link back to full past exhibiton list" title="Link back to full past exhibiton list">
+            <button id="exhibition-back" class="exhibit-button">
                 <p>Back to full list</p>
             </button>
         </a>

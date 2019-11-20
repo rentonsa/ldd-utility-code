@@ -66,8 +66,8 @@
         <br>
         <p id="individual-exhibition-p" class="right-align-p" alt="exhibition description">This exhibition celebrates the individuals and institutions who made, and continue to make, extraordinary advances in animal and human health. It will take you on a journey ‘Towards Dolly’ and beyond</p>
 
-        <a href="<?php echo base_url() ?>past#towardsdolly-anchor">
-            <button id="exhibition-back" class="exhibit-button" alt="link back to full past exhibiton list">
+        <a href="<?php echo base_url() ?>past#towardsdolly-anchor" alt="link back to full past exhibiton list" title="Link back to full past exhibiton list">
+            <button id="exhibition-back" class="exhibit-button">
                 <p>Back to full list</p>
             </button>
         </a>

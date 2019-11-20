@@ -7,7 +7,8 @@
                 <div class="input-group search-box">
                     <input type="text" spellcheck="value" class="form-control" placeholder="Search" name="q" value="<?php if (isset($searchbox_query)) echo urldecode($searchbox_query); ?>" id="q" />
                     <span class="input-group-btn">
-                        <button type="submit" class="btn btn-default" name="submit_search" value="Search" id="submit_search"><i class="glyphicon glyphicon-search"></i></button>
+                        <button type="submit" class="btn btn-default" name="submit_search" value="Search" id="submit_search" 
+                                alt="submit search button" title="Click to submit search"><i class="glyphicon glyphicon-search"></i></button>
                     </span>
                 </div>
             </form>

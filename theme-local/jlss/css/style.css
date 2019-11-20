@@ -268,6 +268,7 @@ header .container   { padding: 0;}
 .list-group-item.active:hover   { background-color:083061; color: #FFFFFF;}
 
 .list-group-item.active a       { color: #FFFFFF; letter-spacing: 1px;}
+#browse-list                    { margin-left: 0;}
 
 .related-items .list-group-item.active         { background-color: #0950a0; color: #FFFFFF;}
 .related-items .list-group-item.active:hover   { background-color:#083061; color: #FFFFFF;}
