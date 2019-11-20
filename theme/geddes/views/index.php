@@ -12,6 +12,7 @@
     <!--<div class="frontimage"></div>-->
 </div>
 <div class="col-lg">
+    <h1 class="warning">THIS SITE IS IN BETA TESTING AND IS NOT YET AN AUTHORITATIVE RESOURCE</h1>
     <h1 class="itemtitle">An online portal to the Patrick Geddes Archives.</h1>
     <div id="cf">
         <img src="https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~99338~100004/1696,226,4475,1959/700,/0/default.jpg"/>
@@ -23,6 +24,7 @@
     <!--<div class="frontimage"></div>-->
 </div>
 <div class="col-md">
+    <h1 class="warning">THIS SITE IS IN BETA TESTING AND IS NOT YET AN AUTHORITATIVE RESOURCE</h1>
     <h1 class="itemtitle">An online portal to the Patrick Geddes Archives.</h1>
     <div id="cf">
         <img src="https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~99338~100004/1696,226,4475,1959/400,/0/default.jpg"/>
@@ -34,6 +36,7 @@
     <!--<div class="frontimage"></div>-->
 </div>
 <div class="col-sm">
+    <h1 class="warning">THIS SITE IS IN BETA TESTING AND IS NOT YET AN AUTHORITATIVE RESOURCE</h1>
     <h1 class="itemtitle">An online portal to the Patrick Geddes Archives.</h1>
     <div id="cf">
         <img src="https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~99338~100004/1696,226,4475,1959/290,/0/default.jpg"/>

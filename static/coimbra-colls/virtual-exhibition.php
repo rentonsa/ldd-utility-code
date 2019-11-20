@@ -40,7 +40,7 @@
                 practice through mutual exchange of experience.
                 <br><br>
                 <b>
-                    <a href="">More information on the Coimbra Group Website</a></b>
+                    <a href="https://www.coimbra-group.eu/" target="_blank">More information on the Coimbra Group Website</a></b>
             </div>
         </div>
     </div>

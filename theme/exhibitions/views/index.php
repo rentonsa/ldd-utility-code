@@ -460,10 +460,6 @@
                         Join us to create your own embroidery design inspired by the exhibition. No experience necessary, tutors will be on hand to help. Refreshments provided.
                     </p>
 
-                    <p id="info-gap" class="right-align-p" alt="current main exhibition location">                       
-                        EXHIBITION GALLERY<br>
-                        GROUND FLOOR, MAIN LIBRARY<br>
-                    </p>
                     <br>
                     <p class="right-align-p" alt="current main exhibition dates">
                         30 JANUARY 2020 14:30 - 16.30
@@ -506,11 +502,8 @@
                     <p class="right-align-p" alt="current main exhibition description">                       
                         Discover the history of the Needlework Development Scheme and its uses today and participate in an object handling session using the collections.
                     </p>
-
-                    <p id="info-gap" class="right-align-p" alt="current main exhibition location">                       
-                        MAIN LIBRARY<br>
-                    </p>
                     <br>
+
                     <p class="right-align-p" alt="current main exhibition dates">
                         1 FEBRUARY 2020 11:00 - 12:30<br>
                         <br>

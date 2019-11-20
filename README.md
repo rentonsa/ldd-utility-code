@@ -53,7 +53,7 @@ live on you computer which will change in the container as well (note that you m
 
 The final step is to do port forwarding inside the container:
 
-`docker exec -it skylight_eercs bash`
+`docker exec -it skylight_eerc bash`
 
 and then
 
