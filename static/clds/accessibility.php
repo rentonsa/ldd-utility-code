@@ -1,7 +1,7 @@
 <div class="container">
     <div class="content byEditor">
         <h1>Accessibility statement for the University of Edinburgh Collections Website</h1>
-        <h3>https://collections.ed.ac.uk)</h3>
+        <h3>https://collections.ed.ac.uk</h3>
         <h4>Website accessibility statement inline with Public Sector Body (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018</h4>
 
         <p>The University of Edinburgh Collections website is run by the University of Edinburgh. It links to a number of sub sites which have their own accessibility statements
