@@ -156,18 +156,14 @@
                     <li><button onclick="browse_unis()" class="dropbtn">Visit &#9660;</button>
                     <div id="unis-dropdown" class="dropdown-content">
                         <a href='./aberdeen'>University of Aberdeen</a>
-                        <a href='./abertay'>University of Abertay</a>
                         <a href='./dundee'>University of Dundee</a>
                         <a href='./edinburgh'>University of Edinburgh</a>
                         <a href='./glasgow'>University of Glasgow</a>
-                        <a href='./glasgow-cal'>Glasgow Caledonian University</a>
                         <a href='./gsa'>Glasgow School of Art</a>
                         <a href='./heriot-watt'>Heriot-Watt University</a>
                         <a href='./rgu'>Robert Gordon University</a>
-                        <a href='./rcs'>Royal College of Surgeons</a>
                         <a href='./stirling'>University of Stirling</a>
                         <a href='./st-andrews'>University of St Andrews</a>
-                        <a href='./west-of-scot'>University of the West of Scotland</a>
                     </div>
                     </li>
                     <li><a href="./blog">Blog</a></li>
