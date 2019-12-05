@@ -131,7 +131,3 @@
         $grid.masonry('layout');
     });
 </script>
-
-
-
-
