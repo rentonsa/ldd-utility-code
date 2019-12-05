@@ -19,14 +19,6 @@
     ?>
 
     <div class="container-fluid">
-
-    <!-- Attempt to get collection name from search -->
-        <?php foreach($facet['terms'] as $term) { ?>
-            <h1 class="title-badge"><?php echo $term['count']; ?></span><a href='<?php echo $base_search; ?>/<?php echo $facet['name']; ?>
-                            <?php echo $delimiter?>"<?php echo $term['name']; ?>"<?php if(isset($operator)) echo '?operator='.$operator; ?>'>
-                            <?php echo $term['display_name'];?></a>
-        </h1>
-
         <div class="searchFoundRow">
             <span class="searchFound"><?php echo $rows ?> instruments found </span>
         </div>
