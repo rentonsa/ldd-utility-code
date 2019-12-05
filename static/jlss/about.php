@@ -1,53 +1,82 @@
 <div class="col-md-9 col-sm-9 col-xs-12">
+    
     <div class="content byEditor">
-        <h1 class="itemtitle">Case note cataloguing at LHSA</h1>
 
-        <p> Modern archival case records are rich resources for medical humanities researchers, clinicians and genealogists
-            alike, giving context to ground-breaking procedures and telling fascinating stories about the development of
-            medical care in the twentieth century. Case notes are collected documents produced during the treatment and
-            care of a particular patient. Loose notes in folders superseded the use of bound books from the mid-1920s,
-            and they record the progress of patients in a range of ways, from typed summaries and charts to
-            handwritten notes, x-rays, photographs, drawings and letters.</p>
+        <div id="about-image">
+            <img src="../../theme/jlss/images/sjac-temp.jpg" alt="Garnethill Synagogue" class="img-responsive">
+        </div>
+        <br>
+        <br>
+        
+        <h1> The Scottish Jewish Archives Centre</h1>
+        <div class="content-divider-inline"><p>divider</p></div>
 
-        <p>Despite case notes’ potential as academic resources, their research use to date has been limited. Researchers
-            can be deterred by case notes’ physical condition (often housed in original folders), the sheer number of
-            records produced, time-consuming searches for a particular category of data and case notes’ extremely specialist
-            medical language. Confidentiality restrictions on modern health records also mean that potential researchers
-            have to meet strict conditions for access even for scoping purposes. Previous grants from the Wellcome Trust
-            have rehoused many of LHSA's most significant collections of
-            <a href="http://www.lhsa.lib.ed.ac.uk/conservation/conserv_case_notes.htm" title="Case Notes" target="_blank"> case notes</a>,
-            removing physical barriers to their access. LHSA’s case note cataloguing aims to remove more intellectual hurdles.</p>
+        <div class="about-para">
+            <p> <a href="https://www.sjac.org.uk/" target="_blank" alt="link to the SJAC website" title="Click to visit the SJAC home page">Scottish Jewish Archives Centre</a> 
+                is dedicated to preserving Scotland's Jewish heritage. Since 1987 we have 
+                been collecting historic material relating to the experiences of Jewish people in Scotland over the past 200 
+                years. We document, preserve, exhibit and publish aspects of the collections and make the collections available 
+                for education, academic research, tourists and visitors of all kinds.  We welcome research enquiries and visitors 
+                and organise regular <a href="https://www.sjac.org.uk/news-events/" target="_blank" alt="link to the SJAC website" title="Click to visit the SJAC news and events page">Open Days</a> and events.
+            </p>
+        </div>
+        
+        <h1> Jewish Lives, Scottish Spaces</h1>
+        <div class="content-divider-inline"><p>divider</p></div>
 
-        <p> Funded by the Wellcome Trust, in 2012 LHSA began a
-            <a href="http://www.lhsa.lib.ed.ac.uk/projects/Cataloguingcasenotes.htm" title="Cataloguing Case Notes" target="_blank">project</a> to catalogue
-            over 26,500 cases created by renowned Edinburgh neurosurgeon, Norman Dott.
-            <i>Cataloguing Norman Dott’s neurosurgical case notes (1920 – 1960)</i> developed a methodology that describes each
-            case in language accessible to researchers from different backgrounds whilst protecting patient privacy. Using
-            the Encoded Archival Description (EAD) eXtensible Mark-up Language (XML) standard along with tailored index terms
-            enables confidential data to be hidden from a public, online catalogue whilst emphasising other, non-identifying
-            details for search.</p>
+        <div class="about-para">
+            <p><a href="http://gtr.rcuk.ac.uk/project/CBEEB0C2-2F73-4D86-B95A-04D906257602" target="_blank" 
+                alt="link to the JLSS blog page" title="Click to visit the JLSS blog">Jewish Lives, Scottish 
+                Spaces</a> was a research project funded by the <a href="http://www.ahrc.ac.uk/Pages/Home.aspx" target="_blank" 
+                alt="link to the HRC home page" title="Click to visit the Humanities Research Council home page">Arts 
+                and Humanities Research Council</a>. It was a joint project between the Universities of Edinburgh and Glasgow that ran 
+                from September 2015 until April 2018.
+            </p>
+            <p>As Jews in Scotland moved between and within, into and out of local and transnational spaces, the objects they saved, used 
+                and created reveal how Jews self-identified as they negotiated issues such as antisemitism, assimilation, cultural loss, 
+                memory and the Holocaust, nationalism and belonging. The materiality of such Scottish Jewish ‘memory objects’ testifies to 
+                the visibility of aspects of the past in the immediate environment of people’s new lives in Scotland. The location and placement 
+                of these items within a Scottish landscape offers a rich ground for the investigation of various processes of cultural transition 
+                and provides a link to the study of the city and Jewish space, thus making the best use of the available archival resources and 
+                material evidence.
+            </p>
+        </div>
+        
+        <h1> Our Collections </h1>
+        <div class="content-divider-inline"><p>divider</p></div>
 
-        <p>When LHSA was awarded a further Wellcome Trust Research Resources grant in 2013, the same methodology was used
-            to describe cases from a very different specialism. <i>RVH v TB: a project to catalogue LHSA’s Royal Victoria Hospital
-            Tuberculosis and Diseases of the Chest Case Notes and Registers</i> will catalogue over 24,000 individual cases
-            treated in the Royal Victoria Hospital, in its dispensary and sanatoriums and in the Scottish Mass Miniature
-            Radiography (MMR) campaigns of 1957 and 1958. Although the cataloguing methodology remains basically the same
-            as that used for Dott’s cases, the nature of tuberculosis means that certain details are emphasised above
-            others for search.</p>
+        <div class="about-para">
+            <p>The Centre collects a wide range of material, and its large collection includes old synagogue minute books and registers, 
+                membership lists, over 6,000 photographs, oral history recordings, annual reports of many communal organisations, a small 
+                library of books of Scottish Jewish interest, friendly society regalia, personal papers, war medals, ceremonial keys, 
+                newspapers, magazines, trophies, plaques, paintings and sculptures.
+            </p>
+        </div>
+
+        <h1> Open To everyone </h1>
+        <div class="content-divider-inline"><p>divider</p></div>
+
+        <div class="about-para">
+            <p> These collections are documented, preserved and exhibited for the benefit of the general public, and visitors including 
+                researchers, school pupils, students, postgraduates, journalists, television producers, tourists, family historians and others.
+            </p>
+        </div>
 
         <h1>Contact Details</h1>
-        <p>
-            For further information  please contact:
-        </p>
-        <p><strong>Lothian Health Services Archive</strong><br>
-            Centre for Research Collections<br>
-            University of Edinburgh<br>
-            Main Library<br>
-            30 George Square<br>
-            Edinburgh,<br>
-            EH8 9LJ<br>
-            Tel: 0131 650 3392<br>
-            Email: <a class="email" href="mailto:lhsa@ed.ac.uk">lhsa@ed.ac.uk</a><br/>
-        </p>
+        <div class="content-divider-inline"><p>divider</p></div>
+
+        <div class="about-para">
+            <p><strong>Scottish Jewish Archives Centre</strong><br>
+                Garnethill Hebrew Congregation<br>
+                129 Hill Street<br>
+                Garnethill<br>
+                Glasgow<br>
+                G3 6UB<br>
+                <strong>Tel:</strong> +44 (0)141 332 4911<br>
+                <strong>Email:</strong> <a class="email" href="mailto:info@sjac.org.uk" alt="email link to SJAC" title="Click to email the SJAC team">info@sjac.org.uk</a><br/>
+            </p>
+        </div>
+
     </div>
+
 </div>

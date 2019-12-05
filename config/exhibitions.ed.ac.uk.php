@@ -49,7 +49,8 @@ $config['skylight_fields'] = array('Title' => 'dc.title.en',
     'Identifier' => 'dc.identifier.en',
     'Shelfmark' => 'dc.identifier.other.en',
     'Tags' => 'dc.subject.crowdsourced.en',
-    'Exhibition' => 'dc.relation.ispartofexhibition.en'
+    'Exhibition' => 'dc.relation.ispartofexhibition.en',
+    'ImageUri' => 'dc.identifier.imageUri.en',
 );
 
 $config['skylight_schema_links'] = array(
@@ -69,6 +70,7 @@ $config['skylight_schema_links'] = array(
         'Identifier' => 'identifier',
         'Shelfmark' => 'identifier',
         'Tags' => 'keywords',
+        'ImageUri' => 'image',
         //'Exhibition' => 'Collection'
 
 );
@@ -96,6 +98,7 @@ $config['skylight_search_fields'] = array(
 );
 
 $config['skylight_related_fields'] = array('Exhibition' => 'dc.relation.ispartofexhibition.en', 'Subject' => 'dc.subject.en', 'Creator' => 'dc.contributor.author.en');
+$config['skylight_related_number'] = 5;
 
 $config['skylight_sort_fields'] = array(
     'Creator' => 'dc.contributor.author_sort ', 'Title' => 'dc.title_sort'
@@ -129,5 +132,8 @@ $config['skylight_lightbox_mimes'] = array('image/jpeg', 'image/gif', 'image/png
 $config['skylight_language_default'] = 'en';
 $config['skylight_language_options'] = array('en', 'ko', 'jp');
 $config['skylight_highlight_fields'] = 'dc.title.en,dc.contributor.author.en,dc.subject.en,dc.description.en,dc.relation.ispartof.en';
+
+$config['skylight_homepage_fullwidth'] = true;
+$config['skylight_facets_in_main'] = true;
 
 ?>

@@ -13,11 +13,11 @@
         <h1>University Collections</h1>
         <p>
             Special Collections include manuscripts and archives, rare books, photographs, printed and handwritten music, architectural drawings, theses and microfilms. The collections relate to University of Edinburgh and its history, and to Scotland and the wider world.</p>
-        <p>In total we have about 35 kilometres of historic material, much of which cannot be found anywhere else in the world. <a href="http://collections.ed.ac.uk" Title="University Collections Home">collections.ed.ac.uk</a>
+        <p>In total we have about 35 kilometres of historic material, much of which cannot be found anywhere else in the world. <a href="http://collections.ed.ac.uk" Title="University Collections Home" alt="link to the univeristy of edinburgh collections website">collections.ed.ac.uk</a>
         </p>
         <h1>Centre for Research Collections</h1>
         <p>
-            Further information about the <a href="http://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery/crc" title="Centre for Research Collections" target="_blank">Centre for Research Collections</a>.
+            Further information about the <a href="http://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery/crc" title="Centre for Research Collections" target="_blank" alt="link to the university of edinburghs centre for research collections">Centre for Research Collections</a>.
         </p>
         <h1>Contact Details</h1>
         <p>
@@ -25,9 +25,9 @@
         </p>
         <h1>Centre for Research Collections</h1>
         <p>
-            Further information about the <a href="http://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery/crc" title="Centre for Research Collections" target="_blank">Centre for Research Collections</a>.
+            Further information about the <a href="http://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery/crc" title="Centre for Research Collections" target="_blank" alt="link to the university of edinburghs centre for research collections">Centre for Research Collections</a>.
         </p>
-        <p>
+        <p alt="contact infomation for the univeristy library exhibitions department">
             Centre for Research Collections<br />
             Edinburgh University Library,<br />
             George Square,<br />
