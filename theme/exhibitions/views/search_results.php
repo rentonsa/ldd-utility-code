@@ -13,6 +13,8 @@
         $thumbnail_field = $this->skylight_utilities->getField('Thumbnail');
         $subject_field = $this->skylight_utilities->getField('Subject');
 
+        $item_count = 1;
+
         $base_parameters = preg_replace("/[?&]sort_by=[_a-zA-Z+%20. ]+/","",$base_parameters);
         if($base_parameters == "") {
             $sort = '?sort_by=';
@@ -21,38 +23,52 @@
             $sort = '&sort_by=';
         }
     ?>
+
+    <!-- RESULTS NAVIGATION AND FILTERS -->
     <div class="listing-filter">
-        <span class="no-results">
-            <strong><?php echo $startrow ?>-<?php echo $endrow ?></strong> of
-            <strong><?php echo $rows ?></strong> results
-        </span>
+        <div class="listing-block" id="num">
+            <span class="no-results">
+                <strong><?php echo $startrow ?>-<?php echo $endrow ?></strong> of
+                <strong><?php echo $rows ?></strong> results
+            </span>
+        </div>
 
-        <span class="sort">
-            <strong>Sort by</strong>
-            <?php foreach($sort_options as $label => $field) {
-                if($label == 'Relevancy')
-                {
-                    ?>
-                    <em><a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc'?>"><?php echo $label ?></a></em>
-                    <?php
-                }
-                else {
-            ?>
+        <!-- LINKS TO RELSULT PAGES BY NUMBER -->
+        <div class="listing-block" id="page" alt="links to pages by number">
+            <?php echo $pagelinks ?>
+        </div>
 
-                <em><?php echo $label ?></em>
-                <?php if($label != "Date") { ?>
-                <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>">A-Z</a> |
-                <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>">Z-A</a>
-            <?php } else { ?>
-                <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>">newest</a> |
-                <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>">oldest</a>
-          <?php } } } ?>
-            
-        </span>
+        <!-- SORT BY FILTERS -->
+        <div class="listing-block" id="sort" alt="sort by filters">
+            <span class="sort">
+                <strong>Sort by</strong>
+                <?php foreach($sort_options as $label => $field) {
+                    if($label == 'Relevancy')
+                    {
+                        ?>
+                        <em><a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc'?>"><?php echo $label ?></a></em>
+                        <?php
+                    }
+                    else {
+                ?>
+
+                    <em><?php echo $label ?></em>
+                    <?php if($label != "Date") { ?>
+                    <a id="a-z" href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>" alt="sort by a-z" title="Sort by a-z">a-z</a> |
+                    <a id="z-a" href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>" alt="sort by z-a" title="Sort by z-a">z-a</a>
+                    <br>
+                <?php } else { ?>
+                    <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>" alt="sort by newest first" title="Sort by newest first">newest</a> |
+                    <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>" alt="sort by oldest first" title="Sort by oldest first">oldest</a>
+            <?php } } } ?>
+                
+            </span>
+        </div>
 
     </div>
 
-
+    
+    <!-- FULL RESLUTS LIST -->
     <ul class="listing">
 
         <?php
@@ -63,10 +79,25 @@
 
         <li<?php if($index == 0) { echo ' class="first"'; } elseif($index == sizeof($docs) - 1) { echo ' class="last"'; } ?>>
             <!--span class="icon <?php echo $type?>"></span-->
-        <div class="item-div">
+        <div class="item-div" >
 
-            <div class = "iteminfo">
-                <h3><a href="./record/<?php echo $doc['id']?>?highlight=<?php echo $query ?>"><?php echo $doc[$title_field][0]; ?>
+            <?php 
+                    if ($item_count == 1) {
+                        echo '<div class = "iteminfo" id="first-item">';
+                        $item_count = $item_count +1;
+                    }
+                    else {
+                        echo '<div class = "iteminfo" id="second-item">';
+                        $item_count = 1;
+                    }
+            ?>
+
+            <!-- INDIVIDUAL ITEM INFO -->
+            <!--<div class = "iteminfo" > data-100-bottom-top="transform: translateY(0px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"-->
+            <div class="item-info-block">
+
+                <!-- ITEM TITLE -->
+                <h3 class="item-header" alt="item title"><a><?php echo $doc[$title_field][0]; ?> <!-- href="./record/<?php echo $doc['id']?>?highlight=<?php echo $query ?>" -->
                 <?php if(array_key_exists($date_field, $doc)) { ?>
                 <?php
                 echo '(' . $doc[$date_field][0] . ')';
@@ -77,8 +108,9 @@
 
                 ?></a></h3>
 
-
-                <div class="tags">
+                <!-- ITEM TAGS -->
+                <div class="tags" alt="item tags">
+                    <p class="item-tags">Tags:</p>
                     <?php if(array_key_exists($exhibition_field,$doc)) { ?>
                         <?php
 
@@ -91,7 +123,7 @@
                             $lower_orig_filter = strtolower($exhibition);
                             $lower_orig_filter = urlencode($lower_orig_filter);
 
-                            echo '<a class="reverse" href="./search/*:*/Exhibition:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$exhibition.'</a>';
+                            echo '<a class="reverse" href="./search/*:*/Exhibition:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22" alt="item exhibition tag filter" title="Filter by tag">'.$exhibition.'</a>';
                             $num_ex++;
                             if($num_ex < sizeof($doc[$exhibition_field])) {
                                 echo ' ';
@@ -114,7 +146,7 @@
                             $lower_orig_filter = strtolower($author);
                             $lower_orig_filter = urlencode($lower_orig_filter);
 
-                            echo '<a href="./search/*:*/Creator:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$author.'</a>';
+                            echo '<a href="./search/*:*/Creator:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22" alt="item author tag filter" title="Filter by tag">'.$author.'</a>';
                             $num_authors++;
                             if($num_authors < sizeof($doc[$author_field])) {
                                 echo ' ';
@@ -126,9 +158,16 @@
 
                 </div> <!-- close tags div -->
 
+                <!-- VIEW ITEM BUTTON -->
+                <a id="search-item-view" href="./record/<?php echo $doc['id']?>?highlight=<?php echo $query ?>" alt="view item button" title="Lick to item details page">
+                    <button class="exhibit-button">
+                        <p>View Item</p>
+                    </button>
+                </a>
 
             </div> <!-- close item-info -->
-
+            
+            <!-- IMAGE THUMBNAIL -->
             <div class = "thumbnail-image">
                 <?php
 
@@ -188,15 +227,15 @@
                                     $t_seq = $t_segments[4];
                                     $t_uri = './record/'.$b_handle_id.'/'.$t_seq.'/'.$t_filename;
 
-                                    $thumbnailLink = '<a title = "' . $doc[$title_field][0] . '" class="fancybox" rel="group' . $j .'" href="' . $b_uri . '"> ';
-                                    $thumbnailLink .= '<img src = "'.$t_uri.'" class="search-thumbnail" title="'. $doc[$title_field][0] .'" /></a>';
+                                    $thumbnailLink = '<a title = "' . $doc[$title_field][0] . '" class="fancybox" rel="group' . $j .'" href="' . $b_uri . '" alt="link to item"> ';
+                                    $thumbnailLink .= '<img src = "'.$t_uri.'" class="search-thumbnail" title="'. $doc[$title_field][0] .'" alt="item thumbnail image"/></a>';
                                 }
                             }
                         }
                         // there isn't a thumbnail so display the bitstream itself
                         else {
-                            $thumbnailLink = '<a title = "' . $doc[$title_field][0] . '" class="fancybox" rel="group' . $j .'" href="' . $b_uri . '"> ';
-                            $thumbnailLink .= '<img src = "'.$b_uri.'" class="search-thumbnail" title="'. $doc[$title_field][0] .'" /></a>';
+                            $thumbnailLink = '<a title = "' . $doc[$title_field][0] . '" class="fancybox" rel="group' . $j .'" href="' . $b_uri . '" alt="link to item"> ';
+                            $thumbnailLink .= '<img src = "'.$b_uri.'" class="search-thumbnail" title="'. $doc[$title_field][0] .'" alt="item thumbnail image"/></a>';
                         }
 
                         echo $thumbnailLink;
@@ -205,9 +244,12 @@
                 } //end if there are bitstreams ?>
 
             </div>
-            <div class="clearfix"></div>
+            </div> <!-- close block -->
+            
+            
             </div> <!-- close item div -->
         </li>
+
             <?php
 
             $j++;
@@ -215,12 +257,39 @@
         } // end for each search result
 
         ?>
+
+        <!-- LINKS TO RELSULT PAGES BY NUMBER -->
+        <div class="listing-block" id="page-bottom">
+            <?php echo $pagelinks ?>
+        </div>
+
+        <!-- BACK BUTTONS -->
+        <a href="./past">
+            <button id="results-button" class="exhibit-button" alt="link back to past exhibitions">
+                <p>Back to Past Exhibitions</p>
+            </button>
+        </a>
+        <?php
+            $current_url = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
+            if (strpos($current_url, '/*') == true){
+                echo '<a href="./search">
+                    <button id="results-button" class="exhibit-button" alt="link back to list of full items">
+                        <p>Back to Full Item List</p>
+                    </button>
+                </a>';
+            }
+        ?>
     </ul>
 
+        
 
-    <div class="pagination">
+
+    </div>
+
+
+    <!--<div class="listing-filter">
         <span class="no-results">
             <strong><?php echo $startrow ?>-<?php echo $endrow ?></strong> of
             <strong><?php echo $rows ?></strong> results </span>
         <?php echo $pagelinks ?>
-    </div>
+    </div>-->

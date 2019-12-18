@@ -7,22 +7,28 @@
     </div>
     <br />
     <div class="browse_results">
-        <div class="term_search">
+        <!--<div class="term_search">
             <form method="get" action="./browse/<?php echo $field; ?>">
                 <div class="input-group">
                     <input name="prefix" class="form-control" id="prefix" value="" placeholder="Starts with: (case sensitive)" />
-                    <span class="input-group-btn"><button type="submit" class="btn btn-primary">
-                            <span class=" glyphicon glyphicon-search"></span>&nbsp; Search</button></span>
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-primary" alt="sumbit search button" title="Submit search">
+                            <span class=" glyphicon glyphicon-search"></span>
+                            &nbsp; Search
+                        </button>
+                    </span>
                 </div>
             </form>
-        </div>
+        </div>-->
         <br />
+        
         <div class="browse_facets">
-            <ul class="list-group">
+            <ul class="list-group" id="browse-list">
                 <?php foreach($facet['terms'] as $term) { ?>
                     <li class="list-group-item">
-                        <span class="badge"><?php echo $term['count']; ?></span><a href='<?php echo $base_search; ?>/<?php echo $facet['name']; ?>
-                            <?php echo $delimiter?>"<?php echo $term['name']; ?>"<?php if(isset($operator)) echo '?operator='.$operator; ?>'>
+                        <span class="badge"><?php echo $term['count']; ?></span>
+                        <a href='<?php echo $base_search; ?>/<?php echo $facet['name']; ?><?php echo $delimiter?>"<?php echo $term['name']; ?>"<?php if(isset($operator)) echo '?operator='.$operator; ?>'
+                                    alt="link to view collection" title="Click to view the <?php echo $term['display_name']; ?> collection">
                             <?php echo $term['display_name'];?></a>
                     </li>
                 <?php } ?>
