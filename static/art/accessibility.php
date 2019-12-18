@@ -135,6 +135,7 @@
         <p>We will continue to monitor the website will carry out further accessibility testing if significant changes are made to the user interface or if a service user raises an issue.</p>
         <p>Whist we are in the process of resolving these accessibility issues we will of course ensure reasonable adjustments are in place to make sure no user is disadvantaged.</p>
         <p>&nbsp;</p>
+        <p>&nbsp;</p>
         <p><strong>This statement was prepared in November 2019. It was last updated on 21st November 2019. </strong></p>
     </div>
 </div>
