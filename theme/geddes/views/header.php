@@ -103,11 +103,15 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="./" title="Medical Case Notes Home Link">Home</a></li>
-                        <li><a href="./about" title="About Link">About</a></li>
-                        <li><a href="./history" title="History Link">History</a></li>
-                        <li><a href="./catalogues" title="Catalogues Link">Catalogues</a></li>
-                        <li><a href="./feedback" title="Feedback Form">Feedback</a></li>
+                        <li><a href="./" title="Geddes Home Link" alt-text="Geddes Notes Home Link">Home</a></li>
+                        <li><a href="./about" title="About Link" alt-text="About Link">About</a></li>
+                        <li><a href="./history" title="History Link" alt-text="History Link">History</a></li>
+                        <li><a href="./people" title="People Link" alt-text="People Link">People</a></li>
+                        <li><a href="./search" title="Catalogue Link" alt-text="Catalogue Link">Catalogue</a></li>
+                        <li><a href="./research" title="Research Resources Link" alt-text="Research Resources Link">Research Resources</a></li>
+                        <li><a href="./blog" title="Blog Link" alt-text="Blog Link">Blog</a></li>
+                        <li><a href="./contact" title="Contact Link" alt-text="Contact Link">Contact</a></li>
+                        <li><a href="./feedback" title="Feedback Form" alt-text="Feedback Form">Feedback</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -119,22 +123,15 @@
                    <!-- <div style="max-width:90px;">
                         <img src="http://images.is.ed.ac.uk/luna/servlet/iiif/UoEart~1~1~4493~100412/full/,96/0/default.jpg" alt="Patrick Geddes" class="Patrick Geddes" />
                     </div>-->
-                    <div id="collection-title"><!--Evergreen:
+                    <a href="." alt-text="Home" title ="Home" id="collection-title"></a><!--Evergreen:
                         <div id="collection-sub-title">The Patrick Geddes Archive</div>-->
+
                     </div>
 
 
-                    <div id="collection-search">
-                        <form action="./redirect/" method="post" class="navbar-form">
-                            <div class="input-group search-box">
-                                <input type="text" class="form-control" placeholder="Search" name="q" value="<?php if (isset($searchbox_query)) echo urldecode($searchbox_query); ?>" id="q" />
-                                <span class="input-group-btn">
-                                    <button type="submit" class="btn btn-default" name="submit_search" value="Search" id="submit_search"><i class="glyphicon glyphicon-search"></i></button>
-                                </span>
-                            </div>
-                        </form>
-                    </div>
+
                 </div>
+
             </div>
         </header>
 

@@ -146,7 +146,7 @@ header .container   { padding: 0;}
 #collection-title a:hover { text-decoration: none; color: #3e541f; }
 
 
-#collection-search      { float: right; padding-top: 40px;}
+#collection-search      { text-align: left; padding-top: 20px;}
 
 
 
@@ -211,7 +211,7 @@ header .container   { padding: 0;}
 footer                          { padding-top: 10px; padding-bottom: 10px;}
 
 .footer-logos                   { padding-bottom: 20px; }
-
+#footer-logos-area              { text-align: center; }
 .footer-policies                { font-size: 14px; margin-bottom: 5px; color: #555555;  text-align: center;}
 
 .footer-policies a, a:active, a:visited         { color: #3a8f44; text-decoration: none;}
@@ -220,53 +220,41 @@ footer                          { padding-top: 10px; padding-bottom: 10px;}
 
 .uoe-logo {
     display: block;
-    width: 119px;
-    height: 88px;
+    width: 28%;
+    height:120px;
     float: left;
-    background: url(../images/UoELogo.gif) no-repeat 0 0;
+    background: url(../images/geddes-edinburgh.jpg) no-repeat 0 0;
     margin-right: 30px;
     margin-top: 5px;
+    background-position: center;
+
+
 }
 
 .wellcome-logo {
     display: block;
-    width: 120px;
+    width: 28%;
     height: 120px;
     float: left;
-    background: url(../images/wellcome-logo-black.gif) no-repeat 0 0;
+    background: url(../images/geddes-wellcome-green.jpg) no-repeat 0 0;
     margin-right: 30px;
+    background-position: center;
+}
+
+.strath-logo {
+    display: block;
+    width: 28%;
+    height: 120px;
+    float: left;
+    background: url(../images/geddes-strathclyde.jpg) no-repeat 0 0;
+    margin-right: 30px;
+    background-position: center;
 }
 
 .index-img {
     padding-bottom: 20px;
 }
 
-.nhs-logo {
-    display: block;
-    width: 80px;
-    height: 80px;
-    float: left;
-    background: url(../images/nhs_lothian_logo_small.png) no-repeat 0 0;
-    margin-right: 30px;
-}
-
-.lhsa-logo {
-    display: block;
-    width: 280px;
-    height: 75px;
-    float: left;
-    background: url(../images/LHSA_Logo.gif) no-repeat 0 0;
-    margin-right: 30px;
-}
-
-.crc-logo {
-    display: block;
-    width: 135px;
-    height: 80px;
-    float: left;
-    background: url(../images/CRC_logo.gif) no-repeat 0 0;
-    margin-right: 30px;
-}
 
 /** images in text */
 .gap-right {
@@ -369,10 +357,10 @@ q:after                             { content: close-quote;  }
         padding-top: 15px;
         padding-left: 15px;
         margin:auto;
-        width:700px;
+        width:1170px;
         height:150px;
         background-repeat: no-repeat;
-        background-image: url("../images/header.png")}
+        background-image: url("../images/n-header.png")}
 
     #cf {
         position:relative;
@@ -404,7 +392,7 @@ q:after                             { content: close-quote;  }
     {
         display:none;
     }
-    .search-box             { width: 280px;}
+    .search-box             { width: 600px;}
 
 }
 
@@ -422,10 +410,10 @@ q:after                             { content: close-quote;  }
         padding-top: 15px;
         padding-left: 15px;
         margin:auto;
-        width:500px;
+        width:768px;
         height:135px;
         background-repeat: no-repeat;
-        background-image: url("../images/header-lg.png")}
+        background-image: url("../images/n-header-lg.png")}
 
     #cf {
         position:relative;
@@ -473,10 +461,10 @@ q:after                             { content: close-quote;  }
         padding-top: 15px;
         padding-left: 15px;
         margin:auto;
-        width:400px;
+        width:576px;
         height:135px;
         background-repeat: no-repeat;
-        background-image: url("../images/header-md.png")
+        background-image: url("../images/n-header-md.png")
     }
     #cf
     {
@@ -616,12 +604,12 @@ q:after                             { content: close-quote;  }
     text-align:center;
 
 }
-/*#cf {
-    position:relative;
+#cf {
+    /*position:relative;
     margin: 0 auto;
-    height:500px;
+    height:500px;*/
     text-align: center;
-}*/
+}
 
 #cf img {
     position: absolute;
@@ -641,7 +629,7 @@ q:after                             { content: close-quote;  }
     animation-name: cf3FadeInOut;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-duration: 25s;
+    animation-duration: 72s;
     animation-direction: alternate;
 
 }
@@ -650,33 +638,79 @@ q:after                             { content: close-quote;  }
     0% {
         opacity:1;
     }
+    8.33% {
+        opacity:0;
+    }
+    16.67% {
+        opacity:0;
+    }
     25% {
+        opacity:0;
+    }
+    33.33% {
+        opacity:0;
+    }
+    41.67% {
         opacity:0;
     }
     50% {
         opacity:0;
     }
+    58.33% {
+        opacity:0;
+    }
+    66.67% {
+        opacity:0;
+    }
     75% {
+        opacity:0;
+    }
+    83.33% {
+        opacity:0;
+    }
+    91.67% {
         opacity:0;
     }
     100% {
         opacity:1;
     }
+
 }
 
 #cf img:nth-of-type(1) {
-    animation-delay: 20s;
+    animation-delay: 66s;
 }
 #cf img:nth-of-type(2) {
-    animation-delay: 15s;
+    animation-delay: 60s;
 }
 #cf img:nth-of-type(3) {
-    animation-delay: 10s;
+    animation-delay: 54s;
 }
 #cf img:nth-of-type(4) {
-    animation-delay: 5s;
+    animation-delay: 48s;
 }
 #cf img:nth-of-type(5) {
+    animation-delay: 42s;
+}
+#cf img:nth-of-type(6) {
+    animation-delay: 36s;
+}
+#cf img:nth-of-type(7) {
+    animation-delay: 30s;
+}
+#cf img:nth-of-type(8) {
+    animation-delay: 24s;
+}
+#cf img:nth-of-type(9) {
+    animation-delay: 18s;
+}
+#cf img:nth-of-type(10) {
+    animation-delay: 12s;
+}
+#cf img:nth-of-type(11) {
+    animation-delay: 6s;
+}
+#cf img:nth-of-type(12) {
     animation-delay: 0s;
 }
 .search-row .thumbnail-image                { display: block; text-align: center; width: 10%; float: left;}
@@ -688,3 +722,17 @@ tr:nth-child(odd) { background: #e6e6e6; }
 .search-row:nth-child(odd) { background: #e6e6e6; }
 .search-row .text {padding-left:5px;width:90%; float:left;}
 .warning {color:red;}
+
+/*Paragraph Classes front page*/
+.quote
+{
+ padding-top: 5px;
+ font-style: italic;
+ font-size: 11pt;
+}
+.cite
+{
+    font-weight: 800;
+    font-size: 9pt;
+    text-align: right;
+}
