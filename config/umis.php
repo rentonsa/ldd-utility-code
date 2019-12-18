@@ -7,7 +7,7 @@ if (strpos($_SERVER['HTTP_HOST'], "test") !== false || strpos($_SERVER['HTTP_HOS
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-6';
-    $config['skylight_container_id'] = '74';
+    $config['skylight_container_id'] = '79';
     $config['skylight_image_server'] = 'https://cantaloupe.is.ed.ac.uk';
 }
 
@@ -35,37 +35,19 @@ $config['skylight_sitemap_type'] = 'internal';
 $config['skylight_fields'] = array(
     'ID'                                    => 'dc.identifier.en',
     'Title'                                 => 'dc.title.en',
-    'Creator'                               => 'dc.creator.en',
-    'Date'                                  => 'dc.coverage.temporal.en',
-    'Place of Origin'                       => 'dc.coverage.spatial.en',
-    'Institution'                           => 'dc.relation.ispartof.en',
-    'Material/Medium'                       => 'dc.format.en',
-    'Dimensions'                            => 'dc.format.extent.en',
+    'Finding Info'                          => 'dc.description.abstract.en',
     'Description'                           => 'dc.description.en',
-    'Institutional Link to Object'          => 'dc.identifier.citation.en',
-    'Institutional Link to Online Portal'   => 'dc.source.uri.en',
-    'Image License'                         => 'dc.license.en',
-    'Image Rights Holder'                   => 'dc.rights.holder.en',
-    'Photographic Credits'                  => 'dc.contributor.en',
     'Metadata Rights'                       => 'dc.rights.en',
     'Image File Name'                       => 'dc.format.bitstream.en',
     'Logo'                                  => 'dc.format.original.en',
-    'Image URL'                             => 'dc.identifier.imageUri',
     'Tags'                                  => 'dc.subject.en',
     'Category'                              => 'dc.relation.ispartofexhibition.en',
     'Logo Thumbnail'                        => 'dc.format.thumbnail.en',
     'Institutional Web URL'                 => 'dc.relation.uri.en',
-    'Institutional Map Reference'           => 'cld.hasLocation.coord.en',
-    'Additional URLs'                       => 'dc.description.uri.en',
-    'University Contact'                    => 'dc.contributor.en',
+    'Institutional Map Reference'           => 'dc.coverage.spatial.en',
     'Contact email'                         => 'dc.contributor.otheremail.en',
-    'Date of Submission'                    => 'dc.date.submitted.en',
-    'Items accumulated (date)'              => 'cld.accumulationDateRange.en',
-    'Items created (date)'                  => 'cld.contentsDateRange',
-    'Image rights'                          => 'dc.rights.en',
-    'Type'                                  => 'cld.type.en',
-    'Physical Location'                     => 'cld.hasLocation.en',
-    'Featured image'                        => 'dc.title.alternative.en'
+    'Additional info'                       => 'dc.title.alternative.en',
+    'Institution'                           => 'dc.relation.ispartof.en'
 );
 
 $config['skylight_date_filters'] = array();
@@ -79,21 +61,25 @@ $config['skylight_meta_fields'] = array('Title' => 'dc.title',
     'Type' => 'dc.type');
 
 $config['skylight_recorddisplay'] = array(
-    'Creator',
-    'Institution',
-    'Type',
-    'Place of Origin',
-    'Date',
+    'ID',
+    'Title' ,
+    'Finding Info',
     'Description',
-    'Institutional Link to Object',
-    'Institutional Link to Online Portal',
+    'Metadata Rights',
+    'Image File Name',
+    'Logo',
     'Tags',
-    'Items accumulated (date)',
-    'Items created (date)'
+    'Category',
+    'Logo Thumbnail',
+    'Institutional Web URL',
+    'Institutional Map Reference',
+    'Contact email',
+    'Additional info',
+    'Institution'
 );
 
 
-$config['skylight_descriptiondisplay'] = array(
+/*$config['skylight_descriptiondisplay'] = array(
     'Dimensions',
     'Material/Medium',
     'Category',
@@ -103,17 +89,14 @@ $config['skylight_descriptiondisplay'] = array(
     'Image Rights Holder',
     'Photographic Credits',
     'Metadata Rights',
-    'Contact email');
+    'Contact email');*/
 
-$config['skylight_searchresult_display'] = array('Title','Instrument','Maker','Subject','Abstract', 'Bitstream', 'Thumbnail');
+$config['skylight_searchresult_display'] = array('Title','Institution');
 
 
 $config['skylight_search_fields'] = array(
     'Title' => 'dc.title',
-    'Type' => 'dc.type',
-    'Maker' => 'dc.contributor.author',
-    'Place Made' => 'dc.coverage.spatial',
-    'Accession Number' => 'dc.identifier.en'
+    'Subject' => 'dc.type',
 );
 
 $config['skylight_related_fields'] = array('Institution' => 'dc.relation.ispartof');

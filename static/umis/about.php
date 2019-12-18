@@ -3,6 +3,16 @@
 
         <div class="information-container col-xs-12 col-md-8 col-md-offset-2">
             <h2>About</h2>
+            <p>All universities hold collections of objects. Some have been collected by the universities themselves or donated by founders, supporters, ex-students or friends. Others have been given to the universities to look after on behalf of other organisations, groups or landowners/important local families from the past.
+
+            Most of these collections are - or have at one time been - used to support teaching, learning and research, and some are there to improve the university environment for students. Most are also available for you to see either in museums, on campus, or by appointment with the university.
+
+            University museums will also hold events, exhibitions and activities open for anyone to attend.
+
+            For more information on how to visit each of the collections, go to our Visit page. </p>
+
+            <h3>Who is UMIS?</h3>
+
             <p>University Museums in Scotland (UMIS) is a network of the nine Scottish university museum services that have achieved
                 <a href ="https://www.artscouncil.org.uk/supporting-arts-museums-and-libraries/uk-museum-accreditation-scheme" alt-text="Accreditation" title="Accreditation" target="_blank">Accreditation</a>
                 – the UK industry standard for museums and galleries.
@@ -32,7 +42,8 @@
                 <li>Coordinator and primary contact: <a href="mailto:sarah.burry-hayes@glasgow.ac.uk" alt-text="mail Sarah Burry-Hayes" title="mail Sarah Burry-Hayes">Sarah Burry-Hayes</a></li>
             </ul>
 
-            <p>UMIS is governed by its  <a href="https://www.umis.ac.uk/about/constitution.html" alt-text="UMIS constitution" title="UMIS constitution" target="_blank">constitution</a>.</p>
+            <p>
+                UMIS has a  <a href="https://www.umis.ac.uk/about/constitution.html" alt-text="UMIS constitution" title="UMIS constitution" target="_blank">constitution</a> that outlines how we are structured, how we operate, and what our aims are.</p>
 
         </div>
     </div>

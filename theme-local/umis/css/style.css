@@ -335,44 +335,45 @@ body {
   background-size: cover;
 }
 .parallax.img0 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~99453~100009/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-stirling-j-d-fergusson-rhythm.jpg/full/full/0/default.jpg");
 }
 .parallax.img1 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~99665~100043/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-dundee-cabinet-by-mccreadie.jpg/full/full/0/default.jpg");
 }
 .parallax.img2 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~100164~100060/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-hwu-ayrshire-whitework.jpg/full/full/0/default.jpg");
 }
 .parallax.img3 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~99431~100007/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-stirling-j-d-fergusson-rhythm.jpg/full/full/0/default.jpg");
 }
 .parallax.img4 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~100128~100045/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-dundee-cabinet-by-mccreadie.jpg/full/full/0/default.jpg");
 }
 .parallax.img5 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~100175~100067/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-hwu-ayrshire-whitework.jpg/full/full/0/default.jpg");
 }
 .parallax.img6 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~100007~100064/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-stirling-j-d-fergusson-rhythm.jpg/full/full/0/default.jpg");
 }
 .parallax.img7 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEart~2~2~61475~104997/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-dundee-cabinet-by-mccreadie.jpg/full/full/0/default.jpg");
 }
 .parallax.img8 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~99530~100017/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-hwu-ayrshire-whitework.jpg/full/full/0/default.jpg");
 }
 .parallax.img9 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~99751~100050/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-stirling-j-d-fergusson-rhythm.jpg/full/full/0/default.jpg");
 }
 .parallax.img10 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~99695~100058/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-dundee-cabinet-by-mccreadie.jpg/full/full/0/default.jpg");
 }
 .parallax.img11 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~99297~100001/full/full/0/default.jpg");
-}
+   background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-hwu-ayrshire-whitework.jpg/full/full/0/default.jpg");
+ }
 .parallax.img12 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~99519~100018/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-hwu-ayrshire-whitework.jpg/full/full/0/default.jpg");
 }
+
 .parallax.active {
   opacity: 1;
   -webkit-transition: all 1.4s ease-in-out;
@@ -1216,4 +1217,20 @@ nav #overflow li a:hover {
   text-decoration: none;
   background: rgb(255, 255, 239);
   color: rgb(41, 65, 133);
+}
+
+#visit-dundee-image
+ {
+  position: relative;
+ }
+#visit-dundee-image::before {
+  content: "";
+  background-image: url(../images/umis-visit-dundee-triple.png);
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }

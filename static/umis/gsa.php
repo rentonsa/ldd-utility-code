@@ -1,26 +1,21 @@
 <div class="content">
     <div class="container">
-        <h2>Glasgow School of Art</h2>
-        <h3>Collections</h3>
-        <p>The collections are particularly famous for their focus on Charles Rennie Mackintosh, but span a huge range of topics and relate to the school’s activities since it was founded in 1845.
-            You can find examples of art, design and architectural work by GSA alumni and former staff, including a large number of items by Mackintosh himself.</p>
-        <p>You can explore the collections online at
-            <a href="https://gsaarchives.net/collections/" title="GSA Collections" alt-text="GSA Collections" target="_blank">https://gsaarchives.net/collections/</a></p>
-        <h4>Booking a visit</h4>
-        <p>To see the collections, you’ll need an appointment - email
-            <a href="mailto:archives@gsa.ac.uk" title="Mail GSA Collections" alt-text="Mail GSA Collections">archives@gsa.ac.uk</a>
-             or phone 0141 566 1418. Research visits can be booked in the same way.</p>
-        <h4>Group visits</h4>
-        <p>Group visits can also be booked (see link for details)</p>
-        <h4>School visits??</h4>
-        <p>For further information for all visits, please see the Glasgow School of Art website.</p>
-        <h4>Address</h4>
-        <p>The Glasgow School of Art Collections are currently housed at:</p>
-        <p>The Whisky Bond, 2 Dawson Road, Glasgow G4 9SS</p>
-        <h4>Opening hours</h4>
-        <p>Morning (9.30am – 12.30pm) or afternoon (1.20pm – 4.30pm) are available (or you can combine both for a day visit). The collections are closed between 12.30pm – 1.30pm.</p>
-        <h4>Parking</h4>
-        <p>Free parking is available on site or in the surrounding roads.</p>
+        <p><a href="https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgsaarchives.net%2F&amp;data=02%7C01%7CS.Waters%40gsa.ac.uk%7C731cfebdaa6b489841fc08d7740c73ef%7C67f9795821514513bd2170cde632768b%7C0%7C1%7C637105469144301009&amp;sdata=1%2FGqZE4U4%2BQIIlY9HZ5iCk3gFDLnlD%2BM4vN4k9u6CWE%3D&amp;reserved=0"><strong>Glasgow School of Art</strong></a> &nbsp;</p>
+        <p><em>Collections:</em></p>
+        <p>Glasgow School of Art&rsquo;s (GSA) collections are particularly famous for their focus on Charles Rennie Mackintosh, but they also span a huge range of topics relating to the school&rsquo;s activities since its opening 1845. You can find examples of art, design and architectural work by former GSA students and staff alumni, including a large number of items by Mackintosh himself. There are also items collected by the School to use as teaching aids, including plaster cast copies of famous sculptures and examples of embroidery from around the world.</p>
+        <p>You can explore the collections online at <a href="http://www.gsa.ac.uk/archives">www.gsa.ac.uk/archives</a><u>&nbsp; </u>(click on an image or date range to browse the holdings or use the search box at the top right to look for specific words or phrases).</p>
+        <p><em>Booking a visit:</em></p>
+        <p>To see the collections, you&rsquo;ll need an appointment to visit the reading room - email &nbsp;<a href="mailto:archives@gsa.ac.uk">archives@gsa.ac.uk</a><u>&nbsp; or phone 0141 566 1418. For more information see: </u><a href="https://gsaarchives.net/visit/">https://gsaarchives.net/visit/</a></p>
+        <p><em>Group visits (including school visits):</em></p>
+        <p>Find information on how to book group visits at <a href="https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgsaarchives.net%2Fwp-content%2Fuploads%2F2014%2F03%2FGroupBookings2015.pdf&amp;data=02%7C01%7CS.Waters%40gsa.ac.uk%7C731cfebdaa6b489841fc08d7740c73ef%7C67f9795821514513bd2170cde632768b%7C0%7C1%7C637105469144310987&amp;sdata=w7mm05GjWV%2BvIX9z9RS3pyO1VjOvL4xrBF55NX81EQQ%3D&amp;reserved=0">https://gsaarchives.net/wp-content/uploads/2014/03/GroupBookings2015.pdf</a></p>
+        <p><em>Address:</em></p>
+        <p>The Glasgow School of Art Collections are based at:</p>
+        <p><a href="https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.thewhiskybond.co.uk%2Ffind-us%2F&amp;data=02%7C01%7CS.Waters%40gsa.ac.uk%7C731cfebdaa6b489841fc08d7740c73ef%7C67f9795821514513bd2170cde632768b%7C0%7C1%7C637105469144315976&amp;sdata=2IHKdl5eAktdIk%2FoCFcJ2RzjA1J6BYNN0hNUbD51qyM%3D&amp;reserved=0">The Whisky Bond</a><u>, 2 Dawson Road, Glasgow G4 9SS </u></p>
+        <p>The building is fully accessible.</p>
+        <p><em>Opening hours:</em></p>
+        <p>Monday - Friday 9.30am - 4.30pm (closed for lunch 12.30pm &ndash; 1.30pm).</p>
+        <p><em>Getting there:</em></p>
+        <p>Free parking is available on site or in the surrounding roads. A map and public transport details are available here: <a href="https://www.thewhiskybond.co.uk/find-us/">https://www.thewhiskybond.co.uk/find-us/</a></p>
     </div>
 </div>
 
