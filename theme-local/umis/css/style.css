@@ -344,34 +344,34 @@ body {
   background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-hwu-ayrshire-whitework.jpg/full/full/0/default.jpg");
 }
 .parallax.img3 {
-  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-stirling-j-d-fergusson-rhythm.jpg/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-hwu-coal-table.jpg/full/full/0/default.jpg");
 }
 .parallax.img4 {
-  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-dundee-cabinet-by-mccreadie.jpg/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-gsa-tote.jpg/full/full/0/default.jpg");
 }
 .parallax.img5 {
-  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-hwu-ayrshire-whitework.jpg/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-hwu-paisley-shawl.jpg/full/full/0/default.jpg");
 }
 .parallax.img6 {
-  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-stirling-j-d-fergusson-rhythm.jpg/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-rgu-exit-music.jpg/full/full/0/default.jpg");
 }
 .parallax.img7 {
-  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-dundee-cabinet-by-mccreadie.jpg/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-gsa-apron.jpg/full/full/0/default.jpg");
 }
 .parallax.img8 {
-  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-hwu-ayrshire-whitework.jpg/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-stirling-stirling-piano.jpg/full/full/0/default.jpg");
 }
 .parallax.img9 {
-  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-stirling-j-d-fergusson-rhythm.jpg/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-stirling-hermes-and-athena.jpg/full/full/0/default.jpg");
 }
 .parallax.img10 {
-  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-dundee-cabinet-by-mccreadie.jpg/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-edinburgh-horn.jpg/full/full/0/default.jpg");
 }
 .parallax.img11 {
-   background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-hwu-ayrshire-whitework.jpg/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-dundee-glass-model-of-starfish-larva.jpg/full/full/0/default.jpg");
  }
 .parallax.img12 {
-  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-hwu-ayrshire-whitework.jpg/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-hwu-kaftan.jpg/full/full/0/default.jpg");
 }
 
 .parallax.active {
@@ -403,13 +403,13 @@ body {
   }
   .main-categories a {
     padding-left: 0px;
-    width: 7.69%;
+    width: 25%;
     height: 25vh;
     /*border-right: 1px solid rgba(240, 240, 240, 0.3);*/
     border-bottom: 5px solid rgb(41, 65, 133);
-    color: red;
+    color: rgb(41, 65, 133);
     background: rgba(255, 255, 239, 0.8);
-    font-size: 12px;
+    font-size: 15px;
     word-wrap: break-word;
     text-align: center;
     line-height: 25vh;
@@ -1233,4 +1233,25 @@ nav #overflow li a:hover {
   right: 0;
   position: absolute;
   z-index: -1;
+}
+
+
+#intro
+{
+  background: rgb(255, 255, 239);
+  width:100%;
+  color: rgb(41, 65, 133);
+  text-align: center;
+  font-size: 16pt;
+  font-weight: 800;
+
+}
+
+#warning
+{
+  background: rgb(255, 255, 239);
+  width:100%;
+  color: red;
+  text-align: center;
+  padding-bottom: 20px;
 }
