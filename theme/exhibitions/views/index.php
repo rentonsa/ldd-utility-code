@@ -67,11 +67,7 @@
 
                     <!-- OPENING TIMES FOR TODAY -->
                     <!-- generated using javascript file "openingtimes.js" -->
-                    <!--<p id="opening-times" class="right-align-p" alt="Library opening times for today">
-                    </p>-->
-                    <p class="right-align-p">
-                        CLOSED<br/> 
-                        (The gallery is closed from 27 October to 29 November for exhibition changeover)
+                    <p id="opening-times" class="right-align-p" alt="Library opening times for today">
                     </p>
 
                     <!-- SECTION BUTTONS -->
@@ -265,9 +261,6 @@
                         <p class="right-align-p" alt="forthcoming exhibition opening times">
                             MONDAY to SATURDAY 10:00 - 17:00
                         </p>
-                        <p class="right-align-p" alt="forthcoming exhibition opening times">
-                            (The gallery will be closed from 25 December to 3 January for the winter holidays)
-                        </p>
 
                         <!-- BUTTON TO CURRENT EXHIBITION COLLECTION -->
                         <!-- * commented out as none exists currently -->
@@ -460,10 +453,6 @@
                         Join us to create your own embroidery design inspired by the exhibition. No experience necessary, tutors will be on hand to help. Refreshments provided.
                     </p>
 
-                    <p id="info-gap" class="right-align-p" alt="current main exhibition location">                       
-                        EXHIBITION GALLERY<br>
-                        GROUND FLOOR, MAIN LIBRARY<br>
-                    </p>
                     <br>
                     <p class="right-align-p" alt="current main exhibition dates">
                         30 JANUARY 2020 14:30 - 16.30
@@ -506,11 +495,8 @@
                     <p class="right-align-p" alt="current main exhibition description">                       
                         Discover the history of the Needlework Development Scheme and its uses today and participate in an object handling session using the collections.
                     </p>
-
-                    <p id="info-gap" class="right-align-p" alt="current main exhibition location">                       
-                        MAIN LIBRARY<br>
-                    </p>
                     <br>
+
                     <p class="right-align-p" alt="current main exhibition dates">
                         1 FEBRUARY 2020 11:00 - 12:30<br>
                         <br>
