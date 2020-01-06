@@ -15,6 +15,10 @@ COPY skylight-local/docker/apache2.conf /etc/apache2
 # Add skylight conf to sites available
 COPY skylight-local/docker/skylight.conf /etc/apache2/sites-available
 
+# Copy bash file to remove pid of Apache2
+# see https://forums.docker.com/t/cant-restart-my-container-httpd-pid-8-already-running/67633
+COPY skylight-local/docker/httpd-foreground.sh /usr/local/bin/
+
 # Enable Apache mods rewrite and headers
 RUN a2enmod rewrite headers
 
@@ -28,7 +32,7 @@ RUN a2ensite skylight
 EXPOSE 80
 
 # Run Apache2 as main process
-CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]
+CMD ["httpd-foreground.sh"]
 
 # ssh -4 -N -f -L 9122:127.0.0.1:8080 dspace@lac-repo-test14.is.ed.ac.uk
 # docker run -it -p 8080:80 -v /home/hrafn/PhpstormProjects/skylight:/var/html/www/skylight -v /home/hrafn/PhpstormProjects/skylight-local:/var/html/www/skylight-local eerc_skylight
