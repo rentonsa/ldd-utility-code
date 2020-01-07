@@ -21,7 +21,6 @@ $imageServer = $this->config->item('skylight_image_server');
 
 if (isset($solr[$coverImageName][0]))
 {
-
     if (strpos($solr[$coverImageName][0], 'ttps') > 0)
     {
         $coverImageJSON = str_replace("/full/full/0/default.jpg", '/info.json', $solr[$coverImageName][0]);
@@ -33,29 +32,9 @@ if (isset($solr[$coverImageName][0]))
         $coverImageURL = $coverImageJSON . '/full/full/0/default.jpg';
 
     }
-    //$json = file_get_contents($coverImageJSON);
-
 }
 
-/*
-$jobj = json_decode($json, true);
-$error = json_last_error();
-$jsonheight = $jobj['height'];
-$jsonwidth = $jobj['width'];
-echo ('HEIGHT'.$jsonheight.$jsonwidth)
-*/
-
 ?>
-
-<!--Seadragon image viewer-->
-<!--<div id="toolbarDiv" class="toolbar">
-    <h2 id="zoom-in"></h2>
-    <h2 id="zoom-out"></h2>
-    <h2 id="home"></h2>
-    <h2 class="visible-xs" onclick="$('html, body').animate({scrollTop: $('.record-info').offset().top-50},1000);">
-        <i class="fa fa-info" aria-hidden="true"></i>
-    </h2>
-</div>-->
 
 <script src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/js/openseadragon.min.js"></script>
 
@@ -63,7 +42,7 @@ echo ('HEIGHT'.$jsonheight.$jsonwidth)
     <script type="text/javascript">
         OpenSeadragon({
             id: "openseadragon",
-            prefixUrl: "<?php echo base_url();?>theme/coimbra-colls-vanilla/images/buttons/",
+            prefixUrl: "<?php echo base_url();?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/buttons/",
             preserveViewport: false,
             visibilityRatio: 1,
             minZoomLevel: 0,
@@ -74,10 +53,6 @@ echo ('HEIGHT'.$jsonheight.$jsonwidth)
         });
     </script>
 </div>
-
-
-
-
 
 <!--Record information-->
 <div class="record-info">
@@ -133,7 +108,6 @@ echo ('HEIGHT'.$jsonheight.$jsonwidth)
         }
         ?>
         <div id="map">
-            <h2>MAP HERE!</h2>
             <script>
                 $(window).bind("load", function() {
                     <?php
