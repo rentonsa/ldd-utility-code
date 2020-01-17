@@ -30,7 +30,7 @@ $bitstreamLinks = array();
     </div>
 
     <div class="row">
-            <div class="btn btn-info"><a href ="<?php echo $solr[$link_uri_field][0]?>" target="_blank">View in context</a></div>
+            <div class="btn btn-info"><a href ="<?php echo $solr[$link_uri_field][0]?>" target="_blank">See more</a></div>
     </div>
 
     <div class="row full-metadata">
@@ -59,30 +59,15 @@ $bitstreamLinks = array();
                             // if it's a facet search
                             // make it a clickable search link
 
-                            if (in_array($key, $filters)) {
-
+                            if (in_array($key, $filters))
+                            {
                                 $orig_filter = urlencode($metadatavalue);
-
                                 echo '<a href="./search/*:*/' . $key . ':%22' . $orig_filter . '%22">' . $metadatavalue . '</a>';
-                            } else
-                            {/*
-                                if ($key == 'Identifier' || $key == 'Link' || $key == 'Parent') {
-                                    if (strpos($metadatavalue, "http:") !== null) {
-                                        echo '<a href="'.$metadatavalue.'" target="_blank">'.$metadatavalue.'</a>';
-                                        $idset = true;
-                                    }
-                                    else*/
+                            }
+                            else
+                            {
                                 if ($key == 'Identifier')
                                 {
-                                  /*  if (ctype_digit($metadatavalue))
-                                    {
-                                        echo $metadatavalue . " is a number";
-                                    }
-                                    else
-                                    {
-                                        echo $metadatavalue . " is not a number";
-                                    }*/
-
                                     $nullid = false;
                                     if ((!ctype_digit($metadatavalue)) and (strpos($metadatavalue, "oai:") !== 0) and (strpos($metadatavalue, "http:") !== 0))
                                     {

@@ -112,6 +112,13 @@
         }
     </script>
 
+    <!--cookie challenge-->
+
+    <script type="text/javascript" id="cookieinfo"
+            src="//cookieinfoscript.com/js/cookieinfo.min.js">
+    </script>
+
+
     <?php if (isset($solr)) { ?><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
         <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
 
@@ -152,7 +159,7 @@
                     <li class="active dropdown"><a href="#">Home</a></li>
                     <li><a href="./about">About</a></li>
                     <li><a href="./top-picks">Our Top Picks</a></li>
-                    <li><a href="./whats-on">What's On</a></li>
+                    <li><a href="./projects">Projects</a></li>
                     <li><button onclick="browse_unis()" class="dropbtn">Visit &#9660;</button>
                     <div id="unis-dropdown" class="dropdown-content">
                         <a href='./aberdeen'>University of Aberdeen</a>

@@ -1,11 +1,19 @@
 <div class="content">
     <div class="content byEditor about">
+        <figure  class="left-image"><a href="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-about-1869-1-4.png/full/full/0/default.jpg"
+                                        title="Patrick Geddes (1854-1932), aged 24 (Ref: GB237 Coll-1869/1/4)"
+                                        target="_blank"><img src="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-about-1869-1-4.png/full/200,/0/default.jpg"></a>
+            <figcaption>Patrick Geddes (1854-1932), aged 24 (Ref: GB237 Coll-1869/1/4)<br>
+                (Title: Copy digital image of carte de visite studio photograph of Patrick Geddes (1854-1932), aged 24.
+                Creator: James Ewing, fl. 1878-1904, photographer)</figcaption></figure>
         <p>
             Between 2016 and 2020, the Wellcome Research Resource-funded project ‘Evergreen: Patrick Geddes and the Environment in Equilibrium’ has preserved,
             conserved, catalogued, made accessible and virtually reunited two collections of papers of Sir Patrick Geddes held at the Universities of Edinburgh and Strathclyde.
             The project aims to unlock these invaluable collections for the benefit of academic scholars and the wider community and aims to inspire a deeper awareness of Patrick Geddes
             and his thinking.
         </p>
+
+
         <p>
             Patrick Geddes (1854-1932) was a pioneer of the environmental movement and one of the greatest social thinkers of his time. His fascination with the organisation
             of human societies and their spatial manifestation in the city and country led him to develop a highly individualistic theory of societies and cities. The collections, which are
@@ -17,10 +25,15 @@
             Geddes and his papers reaches far beyond these areas of study. They offer exciting potential for interdisciplinary cooperation between local and scholarly communities, and for
             collaborative research surrounding cities, sociology, urban planning, public health, environmental studies, sustainability, education, culture, communities, democracy and citizenship.
         </p>
+
         <p>
             Combined, the collections contain over 6000 plans, maps, prints and drawings; over 1400 photographic items, and around 200 boxes (45 linear metres) containing manuscript papers,
             typescripts, pamphlets, notebooks, correspondence and notes, and much more.
         </p>
+        <figure  class="right-image"><a href="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-about-ged-col.png/full/full/0/default.jpg"
+                                        title="Over 148 boxes of the Patrick Geddes Archives were rehoused during the ‘Evergreen’ project."
+                                        target="_blank"><img src="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-about-ged-col.png/full/200,/0/default.jpg"></a>
+            <figcaption>Over 148 boxes of the Patrick Geddes Archives were rehoused during the ‘Evergreen’ project.</figcaption></figure>
         <p>
             Working on the project were:
 
@@ -43,6 +56,10 @@
             </ul>
 
         </p>
+        <figure  class="left-image"><a href="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-about-crowd.png/full/full/0/default.jpg"
+                                       title="Crowdsourcing conservation event at the University of Strathclyde Archives and Special Collections, February 2018"
+                                       target="_blank"><img src="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-about-crowd.png/full/200,/0/default.jpg"></a>
+            <figcaption>Crowdsourcing conservation event at the University of Strathclyde Archives and Special Collections, February 2018</figcaption></figure>
         <p>
             The projected enlisted help from a cohort of over 40 volunteers who helped on a wide range of tasks ranging from conservation to cataloguing.
         </p>
@@ -57,8 +74,7 @@
         </p>
         <p>
             Between 2016 and 2020, Project Archivist Elaine MacGillivray collaborated with academic colleagues, practitioners and community groups to deliver a range of presentations, workshops,
-            collections familiarisation sessions and exhibitions across Scotland, France and India. Watch CEPT University’s video recording of Project Archivist
-            Elaine MacGillivray’s talk delivered at CEPT University, Ahmedabad, India, in March 2019.
+            collections familiarisation sessions and exhibitions across Scotland, France and India. Watch CEPT University’s video recording of Elaine’s talk at CEPT University, Ahmedabad, India (March, 2019).
         </p>
         <iframe width="100%" height="600px" src="https://www.youtube.com/embed/pLPgkhjSO0Y">
         </iframe>
@@ -66,15 +82,20 @@
             From Oct-Nov 2019, two small complimentary exhibitions were on display at the University of Edinburgh Main Library and the University of Strathclyde Andersonian
             Library. ‘Planning for Humanity: Patrick Geddes in India, 1914-1924’ was curated by Project Archivist Elaine MacGillivray and featured an array of archival,
             printed and visual collections which celebrated Geddes’ unique
-            contribution to urban planning in India. The exhibitions supported a series of activities that took place in October 2019 to mark the 165th anniversary of Geddes’ birth.
+            contribution to urban planning in India. The exhibitions supported a series of collaborative activities that took place in October 2019 to mark the 165th anniversary of Geddes’ birth.
+            You can read more about these events on the
+            <a href="http://libraryblogs.is.ed.ac.uk/patrickgeddes/2019/09/28/planning-for-humanity-patrick-geddes-in-india-1914-1924/" alt-text="Evergreen project blog" title="Evergreen project blog" target="_blank">‘Evergreen’ project blog</a>.
         </p>
         <p>
             The engagement programme opened up the Patrick Geddes Archives to existing and new audiences and helped to develop a network of engaged researchers with an interest in Patrick Geddes.
         </p>
         <p>
-            The international engagement programme was made possible thanks to generous funding from Erasmus, University of Edinburgh alumni and the University of Edinburgh’s Library and University
-            Collections.
+            The international engagement programme was made possible thanks to generous funding from
+            <a href="https://www.ed.ac.uk/global/staff-mobility" alt-text="Erasmus" title="Erasmus" target="_blank">Erasmus</a>,
+            <a href="https://www.ed.ac.uk/development-alumni" alt-text="UoE Alumni" title="UoE Alumni" target="_blank">University of Edinburgh Alumni</a> and the
+            <a href="https://www.ed.ac.uk/information-services/about/organisation/library-and-collections" alt-text="UoE L&UC" title="UoE L&UC" target="_blank">University of Edinburgh’s Library and University
+            Collections</a>.
         </p>
-        <h3>Project report</h3>
+        <h3>Project report [coming soon]</h3>
     </div>
 </div>

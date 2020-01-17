@@ -1,10 +1,14 @@
 <div class="content">
     <div class="container">
-        <p><a href="https://www.abdn.ac.uk/museums/about/index.php"><strong>University of Aberdeen</strong></a>&nbsp;</p>
-        <p>The University had a museum as far back as 1727 (almost 300 years) and holds a huge range of collections that cover its full history. The collections range from archaeology and ethnography to Scottish history, coins and medals, fine art, scientific instruments, medicine, natural sciences and more.</p>
-        <p>Visit the collections online at <a href="https://www.abdn.ac.uk/museums/collections/index.php">https://www.abdn.ac.uk/museums/collections/index.php</a>&nbsp; or read more about the museums&rsquo; work on their blog: <a href="https://library.abdn.ac.uk/blog/">https://library.abdn.ac.uk/blog/</a> You can find out more about their exhibitions and events at <a href="https://www.abdn.ac.uk/museums/news-events.php">https://www.abdn.ac.uk/museums/news-events.php</a></p>
-        <p><em>Visiting:</em></p>
+        <h1><a href="https://www.abdn.ac.uk/museums/about/index.php"><strong>University of Aberdeen</strong></a>&nbsp;</h1>
+        <p>The University had a museum as far back as 1727 (almost 300 years) and holds a huge range of collections that cover its full history. The collections cover archaeology and ethnography to Scottish history, coins and medals, fine art, scientific instruments, medicine, natural sciences and more.</p>
+        <p>Visit the collections online at <a href="https://www.abdn.ac.uk/museums/collections/index.php">https://www.abdn.ac.uk/museums/collections/index.php</a> or read more about the museums&rsquo; work on
+            their blog: <a href="https://library.abdn.ac.uk/blog/">https://library.abdn.ac.uk/blog/</a> You can find out more about their exhibitions and
+            events at <a href="https://www.abdn.ac.uk/museums/news-events.php">https://www.abdn.ac.uk/museums/news-events.php</a>.</p>
+        <h3>Visiting:</h3>
         <p>For general information on visiting the museums, including accessibility information, see <a href="https://www.abdn.ac.uk/museums/about/visit-us.php">https://www.abdn.ac.uk/museums/about/visit-us.php</a></p>
+        <h3>Research visits:</h3>
+        <p>To arrange a research visit, please contact <a href="mailto:museum@abdn.ac.uk">museum@abdn.ac.uk</a> or call 01224 274300.</p>
         <p>There are three museums within the University campus:</p>
         <p><a href="https://www.abdn.ac.uk/museums/exhibitions/sdrl-679.php"><strong><em>The Gallery in the Sir Duncan Rice Library</em></strong></a></p>
         <p>The Gallery has a programme of changing exhibitions throughout the year taken from the University&rsquo;s huge collection. You don&rsquo;t need to book and entry is free. For information on the latest exhibitions, visit <a href="https://www.abdn.ac.uk/museums/exhibitions/index.php">https://www.abdn.ac.uk/museums/exhibitions/index.php</a></p>

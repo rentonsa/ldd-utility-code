@@ -109,7 +109,7 @@
                         <li><a href="./people" title="People Link" alt-text="People Link">People</a></li>
                         <li><a href="./search" title="Catalogue Link" alt-text="Catalogue Link">Catalogue</a></li>
                         <li><a href="./research" title="Research Resources Link" alt-text="Research Resources Link">Research Resources</a></li>
-                        <li><a href="./blog" title="Blog Link" alt-text="Blog Link">Blog</a></li>
+                        <li><a href="http://libraryblogs.is.ed.ac.uk/patrickgeddes/" target="_blank" title="Blog Link" alt-text="Blog Link">Blog</a></li>
                         <li><a href="./contact" title="Contact Link" alt-text="Contact Link">Contact</a></li>
                         <li><a href="./feedback" title="Feedback Form" alt-text="Feedback Form">Feedback</a></li>
                     </ul>
@@ -127,8 +127,16 @@
                         <div id="collection-sub-title">The Patrick Geddes Archive</div>-->
 
                     </div>
-
-
+                    <div id="collection-search">
+                        <form action="./redirect/" method="post" class="navbar-form">
+                            <div class="input-group search-box">
+                                <input type="text" class="form-control" placeholder="Search" name="q" value="<?php if (isset($searchbox_query)) echo urldecode($searchbox_query); ?>" id="q" />
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-default" name="submit_search" value="Search" id="submit_search"><i class="glyphicon glyphicon-search"></i></button>
+                    </span>
+                            </div>
+                        </form>
+                    </div>
 
                 </div>
 

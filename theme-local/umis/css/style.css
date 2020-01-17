@@ -295,7 +295,7 @@ body {
   padding: 10px 10px 0px 0px;
 }
 .footer a {
-  color: rgb(255, 255, 239);
+  color: rgb(41, 65, 133);
 }
 .footer p {
   clear: both;
@@ -311,9 +311,7 @@ body {
 .footer li {
   list-style: none;
 }
-.footer a {
-  color: rgb(255, 255, 239);
-}
+
 .footer img {
   line-height: 100%;
 }
@@ -396,7 +394,7 @@ body {
 @media screen and (min-width: 768px) {
 
   .main-categories {
-    margin-top: calc(75vh - 50px);
+    margin-top: calc(40vh - 50px);
     /*width: 80vw;*/
     width: 100vw;
     padding: 0px;
@@ -404,7 +402,7 @@ body {
   .main-categories a {
     padding-left: 0px;
     width: 25%;
-    height: 25vh;
+    height: 10vh;
     /*border-right: 1px solid rgba(240, 240, 240, 0.3);*/
     border-bottom: 5px solid rgb(41, 65, 133);
     color: rgb(41, 65, 133);

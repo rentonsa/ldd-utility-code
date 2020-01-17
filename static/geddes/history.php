@@ -1,80 +1,37 @@
 <div class="content">
     <div class="content byEditor about">
-        <p>
-            Between 2016 and 2020, the Wellcome Research Resource-funded project ‘Evergreen: Patrick Geddes and the Environment in Equilibrium’ has preserved,
-            conserved, catalogued, made accessible and virtually reunited two collections of papers of Sir Patrick Geddes held at the Universities of Edinburgh and Strathclyde.
-            The project aims to unlock these invaluable collections for the benefit of academic scholars and the wider community and aims to inspire a deeper awareness of Patrick Geddes
-            and his thinking.
-        </p>
-        <p>
-            Patrick Geddes (1854-1932) was a pioneer of the environmental movement and one of the greatest social thinkers of his time. His fascination with the organisation
-            of human societies and their spatial manifestation in the city and country led him to develop a highly individualistic theory of societies and cities. The collections, which are
-            two parts of an original whole are of international significance. The prolific mass and polymathic nature of the collections reflect Geddes’ energy, ideas, relationships and working,
-            and vividly document the development of all Geddes’ theories.
-        </p>
-        <p>
-            Geddes is chiefly remembered for his innovative thinking in the fields of urban planning and sociology. But the value of
-            Geddes and his papers reaches far beyond these areas of study. They offer exciting potential for interdisciplinary cooperation between local and scholarly communities, and for
-            collaborative research surrounding cities, sociology, urban planning, public health, environmental studies, sustainability, education, culture, communities, democracy and citizenship.
-        </p>
-        <p>
-            Combined, the collections contain over 6000 plans, maps, prints and drawings; over 1400 photographic items, and around 200 boxes (45 linear metres) containing manuscript papers,
-            typescripts, pamphlets, notebooks, correspondence and notes, and much more.
-        </p>
-        <p>
-            Working on the project were:
-
-            <ul>
-                <li>Elaine MacGillivray, Project Archivist</li>
-                <li>Nicole Devereux, Project Conservator</li>
-                <li>Dr Mairi McFadyen, Temporary Cataloguer</li>
-                <li>Sorina Mihai, Archive Cataloguing Intern</li>
-            </ul>
-
-        </p>
-        <p>
-            They were supported by:
-            <ul>
-                <li>Victoria Peters, University of Strathclyde Archivist</li>
-                <li>Grant Buttars, University of Edinburgh Archivist – Archives and Technical Systems</li>
-                <li>Scott Renton, University of Edinburgh, Systems Developer</li>
-                <li>Professor Murdo MacDonald, Academic Advisor</li>
-                <li>Staff at both the Centre for Research Collections, University of Edinburgh and at the University of Strathclyde Archives and Special Collections.</li>
-            </ul>
-
-        </p>
-        <p>
-            The projected enlisted help from a cohort of over 40 volunteers who helped on a wide range of tasks ranging from conservation to cataloguing.
-        </p>
-        <p>
-            The project has improved the physical condition of the collections considerably. Over 15,000 items have been cleaned, repaired and rehoused, with key items receiving conservation treatment.
-            The project has made a significant impact on the collections’accessibility having catalogued over 4000 items across both collections.
-            It is now possible to search across both collections using our <a href="./" titlet="Online portal" alt-text="Online portal" target="_blank">online portal</a>.
-        </p>
-        <p>
-            The project was generously funded by the Wellcome Trust’s <a href="https://wellcome.ac.uk/funding/schemes/research-resources-awards-humanities-and-social-science" title = "Wellcome Research
-            Resource Awards" alt-text="Wellcome Research Resource Awards" target="_blank">Research Resource Awards Scheme</a>.
-        </p>
-        <p>
-            Between 2016 and 2020, Project Archivist Elaine MacGillivray collaborated with academic colleagues, practitioners and community groups to deliver a range of presentations, workshops,
-            collections familiarisation sessions and exhibitions across Scotland, France and India. Watch CEPT University’s video recording of Project Archivist
-            Elaine MacGillivray’s talk delivered at CEPT University, Ahmedabad, India, in March 2019.
-        </p>
-        <iframe width="100%" height="600px" src="https://www.youtube.com/embed/pLPgkhjSO0Y">
-        </iframe>
-        <p>
-            From Oct-Nov 2019, two small complimentary exhibitions were on display at the University of Edinburgh Main Library and the University of Strathclyde Andersonian
-            Library. ‘Planning for Humanity: Patrick Geddes in India, 1914-1924’ was curated by Project Archivist Elaine MacGillivray and featured an array of archival,
-            printed and visual collections which celebrated Geddes’ unique
-            contribution to urban planning in India. The exhibitions supported a series of activities that took place in October 2019 to mark the 165th anniversary of Geddes’ birth.
-        </p>
-        <p>
-            The engagement programme opened up the Patrick Geddes Archives to existing and new audiences and helped to develop a network of engaged researchers with an interest in Patrick Geddes.
-        </p>
-        <p>
-            The international engagement programme was made possible thanks to generous funding from Erasmus, University of Edinburgh alumni and the University of Edinburgh’s Library and University
-            Collections.
-        </p>
-        <h3>Project report</h3>
+        <h3>Before you start</h3>
+        <p>Many of the historic papers of Patrick Geddes are now housed in the Archives and Special Collections services of the Universities of Edinburgh and Strathclyde. The history of the collections is complex, each having been in the care of multiple custodians and subject to multiple physical relocations before reaching their current home at the Universities of Edinburgh and Strathclyde. Information on the history of the collections will help you to understand their provenance and allow you to use them more easily.</p>
+        <p>Additional material is held in private hands or in other institutions. You can find out what is held elsewhere on our Research Resources [insert link to research resources] page.</p>
+        <h3>What will you find in the collections?</h3>
+        <figure  class="right-image"><a href="https://images.is.ed.ac.uk/luna/servlet/iiif/UoEgal~5~5~163832~373738/full/full/0/default.jpg" title="View of the Lawnmarket and High Street, Edinburgh from Patrick Geddes’ Outlook Tower, c. 1914 (Ref: GB237 Coll-1167/B/27/1/8)" target="_blank"><img src="https://images.is.ed.ac.uk/luna/servlet/iiif/UoEgal~5~5~163832~373738/full/200,/0/default.jpg"/></a><figcaption>View of the Lawnmarket and High Street, Edinburgh from Patrick Geddes’ Outlook Tower, c. 1914 (Ref: GB237 Coll-1167/B/27/1/8)</figcaption></figure>
+        <p>In 1892, Patrick Geddes purchased a six-storey building on Edinburgh&rsquo;s Royal Mile. He developed this once public observatory into a civic museum; an education tool aimed at the urban planner and the citizen. He named it the Outlook Tower. In the Outlook Tower, Geddes amassed a vast collection of maps, views, plans, architectural drawings, photographs and other visual images. The Outlook Tower collections included his Survey of Edinburgh, (commenced in the early 1890s) and material from his early exhibitions in Paris (1900), Glasgow (1901) and London (1910). Geddes&rsquo; Cities and Town Planning Exhibition (first displayed in London in February 1911) emerged from the collections at the Outlook Tower. Between 1911 and 1914, Geddes toured his Cities and Town Planning Exhibition around the United Kingdom, Ireland and Europe including visits to Edinburgh, Dublin, Belfast, Ghent and Paris. Composed of over 4,000 exhibits, the original Cities and Town Planning Exhibition was lost at sea on board the SS Clan Grant, during transit to India in 1914. A replacement exhibition was assembled under the direction of Geddes&rsquo; colleague the architect, Henry Vaughan Lanchester (1863-1953), and shipped to India in December 1914.</p>
+        <p>It is this replacement exhibition, including material relating to Geddes&rsquo; Survey of Edinburgh, that makes up much of the surviving collections material at both the Universities of Edinburgh and Strathclyde. Additional papers, brought together by Patrick Geddes&rsquo; youngest son Arthur Geddes (1895-1968), that include textual records, pamphlets, books, maps, plans, photographs, prints and drawings relating to all of Geddes&rsquo; life and work up until his death in 1932, are held at the University of Strathclyde Archives and Special Collections. Originally one whole, there is much related and common material found across the two collections.</p>
+        <h3>Why are the collections physically separate?</h3>
+        <p>Geddes toured the Cities and Town Planning Exhibition around India during his 10 years there between 1914 and 1924. Throughout his time in India, Geddes surveyed over 30 Indian cities as he fulfilled multiple requests for advice on city improvements. He served as the inaugural Chair of Sociology and Civics at the then University of Bombay from 1919 to 1924.</p>
+        <figure  class="left-image"><a href="https://images.is.ed.ac.uk/luna/servlet/iiif/UoEgal~5~5~155823~211379/full/full/0/default.jpg" title="Patrick Geddes sitting outside his Scots’ College, Montpellier, France, c. 1930 (Ref: GB237 Coll-1869/1/17)" target="_blank"><img src="https://images.is.ed.ac.uk/luna/servlet/iiif/UoEgal~5~5~155823~211379/full/200,/0/default.jpg"/></a><figcaption>Patrick Geddes sitting outside his Scots’ College, Montpellier, France, c. 1930 (Ref: GB237 Coll-1869/1/17)</figcaption></figure>
+        <p class = "by-image">Patrick Geddes relocated to Montpellier, France, in 1924. Here he founded the Scots&rsquo; College and he remained in Montpellier until his death in 1932. In 1927, the Cities and Town Planning Exhibition was boxed in tea chests and shipped from India to the Scots&rsquo; College in Montpellier. After Geddes&rsquo; death, Arthur Geddes arranged for these tea chests, containing the exhibition, to be sent to London in 1947. These were to be inspected by town planner Jaqueline Tyrwhitt (1905-1983) on behalf of the Association for Planning and Regional Reconstruction (APRR; an affiliate of the Town Planning Institute) with a view to purchasing the material. At this time, additional material which had been stored at More&rsquo;s Garden, Patrick Geddes&rsquo; University Settlement in Chelsea, was selected by Tyrwhitt to be re-united with the material arriving from France. The APRR did not purchase the collection, although in November 1948, Tyrwhitt along with Professor Sir George Pepler (1882-1959), town planner, organised an exhibition in London with selected illustrations from Geddes&rsquo; Cities and Town Planning Exhibition. This meant that in 1948, collections material was to be found across at least four locations: More&rsquo;s Garden, University College London, on loan to Pepler and Tyrwhitt, and at the Outlook Tower. Between 1948 and 1954 collections at the Outlook Tower were temporarily removed to allow refurbishment work to take place. In the early 1950s, Arthur Geddes, a lecturer in geography at the University of Edinburgh, undertook a visiting professorship to the University of California. He selected sample material from the collections at the Outlook Tower and took it with him to California in the hope that the University of California would purchase the Cities and Town Planning Exhibition. Between 1947 and 1955 the collections had been subject to multiple relocations and significant dispersal. Much damage to the exhibits seems to have happened at this stage, according to a statement of losses and assets drawn up around 1955 by the Outlook Tower Association (founded by Arthur Geddes in 1948).</p>
+        <p>Material from the Tyrwhitt and Pepler exhibition was placed in the care of University of Edinburgh&rsquo;s Professor Percy Johnson Marshall (1915-1993), town planner and newly appointed senior lecturer at the University&rsquo;s School of Architecture. The remaining material was sold by the Trustees of the Outlook Tower in 1955 to Dr Thomas Findlay Lyon (1911-1973), a lecturer in town planning at the Royal Technical College, Glasgow. The Royal Technical College was succeeded by the University of Strathclyde in 1964.</p>
+        <h3>The University of Edinburgh Collections</h3>
+        <p>In 1949, the Outlook Tower was sold by the Town and Gown Association to Castlehill Properties Ltd, a trust which included members of the Geddes family. Percy Johnson-Marshall and Professor Robert Matthew created the School of Architecture at the University of Edinburgh in 1959, in which they developed a course in Civic Design. The intention was to repair and restore the Outlook Tower in which could be housed a newly formed Patrick Geddes Centre for Planning Studies for the University of Edinburgh. In order to allow refurbishment work to proceed, Johnson-Marshall together with the Castlehill Properties Trust arranged for the archive collections to be cleared from the Outlook Tower and stored temporarily in University of Edinburgh premises. Some material appears to have been lost at this stage and undoubtedly, further losses are likely to have occurred as a result of multiple subsequent moves. Between 1959 and 1989 the Patrick Geddes archives were relocated no less than 8 times, including spending a number of years concealed in the bricked-up attic of 58 George Square, Edinburgh. The Patrick Geddes Archives returned to the Patrick Geddes Centre for Planning Studies at the Outlook Tower in 1989, with the exception of a small proportion of collections material which was placed with the then Royal Commission for Ancient and Historic Monuments for Scotland (succeeded by Historic Environment Scotland). From 1989, the Patrick Geddes Archives remained at the Patrick Geddes Centre for Planning at the Outlook Tower until its transfer to the University of Edinburgh Archives and Special Collections in &hellip;.</p>
+        <p>An additional accession of Geddes family photographs was accepted from the Geddes family in about 2000.</p>
+        <h3>The University of Strathclyde Collections</h3>
+        <p>A proportion of the Patrick Geddes archives were sold to the Royal Technical College, Glasgow in 1955. The Royal Technical College merged with the Scottish College of Commerce and together they received a Royal Charter to become the University of Strathclyde in 1964. Two years later, in 1966,</p>
+        <p>the Patrick Geddes archives were moved to new premises at University of Strathclyde&rsquo;s School of Architecture. During this move a proportion of the, then unlisted, collection was accidentally lost. In 1968-69, the Department of Urban Planning became responsible for the collection before it was finally placed with the newly established University Archives in 1977.</p>
+        <h3>Cataloguing History</h3>
+        <figure  class="left-image"><a href="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-history-photo-cat.png/full/full/0/default.jpg" title="An example of some of the Geddes family photographs which were catalogued during the ‘Evergreen’ project."
+                                        target="_blank"><img src="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-history-photo-cat.png/full/200,/0/default.jpg"></a>
+            <figcaption>An example of some of the Geddes family photographs which were catalogued during the ‘Evergreen’ project.</figcaption></figure>
+        <p>The Papers of Patrick Geddes at both the Universities of Edinburgh and Strathclyde have previously been the subject of multiple listing and cataloguing projects. During the 1970s and 1980s, some early listings were undertaken by non-specialist staff and pre-date the development of professional archival cataloguing standards. Other later cataloguing efforts utilised extensive specialist and research knowledge and contain much invaluable descriptive content. Various methods of arrangement were adopted across both collections. The University of Strathclyde collections suffer from not having been sorted thoroughly prior to cataloguing work commencing in 1979. Collections there follow a subject oriented classification although this was not applied consistently, and difficult to implement given Geddes&rsquo; interdisciplinary and multidisciplinary ethos and the confusing history of the collections. The University of Edinburgh collections arrangement largely reflects the physical layout of Geddes&rsquo; Cities and Town Planning Exhibition. Multiple legacy catalogues exist.</p>
+        <figure  class="right-image"><a href="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-history-bundles-1.png/full/full/0/default.jpg" title="An example of some of the bundles of letters for which itemised descriptions were created during the ‘Evergreen’ project."
+                                        target="_blank"><img src="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-history-bundles-1.png/full/200,/0/default.jpg"></a>
+            <figcaption>An example of some of the bundles of letters for which itemised descriptions were created during the ‘Evergreen’ project.</figcaption></figure>
+        <p>On assessing the collections in 2016, we found that some parts of the Papers of Patrick Geddes were richly and accurately described, while other parts were not. It was not possible to undertake a wholesale re-working of all legacy catalogues within the confines of the &lsquo;Evergreen&rsquo; project. The original collections arrangements have been maintained. We focussed on retro-converting legacy printed catalogues to a single electronic data-set; enhancing existing descriptions often by identifying previously mis-identified or unidentified correspondents; created item level descriptions for material that had previously only been listed as bundles (bundles often contained in excess of 200 items) and making all of the revised catalogue content available online via a shared resource. Occasionally we had to apply new or altered catalogue reference numbers.</p>
+        <p>In 2020, as we come to the end of the &lsquo;Evergreen&rsquo; project, some work remains to be done to complete the itemised cataloguing of bundles and to enhance some existing descriptions. Beyond the end of the &lsquo;Evergreen&rsquo; project, new and enhanced descriptions will continue to be added to the archive catalogues and the online shared resource will be updated as necessary.</p>
+        <h3>Acknowledgements</h3>
+        <p>Information regarding the custodial history of the collections was compiled from the writings of Dr Sofia G. Leonard (former Director of the Patrick Geddes for Planning Studies), Professor Volker M. Welter (architectural historian) and Jim McGrath (former University Archivist, University of Strathclyde). Dr Leonard, Professor Welter and Marion Geddes (among many others) were also very generous with their time when interviewed. Their extensive knowledge of and enthusiasm for Patrick Geddes has helped us to piece together the most comprehensive custodial history of the collections to date.</p>
+        <p>Read more about the custodial history of the collections:</p>
+        <p>Volker M. Welter, &lsquo;Stages of an Exhibition: The Cities and Town Planning Exhibition of Patrick Geddes&rsquo;, in Planning History, Vol 20, No 1, 1998 [insert link] https://intlplanninghistorysociety.files.wordpress.com/2014/07/1998_vol-20_no1.pdf</p>
+        <p>Sofia G. Leonard, The Papers of Professor Sir Patrick Geddes from the Outlook Tower, Edinburgh: Catalogue of the Archives of the Patrick Geddes Centre for Planning Studies, Vol I, Introduction, pp. 1-10. file://ds.strath.ac.uk/home/djb16224/Downloads/H1167%20(5).pdf</p>
     </div>
 </div>
