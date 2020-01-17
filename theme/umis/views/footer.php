@@ -6,19 +6,16 @@
             </div>
             <div class="col-xs-12 col-md-10">
                 <ul>
-                    <li><a href="http://www.ed.ac.uk/about/website/website-terms-conditions">Terms &amp; conditions</a></li>
+                    <li><a href="./website-terms-conditions">Terms &amp; conditions</a></li>
 
-                    <li><a href="http://www.ed.ac.uk/about/website/privacy">Privacy &amp; cookies</a></li>
-
-                    <li><a href="http://www.ed.ac.uk/about/website/accessibility">Website accessibility</a></li>
-
-                    <li><a href="http://www.ed.ac.uk/about/website/freedom-information">Freedom of Information Publication Scheme</a></li>
+                    <li><a href="./privacy">Privacy &amp; cookies</a></li>
 
                 </ul>
 
                 <p>Hosted by The University of Edinburgh</p>
-                <p>Copyright © 2019 UMIS</p>
+                <p>Copyright © 2017 Coimbra Group</p>
             </div>
+
 
         </div>
 

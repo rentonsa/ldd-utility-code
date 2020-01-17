@@ -1,5 +1,6 @@
 <div class="content">
-    <div class="container" id = "visit-dundee-image" >
+    <div class="container"
+         <div id = "visit-dundee-image" >
         <p><a href="https://www.dundee.ac.uk/museum/"><strong>University of Dundee Museums</strong></a>&nbsp;</p>
         <p><em>Collections:</em></p>
         <p>Dundee University has a history dating back to 1881, and the collections span a huge range of subjects. As well as their medical, natural history and science collections, they have an impressive art and design collection &ndash; including fine art, artists&rsquo; books, a collection of iconic chair designs and even a comics art collection.</p>
@@ -62,4 +63,5 @@
         <p><em>Getting there:</em></p>
         <p>There are several pay-and-display car parks at Ninewells but they are always busy with hospital visitors so bus is the easiest way to get there. The main permanent display for the Medical History Museum is located outside the Gannochy Trust Lecture Theatre. Enter the hospital by the main visitor entrance (just next to the bus stops) and turn left just before the reception desk. Go along the corridor into the Medical School and the display is on your right once you reach the Blue Promenade Area. There is step-free access to all parts of the hospital.</p>
     </div>
+         </div>
 </div>
