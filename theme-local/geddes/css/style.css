@@ -92,7 +92,7 @@ input:invalid, textarea:invalid 							{ border-radius: 1px; -moz-box-shadow: 0 
 
 ::-moz-selection 	{ background: #3e541f;  color: #fff; text-shadow: none;font-weight:normal; } /* These selection declarations have to be separate No text-shadow: twitter.com/miketaylr/status/12228805301 Also: hot pink! */
 ::selection 		{ background: #3e541f;  color: #fff; text-shadow: none; }
-a:link 				{ -webkit-tap-highlight-color: #3e541f; } /* j.mp/webkit-tap-highlight-color */
+a:link 				{ -webkit-tap-highlight-color: #0066CC; } /* j.mp/webkit-tap-highlight-color */
 
 button 				{  width: auto; overflow: visible; } /* Make buttons play nice in IE: www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
 .ie7 img 			{ -ms-interpolation-mode: bicubic; } /* Bicubic resizing for non-native sized IMG: code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
@@ -100,7 +100,9 @@ button 				{  width: auto; overflow: visible; } /* Make buttons play nice in IE:
 /* Default Styles --------------------------------------------------------------------------------------------------------*/
 
 html 							{ -webkit-font-smoothing: antialiased; }
-body 							{ background: #EEEEEE; background-image:url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEgal~5~5~54966~105112/210,160,7598,5105/1024,/0/default.jpg") }
+/*body 							{ background: #EEEEEE; background-image:url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEgal~5~5~54966~105112/210,160,7598,5105/1024,/0/default.jpg") }*/
+body 							{ background: #EEEEEE; background-image:url("../images/geddes-back-doves-3.png") }
+
 body, select, input, textarea 	{ color: #555; font-family: "Frutiger Regular", sans-serif, serif }
 
 h1, h2, h3, h4, h5, h6          { text-rendering: optimizeLegibility; color: #000000; font-weight: bold; }
@@ -127,7 +129,7 @@ a:hover 						{ text-decoration: underline; color: #999; }
 /* Structure -------------------------------------------------------------------------------------------------------------*/
 .container 			{ background: #ffffff;}
 header .container   { padding: 0;}
-.header-normal		{ max-width: 1170px; height: 135px; background: url(../images/geddes-header.gif) no-repeat 0 0; }
+/*.header-normal		{ max-width: 1170px; height: 135px; background: url(../images/geddes-header.gif) no-repeat 0 0; }*/
 .col-main			{ float: left; margin-right: 0; }
 
 .navbar             { margin-bottom: 0;}
@@ -146,7 +148,7 @@ header .container   { padding: 0;}
 #collection-title a:hover { text-decoration: none; color: #3e541f; }
 
 
-#collection-search      { text-align: left; padding-top: 20px;}
+#collection-search      { width: 100%; text-align: left; padding-top: 10px; padding-bottom: 10px; background: #3e541f;}
 
 
 
@@ -236,7 +238,7 @@ footer                          { padding-top: 10px; padding-bottom: 10px;}
     width: 28%;
     height: 120px;
     float: left;
-    background: url(../images/geddes-wellcome-green.jpg) no-repeat 0 0;
+    background: url(../images/geddes-wellcome.jpg) no-repeat 0 0;
     margin-right: 30px;
     background-position: center;
 }
@@ -270,9 +272,9 @@ footer                          { padding-top: 10px; padding-bottom: 10px;}
 .tags					            { margin-top: 5px;  }
 .tags a 				            { color: #fff; font-size: 15px; background: #999; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding: 2px 6px; line-height: 20px; margin-right: 8px; margin-top: 6px; text-decoration: none; display:inline-block; }
 .tags a.bold			            { font-weight: bold; }
-.tags a:hover			            { background: #3a8f44; color: #ffffff; text-decoration: none; }
+.tags a:hover			            { background: #0066CC; color: #ffffff; text-decoration: none; }
 .tags a:visited			            { background: #999; color: #ffffff; text-decoration: none; }
-.tags a:visited:hover		        { background: #3a8f44; color: #ffffff; text-decoration: none; }
+.tags a:visited:hover		        { background: #0066CC; color: #ffffff; text-decoration: none; }
 
 
 /** pagination */
@@ -393,6 +395,7 @@ q:after                             { content: close-quote;  }
         display:none;
     }
     .search-box             { width: 600px;}
+   /* #collection-search      { float: right;}*/
 
 }
 
@@ -411,7 +414,7 @@ q:after                             { content: close-quote;  }
         padding-left: 15px;
         margin:auto;
         width:768px;
-        height:135px;
+        height:95px;
         background-repeat: no-repeat;
         background-image: url("../images/n-header-lg.png")}
 
@@ -444,6 +447,7 @@ q:after                             { content: close-quote;  }
         display:none;
     }
     .search-box             { width: 200px;}
+    /*#collection-search      { float: right;}*/
 }
 @media only screen and (max-width : 767px) and (min-width:576px) {
     .frontimage {
@@ -462,7 +466,7 @@ q:after                             { content: close-quote;  }
         padding-left: 15px;
         margin:auto;
         width:576px;
-        height:135px;
+        height:80px;
         background-repeat: no-repeat;
         background-image: url("../images/n-header-md.png")
     }
@@ -496,12 +500,14 @@ q:after                             { content: close-quote;  }
         display:none;
     }
     .search-box             { width: 150px;}
+   /* #collection-search      { float: right;}*/
 }
 
 @media only screen and (max-width : 575px) and (min-width:301px){
     .frontimage {
         display: block;
         height: 75px;
+        /*background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~99338~100004/full/200,/0/default.jpg ) no-repeat 0 0;*/
         background: url(https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~99338~100004/full/200,/0/default.jpg ) no-repeat 0 0;
         text-align:center;
         vertical-align: middle;
@@ -509,13 +515,13 @@ q:after                             { content: close-quote;  }
 
     #collection-title	{ display: block;
         float: left;
-        padding-top: 20px;
-        padding-left: 20%;
+        padding-top: 5px;
+        padding-left: 5px;
         margin:auto;
-        width:200px;
-        height:90px;
+        width:290px;
+        height:70px;
         background-repeat: no-repeat;
-        background-image: url("../images/header-sm.png")}
+        background-image: url("../images/n-header-sm.png")}
 
     #cf {
         position:relative;
@@ -545,8 +551,8 @@ q:after                             { content: close-quote;  }
         display:none;
     }
     .search-box             { width: 100px;}
-    .header-normal		{ max-width: 1170px; height: 90px; background: url(../images/geddes-header.gif) no-repeat 0 0; }
-    #collection-search      { float: right; padding-top: 10px;}
+    /*.header-normal		{ max-width: 1170px; height: 90px; background: url(../images/geddes-header.gif) no-repeat 0 0; }*/
+    /*#collection-search      { float: right;}*/
 
 }
 
@@ -567,12 +573,12 @@ q:after                             { content: close-quote;  }
         width:200px;
         height:100px;
         background-repeat: no-repeat;
-        background-image: url("../images/header-xs.png")}
+        background-image: url("../images/n-header-xs.png")}
     #cf {
         position:relative;
         margin: 0 auto;
         width:300px;
-        height:240px;
+        height:60px;
         text-align: center;
     }
 
@@ -596,6 +602,7 @@ q:after                             { content: close-quote;  }
         visibility:visible;
     }
     .search-box             { width: 100px;}
+    /*#collection-search      { float: right; }*/
 
 }
 #openseadragon {
@@ -735,4 +742,37 @@ tr:nth-child(odd) { background: #e6e6e6; }
     font-weight: 800;
     font-size: 9pt;
     text-align: right;
+}
+
+.right-image
+{
+    float:right;
+}
+
+.left-image
+{
+    float:left;
+}
+
+figure
+{
+    padding-top: 3px;
+    padding-bottom:3px;
+    width: 210px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fffcfc;
+    text-align: center;
+}
+
+figcaption
+{
+    font-size:7pt;
+    display:block;
+    width:200px;
+}
+
+.by-image
+{
+    margin-left: 5px;
 }
