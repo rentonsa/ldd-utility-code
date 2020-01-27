@@ -1,6 +1,8 @@
 <div class="content">
     <div class="container">
         <h1><a href="https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgsaarchives.net%2F&amp;data=02%7C01%7CS.Waters%40gsa.ac.uk%7C731cfebdaa6b489841fc08d7740c73ef%7C67f9795821514513bd2170cde632768b%7C0%7C1%7C637105469144301009&amp;sdata=1%2FGqZE4U4%2BQIIlY9HZ5iCk3gFDLnlD%2BM4vN4k9u6CWE%3D&amp;reserved=0"><strong>Glasgow School of Art</strong></a></h1>
+        <figure  class="right-wider-image"><a href="https://cantaloupe.is.ed.ac.uk/iiif/2/umis-visit-gsa.jpg/full/full/0/default.jpg"><img src="https://cantaloupe.is.ed.ac.uk/iiif/2/umis-visit-gsa.jpg/full/300,/0/default.jpg" /></a></figure>
+
         <p>Glasgow School of Art&rsquo;s (GSA) collections are particularly famous for their focus on Charles Rennie Mackintosh, but they also span a huge range of topics relating to the school&rsquo;s activities since its opening 1845. You can find examples of art, design and architectural work by former GSA students and staff alumni, including a large number of items by Mackintosh himself. There are also items collected by the School to use as teaching aids, including plaster cast copies of famous sculptures and examples of embroidery from around the world.</p>
         <p>You can explore the collections online at <a href="http://www.gsa.ac.uk/archives">www.gsa.ac.uk/archives</a>(click on an image or date range to browse the holdings or use the search box at the top right to look for specific words or phrases).</p>
         <h3>Visiting</h3>

@@ -16,12 +16,12 @@
     <div class="parallax img12 inactive"></div>
 
     <div class="intro">
-
+            <p class="col-xs-12 col-md-12" id = "intro"><a href="">Explore some of the fascinating objects that can be found in Scotland’s university museums.</a></p>
     </div>
 
     <div class="main-categories">
-            <p class="col-xs-12 col-md-12" id = "warning">THIS SITE IS IN BETA TESTING. PLEASE DO NOT TREAT IT AS A TRUSTED RESOURCE.<br>
-            <a href=""<span id = "intro">Explore some of the fascinating objects that can be found in Scotland’s university museums.</span></p>
+            <!--<p  id = "warning">THIS SITE IS IN BETA TESTING. PLEASE DO NOT TREAT IT AS A TRUSTED RESOURCE.<br>
+            <p class="col-xs-12 col-md-12" id = "intro"><a href="">Explore some of the fascinating objects that can be found in Scotland’s university museums.</a></p>-->
             <!--<a class="col-xs-6 col-md-6" href='./search/category:%22Weird%22'><div class="border-top"></div><p>Weirdest Objects</p></a>
             <a class="col-xs-6 col-md-6" href='./search/category:%22Favourite%22'><div class="border-top"></div><p>Favourite Objects</p></a>
             <a class="col-xs-6 col-md-6" href='./search/category:%22Burns%22'><div class="border-top"></div><p>Burns Night</p></a>

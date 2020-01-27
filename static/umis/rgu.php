@@ -1,6 +1,7 @@
 <div class="content">
     <div class="container">
-        <h1><a href="https://www3.rgu.ac.uk/about/art-and-heritage-collections"><strong>Robert Gordon University</strong></a></h1>
+        <h1><a href="https://www3.rgu.ac.uk/about/art-and-heritage-collections">Robert Gordon University</a></h1>
+        <figure  class="right-wider-image"><a href="https://cantaloupe.is.ed.ac.uk/iiif/2/umis-visit-rgu.jpg/full/full/0/default.jpg"><img src="https://cantaloupe.is.ed.ac.uk/iiif/2/umis-visit-rgu.jpg/full/300,/0/default.jpg" /></a></figure>
         <p>Robert Gordon&rsquo;s collections mostly focus on art and design - including items from the Scott Sutherland School of Architecture and Built Environment and the Gray&rsquo;s School of Art. They also hold
             teaching equipment, photographs and miscellaneous items relating to the university&rsquo;s history of teaching engineering and pharmacy.
             Finally, they have over 100 items of needlework and embroidery from the <a href="http://www.vam.ac.uk/content/articles/n/needlework-development-scheme/">Needlework Development Scheme</a>.</p>
