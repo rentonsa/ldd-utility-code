@@ -1,11 +1,11 @@
 <div class="content">
     <div class="content byEditor about">
         <figure  class="left-image"><a href="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-about-1869-1-4.png/full/full/0/default.jpg"
-                                        title="Patrick Geddes (1854-1932), aged 24 (Ref: GB237 Coll-1869/1/4)"
+                                        title="(Title: Copy digital image of carte de visite studio photograph of Patrick Geddes (1854-1932), aged 24.
+                Creator: James Ewing, fl. 1878-1904, photographer)"
                                         target="_blank"><img src="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-about-1869-1-4.png/full/200,/0/default.jpg"></a>
-            <figcaption>Patrick Geddes (1854-1932), aged 24 (Ref: GB237 Coll-1869/1/4)<br>
-                (Title: Copy digital image of carte de visite studio photograph of Patrick Geddes (1854-1932), aged 24.
-                Creator: James Ewing, fl. 1878-1904, photographer)</figcaption></figure>
+            <figcaption>Patrick Geddes (1854-1932), aged 24 (Ref: GB237 Coll-1869/1/4)
+                </figcaption></figure>
         <p>
             Between 2016 and 2020, the Wellcome Research Resource-funded project ‘Evergreen: Patrick Geddes and the Environment in Equilibrium’ has preserved,
             conserved, catalogued, made accessible and virtually reunited two collections of papers of Sir Patrick Geddes held at the Universities of Edinburgh and Strathclyde.
@@ -33,7 +33,7 @@
         <figure  class="right-image"><a href="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-about-ged-col.png/full/full/0/default.jpg"
                                         title="Over 148 boxes of the Patrick Geddes Archives were rehoused during the ‘Evergreen’ project."
                                         target="_blank"><img src="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-about-ged-col.png/full/200,/0/default.jpg"></a>
-            <figcaption>Over 148 boxes of the Patrick Geddes Archives were rehoused during the ‘Evergreen’ project.</figcaption></figure>
+        <figcaption>Over 148 boxes of the Patrick Geddes Archives were rehoused during the ‘Evergreen’ project.</figcaption></figure>
         <p>
             Working on the project were:
 
@@ -60,6 +60,7 @@
                                        title="Crowdsourcing conservation event at the University of Strathclyde Archives and Special Collections, February 2018"
                                        target="_blank"><img src="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-about-crowd.png/full/200,/0/default.jpg"></a>
             <figcaption>Crowdsourcing conservation event at the University of Strathclyde Archives and Special Collections, February 2018</figcaption></figure>
+
         <p>
             The projected enlisted help from a cohort of over 40 volunteers who helped on a wide range of tasks ranging from conservation to cataloguing.
         </p>
@@ -68,6 +69,7 @@
             The project has made a significant impact on the collections’accessibility having catalogued over 4000 items across both collections.
             It is now possible to search across both collections using our <a href="./" titlet="Online portal" alt-text="Online portal" target="_blank">online portal</a>.
         </p>
+        <br><br>
         <p>
             The project was generously funded by the Wellcome Trust’s <a href="https://wellcome.ac.uk/funding/schemes/research-resources-awards-humanities-and-social-science" title = "Wellcome Research
             Resource Awards" alt-text="Wellcome Research Resource Awards" target="_blank">Research Resource Awards Scheme</a>.

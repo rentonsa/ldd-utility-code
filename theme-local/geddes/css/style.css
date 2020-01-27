@@ -101,7 +101,9 @@ button 				{  width: auto; overflow: visible; } /* Make buttons play nice in IE:
 
 html 							{ -webkit-font-smoothing: antialiased; }
 /*body 							{ background: #EEEEEE; background-image:url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEgal~5~5~54966~105112/210,160,7598,5105/1024,/0/default.jpg") }*/
-body 							{ background: #EEEEEE; background-image:url("../images/geddes-back-doves-3.png") }
+/*body 							{ background: #EEEEEE; background-image:url("../images/geddes-back-doves-3.png") }*/
+
+body                            {background: #3e541f;}
 
 body, select, input, textarea 	{ color: #555; font-family: "Frutiger Regular", sans-serif, serif }
 
@@ -127,7 +129,7 @@ a:hover 						{ text-decoration: underline; color: #999; }
 /* Site Css ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* Structure -------------------------------------------------------------------------------------------------------------*/
-.container 			{ background: #ffffff;}
+.container 			{ background: #ffffff; padding-left: 0px;}
 header .container   { padding: 0;}
 /*.header-normal		{ max-width: 1170px; height: 135px; background: url(../images/geddes-header.gif) no-repeat 0 0; }*/
 .col-main			{ float: left; margin-right: 0; }
@@ -162,8 +164,8 @@ header .container   { padding: 0;}
 .menu-links li a:hover		    { background-color: #3a8f44; color: #FFFFFF;}
 
 /** content pages*/
-.content a                      { color: #3e541f;}
-.content a:visited              { color: #3e541f;}
+.content a                      { color: #0066CC;}
+.content a:visited              { color: #0066CC;}
 .content a:hover                { color: #3a8f44;}
 
 /*.content a                      { color: #3e541f}
@@ -210,7 +212,7 @@ header .container   { padding: 0;}
 
 /** footer */
 
-footer                          { padding-top: 10px; padding-bottom: 10px;}
+footer                          { padding-top: 10px; padding-bottom: 10px; background: #fff;}
 
 .footer-logos                   { padding-bottom: 20px; }
 #footer-logos-area              { text-align: center; }
@@ -362,7 +364,7 @@ q:after                             { content: close-quote;  }
         width:1170px;
         height:150px;
         background-repeat: no-repeat;
-        background-image: url("../images/n-header.png")}
+        background-image: url("../images/n-header-doves.png")}
 
     #cf {
         position:relative;
@@ -416,7 +418,7 @@ q:after                             { content: close-quote;  }
         width:768px;
         height:95px;
         background-repeat: no-repeat;
-        background-image: url("../images/n-header-lg.png")}
+        background-image: url("../images/n-header-lg-doves.png")}
 
     #cf {
         position:relative;
@@ -468,7 +470,7 @@ q:after                             { content: close-quote;  }
         width:576px;
         height:80px;
         background-repeat: no-repeat;
-        background-image: url("../images/n-header-md.png")
+        background-image: url("../images/n-header-md-doves.png")
     }
     #cf
     {
@@ -521,7 +523,7 @@ q:after                             { content: close-quote;  }
         width:290px;
         height:70px;
         background-repeat: no-repeat;
-        background-image: url("../images/n-header-sm.png")}
+        background-image: url("../images/n-header-sm-doves.png")}
 
     #cf {
         position:relative;
@@ -571,7 +573,7 @@ q:after                             { content: close-quote;  }
         padding-left: 20%;
         margin:auto;
         width:200px;
-        height:100px;
+        height:60px;
         background-repeat: no-repeat;
         background-image: url("../images/n-header-xs.png")}
     #cf {
@@ -756,9 +758,11 @@ tr:nth-child(odd) { background: #e6e6e6; }
 
 figure
 {
-    padding-top: 3px;
+    padding-left: 13px;
+    padding-top:3px;
     padding-bottom:3px;
-    width: 210px;
+    padding-right:13px;
+    width: 230px;
     border-style: solid;
     border-width: 1px;
     border-color: #fffcfc;
@@ -775,4 +779,9 @@ figcaption
 .by-image
 {
     margin-left: 5px;
+}
+
+footer nav
+{
+    padding:0;
 }
