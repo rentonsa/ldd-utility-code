@@ -1,6 +1,7 @@
 <div class="content">
     <div class="container">
         <h1><a href="https://www.hw.ac.uk/services/is/heritage/museum-and-archive.htm"><strong>Heriot Watt University</strong></a></h1>
+        <figure  class="right-wider-image"><a href="https://cantaloupe.is.ed.ac.uk/iiif/2/umis-visit-heriot-watt.jpg/full/full/0/default.jpg"><img src="https://cantaloupe.is.ed.ac.uk/iiif/2/umis-visit-heriot-watt.jpg/full/300,/0/default.jpg" /></a></figure>
         <p>Heriot Watt&rsquo;s collections reflect the courses the University has taught &ndash; both now and in the past. You can find examples of art, sculpture and textiles and information on local history relating to the Currie, Juniper Green, Balerno and Colinton areas of Edinburgh. The archives and museum also have information and objects relating to the history of the University, teaching aids, equipment and instruments, and also hold the records of the long-closed Leith Nautical College.</p>
         <p>Collections can be found at both their Edinburgh and Scottish Borders campuses. The Heriot Watt museum is located at their Edinburgh campus.</p>
         <h2>Edinburgh:</h2>

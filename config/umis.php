@@ -20,7 +20,7 @@ $config['skylight_theme'] = 'umis';
 
 $config['skylight_fullname'] = 'UMIS Virtual Exhibition';
 
-$config['skylight_adminemail'] = 'lddt@mlist.is.ed.ac.uk';
+$config['skylight_adminemail'] = 'sarah.burry-hayes@glasgow.ac.uk';
 
 $config['skylight_oaipmhcollection'] = 'hdl_10683_53855';
 
@@ -66,13 +66,13 @@ $config['skylight_recorddisplay'] = array(
     'Finding Info',
     'Description',
     'Metadata Rights',
-    'Image File Name',
-    'Logo',
+    //'Image File Name',
+    //'Logo',
     'Tags',
     'Category',
-    'Logo Thumbnail',
+    //'Logo Thumbnail',
     'Institutional Web URL',
-    'Institutional Map Reference',
+    //'Institutional Map Reference',
     'Contact email',
     'Additional info',
     'Institution'
