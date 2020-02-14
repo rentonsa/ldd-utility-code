@@ -35,9 +35,9 @@ $config['skylight_sitemap_type'] = 'internal';
 $config['skylight_fields'] = array(
     'ID'                                    => 'dc.identifier.en',
     'Title'                                 => 'dc.title.en',
-    'Finding Info'                          => 'dc.description.abstract.en',
+    'Where Can I See It?'                   => 'dc.description.abstract.en',
     'Description'                           => 'dc.description.en',
-    'Metadata Rights'                       => 'dc.rights.en',
+    'Copyright'                             => 'dc.rights.en',
     'Image File Name'                       => 'dc.format.bitstream.en',
     'Logo'                                  => 'dc.format.original.en',
     'Tags'                                  => 'dc.subject.en',
@@ -61,21 +61,25 @@ $config['skylight_meta_fields'] = array('Title' => 'dc.title',
     'Type' => 'dc.type');
 
 $config['skylight_recorddisplay'] = array(
-    'ID',
+    
     'Title' ,
-    'Finding Info',
     'Description',
-    'Metadata Rights',
+    'Where Can I See It?',
+    'Contact email',
+
     //'Image File Name',
     //'Logo',
-    'Tags',
-    'Category',
+    
+    //'Category',
     //'Logo Thumbnail',
-    'Institutional Web URL',
     //'Institutional Map Reference',
-    'Contact email',
-    'Additional info',
-    'Institution'
+
+    //'Additional info',
+    'Institution',
+    'Institutional Web URL',
+    'Copyright',
+    'ID',
+    'Tags',
 );
 
 

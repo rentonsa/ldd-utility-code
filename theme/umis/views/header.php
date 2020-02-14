@@ -173,7 +173,7 @@
                         <a href='./st-andrews'>University of St Andrews</a>
                     </div>
                     </li>
-                    <li><a href="./blog">Blog</a></li>
+                   <!-- <li><a href="./blog">Blog</a></li>-->
                     <li><a href="./contact">Contact</a></li>
                 </ul>
 
@@ -185,6 +185,7 @@
                             <div id="types-dropdown" class="dropdown-content">
                                 <a href='./search/subject:%22animals%22'>Animals</a>
                                 <a href='./search/subject:%22architecture%22'>Architecture & Buildings</a>
+                                <a href='./search/subject:%22body%22'>The Body</a>
                                 <a href='./search/subject:%22books%22'>Books & Printing</a>
                                 <a href='./search/subject:%22religion%22'>Church & Religion</a>
                                 <a href='./search/subject:%22coins%22'>Coins & Medals</a>

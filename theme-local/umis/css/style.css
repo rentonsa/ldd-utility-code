@@ -840,7 +840,7 @@ nav #overflow li a:hover {
     height: calc(100vh - 135px);
   }
   .institution-logo {
-    background-color: rgb(41, 65, 133);
+    background-color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px;
   }
@@ -853,7 +853,7 @@ nav #overflow li a:hover {
   .record-info .description .field {
     width: 100%;
     display: block;
-    color: rgb(230, 230, 230);
+    color: rgb(41, 65, 133);
     font-size: 0.9em;
     font-weight: bold;
   }
@@ -985,7 +985,7 @@ nav #overflow li a:hover {
     margin-bottom: 15px;
   }
   .institution-logo {
-    background-color: rgb(41, 65, 133);
+    background-color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px;
   }
@@ -1284,8 +1284,4 @@ figure
   border-width: 1px;
   border-color: #666666;
   text-align: center;
-}
-
-.institution-logo{
-  background: #fff;
 }

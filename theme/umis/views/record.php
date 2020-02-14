@@ -131,7 +131,7 @@ if (isset($solr[$coverImageName][0]))
             <?php
             if (isset($solr[$logoImageName]))
             {
-                echo $solr[$logoImageName][0];
+                //echo $solr[$logoImageName][0];
                 $t_segments = explode("##", $solr[$logoImageName][0]);
                 $t_filename = $t_segments[1];
 
