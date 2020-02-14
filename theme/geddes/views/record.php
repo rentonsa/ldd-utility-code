@@ -30,7 +30,7 @@ $bitstreamLinks = array();
     </div>
 
     <div class="row">
-            <div class="btn btn-info"><a href ="<?php echo $solr[$link_uri_field][0]?>" target="_blank">See more</a></div>
+            <div class="btn btn-info"><a href ="<?php echo $solr[$link_uri_field][0]?>" target="_blank">More information</a></div>
     </div>
 
     <div class="row full-metadata">
@@ -62,7 +62,14 @@ $bitstreamLinks = array();
                             if (in_array($key, $filters))
                             {
                                 $orig_filter = urlencode($metadatavalue);
-                                echo '<a href="./search/*:*/' . $key . ':%22' . $orig_filter . '%22">' . $metadatavalue . '</a>';
+                                //if ($key == 'Date') {
+
+                                    echo '<a href="./search/*:*/' . $key . ':%22' . strtolower($orig_filter) . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a>';
+                                //}
+                                //else
+                               // {
+                                //    echo '<a href="./search/*:*/' . $key . ':%22' . $orig_filter . '%22">' . $metadatavalue . '</a>';
+                                //}
                             }
                             else
                             {
