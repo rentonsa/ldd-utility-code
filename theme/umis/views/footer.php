@@ -13,7 +13,7 @@
                 </ul>
 
                 <p>Hosted by The University of Edinburgh</p>
-                <p>Copyright © 2017 Coimbra Group</p>
+                <p>Copyright © 2020 The University of Edinburgh</p>
             </div>
 
 

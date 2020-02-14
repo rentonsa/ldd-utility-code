@@ -1,7 +1,7 @@
 <div class="content">
     <div class="content byEditor about">
 
-        <p>If you wish advice or information in any of the following areas, the most appropriate contacts are listed below.</p>
+        <p>If you would like to arrange to consult the collections, or wish advice or information, the most appropriate contacts are listed below.</p>
 
         <table>
         <tr>
@@ -37,7 +37,7 @@
             </td>
         </tr>
         <tr>
-            <td><br>For feedback and suggestions relatingspecifically relating to website content. <br><br></td>
+            <td><br>For feedback and suggestions relating specifically to website content. <br><br></td>
             <td>&nbsp;</td>
             <td><br><b>University of Edinburgh Library and Digital Development.</b>
                 <br>Email: <a href="mailto:lddt@mlist.is.ed.ac.uk" title = "Mail Library Digital Development">lddt@mlist.is.ed.ac.uk</a><br><br></td>

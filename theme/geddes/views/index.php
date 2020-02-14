@@ -91,5 +91,5 @@
     </div>
     <br>
     <p class="quote">“Patrick Geddes was one of the key thinkers of the early twentieth century.
-    His interdisciplinary ecological and cultural vision continues to have international impact. This major cataloguing project makes possible a new are of Geddes research.”</p>
+    His interdisciplinary ecological and cultural vision continues to have international impact. This major cataloguing project makes possible a new era of Geddes research.”</p>
     <p class="cite">-Professor Murdo MacDonald, Emeritus Professor of History of Scottish Art at the University of Dundee, and author of 'Patrick Geddes’s Intellectual Origins'</p>

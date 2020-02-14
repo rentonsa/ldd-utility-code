@@ -23,8 +23,9 @@ else {
 
 <div class="col-md-9 col-sm-9 col-xs-12">
     <div>
-        <p>This is the online portal to the Patrick Geddes Archives held by the Universities of Edinburgh and Strathclyde.  Search the collections by using the free text search box below, using a keyword or a phrase.
-        You can also browse by author, subject, place or date using the navigation panels on the right of the page.  Please note that, at this time, the author, subject, place and date browse facility is indicative of only a proportion of the collections holdings and is not exhaustive.
+        <p>This is the online portal to the Patrick Geddes Archives held by the Universities of Edinburgh and Strathclyde.  Search the collections by using the free text search box above, using a keyword or a phrase.
+        You can also browse by author, subject, place or date using the navigation panels on the right of the page.</p>
+        <p>Please note that, at this time, the author, subject, place and date browse facility is indicative of only a proportion of the collections holdings and is not exhaustive.
         Search results are displayed in lists of up to 30 items per page.  If you wish the search results to be displayed alphabetically by title, click the ‘Sort by A-Z’ at the top right of the search results list.
         You can view more detailed document descriptions by clicking on the item title on the search results page; each display will give you the title, description, reference number, date and access information.  Some search results will include a digital image of the document.
         You can see more information and view the individual item in context by clicking ‘see more’.  This will take you to the holding institution’s online catalogue in a new browser tab.

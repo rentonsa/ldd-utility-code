@@ -25,11 +25,11 @@
             <p>Each of the links below will take you to the individual university museum's websites. For centralised information on visiting any of the museums, see our Visit dropdown in the top menu.</p>
             <ul>
                 <li><a href="https://gsaarchives.net/" alt-text="Glasgow School of Art" title="Glasgow School of Art" target="_blank">Glasgow School of Art</a></li>
-                <li><a href="https://www.hw.ac.uk/services/is/heritage/museum-and-archive.htm>" alt-text="Heriot Watt University" title="Heriot Watt University" target="_blank">Heriot Watt University</a></li>
+                <li><a href="https://www.hw.ac.uk/services/is/heritage/museum-and-archive.htm" alt-text="Heriot Watt University" title="Heriot Watt University" target="_blank">Heriot Watt University</a></li>
                 <li><a href="https://www3.rgu.ac.uk/about/art-and-heritage-collections" alt-text="Robert Gordon University" title="Robert Gordon University" target="_blank">Robert Gordon University</a></li>
                 <li><a href="https://www.abdn.ac.uk/library/" alt-text="University of Aberdeen" title="University of Aberdeen" target="_blank">University of Aberdeen</a></li>
                 <li><a href="https://www.dundee.ac.uk/museum/" alt-text="University of Dundee" title="University of Dundee" target="_blank">University of Dundee</a></li>
-                <li><a href="https://www.ed.ac.uk/information-services/about/organisation/library-and-collections/sections-staff/library-collections-sections/museums" alt-text="University of Edinburgh" title="University of Edinburgh" target="_blank">University of Edinburgh</a></li>
+                <li><a href="https://www.ed.ac.uk/visit/museums-galleries" alt-text="University of Edinburgh" title="University of Edinburgh" target="_blank">University of Edinburgh</a></li>
                 <li><a href="https://www.gla.ac.uk/hunterian/" alt-text="University of Glasgow" title="University of Glasgow" target="_blank">University of Glasgow</a></li>
                 <li><a href="https://www.st-andrews.ac.uk/museums/" alt-text="University of St Andrews" title="University of St Andrews" target="_blank">University of St Andrews</a></li>
                 <li><a href="https://www.stir.ac.uk/about/art-collection/" alt-text="University of Stirling" title="University of Stirling" target="_blank">University of Stirling</a></li>
