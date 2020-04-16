@@ -22,7 +22,17 @@ $bitstreamLinks = array();
 
 <div class="col-md-9 col-sm-9 col-xs-12" xmlns="http://www.w3.org/1999/html">
     <div class="row">
-        <h1 class="itemtitle"><?php echo strip_tags($record_title) ?></h1>
+        <h1 class="itemtitle"><?php
+
+            $strip_rec_title = strip_tags($record_title);
+
+            if(substr($strip_rec_title, -1) == ',') {
+                echo substr($strip_rec_title, 0, strlen($strip_rec_title) - 1);
+            }
+            else    {
+                echo $strip_rec_title;
+            }
+            ?></h1>
     </div>
 
     <div class="row full-metadata">
@@ -49,6 +59,7 @@ $bitstreamLinks = array();
                         $value = '';
                         $photo = '';
                         $audio = '';
+                        $trans = '';
                         $interview_summary = '';
 
                         foreach($solr[$element] as $index => $metadatavalue) {
@@ -93,13 +104,17 @@ $bitstreamLinks = array();
                                         new RecursiveArrayIterator(json_decode($json_obj, TRUE)),
                                         RecursiveIteratorIterator::SELF_FIRST);
 
-
                                     foreach ($jsonIterator as $key2 => $val) {
-                                        if(!is_array($val) && $key2 == 'file_uri' && (strpos($val, '.wav') !== false || strpos($val, '.mp3') !== false)) {
-                                            $audio .= '<audio controls src="'.$val.'" style="margin-top: 8px;"> Your browser does not support the <code>audio</code> element.</audio></br>';
-                                        }
-                                        else if(!is_array($val) && $key2 == 'file_uri' && (strpos($val, '.jpg') !== false || strpos($val, '.jpeg') !== false)) {
-                                            $photo .= '<a href="'. $val . '"><img src="'.$val.'" style="width: 300px; padding: 8px;"></a>';
+                                        if(!is_array($val) && $key2 == 'file_uri')   {
+                                            if(strpos($val, '.wav') !== false || strpos($val, '.mp3') !== false) {
+                                                $audio .= '<audio controls src="'.$val.'" style="margin-top: 8px;"> Your browser does not support the <code>audio</code> element.</audio></br>';
+                                            }
+                                            else if(strpos($val, '.jpg') !== false || strpos($val, '.jpeg') !== false) {
+                                                $photo .= '<a href="'. $val . '"><img src="'.$val.'" style="width: 300px; padding: 8px;"></a>';
+                                            }
+                                            else if(strpos($val, '.odt') !== false || strpos($val, '.doc') !== false) {
+                                                $trans .= '<a href="' . $val . '"><img src="/theme/eerc/images/file-word-icon.png"></a>';
+                                            }
                                         }
 
                                     }
@@ -123,13 +138,17 @@ $bitstreamLinks = array();
                                 }
                             }
 
-                            if($value != '' && $index < sizeof($solr[$element]) - 1 && $element != 'digital_object_uris' && $element != 'dates') {
+                            if($value != '' && $index < sizeof($solr[$element]) - 1 && $element != 'digital_object_uris' && $element != 'dates'&& $element != 'component_id') {
                                 $value .= ', ';
                             }
                         }
 
                         if(trim($value) != '')
                             echo '<tr><th class="table-header">'.$key.'</th><td>' . $value . '</td></tr>';
+
+                        if($key == 'Audio links and images' && $trans != '')
+                            echo '<tr><th class="table-header">Transcript</th><td>' . $trans . '</td></tr>';
+
                     }
                 }
             }

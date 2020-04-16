@@ -68,7 +68,16 @@ else {
     foreach ($docs as $index => $doc) {
         ?>
         <div class="row search-row">
-            <h3><a href="./record/<?php echo $doc['id']?>/<?php echo $doc['types'][0]?>"><?php echo strip_tags($doc[$title_field]); ?></a></h3>
+            <h3><a href="./record/<?php echo $doc['id']?>/<?php echo $doc['types'][0]?>"><?php
+
+                    $strip_rec_title = strip_tags($doc[$title_field]);
+
+                    if(substr($strip_rec_title, -1) == ',') {
+                        echo substr($strip_rec_title, 0, strlen($strip_rec_title) - 1);
+                    }
+                    else    {
+                        echo $strip_rec_title;
+                    } ?></a></h3>
 
             <?php
             if (isset($doc["component_id"])) {
