@@ -2,6 +2,16 @@
 
     <h1>University of Edinburgh Exam Papers Online: 2004-05 to 2018-19</h1>
     <hr />
+    <h3>Covid-19 Alterations and Information</h3>
+    <p>
+        Please note: for many courses the provision of exams in Spring 2020 differs from previous years due to the Covid-19 outbreak. 
+        The relevance of previous exam papers will vary greatly between courses so please contact your course organiser or programme 
+        administration team to find out if consulting previous exam papers will be helpful to you as a revision study aid.
+    </p>
+    <p>
+        For general updates and information on the universities health and safety measures please visit: <a href="https://www.ed.ac.uk/news/covid-19">www.ed.ac.uk/news/covid-19</a>
+    <p>
+    <hr />
     <h3>To find a paper, use the search box above or select a school from the list on the right:-</h3>
     <div class="info-box">
         <h4>Search Tips</h4>
