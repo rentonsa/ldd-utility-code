@@ -58,21 +58,19 @@
                     </p>
 
                     <div class="image-box-xtra-smol">
-                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitboxes/box_2.jpg" alt="Current main exhibition logo" title="current exhibtion logo">
+                        <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Current main exhibition logo" title="current exhibtion logo">
                     </div>
 
                     <p class="right-align-p" alt="Current main exhibition title">
-                        NEXT EXHIBITION: TOUCHING STITCHES                      
+                        GALLERY CLOSED UNTIL FURTHER NOTICE                     
                     </p>
 
                     <!-- OPENING TIMES FOR TODAY -->
                     <!-- generated using javascript file "openingtimes.js" -->
                     <!--<p id="opening-times" class="right-align-p" alt="Library opening times for today">
                     </p>-->
-                    <p class="right-align-p">
-                        CLOSED<br/> 
-                        (The gallery is closed from 27 October to 29 November for exhibition changeover)
-                    </p>
+
+                    <p class="right-align-p" alt="Library opening times for today">COMING APRIL 3RD</p>
 
                     <!-- SECTION BUTTONS -->
                     <div id="quick-links">
@@ -135,6 +133,7 @@
                     <p id="visit-first" class="left-align-p" id="opening" alt="opening times for main library exhibition gallery">   
                         Monday to Saturday<br/> 
                         10am - 5pm<br/> 
+                        CLOSED DUE TO CORONA VIRUS PRECAUTIONS
                     </p>
                     <img id="wheelchair" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/icons/wheelchair.png" alt="Wheelchair access icon" title="Wheelchair access icon">
                     <p id="visit-second" class="left-align-p" alt="Wheelchair access details" alt="Wheelchair access details for main library exhibition gallery">
@@ -233,7 +232,7 @@
                 <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
                     <a>
                         <div class="image-box" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitboxes/box_2.jpg" alt="Forthcoming Exhibit logo" title="Embroidered Stories logo">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Forthcoming Exhibit logo" title="Embroidered Stories logo">
                         </div>
                     </a>
                 </div>
@@ -241,18 +240,20 @@
                 <!-- SECTION INFO -->
                 <div id="coming-exhibit-info" >
                     <div data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
-                        <h2 class="right-align-h" alt="forthcoming exhibition title">
-                            Touching Stitches
+                        <h2 id="current-exhibition-anchor" class="right-align-h" alt="forthcoming exhibition title">
+                            Lu Xun’s Legacy: Printmaking in Modern China
                         </h2>
             
-                        <p class="right-align-p" alt="forthcoming exhibition description">                       
-                            Come and discover the University’s Needlework Development Scheme (NDS), an unique group of 17th-20th century textiles from around the world. 
-                            Discover how the pieces have inspired students at ECA for generations and how they are now being revitalised through digital technologies and community engagement. 
-                            Get hands-on with the specially created handling samples and feel the stitches get under your fingers.
-                        </p>
+                        <!--<p class="right-align-p" alt="forthcoming exhibition description">                       
+                            Lu Xun (1881-1936) is the pen name of the revolutionary Chinese writer Zhou Shuren. 
+                            A leading left-wing printmaker and writer, Lu Xun was a passionate critic of the cultural and political conditions in 20th century China. 
+                            Drawn from the collections of the Muban Educational Trust, this travelling exhibition will explore Lu Xun’s revolutionary woodcuts, 
+                            the marked difference between prints made for propaganda and those for ‘art’s sake’, Lu Xun’s technical and stylistic influence, 
+                            and prints made from the 1950s to present day
+                        </p>-->
                         <br>
                         <p class="right-align-p" alt="forthcoming exhibition description continued"> 
-                            Explore this collection at Edinburgh College of Art’s <strong><a href="https://embroideredstories.eca.ed.ac.uk/" alt="link to forthcoming exhibition contributors external website" title="External link Edinburgh College of Art’s Embroided Stories extenal collection website" target="_blank">Embroidered Stories Collection</a></strong>
+                            Courtesy of the <a href="http://mubaneducationaltrust.org/" alt="link to forthcoming exhibition contributors website" title="External link to Muban Educational Trust website" target="_blank">Muban Educational Trust</a>
                         </p> 
 
                         <p id="info-gap" class="right-align-p" alt="forthcoming exhibition location">                       
@@ -260,13 +261,10 @@
                             GROUND FLOOR 
                         </p>
                         <p class="right-align-p" alt="forthcoming exhibition open dates">
-                            29 NOVEMBER 2019 – 29 FEBUARY 2020
+                            POSTPONED UNTIL FUTHER NOTICE
                         </p>
                         <p class="right-align-p" alt="forthcoming exhibition opening times">
                             MONDAY to SATURDAY 10:00 - 17:00
-                        </p>
-                        <p class="right-align-p" alt="forthcoming exhibition opening times">
-                            (The gallery will be closed from 25 December to 3 January for the winter holidays)
                         </p>
 
                         <!-- BUTTON TO CURRENT EXHIBITION COLLECTION -->
@@ -282,25 +280,25 @@
             </div>    
 
             <!-- SECTION DIVIDER -->
-            <div id="past-container" class="divider" data-100-bottom-top="transform: translateY(0px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
+            <!-- <div id="past-container" class="divider" data-100-bottom-top="transform: translateY(0px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div> -->
 
             <!-- SECTION TITLE --> 
-            <h1 id="coming-exhibitions" class="left-align-h1" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1" alt="exhibitons coming soon">Coming Soon</h1>
+            <!-- <h1 id="coming-exhibitions" class="left-align-h1" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1" alt="exhibitons coming soon">Coming Soon</h1> -->
 
             <!-- SECTION CONTAINER -->
-            <div class="exhibition-container" id="exhibition-divide">
+            <!-- <div class="exhibition-container" id="exhibition-divide"> -->
 
                 <!-- SECTION LOGO -->
-                <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
+                <!-- <div id="exhibit-logo" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
                     <a>
                         <div class="image-box" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
-                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitboxes/box_3.png" alt="Forthcoming Exhibit logo" title="Lu Xun: A Legacy In Print logo">
+                            <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/current_exhibition_logo.png" alt="Forthcoming Exhibit logo" title="Lu Xun: A Legacy In Print logo">
                         </div>
                     </a>
-                </div>
+                </div> -->
 
                 <!-- SECTION INFO -->
-                <div id="coming-exhibit-info" >
+                <!-- <div id="coming-exhibit-info" >
                     <div data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
                         <h2 class="right-align-h" alt="forthcoming exhibition title">
                             Lu Xun: A Legacy In Print
@@ -324,15 +322,15 @@
                         </p>
                         <p class="right-align-p" id="last-p" alt="forthcoming exhibition opening times">
                             MONDAY to SATURDAY 10:00 - 17:00
-                        </p>
+                        </p> -->
 
                         <!-- SECTION ADDITIONAL LOGOS -->
-                        <img class="associated-logo" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/muban-trust-logo.png" alt="Muban Trust Logo" title="Muban Trust Logo">
+                        <!-- <img class="associated-logo" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logos/muban-trust-logo.png" alt="Muban Trust Logo" title="Muban Trust Logo">
 
                     </div>
 
                 </div>
-            </div>
+            </div> -->
 
             <!-- SECTION DIVIDER -->
             <div id="past-container" class="divider" data-100-bottom-top="transform: translateY(0px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1"></div>
@@ -343,7 +341,6 @@
             <!-- SECTION CONTAINER -->
             <div id="past-container">
 
-                                                          
                 <div  data-100-bottom-top="transform: translateY(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
 
                     <!-- SECTION LOGOS --> 
@@ -453,7 +450,7 @@
 
                 <!-- SECTION INFO -->
                 <div id="info-container" class="exhibit-info" data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
-                <div class="anchor" id="current-exhibition-anchor" ></div>
+                <div class="anchor" id="event-anchor" ></div>
                     <h2 class="right-align-h" alt="current main exhibition title">Embroidery Workshop</h2>
 
                     <p class="right-align-p" alt="current main exhibition description">                       
@@ -496,7 +493,7 @@
 
                 <!-- SECTION INFO -->
                 <div id="info-container" class="exhibit-info" data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
-                <div class="anchor" id="current-exhibition-anchor" ></div>
+                <div class="anchor" id="event-anchor" ></div>
                     <h2 class="right-align-h" id="event-divide" alt="current main exhibition title">Talk and Object Handling Session with Lindy Richardson</h2>
 
                     <p class="right-align-p" alt="current main exhibition description">                       
@@ -539,7 +536,7 @@
 
                 <!-- SECTION INFO -->
                 <div id="info-container" class="exhibit-info" data-100-bottom-top="transform: translateX(75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
-                <div class="anchor" id="current-exhibition-anchor" ></div>
+                <div class="anchor" id="event-anchor" ></div>
                     <h2 class="right-align-h" id="event-divide" alt="current main exhibition title">Touching stitches: Exhibition Tours</h2>
 
                     <p class="right-align-p" alt="current main exhibition description">                       
