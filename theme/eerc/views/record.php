@@ -20,7 +20,7 @@ $numThumbnails = 0;
 $bitstreamLinks = array();
 ?>
 
-<div class="col-md-9 col-sm-9 col-xs-12" xmlns="http://www.w3.org/1999/html">
+<div class="col-md-9 col-sm-9 col-xs-12">
     <div class="row">
         <h1 class="itemtitle"><?php
 
@@ -89,9 +89,9 @@ $bitstreamLinks = array();
                                 }
                                 else if ($key == 'Dates') {
                                     if($metadatavalue['label'] == 'coverage')
-                                        $value .= $metadatavalue['label'] . ": " . $metadatavalue['expression'] . '</br>';
+                                        $value .= $metadatavalue['label'] . ": " . $metadatavalue['expression'] . '<br/>';
                                     else
-                                        $value .= $metadatavalue['label'] . ": " . $metadatavalue['begin'] . '</br>';
+                                        $value .= $metadatavalue['label'] . ": " . $metadatavalue['begin'] . '<br/>';
 
                                 }
                                 else if ($key == 'Audio links and images') {
@@ -166,9 +166,7 @@ $bitstreamLinks = array();
 
         <div class="row" style="float: right;">
             <button class="btn btn-info" onClick="history.go(-1);"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Back to Search Results</button>
-            <button class="btn btn-info"><a href ="<?php echo $link_uri_prefix ?><?php echo $solr[$id][0] ?>"
-                                            title="Full record at archives online " target="_blank">
-                    View full record in University of Edinburgh Archives Online <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></button>
+            <button class="btn btn-info" onClick="location.href= '<?php echo $link_uri_prefix . $solr[$id][0] ?>"><span title="Full record at archives online">View full record in University of Edinburgh Archives Online</span> <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></button>
         </div>
 
         <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox" style="clear: both; float: right;"></div>

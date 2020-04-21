@@ -93,7 +93,7 @@ else {
                 foreach ($doc[$author_field] as $author) {
                     $orig_filter = urlencode($author);
 
-                    echo '<a class="agent" href="./search/*:*/Agent:%22'.$orig_filter.'%22">'.$author.'</a>';
+                    echo '<a class="agent" href="./search/*:*/Agent:%22'.urlencode($orig_filter).'%22">'.$author.'</a>';
                     $num_authors++;
                     if($num_authors < sizeof($doc[$author_field])) {
                         echo ' ';
@@ -110,7 +110,7 @@ else {
                     foreach ($doc[$subject_field] as $subject) {
 
                         $orig_filter = urlencode($subject);
-                        echo '<a class="subject" href="./search/*:*/Subject:%22'.$orig_filter.'%22">'.$subject.'</a>';
+                        echo '<a class="subject" href="./search/*:*/Subject:%22'.urlencode($orig_filter).'%22">'.$subject.'</a>';
                         $num_subject++;
                         if($num_subject < sizeof($doc[$subject_field])) {
                             echo ' ';
@@ -140,7 +140,7 @@ else {
                                 if (strlen($b) > $max_length_summary)
                                     $after = substr($b, 0, $max_length_summary);
 
-                                echo $before . '<b>' . $needle . '</b>' . $after . '...</br>';
+                                echo $before . '<b>' . $needle . '</b>' . $after . '...<br/>';
                             }
 
                         }

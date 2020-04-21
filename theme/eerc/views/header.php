@@ -9,6 +9,21 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
         <base href="<?php echo base_url() . index_page(); if (index_page() !== '') { echo '/'; } echo $this->config->item('skylight_url_prefix'); echo '/' ?>">
+        <?php if($page_title == '') {
+        // $page_title only seems to be set when a record is displayed
+        // this therefore defaults to a main title
+         $page_title = 'University of Edinburgh ' . $this->config->item('skylight_fullname');
+        } else {
+            // ArchivesSpace special case
+            // record titles get added a trailing comma
+            // this searches for a comma and removes if found at end
+            $strip_title = strip_tags($page_title);
+            if(substr($strip_title, -2, 1) == ',') {
+                $page_title = substr($strip_title, 0, strlen($strip_title) - 2) . substr($strip_title, -1);
+            }
+
+        }
+        ?>
 
         <title><?php echo strip_tags($page_title); ?></title>
 
@@ -18,11 +33,9 @@
         Remove this if you use the .htaccess -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-        <title>University of Edinburgh <?php echo $this->config->item('skylight_fullname');?></title>
-
         <meta name="description" content="">
         <meta name="author" content="">
-        <meta name="title" content=<?php echo $page_title; ?>>
+        <meta name="title" content="<?= $page_title ?>">
 
         <!-- Mobile viewport optimized: j.mp/bplateviewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
