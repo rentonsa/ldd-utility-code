@@ -3,7 +3,7 @@
         <figure  class="left-image"><a href="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-about-1869-1-4.png/full/full/0/default.jpg"
                                         title="(Title: Copy digital image of carte de visite studio photograph of Patrick Geddes (1854-1932), aged 24.
                 Creator: James Ewing, fl. 1878-1904, photographer)"
-                                        target="_blank"><img src="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-about-1869-1-4.png/full/200,/0/default.jpg"></a>
+                                        target="_blank"><img src="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-about-1869-1-4.png/full/200,/0/default.jpg" alt-text="Copy digital image of carte de visite studio photograph of Patrick Geddes"></a>
             <figcaption>Patrick Geddes (1854-1932), aged 24 (Ref: GB237 Coll-1869/1/4)
                 </figcaption></figure>
         <p>
@@ -32,7 +32,7 @@
         </p>
         <figure  class="right-image"><a href="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-boxes.jpg/full/full/0/default.jpg"
                                         title="Over 148 boxes of the Patrick Geddes Archives were rehoused during the ‘Evergreen’ project."
-                                        target="_blank"><img src="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-boxes.jpg/full/200,/0/default.jpg"></a>
+                                        target="_blank"><img src="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-boxes.jpg/full/200,/0/default.jpg" alt-text="Over 148 boxes of the Patrick Geddes Archives were rehoused during the ‘Evergreen’ project."></a>
         <figcaption>Over 148 boxes of the Patrick Geddes Archives were rehoused during the ‘Evergreen’ project.</figcaption></figure>
         <p>
             Working on the project were:
@@ -58,7 +58,7 @@
         </p>
         <figure  class="left-image"><a href="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-about-crowd.png/full/full/0/default.jpg"
                                        title="Crowdsourcing conservation event at the University of Strathclyde Archives and Special Collections, February 2018"
-                                       target="_blank"><img src="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-about-crowd.png/full/200,/0/default.jpg"></a>
+                                       target="_blank"><img src="https://cantaloupe.is.ed.ac.uk/iiif/2/geddes-about-crowd.png/full/200,/0/default.jpg" alt-text="Crowdsourcing conservation event at the University of Strathclyde Archives and Special Collections, February 2018"></a>
             <figcaption>Crowdsourcing conservation event at the University of Strathclyde Archives and Special Collections, February 2018</figcaption></figure>
 
         <p>
@@ -67,12 +67,12 @@
         <p>
             The project has improved the physical condition of the collections considerably. Over 15000 items have been cleaned, repaired and rehoused, with key items receiving conservation treatment.
             The project has made a significant impact on the collections’ accessibility having catalogued over 4000 items across both collections.
-            It is now possible to search across both collections using our <a href="./" titlet="Online portal" alt-text="Online portal" target="_blank">online portal</a>.
+            It is now possible to search across both collections using our <a href="./" titlet="Online portal" target="_blank">online portal</a>.
         </p>
         <br><br>
         <p>
             The project was generously funded by the Wellcome Trust’s <a href="https://wellcome.ac.uk/funding/schemes/research-resources-awards-humanities-and-social-science" title = "Wellcome Research
-            Resource Awards" alt-text="Wellcome Research Resource Awards" target="_blank">Research Resource Awards Scheme</a>.
+            Resource Awards" target="_blank">Research Resource Awards Scheme</a>.
         </p>
         <p>
             Between 2016 and 2020, Project Archivist Elaine MacGillivray collaborated with academic colleagues, practitioners and community groups to deliver a range of presentations, workshops,
@@ -86,16 +86,16 @@
             printed and visual collections which celebrated Geddes’ unique
             contribution to urban planning in India. The exhibitions supported a series of collaborative activities that took place in October 2019 to mark the 165th anniversary of Geddes’ birth.
             You can read more about these events on the
-            <a href="http://libraryblogs.is.ed.ac.uk/patrickgeddes/2019/09/28/planning-for-humanity-patrick-geddes-in-india-1914-1924/" alt-text="Evergreen project blog" title="Evergreen project blog" target="_blank">‘Evergreen’ project blog</a>.
+            <a href="http://libraryblogs.is.ed.ac.uk/patrickgeddes/2019/09/28/planning-for-humanity-patrick-geddes-in-india-1914-1924/" title="Evergreen project blog" target="_blank">‘Evergreen’ project blog</a>.
         </p>
         <p>
             The engagement programme opened up the Patrick Geddes Archives to existing and new audiences and helped develop a network of engaged researchers with an interest in Patrick Geddes.
         </p>
         <p>
             The international engagement programme was made possible thanks to generous funding from
-            <a href="https://www.ed.ac.uk/global/staff-mobility" alt-text="Erasmus" title="Erasmus" target="_blank">Erasmus</a>,
-            <a href="https://www.ed.ac.uk/development-alumni" alt-text="UoE Alumni" title="UoE Alumni" target="_blank">University of Edinburgh Alumni</a> and the
-            <a href="https://www.ed.ac.uk/information-services/about/organisation/library-and-collections" alt-text="UoE L&UC" title="UoE L&UC" target="_blank">University of Edinburgh’s Library and University
+            <a href="https://www.ed.ac.uk/global/staff-mobility" title="Erasmus" target="_blank">Erasmus</a>,
+            <a href="https://www.ed.ac.uk/development-alumni" title="UoE Alumni" target="_blank">University of Edinburgh Alumni</a> and the
+            <a href="https://www.ed.ac.uk/information-services/about/organisation/library-and-collections" title="UoE L&UC" target="_blank">University of Edinburgh’s Library and University
             Collections</a>.
         </p>
         <h3>Project report [coming soon]</h3>
