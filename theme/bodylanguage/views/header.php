@@ -98,13 +98,14 @@
             <header>
                 <nav id="menu">
                     <ul class="menu-links">
-                        <li><a href="./contact" title="Feedback Form">Contact Us</a></li>
+                        <li><a href="./contact" title="Contact Us Link">Contact Us</a></li>
                         <li><a href="./feedback" title="Feedback Form">Feedback</a></li>
                         <li><a href="http://libraryblogs.is.ed.ac.uk/towardsdolly/" title="Towards Dolly Blog Link" target="_blank">Blog</a></li>
-                        <li><a href="./history" title="History Link">People</a></li>
-                        <li><a href="./catalogues" title="Catalogues Link">Catalogue</a></li>
+                        <li><a href="./resources" title="Resources Link">Resources</a></li>
+                        <li><a href="./people" title="People Link">People</a></li>
+                        <li><a href="./catalogues" title="Catalogues Link">Catalogues</a></li>
                         <li><a href="./about" title="About Link">About</a></li>
-                        <li><a href="<?php echo base_url(); ?>bodylanguage"  title="<?php echo $this->config->item('skylight_fullname');?> Home" title="About Link">Home</a></li>
+                        <li><a href="<?php echo base_url(); ?>bodylanguage"  title="<?php echo $this->config->item('skylight_fullname');?> Home" title="Home Link">Home</a></li>
                     </ul>
                 </nav>
 
