@@ -37,7 +37,7 @@
 
         <p>Roslin rare book collection [Coming soon]</p>
 
-        <p><a href="http://images.is.ed.ac.uk/luna/servlet/UoEgal~6~6" title="Roslin glass slide collection" target="_blank">Roslin glass slide collection</a></p>
+        <p><a href="https://images.is.ed.ac.uk/luna/servlet/UoEgal~6~6" title="Roslin glass slide collection" target="_blank">Roslin glass slide collection</a></p>
 
         <p><a href="http://archives.collections.ed.ac.uk/repositories/2/resources/85829" title="Charlotte Auerbach" target="_blank">Papers of Michael L. Ryder</a></p>
 

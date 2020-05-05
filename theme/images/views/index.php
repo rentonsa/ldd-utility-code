@@ -3,7 +3,7 @@
     <div class="tiles-wrapper">
         <ul class="tiles">
             <li class="tile">
-                <a href="http://images.is.ed.ac.uk/" target="_blank" class="caption">
+                <a href="https://images.is.ed.ac.uk/" target="_blank" class="caption">
                     <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/lunatile.jpg" alt="Edinburgh University Image Collections Home" title="Edinburgh University Image Collections Home">
                     <span onmouseover="this.style.background='#333';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#333'">All Image Collections</span>
                 </a>
@@ -21,13 +21,13 @@
                 </a>
             </li>
             <li class="tile">
-                <a href="http://exhibitions.ed.ac.uk/" target="_blank" class="caption">
+                <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc/exhibitions/" target="_blank" class="caption">
                     <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/ecatile.jpg" alt="Edinburgh University Exhibitions Home" title="Edinburgh University Exhibitions Home">
                     <span onmouseover="this.style.background='#333';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#333'">ECA Rare Books</span>
                 </a>
             </li>
             <li class="tile">
-                <a href="http://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery/crc/events-exhibitions" target="_blank" class="caption">
+                <a href="https://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery/crc/events-exhibitions" target="_blank" class="caption">
                     <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/incutile.jpg" alt="Edinburgh University Past Exhibitions Home" title="Edinburgh University Past Exhibitions Home">
                     <span onmouseover="this.style.background='#333';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#333'">Incunabula</span>
                 </a>
@@ -47,19 +47,19 @@
                 </a>
             </li>
             <li class="tile">
-                <a href="http://exhibitions.ed.ac.uk/" target="_blank" class="caption">
+                <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc/exhibitions/" target="_blank" class="caption">
                     <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/exhibitionstile.jpg" alt="Edinburgh University Exhibitions Home" title="Edinburgh University Exhibitions Home">
                     <span onmouseover="this.style.background='#333';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#333'">Museums</span>
                 </a>
             </li>
             <li class="tile">
-                <a href="http://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery/crc/events-exhibitions" target="_blank" class="caption">
+                <a href="https://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery/crc/events-exhibitions" target="_blank" class="caption">
                     <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/archivestile.jpg" alt="Edinburgh University Past Exhibitions Home" title="Edinburgh University Past Exhibitions Home">
                     <span onmouseover="this.style.background='#333';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#333'">Object Lessons</span>
                 </a>
             </li>
             <li class="tile">
-                <a href="http://images.is.ed.ac.uk/" target="_blank" class="caption">
+                <a href="https://images.is.ed.ac.uk/" target="_blank" class="caption">
                     <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/westmanutile.jpg" alt="Edinburgh University Image Collections Home" title="Edinburgh University Image Collections Home">
                     <span onmouseover="this.style.background='#333';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#333'">Western Medieval Manuscripts</span>
                 </a>

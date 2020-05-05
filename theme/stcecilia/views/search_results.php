@@ -30,7 +30,7 @@
             $content = true;
 
             try{
-                $content = @file_get_contents('http://images.is.ed.ac.uk/luna/images/favicon.ico',0,null,0,1); //todo move to config
+                $content = @file_get_contents('https://images.is.ed.ac.uk/luna/images/favicon.ico',0,null,0,1); //todo move to config
             } catch (Exception $e) {
                 // Handle exception
             }

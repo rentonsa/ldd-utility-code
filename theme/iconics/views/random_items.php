@@ -113,10 +113,10 @@
     </div>
     <div>
         <p>
-            <a target="_blank" href="http://images.is.ed.ac.uk/luna/servlet/iiif/collection/g/376">
+            <a target="_blank" href="https://images.is.ed.ac.uk/luna/servlet/iiif/collection/g/376">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/International_Image_Interoperability_Framework_logo.png" class="iiiflogo" title="Right-click, Copy Link to get the full IIIF manifest for the collection."></a>
-            <a target="_blank" href="http://images.is.ed.ac.uk/luna/servlet/iiif/collection/g/376">
-                <img src="http://images.is.ed.ac.uk/luna/images/LUNAIIIF80.png" class="lunaiiif" title="Right-click, Copy Link to get the full IIIF manifest for the collection."></a>
+            <a target="_blank" href="https://images.is.ed.ac.uk/luna/servlet/iiif/collection/g/376">
+                <img src="https://images.is.ed.ac.uk/luna/images/LUNAIIIF80.png" class="lunaiiif" title="Right-click, Copy Link to get the full IIIF manifest for the collection."></a>
             This collection is IIIF-compliant. <a href ="./iiif">See more</a>.
         </p>
     </div>

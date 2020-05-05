@@ -5,12 +5,12 @@
 (function($){
     var i = Math.floor((Math.random() * 7)),
         hovered = false,
-        images = ["http://images.is.ed.ac.uk/luna/servlet/iiif/UoEart~2~2~73051~164085/full/!1024,1024/0/default.jpg",
+        images = ["https://images.is.ed.ac.uk/luna/servlet/iiif/UoEart~2~2~73051~164085/full/!1024,1024/0/default.jpg",
                   "https://apps.utu.fi/media/kuvat/Coimbra/Kalm-kirja-3.jpg",
                   "https://gwdu64.gwdg.de/images/forster/overview/189_Prodr_Nr_255_b_1.jpg",
                   "https://apps.utu.fi/media/kuvat/Coimbra/old-bug-boxes-33.jpg",
                   "http://www.unimus.no/felles/bilder/web_hent_bilde.php?id=12136228&type=jpeg",
-                  "http://images.is.ed.ac.uk/luna/servlet/iiif/UoEgal~5~5~51583~103971/full/!1024,1024/0/default.jpg",
+                  "https://images.is.ed.ac.uk/luna/servlet/iiif/UoEgal~5~5~51583~103971/full/!1024,1024/0/default.jpg",
                   "https://apps.utu.fi/media/kuvat/Coimbra/old-bug-boxes-33.jpg"];
 
     $('.parallax').css('background-image', 'url(' + images[i] + ')');

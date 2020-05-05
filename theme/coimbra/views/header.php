@@ -6,7 +6,6 @@
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <base href="<?php echo base_url() . index_page(); if (index_page() !== '') { echo '/'; } if ($this->config->item('skylight_url_prefix') != "") { echo $this->config->item('skylight_url_prefix'); echo '/'; } ?>">
 
@@ -16,13 +15,11 @@
 
     <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
     Remove this if you use the .htaccess -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-    <title>Coimbra Virtual Exhibition 2017</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <meta name="title" content="<?= $page_title ?>">
     <!-- Mobile viewport optimized: j.mp/bplateviewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -90,7 +87,7 @@
 
 <body>
     <div id="loader">
-        <img class="logo" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logo.png">
+        <img class="logo" src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/logo.png"  alt="Coimbra Group Logo">
         <h1>Coimbra Exhibition</h1>
     </div>
     <nav class="navbar navbar-fixed-top">
@@ -101,7 +98,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://www.coimbra-group.eu/" title="Coimbra Group Website link" target="_blank"></a>
+                <a class="navbar-brand" href="https://www.coimbra-group.eu/" title="Coimbra Group Website link" target="_blank"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
@@ -116,8 +113,7 @@
                         <form role="search" action="./redirect/" method="post">
                             <input id="uoe-search" type="text"
                                    placeholder="Search..." name="q"
-                                   value="<?php if (isset($searchbox_query)) echo urldecode($searchbox_query); ?>"
-                                   id="q"/><button type="submit" name="submit_search" value="Search">
+                                   value="<?php if (isset($searchbox_query)) echo urldecode($searchbox_query); ?>"/><button type="submit" name="submit_search" value="Search">
                                 <i class="fa fa-search" aria-hidden="true"></i>
                             </button>
                         </form>

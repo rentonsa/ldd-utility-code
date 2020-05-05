@@ -52,7 +52,7 @@ else {
             if(!strpos($_SERVER['REQUEST_URI'],'/Collection:')){
             }
             else {
-                echo'<h1 class="collection-title-h1" alt="collection title">' . $collection_title . '</h1>';  
+                echo'<h1 class="collection-title-h1" title="collection title">' . $collection_title . '</h1>';
             }
         }
    
@@ -69,7 +69,7 @@ else {
             echo '<img class="collection-title-image" src="'.base_url() .'theme/' . $this->config->item('skylight_theme') . '/images/clickboxes/' . $collection_title . '-1.jpg" class="img-responsive" alt="' . $collection_title . ' collection example image">';
             echo '<img class="collection-title-image" src="'.base_url() .'theme/' . $this->config->item('skylight_theme') . '/images/clickboxes/' . $collection_title . '-2.jpg" class="img-responsive" alt="' . $collection_title . ' collection example image">';
             echo '<img class="collection-title-image" src="'.base_url() .'theme/' . $this->config->item('skylight_theme') . '/images/clickboxes/' . $collection_title . '-3.jpg" class="img-responsive" alt="' . $collection_title . ' collection example image">';
-            echo'<p class="collection-description-p" alt="description of the content of this collection">' . $collection_description . '</p>'; 
+            echo'<p class="collection-description-p" title="description of the content of this collection">' . $collection_description . '</p>';
         } 
     }
     ?>
@@ -98,7 +98,7 @@ else {
                     if($label == 'Relevancy')
                     {
                         ?>
-                        <em><a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc'?>" alt="sort items in this collection by <?php echo $label ?>"><?php echo $label ?></a></em>
+                        <em><a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc'?>" title="sort items in this collection by <?php echo $label ?>"><?php echo $label ?></a></em>
                         <?php
                     }
                     else {
@@ -106,11 +106,11 @@ else {
 
                         <em><?php echo $label ?></em>
                         <?php if($label != "Date") { ?>
-                            <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>" alt="sort items in this collection A-Z" title="Click to sort this collection by <?php echo $label ?> A-Z">A-Z</a> |
-                            <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>" alt="sort items in this collection Z-A" title="Click to sort this collection by <?php echo $label ?> Z-A">Z-A</a>
+                            <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>" title="Click to sort this collection by <?php echo $label ?> A-Z">A-Z</a> |
+                            <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>" title="Click to sort this collection by <?php echo $label ?> Z-A">Z-A</a>
                         <?php } else { ?>
-                            <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>" alt="sort items in this collection by newest first" title="Click to sort items in this collection by newest first">newest</a> |
-                            <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>" alt="sort items in this collection by oldest first" title="Click to sort items in this collection by oldest first">oldest</a>
+                            <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>" title="Click to sort items in this collection by newest first">newest</a> |
+                            <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>" title="Click to sort items in this collection by oldest first">oldest</a>
                         <?php } } } ?>
             </h5>
         </div>
@@ -119,7 +119,7 @@ else {
     <?php
     foreach ($docs as $index => $doc) {
         ?>
-        <div class="row search-row" alt="An item from this collection">
+        <div class="row search-row" title="An item from this collection">
             <?php 
                 echo'
                 <div class="collection-image-box">
@@ -130,7 +130,7 @@ else {
                         <i class="fa fa-camera"></i>
 
                         <div class="curl"></div>
-                        <a class="component_image_link" href="./record/'.  $doc['id'] . '" alt="link to this item" title="Click to view ' . strip_tags($doc[$title_field][0]) .'"></a>
+                        <a class="component_image_link" href="./record/'.  $doc['id'] . '" title="Click to view ' . strip_tags($doc[$title_field][0]) .'"></a>
                     </div>
                 </figure>
                 </div>
@@ -139,10 +139,10 @@ else {
 
             <?php if(!isset($doc[$image_date_field])){
                 //print_r(strip_tags($doc[$title_field][0]));
-                    echo '<h3><a href="./record/' . $doc['id'] . '" alt="item title" title="Click to view ' . strip_tags($doc[$title_field][0]) .'">' . strip_tags($doc[$title_field][0]) . '</a> (Undated)</h3>';
+                    echo '<h3><a href="./record/' . $doc['id'] . '" title="Click to view ' . strip_tags($doc[$title_field][0]) .'">' . strip_tags($doc[$title_field][0]) . '</a> (Undated)</h3>';
                 }
                 else {    
-                    echo '<h3><a href="./record/' . $doc['id'] . '" alt="item title" title="Click to view ' . strip_tags($doc[$title_field][0]) .'">' . strip_tags($doc[$title_field][0]) . '</a> (' . strip_tags($doc[$image_date_field][0]) . ')</h3>';
+                    echo '<h3><a href="./record/' . $doc['id'] . '" title="Click to view ' . strip_tags($doc[$title_field][0]) .'">' . strip_tags($doc[$title_field][0]) . '</a> (' . strip_tags($doc[$image_date_field][0]) . ')</h3>';
                 }?>
 
             <?php
@@ -177,7 +177,7 @@ else {
                         $lower_orig_filter = strtolower($subject);
                         $lower_orig_filter = urlencode($lower_orig_filter);
 
-                        echo '<a class="subject" href="./search/'.$orig_filter.'" alt="item subject tag" title="Click to filter by: ' . $subject . '">'.$subject.'</a>';
+                        echo '<a class="subject" href="./search/'.$orig_filter.'" title="Click to filter by: ' . $subject . '">'.$subject.'</a>';
                         $num_subject++;
                         if($num_subject < sizeof($doc[$subject_field])) {
                             echo ' ';

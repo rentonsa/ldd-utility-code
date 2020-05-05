@@ -95,12 +95,12 @@
     <div class="header">
         <div class="container header-normal hidden-xs">
             <div class="navbar-static-top header">
-                <a class="navbar-brand" href="http://www.ed.ac.uk" title="The University of Edinburgh Homepage Link" target="_blank"><i class="uoelogo">&nbsp;</i><i class="uoename">&nbsp;</i></a>
+                <a class="navbar-brand" href="https://www.ed.ac.uk" title="The University of Edinburgh Homepage Link" target="_blank"><i class="uoelogo">&nbsp;</i><i class="uoename">&nbsp;</i></a>
             </div>
         </div>
         <div class="container header-xs hidden-sm hidden-md hidden-lg">
             <div class="navbar-static-top header">
-                <a class="navbar-brand" href="http://www.ed.ac.uk" title="The University of Edinburgh Homepage Link" target="_blank"><i class="uoelogo">&nbsp;</i><i class="uoename">&nbsp;</i></a>
+                <a class="navbar-brand" href="https://www.ed.ac.uk" title="The University of Edinburgh Homepage Link" target="_blank"><i class="uoelogo">&nbsp;</i><i class="uoename">&nbsp;</i></a>
             </div>
         </div>
         <div class="wide bg-primary">

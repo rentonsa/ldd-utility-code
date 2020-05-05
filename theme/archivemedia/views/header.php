@@ -96,7 +96,7 @@
 <div id="container">
     <header>
         <div id="collection-title">
-            <a href="http://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh Home" target="_blank"></a>
+            <a href="https://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh Home" target="_blank"></a>
             <a href="<?php echo base_url(); ?>archivemedia" class="archlogo" title="Archives Media Home"></a>
             <a href="<?php echo base_url(); ?>archivemedia" class="menulogo" title="University of Edinburgh Art Collection Home"></a>
         </div>

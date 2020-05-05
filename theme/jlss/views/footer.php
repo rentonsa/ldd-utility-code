@@ -8,10 +8,10 @@
                 <div class="col-md-12 col-sm-12 col-xs-12 footer-logos ">
                     <!--<div class="center-block">
                         <a href="http://www.wellcome.ac.uk/" target="_blank"><div class="wellcome-logo"></div></a>
-                        <a href="http://www.ed.ac.uk/information-services/library-museum-gallery/crc" target="_blank"><div class="crc-logo"></div></a>
+                        <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc" target="_blank"><div class="crc-logo"></div></a>
                         <a href="http://www.lhsa.lib.ed.ac.uk" target="_blank"><div class="lhsa-logo"></div></a>
                         <a href="http://www.nhslothian.scot.nhs.uk" target="_blank"><div class="nhs-logo"></div></a>
-                        <a href="http://www.ed.ac.uk" target="_blank"><div class="uoe-logo"></div></a>
+                        <a href="https://www.ed.ac.uk" target="_blank"><div class="uoe-logo"></div></a>
                     </div>-->
                 </div>
 

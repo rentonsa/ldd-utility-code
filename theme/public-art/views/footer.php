@@ -3,13 +3,13 @@
         <div class="footer scroll">
 
                 <ul>
-                    <li><a href="http://www.ed.ac.uk/about/website/website-terms-conditions">Terms &amp; conditions</a></li>
+                    <li><a href="https://www.ed.ac.uk/about/website/website-terms-conditions">Terms &amp; conditions</a></li>
 
-                    <li><a href="http://www.ed.ac.uk/about/website/privacy">Privacy &amp; cookies</a></li>
+                    <li><a href="https://www.ed.ac.uk/about/website/privacy">Privacy &amp; cookies</a></li>
 
-                    <li><a href="http://www.ed.ac.uk/about/website/accessibility">Website accessibility</a></li>
+                    <li><a href="https://www.ed.ac.uk/about/website/accessibility">Website accessibility</a></li>
 
-                    <li><a href="http://www.ed.ac.uk/about/website/freedom-information">Freedom of Information Publication Scheme</a></li>
+                    <li><a href="https://www.ed.ac.uk/about/website/freedom-information">Freedom of Information Publication Scheme</a></li>
 
                 </ul>
 

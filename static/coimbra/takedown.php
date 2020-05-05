@@ -2,7 +2,7 @@
     <div class="container">
         <h2>Takedown Policy</h2>
 
-        <p>Collections on the platform <a href="http://collections.ed.ac.uk" title="University Collections Home">collections.ed.ac.uk</a> make every effort to ensure that published content
+        <p>Collections on the platform <a href="https://collections.ed.ac.uk" title="University Collections Home">collections.ed.ac.uk</a> make every effort to ensure that published content
             does not infringe any person's rights, or applicable UK laws.</p>
 
         <p>However, if you believe that content, in any of the sites hosted on this platform, may be illegal, please
@@ -30,8 +30,7 @@
                 <ul>
                     <li>Unauthorised use by reason of reproduction and/or making available the material.</li>
                     <li>Breach of the moral right of [paternity/integrity/right not to have my work subjected to
-                        derogatory treatment].
-                    </li>
+                        derogatory treatment].</li>
                     <li>Other complaints, e.g. defamation, breach of confidence, data protection.</li>
                 </ul>
             </li>

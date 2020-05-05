@@ -99,7 +99,7 @@
 
         <header>
             <div id="collection-title">
-                <a href="http://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh Home" target="_blank"></a>
+                <a href="https://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh Home" target="_blank"></a>
                 <a href="<?php echo base_url(); ?>" class="head-text" title="University of Edinburgh Projects Home"><?php echo $this->config->item('skylight_fullname');?> </a>
             </div>
             <div id="collection-search">

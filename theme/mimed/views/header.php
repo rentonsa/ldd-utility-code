@@ -6,7 +6,6 @@
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <base href="<?php echo base_url() . index_page(); if (index_page() !== '') { echo '/'; } echo $this->config->item('skylight_url_prefix'); echo '/' ?>">
 
@@ -16,12 +15,11 @@
 
     <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
     Remove this if you use the .htaccess -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-    <title>Musical Instrument Museums</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="title" content="<?= str_replace('"', '&quot;', $page_title); ?>">
 
     <!-- Mobile viewport optimized: j.mp/bplateviewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -103,7 +101,7 @@
 
         <header>
             <div id="collection-title">
-                <a href="http://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh Homepage Link" target="_blank"></a>
+                <a href="https://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh Homepage Link" target="_blank"></a>
                 <a href="<?php echo base_url(); ?>mimed" class="mimedlogo" title="Musical Instrument Museums Edinburgh Home"></a>
                 <a href="http://www.stcecilias.ed.ac.uk/" class="menulogo" title="St Cecilia's Hall Link" target="_blank"></a>
             </div>

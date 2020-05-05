@@ -787,9 +787,10 @@ fieldset[disabled] .btn-custom.active {
     padding-left:15px;
 }
 
-#box{
+.box{
      text-align: center;
      vertical-align: middle;
+     height:280px;
  }
 
 .img-responsive{
@@ -818,10 +819,6 @@ fieldset[disabled] .btn-custom.active {
     max-width: 142px;
     display: table-cell;
 }
-#box{
-    height:280px;
-}
-
 
 .recordtitle{
     max-width:170px;
