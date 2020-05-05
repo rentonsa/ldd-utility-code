@@ -6,7 +6,6 @@
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
         <base href="<?php echo base_url() . index_page(); if (index_page() !== '') { echo '/'; } echo $this->config->item('skylight_url_prefix'); echo '/' ?>">
 
@@ -17,8 +16,6 @@
         <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
         Remove this if you use the .htaccess -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-        <title>University of Edinburgh <?php echo $this->config->item('skylight_fullname');?></title>
 
         <meta name="description" content="">
         <meta name="author" content="">
@@ -121,7 +118,7 @@
 
                 <div class="header-normal">
                    <!-- <div style="max-width:90px;">
-                        <img src="http://images.is.ed.ac.uk/luna/servlet/iiif/UoEart~1~1~4493~100412/full/,96/0/default.jpg" alt="Patrick Geddes" class="Patrick Geddes" />
+                        <img src="https://images.is.ed.ac.uk/luna/servlet/iiif/UoEart~1~1~4493~100412/full/,96/0/default.jpg" alt="Patrick Geddes" class="Patrick Geddes" />
                     </div>-->
                     <a href="." alt-text="Home" title ="Home" id="collection-title"></a><!--Evergreen:
                         <div id="collection-sub-title">The Patrick Geddes Archive</div>-->

@@ -26,7 +26,7 @@
             <?php
             foreach ($docs as $index => $doc) {
                 ?>
-                <div class="col-xs-6 col-md-3" id ="box"-->
+                <div class="col-xs-6 col-md-3 box">
                     <?php
                         $bitstream_array = array();
                         if(isset($doc[$bitstream_field])) {
@@ -130,12 +130,12 @@
         <div class="row">
             <div class="centered text-center">
                 <nav>
-                    <span class="pagination pagination-sm pagination-xs">
+                    <ul class="pagination pagination-sm pagination-xs">
                         <?php
                         foreach ($paginationlinks as $pagelink)
                         { echo $pagelink; }
                         ?>
-                    </span>
+                    </ul>
                  </nav>
             </div>
         </div>

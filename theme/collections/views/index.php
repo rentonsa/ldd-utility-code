@@ -16,7 +16,7 @@
                         <i class="ion-arrow-right-c"></i>
 
                         <div class="curl"></div>
-                        <a href="http://archives.collections.ed.ac.uk/" title="Archives" target="_blank"></a>
+                        <a href="https://archives.collections.ed.ac.uk/" title="Archives" target="_blank"></a>
                     </div>
                 </figure>
             </div>
@@ -30,7 +30,7 @@
                         <i class="fa fa-camera"></i>
                         <i class="ion-arrow-right-c"></i>
                         <div class="curl"></div>
-                        <a href="http://collections.ed.ac.uk/art" title="Art Collection" target="_blank"></a>
+                        <a href="https://collections.ed.ac.uk/art" title="Art Collection" target="_blank"></a>
                     </div>
                 </figure>
             </div>
@@ -47,7 +47,7 @@
                         <i class="ion-arrow-right-c"></i>
 
                         <div class="curl"></div>
-                        <a href="http://collections.ed.ac.uk/mimed" title="Musical Instruments" target="_blank"></a>
+                        <a href="https://collections.ed.ac.uk/mimed" title="Musical Instruments" target="_blank"></a>
                     </div>
                 </figure>
             </div>
@@ -66,7 +66,7 @@
                         <i class="ion-arrow-right-c"></i>
 
                         <div class="curl"></div>
-                        <a href="http://collections.ed.ac.uk/iconics" title="Iconics Collection" target="_blank"></a>
+                        <a href="https://collections.ed.ac.uk/iconics" title="Iconics Collection" target="_blank"></a>
                     </div>
                 </figure>
             </div>
@@ -87,7 +87,7 @@
                     <i class="ion-arrow-right-c"></i>
 
                     <div class="curl"></div>
-                    <a href="http://collections.ed.ac.uk/directory" class="caption"
+                    <a href="https://collections.ed.ac.uk/directory" class="caption"
                        title="View the University of Edinburgh Collections Directory"></a>
                 </div>
             </figure>
@@ -589,7 +589,7 @@
                         <i class="ion-arrow-right-c"></i>
 
                         <div class="curl"></div>
-                        <a href="http://collections.ed.ac.uk/alumni" title="Alumni" target="_blank"></a>
+                        <a href="https://collections.ed.ac.uk/alumni" title="Alumni" target="_blank"></a>
                     </div>
                 </figure>
             </div>
@@ -606,7 +606,7 @@
                         <i class="ion-arrow-right-c"></i>
 
                         <div class="curl"></div>
-                        <a href="http://collections.ed.ac.uk/guardbook" title="Guardbook" target="_blank"></a>
+                        <a href="https://collections.ed.ac.uk/guardbook" title="Guardbook" target="_blank"></a>
                     </div>
                 </figure>
             </div>
@@ -683,7 +683,7 @@
                             <i class="ion-arrow-right-c"></i>
 
                             <div class="curl"></div>
-                            <a href="http://exhibitions.ed.ac.uk"></a>
+                            <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc/exhibitions"></a>
                         </div>
                     </figure>
                 </div>
@@ -696,7 +696,7 @@
                             <i class="fa fa-external-link"></i>
                             <i class="ion-arrow-right-c"></i>
                             <div class="curl"></div>
-                            <a href="http://www.ed.ac.uk/information-services/library-museum-gallery/crc"></a>
+                            <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc"></a>
                         </div>
                     </figure>
                 </div>
@@ -753,7 +753,7 @@
                             <i class="ion-arrow-right-c"></i>
 
                             <div class="curl"></div>
-                            <a href="http://collections.ed.ac.uk/participate"></a>
+                            <a href="https://collections.ed.ac.uk/participate"></a>
                         </div>
                     </figure>
                 </div>
@@ -768,7 +768,7 @@
                             <i class="ion-arrow-right-c"></i>
 
                             <div class="curl"></div>
-                            <a href="http://collections.ed.ac.uk/participate"></a>
+                            <a href="https://collections.ed.ac.uk/participate"></a>
                         </div>
                     </figure>
                 </div>

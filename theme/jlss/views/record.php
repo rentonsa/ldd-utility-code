@@ -119,7 +119,7 @@ $bitstreamLinks = array();
                                 $lower_orig_filter = strtolower($metadatavalue);
                                 $lower_orig_filter = urlencode($lower_orig_filter);
 
-                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/'.$orig_filter.'" alt="View items witch share the same subject" 
+                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/'.$orig_filter.'" 
                                         title="Click to view items with the subject ' . $metadatavalue .'">'.$metadatavalue.'</a></span>';
                             }
                             else {

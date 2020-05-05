@@ -77,7 +77,7 @@ $bitstreamLinks = array();
             <tr><th>Consult at</th>
                     <?php
 
-                        echo '<td><a href="http://www.ed.ac.uk/information-services/library-museum-gallery/crc/visitor-information/opening-times-location" target="_blank"
+                        echo '<td><a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc/visitor-information/opening-times-location" target="_blank"
                         title="University of Edinburgh, Centre for Research Collections">University of Edinburgh, Centre for Research Collections</a></td>';
                     ?>
                 </tr>

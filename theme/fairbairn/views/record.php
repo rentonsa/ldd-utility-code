@@ -50,11 +50,11 @@ $schema = $this->config->item("skylight_schema_links");
                                 //Insert Schema.org
                                 if (isset ($schema[$key]))
                                 {
-                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $orig_filter . '%22" title="'. $metadatavalue . '">' . $metadatavalue . '</a></span>';
                                 }
                                 else
                                 {
-                                    echo '<a href="./search/*:*/' . $key . ':%22'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                    echo '<a href="./search/*:*/' . $key . ':%22'.$orig_filter.'%22" title="'. $metadatavalue . '">'.$metadatavalue.'</a>';
                                 }
 
                             }
@@ -94,11 +94,11 @@ $schema = $this->config->item("skylight_schema_links");
                     <?php
                     if (isset($solr[$id_field]) && 0 === strpos($solr[$id_field][0], 'MS'))
                     {
-                        echo '<td><a href="http://www.nls.uk/" target="_blank" title="National Library of Scotland">National Library of Scotland</a></td>';
+                        echo '<td><a href="https://www.nls.uk/" target="_blank" title="National Library of Scotland">National Library of Scotland</a></td>';
                     }
                     else
                     {
-                        echo '<td><a href="http://www.ed.ac.uk/information-services/library-museum-gallery/crc" target="_blank"
+                        echo '<td><a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc" target="_blank"
                         title="University of Edinburgh, Centre for Research Collections">University of Edinburgh, Centre for Research Collections</a></td>';
                     }
                     ?>

@@ -34,13 +34,13 @@
           in the DIU!</p>
 
 <p>       You can hear more about this project from Dr Naomi Appleton, Senior Lecturer in Asian Religions and Conservator Emily Hick,
-          in this <a href="https://youtu.be/spYehaknO_A" alt="video">video</a>.
+          in this <a href="https://youtu.be/spYehaknO_A" title="video">video</a>.
 
 </p>
 <p>
-  The scroll has been made available to view online using <a href="https://iiif.io" alt="International Image Interoperability Framework" target="_blank">IIIF</a>
+  The scroll has been made available to view online using <a href="https://iiif.io" title="International Image Interoperability Framework" target="_blank">IIIF</a>
   image and presentation APIs, that stitch the images together in realtime to enable you to scroll up and down. There is more information about the digitisation in a
-  <a href="http://libraryblogs.is.ed.ac.uk/diu/2018/06/22/a-stitch-in-time-mahabharata-delivered-online/" alt="Digitisation Blog post" target="_blank">blog post</a>.
+  <a href="http://libraryblogs.is.ed.ac.uk/diu/2018/06/22/a-stitch-in-time-mahabharata-delivered-online/" title="Digitisation Blog post" target="_blank">blog post</a>.
         </div>
   </div>
 </div>

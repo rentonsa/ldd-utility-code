@@ -102,16 +102,16 @@
             </ul>
             <ul class="menu-links">
                 <li><a href="./feedback/" title="Feedback Link" class="last">Feedback</a></li>
-                <li><a href="http://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery/crc/projects" title="CRC Projects Link" target="_blank">Projects</a></li>
+                <li><a href="https://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery/crc/projects" title="CRC Projects Link" target="_blank">Projects</a></li>
                 <li><a href="http://libraryblogs.is.ed.ac.uk/" title="Library and University Collections Blog" target="_blank">Blog</a></li>
-                <li><a href="http://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery/crc" title="Centre for Research Collections Link" target="_blank">CRC</a></li>
+                <li><a href="https://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery/crc" title="Centre for Research Collections Link" target="_blank">CRC</a></li>
                 <li><a href="./about/" title="About this site">About</a></li>
                 <li><a href="./" title="University Collections Home">Home</a></li>
             </ul>
         </nav>
         <div class="clearfix"></div>
         <div id="collection-title">
-            <a href="http://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh Home" target="_blank"></a>
+            <a href="https://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh Home" target="_blank"></a>
             <a href="<?php echo base_url(); ?>iconics" class="iconicslogo" title="University of Edinburgh Collections Home"></a>
         </div>
         <div id="collection-search">

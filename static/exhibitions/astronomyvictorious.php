@@ -18,7 +18,7 @@
         <div id="royalobs-banner" class="exhibition-image"></div>
         <div id="liblog-banner" class="exhibition-image"></div>
 
-        <a href="<?php echo base_url() ?>past#astronomy-anchor" alt="link back to full past exhibiton list" title="Link back to full past exhibiton list">
+        <a href="<?php echo base_url() ?>past#astronomy-anchor" title="Link back to full past exhibition list">
             <button id="exhibition-back" class="exhibit-button">
                 <p>Back to full list</p>
             </button>

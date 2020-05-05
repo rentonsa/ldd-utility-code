@@ -33,7 +33,7 @@
         <p>Between October 2014 and May 2015, the project ‘Science on a Plate: the natural sciences through glass slides,
             1870-1930’ digitised nearly 3,500 historic glass slides which were catalogued as part of ‘Towards Dolly’.
             Depicting different animal breeds and scenes and people from around the world, this rich visual resource
-            is now available to  <a href="http://images.is.ed.ac.uk/luna/servlet/UoEgal~6~6" title="Roslin Glass Slide online" target="_blank">view online</a>.
+            is now available to  <a href="https://images.is.ed.ac.uk/luna/servlet/UoEgal~6~6" title="Roslin Glass Slide online" target="_blank">view online</a>.
         </p>
 
         <p>These projects were generously funded by the Wellcome Trust's

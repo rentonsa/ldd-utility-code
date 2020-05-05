@@ -21,7 +21,7 @@
                 ?>
 
                 <li<?php if($index == 0) { echo ' class="first"'; } elseif($index == sizeof($related_items) - 1) { echo ' class="last"'; } ?>>
-                    <a class="related-record" href="./record/<?php echo $doc['id']?>"><?php echo $doc[$title_field][0]; ?></a>
+                    <a class="related-record" href="./record/<?php echo $doc['id']?>" title="<?php echo $doc[$title_field][0]; ?>"><?php echo $doc[$title_field][0]; ?></a>
 
                     <!--<div class="tags">
 

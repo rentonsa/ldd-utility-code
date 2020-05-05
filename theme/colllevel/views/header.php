@@ -92,7 +92,7 @@
     <div class="container">
         <div class="navbar-header">
             <div id="collection-title">
-                <a href="http://www.ed.ac.uk" class="navbar-brand logo" title="The University of Edinburgh Home" target="_blank"><img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/UoELogo.gif" /></a>
+                <a href="https://www.ed.ac.uk" class="navbar-brand logo" title="The University of Edinburgh Home" target="_blank"><img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/UoELogo.gif" /></a>
                 <div id="navbar-word">
                     <a href="<?php echo base_url(); ?>/<?php echo $this->config->item('skylight_theme'); ?>" class="collectionslogo" title="University of Edinburgh Collections Home"></a>
                 </div>
@@ -109,8 +109,8 @@
         <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav" id="navbar-middle">
                 <li><a href="#" title="University of Edinburgh Collections Home">HOME</a></li>
-                <li><a href="http://collections.ed.ac.uk/about" target="_blank" title="About Edinburgh University Collections">ABOUT</a></li>
-                <li><a href="http://collections.ed.ac.uk/feedback/" target="_blank" title="Provide feedback">FEEDBACK</a></li>
+                <li><a href="https://collections.ed.ac.uk/about" target="_blank" title="About Edinburgh University Collections">ABOUT</a></li>
+                <li><a href="https://collections.ed.ac.uk/feedback/" target="_blank" title="Provide feedback">FEEDBACK</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right hidden-xs" id="navbar-right">
                 <a href="https://www.facebook.com/crc.edinburgh" target="_blank" title="CRC Facebook Page"><i id="social-fb" class="fa fa-facebook-square fa-3x social" aria-hidden="true"></i></a>
@@ -135,7 +135,7 @@
 </div>
 <div class="tab-heading">
     <div class="container">
-        <!--h2 class="tab-h2"><a class="address" href="http://collections.ed.ac.uk/" target="_blank">COLLECTIONS.ED.AC.UK</a></h2-->
+        <!--h2 class="tab-h2"><a class="address" href="https://collections.ed.ac.uk/" target="_blank">COLLECTIONS.ED.AC.UK</a></h2-->
         <p class="tab-p">The University of Edinburgh's rare and unique collections catalogue online.</p>
         <div class="form-group hidden-xs">
             <form action="./redirect/" method="post">

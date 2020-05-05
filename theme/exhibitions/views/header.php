@@ -6,7 +6,7 @@
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
         <base href="<?php echo base_url() . index_page(); if (index_page() !== '') { echo '/'; } if ($this->config->item('skylight_url_prefix') != "") { echo $this->config->item('skylight_url_prefix'); echo '/'; } ?>">
@@ -17,12 +17,11 @@
 
         <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
         Remove this if you use the .htaccess -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-        <title>University of Edinburgh Exhibitions </title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <meta name="description" content="">
         <meta name="author" content="">
+        <meta name="title" content="<?= $page_title ?>">
 
         <!-- Mobile viewport optimized: j.mp/bplateviewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -255,7 +254,7 @@
 
                 <!-- MAIN UNIVERSITY LOGO -->
                 <div id="non-index" class="logo-container">
-                    <a href="' . base_url() . '" alt="Link to Library Exhibitions home page" title="Link back to Library Exhibitions home page">
+                    <a href="' . base_url() . '" title="Link back to Library Exhibitions home page">
                         <img src="' . base_url() . 'theme/' . $this->config->item('skylight_theme') . '/images/logos/uofe_logo.png" alt="University of Edinburgh Logo">
                     </a>
                 </div>
@@ -329,7 +328,7 @@
 
                 <!-- MAIN UNIVERSITY LOGO -->
                 <div id="non-index" class="logo-container">
-                    <a href="' . base_url() . '" alt="Link to Library Exhibitions home page" title="Link back to Library Exhibitions home page">
+                    <a href="' . base_url() . '" title="Link back to Library Exhibitions home page">
                         <img src="' . base_url() . 'theme/' . $this->config->item('skylight_theme') . '/images/logos/uofe_logo.png" alt="University of Edinburgh Logo">
                     </a>
                 </div>

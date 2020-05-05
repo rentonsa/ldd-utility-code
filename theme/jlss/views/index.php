@@ -36,7 +36,7 @@
                             </div>
 
                             <div class="curl"></div>
-                            <a href="./search/*:*/Collection:&quot;theatre%7C%7C%7CTheatre&quot;" title="Link to the Theatre Collection" alt="Link to the Theatre Collection"></a>
+                            <a href="./search/*:*/Collection:&quot;theatre%7C%7C%7CTheatre&quot;" title="Link to the Theatre Collection"></a>
                         </div>
                     </figure>
                 </div>
@@ -55,8 +55,7 @@
                             </div>
 
                             <div class="curl"></div>
-                            <a href="./search/*:*/Collection:&quot;serving+their+country%7C%7C%7CServing+Their+Country&quot;" title="Link to the Serving Their Country Collection" 
-                            alt="Link to the Serving Their Country Collection"></a>
+                            <a href="./search/*:*/Collection:&quot;serving+their+country%7C%7C%7CServing+Their+Country&quot;" title="Link to the Serving Their Country Collection"></a>
                         </div>
                     </figure>
                 </div>
@@ -75,7 +74,7 @@
                             </div>
 
                             <div class="curl"></div>
-                            <a href="./search/*:*/Collection:&quot;migration%7C%7C%7CMigration&quot;" title="Link to the Migration Collection" alt="Link to the Migration Collection"></a>
+                            <a href="./search/*:*/Collection:&quot;migration%7C%7C%7CMigration&quot;" title="Link to the Migration Collection"></a>
                         </div>
                     </figure>
                 </div>
@@ -94,7 +93,7 @@
                             </div>
 
                             <div class="curl"></div>
-                            <a href="./search/*:*/Collection:&quot;refugee+period%7C%7C%7CRefugee+Period&quot;" title="Link to the Refugee Period Collection" alt="Link to the Refugee Period Collection"></a>
+                            <a href="./search/*:*/Collection:&quot;refugee+period%7C%7C%7CRefugee+Period&quot;" title="Link to the Refugee Period Collection"></a>
                         </div>
                     </figure>
                 </div>
@@ -113,7 +112,7 @@
                             </div>    
 
                             <div class="curl"></div>
-                            <a href="./search/*:*/Collection:&quot;religious+life%7C%7C%7CReligious+life&quot;" title="Link to the Religious Life Collection" alt="Link to the Religious Life Collection"></a>
+                            <a href="./search/*:*/Collection:&quot;religious+life%7C%7C%7CReligious+life&quot;" title="Link to the Religious Life Collection"></a>
                         </div>
                     </figure>
                 </div>
@@ -132,7 +131,7 @@
                             </div>
 
                             <div class="curl"></div>
-                            <a href="./search/*:*/Collection:&quot;art%7C%7C%7CArt&quot;" title="Link to the Art Collection" alt="Link to the Art Collection"></a>
+                            <a href="./search/*:*/Collection:&quot;art%7C%7C%7CArt&quot;" title="Link to the Art Collection"></a>
                         </div>
                     </figure>
                 </div>
@@ -151,7 +150,7 @@
                             </div>
 
                             <div class="curl"></div>
-                            <a href="./search/*:*/Collection:&quot;soviet+jewry%7C%7C%7CSoviet+Jewry&quot;" title="Link to the Soviet Jewry Collection" alt="Link to the Soviet Jewry Collection"></a>
+                            <a href="./search/*:*/Collection:&quot;soviet+jewry%7C%7C%7CSoviet+Jewry&quot;" title="Link to the Soviet Jewry Collection"></a>
                         </div>
                     </figure>
                 </div>
@@ -170,7 +169,7 @@
                             </div>
 
                             <div class="curl"></div>
-                            <a href="./search/*:*/Collection:&quot;scottish+communities%7C%7C%7CScottish+Communities&quot;" title="Link to the Scottish Communities Collection" alt="Link to the Scottish Communities Collection"></a>
+                            <a href="./search/*:*/Collection:&quot;scottish+communities%7C%7C%7CScottish+Communities&quot;" title="Link to the Scottish Communities Collection"></a>
                         </div>
                     </figure>
                 </div>
@@ -189,7 +188,7 @@
                             </div>
 
                             <div class="curl"></div>
-                            <a href="./search/*:*/Collection:&quot;women%7C%7C%7CWomen&quot;" title="Link to the Women Collection" alt="Link to the Women Collection"></a>
+                            <a href="./search/*:*/Collection:&quot;women%7C%7C%7CWomen&quot;" title="Link to the Women Collection"></a>
                         </div>
                     </figure>
                 </div>
@@ -208,7 +207,7 @@
                             </div>
 
                             <div class="curl"></div>
-                            <a href="./search/*:*/Collection:&quot;relations+with+wider+community%7C%7C%7CRelations+with+wider+community&quot;" title="Link to the Wider Relations Collection" alt="Link to the Wider Relations Collection"></a>
+                            <a href="./search/*:*/Collection:&quot;relations+with+wider+community%7C%7C%7CRelations+with+wider+community&quot;" title="Link to the Wider Relations Collection"></a>
                         </div>
                     </figure>
                 </div>

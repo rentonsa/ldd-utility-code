@@ -11,11 +11,11 @@
                 Hess’ classifications are first and foremost visual; accentuated by the quality of the images produced by our Digital Imaging Unit. The visual comparisons also encourage a deeper engagement with the overall collection, what it represents and how it is used. Objects that have never been seen in parallel are thrust together, giving a truly unique overview.
             </p>
             <p>
-                <a href="http://www.fabiennehess.com"www.fabiennehess.com
+                <a href="http://www.fabiennehess.com">www.fabiennehess.com</a>
             </p>
 
             <p>
-                Library Digital Development have used <a href="https://iiif.io" alt="International Image Interoperability Framework" target="_blank">IIIF</a>
+                Library Digital Development have used <a href="https://iiif.io" target="_blank">IIIF</a>
                 image and presentation APIs to make Fabienne's selected images available in a digestible format.
              </p>
         </div>
