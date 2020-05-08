@@ -42,16 +42,13 @@
         <div class="cataglogue-list-index">
             <ul class="catalogue-list">
                 <li>
-                    <a>The archives of Margaret Morris Movement International</a>
-                    <div class="overlay"></div>
+                    <a class="list-link">The archives of Margaret Morris Movement International</a>
                 </li>
                 <li>
-                    <a>The records of Dunfermline College of Physical Education</a>
-                    <div class="overlay"></div>
+                    <a class="list-link">The records of Dunfermline College of Physical Education</a>
                 </li>
                 <li>
-                    <a>The archives of Scottish Gymnastics</a>
-                    <div class="overlay"></div>
+                    <a class="list-link">The archives of Scottish Gymnastics</a>
                 </li>
             </ul>
         </div>
