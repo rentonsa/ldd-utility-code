@@ -11,21 +11,25 @@ html {
 }
 
 .para-link, .quick-link, 
-.list-link, .footer-link {
+.list-link, .footer-link,
+.people-link, .results-link {
     position: relative;
     text-decoration: none;
 }
 .para-link:visited, .quick-link:visited, 
-.list-link:visited, .footer-link:visited {
+.list-link:visited, .footer-link:visited,
+.people-link:visited, .results-link:visited {
     text-decoration: none;
 }
 .para-link:hover, .quick-link:hover, 
-.list-link:hover, .footer-link:hover {
+.list-link:hover, .footer-link:hover,
+.people-link:hover, .results-link:hover {
     text-decoration: none;
     cursor: pointer;
 }
 .para-link::before, .quick-link::before, 
-.list-link::before, .footer-link::before {
+.list-link::before,
+.people-link::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -39,8 +43,37 @@ html {
     -webkit-transition: all 0.5s ease-in-out 0s;
     transition: all 0.5s ease-in-out 0s;
 }
+.results-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0px;
+    left: 0;
+    background-color: rgb(29,98,184);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.footer-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: rgb(29,98,184);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
 .para-link:hover::before, .quick-link:hover::before, 
-.list-link:hover::before, .footer-link:hover::before {
+.list-link:hover::before, .footer-link:hover::before,
+.people-link:hover::before, .results-link:hover::before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
@@ -81,8 +114,14 @@ html {
 .search input.btn {
     float: right;
 }
+.index-search {
+    padding-top: 16px;
+}
+.other-search {
+    padding-top: 6px;
+}
 
-/* SIDEBAR */
+/* SIDEBAR & RELATED ITEMS */
 .col-sidebar {
     margin-top: 1.6%;
 }
@@ -90,7 +129,7 @@ html {
     text-decoration: none;
     color: rgb(29,98,184);
 }
-.sidebar-overlay, .footer-overlay {
+.sidebar-overlay {
     position: relative;
     margin-top: 1px;
     bottom: 0;
@@ -105,6 +144,27 @@ html {
 .col-sidebar ul li:hover .sidebar-overlay {
     width: 100%;
 }
+a.related-record {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+}
+a.related-record::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    background-color: rgb(29,98,184);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+a.related-record:hover::before {
+    visibility: visible;
+    width: 100%;
+}
+
 
 /* FOOTER */
 .site-links {
@@ -185,15 +245,15 @@ html {
 .cataglogue-list-index {
     margin-bottom: 60px;
 }
-.catalogue-list {
+.catelogue-list {
     list-style: none;
     display: initial;
     text-align: center;
 }
-.catalogue-list li {
+.catelogue-list li {
     margin-bottom: 20px;
 }
-.catalogue-list a {
+.catelogue-list a {
     font-weight: bold;
     color: rgb(29,98,184);
     text-decoration: none;
@@ -202,4 +262,83 @@ html {
 /* ABOUT PAGE */
 #project-anchor, #collection-anchor {
     position: relative;
+}
+
+/* CATELOGUE PAGE */
+#morris-anchor, #dunfermline-anchor, #sctgymnastics-anchor {
+    position: relative;
+}
+.catelogue-title {
+    margin-top: 40px;
+}
+
+/* PEOPLE PAGE */
+.people-overlay {
+    background-color: rgb(29,98,184);
+    overflow: hidden;
+    width: 150px;
+    height: 0%;
+    transition: .5s ease;
+}
+#tile-block a:hover .people-overlay {
+    height: 150px;
+}
+.people-name {
+    margin-top: 130px;
+}
+
+
+/* SEARCH RESULTS */
+.listing-filter {
+    margin-top: 13px;
+    margin-bottom: 5px;
+}
+/* RESULTS LIST */
+a.resultlist-link, .full-metadata a {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+}
+a.resultlist-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: rgb(29,98,184);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+a.resultlist-link:hover::before, .full-metadata a:hover::before {
+    visibility: visible;
+    width: 100%;
+}
+
+/* ITEM / RECORD */
+.full-record-link {
+    margin-bottom: 20px;
+}
+.divider {
+    height: 45px;
+}
+.smol-divider {
+    height: 15px;
+}
+.big-divider {
+    height: 120px;
+}
+.full-metadata a {
+    text-decoration: none;
+}
+.full-metadata a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    background-color: rgb(29,98,184);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
 }

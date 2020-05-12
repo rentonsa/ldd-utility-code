@@ -103,7 +103,7 @@
                         <li><a href="http://libraryblogs.is.ed.ac.uk/towardsdolly/" title="Towards Dolly Blog Link" target="_blank">Blog</a></li>
                         <li><a href="./resources" title="Resources Link">Resources</a></li>
                         <li><a href="./people" title="People Link">People</a></li>
-                        <li><a href="./catalogue" title="Catalogues Link">Catalogue</a></li>
+                        <li><a href="./catelogue" title="Catelogues Link">Catelogue</a></li>
                         <li><a href="./about" title="About Link">About</a></li>
                         <li><a href="<?php echo base_url(); ?>bodylanguage"  title="<?php echo $this->config->item('skylight_fullname');?> Home" title="Home Link">Home</a></li>
                     </ul>
@@ -126,7 +126,7 @@
                                 <a class="quick-link" href="./about#collection-anchor">About the Collection</a>
                             </li>
                             <li>
-                                <a class="quick-link" href="./catalogue#catalogue-anchor">View the Catalogue</a>
+                                <a class="quick-link" href="./catelogue">View the Catalogue</a>
                             </li>
                             <li>
                                 <a class="quick-link" href="./people">Meet the People</a>

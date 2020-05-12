@@ -5,7 +5,7 @@
                         <a class="footer-link" href="./about">About</a>
                     </div>
                     <div>
-                        <a class="footer-link" href="./catalogues">Catalogues</a>
+                        <a class="footer-link" href="./catelogue">Catelogue</a>
                     </div>
                     <div>
                         <a class="footer-link" href="./people">People</a>

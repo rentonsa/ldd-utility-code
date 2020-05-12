@@ -39,11 +39,11 @@
 
                 <em><?php echo $label ?></em>
                 <?php if($label != "Date") { ?>
-                <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>">A-Z</a> |
-                <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>">Z-A</a>
+                <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>" class="results-link">A-Z</a> |
+                <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>" class="results-link">Z-A</a>
             <?php } else { ?>
-                <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>">newest</a> |
-                <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>">oldest</a>
+                <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>" class="results-link">newest</a> |
+                <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>" class="results-link">oldest</a>
           <?php } } } ?>
         </span>
 
@@ -61,7 +61,8 @@
         <div class="item-div">
 
 
-            <h3><a href="./record/<?php echo $doc['id']?>/<?php echo $doc['types'][0]?>"><?php echo $doc[$title_field]; ?></a></h3>
+            <h3><a href="./record/<?php echo $doc['id']?>/<?php echo $doc['types'][0]?>" class="resultlist-link"><?php echo $doc[$title_field]; ?></a></h3>
+            <div class="sidebar-overlay"></div>
             <?php
             if (isset($doc["component_id"])) {
                 $component_id = $doc["component_id"];

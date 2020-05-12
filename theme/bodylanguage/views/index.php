@@ -1,6 +1,6 @@
 <div class="record">
 
-    <div id="collection-search">
+    <div id="collection-search" class="index-search">
         <form action="./redirect/" method="post">
             <fieldset class="search">
                 <input type="text" name="q" value="<?php if (isset($searchbox_query)) echo urldecode($searchbox_query); ?>" id="q" />
@@ -40,15 +40,15 @@
             dance, physical education and gymnastics in Scotland including: 
         </p>
         <div class="cataglogue-list-index">
-            <ul class="catalogue-list">
+            <ul class="catelogue-list">
                 <li>
-                    <a class="list-link">The archives of Margaret Morris Movement International</a>
+                    <a class="list-link" href="./catelogue#morris-anchor">The archives of Margaret Morris Movement International</a>
                 </li>
                 <li>
-                    <a class="list-link">The records of Dunfermline College of Physical Education</a>
+                    <a class="list-link" href="./catelogue#dunfermline-anchor">The records of Dunfermline College of Physical Education</a>
                 </li>
                 <li>
-                    <a class="list-link">The archives of Scottish Gymnastics</a>
+                    <a class="list-link" href="./catelogue#sctgymnastics-anchor">The archives of Scottish Gymnastics</a>
                 </li>
             </ul>
         </div>
