@@ -1018,7 +1018,7 @@ div[id^="openseadragon"] {
     }
 }
 
-#info-box{
+.info-box{
     width:100%;
     padding: 10px;
 }

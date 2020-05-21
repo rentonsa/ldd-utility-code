@@ -6,7 +6,6 @@
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
         <base href="<?php echo base_url() . index_page(); if (index_page() !== '') { echo '/'; } echo $this->config->item('skylight_url_prefix'); echo '/' ?>">
 
@@ -16,12 +15,11 @@
 
         <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
         Remove this if you use the .htaccess -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-        <title>University of Edinburgh <?php echo $this->config->item('skylight_fullname');?></title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <meta name="description" content="">
         <meta name="author" content="">
+        <meta name="title" content="<?= $page_title ?>">
 
         <!-- Mobile viewport optimized: j.mp/bplateviewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">

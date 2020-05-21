@@ -98,7 +98,7 @@
     <div id="container">
         <header>
             <div id="collection-title">
-                <a href="http://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh Home" target="_blank"></a>
+                <a href="https://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh Home" target="_blank"></a>
                 <a href="<?php echo base_url(); ?>cockburn" class="geologylogo" title="Cockburn Geological Collection Home"></a>
                 <a href="<?php echo base_url(); ?>cockburn" class="menulogo" title="Cockburn Geological Collection Home"></a>
             </div>

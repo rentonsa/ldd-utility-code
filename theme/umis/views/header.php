@@ -112,6 +112,13 @@
         }
     </script>
 
+    <!--cookie challenge-->
+
+    <script type="text/javascript" id="cookieinfo"
+            src="//cookieinfoscript.com/js/cookieinfo.min.js">
+    </script>
+
+
     <?php if (isset($solr)) { ?><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
         <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
 
@@ -152,25 +159,21 @@
                     <li class="active dropdown"><a href="#">Home</a></li>
                     <li><a href="./about">About</a></li>
                     <li><a href="./top-picks">Our Top Picks</a></li>
-                    <li><a href="./whats-on">What's On</a></li>
+                    <li><a href="./projects">Projects</a></li>
                     <li><button onclick="browse_unis()" class="dropbtn">Visit &#9660;</button>
                     <div id="unis-dropdown" class="dropdown-content">
                         <a href='./aberdeen'>University of Aberdeen</a>
-                        <a href='./abertay'>University of Abertay</a>
                         <a href='./dundee'>University of Dundee</a>
                         <a href='./edinburgh'>University of Edinburgh</a>
                         <a href='./glasgow'>University of Glasgow</a>
-                        <a href='./glasgow-cal'>Glasgow Caledonian University</a>
                         <a href='./gsa'>Glasgow School of Art</a>
                         <a href='./heriot-watt'>Heriot-Watt University</a>
                         <a href='./rgu'>Robert Gordon University</a>
-                        <a href='./rcs'>Royal College of Surgeons</a>
                         <a href='./stirling'>University of Stirling</a>
                         <a href='./st-andrews'>University of St Andrews</a>
-                        <a href='./west-of-scot'>University of the West of Scotland</a>
                     </div>
                     </li>
-                    <li><a href="./blog">Blog</a></li>
+                   <!-- <li><a href="./blog">Blog</a></li>-->
                     <li><a href="./contact">Contact</a></li>
                 </ul>
 
@@ -180,27 +183,27 @@
                        <div class="dropdown">
                             <button onclick="browse_types()" class="dropbtn">Search Collections &#9660;</button>
                             <div id="types-dropdown" class="dropdown-content">
-                                <a href='./search/*:*/Category:%22anthropology%7C%7C%7CAnthropology%22'>Animals</a>
-                                <a href='./search/*:*/Category:%22antiquities%7C%7C%7CAntiquities%22'>Architecture & Buildings</a>
-                                <a href='./search/*:*/Category:%22art%7C%7C%7CArt%22'>Books & Printing</a>
-                                <a href='./search/*:*/Category:%22early+printed+books%7C%7C%7CEarly+printed+books%22'>Church & Religion</a>
-                                <a href='./search/*:*/Category:%22language+and+languages%7C%7C%7CLanguage+and+languages%22'>Coins & Medals</a>
-                                <a href='./search/*:*/Category:%22manuscripts%7C%7C%7CManuscripts%22'>Design</a>
-                                <a href='./search/*:*/Category:%22medicine%7C%7C%7CMedicine%22'>Dinosaurs</a>
-                                <a href='./search/*:*/Category:%22musical+instruments%7C%7C%7CMusical+Instruments%22'>The Earth</a>
-                                <a href='./search/*:*/Category:%22natural+history%7C%7C%7CNatural+history%22'>Local & Scottish History</a>
-                                <a href='./search/*:*/Category:%22politics+and+government%7C%7C%7CPolitics+and+government%22'>Maps & Plans</a>
-                                <a href='./search/*:*/Category:%22social+history%7C%7C%7CSocial+History%22'>Medicine</a>
-                                <a href='./search/*:*/Category:%22science%7C%7C%7CScience%22'>Music</a>
-                                <a href='./search/*:*/Category:%22technology%7C%7C%7CTechnology%22'>Paintings</a>
-                                <a href='./search/*:*/Category:%22manuscripts%7C%7C%7CManuscripts%22'>Photography & Film</a>
-                                <a href='./search/*:*/Category:%22medicine%7C%7C%7CMedicine%22'>Plants & Herbs</a>
-                                <a href='./search/*:*/Category:%22musical+instruments%7C%7C%7CMusical+Instruments%22'>Science & Scientific Instruments</a>
-                                <a href='./search/*:*/Category:%22natural+history%7C%7C%7CNatural+history%22'>Statues & Sculpture</a>
-                                <a href='./search/*:*/Category:%22politics+and+government%7C%7C%7CPolitics+and+government%22'>School & Teaching</a>
-                                <a href='./search/*:*/Category:%22social+history%7C%7C%7CSocial+History%22'>Textiles & Embroidery</a>
-                                <a href='./search/*:*/Category:%22science%7C%7C%7CScience%22'>Science</a>
-                                <a href='./search/*:*/Category:%22technology%7C%7C%7CTechnology%22'>World Cultures</a>
+                                <a href='./search/subject:%22animals%22'>Animals</a>
+                                <a href='./search/subject:%22architecture%22'>Architecture & Buildings</a>
+                                <a href='./search/subject:%22body%22'>The Body</a>
+                                <a href='./search/subject:%22books%22'>Books & Printing</a>
+                                <a href='./search/subject:%22religion%22'>Church & Religion</a>
+                                <a href='./search/subject:%22coins%22'>Coins & Medals</a>
+                                <a href='./search/subject:%22design%22'>Design</a>
+                                <a href='./search/subject:%22dinosaurs%22'>Dinosaurs</a>
+                                <a href='./search/subject:%22earth%22'>The Earth</a>
+                                <a href='./search/subject:%22history%22'>Local & Scottish History</a>
+                                <a href='./search/subject:%22maps%22'>Maps & Plans</a>
+                                <a href='./search/subject:%22medicine%22'>Medicine</a>
+                                <a href='./search/subject:%22music%22'>Music</a>
+                                <a href='./search/subject:%22paintings%22'>Paintings</a>
+                                <a href='./search/subject:%22photography%22'>Photography & Film</a>
+                                <a href='./search/subject:%22plants%22'>Plants & Herbs</a>
+                                <a href='./search/subject:%22science%22'>Science & Scientific Instruments</a>
+                                <a href='./search/subject:%22sculpture%22'>Statues & Sculpture</a>
+                                <a href='./search/subject:%22teaching%22'>School & Teaching</a>
+                                <a href='./search/subject:%22textiles%22'>Textiles & Embroidery</a>
+                                <a href='./search/subject:%22cultures%22'>World Cultures</a>
                             </div>
                         </div>
                     </li>

@@ -8,7 +8,7 @@
                 European universities. To coincide with the June 2017 Coimbra Conference, hosted at the
                 University of Edinburgh, this is the first time that Collections from across 35 member
                 institutions have been brought together in this unique collaboration.
-                <br><br>
+                <br/><br/>
                 Over 70 objects have been selected that straddle thousands of miles of the continent and millions of years of its history.
                 From the stunning Augsburg Art Cabinet to a petrified mammoth tooth, these objects highlight
                 the rich cultural diversity and uniqueness of University collections around Europe.
@@ -21,8 +21,8 @@
             <div class="content">
                 The theme of the conference is Universities and the Future of Cultural Heritage, inspired
                 by the Scottish Year of 2017, History, Heritage and Archaeology.
-                <br><br>
-                <b><a href="http://www.ed.ac.uk/global/coimbra-2017">Conference Details</a></b>
+                <br/><br/>
+                <b><a href="https://www.ed.ac.uk/global/coimbra-2017">Conference Details</a></b>
             </div>
         </div>
 
@@ -31,17 +31,17 @@
             <div class="content">
                 Founded in 1985 and formally constituted by Charter in 1987, the Coimbra Group is an association
                 of long-established European multidisciplinary universities of high international standard.
-                <br><br>
+                <br/><br/>
                 The Coimbra Group is committed to creating special academic and cultural ties in order to promote,
                 for the benefit of its members, internationalisation, academic collaboration, excellence in learning
                 and research, and service to society.
-                <br><br>
+                <br/><br/>
                 It is also the purpose of the Group to influence European educational policy and to develop best
                 practice through mutual exchange of experience.
-                <br><br>
-                <b>
-                    <a href="https://www.coimbra-group.eu/" target="_blank">More information on the Coimbra Group Website</a></b>
+                <br/><br/>
+                <b><a href="https://www.coimbra-group.eu/" target="_blank">More information on the Coimbra Group Website</a></b>
             </div>
         </div>
     </div>
 </div>
+<div>

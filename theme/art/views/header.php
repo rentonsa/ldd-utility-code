@@ -6,7 +6,6 @@
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <base href="<?php echo base_url() . index_page(); if (index_page() !== '') { echo '/'; } echo $this->config->item('skylight_url_prefix'); echo '/' ?>">
 
@@ -16,12 +15,12 @@
 
     <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
     Remove this if you use the .htaccess -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>University of Edinburgh Art Collection</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="title" content="<?= str_replace('"', '&quot;', $page_title); ?>">
 
     <!-- Mobile viewport optimized: j.mp/bplateviewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +34,7 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/fancybox/source/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-    <link rel="stylesheet" href="http://releases.flowplayer.org/6.0.4/skin/minimalist.css">
+    <link rel="stylesheet" href="https://releases.flowplayer.org/6.0.4/skin/minimalist.css">
     <link rel="stylesheet" href="<?php echo base_url()?>assets/font-awesome/css/font-awesome.min.css">
 
     <!-- Uncomment if you are specifically targeting less enabled mobile browsers
@@ -47,7 +46,7 @@
     <script src="<?php echo base_url()?>assets/jquery-ui-1.10.4/ui/minified/jquery-ui.min.js"></script>
     <script src="<?php echo base_url()?>assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="<?php echo base_url()?>assets/jquery-1.11.0/jcarousel/jquery.jcarousel.min.js"></script>
-    <script src="http://www.google-analytics.com/analytics.js"></script>
+    <script src="https://www.google-analytics.com/analytics.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
     <script src="https://cdn.rawgit.com/mejackreed/Leaflet-IIIF/master/leaflet-iiif.js"></script>
     <script src="<?php echo base_url()?>assets/openseadragon/openseadragon.min.js"></script>
@@ -62,7 +61,7 @@
     </script>
     <!-- End Google Analytics -->
 
-    <script src="http://releases.flowplayer.org/6.0.4/flowplayer.min.js"></script>
+    <script src="https://releases.flowplayer.org/6.0.4/flowplayer.min.js"></script>
 
     <!-- global options -->
     <script>
@@ -96,7 +95,7 @@
 <div id="container">
     <header>
         <div id="collection-title">
-            <a href="http://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh Home" target="_blank"></a>
+            <a href="https://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh Home" target="_blank"></a>
             <a href="<?php echo base_url(); ?>art" class="artlogo" title="University of Edinburgh Art Collection Home"></a>
             <a href="<?php echo base_url(); ?>art" class="menulogo" title="University of Edinburgh Art Collection Home"></a>
         </div>

@@ -406,7 +406,7 @@ foreach($recorddisplay as $key)
                         $lower_orig_filter = strtolower($metadatavalue);
                         $lower_orig_filter = urlencode($lower_orig_filter);
 
-                        echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a>';
+                        echo '<a href="./search/*:*/' . urlencode($key) . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a>';
                     }
                 }
                 echo '</div>';
@@ -449,9 +449,9 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
     </div>
     <div id="collapse1" class="panel-collapse collapse">
         <div class="panel-body">
-            <div class="col-sm-6 col-xs-12 col-md-8 col-lg-12 metadata">
+            <div class="col-sm-6 col-xs-12 col-md-8 col-lg-12 metadata" itemscope itemtype="https://schema.org/instrument">
 
-                <div id="info-box">
+                <div class="info-box">
 
                     <h3>Identification Information</h3>
                     <dl class="dl-horizontal">
@@ -482,7 +482,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                         }
                                         else
                                         {
-                                            echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a>';
+                                            echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22" title="' . $metadatavalue . '">' . $metadatavalue . '</a>';
                                         }
                                     }
                                     else {
@@ -509,12 +509,12 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                             }
                         }
                         if (!$infofound) {
-                            echo '<p>No information recorded.</p>';
+                            echo '<dt>No information recorded.</dt><dd></dd>';
                         }?>
                     </dl>
                 </div> <!-- main-info -->
 
-                <div id="info-box">
+                <div class="info-box">
                     <h3>Date Information</h3>
                     <dl class="dl-horizontal">
                         <?php
@@ -544,7 +544,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                         }
                                         else
                                         {
-                                            echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a>';
+                                            echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22" title="' . $metadatavalue . '">' . $metadatavalue . '</a>';
                                         }
                                     }
                                     else {
@@ -570,13 +570,13 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
 
                         }
                         if (!$infofound) {
-                            echo '<p>No information recorded.</p>';
+                            echo '<dt>No information recorded.</dt><dd></dd>';
                         }
                         ?>
                     </dl>
                 </div> <!-- meta-info -->
 
-                <div id="info-box">
+                <div class="info-box">
                     <h3>Maker</h3>
                     <dl class="dl-horizontal">
                         <?php
@@ -606,7 +606,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                         }
                                         else
                                         {
-                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
                                         }
                                     }
 
@@ -632,12 +632,12 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                             }
                         }
                         if (!$infofound) {
-                            echo '<p>No information recorded.</p>';
+                            echo '<dt>No information recorded.</dt><dd></dd>';
                         }?>
                     </dl>
                 </div> <!-- creator-info -->
 
-                <div id="info-box">
+                <div class="info-box">
                     <h3>Production Place</h3>
                     <dl class="dl-horizontal">
                         <?php
@@ -667,7 +667,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                         }
                                         else
                                         {
-                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
                                         }
                                     }
                                     else {
@@ -693,12 +693,12 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                             }
                         }
                         if (!$infofound) {
-                            echo '<p>No information recorded.</p>';
+                            echo '<dt>No information recorded.</dt><dd></dd>';
                         }?>
                     </dl>
                 </div> <!--place-info -->
 
-                <div id="info-box">
+                <div class="info-box">
                     <h3>Object Type Information</h3>
                     <dl class="dl-horizontal">
                         <?php
@@ -728,7 +728,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                         }
                                         else
                                         {
-                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
                                         }
                                     }
                                     else {
@@ -755,12 +755,12 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                             }
                         }
                         if (!$infofound) {
-                            echo '<p>No information recorded.</p>';
+                            echo '<dt>No information recorded.</dt><dd></dd>';
                         }?>
                     </dl>
                 </div> <!--type-info -->
 
-                <div id="info-box">
+                <div class="info-box">
                     <h3>Location</h3>
                     <dl class="dl-horizontal">
                         <?php
@@ -790,7 +790,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                         }
                                         else
                                         {
-                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
                                         }
                                     }
                                     else {
@@ -814,12 +814,12 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                             }
                         }
                         if (!$infofound) {
-                            echo '<p>No information recorded.</p>';
+                            echo '<dt>No information recorded.</dt><dd></dd>';
                         }?>
                     </dl>
                 </div> <!--location-info -->
 
-                <div id="info-box">
+                <div class="info-box">
                     <h3>Associated Performers</h3>
                     <dl class="dl-horizontal">
                         <?php
@@ -849,7 +849,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                         }
                                         else
                                         {
-                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
                                         }
                                     }
                                     else {
@@ -874,12 +874,12 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                             }
                         }
                         if (!$infofound) {
-                            echo '<p>No information recorded.</p>';
+                            echo '<dt>No information recorded.</dt><dd></dd>';
                         }?>
                     </dl>
                 </div> <!--association-info -->
 
-                <div id="info-box">
+                <div class="info-box">
                     <h3>Measurements</h3>
                     <dl class="dl-horizontal">
                         <?php
@@ -905,7 +905,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                     if (isset ($schema[$key])) {
                                         echo '<span itemprop="' . $schema[$key] . '"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
                                     } else {
-                                        echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a>';
+                                        echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22" title="' . $metadatavalue . '">' . $metadatavalue . '</a>';
                                     }
                                 }
                                 else
@@ -933,12 +933,12 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                         }
                         if (!$infofound)
                         {
-                            echo '<p>No information recorded.</p>';
+                            echo '<dt>No information recorded.</dt><dd></dd>';
                         }?>
                     </dl>
                 </div> <!--measurement-info -->
 
-                <div id="info-box">
+                <div class="info-box">
                     <h3>Description</h3>
                     <dl class="dl-horizontal">
                         <?php
@@ -969,7 +969,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                         }
                                         else
                                         {
-                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
                                         }
                                     }
                                     else {
@@ -993,7 +993,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                             }
                         }
                         if (!$infofound) {
-                            echo '<p>No information recorded.</p>';
+                            echo '<dt>No information recorded.</dt><dd></dd>';
                         }?>
                     </dl>
                 </div> <!--description info -->
@@ -1003,4 +1003,4 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
         </div> <!-- panel body -->
     </div>
 </div>
-
+</div>

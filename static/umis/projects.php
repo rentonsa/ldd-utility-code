@@ -1,0 +1,31 @@
+<div class="content">
+    <div class="container">
+        <!--<h1>Projects</h1>-->
+        <h4>UMIS&rsquo;s 9 member museums work together, and with others, on a regular basis in&nbsp;a number of&nbsp;priority areas.&nbsp;Our current focus includes:</h4>
+        <h3>Widening participation</h3>
+        <p>One of our priorities involves using our museums and objects to help our universities reach and engage people from backgrounds that are under-represented at university. This helps in ensuring&nbsp;that student bodies at universities reflect the diversity represented in wider society.</p>
+        <p>Our members with art colleges are currently working on a project to develop lesson plans to support the&nbsp;<a href="http://www.sfc.ac.uk/access-inclusion/access-initiatives/access-high-demand-professions/access-high-demand-professions.aspx"  target="_blank" alt-text="AHDP programme" title="AHDP programme">Scottish Funding Council&rsquo;s&nbsp;Access to High Demand Professions (AHDP)programme</a>. To find out more, please contact Susannah Waters, Archives and Collections Manager&nbsp;at Glasgow School of Art, on&nbsp;<a href="mailto:S.Waters@gsa.ac.uk">S.Waters@gsa.ac.uk</a></p>
+        <h3>Health and wellbeing</h3>
+        <p>The ongoing mental health and wellbeing of students is&nbsp;key&nbsp;within universities and the Scottish political&nbsp;agenda. University museums are well placed to support students&nbsp;-&nbsp;working with student services and other pastoral care providers to improve the student experience and help students feel supported and nurtured.&nbsp;</p>
+        <p>UMIS has a health and wellbeing sub group who are working in this area to highlight best practice and share experiences of successful initiatives, such as social prescribing and student engagement activities, with other members and the broader museums sector. To find out more, please contact&nbsp;us &lt;&lt;link to contact us page&gt;&gt;</p>
+        <h3>Decolonisation, restitution and repatriation</h3>
+        <p>Museums, and university museums among them, have built their collections in&nbsp;a number of&nbsp;ways over the decades and centuries. Some of these are now are now considered controversial or unethical, involved unequal exchanges or purchases,&nbsp;and/or have legacies rooted in colonialism. Decolonisation of collections, and restitution of items from the collections to the&nbsp;communities&nbsp;from which they have come, are important and emerging areas of museum work. They consider not only past collecting, and current projects, but also how museums operate in the future.</p>
+        <p>University museums are&nbsp;at the forefront of this&nbsp;work having&nbsp;particular insights&nbsp;into&nbsp;the collections they care for and their connections to people. University museums work closely with research colleagues in researching provenance of collections, carrying out collaborative research with colleagues from indigenous&nbsp;and source&nbsp;communities,&nbsp;and&nbsp;have led thinking around critical museology &ndash; an emerging field which challenges&nbsp;how museums were founded and&nbsp;traditionally operate.</p>
+        <p>A number of&nbsp;UMIS&rsquo;s member museums are active in this area, researching items in their collections, actively seeking to redress the actions of the past, and exploring how a more diverse and representative society can be served better by museums. To find out more about our work in this area, please contact us &lt;&lt;link to contact us page&gt;&gt;</p>
+        <h3>Scotland &amp; Medicine</h3>
+        <p>Scotland &amp; Medicine is a partnership of museums, archives and libraries throughout Scotland holding medical and health-related collections. Several of UMIS&rsquo;s members are involved in the&nbsp;project, which seeks to promote, enhance and connect medical collections through advocacy, networking, professional development and project support.</p>
+        <p>For further information, or if you would like to get involved in the partnership, please contact Matthew Jarron, Curator of Museum Services, University of Dundee on&nbsp;<a href="mailto:m.h.jarron@dundee.ac.uk">m.h.jarron@dundee.ac.uk</a></p>
+        <h3>Scottish Universities Public Art Network</h3>
+        <p>Led by the Universities of Dundee and Edinburgh, the Public Art Network involves curatorial and estates staff with responsibility for public art on university campuses along with academic researchers and artist practitioners based in Scottish universities.&nbsp;</p>
+        <p>The network aims to provide support for its members and provide advocacy and advice to other institutions (such as local authorities) involved in commissioning or maintaining public art. The network currently hopes to&nbsp;develop a shared digital platform to enable universities to create their own public art campus trails.&nbsp;</p>
+        <p>For further information, please contact&nbsp;Matthew Jarron, Curator of Museum Services, University of Dundee on&nbsp;<a href="mailto:m.h.jarron@dundee.ac.uk">m.h.jarron@dundee.ac.uk</a></p>
+        <h3>Conferences&nbsp;</h3>
+        <p>UMIS sees one of its roles as sharing expertise and best practice more widely &ndash; to be &lsquo;leaders&rsquo; in the sector.</p>
+        <p>There are plans to partner with Stirling University for a &lsquo;Creating Wellbeing&rsquo; conference in 2021. Details will follow.</p>
+        <p>In the past, we have held&nbsp;a number of&nbsp;conferences on a range of different topics. You can find details and minutes of previous conferences below:</p>
+        <!--<p>&lt;&lt;drop in information from previous conferences here&gt;&gt;</p>
+        <p><span data-contrast="none">NOTE: This information is available on the old website at&nbsp;<a href="https://www.umis.ac.uk/conferences/">https://www.umis.ac.uk/conferences/</a></p>-->
+        <h3>Attendance at key events</h3>
+        <p>UMIS attends key events to promote our&nbsp;museums and collections to relevant audiences.&nbsp;Please check back for details of the events we will be attending over the coming months.</p>
+    </div>
+</div>

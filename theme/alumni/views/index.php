@@ -27,7 +27,7 @@
                 <a href="./femalegrad">Female Medical Graduates, 1896-1900</a>
             </li>
             <li>
-                <a href="http://archives.lib.ed.ac.uk/alumni/ld.php" target = "_blank">Browse the full first Laureation &amp; Degrees Album (1587-1809) by year</a>.</li>
+                <a href="http://archives.lib.ed.ac.uk/alumni/ld.php" target = "_blank">Browse the full first Laureation &amp; Degrees Album (1587-1809) by year</a>
             </li>
         </ul>
 
@@ -56,7 +56,6 @@
         </ul>
         <h3>Coming Soon</h3>
         <ul>
-
             <li>
                University of Edinburgh: Roll of Honour, WW2
             </li>

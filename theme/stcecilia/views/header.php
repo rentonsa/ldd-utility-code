@@ -6,7 +6,6 @@
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <base href="<?php echo base_url() . index_page(); if (index_page() !== '') { echo '/'; } if ($this->config->item('skylight_url_prefix') != "") { echo $this->config->item('skylight_url_prefix'); echo '/'; } ?>">
 
@@ -16,12 +15,11 @@
 
     <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
     Remove this if you use the .htaccess -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-    <title>St Cecilia's Hall - Collections</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="title" content="<?php echo str_replace('"', '&quot;', $page_title); ?>">
 
     <!-- Mobile viewport optimized: j.mp/bplateviewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -120,9 +118,9 @@
             <a href="./" class="home-icon"><i class="fa fa-home fa-lg"></i></a>
             <form class="navbar-form navbar-left" role="search" action="./redirect/" method="post">
                 <div class="input-group search-box">
-                    <input id="uoe-search" type="text" class="form-control" placeholder="Search the museum collections" name="q" value="<?php if (isset($searchbox_query)) echo urldecode($searchbox_query); ?>" id="q" />
+                    <input id="uoe-search" type="text" class="form-control" placeholder="Search the museum collections" name="q" value="<?php if (isset($searchbox_query)) echo str_replace('"', '', urldecode($searchbox_query)); ?>" />
                     <span class="input-group-btn">
-                        <button type="submit" class="btn btn-default" name="submit_search" value="Search" id="submit_search">
+                        <button type="submit" class="btn btn-default" name="submit_search" value="Search" id="submit_search1">
                             <i class="glyphicon glyphicon-search"></i>&nbsp;Search
                         </button>
                     </span>
@@ -134,9 +132,9 @@
             <a href="./" class="home-icon"><i class="fa fa-home fa-lg"></i></a>
             <form class="navbar-form navbar-left" role="search" action="./redirect/" method="post">
                 <div class="input-group search-box">
-                    <input id="uoe-search-sm" type="text" class="form-control" placeholder="Search" name="q" value="<?php if (isset($searchbox_query)) echo urldecode($searchbox_query); ?>" id="q" />
+                    <input id="uoe-search-sm" type="text" class="form-control" placeholder="Search" name="q" value="<?php if (isset($searchbox_query)) echo str_replace('"', '', urldecode($searchbox_query)); ?>" />
                     <span class="input-group-btn">
-                        <button type="submit" class="btn btn-default" name="submit_search" value="Search" id="submit_search">
+                        <button type="submit" class="btn btn-default" name="submit_search" value="Search" id="submit_search2">
                             <i class="glyphicon glyphicon-search"></i>
                         </button>
                     </span>
