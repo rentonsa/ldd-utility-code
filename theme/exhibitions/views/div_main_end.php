@@ -19,7 +19,7 @@ conditions</a></li></div>
             <script src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/js/openingtimes.js"></script>
             <!-- GOOGLE MAPS SCRIPTS -->
             <script src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/js/googlemaps.js"></script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcgB_0gay6yUdMVbglDLixeBxPJD2aWHI&callback=initMap" async defer></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF95rAHOZQlQ7atjmr9HC2e4M2cS-u1Gs&callback=initMap" async defer></script>
 
             <!-- SKROLLR SCRIPTS FOR PARALLAX SCROLLING FUNCTIONALITY -->
             <!-- * Must be called within page <body> tags to function -->

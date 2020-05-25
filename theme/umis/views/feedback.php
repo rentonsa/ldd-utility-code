@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/css/animate.css">
 
     <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcgB_0gay6yUdMVbglDLixeBxPJD2aWHI&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF95rAHOZQlQ7atjmr9HC2e4M2cS-u1Gs&callback=initMap" async defer></script>
     <script src="<?php echo base_url()?>assets/modernizr/modernizr-1.7.min.js"></script>
     <script src="<?php echo base_url()?>assets/jquery-1.11.0/jquery-1.11.0.min.js"></script>
     <script src="<?php echo base_url()?>assets/jquery-ui-1.10.4/ui/minified/jquery-ui.min.js"></script>
