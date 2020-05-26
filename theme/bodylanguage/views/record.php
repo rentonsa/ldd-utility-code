@@ -25,8 +25,10 @@ $bitstreamLinks = array();
     </div>
 
 
+    <div class="smol-divider"></div>
+    <a class="results-link" href="<?php echo $link_uri_prefix ?><?php echo $solr[$id][0] ?>" title="Full record at archive collections online " target="_blank">View full record in University of Edinburgh archives catalogue</a>
+    <div class="divider"></div>
 
-    <a href ="<?php echo $link_uri_prefix ?><?php echo $solr[$id][0] ?>" title="Full record at archive collections online " target="_blank">View full record in University of Edinburgh archives catalogue</a>
     <div class="full-metadata">
         <table>
             <tbody>
@@ -45,7 +47,7 @@ $bitstreamLinks = array();
 
                                 $orig_filter = urlencode($metadatavalue);
 
-                                echo '<a href="./search/*:*/' . $key . ':%22'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                echo '<a href="./search/*:*/' . $key . ':%22'.$orig_filter.'%22" class="resultslist-link">'.$metadatavalue.'</a>';
                             }
                             else
                             {
@@ -88,4 +90,6 @@ $bitstreamLinks = array();
 
 
     <input type="button" value="Back to Search Results" class="backbtn" onClick="history.go(-1);">
+
+    <div class="big-divider"></div>
 </div>

@@ -18,70 +18,81 @@
 ?>
 <div class="content">
     <div class="content byEditor">
-        <p>
-        </p>
-        <p>In all, 23 collections have been catalogued and preserved, with key items receiving conservation treatment.
-            These collections include rare books, scientific papers, the archives of institutions such as Roslin
-            Institute and the papers of pioneering scientists including Charlotte Auerbach, C.H. Waddington and Sir
-            Ian Wilmut. Nine oral history recordings were also carried out with leading contemporary geneticists.
-        </p>
-        <p>Between October 2014 and May 2015, the project ‘Science on a Plate: the natural sciences through glass slides,
-            1870-1930’ digitised nearly 3,500 historic glass slides which were catalogued as part of ‘Towards Dolly’.
-            Depicting different animal breeds and scenes and people from around the world, this rich visual resource
-            is now available to  <a href="http://images.is.ed.ac.uk/luna/servlet/UoEgal~6~6" title="Roslin Glass Slide online" target="_blank">view online</a>.
-        </p>
 
-        <p>These projects were generously funded by the Wellcome Trust's
-            <a href="http://www.wellcome.ac.uk/Funding/Humanities-and-social-science/Funding-schemes/Research-resources-awards/index.htm" title="Wellcome Trust Research Resources" target="_blank">Research Resources scheme</a>.
-            Watch the Project Archivist, Clare Button, talking about the collections in the Wellcome Trust's film about the scheme.
-
-        <div class="flowplayer" data-analytics="<?php echo $ga_code ?>"
-             title="Introduction to Towards Dolly by Clare Button, Project Archivist">
-            <video id="video-archives" title="Introduction to Towards Dolly by Clare Button, Project Archivist" controls preload="true">
-                <?php if ($mp4ok = true) {?>
-                    <source src="<?php echo base_url(); ?>videos/Towards_Dolly_Wellcome_Trust_showreel.mp4" type="video/mp4"/>
-                <?php } else { ?>
-                    <source src="<?php echo base_url(); ?>videos/Towards_Dolly_Wellcome_Trust_showreel.webm" type="video/webm"/>
-                <?php } ?>
-                Video loading...'
-            </video>
-        </div>
-        </p>
-
-        <p>From July to October 2015, the University of Edinburgh Main Library Exhibition Gallery hosted the
-            <a href="https://exhibitions.ed.ac.uk/towardsdolly" title="Toward's Dolly Exhibition online" target="_blank">exhibition</a>
-            ‘Towards Dolly: a century of animal genetics in Edinburgh.’ This was curated by Project Archivist Clare Button
-            and featured an array of archival, printed and visual collections, as well as Dolly the sheep herself, on
-            loan courtesy of National Museums Scotland. Watch the Library and University Collections Digital Imaging
-            Unit’s timelapse video of Dolly being installed in the exhibition gallery here:
-        </p>
-        <div class="flowplayer" data-analytics="<?php echo $ga_code ?>"
-             title="Towards Dolly Exhibition being installed, Video by Univeristy of Edinburgh Digital Imaging Unit"">
-            <video id="video-archives" title="Towards Dolly Exhibition being installed, Video by Univeristy of Edinburgh Digital Imaging Unit" controls preload="true">
-                <?php if ($mp4ok = true) {?>
-                    <source src="<?php echo base_url(); ?>videos/0051021v-001.mp4" type="video/mp4"/>
-                <?php } else { ?>
-                    <source src="<?php echo base_url(); ?>videos/0051021v-001.webm" type="video/webm"/>
-                <?php } ?>
-                Video loading...'
-            </video>
+        <div id="collection-search" class="other-search">
+            <form action="./redirect/" method="post">
+                <fieldset class="search">
+                    <input type="text" name="q" value="<?php if (isset($searchbox_query)) echo urldecode($searchbox_query); ?>" id="q" />
+                    <input type="submit" name="submit_search" class="btn" value="Search" id="submit_search" />
+                    </fieldset>
+            </form>
         </div>
 
-        <h1>Project report</h1>
-        <p>Download the full project report <a href ="<?php echo base_url(); ?>videos/Towards Dolly complete final report.pdf" target="_blank">here</a> (9.3mb)</p>
-
-
-        <h1>Contact Details</h1>
         <p>
-            For further information  please contact:
         </p>
-        <p><strong>Centre for Research Collections</strong><br />
-            University of Edinburgh,<br />
-            Main Library,<br />
-            30 George Square,<br />
-            Edinburgh,<br />
-            EH8 9LJ<br />
-            Email: <a class="email" href="mailto:is-crc@ed.ac.uk">is-crc@ed.ac.uk</a><br/>
+        
+        <!--<div id="project-anchor"></div>-->
+            <h1 id="project-anchor">About The Project</h1>
+            <p> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Condimentum mattis pellentesque id nibh tortor. 
+                Id venenatis a condimentum vitae sapien. Semper auctor neque vitae tempus quam. Ut faucibus pulvinar elementum integer enim neque volutpat ac. 
+                Tristique senectus et netus et. Rhoncus urna neque viverra justo nec ultrices. Nam at lectus urna duis convallis convallis. Lobortis feugiat vivamus at augue. 
+                Vitae ultricies leo integer malesuada nunc vel risus commodo. Egestas egestas fringilla phasellus faucibus scelerisque eleifend.
+            </p>
+            <p> 
+                Amet consectetur adipiscing elit pellentesque habitant morbi tristique. Blandit massa enim nec dui nunc mattis enim ut tellus. 
+                Turpis egestas integer eget aliquet. Eget nullam non nisi est sit amet facilisis. Amet justo donec enim diam. 
+                Pulvinar pellentesque habitant morbi tristique senectus et netus. Enim tortor at auctor urna. Et magnis dis parturient montes nascetur ridiculus. 
+                In mollis nunc sed id semper risus in hendrerit. Suspendisse sed nisi lacus sed viverra tellus in hac. Fringilla urna porttitor rhoncus dolor purus. 
+                Leo in vitae turpis massa sed elementum.
+            </p>
+
+            <p> Image / Video Content Below
+
+            <div class="flowplayer" data-analytics="<?php echo $ga_code ?>"
+                title="Introduction to Towards Dolly by Clare Button, Project Archivist">
+                <video id="video-archives" title="Introduction to Towards Dolly by Clare Button, Project Archivist" controls preload="true">
+                    <?php if ($mp4ok = true) {?>
+                        <source src="<?php echo base_url(); ?>videos/Towards_Dolly_Wellcome_Trust_showreel.mp4" type="video/mp4"/>
+                    <?php } else { ?>
+                        <source src="<?php echo base_url(); ?>videos/Towards_Dolly_Wellcome_Trust_showreel.webm" type="video/webm"/>
+                    <?php } ?>
+                    Video loading...'
+                </video>
+            </div>
+            </p>
+        
+
+        <div id="collection-anchor"></div>
+        <h1>About The Collection</h1>
+        <p> 
+            Sed cras ornare arcu dui vivamus arcu felis bibendum ut. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium. 
+            Sit amet est placerat in egestas erat. Id diam maecenas ultricies mi eget mauris pharetra. Sem integer vitae justo eget magna fermentum iaculis eu non. 
+            Sit amet purus gravida quis blandit turpis cursus. Nisl rhoncus mattis rhoncus urna neque. Tincidunt arcu non sodales neque sodales. 
+            Neque gravida in fermentum et sollicitudin ac orci phasellus. Nibh ipsum consequat nisl vel pretium lectus quam.
+        </p>
+        <p>
+            Faucibus scelerisque eleifend donec pretium vulputate. Enim praesent elementum facilisis leo vel fringilla est. Egestas pretium aenean pharetra magna. 
+            Tincidunt dui ut ornare lectus sit amet est. Neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Nibh sed pulvinar proin gravida hendrerit lectus a. 
+            Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Dui ut ornare lectus sit amet est placerat in. Arcu vitae elementum curabitur vitae nunc sed velit dignissim. 
+            Ante metus dictum at tempor commodo ullamcorper. Malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi. Tristique sollicitudin nibh sit amet commodo nulla.
+        </p>
+        
+        <p>View the <a class="para-link" href="https://exhibitions.ed.ac.uk/bodylanguage">exhibition here<div class="para-overlay"></div></a></p>
+        <p>Image / Video Content Below
+            <div class="flowplayer" data-analytics="<?php echo $ga_code ?>"
+                title="Towards Dolly Exhibition being installed, Video by Univeristy of Edinburgh Digital Imaging Unit">
+                <video id="video-archives" title="Towards Dolly Exhibition being installed, Video by Univeristy of Edinburgh Digital Imaging Unit" controls preload="true">
+                    <?php if ($mp4ok = true) {?>
+                        <source src="<?php echo base_url(); ?>videos/0051021v-001.mp4" type="video/mp4"/>
+                    <?php } else { ?>
+                        <source src="<?php echo base_url(); ?>videos/0051021v-001.webm" type="video/webm"/>
+                    <?php } ?>
+                    Video loading...'
+                </video>
+            </div>
+        </p>
 
     </div>
 </div>

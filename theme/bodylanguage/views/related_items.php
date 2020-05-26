@@ -22,13 +22,14 @@
                 ?>
 
                 <li<?php if($index == 0) { echo ' class="first"'; } elseif($index == sizeof($related_items) - 1) { echo ' class="last"'; } ?>>
-                    <a class="related-record" href="./record/<?php echo $doc['id']?>/<?php echo $doc['types'][0]?>"><?php echo $doc[$title_field][0]; ?></a>
-                    <?php
+                    <a href="./record/<?php echo $doc['id']?>/<?php echo $doc['types'][0]?>"><?php echo $doc[$title_field][0]; ?></a>
+                    <div class="sidebar-overlay"></div>
+                    <!--<?php
                     if (isset($doc["component_id"])) {
                         $component_id = $doc["component_id"];
                         echo'<div class="component_id">' . $component_id . '</div>';
                     } ?>
-                    <?php echo $doc["dates"]; ?>
+                    <?php echo $doc["dates"]; ?>-->
                 </li>
             <?php }
 
