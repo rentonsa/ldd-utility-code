@@ -100,7 +100,7 @@
                     <ul class="menu-links">
                         <li><a href="./contact" title="Contact Us Link">Contact Us</a></li>
                         <li><a href="./feedback" title="Feedback Form">Feedback</a></li>
-                        <li><a href="http://libraryblogs.is.ed.ac.uk/towardsdolly/" title="Towards Dolly Blog Link" target="_blank">Blog</a></li>
+                        <li><a href="http://libraryblogs.is.ed.ac.uk/bodylanguage/" title="Towards Dolly Blog Link" target="_blank">Blog</a></li>
                         <li><a href="./resources" title="Resources Link">Resources</a></li>
                         <li><a href="./people" title="People Link">People</a></li>
                         <li><a href="./catelogue" title="Catelogues Link">Catelogue</a></li>
@@ -114,8 +114,13 @@
                             <!--<img src="../theme-local/bodylanguage/images/bodylanguage-logo-1.jpg">-->
                         </div>
                     </a>
+
+
                     
                 <div class="clearfix"></div>
+
+                <h3 class="site-tag">An online portal to collections of movement, dance and physical education archives in Scotland, 1890-1990</h3>
+
 
                 <div class="quick-links">
                         <ul>
@@ -147,4 +152,9 @@
             </div>-->
             </header>
 
-            <div id="main" role="main" class="clearfix">
+        <?php if (strpos($_SERVER['REQUEST_URI'], "bodylanguage/feedback") !== false){
+            echo '<div id="main-feedback" role="main" class="clearfix">'; 
+        }
+        else {
+            echo '<div id="main" role="main" class="clearfix">';
+        }?>

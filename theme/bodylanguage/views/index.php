@@ -11,11 +11,11 @@
 
     <div class="content byEditor">
 
-        <h1>Body Language: movement, dance and physical education in Scotland, 1890-1990</h1>
-
         <p>
-            A new Wellcome Trust Research Resources-funded project between Edinburgh University Library Special Collections and the Fergusson Gallery, 
-            Perth  with the support of Moray House School of Education, Margaret Morris Movement International and Scottish Gymnastics.
+            Body Language: movement, dance and physical education in Scotland, 1890-1990’ preserved, conserved, catalogued, 
+            made accessible and virtually united three archive collections held by the University of Edinburgh and Culture Perth and Kinross: Museums.  
+            The archive collections include the archives of Dunfermline College of Physical Education, and Scottish Gymnastics (University of Edinburgh), 
+            and the archives of Margaret Morris Movement International (Culture Perth and Kinross: Museums). 
         </p>
 
         <div>
@@ -27,11 +27,11 @@
 
         <p class="quote"> 
             <q>
-                The performance relieves the person temporarily of the burden of being themselves.
+                TBC
             </q> 
         </p>
         <p class="quote-p">
-            - Emma Byrne, Evening Standard.
+            - Anonymous, Somewhere.
         </p>
 
 
@@ -40,19 +40,16 @@
             dance, physical education and gymnastics in Scotland including: 
         </p>
         <div class="cataglogue-list-index">
-            <ul class="catelogue-list">
-                <li>
-                    <a class="list-link" href="./catelogue#morris-anchor">The archives of Margaret Morris Movement International</a>
-                </li>
-                <li>
-                    <a class="list-link" href="./catelogue#dunfermline-anchor">The records of Dunfermline College of Physical Education</a>
-                </li>
-                <li>
-                    <a class="list-link" href="./catelogue#sctgymnastics-anchor">The archives of Scottish Gymnastics</a>
-                </li>
-            </ul>
+            <h3 class="catelogue-title"><a href="./catelogue#dunfermline-anchor" title="Link to Catelogue Page" class="quick-link">Dunfermline College of Physical Education</a></h3>
+            <h3 class="catelogue-title"><a href="./catelogue#dunfermline-anchor" title="Link to Catelogue Page" class="quick-link">Dunfermline College of Physical Education Old Student’s Association</a></h3>
+            <h3 class="catelogue-title"><a href="./catelogue#sctgymnastics-anchor" title="Link to Catelogue Page" class="quick-link">Scottish Gymnastics Archives</a></h3>
+            <h3 class="catelogue-title"><a href="./catelogue#morris-anchor" title="Link to Catelogue Page" class="quick-link">Margret Morris Movement Collection</a></h3>
         </div>
 
+        <div class="big-divider"></div>
+
     </div>
+
     <div class="clearfix"></div>
+    
 </div>
