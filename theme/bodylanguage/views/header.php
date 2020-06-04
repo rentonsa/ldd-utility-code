@@ -62,6 +62,7 @@
             ga('create', '<?php echo $ga_code ?>', 'auto');
             ga('send', 'pageview');
 
+
         </script>
         <!-- End Google Analytics -->
 

@@ -60,6 +60,7 @@
         <li<?php if($index == 0) { echo ' class="first"'; } elseif($index == sizeof($docs) - 1) { echo ' class="last"'; } ?>>
         <div class="item-div">
 
+        
 
             <h3><a href="./record/<?php echo $doc['id']?>/<?php echo $doc['types'][0]?>" class="resultlist-link"><?php echo $doc[$title_field]; ?></a></h3>
             <div class="sidebar-overlay"></div>
