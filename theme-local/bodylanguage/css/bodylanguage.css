@@ -9,6 +9,16 @@
 html {
     scroll-behavior: smooth;
 }
+ul {
+    list-style: none;
+}
+strong {
+    color: rgb(29,98,184);
+}
+.site-tag {
+    text-align: center;
+    font-weight: 100;
+}
 
 .para-link, .quick-link, 
 .list-link, .footer-link,
@@ -263,6 +273,9 @@ a.related-record:hover::before {
 #project-anchor, #collection-anchor {
     position: relative;
 }
+.about-list li {
+    margin-bottom: 10px;
+}
 
 /* CATELOGUE PAGE */
 #morris-anchor, #dunfermline-anchor, #sctgymnastics-anchor {
@@ -283,8 +296,20 @@ a.related-record:hover::before {
 #tile-block a:hover .people-overlay {
     height: 150px;
 }
+.people-tile {
+    margin-bottom: 100px;
+}
 .people-name {
     margin-top: 130px;
+}
+.people-title {
+    color: #555;
+    font-size: 12px;
+    margin-top: -15px;
+}
+#tile-16 {
+    position: relative;
+    left: 36%;
 }
 
 
@@ -341,4 +366,10 @@ a.resultlist-link:hover::before, .full-metadata a:hover::before {
     background-color: rgb(29,98,184);
     visibility: hidden;
     transition: all 0.3s ease-in-out;
+}
+
+
+/* CONTACT PAGE */
+.contact-details {
+    line-height: 24px;
 }
