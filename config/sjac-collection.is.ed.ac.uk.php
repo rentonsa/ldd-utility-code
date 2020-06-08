@@ -3,7 +3,7 @@
 $config['skylight_appname'] = 'jlss';
 
 // Uncomment this if you are using a url of the form http://.../art/...
-$config['skylight_url_prefix'] = 'jlss';
+//$config['skylight_url_prefix'] = 'jlss';
 
 // set ga code
 if (strpos($_SERVER['HTTP_HOST'], "test") !== false || strpos($_SERVER['HTTP_HOST'], "localhost") !== false) {
