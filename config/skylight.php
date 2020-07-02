@@ -1,26 +1,26 @@
 <?php
 
 // hostnames
-$config['skylight_hostnames'] = array('stuartsound.is.ed.ac.uk','www.fairbairn.ac.uk', 'test.fairbairn.ac.uk','test.exampapers.ed.ac.uk', 'exampapers.ed.ac.uk', 'test.scottishgovernmentyearbooks.ed.ac.uk', 'www.scottishgovernmentyearbooks.ed.ac.uk','test.openbooks.is.ed.ac.uk','openbooks.is.ed.ac.uk','test.sopacollection.ph.ed.ac.uk','sopacollection.ph.ed.ac.uk', 'test.exhibitions.ed.ac.uk', 'exhibitions.ed.ac.uk',  'test.lac-projects.is.ed.ac.uk', 'lac-projects.is.ed.ac.uk', 'test.stuartsound.is.ed.ac.uk', 'www.stuartsound.is.ed.ac.uk', 'test.bodylanguage.is.ed.ac.uk');
+$config['skylight_hostnames'] = array('test.fairbairn.ac.uk','test.exampapers.ed.ac.uk', 'test.scottishgovernmentyearbooks.ed.ac.uk', 'test.openbooks.is.ed.ac.uk', 'test.sopacollection.ph.ed.ac.uk','test.exhibitions.ed.ac.uk', 'test.lac-projects.is.ed.ac.uk', 'test.stuartsound.is.ed.ac.uk', 'test.sjac-collection.is.ed.ac.uk', 'test.bodylanguage.is.ed.ac.uk');
 
 // Uncomment this if you want to use urls of the form http://.../prefix/...
-
-$config['skylight_url_prefixes'] = array('lhsacasenotes', 'jlss', 'stcecilias','mimed', 'art', 'calendars', 'iconics', 'towardsdolly', 'alumni', 'coimbra', 'guardbook', 'sessionpapers', 'exhibitions', 'bodylanguage');
+$config['skylight_url_prefixes'] = array('bodylanguage','eerc','exhibitions','libguides','arch-dig','anatomy','cockburn','iconicsdeepzoom','collections','coimbra-colls','public-art','colllevel','lhsacasenotes','archivemedia','geddes','stcecilias','mimed', 'art', 'calendars', 'iconics', 'towardsdolly', 'alumni', 'coimbra', 'guardbook', 'sessionpapers', 'speccoll','umis');
 
 $config['skylight_handle_prefixes'] = array(3 => "art", 11 => "mimed");
 
 // The URL of the parent solr server
-$config['skylight_solrbase'] = 'http://localhost:9130/solr/search/';
-//$config['skylight_solrbase'] = 'http://collectionsinternal.is.ed.ac.uk:8080/solr/search/';
-//$config['skylight_solrbase'] = 'http://collectionssolr.is.ed.ac.uk/search/';
-
+//$config['skylight_solrbase'] = 'http://localhost:9136/solr/search/';
+$config['skylight_solrbase'] = 'http://test.collectionsinternal.is.ed.ac.uk/solr/search/';
+//$config['skylight_solrbase'] = 'http://test.collectionsmanager.is.ed.ac.uk/solr/search/';
+//$config['skylight_solrbase'] = 'http://test.collectionssolr.is.ed.ac.uk/search/';
+//$config['skylight_solrbase'] = 'http://localhost:9136/solr/search/';
 //DSpace handle server prefix
 $config['skylight_handle_prefix'] = '10683';
 
 // The platform and version of your repository.
 // Currently DSpace 1.7.1+ is the only supported repository
 $config['skylight_repository_type'] = 'dspace'; // Demo 'dspace'
-$config['skylight_repository_version'] = '181'; // Demo '171'
+$config['skylight_repository_version'] = '6'; // Demo '171'
 
 // The local path for theme and configuration overrides (if required)
 $config['skylight_local_path'] = '../skylight-local';
@@ -36,7 +36,7 @@ $config['skylight_adminldap_context'] = "ou=users,dc=example,dc=com";
 $config['skylight_adminldap_allowed'] = array('id1', 'id2');
 
 // The OAI-PMH base for the parent server
-$config['skylight_oaipmhbase'] = 'http://collectionsinternal.is.ed.ac.uk:8080/oai/request?';
+$config['skylight_oaipmhbase'] = 'http://test.collectionsinternal.is.ed.ac.uk:8080/oai/request?';
 
 // The OAI-PMH identifier to replace in OAI-PMH responses
 $config['skylight_oaipmhid']= 'oai:collectionsmanager.is.ed.ac.uk:10683/';
@@ -45,12 +45,15 @@ $config['skylight_oaipmhid']= 'oai:collectionsmanager.is.ed.ac.uk:10683/';
 $config['skylight_oaipmhlink'] = 'http://hdl.handle.net/10683/';
 
 // The URL base for where digital objects can be proxied from
-$config['skylight_objectproxy_url'] = 'http://collectionsinternal.is.ed.ac.uk:8080/bitstream/10683/';
+//$config['skylight_objectproxy_url'] = 'http://test.collectionsinternal.is.ed.ac.uk:8080/bitstream/10683/';
+$config['skylight_objectproxy_url'] = 'https://test.collectionsmanager.is.ed.ac.uk/bitstream/handle/10683/';
+
+
 
 // Default OAI not permitted
 $config['skylight_oaipmhallowed'] = false;
 
-$config['skylight_media_url_prefix'] = 'http://collectionsmedia.is.ed.ac.uk/';
+$config['skylight_media_url_prefix'] = 'http://test.collectionsmedia.is.ed.ac.uk/';
 
 // Set to the number of minutes to cache pages for. Set to false for no caching.
 // This can be overridden in site-specific configuration files.

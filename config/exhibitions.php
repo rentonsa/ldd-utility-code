@@ -30,10 +30,15 @@ $config['skylight_oaipmhallowed'] = true;
 $config['skylight_parallax'] = true;
 
 // Container ID and the field used in solr index to store this ID. Used for restricting search/browse scope.
-$config['skylight_container_id'] = '17';
+if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
+	$config['skylight_container_id'] = '8b29daa7-16dd-4217-8366-5576cce3e79f'; //why is there no uuid for 17?
+}
+else {
+	$config['skylight_container_id'] = '17';
+}
 $config['skylight_container_field'] = 'location.coll';
 $config['skylight_sitemap_type'] = 'external';
-
+//$config['skylight_container_id'] = '17';
 
 $config['skylight_fields'] = array('Title' => 'dc.title.en',
     'Creator' => 'dc.contributor.author.en',

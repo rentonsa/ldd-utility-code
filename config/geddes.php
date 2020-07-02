@@ -4,7 +4,7 @@ $config['skylight_appname'] = 'geddes';
 
 // set the base url and ga code
 if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
-    $config['skylight_container_id'] = '87';
+    $config['skylight_container_id'] = '50092146-e1bb-4d9f-8755-b024a27ae0ae';
 }
 else {
     $config['skylight_container_id'] = '73';
@@ -22,7 +22,6 @@ $config['skylight_oaipmhcollection'] = 'hdl_10683_103618';
 
 $config['skylight_oaipmhallowed'] = true;
 
-// Container ID and the field used in solr index to store this ID. Used for restricting search/browse scope.
 $config['skylight_container_field'] = 'location.coll';
 $config['skylight_sitemap_type'] = 'external';
 

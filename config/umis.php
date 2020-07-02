@@ -2,8 +2,8 @@
 
 if (strpos($_SERVER['HTTP_HOST'], "test") !== false || strpos($_SERVER['HTTP_HOST'], "localhost") !== false) {
     $config['skylight_ga_code'] = 'UA-25737241-6';
-    $config['skylight_container_id'] = '83';
-    $config['skylight_image_server'] = 'https://test.cantaloupe.is.ed.ac.uk';
+    $config['skylight_container_id'] = 'a2f5be37-b61d-4321-aa73-181145ba59ac';
+    $config['skylight_image_server'] = 'https://cantaloupe.is.ed.ac.uk';
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-6';
@@ -25,8 +25,6 @@ $config['skylight_adminemail'] = 'sarah.burry-hayes@glasgow.ac.uk';
 $config['skylight_oaipmhcollection'] = 'hdl_10683_53855';
 
 $config['skylight_oaipmhallowed'] = true;
-
-// Container ID and the field used in solr index to store this ID. Used for restricting search/browse scope.
 
 $config['skylight_container_field'] = 'location.coll';
 //$config['skylight_container_id'] = '62';
