@@ -1,18 +1,16 @@
 <?php
 
 // hostnames
-$config['skylight_hostnames'] = array('stuartsound.is.ed.ac.uk','www.fairbairn.ac.uk', 'test.fairbairn.ac.uk','test.exampapers.ed.ac.uk', 'exampapers.ed.ac.uk', 'test.scottishgovernmentyearbooks.ed.ac.uk', 'www.scottishgovernmentyearbooks.ed.ac.uk','test.openbooks.is.ed.ac.uk','openbooks.is.ed.ac.uk','test.sopacollection.ph.ed.ac.uk','sopacollection.ph.ed.ac.uk', 'test.exhibitions.ed.ac.uk', 'exhibitions.ed.ac.uk',  'test.lac-projects.is.ed.ac.uk', 'lac-projects.is.ed.ac.uk', 'test.stuartsound.is.ed.ac.uk', 'www.stuartsound.is.ed.ac.uk', 'test.bodylanguage.is.ed.ac.uk');
+$config['skylight_hostnames'] = array('sjac-collection.is.ed.ac.uk', 'stuartsound.is.ed.ac.uk','www.fairbairn.ac.uk', 'exampapers.ed.ac.uk', 'test.scottishgovernmentyearbooks.ed.ac.uk', 'www.scottishgovernmentyearbooks.ed.ac.uk','openbooks.is.ed.ac.uk','sopacollection.ph.ed.ac.uk', 'exhibitions.ed.ac.uk', 'lac-projects.is.ed.ac.uk', 'www.stuartsound.is.ed.ac.uk');
 
 // Uncomment this if you want to use urls of the form http://.../prefix/...
-
-$config['skylight_url_prefixes'] = array('lhsacasenotes', 'jlss', 'stcecilias','mimed', 'art', 'calendars', 'iconics', 'towardsdolly', 'alumni', 'coimbra', 'guardbook', 'sessionpapers', 'exhibitions', 'bodylanguage');
+$config['skylight_url_prefixes'] = array('eerc','exhibitions','umis','cockburn','coimbra-colls', 'public-art','archivemedia', 'geddes', 'lhsacasenotes','stcecilias','mimed', 'art', 'calendars', 'iconics', 'towardsdolly', 'alumni', 'coimbra', 'guardbook');
 
 $config['skylight_handle_prefixes'] = array(3 => "art", 11 => "mimed");
 
 // The URL of the parent solr server
-$config['skylight_solrbase'] = 'http://localhost:9130/solr/search/';
+$config['skylight_solrbase'] = 'http://collectionssolr.is.ed.ac.uk/search/';
 //$config['skylight_solrbase'] = 'http://collectionsinternal.is.ed.ac.uk:8080/solr/search/';
-//$config['skylight_solrbase'] = 'http://collectionssolr.is.ed.ac.uk/search/';
 
 //DSpace handle server prefix
 $config['skylight_handle_prefix'] = '10683';
@@ -26,8 +24,8 @@ $config['skylight_repository_version'] = '181'; // Demo '171'
 $config['skylight_local_path'] = '../skylight-local';
 
 // The main username and password (by Demo admin:admin)
-$config['skylight_adminusername'] = '';
-$config['skylight_adminpassword'] = '';
+$config['skylight_adminusername'] = 'admin';
+$config['skylight_adminpassword'] = '21232f297a57a5a743894a0e4a801fc3';
 
 // Whether to use LDAP for admin authentication
 $config['skylight_adminldap'] = False;
@@ -57,8 +55,8 @@ $config['skylight_media_url_prefix'] = 'http://collectionsmedia.is.ed.ac.uk/';
 $config['skylight_cache'] = false;
 
 // Keys required for the recapthca system
-$config['skylight_recaptcha_key_public'] = '';
-$config['skylight_recaptcha_key_private'] = '';
+$config['skylight_recaptcha_key_public'] = '6LfwNvESAAAAAGjRS4uoS8SXEn-OjY3XPqF4bwcz';
+$config['skylight_recaptcha_key_private'] = '6LfwNvESAAAAAFqj8NQPkTZ4wKAoa0h6vEDNfSLi';
 
 // Digital object management
 $config['skylight_bitstream_field'] = 'dc.format.original';
@@ -92,5 +90,5 @@ $config['skylight_config_allowoverride'] = false;
 
 // Can themes be overridden by the user using ?theme={themename}
 $config['skylight_theme_allowoverride'] = false;
-
+​
 ?>

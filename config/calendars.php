@@ -24,7 +24,13 @@ $config['skylight_oaipmhcollection'] = 'hdl_10683_19396';
 $config['skylight_oaipmhallowed'] = true;
 
 // Container ID and the field used in solr index to store this ID. Used for restricting search/browse scope.
-$config['skylight_container_id'] = '14';
+if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
+	$config['skylight_container_id'] = 'dde7662b-e357-4a4a-8c14-4d08b858bfe9';
+}
+else {
+	$config['skylight_container_id'] = '14';
+}
+//$config['skylight_container_id'] = '14';
 $config['skylight_container_field'] = 'location.coll';
 $config['skylight_sitemap_type'] = 'internal';
 

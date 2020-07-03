@@ -8,7 +8,7 @@ $config['skylight_appname'] = 'jlss';
 // set ga code
 if (strpos($_SERVER['HTTP_HOST'], "test") !== false || strpos($_SERVER['HTTP_HOST'], "localhost") !== false) {
     $config['skylight_ga_code'] = 'UA-25737241-6';
-    $config['skylight_container_id'] = '89';
+    $config['skylight_container_id'] = 'e78a064c-8d18-4e96-a160-f4e58a58cb39';
     $config['skylight_image_server'] = 'https://test.cantaloupe.is.ed.ac.uk';
     $config['base_url'] = 'https://test.sjac-collection.is.ed.ac.uk/';
 }
@@ -31,8 +31,6 @@ $config['skylight_oaipmhcollection'] = '';
 
 $config['skylight_oaipmhallowed'] = true;
 
-
-// Container ID and the field used in solr index to store this ID. Used for restricting search/browse scope.
 $config['skylight_container_field'] = 'location.coll';
 
 $config['skylight_fields'] = array(

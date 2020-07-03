@@ -7,15 +7,15 @@ $config['skylight_url_prefix'] = 'guardbook';
 // set the base url and ga code
 if (strpos($_SERVER['HTTP_HOST'], "localhost") !== false) {
     $config['skylight_ga_code'] = '';
-    $config['skylight_container_id'] = '67';
+    $config['skylight_container_id'] = 'f0c7bb72-ab20-4693-be0d-43918440a8cd';
 }
 else if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
     $config['skylight_ga_code'] = 'UA-25737241-6';
-    $config['skylight_container_id'] = '67';
+    $config['skylight_container_id'] = 'f0c7bb72-ab20-4693-be0d-43918440a8cd';
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-9';
-    $config['skylight_container_id'] = '51';
+    $config['skylight_container_id'] = '51'; //Pick the ID from the else statement (51) with the uuid from (51) and put that uuid in the if statement
 }
 
 // The platform and version of your repository.
@@ -34,7 +34,6 @@ $config['skylight_oaipmhcollection'] = 'hdl_10683_52783';
 
 $config['skylight_oaipmhallowed'] = true;
 
-// Container ID and the field used in solr index to store this ID. Used for restricting search/browse scope.
 $config['skylight_container_field'] = 'location.coll';
 $config['skylight_sitemap_type'] = 'external';
 
