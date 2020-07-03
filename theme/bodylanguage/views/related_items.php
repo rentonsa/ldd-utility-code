@@ -21,6 +21,7 @@
 
                 ?>
 
+
                 <li<?php if($index == 0) { echo ' class="first"'; } elseif($index == sizeof($related_items) - 1) { echo ' class="last"'; } ?>>
                     <a href="./record/<?php echo $doc['id']?>/<?php echo $doc['types'][0]?>"><?php echo $doc[$title_field][0]; ?></a>
                     <div class="sidebar-overlay"></div>

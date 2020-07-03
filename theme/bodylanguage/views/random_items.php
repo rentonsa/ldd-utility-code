@@ -1,6 +1,7 @@
 <ul class="listing">
 
     <?php
+    
 
     $title_field = $this->skylight_utilities->getField('Title');
     $author_field = $this->skylight_utilities->getField('Agent');

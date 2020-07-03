@@ -16,6 +16,7 @@
             $fremove = preg_replace($fpattern,'',$fremove, -1);
             ?>
 
+
             <ul class="selected">
                 <li>
                     Clear <?php echo $facet['name']; ?> filters <a class="deselect" href='<?php echo $fremove;?>'></a>

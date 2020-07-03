@@ -8,6 +8,7 @@
     $type_field = $this->skylight_utilities->getField('Type');
     $subject_field = $this->skylight_utilities->getField('Subject');
 
+    
     foreach ($recentitems as $index => $doc) { ?>
 
         <li<?php if($index == 0) { echo ' class="first"'; } elseif($index == sizeof($recentitems) - 1) { echo ' class="last"'; } ?>>

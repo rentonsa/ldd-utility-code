@@ -40,5 +40,6 @@
                 <a href="http://www.ed.ac.uk" target="_blank"><div class="uoe-logo"></div></a>
                 <a href="http://www.wellcome.ac.uk/" target="_blank"><div class="wellcome-logo"></div></a>
             </div>-->
+            
         </footer>
     </div>
