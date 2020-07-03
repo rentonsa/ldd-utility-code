@@ -31,7 +31,7 @@ if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
 	$config['skylight_container_id'] = '55da8679-0e59-473c-9c2f-41c69448ed0a';
 }
 else {
-	$config['skylight_container_id'] = '55da8679-0e59-473c-9c2f-41c69448ed0a'; //3
+	$config['skylight_container_id'] = '3';
 }
 $config['skylight_container_field'] = 'location.coll';
 $config['skylight_sitemap_type'] = 'internal';

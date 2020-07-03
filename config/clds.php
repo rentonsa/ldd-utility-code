@@ -27,7 +27,7 @@ if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
 	$config['skylight_container_id'] = '7f32ba59-795e-40e8-b869-5b2a5114a4be';
 }
 else {
-	$config['skylight_container_id'] = '7f32ba59-795e-40e8-b869-5b2a5114a4be';
+	$config['skylight_container_id'] = '1';
 }
 //$config['skylight_container_id'] = '1';
 $config['skylight_container_field'] = 'location.coll';
