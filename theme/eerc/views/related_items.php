@@ -13,9 +13,16 @@
             $id_field = $this->skylight_utilities->getField('Identifier');
 
             foreach ($related_items as $index => $doc) {
+
+                $strip_rec_title = strip_tags($doc[$title_field][0]);
+
+                if(substr($strip_rec_title, -1) == ',') {
+                    $strip_rec_title = substr($strip_rec_title, 0, strlen($strip_rec_title) - 1);
+                }
+
             ?>
                 <li class="list-group-item">
-                    <a class="related-record" href="./record/<?php echo $doc['id']?>/<?php echo $doc['types'][0]?>"><?php echo strip_tags($doc[$title_field][0]); ?></a>
+                    <a class="related-record" title="Link to related item: <?= $strip_rec_title ?>" href="./record/<?php echo $doc['id']?>/<?php echo $doc['types'][0]?>"><?= $strip_rec_title ?></a>
                     <?php
                     if (isset($doc["component_id"])) {
                         $component_id = $doc["component_id"];

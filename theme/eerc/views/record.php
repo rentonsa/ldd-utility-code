@@ -1,5 +1,17 @@
 <?php
 
+
+set_error_handler('exceptions_error_handler');
+
+function exceptions_error_handler($severity, $message, $filename, $lineno) {
+    if (error_reporting() == 0) {
+        return;
+    }
+    if (error_reporting() & $severity) {
+        throw new ErrorException($message, 0, $severity, $filename, $lineno);
+    }
+}
+
 $author_field = $this->skylight_utilities->getField("Creator");
 $type_field = $this->skylight_utilities->getField("Type");
 $date_field = $this->skylight_utilities->getField("Date");
@@ -70,7 +82,7 @@ $bitstreamLinks = array();
 
                                 $orig_filter = urlencode($metadatavalue);
 
-                                $value .= '<a href="./search/*:*/' . $key . ':%22'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                $value .= '<a href="./search/*:*/' . $key . ':%22'.$orig_filter.'%22" title="Search for items with the subject: '. $metadatavalue .'">'.$metadatavalue.'</a>';
                             }
                             else {
                                 if($key == 'Interviewer') {
@@ -97,26 +109,42 @@ $bitstreamLinks = array();
                                 else if ($key == 'Audio links and images') {
                                     $json = file_get_contents($solr_base . 'collection1/select?q=id%3A%22'.$metadatavalue.'%22%0A&wt=json&indent=true');
 
-                                    $json_obj = json_decode($json, TRUE)['response']['docs'][0]['json'];
-                                    //print_r(json_decode($json, TRUE)['response']['docs']);
+                                    $json_array = (array) json_decode($json, TRUE)['response']['docs'][0]['json'];
 
-                                    $jsonIterator = new RecursiveIteratorIterator(
-                                        new RecursiveArrayIterator(json_decode($json_obj, TRUE)),
-                                        RecursiveIteratorIterator::SELF_FIRST);
+                                    // Iterate through all the digital objects as a PHP array
 
-                                    foreach ($jsonIterator as $key2 => $val) {
-                                        if(!is_array($val) && $key2 == 'file_uri')   {
-                                            if(strpos($val, '.wav') !== false || strpos($val, '.mp3') !== false) {
-                                                $audio .= '<audio controls src="'.$val.'" style="margin-top: 8px;"> Your browser does not support the <code>audio</code> element.</audio></br>';
-                                            }
-                                            else if(strpos($val, '.jpg') !== false || strpos($val, '.jpeg') !== false) {
-                                                $photo .= '<a href="'. $val . '"><img src="'.$val.'" style="width: 300px; padding: 8px;"></a>';
-                                            }
-                                            else if(strpos($val, '.odt') !== false || strpos($val, '.doc') !== false) {
-                                                $trans .= '<a href="' . $val . '"><img src="/theme/eerc/images/file-word-icon.png"></a>';
+                                    foreach($json_array as $digital_obj)  {
+                                        try {
+                                            $digital_obj = json_decode($digital_obj, TRUE);
+                                            $do_title = $digital_obj['title'];
+                                            $do_title_short = substr($do_title, 0, strpos($do_title, '.'));
+                                            $do_url = $digital_obj['file_versions'][0]['file_uri'];
+
+                                            if (strpos($do_title, '.wav') !== false || strpos($do_title, '.mp3') !== false) {
+                                                $audio .= '<audio controls src="' . $do_url . '" title="Embedded audio file ' . $do_title . '" style="margin-top: 8px;">';
+                                                $audio .= 'Your browser does not support the <code>audio</code> element.</audio></br>';
+                                            } else if (strpos($do_title, '.jpg') !== false || strpos($do_title, '.jpeg') !== false) {
+                                                $photo .= '<a href="' . $do_url . '" title="Photograph ' . $do_title_short . '">';
+                                                $photo .= '<img src="' . $do_url . '" alt="Photograph ' . $do_title_short . '" style="width: 300px; padding: 8px;"></a>';
+                                            } else if (strpos($do_title, '.doc') !== false) {
+                                                $do_title_short = substr($do_title_short, 0, -2);
+                                                $trans .= '<a href="' . $do_url . '" title="Transcript of interview ' . $do_title_short . ' in Microsoft Word format">';
+                                                $trans .= '<img src="/theme/eerc/images/file-word-icon.png" alt="Transcript of interview ' . $do_title_short . ' in Microsoft Word format"></a>';
+                                            } else if (strpos($do_title, '.odt') !== false) {
+                                                $do_title_short = substr($do_title_short, 0, -2);
+                                                $trans .= '<a href="' . $do_url . '" title="Transcript of interview ' . $do_title_short . ' in ODT format">';
+                                                $trans .= '<img src="/theme/eerc/images/file-odt-icon.png" alt="Transcript of interiew ' . $do_title_short . ' in ODT format"></a>';
+                                            } else if (strpos($do_title, '.pdf') !== false) {
+                                                $do_title_short = substr($do_title_short, 0, -2);
+                                                $trans .= '<a href="' . $do_url . '" title="Transcript of interview ' . $do_title_short . ' in PDF format">';
+                                                $trans .= '<img src="/theme/eerc/images/file-pdf-icon.png" alt="Transcript of interiew ' . $do_title_short . ' in PDF format"></a>';
                                             }
                                         }
-
+                                        catch (Exception $e) {
+                                            // Something was wrong in the digital object data
+                                            // but we're not going to do anything about it.
+                                            // echo 'Caught exception: ',  $e->getMessage(), "\n";
+                                        }
                                     }
 
                                     if(sizeof($solr[$element])-1 == $index) {
@@ -129,7 +157,7 @@ $bitstreamLinks = array();
                                     $interview_summary .= '<p>' . $metadatavalue . '</p>';
 
                                     if(sizeof($solr[$element])-1 == $index) {
-                                        $value .= '<div id="intsum">' . $interview_summary . '</div><script>$("#intsum").readmore({"collapsedHeight": 50, "moreLink": \'<a href = "#" class="moreless" >...read more </a>\', "lessLink": \'<a href = "#" class="moreless" >...read less </a >\'});</script>';
+                                        $value .= '<div id="intsum">' . $interview_summary . '</div><script>$("#intsum").readmore({"collapsedHeight": 50, "moreLink": \'<a href = "#" class="moreless" title="Click to expand the interview summary box">...read more </a>\', "lessLink": \'<a href = "#" title="Click to shrink the interview summary box" class="moreless" >...read less </a >\'});</script>';
                                     }
                                     //$value .= '<div>' . $metadatavalue . '</div><script>$("#intsum").readmore({"collapsedHeight": 50, "moreLink": \'<a href="#" class="moreless">...read more</a>\', "lessLink": \'<a href="#" class="moreless">...read less</a>\'});</script>';
                                 }

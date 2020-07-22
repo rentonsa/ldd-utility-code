@@ -128,15 +128,14 @@
             <div class="container">
 
                 <div class="header-normal">
-                    <div><a href="./" class="eerc-logo"></a></div>
-                    <div id="collection-title"><a href="./">Regional Ethnology<br>of Scotland Project</a>
-                        <!--<div id="collection-sub-title">Case Note Catalogues at <br />Lothian Health Services Archive</div>-->
+                    <div><a href="./" class="eerc-logo" title="Regional Ethnology of Scotland Project homepage"></a></div>
+                    <div id="collection-title"><a href="./" title="Regional Ethnology of Scotland Project homepage">Regional Ethnology<br>of Scotland Project</a>
                     </div>
 
                     <div id="collection-search">
                         <form action="./redirect/" method="post" class="navbar-form">
                             <div class="input-group search-box">
-                                <input type="text" class="form-control" placeholder="Search" name="q" value="<?php if (isset($searchbox_query)) echo urldecode($searchbox_query); ?>" id="q" />
+                                <input type="text" aria-label="Search" class="form-control" placeholder="Search" name="q" value="<?php if (isset($searchbox_query)) echo urldecode($searchbox_query); ?>" id="q" />
                                 <span class="input-group-btn">
                                     <button type="submit" class="btn btn-default" name="submit_search" value="Search" id="submit_search"><i class="glyphicon glyphicon-search"></i></button>
                                 </span>
