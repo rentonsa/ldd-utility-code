@@ -1,8 +1,0 @@
-exfold = '/dspaceExisting/'
-nfold = '/dspaceNew/'
-mapfile = 'mapping.txt'
-bitdir = 'bitstreamdirectory'
-xmlin = '/dspace.xml'
-dcheader = 'dublin_core'
-falsevar = 'false'
-truevar = 'true'
