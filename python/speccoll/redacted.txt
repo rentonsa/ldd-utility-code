@@ -1,0 +1,4 @@
+speccoll_variables
+-----------------
+dspace user : srenton1
+password    : [blank]

@@ -1,0 +1,877 @@
+<?xml version="1.0" ?>
+<recordList>
+	<record>
+		<field name="work_record_id">
+			<value>9924386815502466</value>
+		</field>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>9924386815502466</value>
+			</field>
+		</entity>
+		<entity name="work_title">
+			<field name="title">
+				<value>Indigo plantations and science in colonial India</value>
+			</field>
+		</entity>
+		<entity name="work_creator">
+			<field name="creator">
+				<value>Kumar, Prakash</value>
+			</field>
+		</entity>
+		<entity name="work_date">
+			<field name="date">
+				<value>c2012.</value>
+			</field>
+		</entity>
+		<entity name="Subset">
+			<field name="Subset Index">
+				<value>uncounted</value>
+			</field>
+			<field name="Sequence">
+				<value>1</value>
+			</field>
+		</entity>
+		<entity name="repro_record">
+			<field name="repro_record_id">
+				<value>file:///opt/digiverso/goobi/metadata/39/images/kumaindi_9924386815502466_joanne_media/00000001.tif</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<field name="work_record_id">
+			<value>9924386815502466</value>
+		</field>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>9924386815502466</value>
+			</field>
+		</entity>
+		<entity name="work_title">
+			<field name="title">
+				<value>Indigo plantations and science in colonial India</value>
+			</field>
+		</entity>
+		<entity name="work_creator">
+			<field name="creator">
+				<value>Kumar, Prakash</value>
+			</field>
+		</entity>
+		<entity name="work_date">
+			<field name="date">
+				<value>c2012.</value>
+			</field>
+		</entity>
+		<entity name="Subset">
+			<field name="Subset Index">
+				<value>uncounted</value>
+			</field>
+			<field name="Sequence">
+				<value>2</value>
+			</field>
+		</entity>
+		<entity name="repro_record">
+			<field name="repro_record_id">
+				<value>file:///opt/digiverso/goobi/metadata/39/images/kumaindi_9924386815502466_joanne_media/00000002.tif</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<field name="work_record_id">
+			<value>9924386815502466</value>
+		</field>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>9924386815502466</value>
+			</field>
+		</entity>
+		<entity name="work_title">
+			<field name="title">
+				<value>Indigo plantations and science in colonial India</value>
+			</field>
+		</entity>
+		<entity name="work_creator">
+			<field name="creator">
+				<value>Kumar, Prakash</value>
+			</field>
+		</entity>
+		<entity name="work_date">
+			<field name="date">
+				<value>c2012.</value>
+			</field>
+		</entity>
+		<entity name="Subset">
+			<field name="Subset Index">
+				<value>uncounted</value>
+			</field>
+			<field name="Sequence">
+				<value>3</value>
+			</field>
+		</entity>
+		<entity name="repro_record">
+			<field name="repro_record_id">
+				<value>file:///opt/digiverso/goobi/metadata/39/images/kumaindi_9924386815502466_joanne_media/00000003.tif</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<field name="work_record_id">
+			<value>9924386815502466</value>
+		</field>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>9924386815502466</value>
+			</field>
+		</entity>
+		<entity name="work_title">
+			<field name="title">
+				<value>Indigo plantations and science in colonial India</value>
+			</field>
+		</entity>
+		<entity name="work_creator">
+			<field name="creator">
+				<value>Kumar, Prakash</value>
+			</field>
+		</entity>
+		<entity name="work_date">
+			<field name="date">
+				<value>c2012.</value>
+			</field>
+		</entity>
+		<entity name="Subset">
+			<field name="Subset Index">
+				<value>[1]</value>
+			</field>
+			<field name="Sequence">
+				<value>4</value>
+			</field>
+		</entity>
+		<entity name="repro_record">
+			<field name="repro_record_id">
+				<value>file:///opt/digiverso/goobi/metadata/39/images/kumaindi_9924386815502466_joanne_media/00000004.tif</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<field name="work_record_id">
+			<value>9924386815502466</value>
+		</field>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>9924386815502466</value>
+			</field>
+		</entity>
+		<entity name="work_title">
+			<field name="title">
+				<value>Indigo plantations and science in colonial India</value>
+			</field>
+		</entity>
+		<entity name="work_creator">
+			<field name="creator">
+				<value>Kumar, Prakash</value>
+			</field>
+		</entity>
+		<entity name="work_date">
+			<field name="date">
+				<value>c2012.</value>
+			</field>
+		</entity>
+		<entity name="Subset">
+			<field name="Subset Index">
+				<value>[2]</value>
+			</field>
+			<field name="Sequence">
+				<value>5</value>
+			</field>
+		</entity>
+		<entity name="repro_record">
+			<field name="repro_record_id">
+				<value>file:///opt/digiverso/goobi/metadata/39/images/kumaindi_9924386815502466_joanne_media/00000005.tif</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<field name="work_record_id">
+			<value>9924386815502466</value>
+		</field>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>9924386815502466</value>
+			</field>
+		</entity>
+		<entity name="work_title">
+			<field name="title">
+				<value>Indigo plantations and science in colonial India</value>
+			</field>
+		</entity>
+		<entity name="work_creator">
+			<field name="creator">
+				<value>Kumar, Prakash</value>
+			</field>
+		</entity>
+		<entity name="work_date">
+			<field name="date">
+				<value>c2012.</value>
+			</field>
+		</entity>
+		<entity name="Subset">
+			<field name="Subset Index">
+				<value>[3]</value>
+			</field>
+			<field name="Sequence">
+				<value>6</value>
+			</field>
+		</entity>
+		<entity name="repro_record">
+			<field name="repro_record_id">
+				<value>file:///opt/digiverso/goobi/metadata/39/images/kumaindi_9924386815502466_joanne_media/00000006.tif</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<field name="work_record_id">
+			<value>9924386815502466</value>
+		</field>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>9924386815502466</value>
+			</field>
+		</entity>
+		<entity name="work_title">
+			<field name="title">
+				<value>Indigo plantations and science in colonial India</value>
+			</field>
+		</entity>
+		<entity name="work_creator">
+			<field name="creator">
+				<value>Kumar, Prakash</value>
+			</field>
+		</entity>
+		<entity name="work_date">
+			<field name="date">
+				<value>c2012.</value>
+			</field>
+		</entity>
+		<entity name="Subset">
+			<field name="Subset Index">
+				<value>[4]</value>
+			</field>
+			<field name="Sequence">
+				<value>7</value>
+			</field>
+		</entity>
+		<entity name="repro_record">
+			<field name="repro_record_id">
+				<value>file:///opt/digiverso/goobi/metadata/39/images/kumaindi_9924386815502466_joanne_media/00000007.tif</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<field name="work_record_id">
+			<value>9924386815502466</value>
+		</field>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>9924386815502466</value>
+			</field>
+		</entity>
+		<entity name="work_title">
+			<field name="title">
+				<value>Indigo plantations and science in colonial India</value>
+			</field>
+		</entity>
+		<entity name="work_creator">
+			<field name="creator">
+				<value>Kumar, Prakash</value>
+			</field>
+		</entity>
+		<entity name="work_date">
+			<field name="date">
+				<value>c2012.</value>
+			</field>
+		</entity>
+		<entity name="Subset">
+			<field name="Subset Index">
+				<value>[5]</value>
+			</field>
+			<field name="Sequence">
+				<value>8</value>
+			</field>
+		</entity>
+		<entity name="repro_record">
+			<field name="repro_record_id">
+				<value>file:///opt/digiverso/goobi/metadata/39/images/kumaindi_9924386815502466_joanne_media/00000008.tif</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<field name="work_record_id">
+			<value>9924386815502466</value>
+		</field>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>9924386815502466</value>
+			</field>
+		</entity>
+		<entity name="work_title">
+			<field name="title">
+				<value>Indigo plantations and science in colonial India</value>
+			</field>
+		</entity>
+		<entity name="work_creator">
+			<field name="creator">
+				<value>Kumar, Prakash</value>
+			</field>
+		</entity>
+		<entity name="work_date">
+			<field name="date">
+				<value>c2012.</value>
+			</field>
+		</entity>
+		<entity name="Subset">
+			<field name="Subset Index">
+				<value>6</value>
+			</field>
+			<field name="Sequence">
+				<value>9</value>
+			</field>
+		</entity>
+		<entity name="repro_record">
+			<field name="repro_record_id">
+				<value>file:///opt/digiverso/goobi/metadata/39/images/kumaindi_9924386815502466_joanne_media/00000009.tif</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<field name="work_record_id">
+			<value>9924386815502466</value>
+		</field>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>9924386815502466</value>
+			</field>
+		</entity>
+		<entity name="work_title">
+			<field name="title">
+				<value>Indigo plantations and science in colonial India</value>
+			</field>
+		</entity>
+		<entity name="work_creator">
+			<field name="creator">
+				<value>Kumar, Prakash</value>
+			</field>
+		</entity>
+		<entity name="work_date">
+			<field name="date">
+				<value>c2012.</value>
+			</field>
+		</entity>
+		<entity name="Subset">
+			<field name="Subset Index">
+				<value>7</value>
+			</field>
+			<field name="Sequence">
+				<value>10</value>
+			</field>
+		</entity>
+		<entity name="repro_record">
+			<field name="repro_record_id">
+				<value>file:///opt/digiverso/goobi/metadata/39/images/kumaindi_9924386815502466_joanne_media/00000010.tif</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<field name="work_record_id">
+			<value>9924386815502466</value>
+		</field>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>9924386815502466</value>
+			</field>
+		</entity>
+		<entity name="work_title">
+			<field name="title">
+				<value>Indigo plantations and science in colonial India</value>
+			</field>
+		</entity>
+		<entity name="work_creator">
+			<field name="creator">
+				<value>Kumar, Prakash</value>
+			</field>
+		</entity>
+		<entity name="work_date">
+			<field name="date">
+				<value>c2012.</value>
+			</field>
+		</entity>
+		<entity name="Subset">
+			<field name="Subset Index">
+				<value>8</value>
+			</field>
+			<field name="Sequence">
+				<value>11</value>
+			</field>
+		</entity>
+		<entity name="repro_record">
+			<field name="repro_record_id">
+				<value>file:///opt/digiverso/goobi/metadata/39/images/kumaindi_9924386815502466_joanne_media/00000011.tif</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<field name="work_record_id">
+			<value>9924386815502466</value>
+		</field>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>9924386815502466</value>
+			</field>
+		</entity>
+		<entity name="work_title">
+			<field name="title">
+				<value>Indigo plantations and science in colonial India</value>
+			</field>
+		</entity>
+		<entity name="work_creator">
+			<field name="creator">
+				<value>Kumar, Prakash</value>
+			</field>
+		</entity>
+		<entity name="work_date">
+			<field name="date">
+				<value>c2012.</value>
+			</field>
+		</entity>
+		<entity name="Subset">
+			<field name="Subset Index">
+				<value>9</value>
+			</field>
+			<field name="Sequence">
+				<value>12</value>
+			</field>
+		</entity>
+		<entity name="repro_record">
+			<field name="repro_record_id">
+				<value>file:///opt/digiverso/goobi/metadata/39/images/kumaindi_9924386815502466_joanne_media/00000012.tif</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<field name="work_record_id">
+			<value>9924386815502466</value>
+		</field>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>9924386815502466</value>
+			</field>
+		</entity>
+		<entity name="work_title">
+			<field name="title">
+				<value>Indigo plantations and science in colonial India</value>
+			</field>
+		</entity>
+		<entity name="work_creator">
+			<field name="creator">
+				<value>Kumar, Prakash</value>
+			</field>
+		</entity>
+		<entity name="work_date">
+			<field name="date">
+				<value>c2012.</value>
+			</field>
+		</entity>
+		<entity name="Subset">
+			<field name="Subset Index">
+				<value>10</value>
+			</field>
+			<field name="Sequence">
+				<value>13</value>
+			</field>
+		</entity>
+		<entity name="repro_record">
+			<field name="repro_record_id">
+				<value>file:///opt/digiverso/goobi/metadata/39/images/kumaindi_9924386815502466_joanne_media/00000013.tif</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<field name="work_record_id">
+			<value>9924386815502466</value>
+		</field>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>9924386815502466</value>
+			</field>
+		</entity>
+		<entity name="work_title">
+			<field name="title">
+				<value>Indigo plantations and science in colonial India</value>
+			</field>
+		</entity>
+		<entity name="work_creator">
+			<field name="creator">
+				<value>Kumar, Prakash</value>
+			</field>
+		</entity>
+		<entity name="work_date">
+			<field name="date">
+				<value>c2012.</value>
+			</field>
+		</entity>
+		<entity name="Subset">
+			<field name="Subset Index">
+				<value>11</value>
+			</field>
+			<field name="Sequence">
+				<value>14</value>
+			</field>
+		</entity>
+		<entity name="repro_record">
+			<field name="repro_record_id">
+				<value>file:///opt/digiverso/goobi/metadata/39/images/kumaindi_9924386815502466_joanne_media/00000014.tif</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<field name="work_record_id">
+			<value>9924386815502466</value>
+		</field>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>9924386815502466</value>
+			</field>
+		</entity>
+		<entity name="work_title">
+			<field name="title">
+				<value>Indigo plantations and science in colonial India</value>
+			</field>
+		</entity>
+		<entity name="work_creator">
+			<field name="creator">
+				<value>Kumar, Prakash</value>
+			</field>
+		</entity>
+		<entity name="work_date">
+			<field name="date">
+				<value>c2012.</value>
+			</field>
+		</entity>
+		<entity name="Subset">
+			<field name="Subset Index">
+				<value>12</value>
+			</field>
+			<field name="Sequence">
+				<value>15</value>
+			</field>
+		</entity>
+		<entity name="repro_record">
+			<field name="repro_record_id">
+				<value>file:///opt/digiverso/goobi/metadata/39/images/kumaindi_9924386815502466_joanne_media/00000015.tif</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<field name="work_record_id">
+			<value>9924386815502466</value>
+		</field>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>9924386815502466</value>
+			</field>
+		</entity>
+		<entity name="work_title">
+			<field name="title">
+				<value>Indigo plantations and science in colonial India</value>
+			</field>
+		</entity>
+		<entity name="work_creator">
+			<field name="creator">
+				<value>Kumar, Prakash</value>
+			</field>
+		</entity>
+		<entity name="work_date">
+			<field name="date">
+				<value>c2012.</value>
+			</field>
+		</entity>
+		<entity name="Subset">
+			<field name="Subset Index">
+				<value>13</value>
+			</field>
+			<field name="Sequence">
+				<value>16</value>
+			</field>
+		</entity>
+		<entity name="repro_record">
+			<field name="repro_record_id">
+				<value>file:///opt/digiverso/goobi/metadata/39/images/kumaindi_9924386815502466_joanne_media/00000016.tif</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<field name="work_record_id">
+			<value>9924386815502466</value>
+		</field>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>9924386815502466</value>
+			</field>
+		</entity>
+		<entity name="work_title">
+			<field name="title">
+				<value>Indigo plantations and science in colonial India</value>
+			</field>
+		</entity>
+		<entity name="work_creator">
+			<field name="creator">
+				<value>Kumar, Prakash</value>
+			</field>
+		</entity>
+		<entity name="work_date">
+			<field name="date">
+				<value>c2012.</value>
+			</field>
+		</entity>
+		<entity name="Subset">
+			<field name="Subset Index">
+				<value>14</value>
+			</field>
+			<field name="Sequence">
+				<value>17</value>
+			</field>
+		</entity>
+		<entity name="repro_record">
+			<field name="repro_record_id">
+				<value>file:///opt/digiverso/goobi/metadata/39/images/kumaindi_9924386815502466_joanne_media/00000017.tif</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<field name="work_record_id">
+			<value>9924386815502466</value>
+		</field>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>9924386815502466</value>
+			</field>
+		</entity>
+		<entity name="work_title">
+			<field name="title">
+				<value>Indigo plantations and science in colonial India</value>
+			</field>
+		</entity>
+		<entity name="work_creator">
+			<field name="creator">
+				<value>Kumar, Prakash</value>
+			</field>
+		</entity>
+		<entity name="work_date">
+			<field name="date">
+				<value>c2012.</value>
+			</field>
+		</entity>
+		<entity name="Subset">
+			<field name="Subset Index">
+				<value>uncounted</value>
+			</field>
+			<field name="Sequence">
+				<value>18</value>
+			</field>
+		</entity>
+		<entity name="repro_record">
+			<field name="repro_record_id">
+				<value>file:///opt/digiverso/goobi/metadata/39/images/kumaindi_9924386815502466_joanne_media/00000018.tif</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<field name="work_record_id">
+			<value>9924386815502466</value>
+		</field>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>9924386815502466</value>
+			</field>
+		</entity>
+		<entity name="work_title">
+			<field name="title">
+				<value>Indigo plantations and science in colonial India</value>
+			</field>
+		</entity>
+		<entity name="work_creator">
+			<field name="creator">
+				<value>Kumar, Prakash</value>
+			</field>
+		</entity>
+		<entity name="work_date">
+			<field name="date">
+				<value>c2012.</value>
+			</field>
+		</entity>
+		<entity name="Subset">
+			<field name="Subset Index">
+				<value>uncounted</value>
+			</field>
+			<field name="Sequence">
+				<value>19</value>
+			</field>
+		</entity>
+		<entity name="repro_record">
+			<field name="repro_record_id">
+				<value>file:///opt/digiverso/goobi/metadata/39/images/kumaindi_9924386815502466_joanne_media/00000019.tif</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<field name="work_record_id">
+			<value>9924386815502466</value>
+		</field>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>9924386815502466</value>
+			</field>
+		</entity>
+		<entity name="work_title">
+			<field name="title">
+				<value>Indigo plantations and science in colonial India</value>
+			</field>
+		</entity>
+		<entity name="work_creator">
+			<field name="creator">
+				<value>Kumar, Prakash</value>
+			</field>
+		</entity>
+		<entity name="work_date">
+			<field name="date">
+				<value>c2012.</value>
+			</field>
+		</entity>
+		<entity name="Subset">
+			<field name="Subset Index">
+				<value>uncounted</value>
+			</field>
+			<field name="Sequence">
+				<value>20</value>
+			</field>
+		</entity>
+		<entity name="repro_record">
+			<field name="repro_record_id">
+				<value>file:///opt/digiverso/goobi/metadata/39/images/kumaindi_9924386815502466_joanne_media/00000020.tif</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<field name="work_record_id">
+			<value>9924386815502466</value>
+		</field>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>9924386815502466</value>
+			</field>
+		</entity>
+		<entity name="work_title">
+			<field name="title">
+				<value>Indigo plantations and science in colonial India</value>
+			</field>
+		</entity>
+		<entity name="work_creator">
+			<field name="creator">
+				<value>Kumar, Prakash</value>
+			</field>
+		</entity>
+		<entity name="work_date">
+			<field name="date">
+				<value>c2012.</value>
+			</field>
+		</entity>
+		<entity name="Subset">
+			<field name="Subset Index">
+				<value>uncounted</value>
+			</field>
+			<field name="Sequence">
+				<value>21</value>
+			</field>
+		</entity>
+		<entity name="repro_record">
+			<field name="repro_record_id">
+				<value>file:///opt/digiverso/goobi/metadata/39/images/kumaindi_9924386815502466_joanne_media/00000021.tif</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<field name="work_record_id">
+			<value>9924386815502466</value>
+		</field>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>9924386815502466</value>
+			</field>
+		</entity>
+		<entity name="work_title">
+			<field name="title">
+				<value>Indigo plantations and science in colonial India</value>
+			</field>
+		</entity>
+		<entity name="work_creator">
+			<field name="creator">
+				<value>Kumar, Prakash</value>
+			</field>
+		</entity>
+		<entity name="work_date">
+			<field name="date">
+				<value>c2012.</value>
+			</field>
+		</entity>
+		<entity name="Subset">
+			<field name="Subset Index">
+				<value>uncounted</value>
+			</field>
+			<field name="Sequence">
+				<value>22</value>
+			</field>
+		</entity>
+		<entity name="repro_record">
+			<field name="repro_record_id">
+				<value>file:///opt/digiverso/goobi/metadata/39/images/kumaindi_9924386815502466_joanne_media/00000022.tif</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<field name="work_record_id">
+			<value>9924386815502466</value>
+		</field>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>9924386815502466</value>
+			</field>
+		</entity>
+		<entity name="work_title">
+			<field name="title">
+				<value>Indigo plantations and science in colonial India</value>
+			</field>
+		</entity>
+		<entity name="work_creator">
+			<field name="creator">
+				<value>Kumar, Prakash</value>
+			</field>
+		</entity>
+		<entity name="work_date">
+			<field name="date">
+				<value>c2012.</value>
+			</field>
+		</entity>
+		<entity name="Subset">
+			<field name="Subset Index">
+				<value>uncounted</value>
+			</field>
+			<field name="Sequence">
+				<value>23</value>
+			</field>
+		</entity>
+		<entity name="repro_record">
+			<field name="repro_record_id">
+				<value>file:///opt/digiverso/goobi/metadata/39/images/kumaindi_9924386815502466_joanne_media/00000023.tif</value>
+			</field>
+		</entity>
+	</record>
+</recordList>

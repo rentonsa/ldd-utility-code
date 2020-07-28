@@ -1,0 +1,8 @@
+mets:field_group:field:order:
+CatalogIDSource:NA:work_record_id:1:
+PublicationYear:work_date:date:5:
+CatalogIDSource:id_number:work_catalogue_number:2:
+TitleDocMain:work_title:title:3:
+CreatorsAllOrigin:work_creator:creator:4:
+
+
