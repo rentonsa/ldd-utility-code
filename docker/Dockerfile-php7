@@ -21,6 +21,12 @@ COPY skylight-local/docker/skylight.conf /etc/apache2/sites-available
 # see https://forums.docker.com/t/cant-restart-my-container-httpd-pid-8-already-running/67633
 COPY skylight-local/docker/httpd-foreground.sh /usr/local/bin/
 
+# Copy SSH config file
+COPY skylight-local/docker/ssh_config /etc/ssh/ssh_config
+
+# Set up php development env
+RUN cp /usr/lib/php/7.2/php.ini-development /etc/php/7.2/apache2/php.ini
+
 # Enable Apache mods rewrite and headers
 RUN a2enmod rewrite headers
 
@@ -37,4 +43,6 @@ EXPOSE 80
 CMD ["httpd-foreground.sh"]
 
 # ssh -4 -N -f -L 9122:127.0.0.1:8080 dspace@lac-repo-test14.is.ed.ac.uk
-# docker run -it -p 8080:80 -v /home/hrafn/PhpstormProjects/skylight:/var/html/www/skylight -v /home/hrafn/PhpstormProjects/skylight-local:/var/html/www/skylight-local eerc_skylight
+# docker run --name skylight -it -p 8080:80 -p 80:1818 -v /home/hrafn/PhpstormProjects/skylight:/var/html/www/skylight -v /home/hrafn/PhpstormProjects/skylight-local:/var/html/www/skylight-local skylight
+# ssh -4 -N -f -L 1818:test.collectionsinternal.is.ed.ac.uk:80 hrafn@is-lac-2289.is.ed.ac.uk
+# ssh -4 -N -f -L 9130:127.0.0.1:8080 coll-int

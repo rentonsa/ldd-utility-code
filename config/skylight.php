@@ -9,8 +9,8 @@ $config['skylight_url_prefixes'] = array('eerc','exhibitions','umis','cockburn',
 $config['skylight_handle_prefixes'] = array(3 => "art", 11 => "mimed");
 
 // The URL of the parent solr server
-$config['skylight_solrbase'] = 'http://collectionssolr.is.ed.ac.uk/search/';
-//$config['skylight_solrbase'] = 'http://collectionsinternal.is.ed.ac.uk:8080/solr/search/';
+//$config['skylight_solrbase'] = 'http://collectionssolr.is.ed.ac.uk/search/';
+$config['skylight_solrbase'] = 'http://localhost:9130/solr/search/';
 
 //DSpace handle server prefix
 $config['skylight_handle_prefix'] = '10683';
@@ -18,7 +18,7 @@ $config['skylight_handle_prefix'] = '10683';
 // The platform and version of your repository.
 // Currently DSpace 1.7.1+ is the only supported repository
 $config['skylight_repository_type'] = 'dspace'; // Demo 'dspace'
-$config['skylight_repository_version'] = '181'; // Demo '171'
+$config['skylight_repository_version'] = '6'; // Demo '171'
 
 // The local path for theme and configuration overrides (if required)
 $config['skylight_local_path'] = '../skylight-local';
@@ -90,5 +90,3 @@ $config['skylight_config_allowoverride'] = false;
 
 // Can themes be overridden by the user using ?theme={themename}
 $config['skylight_theme_allowoverride'] = false;
-​
-?>
