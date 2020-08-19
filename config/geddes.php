@@ -2,8 +2,8 @@
 
 $config['skylight_appname'] = 'geddes';
 
-// set the base url and ga code
-if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
+// Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
+if (ENVIRONMENT == 'development') {
     $config['skylight_container_id'] = '50092146-e1bb-4d9f-8755-b024a27ae0ae';
 }
 else {

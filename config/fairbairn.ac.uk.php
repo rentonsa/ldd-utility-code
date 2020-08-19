@@ -5,8 +5,8 @@ $config['skylight_appname'] = 'fairbairn';
 // Uncomment this if you are using a url of the form http://.../art/...
 //$config['skylight_url_prefix'] = 'fairbairn';
 
-// set the base url and ga code
-if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
+// Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
+if (ENVIRONMENT == 'development') {
     $config['base_url'] = 'http://test.fairbairn.ac.uk/';
     $config['skylight_ga_code'] = '';
     $config['skylight_solrbase'] = 'http://lac-repo-test14.is.ed.ac.uk:8090/';

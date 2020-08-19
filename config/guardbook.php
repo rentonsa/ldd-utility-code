@@ -4,14 +4,15 @@ $config['skylight_appname'] = 'guardbook';
 
 $config['skylight_url_prefix'] = 'guardbook';
 
-// set the base url and ga code
-if (strpos($_SERVER['HTTP_HOST'], "localhost") !== false) {
-    $config['skylight_ga_code'] = '';
-    $config['skylight_container_id'] = 'f0c7bb72-ab20-4693-be0d-43918440a8cd';
-}
-else if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
-    $config['skylight_ga_code'] = 'UA-25737241-6';
-    $config['skylight_container_id'] = 'f0c7bb72-ab20-4693-be0d-43918440a8cd';
+// Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
+if(ENVIRONMENT == 'development') {
+    if (strpos($_SERVER['HTTP_HOST'], "localhost") !== false) {
+        $config['skylight_ga_code'] = '';
+        $config['skylight_container_id'] = 'f0c7bb72-ab20-4693-be0d-43918440a8cd';
+    } else if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
+        $config['skylight_ga_code'] = 'UA-25737241-6';
+        $config['skylight_container_id'] = 'f0c7bb72-ab20-4693-be0d-43918440a8cd';
+    }
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-9';

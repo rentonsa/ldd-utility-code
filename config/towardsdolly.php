@@ -5,16 +5,18 @@ $config['skylight_appname'] = 'towardsdolly';
 // Uncomment this if you are using a url of the form http://.../art/...
 $config['skylight_url_prefix'] = 'towardsdolly';
 
-// set the base url and ga code
-if (strpos($_SERVER['HTTP_HOST'], "localhost") !== false) {
-    $config['skylight_ga_code'] = '';
-    $config['skylight_solrbase'] = 'http://localhost:9129/';
-    $config['skylight_link_url'] = 'http://lac-archives-test.is.ed.ac.uk:8081';
-}
-else if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
-    $config['skylight_ga_code'] = '';
-    $config['skylight_solrbase'] = 'http://lac-repo-test14.is.ed.ac.uk:8090/';
-    $config['skylight_link_url'] = 'http://lac-archives-test.is.ed.ac.uk:8081';
+
+// Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
+if(ENVIRONMENT == 'development') {
+    if (strpos($_SERVER['HTTP_HOST'], "localhost") !== false) {
+        $config['skylight_ga_code'] = '';
+        $config['skylight_solrbase'] = 'http://localhost:9129/';
+        $config['skylight_link_url'] = 'http://lac-archives-test.is.ed.ac.uk:8081';
+    } else if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
+        $config['skylight_ga_code'] = '';
+        $config['skylight_solrbase'] = 'http://lac-repo-test14.is.ed.ac.uk:8090/';
+        $config['skylight_link_url'] = 'http://lac-archives-test.is.ed.ac.uk:8081';
+    }
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-9';

@@ -9,8 +9,8 @@ $config['skylight_theme'] = 'colllevel';
 
 $config['skylight_fullname'] = 'University of Edinburgh Collection Level Descriptions';
 
-// set ga code
-if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
+// Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
+if (ENVIRONMENT == 'development') {
     $config['skylight_ga_code'] = 'UA-25737241-6';
 }
 else {
