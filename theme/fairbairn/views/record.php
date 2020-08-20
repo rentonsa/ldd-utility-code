@@ -67,18 +67,19 @@ $schema = $this->config->item("skylight_schema_links");
                                         $idset = true;
                                     }
                                 }
-                                else {
-                                    if($key == 'Dates'){
-                                        echo ($metadatavalue['expression']);
+                                else
+                                {
+                                    if (isset ($schema[$key]))
+                                    {
+                                        echo '<span itemprop="'.$schema[$key].'">'. $metadatavalue. "</span>";
                                     }
-                                    if($key == 'Extent'){
-                                        echo ($metadatavalue['number']);
-                                    }
-                                    elseif ($key != 'Dates') {
-                                        echo ($metadatavalue);
+                                    else
+                                    {
+                                        echo $metadatavalue;
                                     }
                                 }
                             }
+
                             if($index < sizeof($solr[$element]) - 1) {
                                 echo '<br/>';
                             }
