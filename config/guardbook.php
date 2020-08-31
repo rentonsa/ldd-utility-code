@@ -6,7 +6,7 @@ $config['skylight_url_prefix'] = 'guardbook';
 
 // set the base url and ga code
 if (strpos($_SERVER['HTTP_HOST'], "localhost") !== false) {
-    $config['skylight_ga_code'] = '';
+    $config['skylight_ga_code'] = 'UA-25737241-6';
     $config['skylight_container_id'] = 'f0c7bb72-ab20-4693-be0d-43918440a8cd';
 }
 else if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
@@ -21,7 +21,7 @@ else {
 // The platform and version of your repository.
 // Currently DSpace 1.7.1+ is the only supported repository
 $config['skylight_repository_type'] = 'dspace'; // Demo 'dspace'
-$config['skylight_repository_version'] = 'exams'; // Demo '171'
+$config['skylight_repository_version'] = '6'; // Demo '171'
 
 
 $config['skylight_theme'] = 'guardbook';

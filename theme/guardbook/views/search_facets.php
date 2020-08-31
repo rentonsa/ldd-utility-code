@@ -4,14 +4,14 @@
         <div class="sidebar-nav">
 
             <?php foreach ($facets as $facet) {
-
                 $inactive_terms = array();
                 $active_terms = array();
+                //$base_search = str_replace("*:*", "", $base_search);
 
                 ?>
                 <ul class="list-group">
                     <li class="list-group-item active">
-                        <a href="./browse/<?php echo $facet['name']; ?>">
+                        <a href="./search/<?php echo "*?sort_by=dc.title_sort+asc "?>"> <!-- *?sort_by=dc.title_sort+asc have to get that dynamically instead of facet['name'] which is A-Z but not a appropriate query anylonger-->
                             <?php echo $facet['name'] ?>
                         </a></li>
 
@@ -22,6 +22,7 @@
 
                         $fpattern =  '#\/'.$facet['name'].'.*\%5D#';
                         $fremove = preg_replace($fpattern,'',$fremove, -1);
+
                         ?>
 
                         <li class="list-group-item">
@@ -53,7 +54,7 @@
                         <li class="list-group-item">
                             <span class="badge"><?php echo $term['count']; ?></span>
                             <a href='<?php echo $base_search; ?>/<?php echo $facet['name']; ?>:"<?php echo $term['name']; ?>"<?php echo $base_parameters ?>'><?php echo $term['display_name'];?>
-                            </a>
+                            </a><!-- this has to be changed -->
                         </li>
                         <?php
                     }
