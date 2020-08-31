@@ -100,5 +100,8 @@ $config['skylight_lightbox_mimes'] = array('image/jpeg', 'image/gif', 'image/png
 $config['skylight_language_default'] = 'en';
 $config['skylight_language_options'] = array('en', 'ko', 'jp');
 
+// set this to true to enable an accurate search and fit the facet search with only one char
+$config['skylight_filter_exact'] = true;
+$config['skylight_filter_sort'] = true;
 
 ?>
