@@ -4,15 +4,14 @@ $config['skylight_appname'] = 'guardbook';
 
 $config['skylight_url_prefix'] = 'guardbook';
 
-// Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
-if(ENVIRONMENT == 'development') {
-    if (strpos($_SERVER['HTTP_HOST'], "localhost") !== false) {
-        $config['skylight_ga_code'] = '';
-        $config['skylight_container_id'] = 'f0c7bb72-ab20-4693-be0d-43918440a8cd';
-    } else if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
-        $config['skylight_ga_code'] = 'UA-25737241-6';
-        $config['skylight_container_id'] = 'f0c7bb72-ab20-4693-be0d-43918440a8cd';
-    }
+// set the base url and ga code
+if (strpos($_SERVER['HTTP_HOST'], "localhost") !== false) {
+    $config['skylight_ga_code'] = 'UA-25737241-6';
+    $config['skylight_container_id'] = 'f0c7bb72-ab20-4693-be0d-43918440a8cd';
+}
+else if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
+    $config['skylight_ga_code'] = 'UA-25737241-6';
+    $config['skylight_container_id'] = 'f0c7bb72-ab20-4693-be0d-43918440a8cd';
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-9';
@@ -22,7 +21,7 @@ else {
 // The platform and version of your repository.
 // Currently DSpace 1.7.1+ is the only supported repository
 $config['skylight_repository_type'] = 'dspace'; // Demo 'dspace'
-$config['skylight_repository_version'] = 'exams'; // Demo '171'
+$config['skylight_repository_version'] = '6'; // Demo '171'
 
 
 $config['skylight_theme'] = 'guardbook';
@@ -101,5 +100,8 @@ $config['skylight_lightbox_mimes'] = array('image/jpeg', 'image/gif', 'image/png
 $config['skylight_language_default'] = 'en';
 $config['skylight_language_options'] = array('en', 'ko', 'jp');
 
+// set this to true to enable an accurate search and fit the facet search with only one char
+$config['skylight_filter_exact'] = true;
+$config['skylight_filter_sort'] = true;
 
 ?>

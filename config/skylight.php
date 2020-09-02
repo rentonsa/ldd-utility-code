@@ -4,7 +4,7 @@
 $config['skylight_hostnames'] = array('sjac-collection.is.ed.ac.uk', 'stuartsound.is.ed.ac.uk','www.fairbairn.ac.uk', 'exampapers.ed.ac.uk', 'test.scottishgovernmentyearbooks.ed.ac.uk', 'www.scottishgovernmentyearbooks.ed.ac.uk','openbooks.is.ed.ac.uk','sopacollection.ph.ed.ac.uk', 'exhibitions.ed.ac.uk', 'lac-projects.is.ed.ac.uk', 'www.stuartsound.is.ed.ac.uk');
 
 // Uncomment this if you want to use urls of the form http://.../prefix/...
-$config['skylight_url_prefixes'] = array('eerc','exhibitions','umis','cockburn','coimbra-colls', 'public-art','archivemedia', 'geddes', 'lhsacasenotes','stcecilias','mimed', 'art', 'calendars', 'iconics', 'towardsdolly', 'alumni', 'coimbra', 'guardbook');
+$config['skylight_url_prefixes'] = array('eerc','exhibitions','umis','cockburn','coimbra-colls', 'public-art','archivemedia', 'geddes', 'lhsacasenotes','stcecilias','mimed', 'art', 'calendars', 'iconics', 'towardsdolly', 'alumni', 'coimbra', 'guardbook', 'openbooks');
 
 $config['skylight_handle_prefixes'] = array(3 => "art", 11 => "mimed");
 
@@ -43,7 +43,7 @@ $config['skylight_oaipmhid']= 'oai:collectionsmanager.is.ed.ac.uk:10683/';
 $config['skylight_oaipmhlink'] = 'http://hdl.handle.net/10683/';
 
 // The URL base for where digital objects can be proxied from
-$config['skylight_objectproxy_url'] = 'http://collectionsinternal.is.ed.ac.uk:8080/bitstream/10683/';
+$config['skylight_objectproxy_url'] = 'http://test.collectionsmanager.is.ed.ac.uk/bitstream/10683/';
 
 // Default OAI not permitted
 $config['skylight_oaipmhallowed'] = false;
@@ -81,6 +81,10 @@ $config['skylight_related_number'] = 10;
  *
  * We recommend that these are disabled (or commented out) for production systems
  */
+
+// added Variables to fit the exact search like desired in e.g. guardbooks, or keep it general as default
+$config['skylight_filter_exact'] = false;
+$config['skylight_filter_sort'] = '';
 
 // Set to true to enable debugging / profiling information
 // $config['skylight_debug'] = false;
