@@ -16,7 +16,8 @@ $config['skylight_oaipmhcollection'] = 'hdl_10683_4';
 $config['skylight_container_id'] = '1';
 $config['skylight_container_field'] = 'location.comm';
 
-if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
+// Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
+if (ENVIRONMENT == 'development') {
     $config['skylight_link_colls'] = array(
         3   => base_url() ."art/",
         11  => base_url() ."mimed/",

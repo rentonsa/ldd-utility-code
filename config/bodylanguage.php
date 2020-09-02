@@ -5,16 +5,17 @@ $config['skylight_appname'] = 'bodylanguage';
 // Uncomment this if you are using a url of the form http://.../art/...
 $config['skylight_url_prefix'] = 'bodylanguage';
 
-// set the base url and ga code
-if (strpos($_SERVER['HTTP_HOST'], "localhost") !== false) {
+// Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
+if(ENVIRONMENT == 'development') {
     $config['skylight_ga_code'] = '';
-    $config['skylight_solrbase'] = 'http://localhost:9129/';
     $config['skylight_link_url'] = 'http://lac-archives-live.is.ed.ac.uk:8081';
-}
-else if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
-    $config['skylight_ga_code'] = '';
-    $config['skylight_solrbase'] = 'http://lac-repo-live14.is.ed.ac.uk:8090/';
-    $config['skylight_link_url'] = 'http://lac-archives-live.is.ed.ac.uk:8081';
+
+    if (strpos($_SERVER['HTTP_HOST'], "localhost") !== false) {
+        $config['skylight_solrbase'] = 'http://localhost:9129/';
+
+    } else {
+        $config['skylight_solrbase'] = 'http://lac-repo-live14.is.ed.ac.uk:8090/';
+    }
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-9';
@@ -55,7 +56,7 @@ $config['skylight_fields'] = array('Title' => 'title',
     'Subject' => 'subjects',
     'Type' => 'primary_type',
     'Level' => 'level',
-    'Resource_Id' => 'resource',
+    'Resource Id' => 'resource',
     'Date' => 'create_time',
     'JSON' => 'json',
     'Agent' => 'agents',

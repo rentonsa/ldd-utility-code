@@ -9,8 +9,8 @@ $config['skylight_theme'] = 'mimed';
 
 $config['skylight_fullname'] = 'MUSICAL INSTRUMENT MUSEUMS EDINBURGH';
 
-// set ga code
-if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
+// Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
+if (ENVIRONMENT == 'development') {
     $config['skylight_ga_code'] = 'UA-25737241-6';
 }
 else {
@@ -24,7 +24,7 @@ $config['skylight_oaipmhcollection'] = 'hdl_10683_14558';
 $config['skylight_oaipmhallowed'] = true;
 
 // Container ID and the field used in solr index to store this ID. Used for restricting search/browse scope.
-if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
+if (ENVIRONMENT == 'development') {
 	$config['skylight_container_id'] = '21f59b48-a294-4960-b926-e1f56d32d90b';
 }
 else {
