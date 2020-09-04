@@ -90,13 +90,13 @@ else {
                     <?php } ?>
 
 
-                    <h3><a href="./record/<?php echo $doc['id']?>?highlight=<?php echo $query ?>"><?php echo $doc[$title_field][0]; ?>
+                    <h3><a href="./record/<?php echo $doc['id']?>?highlight=<?php echo $query ?>"><?php echo isset($doc[$title_field][0]) ? $doc[$title_field][0] : 'Untitled'; ?>
                             <?php if(array_key_exists($date_field, $doc)) { ?>
                                 <?php
                                 echo '(' . $doc[$date_field][0] . ')';
                             }
                             elseif(array_key_exists('dateIssuedyear', $doc)) {
-                                echo '( ' . $doc['dateIssuedyear'][0] . ')';
+                                echo '(' . $doc['dateIssuedyear'][0] . ')';
                             }
                             ?></a></h3>
 
