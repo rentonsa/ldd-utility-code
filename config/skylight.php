@@ -82,10 +82,6 @@ $config['skylight_related_number'] = 10;
  * We recommend that these are disabled (or commented out) for production systems
  */
 
-// added Variables to fit the exact search like desired in e.g. guardbooks, or keep it general as default
-$config['skylight_filter_exact'] = false;
-$config['skylight_filter_sort'] = '';
-
 // Set to true to enable debugging / profiling information
 // $config['skylight_debug'] = false;
 
@@ -94,3 +90,7 @@ $config['skylight_config_allowoverride'] = false;
 
 // Can themes be overridden by the user using ?theme={themename}
 $config['skylight_theme_allowoverride'] = false;
+
+// added Variables to fit the exact search like desired in e.g. guardbooks, or keep it general as default
+$config['skylight_filter_exact'] = true;
+$config['skylight_filter_sort'] = '';

@@ -78,6 +78,7 @@ $config['skylight_feed_fields'] = array('Title' => 'Title',
 
 $config['skylight_results_per_page'] = 10;
 $config['skylight_share_buttons'] = false;
+$config['skylight_facet_limit'] = 26;
 
 $config['skylight_homepage_recentitems'] = false;
 
