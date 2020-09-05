@@ -28,7 +28,7 @@ if(isset($solr[$type_field])) {
             $lower_orig_filter = strtolower($subject);
             $lower_orig_filter = urlencode($lower_orig_filter);
 
-            echo '<a class="$month" href="./search/*:*/%22Subject'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$subject.'</a>';
+            echo '<a class="$month" href="./search/*:*/%22Subject'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22">'.$subject.'</a>';
         }
     }
 
@@ -54,7 +54,7 @@ if(isset($solr[$type_field])) {
                     $lower_orig_filter = strtolower($metadatavalue);
                     $lower_orig_filter = urlencode($lower_orig_filter);
 
-                    echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                    echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
                 }
                 else {
                     echo $metadatavalue;
