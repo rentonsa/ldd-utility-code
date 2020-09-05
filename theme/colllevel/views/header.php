@@ -125,11 +125,11 @@
 <div class="tab-heading">
     <div class="container">
         <ul class="cldmenu" >
-            <li class="current" ><a href="<?php echo base_url();?>/<?php echo $this->config->item('skylight_theme'); ?>/search/*/Type:%22archives%7C%7C%7CArchives%22/Header:%22archives%22?sort_by=cld.weighting_sort+desc,dc.title_sort+asc" data-hover="ARCHIVES" title="Archive and Manuscript Collections">ARCHIVES</a></li>
+            <li class="current" ><a href="<?php echo base_url();?>/<?php echo $this->config->item('skylight_theme'); ?>/search/*/Type:%22archives+%7C%7C%7C+Archives%22/Header:%22archives%22?sort_by=cld.weighting_sort+desc,dc.title_sort+asc" data-hover="ARCHIVES" title="Archive and Manuscript Collections">ARCHIVES</a></li>
             <li><a href="<?php echo base_url();?>/<?php echo $this->config->item('skylight_theme'); ?>/search/*/Type:%22rare+books|||Rare+Books%22/Header:%22rarebooks%22?sort_by=cld.weighting_sort+desc,dc.title_sort+asc" data-hover="RARE BOOKS" title="Rare Book Collections">RARE BOOKS</a></li>
-            <li><a href="<?php echo base_url();?>/<?php echo $this->config->item('skylight_theme'); ?>/search/*/Type:%22mimed%7C%7C%7CMIMEd%22/Header:%22mimed%22?sort_by=cld.weighting_sort+desc,dc.title_sort+asc" data-hover="MUSICAL INSTRUMENTS" title="Musical Instrument Collections">MUSICAL INSTRUMENTS</a></li>
-            <li><a href="<?php echo base_url();?>/<?php echo $this->config->item('skylight_theme'); ?>/search/*/Type:%22art%7C%7C%7CArt%22/Header:%22art%22?sort_by=cld.weighting_sort+desc,dc.title_sort+asc" data-hover="ART" title="Art Collections">ART</a></li>
-            <li><a href="<?php echo base_url();?>/<?php echo $this->config->item('skylight_theme'); ?>/search/*/Type:%22museums%7C%7C%7CMuseums%22/Header:%22museums%22?sort_by=cld.weighting_sort+desc,dc.title_sort+asc" data-hover="MUSEUMS" title="Museums">MUSEUMS</a></li>
+            <li><a href="<?php echo base_url();?>/<?php echo $this->config->item('skylight_theme'); ?>/search/*/Type:%22mimed+%7C%7C%7C+MIMEd%22/Header:%22mimed%22?sort_by=cld.weighting_sort+desc,dc.title_sort+asc" data-hover="MUSICAL INSTRUMENTS" title="Musical Instrument Collections">MUSICAL INSTRUMENTS</a></li>
+            <li><a href="<?php echo base_url();?>/<?php echo $this->config->item('skylight_theme'); ?>/search/*/Type:%22art+%7C%7C%7C+Art%22/Header:%22art%22?sort_by=cld.weighting_sort+desc,dc.title_sort+asc" data-hover="ART" title="Art Collections">ART</a></li>
+            <li><a href="<?php echo base_url();?>/<?php echo $this->config->item('skylight_theme'); ?>/search/*/Type:%22museums+%7C%7C%7C+Museums%22/Header:%22museums%22?sort_by=cld.weighting_sort+desc,dc.title_sort+asc" data-hover="MUSEUMS" title="Museums">MUSEUMS</a></li>
         </ul>
     </div>
 </div>
