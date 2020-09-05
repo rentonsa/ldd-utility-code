@@ -123,7 +123,7 @@
                             $lower_orig_filter = strtolower($exhibition);
                             $lower_orig_filter = urlencode($lower_orig_filter);
 
-                            echo '<a class="reverse" href="./search/*:*/Exhibition:%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" alt="item exhibition tag filter" title="Filter by tag">'.$exhibition.'</a>';
+                            echo '<a class="reverse" href="./search/*:*/Exhibition:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22" alt="item exhibition tag filter" title="Filter by tag">'.$exhibition.'</a>';
                             $num_ex++;
                             if($num_ex < sizeof($doc[$exhibition_field])) {
                                 echo ' ';
@@ -146,7 +146,7 @@
                             $lower_orig_filter = strtolower($author);
                             $lower_orig_filter = urlencode($lower_orig_filter);
 
-                            echo '<a href="./search/*:*/Creator:%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" alt="item author tag filter" title="Filter by tag">'.$author.'</a>';
+                            echo '<a href="./search/*:*/Creator:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22" alt="item author tag filter" title="Filter by tag">'.$author.'</a>';
                             $num_authors++;
                             if($num_authors < sizeof($doc[$author_field])) {
                                 echo ' ';

@@ -9,13 +9,13 @@
                 </a>
             </li>
             <li class="tile">
-                <a href='<?php echo base_url(); echo $this->config->item('index_page'); ?>/search/*/Type:"museums+%26+galleries+%7C%7C%7C+Museums+%26+Galleries"?sort_by=dc.title_sort+asc' class="caption">
+                <a href='<?php echo base_url(); echo $this->config->item('index_page'); ?>/search/*/Type:"museums+%26+galleries%7C%7C%7CMuseums+%26+Galleries"?sort_by=dc.title_sort+asc' class="caption">
                     <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/archtile.jpg" alt="Edinburgh University Museums &amp; Galleries Search" title="Edinburgh University Museums &amp; Galleries Search">
                     <span onmouseover="this.style.background='#333';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#333'">Architectural Drawings</span>
                 </a>
             </li>
             <li class="tile">
-                <a href='<?php echo base_url(); echo $this->config->item('index_page'); ?>/search/*/Type:%22special+collections+%26+archives+%7C%7C%7C+Special+Collections+%26+Archives%22?sort_by=dc.title_sort+asc' class="caption">
+                <a href='<?php echo base_url(); echo $this->config->item('index_page'); ?>/search/*/Type:%22special+collections+%26+archives%7C%7C%7CSpecial+Collections+%26+Archives%22?sort_by=dc.title_sort+asc' class="caption">
                     <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/chartnationtile.jpg" alt="Edinburgh University Special Collections &amp; Archives Search" title="Edinburgh University Special Collections &amp; Archives Search">
                     <span onmouseover="this.style.background='#333';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#333'">Charting the Nation</span>
                 </a>
@@ -35,13 +35,13 @@
         </ul>
         <ul class="tiles">
             <li class="tile">
-                <a href='<?php echo base_url(); echo $this->config->item('index_page'); ?>/search/*/Type:"museums+%26+galleries+%7C%7C%7C+Museums+%26+Galleries"?sort_by=dc.title_sort+asc' class="caption">
+                <a href='<?php echo base_url(); echo $this->config->item('index_page'); ?>/search/*/Type:"museums+%26+galleries%7C%7C%7CMuseums+%26+Galleries"?sort_by=dc.title_sort+asc' class="caption">
                     <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/newcolltile.jpg" alt="Edinburgh University Museums &amp; Galleries Search" title="Edinburgh University Museums &amp; Galleries Search">
                     <span onmouseover="this.style.background='#333';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#333'">New College</span>
                 </a>
             </li>
             <li class="tile">
-                <a href='<?php echo base_url(); echo $this->config->item('index_page'); ?>/search/*/Type:%22special+collections+%26+archives+%7C%7C%7C+Special+Collections+%26+Archives%22?sort_by=dc.title_sort+asc' class="caption">
+                <a href='<?php echo base_url(); echo $this->config->item('index_page'); ?>/search/*/Type:%22special+collections+%26+archives%7C%7C%7CSpecial+Collections+%26+Archives%22?sort_by=dc.title_sort+asc' class="caption">
                     <img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/arttile.jpg" alt="Edinburgh University Special Collections &amp; Archives Search" title="Edinburgh University Special Collections &amp; Archives Search">
                     <span onmouseover="this.style.background='#333';this.style.color='#FFF'" onmouseout="this.style.background='#FFFFFF';this.style.color='#333'">Art Collection</span>
                 </a>

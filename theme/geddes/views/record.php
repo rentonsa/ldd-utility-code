@@ -64,7 +64,7 @@ $bitstreamLinks = array();
                                 $orig_filter = urlencode($metadatavalue);
                                 //if ($key == 'Date') {
 
-                                    echo '<a href="./search/*:*/' . $key . ':%22' . strtolower($orig_filter) . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a>';
+                                    echo '<a href="./search/*:*/' . $key . ':%22' . strtolower($orig_filter) . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a>';
                                 //}
                                 //else
                                // {

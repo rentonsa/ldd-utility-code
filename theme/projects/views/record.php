@@ -27,7 +27,7 @@ $bitstreamLinks = array();
             $lower_orig_filter = strtolower($area);
             $lower_orig_filter = urlencode($lower_orig_filter);
 
-            echo '<a class="$month" href="./search/*:*/Business Area:%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22">'.$area.'</a>';
+            echo '<a class="$month" href="./search/*:*/Business Area:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$area.'</a>';
         }
     }
 
@@ -51,7 +51,7 @@ $bitstreamLinks = array();
                         $lower_orig_filter = strtolower($metadatavalue);
                         $lower_orig_filter = urlencode($lower_orig_filter);
 
-                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
                     }
                     else {
                         echo $metadatavalue;

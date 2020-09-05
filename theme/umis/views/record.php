@@ -86,7 +86,7 @@ if (isset($solr[$coverImageName][0]))
                         $lower_orig_filter = strtolower($metadatavalue);
                         $lower_orig_filter = urlencode($lower_orig_filter);
 
-                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22">'.$metadatavalue.'</a><br>';
+                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a><br>';
                     }
                     else {
                         if (stripos($element, "uri") !== FALSE)

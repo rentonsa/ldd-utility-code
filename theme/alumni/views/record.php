@@ -33,7 +33,7 @@ if(isset($solr[$type_field])) {
             $lower_orig_filter = strtolower($subject);
             $lower_orig_filter = urlencode($lower_orig_filter);
 
-            echo '<a class="$month" href="./search/*:*/%22Subject'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22">'.$subject.'</a>';
+            echo '<a class="$month" href="./search/*:*/%22Subject'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$subject.'</a>';
         }
     }
 
@@ -63,13 +63,13 @@ if(isset($solr[$type_field])) {
                             foreach ($static_page as $key => $value) {
                                 if ($key == $metadatavalue)
                                 {
-                                    echo $metadatavalue.': <a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22/Collection:%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22"><i class="fa fa-search fa-lg">&nbsp;</i>See All Records</a> | <a href="./'.$value.'"><i class="fa fa-info-circle fa-lg">&nbsp;</i>More Info</a>';
+                                    echo $metadatavalue.': <a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22/Collection:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22"><i class="fa fa-search fa-lg">&nbsp;</i>See All Records</a> | <a href="./'.$value.'"><i class="fa fa-info-circle fa-lg">&nbsp;</i>More Info</a>';
 
                                 }
                             }
                         }
                         else{
-                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
                         }
                     }
                     else {

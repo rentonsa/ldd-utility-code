@@ -209,11 +209,11 @@
                                     $creator = 'No creator';
                                     if (isset($doc[$maker_field][0])) {
                                         $lower_orig_filter = strtolower($doc[$maker_field][0]);
-                                        $creator = '<a class="artist" href="./search/*:*/Maker:%22' . $lower_orig_filter . '+%7C%7C%7C+' . $doc[$maker_field][0] . '%22">' . $doc[$maker_field][0] . '</a>';
+                                        $creator = '<a class="artist" href="./search/*:*/Maker:%22' . $lower_orig_filter . '%7C%7C%7C' . $doc[$maker_field][0] . '%22">' . $doc[$maker_field][0] . '</a>';
 
                                     } else if (isset($doc[$author_field][0])) {
                                         $lower_orig_filter = strtolower($doc[$author_field][0]);
-                                        $creator = '<a class="artist" href="./search/*:*/Author:%22' . $lower_orig_filter . '+%7C%7C%7C+' . $doc[$author_field][0] . '%22">' . $doc[$author_field][0] . '</a>';
+                                        $creator = '<a class="artist" href="./search/*:*/Author:%22' . $lower_orig_filter . '%7C%7C%7C' . $doc[$author_field][0] . '%22">' . $doc[$author_field][0] . '</a>';
                                     }
 
                                     $date_made = '';
@@ -411,11 +411,11 @@
                                     $creator = 'No creator';
                                     if (isset($doc[$maker_field][0])) {
                                         $lower_orig_filter = strtolower($doc[$maker_field][0]);
-                                        $creator = '<a class="artist" href="./search/*:*/Maker:%22' . $lower_orig_filter . '+%7C%7C%7C+' . $doc[$maker_field][0] . '%22">' . $doc[$maker_field][0] . '</a>';
+                                        $creator = '<a class="artist" href="./search/*:*/Maker:%22' . $lower_orig_filter . '%7C%7C%7C' . $doc[$maker_field][0] . '%22">' . $doc[$maker_field][0] . '</a>';
 
                                     } else if (isset($doc[$author_field][0])) {
                                         $lower_orig_filter = strtolower($doc[$author_field][0]);
-                                        $creator = '<a class="artist" href="./search/*:*/Author:%22' . $lower_orig_filter . '+%7C%7C%7C+' . $doc[$author_field][0] . '%22">' . $doc[$author_field][0] . '</a>';
+                                        $creator = '<a class="artist" href="./search/*:*/Author:%22' . $lower_orig_filter . '%7C%7C%7C' . $doc[$author_field][0] . '%22">' . $doc[$author_field][0] . '</a>';
                                     }
 
                                     $date_made = '';
