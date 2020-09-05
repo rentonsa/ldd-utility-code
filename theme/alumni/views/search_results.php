@@ -87,7 +87,7 @@
                                 $lower_orig_filter = strtolower($collection);
                                 $lower_orig_filter = urlencode($lower_orig_filter);
 
-                                echo '<a href="./search/*:*/Collection:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$collection.'</a>';
+                                echo '<a href="./search/*:*/Collection:%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22">'.$collection.'</a>';
                                 $num_collection++;
                                 if($num_collection < sizeof($doc[$collection_field])) {
                                     echo ' ';
@@ -108,7 +108,7 @@
                                 $lower_orig_filter = strtolower($date);
                                 $lower_orig_filter = urlencode($lower_orig_filter);
 
-                                echo '<a href="./search/*:*/Year:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$date.'</a>';
+                                echo '<a href="./search/*:*/Year:%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22">'.$date.'</a>';
                                 $num_date++;
                                 if($num_date < sizeof($doc[$date_field])) {
                                     echo ' ';

@@ -190,7 +190,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                     $lower_orig_filter = strtolower($author);
                     $lower_orig_filter = urlencode($lower_orig_filter);
 
-                    echo '<a class="artist" href="./search/*:*/Creator:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22" alt="filter by item tag">'.$author.'</a>';
+                    echo '<a class="artist" href="./search/*:*/Creator:%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" alt="filter by item tag">'.$author.'</a>';
                 }
             }
 
@@ -244,11 +244,11 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                 //Insert Schema.org
                                 if (isset ($schema[$key]))
                                 {
-                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22" title="'. $metadatavalue . '">' . $metadatavalue . '</a></span>';
+                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="'. $metadatavalue . '">' . $metadatavalue . '</a></span>';
                                 }
                                 else
                                 {
-                                  echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22" title="'. $metadatavalue . '">'.$metadatavalue.'</a>';
+                                  echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'. $metadatavalue . '">'.$metadatavalue.'</a>';
                                 }
                             }
                             else {
@@ -333,7 +333,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
             $orig_filter = urlencode($tag);
             $lower_orig_filter = strtolower($tag);
             $lower_orig_filter = urlencode($lower_orig_filter);
-            echo '<span class="crowd-tag">' . '<a href="./search/*:*/Tags:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22"><i class="fa fa-tags fa-lg">&nbsp;</i>'.$tag.'</a>' . '</span>';
+            echo '<span class="crowd-tag">' . '<a href="./search/*:*/Tags:%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22"><i class="fa fa-tags fa-lg">&nbsp;</i>'.$tag.'</a>' . '</span>';
         } ?>
         <div class="crowd-info">
             <form id="libraylabs" method="get" action="https://librarylabs.ed.ac.uk/games/gameCrowdSourcing.php" target="_blank">
@@ -438,7 +438,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                                     $lower_orig_filter = strtolower($metadatavalue);
                                                     $lower_orig_filter = urlencode($lower_orig_filter);
                                                     if($key == 'Exhibition'){
-                                                        echo 'href="/search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22"'.$metadatavalue . '"';
+                                                        echo 'href="/search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22"'.$metadatavalue . '"';
                                                     }
                                                     else {
                                                         echo 'onclick="history.go(-1)"';

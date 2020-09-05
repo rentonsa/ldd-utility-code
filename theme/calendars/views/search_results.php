@@ -87,7 +87,7 @@
                                 $lower_orig_filter = strtolower($subject);
                                 $lower_orig_filter = urlencode($lower_orig_filter);
 
-                                echo '<a href="./search/*:*/Subject:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$subject.'</a>';
+                                echo '<a href="./search/*:*/Subject:%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22">'.$subject.'</a>';
                                 $num_subject++;
                                 if($num_subject < sizeof($doc[$subject_field])) {
                                     echo ' ';
