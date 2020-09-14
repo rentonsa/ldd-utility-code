@@ -27,7 +27,10 @@ $config['skylight_fields'] = array('Title' => 'dc.title.en',
     'Handle' => 'dc.identifier.uri'
 );
 
-$config['skylight_date_filters'] = array('Date' => 'dateIssued.year_sort');
+// HM 14/09/2020
+// Date filtering broken in Skylight upgrade so disabling
+//$config['skylight_date_filters'] = array('Date' => 'dateIssued.year_sort');
+$config['skylight_date_filters'] = array();
 $config['skylight_filters'] = array('Author' => 'author_filter', 'Subject' => 'subject_filter', 'Type' => 'type_filter');
 $config['skylight_filter_delimiter'] = ':';
 
