@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y tzdata
 RUN dpkg-reconfigure --frontend noninteractive tzdata
 
 # Update OS with Php7, php xml library, Apache mod and SSH
-RUN apt-get install -y php php-xml libapache2-mod-php ssh
+RUN apt-get install -y php php-xml libapache2-mod-php ssh php-curl
 
 RUN rm -rf /var/lib/apt/lists/*
 
