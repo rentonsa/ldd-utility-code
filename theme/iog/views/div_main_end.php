@@ -12,8 +12,7 @@
                         <a href="./takedown" title="Takedown Policy Link">Takedown Policy</a></br>
                         <a href="https://www.ed.ac.uk/about/website/privacy" title="Privacy and Cookies Link" target="_blank" class="border">Privacy &amp; Cookies</a>
                         <a href="./licensing" title="Licensing and Copyright Link" class="border">Licensing &amp; Copyright</a>
-                        <a href="https://www.ed.ac.uk/about/website/accessibility" title="Website Accessibility Link" target="_blank" >Accessibility</a></br>
-                        <a href="http://collections.ed.ac.uk" title="University Collections Home" target="_blank" class="border">University Collections</a>
+                        <a href="./accessibility" title="Website Accessibility Link" target="_blank">Accessibility</a>                        <a href="http://collections.ed.ac.uk" title="University Collections Home" target="_blank" class="border">University Collections</a>
                         <a href="https://www.ed.ac.uk/schools-departments/information-services/about/organisation/library-and-collections" title="Library and University Collections Home" target="_blank">Library &amp; University Collections</a><br/>
                     </div>
                     <div class="iog-logo">
