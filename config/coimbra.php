@@ -1,6 +1,7 @@
 <?php
 
-if (strpos($_SERVER['HTTP_HOST'], "test") !== false || strpos($_SERVER['HTTP_HOST'], "localhost") !== false) {
+// Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
+if (ENVIRONMENT == 'development') {
     $config['skylight_ga_code'] = 'UA-25737241-6';
     $config['skylight_container_id'] = 'ac679585-911d-4ae1-8c9a-5c47e660926f';
     $config['skylight_image_server'] = 'https://test.cantaloupe.is.ed.ac.uk';

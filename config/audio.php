@@ -1,7 +1,7 @@
 <?php
 
 // set the base url and ga code
-//if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
+//if (ENVIRONMENT == 'development') {
     //$config['base_url'] = 'http://test.stuartsound.is.ed.ac.uk/';
   //  $config['skylight_ga_code'] = 'UA-25737241-6';
 //}
@@ -38,7 +38,7 @@ $config['skylight_fields'] = array(
     'Subject' => 'dc.subject.en',
     'Type' => 'dc.type.en',
     'Abstract' => 'dc.description.abstract.en',
-    'Date' => 'dc.date.created',
+//    'Date' => 'dc.date.created',
     'Bitstream'=> 'dc.format.original.en',
     'Thumbnail'=> 'dc.format.thumbnail.en',
     'Place Made' => 'dc.coverage.spatial.en',

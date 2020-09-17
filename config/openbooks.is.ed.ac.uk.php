@@ -2,8 +2,8 @@
 
 $config['skylight_appname'] = 'openbooks';
 
-// set the base url and ga code
-if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
+// Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
+if (ENVIRONMENT == 'development') {
     $config['base_url'] = 'https://test.openbooks.is.ed.ac.uk/';
     $config['skylight_ga_code'] = 'UA-25737241-6';
     $config['skylight_container_id'] = '55e69b51-5e8d-4dc1-ae83-38d8e70fb46e';

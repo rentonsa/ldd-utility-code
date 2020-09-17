@@ -9,8 +9,8 @@ $config['skylight_theme'] = 'stcecilia';
 
 $config['skylight_fullname'] = 'St Cecilia\'s Hall';
 
-// set ga code
-if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
+// Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
+if (ENVIRONMENT == 'development') {
     $config['skylight_ga_code'] = '';
     $config['skylight_container_id'] = 'bac433ed-36a9-4660-b49c-49d3fd0bed2c';
 }
