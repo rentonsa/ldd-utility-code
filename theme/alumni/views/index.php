@@ -53,17 +53,19 @@
             <li>
                 <a href="./ww1roll">University of Edinburgh: Roll of Honour, WW1</a>
             </li>
-        </ul>
+        </ul><!--
         <h3>Coming Soon</h3>
         <ul>
             <li>
                University of Edinburgh: Roll of Honour, WW2
             </li>
         </ul>
-
+-->
         <h3>Data held elsewhere</h3>
-
         <ul>
+            <li>
+                <a href="https://www.uega.co.uk/archive" target="_blank">University of Edinburgh: Roll of Honour, WW2</a>
+            </li>
             <li><a href="http://www.scripts.sasg.ed.ac.uk/registry/Graduations/Honorary_Graduates.cfm" target="_blank">Honorary Graduates</a></li>
         </ul>
 

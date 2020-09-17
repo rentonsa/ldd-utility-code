@@ -7,6 +7,7 @@
             <div class="col-xs-12 col-md-10">
                 <ul>
                     <li><a href="./website-terms-conditions">Terms &amp; conditions</a></li>
+                    <li><a href="./accessibility" title="Website Accessibility Link" target="_blank">Accessibility</a></li>
 
                     <li><a href="./privacy">Privacy &amp; cookies</a></li>
 
