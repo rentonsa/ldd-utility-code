@@ -10,7 +10,7 @@
 
                     <li><a href="https://www.ed.ac.uk/about/website/privacy">Privacy &amp; cookies</a></li>
 
-                    <li><a href="https://www.ed.ac.uk/about/website/accessibility">Website accessibility</a></li>
+                    <li><a href="./accessibility" title="Website Accessibility Link" target="_blank">Accessibility</a></li>
 
                     <li><a href="https://www.ed.ac.uk/about/website/freedom-information">Freedom of Information Publication Scheme</a></li>
 
