@@ -25,7 +25,7 @@
                     <div class="col-md-6 col-sm-6 hidden-xs hidden-lg hidden-md ">
                         <ul>
                             <li><a href="./licensing" title="Licensing and Copyright Link">Licensing &amp; Copyright</a></li>
-                            <li><a href="https://www.ed.ac.uk/about/website/accessibility" title="Website Accessibility Link" target="_blank">Accessibility</a></li>
+                            <li><a href="./accessibility" title="Website Accessibility Link" target="_blank">Accessibility</a></li>
                          </ul>
                     </div>
                 </div>
