@@ -1,4 +1,6 @@
 <html>
+<div class="col-md-9 col-sm-9 col-xs-12">
+<div class="content byEditor">
 <h1>Accessibility statement for <a href="https://collections.ed.ac.uk/coimbra">Coimbra Group Exhibition</a></h1>
 <p>Website accessibility statement in line with Public Sector Body (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018</p>
 <p><a href="https://collections.ed.ac.uk/coimbra">The Coimbra Group Exhibition</a> - <a href="https://collections.ed.ac.uk/coimbra">https://collections.ed.ac.uk/coimbra</a> is a platform developed in conjunction with the Coimbra Group Heritage Working Group and hosted on their behalf by the University of Edinburgh. It developed out of the virtual exhibition platform, created for the Coimbra Group Conference hosted by the University of Edinburgh in June 2017.</p>
@@ -1007,4 +1009,6 @@
 </tr>
 </tbody>
 </table>
+</div>
+</div>
 </html>
