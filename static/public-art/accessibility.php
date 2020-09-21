@@ -1,4 +1,5 @@
 <html>
+<div class="accessibility">
 <h1>Accessibility statement for <a href="https://collections.ed.ac.uk/public-art">Public Art</a></h1>
 <p>Website accessibility statement in line with Public Sector Body (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018</p>
 <p><a href="https://collections.ed.ac.uk/public-art">Public Art</a> - <a href="https://collections.ed.ac.uk/public-art">https://collections.ed.ac.uk/public-art</a> is a website hosted by the University of Edinburgh Library on behalf of the University of Edinburgh. It holds special collections including manuscripts and archives, rare books, photographs, printed and handwritten music, architectural drawings, theses and microfilms. The collections relate to University of Edinburgh and its history, and to Scotland and the wider world.</p>
@@ -986,4 +987,5 @@
 </tr>
 </tbody>
 </table>
+</div>
 </html>
