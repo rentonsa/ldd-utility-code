@@ -1,8 +1,9 @@
 <html>
-<div class="accessibility">
-<h1>Accessibility statement for <a href="https://collections.ed.ac.uk/public-art">Public Art</a></h1>
+<div class="col-md-9 col-sm-9 col-xs-12">
+<div class="content byEditor">
+<h1>Accessibility statement for <a href="https://collections.ed.ac.uk/guardbook">Guardbook</a></h1>
 <p>Website accessibility statement in line with Public Sector Body (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018</p>
-<p><a href="https://collections.ed.ac.uk/public-art">Public Art</a> - <a href="https://collections.ed.ac.uk/public-art">https://collections.ed.ac.uk/public-art</a> is a website hosted by the University of Edinburgh Library on behalf of the University of Edinburgh. It holds special collections including manuscripts and archives, rare books, photographs, printed and handwritten music, architectural drawings, theses and microfilms. The collections relate to University of Edinburgh and its history, and to Scotland and the wider world.</p>
+<p><a href="https://collections.ed.ac.uk/guardbook">The Guardbook</a> &nbsp;<a href="https://collections.ed.ac.uk/guardbook">https://collections.ed.ac.uk/guardbook</a> is a website version of the University Library's last catalogue on paper, before computerisation. It is a website hosted by the University of Edinburgh Library on behalf of the University of Edinburgh.</p>
 <p>We want as many people as possible to be able to use our website. For example, this means you should be able to:</p>
 <ul>
     <li>change colours, contrast levels and fonts.</li>
@@ -10,7 +11,7 @@
     <li>navigate most of the website using just a keyboard</li>
     <li>magnify up to 200%</li>
 </ul>
-<p>We&rsquo;ve also made the website text as simple as possible to understand.</p>
+<p>&nbsp;We&rsquo;ve also made the website text as simple as possible to understand.</p>
 <h2>Customising the website</h2>
 <p>AbilityNet has advice on making your device easier to use if you have a disability.</p>
 <p><a href="https://mcmw.abilitynet.org.uk/">AbilityNet - My computer my way</a></p>
@@ -21,10 +22,11 @@
 <h2>How accessible this website is</h2>
 <p>We know some parts of this website are not fully accessible:</p>
 <ul>
-    <li>some non-text content does not have text alternatives</li>
-    <li>some parts may not be fully compatible with screen readers</li>
-    <li>some colour contrasts do not meet recommended guidance</li>
-    <li>some of our page titles do not fully describe the page content</li>
+    <li>There are no text descriptions for some non-text content such as images and icons</li>
+    <li>The site may not be fully compatible with screen readers e.g. a screen reader may not be able to determine what the content is and how it relates to other content</li>
+    <li>Some text and images of text may not have sufficient contrast ratio</li>
+    <li>It may not be possible to bypass information which is repeated on multiple pages.</li>
+    <li>The web page title does not clearly describe its purpose</li>
 </ul>
 <h3>Feedback and contact information</h3>
 <p>If you need information on this website in a different format like accessible PDF, large print, audio recording or braille please contact the website team by contacting us:</p>
@@ -33,7 +35,7 @@
 <p>Or phoning</p>
 <p>+44 (0)131 651 5151</p>
 <p>Or email</p>
-<p><a href="mailto:Information.systems@ed.ac.uk">Information.systems@ed.ac.uk</a></p>
+<p>Information.systems@ed.ac.uk</p>
 <p>We&rsquo;ll consider your request and get back to you in 5 working days.</p>
 <h2>Reporting accessibility problems with this website</h2>
 <p>We&rsquo;re always looking to improve the accessibility of this website. If you find any problems not listed on this page or think we&rsquo;re not meeting accessibility requirements please let us know by contacting:</p>
@@ -42,7 +44,7 @@
 <p>Or phoning</p>
 <p>+44 (0)131 651 5151</p>
 <p>Or email</p>
-<p><a href="mailto:Information.systems@ed.ac.uk">Information.systems@ed.ac.uk</a></p>
+<p>Information.systems@ed.ac.uk</p>
 <p>We&rsquo;ll consider your request and get back to you in 5 working&nbsp;days.</p>
 <h2>Enforcement procedure</h2>
 <p>The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the &lsquo;accessibility regulations&rsquo;). If you&rsquo;re not happy with how we respond to your complaint please contact the Equality Advisory and Support Service (EASS) directly.</p>
@@ -58,50 +60,64 @@
 <h3>Compliance Status</h3>
 <p>This website is partially compliant with the Web Content Accessibility Guidelines 2.1 AA standard, due to the non-compliances listed below</p>
 <p>The full guidelines are available at</p>
-<p>&nbsp;<a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1</a></p>
+<p><a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines version 2.1</a></p>
 <h3>Non accessible content</h3>
 <p>The content listed below is non-accessible for the following reasons.</p>
 <p>The following items to not comply with the WCAG 2.1 AA success criteria</p>
 <ul>
-    <li>Not all our non-text content has alt text.
-        <ul>
-            <li><a href="https://www.w3.org/TR/WCAG21/#text-alternatives">1.1.1 Text Alternatives</a></li>
-        </ul>
-    </li>
-    <li>Some parts of the site may not be fully compatible with screen readers
-        <ul>
-            <li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">1.3.1 -&nbsp;Info and Relationships</a></li>
-            <li><a href="https://www.w3.org/TR/WCAG21/#name-role-value">4.1.2&nbsp;- Name, Role Value</a></li>
-        </ul>
-    </li>
-    <li>Some colour contrasts do not meet recommended guidance
-        <ul>
-            <li><a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">1.4.3 -&nbsp;Contrast (Minimum)</a></li>
-        </ul>
-    </li>
-    <li>Some of our page titles do not fully describe the page content.
-        <ul>
-            <li><a href="https://www.w3.org/TR/WCAG21/#page-titled">2.4.2&nbsp;- Page Titled</a></li>
-        </ul>
-    </li>
+    <li>Not all our non-text content has alt text.</li>
+    <ul>
+        <li><u><a href="https://www.w3.org/TR/WCAG21/#non-text-content">1.1.1 - Non-text Content</a></u></li>
+    </ul>
 </ul>
-<p>Unless specified otherwise, wherever possible a complete solution or significant improvement will be in place by March 2021 where the issues are within our control.</p>
+<ul>
+    <li>Not all information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</li>
+    <ul>
+        <li><u><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">1.3.1 - Info and Relationships</a></u></li>
+    </ul>
+</ul>
+<ul>
+    <li>There may not be sufficient colour contrast between font and background colours especially where the text size is very small.</li>
+    <ul>
+        <li><u><a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">1.4.3 -&nbsp;Contrast (Minimum)</a></u></li>
+    </ul>
+</ul>
+<ul>
+    <li>It is not always possible to bypass blocks of content that are repeated on multiple Web pages.</li>
+    <ul>
+        <li><u><a href="https://www.w3.org/TR/WCAG21/#bypass-blocks">2.4.1 Bypass Blocks</a></u></li>
+    </ul>
+</ul>
+<ul>
+    <li>Some of our page titles do not fully describe the page content.</li>
+    <ul>
+        <li><u><a href="https://www.w3.org/TR/WCAG21/#page-titled">2.4.2 - Page Titled</a></u></li>
+    </ul>
+</ul>
+<ul>
+    <li>Not all page content is compatible with assistive technologies.</li>
+    <ul>
+        <li><u><a href="https://www.w3.org/TR/WCAG21/#parsing">4.1.1 - Parsing</a></u></li>
+        <li><u><a href="https://www.w3.org/TR/WCAG21/#name-role-value">4.1.2 - Name, Role Value</a></u></li>
+    </ul>
+</ul>
+<p><u></u>Unless specified otherwise, wherever possible a complete solution or significant improvement will be in place by March 2021 where the issues are within our control.</p>
 <h3>Disproportionate burden</h3>
 <p>We are not currently claiming that any&nbsp;accessibility problems would be a disproportionate burden to fix.&nbsp;</p>
 <h3>Content that is not within the Scope of the Accessibility Regulations</h3>
 <p>At this time we are not claiming any material is out of scope.</p>
 <h2>What we're doing to improve accessibility</h2>
 <p>We will continue to work with our in house developers to address these issues and deliver a solution or suitable workaround and correct issues directly where they are under our control.</p>
-<p>We will continue to monitor accessibility and will carry out further accessibility testing if significant changes are made to the user interface or if a service user raises an issue. To plan to resolve the issues that are within our control by December 2021. We plan to manual review the accessibility of the site and make improvements and update this statement before December 2021. We will ensure reasonable adjustments are in place to make sure no user is disadvantaged.</p>
+<p>We will continue to monitor accessibility and will carry out further accessibility testing if significant changes are made to the user interface or if a service user raises an issue. To plan to resolve the issues that are within our control by December 2021. We plan to manual review the accessibility of the site and make improvements and update this statement before December 2021.Where we are unable to resolve an issue or where an issue is out with our control we will ensure reasonable adjustments are put in place to ensure no user is disadvantaged</p>
 <h3>Information Services and accessibility</h3>
 <p>Information Services (IS) has further information on accessibility including assistive technology, creating accessible documents, and services IS provides for disabled users.</p>
 <p><a href="https://www.ed.ac.uk/information-services/help-consultancy/accessibility">Assistive technology, creating accessible documents, and services IS provides for disabled users</a></p>
 <h2>Preparation of this accessibility statement</h2>
-<p><strong>This statement was prepared on 7<sup>th</sup> August 2020. It was last reviewed on 11<sup>th</sup> September 2020.</strong></p>
-<p>This website was last tested on 7<sup>th</sup> August 2020. The test was carried out by The University Library and University Collections Digital Library team using the automated LittleForest tool. The website is scheduled for manual testing by December 2021.</p>
+<p><strong>This statement was prepared</strong><strong> on 7<sup>th</sup> August 2020. It was last reviewed on 10<sup>th</sup> September 2020.</strong></p>
+<p>This website was last tested on 7<sup>th</sup> August 2020. The test was carried out by The University Library and University Collections Digital Library team using the automated LittleForest tool. The website is scheduled for manual testing by Dec 2021.</p>
 <p>We did not use sample pages for testing - all pages were run through LittleForest.</p>
 <p>Little Forrest claims it tests the following WCAG criteria either partially or wholly</p>
-<table>
+<table width="0">
 <tbody>
 <tr>
     <td width="73">
@@ -987,5 +1003,6 @@
 </tr>
 </tbody>
 </table>
+</div>
 </div>
 </html>
