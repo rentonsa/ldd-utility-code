@@ -130,7 +130,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
 }
 ?>
 
-<nav class="navbar navbar-fixed-top second-navbar">
+<!--<nav class="navbar navbar-fixed-top second-navbar">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#record-navbar">
@@ -154,7 +154,22 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
             </div>
         </div>
     </div>
-</nav>
+</nav>-->
+
+<div>
+    <div class="collapse navbar-collapse" id="record-navbar">
+        <ul class="nav navbar-nav">
+            <li><a href="<?php echo $_SERVER['REQUEST_URI'];?>#stc-section1">Top</a></li>
+            <li><a href="<?php echo $_SERVER['REQUEST_URI'];?>#stc-section2">Image</a></li>
+            <li><a href="<?php echo $_SERVER['REQUEST_URI'];?>#stc-section3">Description</a></li>
+            <?php if($audioLink != '') {
+                echo '<li ><a href ="'.$_SERVER['REQUEST_URI'].'#stc-section4" >Audio</a ></li >';
+            } ?>
+            <li><a href="<?php echo $_SERVER['REQUEST_URI'];?>#stc-section5">Instrument Data</a></li>
+            <li><a href="<?php echo $_SERVER['REQUEST_URI'];?>#stc-section6">Related Instruments</a></li>
+        </ul>
+    </div>
+</div>
 <?php
 
 

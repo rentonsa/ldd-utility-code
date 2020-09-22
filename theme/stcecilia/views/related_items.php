@@ -52,7 +52,7 @@
                     $needlink = false;
                 }
                 ?>
-                <p class="text-center hidden-xs">
+                <p class="text-center hidden-xs link-uppercase">
                     <a href="./record/<?php echo $doc['id'] ?>"><?php echo $doc[$title_field][0]; ?></a>
                 </p>
                 <p class="text-center hidden-md hidden-sm hidden-lg">
