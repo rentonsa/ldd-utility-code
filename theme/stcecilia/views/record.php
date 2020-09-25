@@ -203,38 +203,22 @@ foreach($recorddisplay as $key)
                     // CHECK RECORD HAS IMAGE
                     echo '<li><a href="' . $_SERVER['REQUEST_URI'] . '#stc-section2">Image</a></li>';
                 }
-                else 
-                {
-                    // LEAVE BLANK
-                }
-                
                 if(!$audioLink == '' || !$videoLink == '')
                 {
                     // CHECK RECORD HAS AUDIO OR VIDEO FILES
                     echo '<li><a href="' . $_SERVER['REQUEST_URI'] . '#stc-section4">Audio/Visual</a></li>';
                 }
-                else{
-                    // LEAVE BLANK
-                }
-                
+
                 if(!$recorddisplay == NULL)
                 {
                     // CHECK RECORD HAS TAGS
                     echo '<li><a href="' . $_SERVER['REQUEST_URI'] . '#stc-section3">Categories</a></li>';
                 }
-                else
-                {
-                    // LEAVE BLANK
-                }
-                
+
                 if(!$identificationdisplay == NULL)
                 {
                     // CHECK RECORD HAS INSTRUMENT METADATA
                     echo '<li><a href="' . $_SERVER['REQUEST_URI'] . '#stc-section5">Instrument Data</a></li>';
-                }
-                else
-                {
-                        // LEAVE BLANK
                 }
 
                 // GET NO. OF RELATED ITEMS
@@ -243,11 +227,7 @@ foreach($recorddisplay as $key)
                 {
                     // CHECK RECORD HAS ANY RELATED ITEMS
                     echo '<li><a href="' . $_SERVER['REQUEST_URI'] . '#stc-section6">Related Items</a></li>';
-                }
-                else
-                {
-                        // LEAVE BLANK
-                }?>
+                } ?>
         </ul>
 
 </div>
