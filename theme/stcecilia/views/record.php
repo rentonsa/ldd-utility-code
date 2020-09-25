@@ -155,21 +155,6 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
         </div>
     </div>
 </nav>-->
-
-<div>
-    <div class="collapse navbar-collapse" id="record-navbar">
-        <ul class="nav navbar-nav">
-            <li><a href="<?php echo $_SERVER['REQUEST_URI'];?>#stc-section1">Top</a></li>
-            <li><a href="<?php echo $_SERVER['REQUEST_URI'];?>#stc-section2">Image</a></li>
-            <li><a href="<?php echo $_SERVER['REQUEST_URI'];?>#stc-section3">Description</a></li>
-            <?php if($audioLink != '') {
-                echo '<li ><a href ="'.$_SERVER['REQUEST_URI'].'#stc-section4" >Audio</a ></li >';
-            } ?>
-            <li><a href="<?php echo $_SERVER['REQUEST_URI'];?>#stc-section5">Instrument Data</a></li>
-            <li><a href="<?php echo $_SERVER['REQUEST_URI'];?>#stc-section6">Related Instruments</a></li>
-        </ul>
-    </div>
-</div>
 <?php
 
 
@@ -211,251 +196,310 @@ foreach($recorddisplay as $key)
 <div id="stc-section1" class="container-fluid record-content">
     <h2 class="itemtitle hidden-sm hidden-xs"><?php echo $title .' | '. $maker. ' | '.$date;?></h2>
     <h4 class="itemtitle hidden-lg hidden-md"><?php echo $title .' | '. $maker. ' | '.$date;?></h4>
+
+        <ul class="nav navbar-nav" id="item-nav">
+            <?php if(isset($solr[$link_uri_field]))
+                {
+                    // CHECK RECORD HAS IMAGE
+                    echo '<li><a href="' . $_SERVER['REQUEST_URI'] . '#stc-section2">Image</a></li>';
+                }
+                else 
+                {
+                    // LEAVE BLANK
+                }
+                
+                if(!$audioLink == '' || !$videoLink == '')
+                {
+                    // CHECK RECORD HAS AUDIO OR VIDEO FILES
+                    echo '<li><a href="' . $_SERVER['REQUEST_URI'] . '#stc-section4">Audio/Visual</a></li>';
+                }
+                else{
+                    // LEAVE BLANK
+                }
+                
+                if(!$recorddisplay == NULL)
+                {
+                    // CHECK RECORD HAS TAGS
+                    echo '<li><a href="' . $_SERVER['REQUEST_URI'] . '#stc-section3">Categories</a></li>';
+                }
+                else
+                {
+                    // LEAVE BLANK
+                }
+                
+                if(!$identificationdisplay == NULL)
+                {
+                    // CHECK RECORD HAS INSTRUMENT METADATA
+                    echo '<li><a href="' . $_SERVER['REQUEST_URI'] . '#stc-section5">Instrument Data</a></li>';
+                }
+                else
+                {
+                        // LEAVE BLANK
+                }
+
+                // GET NO. OF RELATED ITEMS
+                $numrel = count($related_items);
+                if($numrel > 0)
+                {
+                    // CHECK RECORD HAS ANY RELATED ITEMS
+                    echo '<li><a href="' . $_SERVER['REQUEST_URI'] . '#stc-section6">Related Items</a></li>';
+                }
+                else
+                {
+                        // LEAVE BLANK
+                }?>
+        </ul>
+
 </div>
 
-<div id="stc-section2" class="container-fluid">
-    <?php
-    if (isset($solr[$link_uri_field]))
-    {
-    $imageCounter = 0;
-
-    foreach($solr[$link_uri_field] as $linkURI)
-    {
-        $tileSource[$imageCounter] = str_replace('full/full/0/default.jpg', 'info.json', $linkURI);
-        $tileSource[$imageCounter] = str_replace('http', 'https', $tileSource[$imageCounter]);
-
-        list($width, $height) = getimagesize($linkURI);
-        $portrait = true;
-        if ($width > $height)
+<!-- START IMAGE IF -->
+<?php if(isset($solr[$link_uri_field]))
+{
+    ?> <div id="stc-section2" class="container-fluid">
+        <?php
+        if (isset($solr[$link_uri_field]))
         {
-            $portrait = false;
-        }
+        $imageCounter = 0;
 
-        $imageCounter++;
-    }
-
-    echo "<div id='imageCounter' style='display:none;'>$imageCounter</div>";
-    ?>
-
-
-    <div id='toolbarDiv'>
-        <div class='toolbarItem' id='zoom-in'></div><div class='toolbarItem' id='zoom-out'></div><div class='toolbarItem' id='home'></div><div class='toolbarItem' id='full-page'></div><?php if($imageCounter > 1){ ?><div class='toolbarItem image-toggler' id='prev' data-image-id="#openseadragon<?php echo ($imageCounter - 1);?>"></div><div class='toolbarItem image-toggler' id='next' data-image-id="#openseadragon1"><?php } ?></div>
-    </div>
-
-    <div class="col-lg-12 main-image">
-
-        <?php  $divCounter = 0;
-        $freshIn = true;
-        while ($divCounter < $imageCounter)
-
-        { ?>
-
-            <div id="openseadragon<?php echo $divCounter; ?>" class="image-toggle"<?php if (!$freshIn) { echo ' style="display:none;"'; } else { echo ' style="display:block;"'; }?>>
-                <script type="text/javascript">
-                    OpenSeadragon({
-                        id: "openseadragon<?php echo $divCounter;?>",
-                        prefixUrl: "<?php echo base_url() ?>theme/stcecilia/images/buttons/",
-                        zoomPerScroll: 1.2,
-                        toolbar:       "toolbarDiv",
-                        showNavigator:  true,
-                        autoHideControls: false,
-                        zoomInButton:   "zoom-in",
-                        zoomOutButton:  "zoom-out",
-                        homeButton:     "home",
-                        fullPageButton: "full-page",
-                        nextButton:     "next",
-                        previousButton: "previous",
-                        tileSources: ["<?php echo $tileSource[$divCounter]; ?>"]
-                    });
-                </script>
-            </div>
-
-            <?php
-            $divCounter++;
-            $freshIn = false;
-        }
-        ?>
-    </div>
-
-
-    <?php
-    $numThumbnails = 0;
-    $imageset = false;
-    $thumbnailLink = array();
-
-    $countThumbnails = count($solr[$link_uri_field]);
-    echo '<div itemscope itemtype ="http://schema.org/CreativeWork"><div class="thumb-strip">';
-    if ($countThumbnails > 1)
-    {
-        foreach ($solr[$link_uri_field] as $linkURI)
+        foreach($solr[$link_uri_field] as $linkURI)
         {
-            $linkURI = $solr[$link_uri_field][$numThumbnails];
-            //change to stop LUNA erroring on redirect
-            $linkURI = str_replace('http://', 'https://', $linkURI);
-
-            $thumbnailLink[$numThumbnails] = '<label class="image-toggler" data-image-id="#openseadragon'.$numThumbnails.'">';
-            $thumbnailLink[$numThumbnails] .= '<input type="radio" name="options" id="option'.$numThumbnails.'">';
+            $tileSource[$imageCounter] = str_replace('full/full/0/default.jpg', 'info.json', $linkURI);
+            $tileSource[$imageCounter] = str_replace('http', 'https', $tileSource[$imageCounter]);
 
             list($width, $height) = getimagesize($linkURI);
-            $imagesmall = str_replace ('full/full/0/default.jpg', 'full/150,/0/default.jpg', $linkURI);
-            //Insert Schema for thumbnail
-            echo '<span itemprop="thumbnailUrl" style="display:none;">'. $imagesmall. '</span>';
             $portrait = true;
             if ($width > $height)
             {
                 $portrait = false;
             }
-            if ($portrait)
-            {
-                $thumbnailLink[$numThumbnails] .= '<img src = "' . $linkURI . '" class="record-thumb-strip" title="' . $solr[$title_field][0];
-            } else
-            {
-                $thumbnailLink[$numThumbnails] .= '<img src = "' . $linkURI . '" class="record-thumb-strip" title="' . $solr[$title_field][0];
-            }
 
-            $manifest = str_replace("iiif/", "iiif/m/", $linkURI);
-            $manifest = str_replace("full/full/0/default.jpg", "manifest", $manifest);
-
-            $json = file_get_contents($manifest);
-
-            $jobj = json_decode($json, true);
-            //print_r ($jobj);
-            $error = json_last_error();
-            $jsonMD = $jobj['sequences'][0]['canvases'][0]['metadata'];
-            $rights = '';
-            $photographer = '';
-            $photoline = '';
-            foreach ($jsonMD as $jsonMDPair)
-            {
-
-                if ($jsonMDPair['label'] == 'Repro Creator Name')
-                {
-                    $photographer = str_replace("<span>", "", $jsonMDPair['value']);
-                    $photographer = str_replace("</span>", "", $photographer);
-                }
-                if ($jsonMDPair['label'] == 'Repro Rights Statement')
-                {
-                    $rights = str_replace("<span>", "", $jsonMDPair['value']);
-                    $rights = 'Photograph '.str_replace("</span>", "", $rights);
-                }
-
-            }
-            if ($photographer !== '')
-            {
-                $photoline = ' Photo by '.$photographer;
-            }
-            $thumbnailLink[$numThumbnails] .= '. '. $photoline.' '.$rights.'"/></label>';
-
-            echo $thumbnailLink[$numThumbnails];
-            $numThumbnails++;
-            $imageset = true;
-
+            $imageCounter++;
         }
-    }
-    else if ($countThumbnails == 1)
-    {
-        foreach ($solr[$link_uri_field] as $linkURI)
+
+        echo "<div id='imageCounter' style='display:none;'>$imageCounter</div>";
+        ?>
+
+
+        <div id='toolbarDiv'>
+            <div class='toolbarItem' id='zoom-in'></div><div class='toolbarItem' id='zoom-out'></div><div class='toolbarItem' id='home'></div><div class='toolbarItem' id='full-page'></div><?php if($imageCounter > 1){ ?><div class='toolbarItem image-toggler' id='prev' data-image-id="#openseadragon<?php echo ($imageCounter - 1);?>"></div><div class='toolbarItem image-toggler' id='next' data-image-id="#openseadragon1"><?php } ?></div>
+        </div>
+
+        <div class="col-lg-12 main-image">
+
+            <?php  $divCounter = 0;
+            $freshIn = true;
+            while ($divCounter < $imageCounter)
+
+            { ?>
+
+                <div id="openseadragon<?php echo $divCounter; ?>" class="image-toggle"<?php if (!$freshIn) { echo ' style="display:none;"'; } else { echo ' style="display:block;"'; }?>>
+                    <script type="text/javascript">
+                        OpenSeadragon({
+                            id: "openseadragon<?php echo $divCounter;?>",
+                            prefixUrl: "<?php echo base_url() ?>theme/stcecilia/images/buttons/",
+                            zoomPerScroll: 1.2,
+                            toolbar:       "toolbarDiv",
+                            showNavigator:  true,
+                            autoHideControls: false,
+                            zoomInButton:   "zoom-in",
+                            zoomOutButton:  "zoom-out",
+                            homeButton:     "home",
+                            fullPageButton: "full-page",
+                            nextButton:     "next",
+                            previousButton: "previous",
+                            tileSources: ["<?php echo $tileSource[$divCounter]; ?>"]
+                        });
+                    </script>
+                </div>
+
+                <?php
+                $divCounter++;
+                $freshIn = false;
+            }
+            ?>
+        </div>
+
+
+        <?php
+        $numThumbnails = 0;
+        $imageset = false;
+        $thumbnailLink = array();
+
+        $countThumbnails = count($solr[$link_uri_field]);
+        echo '<div itemscope itemtype ="http://schema.org/CreativeWork"><div class="thumb-strip">';
+        if ($countThumbnails > 1)
         {
-            $imagefull = $linkURI;
-            list($fullwidth, $fullheight) = getimagesize($imagefull);
-            if ($fullwidth > $fullheight)
+            foreach ($solr[$link_uri_field] as $linkURI)
             {
-                $parms = '/150,/0/';
+                $linkURI = $solr[$link_uri_field][$numThumbnails];
+                //change to stop LUNA erroring on redirect
+                $linkURI = str_replace('http://', 'https://', $linkURI);
+
+                $thumbnailLink[$numThumbnails] = '<label class="image-toggler" data-image-id="#openseadragon'.$numThumbnails.'">';
+                $thumbnailLink[$numThumbnails] .= '<input type="radio" name="options" id="option'.$numThumbnails.'">';
+
+                list($width, $height) = getimagesize($linkURI);
+                $imagesmall = str_replace ('full/full/0/default.jpg', 'full/150,/0/default.jpg', $linkURI);
+                //Insert Schema for thumbnail
+                echo '<span itemprop="thumbnailUrl" style="display:none;">'. $imagesmall. '</span>';
+                $portrait = true;
+                if ($width > $height)
+                {
+                    $portrait = false;
+                }
+                if ($portrait)
+                {
+                    $thumbnailLink[$numThumbnails] .= '<img src = "' . $linkURI . '" class="record-thumb-strip" title="' . $solr[$title_field][0];
+                } else
+                {
+                    $thumbnailLink[$numThumbnails] .= '<img src = "' . $linkURI . '" class="record-thumb-strip" title="' . $solr[$title_field][0];
+                }
+
+                $manifest = str_replace("iiif/", "iiif/m/", $linkURI);
+                $manifest = str_replace("full/full/0/default.jpg", "manifest", $manifest);
+
+                $json = file_get_contents($manifest);
+
+                $jobj = json_decode($json, true);
+                //print_r ($jobj);
+                $error = json_last_error();
+                $jsonMD = $jobj['sequences'][0]['canvases'][0]['metadata'];
+                $rights = '';
+                $photographer = '';
+                $photoline = '';
+                foreach ($jsonMD as $jsonMDPair)
+                {
+
+                    if ($jsonMDPair['label'] == 'Repro Creator Name')
+                    {
+                        $photographer = str_replace("<span>", "", $jsonMDPair['value']);
+                        $photographer = str_replace("</span>", "", $photographer);
+                    }
+                    if ($jsonMDPair['label'] == 'Repro Rights Statement')
+                    {
+                        $rights = str_replace("<span>", "", $jsonMDPair['value']);
+                        $rights = 'Photograph '.str_replace("</span>", "", $rights);
+                    }
+
+                }
+                if ($photographer !== '')
+                {
+                    $photoline = ' Photo by '.$photographer;
+                }
+                $thumbnailLink[$numThumbnails] .= '. '. $photoline.' '.$rights.'"/></label>';
+
+                echo $thumbnailLink[$numThumbnails];
+                $numThumbnails++;
+                $imageset = true;
+
             }
-            else
-            {
-                $parms = '/,150/0/';
-            }
-            $imagesmall = str_replace('/full/0/', $parms, $imagefull);
-            //Insert Schema for thumbnail
-            echo '<span itemprop="thumbnail" style="display:none;">' . $imagesmall . '</span>';
         }
-    }
-    ?>
-</div>
-<?php
-}
-?>
+        else if ($countThumbnails == 1)
+        {
+            foreach ($solr[$link_uri_field] as $linkURI)
+            {
+                $imagefull = $linkURI;
+                list($fullwidth, $fullheight) = getimagesize($imagefull);
+                if ($fullwidth > $fullheight)
+                {
+                    $parms = '/150,/0/';
+                }
+                else
+                {
+                    $parms = '/,150/0/';
+                }
+                $imagesmall = str_replace('/full/0/', $parms, $imagefull);
+                //Insert Schema for thumbnail
+                echo '<span itemprop="thumbnail" style="display:none;">' . $imagesmall . '</span>';
+            }
+        }
+        ?>
+    </div>
+<?php }
+} ?>
+<!-- END IMAGE IF -->
+
 <div class = "json-link">
     <p>
         <?php if (isset($jsonLink)){echo $jsonLink;} ?>
     </p>
 </div>
 
-
-<div id="stc-section3" class="container-fluid">
-    <!--TODO Display Short description and description-->
-    <div class="col-description">
-        <?php foreach($descriptiondisplay as $key) {
-
-            $element = $this->skylight_utilities->getField($key);
-
-            if(isset($solr[$element])) {
-                foreach($solr[$element] as $index => $metadatavalue) {
-                    if ($key == "Short Description" or $key == "Description") {
-                        echo "<span class='description'>";
-                        echo $metadatavalue;
-                        echo "</span>";
-                    }
-                }
-            }
-        } ?>
-    </div>
-
-    <?php
-    foreach($recorddisplay as $key) {
-
-        $element = $this->skylight_utilities->getField($key);
-
-        if(isset($solr[$element])) {
-
-            foreach($solr[$element] as $index => $metadatavalue) {
-                echo '<div class="stc-tags">';
-
-                // if it's a facet search
-                // make it a clickable search link
-                if(in_array($key, $filters)) {
-                    if (!strpos($metadatavalue, "/")> 0)
-                    {
-                        $orig_filter = urlencode($metadatavalue);
-                        $lower_orig_filter = strtolower($metadatavalue);
-                        $lower_orig_filter = urlencode($lower_orig_filter);
-
-                        echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a>';
-                    }
-                }
-                echo '</div>';
-
-            }
-        }
-    }
-    ?>
-</div>
-
-
-<!--Insert Schema.org-->
-<div class="full-metadata">
-
-
-            <?php
-if(isset($solr[$bitstream_field]) && $link_bitstream) {
+<!-- AUDIO FILE IF -->
+<?php if(isset($solr[$bitstream_field]) && $link_bitstream) {
 
     if (!$audioLink == '')
     {
         echo '<div id="stc-section4" class="container-fluid">
+            <h3 class="inst-desc">Audio/Visual Clips</h3>
             <!--h1 class="itemtitle hidden-sm hidden-xs">Audio/Visual</h1-->
             <!--h4 class="itemtitle hidden-lg hidden-md">Audio/Visual</h4-->'.
             $audioLink . '</div>';
     }
-}
-?>
+} ?>
+<!-- END AUDIO FILE IF -->
+
+<?php if(!$descriptiondisplay == NULL || !$recorddisplay == NULL)
+{?>
+    <div id="stc-section3" class="container-fluid">
+        <!--TODO Display Short description and description-->
+        <div class="col-description">
+            <?php foreach($descriptiondisplay as $key) {
+
+                $element = $this->skylight_utilities->getField($key);
+
+                if(isset($solr[$element])) {
+                    foreach($solr[$element] as $index => $metadatavalue) {
+                        if ($key == "Short Description" or $key == "Description") {
+                            echo "<span class='description'>";
+                            echo $metadatavalue;
+                            echo "</span>";
+                        }
+                    }
+                }
+            } ?>
+        </div>
+
+        <?php
+        foreach($recorddisplay as $key) {
+
+            $element = $this->skylight_utilities->getField($key);
+
+            if(isset($solr[$element])) {
+
+                foreach($solr[$element] as $index => $metadatavalue) {
+                    echo '<div class="stc-tags">';
+
+                    // if it's a facet search
+                    // make it a clickable search link
+                    if(in_array($key, $filters)) {
+                        if (!strpos($metadatavalue, "/")> 0)
+                        {
+                            $orig_filter = urlencode($metadatavalue);
+                            $lower_orig_filter = strtolower($metadatavalue);
+                            $lower_orig_filter = urlencode($lower_orig_filter);
+
+                            echo '<a href="./search/*:*/' . urlencode($key) . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a>';
+                        }
+                    }
+                    echo '</div>';
+
+                }
+            }
+        }
+        ?>
+    </div>
+<?php } ?>
+
+<!--Insert Schema.org-->
+<div class="full-metadata">
 
 <div id="stc-section5" class="panel panel-default container-fluid">
     <div class="panel-heading straight-borders">
-        <h2 class="panel-title hidden-sm hidden-xs ">
+        <h3 class="panel-title hidden-sm hidden-xs inst-desc">
             <a class="accordion-toggle" data-toggle="collapse" href="#collapse1">Instrument Data <i class="fa fa-chevron-down" aria-hidden="true"></i>
             </a>
-        </h2>
+        </h3>
         <h4 class="panel-title hidden-md hidden-lg ">
             <a class="accordion-toggle" data-toggle="collapse" href="#collapse1">Instrument Data <i class="fa fa-chevron-down" aria-hidden="true"></i>
 
@@ -464,9 +508,9 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
     </div>
     <div id="collapse1" class="panel-collapse collapse">
         <div class="panel-body">
-            <div class="col-sm-6 col-xs-12 col-md-8 col-lg-12 metadata">
+            <div class="col-sm-6 col-xs-12 col-md-8 col-lg-12 metadata" itemscope itemtype="https://schema.org/instrument">
 
-                <div id="info-box">
+                <div class="info-box">
 
                     <h3>Identification Information</h3>
                     <dl class="dl-horizontal">
@@ -493,11 +537,11 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                         //Insert Schema.org
                                         if (isset ($schema[$key]))
                                         {
-                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
                                         }
                                         else
                                         {
-                                            echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a>';
+                                            echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="' . $metadatavalue . '">' . $metadatavalue . '</a>';
                                         }
                                     }
                                     else {
@@ -524,12 +568,12 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                             }
                         }
                         if (!$infofound) {
-                            echo '<p>No information recorded.</p>';
+                            echo '<dt>No information recorded.</dt><dd></dd>';
                         }?>
                     </dl>
                 </div> <!-- main-info -->
 
-                <div id="info-box">
+                <div class="info-box">
                     <h3>Date Information</h3>
                     <dl class="dl-horizontal">
                         <?php
@@ -555,11 +599,11 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                         //Insert Schema.org
                                         if (isset ($schema[$key]))
                                         {
-                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
                                         }
                                         else
                                         {
-                                            echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a>';
+                                            echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="' . $metadatavalue . '">' . $metadatavalue . '</a>';
                                         }
                                     }
                                     else {
@@ -585,13 +629,13 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
 
                         }
                         if (!$infofound) {
-                            echo '<p>No information recorded.</p>';
+                            echo '<dt>No information recorded.</dt><dd></dd>';
                         }
                         ?>
                     </dl>
                 </div> <!-- meta-info -->
 
-                <div id="info-box">
+                <div class="info-box">
                     <h3>Maker</h3>
                     <dl class="dl-horizontal">
                         <?php
@@ -617,11 +661,11 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                         //Insert Schema.org
                                         if (isset ($schema[$key]))
                                         {
-                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
                                         }
                                         else
                                         {
-                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
                                         }
                                     }
 
@@ -647,12 +691,12 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                             }
                         }
                         if (!$infofound) {
-                            echo '<p>No information recorded.</p>';
+                            echo '<dt>No information recorded.</dt><dd></dd>';
                         }?>
                     </dl>
                 </div> <!-- creator-info -->
 
-                <div id="info-box">
+                <div class="info-box">
                     <h3>Production Place</h3>
                     <dl class="dl-horizontal">
                         <?php
@@ -678,11 +722,11 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                         //Insert Schema.org
                                         if (isset ($schema[$key]))
                                         {
-                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
                                         }
                                         else
                                         {
-                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
                                         }
                                     }
                                     else {
@@ -708,12 +752,12 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                             }
                         }
                         if (!$infofound) {
-                            echo '<p>No information recorded.</p>';
+                            echo '<dt>No information recorded.</dt><dd></dd>';
                         }?>
                     </dl>
                 </div> <!--place-info -->
 
-                <div id="info-box">
+                <div class="info-box">
                     <h3>Object Type Information</h3>
                     <dl class="dl-horizontal">
                         <?php
@@ -739,11 +783,11 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                         //Insert Schema.org
                                         if (isset ($schema[$key]))
                                         {
-                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
                                         }
                                         else
                                         {
-                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
                                         }
                                     }
                                     else {
@@ -770,12 +814,12 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                             }
                         }
                         if (!$infofound) {
-                            echo '<p>No information recorded.</p>';
+                            echo '<dt>No information recorded.</dt><dd></dd>';
                         }?>
                     </dl>
                 </div> <!--type-info -->
 
-                <div id="info-box">
+                <div class="info-box">
                     <h3>Location</h3>
                     <dl class="dl-horizontal">
                         <?php
@@ -801,11 +845,11 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                         //Insert Schema.org
                                         if (isset ($schema[$key]))
                                         {
-                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
                                         }
                                         else
                                         {
-                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
                                         }
                                     }
                                     else {
@@ -829,12 +873,12 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                             }
                         }
                         if (!$infofound) {
-                            echo '<p>No information recorded.</p>';
+                            echo '<dt>No information recorded.</dt><dd></dd>';
                         }?>
                     </dl>
                 </div> <!--location-info -->
 
-                <div id="info-box">
+                <div class="info-box">
                     <h3>Associated Performers</h3>
                     <dl class="dl-horizontal">
                         <?php
@@ -860,11 +904,11 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                         //Insert Schema.org
                                         if (isset ($schema[$key]))
                                         {
-                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
                                         }
                                         else
                                         {
-                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
                                         }
                                     }
                                     else {
@@ -889,12 +933,12 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                             }
                         }
                         if (!$infofound) {
-                            echo '<p>No information recorded.</p>';
+                            echo '<dt>No information recorded.</dt><dd></dd>';
                         }?>
                     </dl>
                 </div> <!--association-info -->
 
-                <div id="info-box">
+                <div class="info-box">
                     <h3>Measurements</h3>
                     <dl class="dl-horizontal">
                         <?php
@@ -918,9 +962,9 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                     $lower_orig_filter = urlencode($lower_orig_filter);
                                     //insert Schema
                                     if (isset ($schema[$key])) {
-                                        echo '<span itemprop="' . $schema[$key] . '"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                        echo '<span itemprop="' . $schema[$key] . '"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
                                     } else {
-                                        echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a>';
+                                        echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="' . $metadatavalue . '">' . $metadatavalue . '</a>';
                                     }
                                 }
                                 else
@@ -948,12 +992,12 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                         }
                         if (!$infofound)
                         {
-                            echo '<p>No information recorded.</p>';
+                            echo '<dt>No information recorded.</dt><dd></dd>';
                         }?>
                     </dl>
                 </div> <!--measurement-info -->
 
-                <div id="info-box">
+                <div class="info-box">
                     <h3>Description</h3>
                     <dl class="dl-horizontal">
                         <?php
@@ -980,11 +1024,11 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
 
                                         if (isset ($schema[$key]))
                                         {
-                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
                                         }
                                         else
                                         {
-                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                            echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
                                         }
                                     }
                                     else {
@@ -1008,7 +1052,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                             }
                         }
                         if (!$infofound) {
-                            echo '<p>No information recorded.</p>';
+                            echo '<dt>No information recorded.</dt><dd></dd>';
                         }?>
                     </dl>
                 </div> <!--description info -->
@@ -1018,4 +1062,4 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
         </div> <!-- panel body -->
     </div>
 </div>
-
+</div>
