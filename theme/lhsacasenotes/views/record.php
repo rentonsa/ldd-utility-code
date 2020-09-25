@@ -64,10 +64,17 @@ $bitstreamLinks = array();
                                         echo $metadatavalue;
                                         $idset = true;
                                     }
-                                }
-                                else{
-
-                                    echo $metadatavalue;
+                                } //13.08.2020 Sebastian Lange: Dates and Extent were falsly outputted as array this fairly horrible if else statement fixed it
+                                else {
+                                    if($key == 'Dates'){
+                                        echo ($metadatavalue['expression']);
+                                    }
+                                    if($key == 'Extent'){
+                                        echo ($metadatavalue['number']);
+                                    }
+                                    elseif ($key != 'Dates') {
+                                        echo ($metadatavalue);
+                                    }
                                 }
                             }
 

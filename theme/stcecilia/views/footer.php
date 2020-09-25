@@ -31,6 +31,7 @@
                             <li><a href="./licensing" title="Licensing and Copyright Link">Licensing &amp; Copyright</a></li>
                             <li><a href="https://www.ed.ac.uk/about/website/accessibility" title="Website Accessibility Link" target="_blank">Accessibility</a></li>
                         </ul>
+
                     </div>
                 </div>
                 <div class="row">
@@ -44,7 +45,8 @@
                         <ul class="small">
                             <li><a href="./licensing" title="Licensing and Copyright Link">Licensing &amp; Copyright</a></li>
                             <li><a href="https://www.ed.ac.uk/about/website/accessibility" title="Website Accessibility Link" target="_blank">Accessibility</a></li>
-                        </ul>
+
+                         </ul>
                     </div>
                 </div>
                 <div class="row">
@@ -68,7 +70,8 @@
                         <a href="https://www.ed.ac.uk/information-services" target="_blank" class="islogo" title="University of Edinburgh Information Services Home">Information Services</a>.</span><br/>
                         <span class="small">Unless explicitly stated otherwise, all material is copyright &copy; <?php echo date("Y"); ?> <a href="https://www.ed.ac.uk" title="University of Edinburgh Home" target="_blank">University of Edinburgh</a>.</span><br/>
                         <span class="small">MIMEd is a <a href="https://www.museumsgalleriesscotland.org.uk/standards/recognition/" target="_blank" title="Recognised Collection of National Significance Link">Recognised Collection of National Significance</a>.
-                        </span>
+
+                       </span>
                     </div>
                 </div>
                 <div class="spacer"></div>

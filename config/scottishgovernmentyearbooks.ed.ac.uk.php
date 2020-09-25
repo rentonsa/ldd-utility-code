@@ -5,8 +5,8 @@ $config['skylight_appname'] = 'iog';
 // Uncomment this if you are using a url of the form http://.../art/...
 //$config['skylight_url_prefix'] = 'iog';
 
-// set the base url and ga code
-if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
+// Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
+if (ENVIRONMENT == 'development') {
     $config['base_url'] = 'http://test.scottishgovernmentyearbooks.ed.ac.uk/';
     $config['skylight_ga_code'] = 'UA-25737241-6';
 }
@@ -26,7 +26,16 @@ $config['skylight_oaipmhcollection'] = 'hdl_10683_22746';
 $config['skylight_oaipmhallowed'] = true;
 
 // Container ID and the field used in solr index to store this ID. Used for restricting search/browse scope.
-$config['skylight_container_id'] = '16';
+
+if (ENVIRONMENT == 'development') {
+	$config['skylight_container_id'] = 'e99d9f85-ef2f-4de4-820b-9561cb759fec';
+}
+else {
+	$config['skylight_container_id'] = '16';
+}
+
+
+//$config['skylight_container_id'] = '16';
 $config['skylight_container_field'] = 'location.coll';
 $config['skylight_sitemap_type'] = 'external';
 
@@ -45,7 +54,10 @@ $config['skylight_fields'] = array('Title' => 'dc.title.en',
     'Series' => 'dc.relation.ispartofseries.en',
 );
 
-$config['skylight_date_filters'] = array('Date' => 'dateIssued.year_sort');
+// HM 14/09/2020
+// Date filtering broken in Skylight upgrade so disabling
+//$config['skylight_date_filters'] = array('Date' => 'dateIssued.year_sort');
+$config['skylight_date_filters'] = array();
 $config['skylight_filters'] = array('Author' => 'author_filter', 'Subject' => 'subject_filter');
 $config['skylight_filter_delimiter'] = ':';
 

@@ -9,8 +9,8 @@ $config['skylight_theme'] = 'arch-dig';
 
 $config['skylight_fullname'] = 'Archives';
 
-// set ga code
-if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
+// Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
+if (ENVIRONMENT == 'development') {
     $config['skylight_ga_code'] = '';
     $config['skylight_container_id'] = '91';
 }

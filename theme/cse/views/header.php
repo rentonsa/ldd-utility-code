@@ -43,7 +43,7 @@
 
     <header>
         <p class="collection-title"><p class="uoe"></p></p>
-        <a href="http://www.ed.ac.uk/schools-departments/sport-exercise/home" class="logo">Centre for Sports and Exercise</a>
+        <a href="https://www.ed.ac.uk/schools-departments/sport-exercise/home" class="logo">Centre for Sports and Exercise</a>
         <form action="./redirect/" method="post">
             <fieldset class="search">
                 <input type="text" name="q" value="<?php if (isset($searchbox_query)) echo urldecode($searchbox_query); ?>" id="q" />

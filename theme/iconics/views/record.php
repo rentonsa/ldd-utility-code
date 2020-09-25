@@ -239,11 +239,11 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                                 //Insert Schema.org
                                 if (isset ($schema[$key]))
                                 {
-                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
                                 }
                                 else
                                 {
-                                  echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                                  echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
                                 }
                             }
                             else {
@@ -278,7 +278,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
             <a target="_blank" href="<?php echo $manifestURI; ?>/manifest">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/International_Image_Interoperability_Framework_logo.png" class="iiiflogo" title="Right-click, Copy Link to get the full IIIF manifest for the collection."></a>
             <a target="_blank" href="<?php echo $manifestURI; ?>/manifest">
-                <img src="http://images.is.ed.ac.uk/luna/images/LUNAIIIF80.png" class="lunaiiif" title="Right-click, Copy Link to get the full IIIF manifest for the collection."></a>
+                <img src="https://images.is.ed.ac.uk/luna/images/LUNAIIIF80.png" class="lunaiiif" title="Right-click, Copy Link to get the full IIIF manifest for the collection."></a>
             This collection is IIIF-compliant. <a href ="./iiif">See more</a>.
         </p>
     </div>
@@ -293,10 +293,10 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                 $orig_filter = urlencode($tag);
                 $lower_orig_filter = strtolower($tag);
                 $lower_orig_filter = urlencode($lower_orig_filter);
-                echo '<span class="crowd-tag">' . '<a href="./search/*:*/Tags:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22"><i class="fa fa-tags fa-lg">&nbsp;</i>'.$tag.'</a>' . '</span>';
+                echo '<span class="crowd-tag">' . '<a href="./search/*:*/Tags:%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22"><i class="fa fa-tags fa-lg">&nbsp;</i>'.$tag.'</a>' . '</span>';
             } ?>
             <div class="crowd-info">
-                <form id="libraylabs" method="get" action="http://librarylabs.ed.ac.uk/games/gameCrowdSourcing.php" target="_blank">
+                <form id="libraylabs" method="get" action="https://librarylabs.ed.ac.uk/games/gameCrowdSourcing.php" target="_blank">
                     <input type="hidden" name="image_id" value="<?php echo $image_id ?>">
                     <input type="hidden" name="theme" value="classic">
                     Add more tags at <a href="#" onclick="document.forms[1].submit();return false;" title="University of Edinburgh, Library Labs Metadata Games">Library Labs Games</a>
@@ -312,7 +312,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
         ?>
         <div class="crowd-tags">
             <div class="crowd-info">
-                <form id="libraylabs" method="get" action="http://librarylabs.ed.ac.uk/games/gameCrowdSourcing.php" target="_blank">
+                <form id="libraylabs" method="get" action="https://librarylabs.ed.ac.uk/games/gameCrowdSourcing.php" target="_blank">
                     <input type="hidden" name="image_id" value="<?php echo $image_id ?>">
                     <input type="hidden" name="theme" value="classic">
                     Add tags to this image at <a href="#" onclick="document.forms[1].submit();return false;" title="University of Edinburgh, Library Labs Metadata Games">Library Labs Games</a>

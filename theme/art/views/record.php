@@ -59,7 +59,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
         if ((strpos($b_uri, ".mp3") > 0) or (strpos($b_uri, ".MP3") > 0))
         {
             //Insert Schema for deetcting Audio
-            echo '<div itemprop="audio" itemscope itemtype="http://schema.org/AudioObject"></div>';
+            echo '<div itemprop="audio" itemscope itemtype="https://schema.org/AudioObject"></div>';
             $audioLink .= '<audio controls>';
             $audioLink .= '<source src="' . $b_uri . '" type="audio/mpeg" />Audio loading...';
             $audioLink .= '</audio>';
@@ -81,7 +81,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
             if ($mp4ok == true)
             {
                 // Insert Schema for detecting Video
-                echo '<div itemprop="video" itemscope itemtype="http://schema.org/VideoObject"></div>';
+                echo '<div itemprop="video" itemscope itemtype="https://schema.org/VideoObject"></div>';
                 $videoLink .= '<div class="flowplayer" data-analytics="' . $ga_code . '" title="' . $record_title . ": " . $b_filename . '">';
                 $videoLink .= '<video preload=auto loop width="100%" height="auto" controls preload="true" width="660">';
                 $videoLink .= '<source src="' . $b_uri . '" type="video/mp4" />Video loading...';
@@ -98,7 +98,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
                 if (strpos($_SERVER['HTTP_USER_AGENT'], 'Chrome') == true)
                 {
                     // Insert Schema
-                    echo '<div itemprop="video" itemscope itemtype="http://schema.org/VideoObject"></div>';
+                    echo '<div itemprop="video" itemscope itemtype="https://schema.org/VideoObject"></div>';
                     $b_uri = $media_uri . $b_handle_id . '/' . $b_seq . '/' . $b_filename;
                     // if it's chrome, use webm if it exists
                     $videoLink .= '<div class="flowplayer" data-analytics="' . $ga_code . '" title="' . $record_title . ": " . $b_filename . '">';
@@ -126,9 +126,9 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
             $manifest  = base_url().'art/record/'.$b_handle_id.'/'.$b_seq.'/'.$b_filename;
             $jsonLink  = '<span class ="json-link-item"><a href="https://librarylabs.ed.ac.uk/iiif/uv/?manifest='.$manifest.'" target="_blank" class="uvlogo" title="View in UV"></a></span>';
             $jsonLink .= '<span class ="json-link-item"><a target="_blank" href="https://librarylabs.ed.ac.uk/iiif/mirador/?manifest='.$manifest.'" class="miradorlogo" title="View in Mirador"></a></span>';
-            $jsonLink .= '<span class ="json-link-item"><a href="https://images.is.ed.ac.uk/luna/servlet/view/search?search=SUBMIT&q='.$accno.'" class="lunalogo" title="View in LUNA"></a></span>';
+            $jsonLink .= '<span class ="json-link-item"><a href="https://images.is.ed.ac.uk/luna/servlet/view/search?search=SUBMIT&q='.$accno.'" class="lunalogo" title="View in LUNA" target="_blank"></a></span>';
             $jsonLink .= '<span class ="json-link-item"><a href="'.$manifest.'" target="_blank"  class="iiiflogo" title="View IIIF manifest"></a></span>';
-            //$jsonLink .= '<span class ="json-link-item"><a href="http://www.example.com/'.$manifest.'" target="_blank"  class="iiifdndlogo" title="Drag and drop IIIF manifest"></a></span>'; $jsonLink .= '<span class ="json-link-item"><a href="http://www.example.com/'.$manifest.'" target="_blank"  class="iiifdndlogo" title="Drag and drop IIIF manifest"></a></span>';
+            //$jsonLink .= '<span class ="json-link-item"><a href="https://www.example.com/'.$manifest.'" target="_blank"  class="iiifdndlogo" title="Drag and drop IIIF manifest"></a></span>'; $jsonLink .= '<span class ="json-link-item"><a href="http://www.example.com/'.$manifest.'" target="_blank"  class="iiifdndlogo" title="Drag and drop IIIF manifest"></a></span>';
         }
 
     }
@@ -137,7 +137,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
 
 <div class="content">
   <!--Insert Schema-->
-  <div itemscope itemtype ="http://schema.org/CreativeWork">
+  <div itemscope itemtype ="https://schema.org/CreativeWork">
     <div class="full-title">
         <h1 class="itemtitle"><?php echo $record_title ?>
 
@@ -152,7 +152,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
                     $orig_filter = urlencode($author);
                     $lower_orig_filter = strtolower($author);
                     $lower_orig_filter = urlencode($lower_orig_filter);
-                    echo '<a class="artist" href="./search/*:*/Artist:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$author.'</a>';
+                    echo '<a class="artist" href="./search/*:*/Artist:%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$author.'">'.$author.'</a>';
                 }
             }
             ?>
@@ -451,24 +451,24 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
                                         //Insert Schema.org
                                         if (isset ($schema[$key]))
                                         {
-                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="'. $metadatavalue . '">' . $metadatavalue . '</a></span>';
                                         }
                                         else
                                         {
-                                            echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a>';
+                                            echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="'. $metadatavalue . '">' . $metadatavalue . '</a>';
                                         }
 
                                     } else {
                                         if ($key == "Artist") {
                                             //for artist, add superscript authority links if available
                                             if ($viafvalue !== '') {
-                                                $viaf = '<a href = "' . $viafvalue . '" target = "_blank"><sup>VIAF</sup></a>';
+                                                $viaf = '<a href = "' . $viafvalue . '" title="'. $viafvalue . '" target = "_blank"><sup>VIAF</sup></a>';
                                             }
                                             if ($isnivalue !== '') {
-                                                $isni = '<a href = "' . $isnivalue . '" target = "_blank"><sup>ISNI</sup></a>';
+                                                $isni = '<a href = "' . $isnivalue . '" title="'. $isnivalue . '" target = "_blank"><sup>ISNI</sup></a>';
                                             }
                                             if ($lcvalue !== '') {
-                                                $lc = '<a href = "' . $lcvalue . '" target = "_blank"><sup>LC</sup></a>';
+                                                $lc = '<a href = "' . $lcvalue . '" title="'. $lcvalue . '" target = "_blank"><sup>LC</sup></a>';
                                             }
 
                                             //Insert Schema.org
@@ -567,13 +567,13 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
             $orig_filter = urlencode($tag);
             $lower_orig_filter = strtolower($tag);
             $lower_orig_filter = urlencode($lower_orig_filter);
-            echo '<span class="crowd-tag">' . '<a href="./search/*:*/Tags:%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22"><i class="fa fa-tags fa-lg">&nbsp;</i>' . $tag . '</a>' . '</span>';
+            echo '<span class="crowd-tag">' . '<a href="./search/*:*/Tags:%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="' . $tag . '"><i class="fa fa-tags fa-lg">&nbsp;</i>' . $tag . '</a>' . '</span>';
         }
 
 
         if ($crowd_image !== '') { ?>
             <div class="crowd-info">
-                <form id="libraylabs" method="get" action="http://librarylabs.ed.ac.uk/games/gameCrowdSourcing.php"
+                <form id="libraylabs" method="get" action="https://librarylabs.ed.ac.uk/games/gameCrowdSourcing.php"
                       target="_blank">
                     <input type="hidden" name="image_id" value="<?php echo $crowd_image ?>">
                     <input type="hidden" name="theme" value="art">
@@ -593,7 +593,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
     if ($crowd_image !== '') { ?>
         <div class="crowd-tags">
             <div class="crowd-info">
-                <form id="libraylabs" method="get" action="http://librarylabs.ed.ac.uk/games/gameCrowdSourcing.php"
+                <form id="libraylabs" method="get" action="https://librarylabs.ed.ac.uk/games/gameCrowdSourcing.php"
                       target="_blank">
                     <input type="hidden" name="image_id" value="<?php echo $crowd_image ?>">
                     <input type="hidden" name="theme" value="art">

@@ -1,0 +1,48 @@
+FROM ubuntu:18.04
+
+# php7 installation prompts for user location
+RUN export DEBIAN_FRONTEND=noninteractive
+RUN ln -fs /usr/share/zoneinfo/Europe/London /etc/localtime
+RUN apt-get update && apt-get install -y tzdata
+RUN dpkg-reconfigure --frontend noninteractive tzdata
+
+# Update OS with Php7, php xml library, Apache mod and SSH
+RUN apt-get install -y php php-xml libapache2-mod-php ssh php-curl
+
+RUN rm -rf /var/lib/apt/lists/*
+
+# Overwrite Apache2 conf
+COPY skylight-local/docker/apache2.conf /etc/apache2
+
+# Add skylight conf to sites available
+COPY skylight-local/docker/skylight.conf /etc/apache2/sites-available
+
+# Copy bash file to remove pid of Apache2
+# see https://forums.docker.com/t/cant-restart-my-container-httpd-pid-8-already-running/67633
+COPY skylight-local/docker/httpd-foreground.sh /usr/local/bin/
+
+# Copy SSH config file
+COPY skylight-local/docker/ssh_config /etc/ssh/ssh_config
+
+# Set up php development env
+RUN cp /usr/lib/php/7.2/php.ini-development /etc/php/7.2/apache2/php.ini
+
+# Enable Apache mods rewrite and headers
+RUN a2enmod rewrite headers
+
+# Disable default site config
+RUN a2dissite 000-default
+
+# Enable skylight site config
+RUN a2ensite skylight
+
+# Expose port 80 in container
+EXPOSE 80
+
+# Run Apache2 as main process
+CMD ["httpd-foreground.sh"]
+
+# ssh -4 -N -f -L 9122:127.0.0.1:8080 dspace@lac-repo-test14.is.ed.ac.uk
+# docker run --name skylight -it -p 8080:80 -p 80:1818 -v /home/hrafn/PhpstormProjects/skylight:/var/html/www/skylight -v /home/hrafn/PhpstormProjects/skylight-local:/var/html/www/skylight-local skylight
+# ssh -4 -N -f -L 1818:test.collectionsinternal.is.ed.ac.uk:80 hrafn@is-lac-2289.is.ed.ac.uk
+# ssh -4 -N -f -L 9130:127.0.0.1:8080 coll-int

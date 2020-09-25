@@ -14,11 +14,15 @@
             <b class="big-title">Functions</b>
             <div class="content">
                 The Platform is designed to fulfil three main functions:
-                <datalist>
-                <li>         To Increase awareness of the rich and diverse material held by the Coimbra Group universities across Europe</li>
-                <li>    To provide an easy route to find out more about the individual collections held by the Coimbra Group institutions</li>
-                <li>         To support greater collaboration between Coimbra Group Institutions in particular relating to development of new projects and grant proposals.</li>
-                </datalist>
+                <br>
+                <ol>
+                	<li>Increase awareness of the rich heritage collections held by the Coimbra Group institutions and to make them more discoverable.</li>
+					<li>Highlight our shared European heritage and joint stories.</li>
+					<li>Provide a platform for future joint projects and grant applications.</li>
+               <!-- <li>To Increase awareness of the rich and diverse material held by the Coimbra Group universities across Europe</li>
+                <li>To provide an easy route to find out more about the individual collections held by the Coimbra Group institutions</li>
+                <li>To support greater collaboration between Coimbra Group Institutions in particular relating to development of new projects and grant proposals.</li>-->
+                </ol>
             </div>
         </div>
 

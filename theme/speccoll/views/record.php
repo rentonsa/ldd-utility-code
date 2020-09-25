@@ -183,7 +183,13 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
 }
 else
 {
-    $manifest = 'https://librarylabs.ed.ac.uk/iiif/speccollprototype/manifest/'.$solr[$manifest_field][0].'.json';
+    $manifest = 'https://librarylabs.ed.ac.uk/iiif/speccollprototype/manifest/'.$solr[$manifest_field][0].'/manifest';
+    if (!file_get_contents($manifest))
+    {
+        $manifest = 'https://librarylabs.ed.ac.uk/iiif/speccollprototype/manifest/'.$solr[$manifest_field][0].'.json';
+
+    }
+    //$manifest = 'http://test.collectionsmedia.is.ed.ac.uk/manifests/'.$solr[$manifest_field][0].'.json';
 }
 
 
@@ -342,16 +348,15 @@ echo $viewlink;
     {
         echo $catalogue_link;
     }
-    if ($hasalma == 'Y' or $hasprimo == 'Y')
-    {
+    if ($hasalma == 'Y' or $hasprimo == 'Y') {
 
 
         if ($hasprimo == 'Y') {
             echo '<p><a href= "' . $primourl . '" target="_blank">See this item on DiscoverEd.</a></p>';
         }
 
-        if ($hasalma == 'Y' )
-        {
+        if ($hasalma == 'Y') {
+            /*
             $curl = curl_init();
             // $fp = fopen("/var/tmp/curl.json", "w");
             curl_setopt($curl, CURLOPT_URL, $almaurl);
@@ -397,36 +402,49 @@ echo $viewlink;
                 $j++;
             }
         }
-    }
+        */
+            echo "<table>";
+            foreach ($recorddisplay as $key) {
 
+                $element = $this->skylight_utilities->getField($key);
 
-   foreach($recorddisplay as $key) {
+                if (isset($solr[$element])) {
 
-        $element = $this->skylight_utilities->getField($key);
-
-        if(isset($solr[$element])) {
-
-            foreach($solr[$element] as $index => $metadatavalue) {
-                echo '<div class="stc-tags">';
-
-                // if it's a facet search
-                // make it a clickable search link
-                if(in_array($key, $filters)) {
-                    if (!strpos($metadatavalue, "/")> 0)
+                    foreach ($solr[$element] as $index => $metadatavalue)
                     {
-                        $orig_filter = urlencode($metadatavalue);
-                        $lower_orig_filter = strtolower($metadatavalue);
-                        $lower_orig_filter = urlencode($lower_orig_filter);
-
-                        echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a>';
+                        echo "<tr><td>". $key . "</td><td> " . $metadatavalue."</td></tr>";
                     }
-                }
-                echo '</div>';
 
+                }
+            }
+            echo "</table>";
+        }
+        foreach ($recorddisplay as $key) {
+
+            $element = $this->skylight_utilities->getField($key);
+
+            if (isset($solr[$element])) {
+
+                foreach ($solr[$element] as $index => $metadatavalue) {
+                    echo '<div class="stc-tags">';
+
+                    // if it's a facet search
+                    // make it a clickable search link
+                    if (in_array($key, $filters)) {
+                        if (!strpos($metadatavalue, "/") > 0) {
+                            $orig_filter = urlencode($metadatavalue);
+                            $lower_orig_filter = strtolower($metadatavalue);
+                            $lower_orig_filter = urlencode($lower_orig_filter);
+
+                            echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="' . $metadatavalue . '">' . $metadatavalue . '</a>';
+                        }
+                    }
+                    echo '</div>';
+
+                }
             }
         }
+
     }
-
-
     ?>
 </div>

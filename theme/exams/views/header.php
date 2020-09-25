@@ -6,7 +6,6 @@
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <base href="<?php echo base_url() . index_page(); if (index_page() !== '') { echo '/'; } if ($this->config->item('skylight_url_prefix') != "") { echo $this->config->item('skylight_url_prefix'); echo '/'; } ?>">
 
@@ -92,8 +91,8 @@
 
     <header>
         <div class="uofe-stuff">
-            <a href="http://www.ed.ac.uk" title="University of Edinburgh Home" class="uofe-logo"></a>
-            <a href="http://www.ed.ac.uk" title="University of Edinburgh Home" class="uofe-title"></a>
+            <a href="https://www.ed.ac.uk" title="University of Edinburgh Home" class="uofe-logo"></a>
+            <a href="https://www.ed.ac.uk" title="University of Edinburgh Home" class="uofe-title"></a>
         </div>
         <div class="is-stuff">
             <a href="/" title="Exam Papers Online banner showing students studying for exams" class="exams-banner"></a>
@@ -102,15 +101,15 @@
         <!-- Breadcrumbs -->
         <div id="breadTrail">
             <ul>
-                <li class="breadHome"><a href="http://www.ed.ac.uk" title="University of Edinburgh Home">University Homepage</a></li>
+                <li class="breadHome"><a href="https://www.ed.ac.uk" title="University of Edinburgh Home">University Homepage</a></li>
                 <li>
-                    <a href="http://www.ed.ac.uk/schools-departments" title="Schools and Departments">Schools &amp; Departments</a>
+                    <a href="https://www.ed.ac.uk/schools-departments" title="Schools and Departments">Schools &amp; Departments</a>
                 </li>
                 <li>
-                   <a href="http://www.ed.ac.uk/schools-departments/information-services" title="Information Services">Information Services</a>
+                   <a href="https://www.ed.ac.uk/schools-departments/information-services" title="Information Services">Information Services</a>
                 </li>
                 <li>
-                    <a href="http://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery" title="Library Essentials">Library Essentials</a>
+                    <a href="https://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery" title="Library Essentials">Library Essentials</a>
                 </li>
                 <li class="breadThis">
                     <a href="">Exam Papers Online Home</a>

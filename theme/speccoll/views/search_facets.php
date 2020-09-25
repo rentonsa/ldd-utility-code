@@ -79,7 +79,8 @@
                     if(empty($facet['terms']) && empty($facet['queries'])) { ?>
                         No matches<br><br>
                     <?php }
-                    else {
+                    else
+                    {
                         if($numterms == $this->config->item('skylight_facet_limit')) { ?>
                             <a href="./browse/<?php echo $facet['name']; ?>">More ...</a><br><br>
                         <?php }

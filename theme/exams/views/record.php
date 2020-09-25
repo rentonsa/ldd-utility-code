@@ -42,11 +42,11 @@ $schema = $this->config->item("skylight_schema_links");
                             //Insert Schema.org
                             if (isset ($schema[$key]))
                             {
-                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="'. $metadatavalue . '">' . $metadatavalue . '</a></span>';
                             }
                             else
                             {
-                              echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$metadatavalue.'</a>';
+                              echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'. $metadatavalue . '">'.$metadatavalue.'</a>';
                             }
 
                         }
@@ -90,14 +90,14 @@ $schema = $this->config->item("skylight_schema_links");
                         foreach($solr[$bitstream_field] as $bitstream) {
 
                             $bitstreamLink = $this->skylight_utilities->getBitstreamURI($bitstream);?>
-                            <a href="<?php echo $bitstreamLink; ?>"  onclick="ga('send', 'event', '<?php echo $solr[$course_field][0].'||'.$record_title.' '.$solr[$year_field][0]; ?>', 'Download', 'Search page – PDF Download');">Download Paper</a>
+                            <a href="<?php echo $bitstreamLink; ?>" title="Download paper" onclick="ga('send', 'event', '<?php echo $solr[$course_field][0].'||'.$record_title.' '.$solr[$year_field][0]; ?>', 'Download', 'Search page – PDF Download');">Download Paper</a>
 
                             <?php
                         }
                     }
                     else { ?>
 
-                        <a href="./unavailable">Paper unavailable</a>
+                        <a href="./unavailable" title="Paper unavailable">Paper unavailable</a>
 
                     <?php } ?>
             </td></tr>

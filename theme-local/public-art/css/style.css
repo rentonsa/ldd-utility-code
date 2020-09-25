@@ -1075,4 +1075,14 @@ section.section-divisor{
     width: 100%;
     min-height: 400px;
   }
+
+  .accessibility li {
+    display: list-item;
+    float: none;
+    list-style-type: disc;
+  }
+
+  .accessibility ul {
+    list-style-type: disc;
+  }
 }

@@ -47,21 +47,24 @@ $bitstreamLinks = array();
 
                                 echo '<a href="./search/*:*/' . $key . ':%22'.$orig_filter.'%22">'.$metadatavalue.'</a>';
                             }
-                            else
-                            {
-                                if ($key == 'Identifier')
-                                {
-                                    if ($idset == false)
-                                    {
+                            else {
+                                if ($key == 'Identifier') {
+                                    if ($idset == false) {
                                         echo $metadatavalue;
                                         $idset = true;
                                     }
+                                } //13.08.2020 Sebastian Lange: Dates and Extent were falsly outputted as array this fairly horrible if else statement fixed it
+                                else {
+                                    if($key == 'Dates'){
+                                        echo ($metadatavalue['expression']);
+                                    }
+                                    if($key == 'Extent'){
+                                        echo ($metadatavalue['number']);
+                                    }
+                                    elseif ($key != 'Dates') {
+                                        echo ($metadatavalue);
+                                    }
                                 }
-                                else
-                                {
-                                    echo $metadatavalue;
-                                }
-
                             }
 
                             if($index < sizeof($solr[$element]) - 1) {
@@ -77,7 +80,7 @@ $bitstreamLinks = array();
             <tr><th>Consult at</th>
                     <?php
 
-                        echo '<td><a href="http://www.ed.ac.uk/information-services/library-museum-gallery/crc/visitor-information/opening-times-location" target="_blank"
+                        echo '<td><a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc/visitor-information/opening-times-location" target="_blank"
                         title="University of Edinburgh, Centre for Research Collections">University of Edinburgh, Centre for Research Collections</a></td>';
                     ?>
                 </tr>

@@ -178,7 +178,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
                     $orig_filter = urlencode($author);
                     $lower_orig_filter = strtolower($author);
                     $lower_orig_filter = urlencode($lower_orig_filter);
-                    echo '<a class="artist" href="./search/*:*/Artist:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$author.'</a>';
+                    echo '<a class="artist" href="./search/*:*/Artist:%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22">'.$author.'</a>';
                 }
             }
             ?>

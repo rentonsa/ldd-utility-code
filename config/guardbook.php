@@ -6,22 +6,22 @@ $config['skylight_url_prefix'] = 'guardbook';
 
 // set the base url and ga code
 if (strpos($_SERVER['HTTP_HOST'], "localhost") !== false) {
-    $config['skylight_ga_code'] = '';
-    $config['skylight_container_id'] = '67';
+    $config['skylight_ga_code'] = 'UA-25737241-6';
+    $config['skylight_container_id'] = 'f0c7bb72-ab20-4693-be0d-43918440a8cd';
 }
 else if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
     $config['skylight_ga_code'] = 'UA-25737241-6';
-    $config['skylight_container_id'] = '67';
+    $config['skylight_container_id'] = 'f0c7bb72-ab20-4693-be0d-43918440a8cd';
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-9';
-    $config['skylight_container_id'] = '51';
+    $config['skylight_container_id'] = '51'; //Pick the ID from the else statement (51) with the uuid from (51) and put that uuid in the if statement
 }
 
 // The platform and version of your repository.
 // Currently DSpace 1.7.1+ is the only supported repository
 $config['skylight_repository_type'] = 'dspace'; // Demo 'dspace'
-$config['skylight_repository_version'] = 'exams'; // Demo '171'
+$config['skylight_repository_version'] = '6'; // Demo '171'
 
 
 $config['skylight_theme'] = 'guardbook';
@@ -34,7 +34,6 @@ $config['skylight_oaipmhcollection'] = 'hdl_10683_52783';
 
 $config['skylight_oaipmhallowed'] = true;
 
-// Container ID and the field used in solr index to store this ID. Used for restricting search/browse scope.
 $config['skylight_container_field'] = 'location.coll';
 $config['skylight_sitemap_type'] = 'external';
 
@@ -79,6 +78,7 @@ $config['skylight_feed_fields'] = array('Title' => 'Title',
 
 $config['skylight_results_per_page'] = 10;
 $config['skylight_share_buttons'] = false;
+$config['skylight_facet_limit'] = 26;
 
 $config['skylight_homepage_recentitems'] = false;
 
@@ -101,5 +101,8 @@ $config['skylight_lightbox_mimes'] = array('image/jpeg', 'image/gif', 'image/png
 $config['skylight_language_default'] = 'en';
 $config['skylight_language_options'] = array('en', 'ko', 'jp');
 
+// set this to true to enable an accurate search and fit the facet search with only one char
+$config['skylight_filter_exact'] = true;
+$config['skylight_filter_sort'] = true;
 
 ?>

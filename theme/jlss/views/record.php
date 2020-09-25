@@ -119,7 +119,7 @@ $bitstreamLinks = array();
                                 $lower_orig_filter = strtolower($metadatavalue);
                                 $lower_orig_filter = urlencode($lower_orig_filter);
 
-                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/'.$orig_filter.'" alt="View items witch share the same subject" 
+                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/'.$orig_filter.'" 
                                         title="Click to view items with the subject ' . $metadatavalue .'">'.$metadatavalue.'</a></span>';
                             }
                             else {
@@ -153,7 +153,7 @@ $bitstreamLinks = array();
     <?php
     $title = preg_replace('/\s/', "+", $colName);
     echo '<div class="row">
-        <a href="' . base_url() . $this->config->item('skylight_theme') . '/search/*:*/Collection:%22' .strtolower(preg_replace('/([A-Z]+)/', "$1", $title)) .'%7C%7C%7C' . $title .'%22">
+        <a href="' . base_url() . $this->config->item('skylight_theme') . '/search/*:*/Collection:%22' .strtolower(preg_replace('/([A-Z]+)/', "$1", $title)) .'+%7C%7C%7C+' . $title .'%22">
         <button class="btn btn-info" alt="Link back to items parent collection" title="Click to return to the ' . preg_replace('/[^a-zA-Z0-9\']/', ' ', $title) .' collection"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Back to '. $colName .'</button>
     </div>'
     ?>

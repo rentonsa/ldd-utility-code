@@ -118,7 +118,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
             <a target="_blank" href="https://images.is.ed.ac.uk/luna/servlet/view/search?search=SUBMIT&q='.$accno.'"><img src="https://images.is.ed.ac.uk/luna/images/LUNAIIIF80.png" class="lunaiiif" title="View in LUNA"></a>';
             $jsonLink .='<a target="_blank" href ="https://librarylabs.ed.ac.uk/uv-examples/?manifest='.$manifest.'"><img src="http://digital.nls.uk/da/assets/graphics/misc/logo-uv-24-32.png" class="iiiflogo" title="View in UV"></a>';
             $jsonLink .='<a target="_blank" href="http://tomcrane.github.io/scratch/mirador/?manifest='.$manifest.'"><img src="http://digital.nls.uk/da/assets/graphics/misc/logo-mirador-24-32.png" class="iiiflogo" title="View in Mirador"></a>';
-            $jsonLink .='<a href ="./iiif">What is this?</a>';
+            $jsonLink .='<a href ="./iiif" title="What is this?">What is this?</a>';
 
         }
 
@@ -140,7 +140,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
                     $orig_filter = urlencode($author);
                     $lower_orig_filter = strtolower($author);
                     $lower_orig_filter = urlencode($lower_orig_filter);
-                    echo '<a class="artist" href="./search/*:*/Artist:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$author.'</a>';
+                    echo '<a class="artist" href="./search/*:*/Artist:%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$author.'">'.$author.'</a>';
                 }
             }
             ?>
@@ -215,22 +215,22 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
                                     $orig_filter = urlencode($metadatavalue);
                                     $lower_orig_filter = strtolower($metadatavalue);
                                     $lower_orig_filter = urlencode($lower_orig_filter);
-                                    echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '%7C%7C%7C' . $orig_filter . '%22">' . $metadatavalue . '</a>';
+                                    echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="' . $metadatavalue .'">' . $metadatavalue . '</a>';
                                 } else {
                                     if ($key == "Artist")
                                     {
                                         //for artist, add superscript authority links if available
                                         if ($viafvalue !== '')
                                         {
-                                            $viaf = '<a href = "'.$viafvalue.'" target = "_blank"><sup>VIAF</sup></a>';
+                                            $viaf = '<a href = "'.$viafvalue.'" title="' . $viafvalue .'" target = "_blank"><sup>VIAF</sup></a>';
                                         }
                                         if ($isnivalue !== '')
                                         {
-                                            $isni = '<a href = "'.$isnivalue.'" target = "_blank"><sup>ISNI</sup></a>';
+                                            $isni = '<a href = "'.$isnivalue.'" title="' . $isnivalue .'" target = "_blank"><sup>ISNI</sup></a>';
                                         }
                                         if ($lcvalue !== '')
                                         {
-                                            $lc = '<a href = "'.$lcvalue.'" target = "_blank"><sup>LC</sup></a>';
+                                            $lc = '<a href = "'.$lcvalue.'" title="' . $lcvalue .'" target = "_blank"><sup>LC</sup></a>';
                                         }
 
                                         echo $metadatavalue.' '.$viaf.' '.$isni.' '.$lc;
@@ -266,10 +266,10 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
                 $orig_filter = urlencode($tag);
                 $lower_orig_filter = strtolower($tag);
                 $lower_orig_filter = urlencode($lower_orig_filter);
-                echo '<span class="crowd-tag">' . '<a href="./search/*:*/Tags:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22"><i class="fa fa-tags fa-lg">&nbsp;</i>'.$tag.'</a>' . '</span>';
+                echo '<span class="crowd-tag">' . '<a href="./search/*:*/Tags:%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="' . $tag . '"><i class="fa fa-tags fa-lg">&nbsp;</i>'.$tag.'</a>' . '</span>';
             } ?>
             <div class="crowd-info">
-                <form id="libraylabs" method="get" action="http://librarylabs.ed.ac.uk/games/gameCrowdSourcing.php" target="_blank">
+                <form id="libraylabs" method="get" action="https://librarylabs.ed.ac.uk/games/gameCrowdSourcing.php" target="_blank">
                     <input type="hidden" name="image_id" value="<?php echo $image_id ?>">
                     <input type="hidden" name="theme" value="art">
                     Add more tags at <a href="#" onclick="document.forms[1].submit();return false;" title="University of Edinburgh, Library Labs Metadata Games">Library Labs Games</a>
@@ -283,7 +283,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
         ?>
         <div class="crowd-tags">
             <div class="crowd-info">
-                <form id="libraylabs" method="get" action="http://librarylabs.ed.ac.uk/games/gameCrowdSourcing.php" target="_blank">
+                <form id="libraylabs" method="get" action="https://librarylabs.ed.ac.uk/games/gameCrowdSourcing.php" target="_blank">
                     <input type="hidden" name="image_id" value="<?php echo $image_id ?>">
                     <input type="hidden" name="theme" value="art">
                     Add tags to this image at <a href="#" onclick="document.forms[1].submit();return false;" title="University of Edinburgh, Library Labs Metadata Games">Library Labs Games</a>

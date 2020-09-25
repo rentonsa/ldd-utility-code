@@ -9,8 +9,8 @@ $config['skylight_theme'] = 'mimed';
 
 $config['skylight_fullname'] = 'MUSICAL INSTRUMENT MUSEUMS EDINBURGH';
 
-// set ga code
-if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
+// Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
+if (ENVIRONMENT == 'development') {
     $config['skylight_ga_code'] = 'UA-25737241-6';
 }
 else {
@@ -24,7 +24,13 @@ $config['skylight_oaipmhcollection'] = 'hdl_10683_14558';
 $config['skylight_oaipmhallowed'] = true;
 
 // Container ID and the field used in solr index to store this ID. Used for restricting search/browse scope.
-$config['skylight_container_id'] = '11';
+if (ENVIRONMENT == 'development') {
+	$config['skylight_container_id'] = '21f59b48-a294-4960-b926-e1f56d32d90b';
+}
+else {
+	$config['skylight_container_id'] = '11';
+}
+//$config['skylight_container_id'] = '11';
 $config['skylight_container_field'] = 'location.coll';
 $config['skylight_sitemap_type'] = 'internal';
 
@@ -110,7 +116,13 @@ $config['skylight_search_fields'] = array(
     'Accession Number' => 'dc.identifier.en'
 );
 
-$config['skylight_related_fields'] = array('Instrument' => 'dc.type.en', 'Genus' => 'dc.type.genus.en');
+// BUGFIX: Identifier added as a hack to prevent records missing either dc.type.en or dc.type.genus.en from passing *all* their solr data to the getRelatedItems function and overloading the URL
+// We used identifier, because it shouldn't change the returned results at all, following this logic:
+// 1) The search terms are quoted, so a search on the quoted identifier should only ever return the same record
+// 2) The function adds a query parameter to remove matches with the same handle (to prevent the same record showing up in its own Related Items block)
+// 3) Therefore, the two operations will cancel each other out and not return an additional result
+// Sebastian + Mike - 10th Aug 2020
+$config['skylight_related_fields'] = array('Instrument' => 'dc.type.en', 'Genus' => 'dc.type.genus.en', 'Identifier' => 'dc.identifier.en');
 
 //only by title, no date at the moment
 $config['skylight_sort_fields'] = array(

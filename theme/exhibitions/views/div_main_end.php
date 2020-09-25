@@ -2,14 +2,14 @@
 
             <div class="footer-container">
                 <ul id="footer-list-l">
-                    <div class="footer-link"><li><a href="https://www.ed.ac.uk/about/website/website-terms-conditions" alt="link to terms and conditions" title="External link to the University of Edinburgh online terms and conditions" traget="_blank">Terms &amp; 
+                    <div class="footer-link"><li><a href="https://www.ed.ac.uk/about/website/website-terms-conditions" title="External link to the University of Edinburgh online terms and conditions" target="_blank">Terms &amp;
 conditions</a></li></div>
-                    <div class="footer-link"><li><a href="https://www.ed.ac.uk/about/website/privacy" alt="link to privacy and cookies" title="External link to the University of Edinburgh online privacy and cookies policy" traget="_blank">Privacy &amp; cookies</a
+                    <div class="footer-link"><li><a href="https://www.ed.ac.uk/about/website/privacy" title="External link to the University of Edinburgh online privacy and cookies policy" target="_blank">Privacy &amp; cookies</a
 ></li></div>
-                    <div class="footer-link"><li><a href="<?php echo base_url(); ?>/accessibility" alt="link to website accessibilty" title="Link to website accessibility statement">Website accessibility</a></li></div>
+                    <div class="footer-link"><li><a href="<?php echo base_url(); ?>/accessibility" title="Link to website accessibility statement">Website accessibility</a></li></div>
                 </ul>
                 <ul id="footer-list-r">
-                    <div class="footer-link"><li><a href="https://www.myed.ed.ac.uk/" alt="link to myed login" title="External link to the University of Edinburgh Ease login page" traget="_blank"><span class="glyphicon glyphicon-log-in"></span>MyEd Login</a></li>
+                    <div class="footer-link"><li><a href="https://www.myed.ed.ac.uk/" title="External link to the University of Edinburgh Ease login page" target="_blank"><span class="glyphicon glyphicon-log-in"></span>MyEd Login</a></li>
 </div>
                 </ul>
             </div>
@@ -19,7 +19,7 @@ conditions</a></li></div>
             <script src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/js/openingtimes.js"></script>
             <!-- GOOGLE MAPS SCRIPTS -->
             <script src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/js/googlemaps.js"></script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA29rpRdgUXPQoVfAhO5KlO4cV55CMSMi0&callback=initMap" async defer></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF95rAHOZQlQ7atjmr9HC2e4M2cS-u1Gs&callback=initMap" async defer></script>
 
             <!-- SKROLLR SCRIPTS FOR PARALLAX SCROLLING FUNCTIONALITY -->
             <!-- * Must be called within page <body> tags to function -->
@@ -37,8 +37,8 @@ conditions</a></li></div>
                 });
             </script>
             <!-- OTHER PARALLAX RELATED SCRIPTS -->
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-            <script src="http://cdn.tutorialzine.com/misc/enhance/v2.js" async></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <script src="https://cdn.tutorialzine.com/misc/enhance/v2.js" async></script>
 
             <script>
                 var acc = document.getElementsByClassName("accordion");

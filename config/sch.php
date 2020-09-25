@@ -1,6 +1,7 @@
 <?php
-// set the base url and ga code
-if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
+
+// Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
+if (ENVIRONMENT == 'development') {
     $config['skylight_ga_code'] = 'UA-25737241-6';
     $config['skylight_container_id'] = '52';
 }

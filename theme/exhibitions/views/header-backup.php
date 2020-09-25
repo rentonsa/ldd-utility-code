@@ -240,7 +240,7 @@
                     </a>
                 </div>
                 <!--<div id="collection-title">
-                    <a href="http://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh Home" target="_blank"></a>
+                    <a href="https://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh Home" target="_blank"></a>
                     <a href="' . base_url() . '" class="exlogo" title="University of Edinburgh Exhibitions Home"></a>
                     <a href="' . base_url() . '" class="menulogo" title="University of Edinburgh Exhibitions Home"></a>
                 </div>-->
@@ -251,7 +251,7 @@
                                 <input type="text" name="q" value="'; 
                                 if (isset($searchbox_query)){echo urldecode($searchbox_query);}
                                 echo '" id="q" />
-                                <a id="info-gap" href="https://exhibitions.ed.ac.uk/conectando">
+                                <a id="info-gap" href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc/exhibitions/conectando">
                                     <button type="submit" id="submit_search" class="search-button">
                                         <p>Search</p>
                                     </button>
