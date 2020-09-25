@@ -114,8 +114,14 @@
     <nav class="navbar navbar-default navbar-fixed-top">
 
         <div class="col-lg-8 col-md-8 col-sm-9 hidden-xs">
+            <div class="nav-logo">
+                    <!-- WILL NEED CHANGED WHEN SWITCH TO LIVE -->
+                    <a class="nav-logo-link" href="https://test.stcecilias.ed.ac.uk">
+                        <img class="nav-logo-img" src="<?php echo base_url()?>theme/stcecilia/images/StCsNavLogo.png">
+                    </a>
+            </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <a href="./" class="home-icon"><i class="fa fa-home fa-lg"></i></a>
+            <!--<a href="./" class="home-icon"><i class="fa fa-home fa-lg"></i></a>-->
             <form class="navbar-form navbar-left" role="search" action="./redirect/" method="post">
                 <div class="input-group search-box">
                     <input id="uoe-search" type="text" class="form-control" placeholder="Search the museum collections" name="q" value="<?php if (isset($searchbox_query)) echo str_replace('"', '', urldecode($searchbox_query)); ?>" />
@@ -126,10 +132,21 @@
                     </span>
                 </div>
             </form>
+            <div class="navbar-right sch-link">
+                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
+                <a href="http://www.test.stcecilias.ed.ac.uk/visit/" title="Visit St Cecilia's Hall" target="_blank">Visit St Cecilia's Hall</a>
+                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
+            </div>
         </div>
         <div class="hidden-lg hidden-md hidden-sm col-xs-7">
+            <div class="nav-logo">
+                    <!-- WILL NEED CHANGED WHEN SWITCH TO LIVE -->
+                    <a class="nav-logo-link" href="https://test.stcecilias.ed.ac.uk">
+                        <img class="nav-logo-img" src="<?php echo base_url()?>theme/stcecilia/images/StCsNavLogo.png">
+                    </a>
+            </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <a href="./" class="home-icon"><i class="fa fa-home fa-lg"></i></a>
+            <!-- <a href="./" class="home-icon"><i class="fa fa-home fa-lg"></i></a> -->
             <form class="navbar-form navbar-left" role="search" action="./redirect/" method="post">
                 <div class="input-group search-box">
                     <input id="uoe-search-sm" type="text" class="form-control" placeholder="Search" name="q" value="<?php if (isset($searchbox_query)) echo str_replace('"', '', urldecode($searchbox_query)); ?>" />
@@ -140,22 +157,13 @@
                     </span>
                 </div>
             </form>
-        </div>
-        <div class="col-lg-4 col-md-4 hidden-sm hidden-xs">
             <div class="navbar-right sch-link">
-                <a href="http://www.stcecilias.ed.ac.uk" title="Visit St Cecilia's Hall" target="_blank">Visit St Cecilia's Hall</a>
+                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
+                <a href="http://www.test.stcecilias.ed.ac.uk/visit/" title="Visit St Cecilia's Hall" target="_blank">Visit St Cecilia's Hall</a>
+                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
             </div>
         </div>
-        <div class="hidden-lg hidden-md col-sm-3 hidden-xs">
-            <div class="navbar-right sch-link sch-link-sm">
-                <a href="http://www.stcecilias.ed.ac.uk" title="Visit St Cecilia's Hall" target="_blank">St Cecilia's Hall</a>
-            </div>
-        </div>
-        <div class="hidden-lg hidden-md hidden-sm col-xs-5">
-            <div class="navbar-right sch-link sch-link-xs">
-                <a href="http://www.stcecilias.ed.ac.uk" title="Visit St Cecilia's Hall" target="_blank">St Cecilia's Hall</a>
-            </div>
-        </div>
+        
     </nav><!-- end of header container -->
 
 

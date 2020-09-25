@@ -313,7 +313,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
 
     if(isset($solr[$tags_field])) {?>
         <div class="crowd-tags"><span class="crowd-title" title="User generated tags created through crowd sourcing games"><i class="fa fa-users fa-lg" >&nbsp;</i>Tags:</span>
-         <?php foreach($solr[$tags_field] as $tag) {
+        <?php foreach($solr[$tags_field] as $tag) {
 
              $orig_filter = urlencode($tag);
              $lower_orig_filter = strtolower($tag);
