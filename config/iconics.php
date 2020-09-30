@@ -16,7 +16,7 @@ $config['skylight_oaipmhcollection'] = 'hdl_10683_117182';
 // Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
 if (ENVIRONMENT == 'development') {
     $config['skylight_ga_code'] = 'UA-25737241-6';
-    $config['skylight_container_id'] = 'e9122b44-420c-4247-9fe7-364214db5f94';
+    $config['skylight_container_id'] = '5fe7777e-d6df-47fb-be57-5fa5db719bef';
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-9';
