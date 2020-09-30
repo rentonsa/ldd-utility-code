@@ -63,7 +63,7 @@
         <h4 class="object-h">Resources</h4>
 
         
-            <a href="http://images.is.ed.ac.uk/luna/servlet/UoEhal~2~2" target = "_blank" title = "High res images" alt = "High res images"  alt="link to high resolution images">
+            <a href="https://images.is.ed.ac.uk/luna/servlet/UoEhal~2~2" target = "_blank" title = "High res images" alt = "High res images"  alt="link to high resolution images">
                 <button class="exhibit-button" id="object-button">
                     <p>High resolution images</p>
                 </button>

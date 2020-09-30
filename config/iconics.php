@@ -13,10 +13,10 @@ $config['skylight_adminemail'] = 'lddt@mlist.is.ed.ac.uk';
 
 $config['skylight_oaipmhcollection'] = 'hdl_10683_117182';
 
-// set ga code and dspace collection id
-if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
+// Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
+if (ENVIRONMENT == 'development') {
     $config['skylight_ga_code'] = 'UA-25737241-6';
-    $config['skylight_container_id'] = '48';
+    $config['skylight_container_id'] = 'e9122b44-420c-4247-9fe7-364214db5f94';
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-9';

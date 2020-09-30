@@ -6,7 +6,6 @@
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
         <base href="<?php echo base_url() . index_page(); if (index_page() !== '') { echo '/'; } echo $this->config->item('skylight_url_prefix'); echo '/' ?>">
 
@@ -18,10 +17,9 @@
         Remove this if you use the .htaccess -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-        <title>University of Edinburgh Physics Collection</title>
-
         <meta name="description" content="">
         <meta name="author" content="">
+        <meta name="title" content="<?= str_replace('"', '&quot;', $page_title); ?>">
 
         <!-- Mobile viewport optimized: j.mp/bplateviewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -107,7 +105,7 @@
 <div id="container">
     <header>
         <div id="collection-title">
-            <a href="http://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh" target="_blank"></a>
+            <a href="https://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh" target="_blank"></a>
             <a href="<?php echo base_url(); ?>" class="physicslogo" title="School of Physics & Astronomy Image Archive"></a>
             <a href="http://www.ph.ed.ac.uk" class="menulogo" title="School of Physics & Astronomy" target="_blank"></a>
         </div>

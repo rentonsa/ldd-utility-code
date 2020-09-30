@@ -15,7 +15,7 @@
             </p>
 
             <p>
-                Library Digital Development have used <a href="https://iiif.io" alt="International Image Interoperability Framework" target="_blank">IIIF</a>
+                Library Digital Development have used <a href="https://iiif.io" title="International Image Interoperability Framework" target="_blank">IIIF</a>
                 image and presentation APIs to make Fabienne's selected images available in a digestible format.
              </p>
         </div>

@@ -131,10 +131,13 @@ if(window.chrome) {
 
 //front page hover text
 var e = document.getElementById(name^='gallery');
-e.onmouseover = function() {
-    document.getElementById('gallery-title').style.display = 'block';
-}
-e.onmouseout = function() {
-    document.getElementById('gallery-title').style.display = 'none';
+
+if(e != null) {
+    e.onmouseover = function () {
+        document.getElementById('gallery-title').style.display = 'block';
+    }
+    e.onmouseout = function () {
+        document.getElementById('gallery-title').style.display = 'none';
+    }
 }
 

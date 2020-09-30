@@ -83,7 +83,7 @@
         <h4 class="object-h" data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">Resources</h2>
         <br>
         <div data-100-bottom-top="transform: translateX(-75px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
-            <a href="http://images.is.ed.ac.uk/luna/servlet/view/search?search=Search&q=World+History" target = "_blank" title = "High res images" alt = "High res images">
+            <a href="https://images.is.ed.ac.uk/luna/servlet/view/search?search=Search&q=World+History" target = "_blank" title = "High res images" alt = "High res images">
                 <button class="exhibit-button" id="object-button" alt="link to high resolution images">
                     <p>High resolution images</p>
                 </button>
@@ -91,7 +91,7 @@
             <h3 id="object-divide">on the LUNA imaging platform</h3>
             <br>
 
-            <a href="http://images.is.ed.ac.uk/luna/servlet/s/kwl89a" target = "_blank" title = "link to high resolution online version of the full book" alt="link to online version of the full book">
+            <a href="https://images.is.ed.ac.uk/luna/servlet/s/kwl89a" target = "_blank" title = "link to high resolution online version of the full book" alt="link to online version of the full book">
                 <button class="exhibit-button" id="object-button">
                     <p>The full book</p>
                 </button>

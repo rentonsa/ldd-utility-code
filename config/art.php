@@ -9,24 +9,29 @@ $config['skylight_theme'] = 'art';
 
 $config['skylight_fullname'] = 'University of Edinburgh Art Collection';
 
-// set ga code
-if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
-    $config['skylight_ga_code'] = 'UA-25737241-6';
-}
-else {
-    $config['skylight_ga_code'] = 'UA-25737241-9';
-}
-
 $config['skylight_adminemail'] = 'is-crc@ed.ac.uk';
 
 $config['skylight_oaipmhcollection'] = 'hdl_10683_6';
 
 $config['skylight_oaipmhallowed'] = true;
 
+
+// Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
 // Container ID and the field used in solr index to store this ID. Used for restricting search/browse scope.
-$config['skylight_container_id'] = '3';
+if (ENVIRONMENT == 'development') {
+	$config['skylight_container_id'] = '55da8679-0e59-473c-9c2f-41c69448ed0a';
+	$config['skylight_ga_code'] = 'UA-25737241-6';
+}
+else {
+	$config['skylight_container_id'] = '3';
+	$config['skylight_ga_code'] = 'UA-25737241-9';
+}
+
 $config['skylight_container_field'] = 'location.coll';
 $config['skylight_sitemap_type'] = 'internal';
+
+
+
 
 $config['skylight_fields'] = array(
     'Title' => 'dc.title.en',
@@ -77,7 +82,7 @@ $config['skylight_schema_links'] = array(
 	'Period'=> 'temporalCoverage',
 	'Link'=> 'url',
 	'ImageUri'=> 'image',
-  'Tags'=> 'keywords'
+	'Tags'=> 'keywords'
 
 );
 

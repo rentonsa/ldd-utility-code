@@ -16,7 +16,8 @@ $config['skylight_oaipmhcollection'] = 'hdl_10683_4';
 $config['skylight_container_id'] = '1';
 $config['skylight_container_field'] = 'location.comm';
 
-if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
+// Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
+if (ENVIRONMENT == 'development') {
     $config['skylight_link_colls'] = array(
         3   => base_url() ."art/",
         11  => base_url() ."mimed/",
@@ -87,7 +88,10 @@ $config['skylight_fields'] = array('Title' => 'dc.title.en',
     'Score' => 'float'
 );
 
-$config['skylight_date_filters'] = array('Date' => 'dateIssued.year_sort');
+// HM 14/09/2020
+// Date filtering broken in Skylight upgrade so disabling
+//$config['skylight_date_filters'] = array('Date' => 'dateIssued.year_sort');
+$config['skylight_date_filters'] = array();
 $config['skylight_filters'] = array('Author' => 'author_filter', 'Subject' => 'subject_filter', 'Type' => 'type_filter');
 $config['skylight_filter_delimiter'] = ':';
 

@@ -124,10 +124,10 @@ figure.clickbox .curl:after {
     transform: skew(-15deg) rotate(-84deg);
 }
 
-#collapseGroup a[aria-expanded=true] .ion-plus {
+.collapseGroup a[aria-expanded=true] .ion-plus {
     display: none;
 }
-#collapseGroup a[aria-expanded=false] .ion-minus {
+.collapseGroup a[aria-expanded=false] .ion-minus {
     display: none;
 }
 

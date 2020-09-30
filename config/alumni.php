@@ -9,26 +9,22 @@ $config['skylight_url_prefix'] = 'alumni';
 
 $config['skylight_fullname'] = 'University of Edinburgh Historical Alumni';
 
-// set ga code
-if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
-    $config['skylight_ga_code'] = 'UA-25737241-6';
-}
-else {
-    $config['skylight_ga_code'] = 'UA-25737241-9';
-}
-
 $config['skylight_adminemail'] = 'is-crc@ed.ac.uk';
 
 $config['skylight_oaipmhcollection'] = 'hdl_10683_47417';
 
 $config['skylight_oaipmhallowed'] = true;
 
+
+// Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
 // Container ID and the field used in solr index to store this ID. Used for restricting search/browse scope.
-if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
-    $config['skylight_container_id'] = '17';
+if (ENVIRONMENT == 'development') {
+    $config['skylight_container_id'] = 'dcc42cf5-a713-4dc5-97e1-482a871cf1ea';
+    $config['skylight_ga_code'] = 'UA-25737241-6';
 }
 else {
     $config['skylight_container_id'] = '13';
+    $config['skylight_ga_code'] = 'UA-25737241-9';
 }
 
 $config['skylight_container_field'] = 'location.comm';
@@ -39,7 +35,7 @@ $config['skylight_fields'] = array('Name' => 'dc.contributor.author.en',
     'Bitstream'=> 'dc.format.original.en',
     'Thumbnail'=> 'dc.format.thumbnail.en',
     'Description'=>'dc.description.en',
-    'Year'=> 'dc.date.issued',
+//    'Year'=> 'dc.date.issued',
     'Birthplace' => 'dc.contributor.authorplace.en',
     'Previous School Education' => 'dc.description.schoolprev.en',
     'Matriculation Number' => 'dc.identifier.matric',
@@ -59,7 +55,7 @@ $config['skylight_fields'] = array('Name' => 'dc.contributor.author.en',
     'Thesis'=>'dc.description.thesis.en',
     'Salutation'=>'dc.contributor.authortitle.en',
     'Apprentice of Royal College of Surgeons'=>'dc.coverage.temporalarcs.en',
-    'Diplomate of Royal Colleg of Surgeons'=>'dc.coverage.temporaldrcs.en',
+    'Diplomate of Royal College of Surgeons'=>'dc.coverage.temporaldrcs.en',
     'Fellow of Royal College of Surgeons'=>'dc.coverage.temporalfrcs.en',
     'Indian Medical Service'=>'dc.coverage.temporalims.en',
     'MD (Edin)'=>'dc.coverage.temporalmdedin.en',

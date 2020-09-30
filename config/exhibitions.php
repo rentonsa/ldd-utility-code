@@ -5,14 +5,17 @@ $config['skylight_appname'] = 'exhibitions';
 // Uncomment this if you are using a url of the form http://.../art/...
 //$config['skylight_url_prefix'] = 'exhibitions';
 
-// set the base url and ga code
-if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
+// Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
+if (ENVIRONMENT == 'development') {
     $config['base_url'] = 'exhibitions';
     $config['skylight_ga_code'] = 'UA-25737241-6';
+    // Container ID and the field used in solr index to store this ID. Used for restricting search/browse scope.
+    $config['skylight_container_id'] = '8b29daa7-16dd-4217-8366-5576cce3e79f'; //why is there no uuid for 17?
 }
 else {
     $config['base_url'] = 'exhibitions';
     $config['skylight_ga_code'] = 'UA-25737241-8';
+    $config['skylight_container_id'] = '17';
 }
 
 // set the base url and ga code
@@ -29,11 +32,8 @@ $config['skylight_oaipmhallowed'] = true;
 
 $config['skylight_parallax'] = true;
 
-// Container ID and the field used in solr index to store this ID. Used for restricting search/browse scope.
-$config['skylight_container_id'] = '17';
 $config['skylight_container_field'] = 'location.coll';
 $config['skylight_sitemap_type'] = 'external';
-
 
 $config['skylight_fields'] = array('Title' => 'dc.title.en',
     'Creator' => 'dc.contributor.author.en',

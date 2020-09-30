@@ -6,8 +6,6 @@
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
     <base href="<?php echo base_url() . index_page(); if (index_page() !== '') { echo '/'; } echo $this->config->item('skylight_url_prefix'); echo '/' ?>">
 
 
@@ -22,6 +20,7 @@
     <title>University of Edinburgh Iconics</title>
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="title" content="<?= $page_title ?>">
 
     <!-- Mobile viewport optimized: j.mp/bplateviewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -102,16 +101,16 @@
             </ul>
             <ul class="menu-links">
                 <li><a href="./feedback/" title="Feedback Link" class="last">Feedback</a></li>
-                <li><a href="http://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery/crc/projects" title="CRC Projects Link" target="_blank">Projects</a></li>
+                <li><a href="https://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery/crc/projects" title="CRC Projects Link" target="_blank">Projects</a></li>
                 <li><a href="http://libraryblogs.is.ed.ac.uk/" title="Library and University Collections Blog" target="_blank">Blog</a></li>
-                <li><a href="http://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery/crc" title="Centre for Research Collections Link" target="_blank">CRC</a></li>
+                <li><a href="https://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery/crc" title="Centre for Research Collections Link" target="_blank">CRC</a></li>
                 <li><a href="./about/" title="About this site">About</a></li>
                 <li><a href="./" title="University Collections Home">Home</a></li>
             </ul>
         </nav>
         <div class="clearfix"></div>
         <div id="collection-title">
-            <a href="http://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh Home" target="_blank"></a>
+            <a href="https://www.ed.ac.uk" class="uoelogo" title="The University of Edinburgh Home" target="_blank"></a>
             <a href="<?php echo base_url(); ?>iconics" class="iconicslogo" title="University of Edinburgh Collections Home"></a>
         </div>
         <div id="collection-search">

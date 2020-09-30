@@ -9,22 +9,23 @@ $config['skylight_url_prefix'] = 'calendars';
 
 $config['skylight_fullname'] = 'University of Edinburgh Calendars';
 
-// set ga code
-if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
-    $config['skylight_ga_code'] = 'UA-25737241-6';
-}
-else {
-    $config['skylight_ga_code'] = 'UA-25737241-9';
-}
-
 $config['skylight_adminemail'] = 'is-crc@ed.ac.uk';
 
 $config['skylight_oaipmhcollection'] = 'hdl_10683_19396';
 
 $config['skylight_oaipmhallowed'] = true;
 
+// Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
 // Container ID and the field used in solr index to store this ID. Used for restricting search/browse scope.
-$config['skylight_container_id'] = '14';
+if (ENVIRONMENT == 'development') {
+	$config['skylight_container_id'] = 'dde7662b-e357-4a4a-8c14-4d08b858bfe9';
+    $config['skylight_ga_code'] = 'UA-25737241-6';
+}
+else {
+	$config['skylight_container_id'] = '14';
+    $config['skylight_ga_code'] = 'UA-25737241-9';
+}
+
 $config['skylight_container_field'] = 'location.coll';
 $config['skylight_sitemap_type'] = 'internal';
 
@@ -57,7 +58,10 @@ $config['skylight_schema_links'] = array(
       'Shelf Mark'=>'identifier'
 );
 
-$config['skylight_date_filters'] = array('Date' => 'dateIssued.year_sort');
+// HM 14/09/2020
+// Date filtering broken in Skylight upgrade so disabling
+//$config['skylight_date_filters'] = array('Date' => 'dateIssued.year_sort');
+$config['skylight_date_filters'] = array();
 $config['skylight_filters'] = array('Subject' => 'subject_filter');
 
 $config['skylight_filter_delimiter'] = ':';

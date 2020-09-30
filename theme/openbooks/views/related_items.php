@@ -20,7 +20,7 @@
                 ?>
 
                 <li<?php if($index == 0) { echo ' class="first"'; } elseif($index == sizeof($related_items) - 1) { echo ' class="last"'; } ?>>
-                    <a class="related-record" href="./record/<?php echo $doc['id']?>"><?php echo $doc[$title_field][0]; ?></a>
+                    <a class="related-record" href="./record/<?php echo $doc['id']?>" title="<?php echo $doc[$title_field][0]; ?>"><?php echo $doc[$title_field][0]; ?></a>
 
                     <div class="tags">
                         <?php if(array_key_exists($author_field,$doc)) { ?>
@@ -34,7 +34,7 @@
                                 $lower_orig_filter = strtolower($author);
                                 $lower_orig_filter = urlencode($lower_orig_filter);
 
-                                echo '<a href="./search/*:*/Author:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$author.'</a>';
+                                echo '<a href="./search/*:*/Author:%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22">'.$author.'</a>';
                                 $num_authors++;
                                 if($num_authors < sizeof($doc[$author_field])) {
                                     echo ' ';

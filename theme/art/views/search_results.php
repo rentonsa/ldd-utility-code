@@ -32,7 +32,7 @@ else {
                 if($label == 'Relevancy')
                 {
                     ?>
-                    <em><a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc'?>"><?php echo $label ?></a></em>
+                    <em><a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc'?>" title="<?php echo $label ?>"><?php echo $label ?></a></em>
                     <?php
                 }
                 else {
@@ -40,11 +40,11 @@ else {
 
                     <em><?php echo $label ?></em>
                 <?php if($label != "Date") { ?>
-                        <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>">A-Z</a> |
-                <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>">Z-A</a>
+                        <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>" title="Sort by alphabetical order">A-Z</a> |
+                <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>" title="Sort by reverse alphabetical order">Z-A</a>
                     <?php } else { ?>
-                        <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>">newest</a> |
-                <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>">oldest</a>
+                        <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+desc' ?>" title="Sort by newest">newest</a> |
+                <a href="<?php echo $base_search.$base_parameters.$sort.$field.'+asc' ?>" title="Sort by oldest">oldest</a>
                     <?php } } } ?>
 
         </span>
@@ -80,7 +80,7 @@ else {
                             $orig_filter = urlencode($author);
                             $lower_orig_filter = strtolower($author);
                             $lower_orig_filter = urlencode($lower_orig_filter);
-                            echo '<a class="artist" href="./search/*:*/Artist:%22'.$lower_orig_filter.'%7C%7C%7C'.$orig_filter.'%22">'.$author.'</a>';
+                            echo '<a class="artist" href="./search/*:*/Artist:%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$author.'">'.$author.'</a>';
                             $num_authors++;
                             if($num_authors < sizeof($doc[$author_field])) {
                                 echo ' ';
@@ -90,13 +90,13 @@ else {
                     <?php } ?>
 
 
-                    <h3><a href="./record/<?php echo $doc['id']?>?highlight=<?php echo $query ?>"><?php echo $doc[$title_field][0]; ?>
+                    <h3><a href="./record/<?php echo $doc['id']?>?highlight=<?php echo $query ?>"><?php echo isset($doc[$title_field][0]) ? $doc[$title_field][0] : 'Untitled'; ?>
                             <?php if(array_key_exists($date_field, $doc)) { ?>
                                 <?php
                                 echo '(' . $doc[$date_field][0] . ')';
                             }
                             elseif(array_key_exists('dateIssuedyear', $doc)) {
-                                echo '( ' . $doc['dateIssuedyear'][0] . ')';
+                                echo '(' . $doc['dateIssuedyear'][0] . ')';
                             }
                             ?></a></h3>
 
@@ -143,7 +143,7 @@ else {
                                 $imageUri = str_replace('http://', 'https://', $imageUri);
                                 $iiifurlsmall = str_replace('/full/0/', '/!250,250/0/', $imageUri);
                                 $thumbnailLink[$numThumbnails]  = '<a title = "' . $doc[$title_field][0] . '" class="fancybox" rel="group" href="' . $imageUri . '"> ';
-                                $thumbnailLink[$numThumbnails] .= '<img src = "' . $iiifurlsmall . '" class="record-thumbnail-search" title="' . $doc[$title_field][0] . '" /></a>';
+                                $thumbnailLink[$numThumbnails] .= '<img src = "' . $iiifurlsmall . '" class="record-thumbnail-search" alt="' . $doc[$title_field][0] . '" /></a>';
                                 $numThumbnails++;
                                 $imageset = true;
                             }

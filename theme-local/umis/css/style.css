@@ -295,7 +295,7 @@ body {
   padding: 10px 10px 0px 0px;
 }
 .footer a {
-  color: rgb(255, 255, 239);
+  color: rgb(41, 65, 133);
 }
 .footer p {
   clear: both;
@@ -311,9 +311,7 @@ body {
 .footer li {
   list-style: none;
 }
-.footer a {
-  color: rgb(255, 255, 239);
-}
+
 .footer img {
   line-height: 100%;
 }
@@ -335,44 +333,45 @@ body {
   background-size: cover;
 }
 .parallax.img0 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~99453~100009/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-stirling-j-d-fergusson-rhythm.jpg/full/full/0/default.jpg");
 }
 .parallax.img1 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~99665~100043/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-visit-standrews.jpg/full/full/0/default.jpg");
 }
 .parallax.img2 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~100164~100060/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-dundee-glass-model-of-starfish-larva.jpg/full/full/0/default.jpg");
 }
 .parallax.img3 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~99431~100007/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-visit-glasgow.jpg/full/full/0/default.jpg");
 }
 .parallax.img4 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~100128~100045/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-gsa-tote.jpg/full/full/0/default.jpg");
 }
 .parallax.img5 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~100175~100067/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-hwu-paisley-shawl.jpg/full/full/0/default.jpg");
 }
 .parallax.img6 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~100007~100064/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-rgu-exit-music.jpg/full/full/0/default.jpg");
 }
 .parallax.img7 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEart~2~2~61475~104997/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-gsa-apron.jpg/full/full/0/default.jpg");
 }
 .parallax.img8 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~99530~100017/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-stirling-stirling-piano.jpg/full/full/0/default.jpg");
 }
 .parallax.img9 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~99751~100050/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-stirling-hermes-and-athena.jpg/full/full/0/default.jpg");
 }
 .parallax.img10 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~99695~100058/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-edinburgh-horn.jpg/full/full/0/default.jpg");
 }
 .parallax.img11 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~99297~100001/full/full/0/default.jpg");
-}
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-dundee-glass-model-of-starfish-larva.jpg/full/full/0/default.jpg");
+ }
 .parallax.img12 {
-  background-image: url("https://images.is.ed.ac.uk/luna/servlet/iiif/UoEhal~2~2~99519~100018/full/full/0/default.jpg");
+  background-image: url("https://cantaloupe.is.ed.ac.uk/iiif/2/umis-hwu-kaftan.jpg/full/full/0/default.jpg");
 }
+
 .parallax.active {
   opacity: 1;
   -webkit-transition: all 1.4s ease-in-out;
@@ -395,20 +394,20 @@ body {
 @media screen and (min-width: 768px) {
 
   .main-categories {
-    margin-top: calc(75vh - 50px);
+    margin-top: calc(40vh - 50px);
     /*width: 80vw;*/
     width: 100vw;
     padding: 0px;
   }
   .main-categories a {
     padding-left: 0px;
-    width: 7.69%;
-    height: 25vh;
+    width: 25%;
+    height: 10vh;
     /*border-right: 1px solid rgba(240, 240, 240, 0.3);*/
     border-bottom: 5px solid rgb(41, 65, 133);
-    color: red;
+    color: rgb(41, 65, 133);
     background: rgba(255, 255, 239, 0.8);
-    font-size: 12px;
+    font-size: 15px;
     word-wrap: break-word;
     text-align: center;
     line-height: 25vh;
@@ -841,7 +840,7 @@ nav #overflow li a:hover {
     height: calc(100vh - 135px);
   }
   .institution-logo {
-    background-color: rgb(41, 65, 133);
+    background-color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px;
   }
@@ -854,7 +853,7 @@ nav #overflow li a:hover {
   .record-info .description .field {
     width: 100%;
     display: block;
-    color: rgb(230, 230, 230);
+    color: rgb(41, 65, 133);
     font-size: 0.9em;
     font-weight: bold;
   }
@@ -986,7 +985,7 @@ nav #overflow li a:hover {
     margin-bottom: 15px;
   }
   .institution-logo {
-    background-color: rgb(41, 65, 133);
+    background-color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px;
   }
@@ -1215,5 +1214,96 @@ nav #overflow li a:hover {
   text-align: center;
   text-decoration: none;
   background: rgb(255, 255, 239);
+  color: rgb(41, 65, 133);
+}
+
+#visit-dundee-image
+ {
+  position: relative;
+ }
+#visit-dundee-image::before {
+  content: "";
+  background-image: url(../images/umis-visit-dundee-triple.png);
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+
+#intro
+{
+  background: rgb(255, 255, 239);
+  width:100%;
+  color: rgb(41, 65, 133);
+  text-align: center;
+  font-size: 16pt;
+  font-weight: 800;
+  height:50px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#warning
+{
+  background: rgb(255, 255, 239);
+  width:100%;
+  color: red;
+  text-align: center;
+  padding-bottom: 20px;
+  height:50px;
+
+}
+
+
+.right-image
+{
+  float:right;
+}
+
+.right-wider-image
+{
+  float:right;
+  width: 310px;
+}
+
+.left-image
+{
+  float:left;
+}
+
+figure
+{
+  padding-top: 3px;
+  padding-bottom:3px;
+  width: 250px;
+  /*border-style: solid;
+  border-width: 1px;
+  border-color: #666666;*/
+  text-align: center;
+}
+
+figure img
+{
+  border-style: solid;
+  border-width: 3px;
+  border-color: #666666;
+}
+.pick-images
+{
+  padding-top:20px;
+  float: left;
+}
+
+.pick-image
+{
+  padding-left: 8px;
+}
+
+figcaption{
+  font-size: larger;
   color: rgb(41, 65, 133);
 }

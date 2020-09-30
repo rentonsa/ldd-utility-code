@@ -57,13 +57,13 @@
             </li>
             <li><a href="https://www.flickr.com/photos/secretlondon/3598534263" target="_blank">Elections</a> CC BY-NC 2.0 marian_ey
             </li>
-            <li><a href="http://images.is.ed.ac.uk/luna/servlet/s/a6p4ip" target="_blank">Gender</a>
+            <li><a href="https://images.is.ed.ac.uk/luna/servlet/s/a6p4ip" target="_blank">Gender</a>
                 &copy; The University of Edinburgh
             </li>
-            <li><a href="http://images.is.ed.ac.uk/luna/servlet/s/p30b33" target="_blank">Health</a>
+            <li><a href="https://images.is.ed.ac.uk/luna/servlet/s/p30b33" target="_blank">Health</a>
                 &copy; The University of Edinburgh
             </li>
-            <li><a href="http://images.is.ed.ac.uk/luna/servlet/s/x924zp" target="_blank">Islands</a>
+            <li><a href="https://images.is.ed.ac.uk/luna/servlet/s/x924zp" target="_blank">Islands</a>
                 &copy; The University of Edinburgh
             </li>
             <li><a href="http://collections.ed.ac.uk/calendars/record/22061" target="_blank"">Local Government</a>
@@ -73,7 +73,7 @@
             </li>
             <li><a href="https://www.flickr.com/photos/conner395/4917919154" target="_blank">Scottish Office</a> CC BY 2.0 Dave Conner
             </li>
-            <li><a href="http://images.is.ed.ac.uk/luna/servlet/s/2ot58r" target="_blank">Religion</a> &copy; The University of Edinburgh
+            <li><a href="https://images.is.ed.ac.uk/luna/servlet/s/2ot58r" target="_blank">Religion</a> &copy; The University of Edinburgh
             </li>
             </ul>
         </p>

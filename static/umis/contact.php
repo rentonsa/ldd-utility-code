@@ -1,15 +1,35 @@
 <div class="content">
     <div class="about-container">
 
-        <div class="information-container col-xs-12 col-md-8 col-md-offset-2">
-            <b class="big-title">Contact</b>
-            <li>
-                <ul>Generic contact address (to be set up – potentially enquiries@UMIS.co.uk)</ul>
-                <ul>Enquiry form to link to email address</ul>
-                <ul>Contact details for each of the museums (as outlined earlier, to include main contact, educational/schools contact and map & directions if possible).
-                    Also, link to each of the University Museums’ websites.</ul>
-                <ul>Icons as links to both our Facebook and Twitter profiles</ul>
-            </li>
+        <div class="feedback_form">
+
+            <h1>Feedback</h1>
+
+            <p>Please contact us with your suggestions or questions below.</p>
+
+            <?php echo validation_errors(); ?>
+
+           <!-- <script type="text/javascript">
+                var RecaptchaOptions = {
+                    theme : 'clean'
+                };
+            </script>-->
+
+            <?php //echo form_open($form_prefix.'feedback'); ?>
+            <label for="name" id="labelName">Name:</label> <input type="text" id="name" name="name" size="50" value="<?php echo set_value('name'); ?>" /><br />
+            <label for="email" id="labelEmail">Email:</label> <input type="text" id="email" name="email" size="50" value="<?php echo set_value('email'); ?>" /><br />
+            <label for="feedback" id="labelFeedback">Message:</label> <textarea type="text" id="feedback" name="feedback" rows="15" cols="80" /><?php echo set_value('feedback'); ?></textarea><br />
+
+            <p>&nbsp;</p>
+
+            <!--<p>Please enter the following verification words into the box:</p>--> <?php
+            //echo recaptcha_get_html($recaptcha_key_public);
+            ?>
+
+            <p>&nbsp;</p>
+
+            <input type="submit" class="btn" value="Send" />
+            </form>
         </div>
     </div>
 </div>

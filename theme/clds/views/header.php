@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="true">
 
     <meta name="description" content="The University of Edinburgh Collections">
@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/css/ie10-viewport-bug-workaround.css" >
     <link rel="stylesheet" href="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/css/socialicon.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/css/secondmenu.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/css/slide-text.css">
+    <!--<link rel="stylesheet" href="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/css/slide-text.css">-->
     <link rel="stylesheet" href="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/css/search.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/css/locate.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/css/picgallery.css">
@@ -58,13 +58,15 @@
         })(window,document,'script','<?php echo base_url()?>assets/google-analytics/analytics.js','ga');
         ga('create', '<?php echo $ga_code ?>', 'auto');
         ga('send', 'pageview');
-    </script>
-    <!-- End Google Analytics -->
-    <!-- global options -->
-    <script>
-        flowplayer.conf = {
-            analytics: "<?php echo $ga_code ?>"
-        };
+
+    // End Google Analytics
+    // global options
+
+        if(typeof flowplayer !== 'undefined') {
+            flowplayer.conf = {
+                analytics: "<?php echo $ga_code ?>"
+            };
+        }
     </script>
 
     <?php if (isset($solr)) { ?><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
@@ -92,7 +94,7 @@
     <div class="container">
         <div class="navbar-header">
             <div id="collection-title">
-                <a href="http://www.ed.ac.uk" class="navbar-brand logo" title="The University of Edinburgh Home" target="_blank"><img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/UoELogo.gif" /></a>
+                <a href="https://www.ed.ac.uk" class="navbar-brand logo" title="The University of Edinburgh Home" target="_blank"><img src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/UoELogo.gif" alt="The University of Edinburgh Logo"/></a>
                 <div id="navbar-word">
                     <a href="<?php echo base_url(); ?>" class="collectionslogo" title="University of Edinburgh Collections Home"></a>
                 </div>
@@ -109,14 +111,14 @@
         <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav" id="navbar-middle">
                 <li><a href="#" title="University of Edinburgh Collections Home">HOME</a></li>
-                <li><a href="http://collections.ed.ac.uk/about" target="_blank" title="About Edinburgh University Collections">ABOUT</a></li>
-                <li><a href="http://collections.ed.ac.uk/feedback/" target="_blank" title="Provide feedback">FEEDBACK</a></li>
+                <li><a href="https://collections.ed.ac.uk/about" target="_blank" title="About Edinburgh University Collections">ABOUT</a></li>
+                <li><a href="https://collections.ed.ac.uk/feedback/" target="_blank" title="Provide feedback">FEEDBACK</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right hidden-xs" id="navbar-right">
-                <a href="https://www.facebook.com/crc.edinburgh" target="_blank" title="CRC Facebook Page"><i id="social-fb" class="fa fa-facebook-square fa-3x social" aria-hidden="true"></i></a>
-                <a href="https://twitter.com/CRC_EdUni" target="_blank" title="CRC Twitter Feed"><i id="social-tw" class="fa fa-twitter-square fa-3x social" aria-hidden="true"></i></a>
-                <a href="https://www.flickr.com/photos/crcedinburgh" target="_blank" title="CRC Flickr Page"><i id="social-fr" class="fa fa-flickr fa-3x social" aria-hidden="true"></i></a>
-                <a href="http://libraryblogs.is.ed.ac.uk/" target="_blank" title="University of Edinburgh Library Blogs"><i id="social-wp" class="fa fa-wordpress fa-3x social" aria-hidden="true"></i></a>
+                <li><a href="https://www.facebook.com/crc.edinburgh" target="_blank" title="CRC Facebook Page"><i id="social-fb" class="fa fa-facebook-square fa-3x social" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/CRC_EdUni" target="_blank" title="CRC Twitter Feed"><i id="social-tw" class="fa fa-twitter-square fa-3x social" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.flickr.com/photos/crcedinburgh" target="_blank" title="CRC Flickr Page"><i id="social-fr" class="fa fa-flickr fa-3x social" aria-hidden="true"></i></a></li>
+                <li><a href="http://libraryblogs.is.ed.ac.uk/" target="_blank" title="University of Edinburgh Library Blogs"><i id="social-wp" class="fa fa-wordpress fa-3x social" aria-hidden="true"></i></a></li>
             </ul>
         </div>
     </div>
@@ -125,17 +127,17 @@
 <div class="tab-heading">
     <div class="container">
         <ul class="cldmenu" >
-            <li class="current" ><a href="http://collections.ed.ac.uk/search/*/Type:%22archives%7C%7C%7CArchives%22/Header:%22archives%22?sort_by=cld.weighting_sort+desc,dc.title_sort+asc" data-hover="ARCHIVES" title="Archive and Manuscript Collections">ARCHIVES</a></li>
-            <li><a href="http://collections.ed.ac.uk/search/*/Type:%22rare+books|||Rare+Books%22/Header:%22rarebooks%22?sort_by=cld.weighting_sort+desc,dc.title_sort+asc" data-hover="RARE BOOKS" title="Rare Book Collections">RARE BOOKS</a></li>
-            <li><a href="http://collections.ed.ac.uk/search/*/Type:%22mimed%7C%7C%7CMIMEd%22/Header:%22mimed%22?sort_by=cld.weighting_sort+desc,dc.title_sort+asc" data-hover="MUSICAL INSTRUMENTS" title="Musical Instrument Collections">MUSICAL INSTRUMENTS</a></li>
-            <li><a href="http://collections.ed.ac.uk/search/*/Type:%22art%7C%7C%7CArt%22/Header:%22art%22?sort_by=cld.weighting_sort+desc,dc.title_sort+asc" data-hover="ART" title="Art Collections">ART</a></li>
-            <li><a href="http://collections.ed.ac.uk/search/*/Type:%22museums%7C%7C%7CMuseums%22/Header:%22museums%22?sort_by=cld.weighting_sort+desc,dc.title_sort+asc" data-hover="MUSEUMS" title="Museums">MUSEUMS</a></li>
+            <li class="current" ><a href="https://collections.ed.ac.uk/search/*/Type:%22archives+%7C%7C%7C+Archives%22/Header:%22archives%22?sort_by=cld.weighting_sort+desc,dc.title_sort+asc" data-hover="ARCHIVES" title="Archive and Manuscript Collections">ARCHIVES</a></li>
+            <li><a href="https://collections.ed.ac.uk/search/*/Type:%22rare+books+%7C%7C%7C+Rare+Books%22/Header:%22rarebooks%22?sort_by=cld.weighting_sort+desc,dc.title_sort+asc" data-hover="RARE BOOKS" title="Rare Book Collections">RARE BOOKS</a></li>
+            <li><a href="https://collections.ed.ac.uk/search/*/Type:%22mimed+%7C%7C%7C+MIMEd%22/Header:%22mimed%22?sort_by=cld.weighting_sort+desc,dc.title_sort+asc" data-hover="MUSICAL INSTRUMENTS" title="Musical Instrument Collections">MUSICAL INSTRUMENTS</a></li>
+            <li><a href="https://collections.ed.ac.uk/search/*/Type:%22art+%7C%7C%7C+Art%22/Header:%22art%22?sort_by=cld.weighting_sort+desc,dc.title_sort+asc" data-hover="ART" title="Art Collections">ART</a></li>
+            <li><a href="https://collections.ed.ac.uk/search/*/Type:%22museums+%7C%7C%7C+Museums%22/Header:%22museums%22?sort_by=cld.weighting_sort+desc,dc.title_sort+asc" data-hover="MUSEUMS" title="Museums">MUSEUMS</a></li>
         </ul>
     </div>
 </div>
 <div class="tab-heading">
     <div class="container">
-        <!--h2 class="tab-h2"><a class="address" href="http://collections.ed.ac.uk/" target="_blank">COLLECTIONS.ED.AC.UK</a></h2-->
+        <!--h2 class="tab-h2"><a class="address" href="https://collections.ed.ac.uk/" target="_blank">COLLECTIONS.ED.AC.UK</a></h2-->
         <p class="tab-p">The University of Edinburgh's rare and unique collections catalogue online.</p>
         <div class="form-group hidden-xs">
             <form action="./redirect/" method="post">
