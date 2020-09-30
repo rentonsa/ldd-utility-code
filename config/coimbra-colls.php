@@ -3,7 +3,7 @@
 // Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
 if (ENVIRONMENT == 'development') {
     $config['skylight_ga_code'] = 'UA-25737241-6';
-    $config['skylight_container_id'] = 'd5722bba-2411-4efa-8f94-79598d98c519';
+    $config['skylight_container_id'] = 'ff66d5b2-78da-4ab7-9f6f-b2d0c17d55ad';
     $config['skylight_image_server'] = 'https://test.cantaloupe.is.ed.ac.uk';
 }
 else {

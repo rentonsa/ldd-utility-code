@@ -7,7 +7,7 @@ $config['skylight_appname'] = 'jlss';
 
 // Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
 if (ENVIRONMENT == 'development') {
-    $config['skylight_container_id'] = 'e78a064c-8d18-4e96-a160-f4e58a58cb39';
+    $config['skylight_container_id'] = '6d02c71d-c4f3-4385-a963-26186e66d78b';
     $config['skylight_image_server'] = 'https://test.cantaloupe.is.ed.ac.uk';
     $config['base_url'] = 'https://test.sjac-collection.is.ed.ac.uk/';
 }

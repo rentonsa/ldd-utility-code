@@ -10,7 +10,7 @@ if (ENVIRONMENT == 'development') {
     $config['base_url'] = 'exhibitions';
     $config['skylight_ga_code'] = 'UA-25737241-6';
     // Container ID and the field used in solr index to store this ID. Used for restricting search/browse scope.
-    $config['skylight_container_id'] = '8b29daa7-16dd-4217-8366-5576cce3e79f'; //why is there no uuid for 17?
+    $config['skylight_container_id'] = 'e6941b59-681c-432d-a461-8cb55d46358b'; //why is there no uuid for 17?
 }
 else {
     $config['base_url'] = 'exhibitions';
