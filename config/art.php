@@ -19,11 +19,11 @@ $config['skylight_oaipmhallowed'] = true;
 // Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
 // Container ID and the field used in solr index to store this ID. Used for restricting search/browse scope.
 if (ENVIRONMENT == 'development') {
-	$config['skylight_container_id'] = '75dce59d-3693-4450-b062-4b0e6b158584';
+	$config['skylight_container_id'] = '55da8679-0e59-473c-9c2f-41c69448ed0a';
 	$config['skylight_ga_code'] = 'UA-25737241-6';
 }
 else {
-	$config['skylight_container_id'] = '3';
+	$config['skylight_container_id'] = '75dce59d-3693-4450-b062-4b0e6b158584';
 	$config['skylight_ga_code'] = 'UA-25737241-9';
 }
 

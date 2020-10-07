@@ -4,12 +4,12 @@
 if (ENVIRONMENT == 'development') {
     $config['base_url'] = 'http://test.stuartsound.is.ed.ac.uk/';
     $config['skylight_ga_code'] = 'UA-25737241-6';
-    $config['skylight_container_id'] = '6531be93-cc30-4c14-bda5-4f602202c307';
+    $config['skylight_container_id'] = '67574747-524b-493f-9dc0-d33934387a3d';
 }
 else {
     $config['base_url'] = 'http://www.stuartsound.is.ed.ac.uk/';
     $config['skylight_ga_code'] = 'UA-25737241-6';
-    $config['skylight_container_id'] = '35';
+    $config['skylight_container_id'] = '6531be93-cc30-4c14-bda5-4f602202c307';
 }
 
 $config['skylight_appname'] = 'piccolo';

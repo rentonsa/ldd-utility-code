@@ -7,15 +7,15 @@ $config['skylight_url_prefix'] = 'guardbook';
 // set the base url and ga code
 if (strpos($_SERVER['HTTP_HOST'], "localhost") !== false) {
     $config['skylight_ga_code'] = 'UA-25737241-6';
-    $config['skylight_container_id'] = '7525d19f-cde5-4987-95d1-004c2a940aa6';
+    $config['skylight_container_id'] = 'f0c7bb72-ab20-4693-be0d-43918440a8cd';
 }
 else if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
     $config['skylight_ga_code'] = 'UA-25737241-6';
-    $config['skylight_container_id'] = '7525d19f-cde5-4987-95d1-004c2a940aa6';
+    $config['skylight_container_id'] = 'f0c7bb72-ab20-4693-be0d-43918440a8cd';
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-9';
-    $config['skylight_container_id'] = '51'; //Pick the ID from the else statement (51) with the uuid from (51) and put that uuid in the if statement
+    $config['skylight_container_id'] = '7525d19f-cde5-4987-95d1-004c2a940aa6'; //Pick the ID from the else statement (51) with the uuid from (51) and put that uuid in the if statement
 }
 
 // The platform and version of your repository.
