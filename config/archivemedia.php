@@ -5,6 +5,7 @@ $config['skylight_appname'] = 'archivemedia';
 // Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
 if (ENVIRONMENT == 'development') {
     $config['skylight_ga_code'] = 'UA-25737241-6';
+    $config['skylight_container_id'] = '656322c0-3cfd-453f-8d2b-1aa94bc0b082';
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-23';
