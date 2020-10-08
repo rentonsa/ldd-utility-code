@@ -1377,11 +1377,6 @@ div[id^="openseadragon"] {
 
 
 @media only screen and (max-width : 1800px) {
-
-    div[id^="openseadragon"] {
-        height: 1000px;
-    }
-
     div.grid-item[id^="gallery"]
     {
         width: 32%;
@@ -1391,10 +1386,6 @@ div[id^="openseadragon"] {
 }
 
 @media only screen and (max-width : 1200px) {
-
-    div[id^="openseadragon"] {
-        height: 1000px;
-    }
 
     div.grid-item[id^="gallery"]
     {
@@ -1406,10 +1397,6 @@ div[id^="openseadragon"] {
 
 @media only screen and (max-width : 979px) {
 
-    div[id^="openseadragon"] {
-        height: 800px;
-    }
-
     div.grid-item[id^="gallery"]
     {
         width: 50%;
@@ -1419,10 +1406,6 @@ div[id^="openseadragon"] {
 }
 
 @media only screen and (max-width : 767px) {
-
-    div[id^="openseadragon"] {
-        height: 600px;
-    }
 
     div.grid-item[id^="gallery"]
     {
