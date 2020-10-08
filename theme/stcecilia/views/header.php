@@ -122,7 +122,7 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <!--<a href="./" class="home-icon"><i class="fa fa-home fa-lg"></i></a>-->
-            <form class="navbar-form navbar-left" role="search" action="./redirect/" method="post">
+            <form id="nav-cont" class="navbar-form navbar-left" role="search" action="./redirect/" method="post">
                 <div class="input-group search-box">
                     <input id="uoe-search" type="text" class="form-control" placeholder="Search the museum collections" name="q" value="<?php if (isset($searchbox_query)) echo str_replace('"', '', urldecode($searchbox_query)); ?>" />
                     <span class="input-group-btn">
@@ -139,6 +139,11 @@
             </div>
             <div class="navbar-right sch-link" id="smol-visit">
                 <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
+                <a href="http://www.test.stcecilias.ed.ac.uk/visit/" title="Visit St Cecilia's Hall" target="_blank">Visit St Cecilia's</a>
+                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
+            </div>
+            <div class="navbar-right sch-link" id="xtra-smol-visit">
+                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
                 <a href="http://www.test.stcecilias.ed.ac.uk/visit/" title="Visit St Cecilia's Hall" target="_blank">Visit Us</a>
                 <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
             </div>
@@ -152,7 +157,7 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <!-- <a href="./" class="home-icon"><i class="fa fa-home fa-lg"></i></a> -->
-            <form class="navbar-form navbar-left" role="search" action="./redirect/" method="post">
+            <form id="nav-cont" class="navbar-form navbar-left" role="search" action="./redirect/" method="post">
                 <div class="input-group search-box">
                     <input id="uoe-search-sm" type="text" class="form-control" placeholder="Search" name="q" value="<?php if (isset($searchbox_query)) echo str_replace('"', '', urldecode($searchbox_query)); ?>" />
                     <span class="input-group-btn">
@@ -165,17 +170,34 @@
             <div class="navbar-right sch-link" id="full-visit">
                 <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
                 <a href="http://www.test.stcecilias.ed.ac.uk/visit/" title="Visit St Cecilia's Hall" target="_blank">Visit St Cecilia's Hall</a>
-                <a id="smol-visit" href="http://www.test.stcecilias.ed.ac.uk/visit/" title="Visit St Cecilia's Hall" target="_blank">Visit</a>
                 <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
             </div>
             <div class="navbar-right sch-link" id="smol-visit">
                 <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
-                <a href="http://www.test.stcecilias.ed.ac.uk/visit/" title="Visit St Cecilia's Hall" target="_blank">Visit</a>
+                <a href="http://www.test.stcecilias.ed.ac.uk/visit/" title="Visit St Cecilia's Hall" target="_blank">Visit St Cecilia's</a>
+                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
+            </div>
+            <div class="navbar-right sch-link" id="xtra-smol-visit">
+                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
+                <a href="http://www.test.stcecilias.ed.ac.uk/visit/" title="Visit St Cecilia's Hall" target="_blank">Visit Us</a>
                 <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
             </div>
         </div>
         
     </nav><!-- end of header container -->
+
+<!-- SEARCH BAR FOR MOBILE/SMALL SCREENS -->
+<form id="body-cont" class="navbar-form navbar-left" role="search" action="./redirect/" method="post">
+    <div class="input-group search-box">
+        <input id="uoe-search" type="text" class="form-control" placeholder="Search the museum collections" name="q" value="<?php if (isset($searchbox_query)) echo str_replace('"', '', urldecode($searchbox_query)); ?>" />
+        <span class="input-group-btn">
+            <button type="submit" class="btn btn-default" name="submit_search" value="Search" id="submit_search1">
+                <i class="glyphicon glyphicon-search"></i>&nbsp;Search
+            </button>
+        </span>
+    </div>
+</form>
+<!-- SEARCH BAR FOR MOBILE/SMALL SCREENS END -->
 
 
 
