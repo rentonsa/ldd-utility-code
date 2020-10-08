@@ -36,13 +36,20 @@
                             foreach ($doc[$bitstream_field] as $bitstream)
                             {
                                 $b_segments = explode("##", $bitstream);
-                                $b_filename = $b_segments[1];
+                                //SR urlencode- lots of filenames with spaces etc
+                                $b_filename = urlencode($b_segments[1]);
+                          
                                 $b_seq = $b_segments[4];
                                 $imageformat = false;
                                 if((strpos($b_filename, ".jpg") > 0) || (strpos($b_filename, ".JPG") > 0)) {
+                                    
+                                    
+
                                     $imageformat = true;
 
                                     $bitstream_array[$b_seq] = $bitstream;
+                                 
+
 
                                     if ($started) {
                                         if ($b_seq < $min_seq) {
@@ -63,28 +70,33 @@
                                 echo $thumbnailLink;
                             }
 
+
                             // if there is a thumbnail and a bitstream
                             if(isset($min_seq) && count($bitstream_array) > 0) {
+                               
                                 // get all the information
                                 $b_segments = explode("##", $bitstream_array[$min_seq]);
-                                $b_filename = $b_segments[1];
+                                //SR urlencode- lots of filenames with spaces etc
+                                $b_filename = urlencode($b_segments[1]);
                                 $b_handle = $b_segments[3];
                                 $b_seq = $b_segments[4];
                                 $b_handle_id = preg_replace('/^.*\//', '',$b_handle);
                                 $b_uri = './record/'.$b_handle_id.'/'.$b_seq.'/'.$b_filename;
+                               
                                 $thumbnailLink = "";
 
                                 if(isset($doc[$thumbnail_field])) {
                                     foreach ($doc[$thumbnail_field] as $thumbnail) {
 
                                         $t_segments = explode("##", $thumbnail);
-                                        $t_filename = $t_segments[1];
+                                        $t_filename = urlencode($t_segments[1]);
 
                                         if ($t_filename === $b_filename . ".jpg") {
 
                                             $t_handle = $t_segments[3];
                                             $t_seq = $t_segments[4];
                                             $t_uri = './record/'.$b_handle_id.'/'.$t_seq.'/'.$t_filename;
+
 
                                             $thumbnailLink = '<a href="./record/'. $doc['id'].'" title = "' . $doc[$title_field][0] . '"> ';
                                             $thumbnailLink .= '<div class ="imagebox"><img src = "'.$t_uri.'" class="img-responsive"  title="'. $doc[$title_field][0] .'" /></div></a>';
@@ -111,15 +123,15 @@
                             <p>
                                 <?php
                                     $recordlen = strlen($doc[$title_field][0]);
-                                    if ($recordlen > 26)
+                                    if ($recordlen > 15)
                                     {
-                                        $recordtitle = substr($doc[$title_field][0],0,60).'...';
+                                        $recordtitle = substr($doc[$title_field][0],0,15).'...';
                                     }
                                     else {
                                         $recordtitle = $doc[$title_field][0];
                                     }
                                 ?>
-                                <a href="./record/<?php echo $doc['id']?>?highlight=<?php echo $query ?>"><?php echo $recordtitle ?></a>
+                                <a href="./record/<?php echo $doc['id']?>?highlight=<?php echo $query ?>" title="<?php echo $doc[$title_field][0]?>"><?php echo $recordtitle ?></a>
                             </p>
                         </div>
                     </div>
