@@ -15,7 +15,7 @@
         </p>
         <h2>Centre for Research Collections</h2>
         <p>
-            Further information about the <a href="http://www.ed.ac.uk/schools-departments/information-services/library-museum-gallery/crc" title="Centre for Research Collections" target="_blank">Centre for Research Collections</a>.
+            Further information about the <a href="http://www.ed.ac.uk/is/crc " title="Centre for Research Collections" target="_blank">Centre for Research Collections</a>.
         </p>
         </h2>Contact</h2>
         <p>
