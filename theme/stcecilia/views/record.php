@@ -619,7 +619,7 @@ foreach($recorddisplay as $key)
 
                 <div class="info-box">
                     <h3>Maker</h3>
-                    <dl class="dl-horizontal">
+                        <dl class="dl-horizontal" id="table-text-desc">
                         <?php
                         $infofound = false;
                         foreach($creatordisplay as $key) {
@@ -628,9 +628,15 @@ foreach($recorddisplay as $key)
 
                             if(isset($solr[$element])) {
 
-                                echo '<dt>' . $key . '</dt>';
-
-                                echo '<dd>';
+                                if ($key === "Maker Name")
+                                {
+                                    echo '<dt class="center-dt">' . $key . '</dt>';
+                                }
+                                else
+                                {
+                                    echo '<dt>' . $key . '</dt>';
+                                }
+                                echo '<dd class="table-text-justify">';
                                 foreach($solr[$element] as $index => $metadatavalue) {
                                     // if it's a facet search
                                     // make it a clickable search link
@@ -643,7 +649,7 @@ foreach($recorddisplay as $key)
                                         //Insert Schema.org
                                         if (isset ($schema[$key]))
                                         {
-                                            echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                            echo '<span itemprop="'.$schema[$key].'" class="offset-dd"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
                                         }
                                         else
                                         {
@@ -656,7 +662,7 @@ foreach($recorddisplay as $key)
 
                                         if (isset ($schema[$key]))
                                         {
-                                            echo '<span itemprop="' . $schema[$key] . '">' . $metadatavalue . "</span>";
+                                            echo '<span itemprop="' . $schema[$key] . '" class="offset-dd">' . $metadatavalue . "</span>";
                                         }
                                         else
                                         {

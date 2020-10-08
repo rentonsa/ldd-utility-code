@@ -1067,7 +1067,7 @@ figcaption {
 /* image */
 #stc-section2 {
     color: #fff;
-    width:100%;
+    width:50%;
     padding:0;
 }
 #stc-section3, #stc-section4, #stc-section5 {
@@ -1329,10 +1329,9 @@ div[id^="gallery"]:hover .gallery-title{
 
 div[id^="openseadragon"] {
     margin: 0 auto;
-    width: 100%;
-    height: 800px;
-    border-top: 2px solid #650100;
-    border-bottom: 2px solid #650100;
+    width: 50%;
+    height: 600px;
+    border: 2px solid #650100;
 }
 
 #toolbarDiv {
@@ -1560,7 +1559,6 @@ dl.dl-horizontal {
     padding: 0 12.5%;
 }
 dl#table-text-desc {
-    float: left;
     margin-left: 10%;
 }
 .dl-horizontal dt {
@@ -1568,6 +1566,9 @@ dl#table-text-desc {
 }
 dt {
     color: #650100;
+}
+.dl-horizontal .center-dt {
+    margin-left: 60%;
 }
 dt::after {
     content: ":";
@@ -1581,5 +1582,9 @@ dd.table-text-justify {
 }
 .dl-horizontal dd {
     margin-left: 275px;
+    margin-bottom: 5px;
+}
+.offset-dd {
+    margin-left: 30px;
 }
 /* INSTRUMENT METADATA TABLE END */
