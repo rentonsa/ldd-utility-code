@@ -104,7 +104,7 @@
                 foreach ($solr[$bitstream_field] as $bitstream) {
                     $mp4ok = false;
                     $b_segments = explode("##", $bitstream);
-                    $b_filename = $b_segments[1];
+                    $b_filename = urlencode($b_segments[1]);
                     $b_handle = $b_segments[3];
                     $b_seq = $b_segments[4];
                     $b_handle_id = preg_replace('/^.*\//', '', $b_handle);

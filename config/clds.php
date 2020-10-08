@@ -86,7 +86,7 @@ $config['skylight_feed_fields'] = array('Title' => 'Title',
     'Origin' => 'Origin',
     'Identifier' => 'Identifier');
 
-$config['skylight_results_per_page'] = 10;
+$config['skylight_results_per_page'] = 20;
 $config['skylight_share_buttons'] = false;
 
 // $config['skylight_homepage_recentitems'] = false;
