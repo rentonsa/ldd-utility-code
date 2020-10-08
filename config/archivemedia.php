@@ -11,7 +11,7 @@ else {
     $config['skylight_ga_code'] = 'UA-25737241-23';
 }
 
-$config['skylight_container_id'] = '656322c0-3cfd-453f-8d2b-1aa94bc0b082';
+$config['skylight_container_id'] = '6';
 
 $config['skylight_theme'] = 'archivemedia';
 

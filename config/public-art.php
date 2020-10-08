@@ -12,11 +12,11 @@ $config['skylight_container_field'] = 'location.coll';
 // Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
 if (ENVIRONMENT == 'development') {
     $config['skylight_ga_code'] = 'UA-25737241-6';
-    $config['skylight_container_id'] = '10b6ab37-9abc-4036-9f64-edfe4b4a984c';
+    $config['skylight_container_id'] = '64';
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-9';
-    $config['skylight_container_id'] = '8c47f237-0884-4044-930b-61d574c63c50';
+    $config['skylight_container_id'] = '67';
 }
 $config['skylight_sitemap_type'] = 'internal';
 $config['skylight_fields'] = array(

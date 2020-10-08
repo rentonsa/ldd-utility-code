@@ -11,7 +11,7 @@ if (ENVIRONMENT == 'development') {
 else {
     $config['base_url'] = 'https://openbooks.is.ed.ac.uk/';
     $config['skylight_ga_code'] = 'UA-25737241-18';
-    $config['skylight_container_id'] = 'ca96f537-4877-4ddb-8d17-63b65433b9d3';
+    $config['skylight_container_id'] = '33';
 }
 
 $config['skylight_theme'] = 'openbooks';
