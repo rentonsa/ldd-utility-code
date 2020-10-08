@@ -196,40 +196,41 @@ foreach($recorddisplay as $key)
 <div id="stc-section1" class="container-fluid record-content">
     <h2 class="itemtitle hidden-sm hidden-xs"><?php echo $title .' | '. $maker. ' | '.$date;?></h2>
     <h4 class="itemtitle hidden-lg hidden-md"><?php echo $title .' | '. $maker. ' | '.$date;?></h4>
+</div>
 
-        <ul class="nav navbar-nav" id="item-nav">
-            <?php if(isset($solr[$link_uri_field]))
-                {
-                    // CHECK RECORD HAS IMAGE
-                    echo '<li><a href="' . $_SERVER['REQUEST_URI'] . '#stc-section2">Image</a></li>';
-                }
-                if(!$audioLink == '' || !$videoLink == '')
-                {
-                    // CHECK RECORD HAS AUDIO OR VIDEO FILES
-                    echo '<li><a href="' . $_SERVER['REQUEST_URI'] . '#stc-section4">Audio/Visual</a></li>';
-                }
+<div id="stc-section1" class="container-fluid record-content">
+    <ul class="center-nav">
+        <?php if(isset($solr[$link_uri_field]))
+            {
+                // CHECK RECORD HAS IMAGE
+                echo '<li><a class="cnav-link" href="' . $_SERVER['REQUEST_URI'] . '#stc-section2">Image</a></li>';
+            }
+            if(!$audioLink == '' || !$videoLink == '')
+            {
+                // CHECK RECORD HAS AUDIO OR VIDEO FILES
+                echo '<li><a class="cnav-link" href="' . $_SERVER['REQUEST_URI'] . '#stc-section4">Audio/Visual</a></li>';
+            }
 
-                if(!$recorddisplay == NULL)
-                {
-                    // CHECK RECORD HAS TAGS
-                    echo '<li><a href="' . $_SERVER['REQUEST_URI'] . '#stc-section3">Categories</a></li>';
-                }
+            if(!$recorddisplay == NULL)
+            {
+                // CHECK RECORD HAS TAGS
+                echo '<li><a class="cnav-link" href="' . $_SERVER['REQUEST_URI'] . '#stc-section3">Categories</a></li>';
+            }
 
-                if(!$identificationdisplay == NULL)
-                {
-                    // CHECK RECORD HAS INSTRUMENT METADATA
-                    echo '<li><a href="' . $_SERVER['REQUEST_URI'] . '#stc-section5">Instrument Data</a></li>';
-                }
+            if(!$identificationdisplay == NULL)
+            {
+                // CHECK RECORD HAS INSTRUMENT METADATA
+                echo '<li><a class="cnav-link" href="' . $_SERVER['REQUEST_URI'] . '#stc-section5">Instrument Data</a></li>';
+            }
 
-                // GET NO. OF RELATED ITEMS
-                $numrel = count($related_items);
-                if($numrel > 0)
-                {
-                    // CHECK RECORD HAS ANY RELATED ITEMS
-                    echo '<li><a href="' . $_SERVER['REQUEST_URI'] . '#stc-section6">Related Items</a></li>';
-                } ?>
-        </ul>
-
+            // GET NO. OF RELATED ITEMS
+            $numrel = count($related_items);
+            if($numrel > 0)
+            {
+                // CHECK RECORD HAS ANY RELATED ITEMS
+                echo '<li><a class="cnav-link" href="' . $_SERVER['REQUEST_URI'] . '#stc-section6">Related Items</a></li>';
+            } ?>
+    </ul>
 </div>
 
 <!-- START IMAGE IF -->
@@ -980,7 +981,7 @@ foreach($recorddisplay as $key)
 
                 <div class="info-box">
                     <h3>Description</h3>
-                    <dl class="dl-horizontal">
+                    <dl class="dl-horizontal" id="table-text-desc">
                         <?php
                         $infofound = false;
                         foreach($descriptiondatadisplay as $key) {
@@ -991,7 +992,7 @@ foreach($recorddisplay as $key)
 
                                 echo '<dt>' . $key . '</dt>';
 
-                                echo '<dd>';
+                                echo '<dd class="table-text-justify">';
                                 foreach($solr[$element] as $index => $metadatavalue) {
                                     // if it's a facet search
                                     // make it a clickable search link

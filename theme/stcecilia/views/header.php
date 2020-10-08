@@ -132,9 +132,14 @@
                     </span>
                 </div>
             </form>
-            <div class="navbar-right sch-link">
+            <div class="navbar-right sch-link" id="full-visit">
                 <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
                 <a href="http://www.test.stcecilias.ed.ac.uk/visit/" title="Visit St Cecilia's Hall" target="_blank">Visit St Cecilia's Hall</a>
+                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
+            </div>
+            <div class="navbar-right sch-link" id="smol-visit">
+                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
+                <a href="http://www.test.stcecilias.ed.ac.uk/visit/" title="Visit St Cecilia's Hall" target="_blank">Visit Us</a>
                 <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
             </div>
         </div>
@@ -157,9 +162,15 @@
                     </span>
                 </div>
             </form>
-            <div class="navbar-right sch-link">
+            <div class="navbar-right sch-link" id="full-visit">
                 <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
                 <a href="http://www.test.stcecilias.ed.ac.uk/visit/" title="Visit St Cecilia's Hall" target="_blank">Visit St Cecilia's Hall</a>
+                <a id="smol-visit" href="http://www.test.stcecilias.ed.ac.uk/visit/" title="Visit St Cecilia's Hall" target="_blank">Visit</a>
+                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
+            </div>
+            <div class="navbar-right sch-link" id="smol-visit">
+                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
+                <a href="http://www.test.stcecilias.ed.ac.uk/visit/" title="Visit St Cecilia's Hall" target="_blank">Visit</a>
                 <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
             </div>
         </div>
