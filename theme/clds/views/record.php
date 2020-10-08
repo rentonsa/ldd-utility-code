@@ -161,7 +161,7 @@
                 $b_seq = "";
                 foreach ($bitstream_array as $bitstream) {
                     $b_segments = explode("##", $bitstream);
-                    $b_filename = $b_segments[1];
+                    $b_filename = urlencode($b_segments[1]);
                     $b_handle = $b_segments[3];
                     $b_seq = $b_segments[4];
                     $b_title = $b_segments[6];
@@ -181,7 +181,7 @@
                         if (isset($solr[$thumbnail_field])) {
                             foreach ($solr[$thumbnail_field] as $thumbnail) {
                                 $t_segments = explode("##", $thumbnail);
-                                $t_filename = $t_segments[1];
+                                $t_filename = urlencode($t_segments[1]);
                                 if ($t_filename === $b_filename . ".jpg") {
                                     $t_handle = $t_segments[3];
                                     $t_seq = $t_segments[4];
