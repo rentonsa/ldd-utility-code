@@ -268,9 +268,9 @@ foreach($recorddisplay as $key)
             $imageCounter++;
         }
 
-        echo "<div id='imageCounter' style='display:none;'>$imageCounter</div>"
-            /*<div>" . $numLandscape . " : " . $numPortrait . "</div>
-            <div>" . $width . "</div>"*/;
+        echo "<div id='imageCounter' style='display:none;'>$imageCounter</div>
+            <div>" . $numLandscape . " : " . $numPortrait . "</div>
+            <div>" . $width . "</div>";
         ?>
 
 
@@ -311,7 +311,7 @@ foreach($recorddisplay as $key)
 
                     // determine if additional image box styles are required
                     // normal portrait (seems to freakout if num = 1)
-                    if (!$numPortrait === 1 || $numPortrait > 1) {?>
+                    if ($portrait && !$numPortrait = 1) {?>
                         <div id="openseadragon<?php echo $divCounter; ?>" class="image-toggle portrait-img"<?php if (!$freshIn) { echo ' style="display:none;"'; } else { echo ' style="display:block;"'; }?>>
                             <script type="text/javascript">
                                 OpenSeadragon({
@@ -332,31 +332,10 @@ foreach($recorddisplay as $key)
                             </script>
                         </div>
                     <?php }
-                    if ($numPortrait === 1 && !$numLandscape > 0) {?>
-                        <div id="openseadragon<?php echo $divCounter; ?>" class="image-toggle"<?php if (!$freshIn) { echo ' style="display:none;"'; } else { echo ' style="display:block;"'; }?>>
-                            <script type="text/javascript">
-                                OpenSeadragon({
-                                    id: "openseadragon<?php echo $divCounter;?>",
-                                    prefixUrl: "<?php echo base_url() ?>theme/stcecilia/images/buttons/",
-                                    zoomPerScroll: 1.2,
-                                    toolbar:       "toolbarDiv",
-                                    showNavigator:  true,
-                                    autoHideControls: false,
-                                    zoomInButton:   "zoom-in",
-                                    zoomOutButton:  "zoom-out",
-                                    homeButton:     "home",
-                                    fullPageButton: "full-page",
-                                    nextButton:     "next",
-                                    previousButton: "previous",
-                                    tileSources: ["<?php echo $tileSource[$divCounter]; ?>"]
-                                });
-                            </script>
-                        </div>
-                    <?php }
                     // normal portrait (fix if num = 1)
-                    if ($numPortrait === 1 && !$numPortrait === $numLandscape)
+                    if ($portrait && $numPortrait = 1)
                     { ?>
-                        <div id="openseadragon<?php echo $divCounter; ?>" class="image-toggle p1"<?php if (!$freshIn) { echo ' style="display:none;"'; } else { echo ' style="display:block;"'; }?>>
+                        <div id="openseadragon<?php echo $divCounter; ?>" class="image-toggle"<?php if (!$freshIn) { echo ' style="display:none;"'; } else { echo ' style="display:block;"'; }?>>
                             <script type="text/javascript">
                                 OpenSeadragon({
                                     id: "openseadragon<?php echo $divCounter;?>",
@@ -400,9 +379,9 @@ foreach($recorddisplay as $key)
                         </div>
                     <?php }
                     // normal landscape (seems to freakout if num = 2)
-                    if ($landscape && !$numLandscape === 2)
+                    if ($landscape && !$numLandscape = 2)
                     { ?>
-                        <div id="openseadragon<?php echo $divCounter; ?>" class="image-toggle l1"<?php if (!$freshIn) { echo ' style="display:none;"'; } else { echo ' style="display:block;"'; }?>>
+                        <div id="openseadragon<?php echo $divCounter; ?>" class="image-toggle"<?php if (!$freshIn) { echo ' style="display:none;"'; } else { echo ' style="display:block;"'; }?>>
                             <script type="text/javascript">
                                 OpenSeadragon({
                                     id: "openseadragon<?php echo $divCounter;?>",
@@ -423,9 +402,9 @@ foreach($recorddisplay as $key)
                         </div>
                     <?php }
                     // normal landscape (seems to freakout if num = 1)
-                    if ($landscape && $numLandscape === 1)
+                    if ($landscape && $numLandscape = 1)
                     { ?>
-                        <div id="openseadragon<?php echo $divCounter; ?>" class="image-toggle l2"<?php if (!$freshIn) { echo ' style="display:none;"'; } else { echo ' style="display:block;"'; }?>>
+                        <div id="openseadragon<?php echo $divCounter; ?>" class="image-toggle"<?php if (!$freshIn) { echo ' style="display:none;"'; } else { echo ' style="display:block;"'; }?>>
                             <script type="text/javascript">
                                 OpenSeadragon({
                                     id: "openseadragon<?php echo $divCounter;?>",
@@ -444,28 +423,6 @@ foreach($recorddisplay as $key)
                                 });
                             </script>
                         </div>
-                    <?php } 
-                    if ($landscape && $numLandscape === 2)
-                    { ?>
-                        <div id="openseadragon<?php echo $divCounter; ?>" class="image-toggle portrait-img l3"<?php if (!$freshIn) { echo ' style="display:none;"'; } else { echo ' style="display:block;"'; }?>>
-                            <script type="text/javascript">
-                                OpenSeadragon({
-                                    id: "openseadragon<?php echo $divCounter;?>",
-                                    prefixUrl: "<?php echo base_url() ?>theme/stcecilia/images/buttons/",
-                                    zoomPerScroll: 1.2,
-                                    toolbar:       "toolbarDiv",
-                                    showNavigator:  true,
-                                    autoHideControls: false,
-                                    zoomInButton:   "zoom-in",
-                                    zoomOutButton:  "zoom-out",
-                                    homeButton:     "home",
-                                    fullPageButton: "full-page",
-                                    nextButton:     "next",
-                                    previousButton: "previous",
-                                    tileSources: ["<?php echo $tileSource[$divCounter]; ?>"]
-                                });
-                            </script>
-                        </div> 
                     <?php } ?>
                     
 
@@ -475,7 +432,6 @@ foreach($recorddisplay as $key)
             }
             ?>
         </div>
-        <!--<div> <?php echo $landscape . " : " . $portrait ?> </div>-->
 
 
         <?php

@@ -7,6 +7,7 @@
     $title_field = $this->skylight_utilities->getField('Title');
     $maker_field = $this->skylight_utilities->getField('Maker');
     $date_field = $this->skylight_utilities->getField('Date Made');
+    $acc_field = $this->skylight_utilities->getField('Accession Number');
     $bitstream_field = $this->skylight_utilities->getField('Bitstream');
     $thumbnail_field = $this->skylight_utilities->getField('Thumbnail');
     $base_parameters = preg_replace("/[?&]sort_by=[_a-zA-Z+%20. ]+/","",$base_parameters);
@@ -94,9 +95,12 @@
 
                                 <?php echo $thumbnailImg; ?>
 
-                                <figcaption><span class="searchTitle"><?php echo $doc[$title_field][0]; ?></span><br>
+                                <figcaption>
+                                    <span class="searchTitle"><?php echo $doc[$title_field][0]; ?></span><br>
                                     <span class="searchDate"><?php echo empty($doc[$maker_field][0]) ? "unknown" : $doc[$maker_field][0] ; ?></span><br>
-                                    <span class="searchDate"><?php echo empty($doc[$date_field][0]) ? "unknown" : $doc[$date_field][0] ; ?></span></figcaption>
+                                    <span class="searchDate"><?php echo empty($doc[$date_field][0]) ? "unknown" : $doc[$date_field][0] ; ?></span><br>
+                                    <span class="searchDate">Accession Number: <?php echo empty($doc[$acc_field][0]) ? "unnumbered" : $doc[$acc_field][0] ; ?></span>
+                                </figcaption>
                             </div>
                         </div>
                     </a>

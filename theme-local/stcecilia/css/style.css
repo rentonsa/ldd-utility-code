@@ -1069,6 +1069,7 @@ figcaption {
     color: #fff;
     width:50%;
     padding:0;
+    margin-top: 40px!important;
 }
 #stc-section3, #stc-section4, #stc-section5 {
     text-align: center;
@@ -1332,6 +1333,9 @@ div[id^="openseadragon"] {
     width: 50%;
     height: 600px;
     border: 2px solid #650100;
+}
+.portrait-img, .portrait-img-lrg {
+    width: 100%!important;
 }
 
 #toolbarDiv {
