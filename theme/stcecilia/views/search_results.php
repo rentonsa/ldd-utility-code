@@ -99,7 +99,7 @@
                                     <span class="searchTitle"><?php echo $doc[$title_field][0]; ?></span><br>
                                     <span class="searchDate"><?php echo empty($doc[$maker_field][0]) ? "unknown" : $doc[$maker_field][0] ; ?></span><br>
                                     <span class="searchDate"><?php echo empty($doc[$date_field][0]) ? "unknown" : $doc[$date_field][0] ; ?></span><br>
-                                    <span class="searchDate">Accession Number: <?php echo empty($doc[$acc_field][0]) ? "unnumbered" : $doc[$acc_field][0] ; ?></span>
+                                    <span class="searchDate">Accession Number: <strong><?php echo empty($doc[$acc_field][0]) ? "unnumbered" : $doc[$acc_field][0] ; ?></strong></span>
                                 </figcaption>
                             </div>
                         </div>

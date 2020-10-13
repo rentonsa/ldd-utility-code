@@ -785,6 +785,10 @@ div.spacer {
 
 /* ---- grid from masonry for search results ---- */
 
+strong {
+    font-weight: 500!important;
+    color: #500100;
+}
 .box {
     display: flex;
     flex-wrap: wrap; /* optional. only if you want the items to wrap */
@@ -1575,3 +1579,4 @@ dd.table-text-justify {
     margin-left: 30px;
 }
 /* INSTRUMENT METADATA TABLE END */
+
