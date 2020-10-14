@@ -111,7 +111,6 @@ $config['skylight_schema_links'] = array(
     'Gallery'=> 'location',
     'Maker Name' => 'creator',
     'Hornbostel Sachs Classification' => 'identifier'
-
 );
 
 

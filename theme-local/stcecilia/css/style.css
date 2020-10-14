@@ -1484,7 +1484,7 @@ div[id^="openseadragon"] {
 .iiiflogo                        { display: inline-block; width: 50px; height: 50px;  background: url(../images/iiiflogo.png) no-repeat 0px 0px;}
 .lunalogo                        { display: inline-block; width: 50px; height: 50px;  background: url(../images/LUNAIIIF.png) no-repeat 0px 0px;}
 .uvlogo                          { display: inline-block; width: 50px; height: 50px;  background: url(../images/uv.png) no-repeat 0px 0px;}
-.ccbylogo                        { display: inline-block; width: 150px; height: 50px; background: url(../images/cc-by.png) no-repeat 0px 0px;}
+.ccbylogo                        { display: inline-block; width: 150px; height: 50px; background: url(../images/cc-by.png) no-repeat 0px 0px; background-size: contain;}
 .miradorlogo                     { display: inline-block; width: 50px; height: 50px;  background: url(../images/mirador-logo.png) no-repeat 0px 0px;}
 
 /*.thumb-strip {
@@ -1542,41 +1542,38 @@ label
 
 /* INSTRUMENT METADATA TABLE */
 dl {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
-dl.dl-horizontal {
-    width: 50%;
-    margin: auto;
-    padding: 0 12.5%;
+.dl-horizontal {
+    display: inline-block;
+    text-align: center;
 }
-dl#table-text-desc {
-    margin-left: 10%;
+.dl-horizontal dt, .dl-horizontal dd {
+    display: inline;
 }
 .dl-horizontal dt {
-    width: 250px;
-}
-dt {
     color: #650100;
 }
-.dl-horizontal .center-dt {
-    margin-left: 60%;
+.dl-horizontal dd {
+    margin-bottom: 20px!important;
 }
-dt::after {
+.dl-horizontal dt::after {
     content: ":";
 }
-dd {
-    text-align: left;
+.dl-horizontal dd:after {
+    content: '';
+    display: block;
 }
-dd.table-text-justify {
-    text-align: justify;
-    width: 150%;
-}
-.dl-horizontal dd {
-    margin-left: 275px;
-    margin-bottom: 5px;
-}
-.offset-dd {
-    margin-left: 30px;
+
+@media (min-width: 768px)
+{
+    .dl-horizontal dt
+    {
+        float: unset!important;
+    }
+    dd {
+        margin-left: 0px!important;
+    }
 }
 /* INSTRUMENT METADATA TABLE END */
 
