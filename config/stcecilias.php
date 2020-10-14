@@ -70,7 +70,7 @@ $config['skylight_fields'] = array(
     'ImageURI' => 'dc.identifier.imageUri',
     'Rights Statement' => 'dc.rights.en',
     'Case' => 'dc.coverage.spatialcase.en',
-    'Gallery'=> 'dc.coverage.spatialgallery.en',
+    'Gallery' => 'dc.coverage.spatialgallery.en',
     'Maker Name' => 'dc.contributor.authorfull.en',
     'Hornbostel Sachs Classification' => 'dc.subject.classification.en',
     'Grouping' => 'dc.coverage.spatiallogical.en',
@@ -78,40 +78,39 @@ $config['skylight_fields'] = array(
 );
 
 $config['skylight_schema_links'] = array(
-      'Title' => 'name',
-      'Alternative Title' => 'alternateName',
-      'Author' => 'creator',
-      'Subject' => 'about',
-      'Instrument' => 'name',
-      //'Abstract' => 'description',
-      'Date' => 'dateCreated',
-      'Thumbnail' => 'thumbnailUrl',
-      'Place Made' => 'locationCreated',
-      'Date Made' => 'dateCreated',
-      'Period' => 'temporalCoverage',
-      'Accession Number' => 'identifier',
-      'Technical Description' => 'description',
-      'Collection' => 'isPartOf',
-      'Notes' => 'musicalKey',
-      'Rights Holder' => 'copyrightHolder',
-      'Instrument Family' => 'category',
-      'Genus' => 'category',
-      'Link' => 'url',
-      //'Maker Biography' => 'description',
-      'Associated Musician Name' => 'creator',
-      'Associated Musician' => 'creator',
-      //'Piccolo Description' => 'description',
-      //'Short Description' => 'description',
-      'Description'=> 'description',
-      //'Associated Musician Biography' => 'description',
-      'Instrument Type' => 'Category',
-      'ImageURI' => 'image',
-      'Rights Statement' => 'copyrightHolder',
-      'Case' => 'location',
-      'Gallery'=> 'location',
-      'Maker Name' => 'creator',
-      'Hornbostel Sachs Classification' => 'identifier'
-
+    'Title' => 'name',
+    'Alternative Title' => 'alternateName',
+    'Author' => 'creator',
+    'Subject' => 'about',
+    'Instrument' => 'name',
+    //'Abstract' => 'description',
+    'Date' => 'dateCreated',
+    'Thumbnail' => 'thumbnailUrl',
+    'Place Made' => 'locationCreated',
+    'Date Made' => 'dateCreated',
+    'Period' => 'temporalCoverage',
+    'Accession Number' => 'identifier',
+    'Technical Description' => 'description',
+    'Collection' => 'isPartOf',
+    'Notes' => 'musicalKey',
+    'Rights Holder' => 'copyrightHolder',
+    'Instrument Family' => 'category',
+    'Genus' => 'category',
+    'Link' => 'url',
+    //'Maker Biography' => 'description',
+    'Associated Musician Name' => 'creator',
+    'Associated Musician' => 'creator',
+    //'Piccolo Description' => 'description',
+    //'Short Description' => 'description',
+    'Description'=> 'description',
+    //'Associated Musician Biography' => 'description',
+    'Instrument Type' => 'Category',
+    'ImageURI' => 'image',
+    'Rights Statement' => 'copyrightHolder',
+    'Case' => 'location',
+    'Gallery'=> 'location',
+    'Maker Name' => 'creator',
+    'Hornbostel Sachs Classification' => 'identifier'
 );
 
 
@@ -154,7 +153,7 @@ $config['skylight_recorddisplay'] = array(
     'Instrument Type History');
 
 $config['skylight_date_filters'] = array();
-$config['skylight_filters'] = array('Instrument' => 'type_filter', 'Maker' => 'author_filter', 'Place Made' => 'place_filter');
+$config['skylight_filters'] = array('Instrument' => 'type_filter', 'Maker' => 'author_filter', 'Place Made' => 'place_filter', 'Gallery' => 'gallery_filter');
 $config['skylight_filter_delimiter'] = ':';
 
 $config['skylight_meta_fields'] = array('Title',
