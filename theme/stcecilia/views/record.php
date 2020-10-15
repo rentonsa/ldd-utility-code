@@ -311,7 +311,7 @@ foreach($recorddisplay as $key)
 
                     // determine if additional image box styles are required
                     // normal portrait (seems to freakout if num = 1)
-                    if (!$numPortrait === 1 || $numPortrait > 1) {?>
+                    if (!$numPortrait === 1 || $numPortrait > 1 && !$numPortrait === 3) {?>
                         <div id="openseadragon<?php echo $divCounter; ?>" class="image-toggle portrait-img"<?php if (!$freshIn) { echo ' style="display:none;"'; } else { echo ' style="display:block;"'; }?>>
                             <script type="text/javascript">
                                 OpenSeadragon({
@@ -377,7 +377,7 @@ foreach($recorddisplay as $key)
                         </div>
                     <?php }
                     // large portrait
-                    if ($portrait && $width > 1024)
+                    if ($portrait && $width > 1024 || $numPortrait >= 3)
                     { ?>
                         <div id="openseadragon<?php echo $divCounter; ?>" class="image-toggle portrait-img-lrg"<?php if (!$freshIn) { echo ' style="display:none;"'; } else { echo ' style="display:block;"'; }?>>
                             <script type="text/javascript">

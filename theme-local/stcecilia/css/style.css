@@ -1573,7 +1573,26 @@ dl {
     }
     dd {
         margin-left: 0px!important;
+    }   
+    .col-sm-6
+    {
+        width: 100%!important;
+    }
+    .grid-item
+    {
+        width: unset!important;
     }
 }
+@media (max-width: 1199px)
+{
+    .col-sm-6 .col-xs-12 .col-md-8 .col-lg-12 metadata
+    {
+        width: 100%!important;
+    }
+    .grid-item
+    {
+        width: unset!important;
+    }
+}*/
 /* INSTRUMENT METADATA TABLE END */
 
