@@ -114,74 +114,12 @@
     <nav class="navbar navbar-default navbar-fixed-top">
 
         <div class="col-lg-8 col-md-8 col-sm-9 hidden-xs">
-            <div class="nav-logo">
-                    <!-- WILL NEED CHANGED WHEN SWITCH TO LIVE -->
-                    <a class="nav-logo-link" href="https://test.stcecilias.ed.ac.uk">
-                        <img class="nav-logo-img" src="<?php echo base_url()?>theme/stcecilia/images/StCsNavLogo.png">
-                    </a>
+            <div class="nav-title">
+                <!--<h1>Points of Arrival</h1>-->
+                <a alt="Points of Arrival Logo" title="Home link" href="<?php echo base_url()?>pointsofarrival" alt="Points of Arrival"><img class="nav-logo" src="<?php echo base_url()?>theme/pointsofarrival/images/site-logos/navbar-logo-w.png"></a>
+                <p alt="A series of short films on historical Jewish immigrantion to Scotland" title="Points of Arrival tagline"> A digital resource pack for secondary schools on historical Jewish immigrantion to Scotland
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <!--<a href="./" class="home-icon"><i class="fa fa-home fa-lg"></i></a>-->
-            <form id="nav-cont" class="navbar-form navbar-left" role="search" action="./redirect/" method="post">
-                <div class="input-group search-box">
-                    <input id="uoe-search" type="text" class="form-control" placeholder="Search the museum collections" name="q" value="<?php if (isset($searchbox_query)) echo str_replace('"', '', urldecode($searchbox_query)); ?>" />
-                    <span class="input-group-btn">
-                        <button type="submit" class="btn btn-default" name="submit_search" value="Search" id="submit_search1">
-                            <i class="glyphicon glyphicon-search"></i>&nbsp;Search
-                        </button>
-                    </span>
-                </div>
-            </form>
-            <div class="navbar-right sch-link" id="full-visit">
-                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
-                <a href="http://www.test.stcecilias.ed.ac.uk/visit/" title="Visit St Cecilia's Hall" target="_blank">Visit St Cecilia's Hall</a>
-                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
-            </div>
-            <div class="navbar-right sch-link" id="smol-visit">
-                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
-                <a href="http://www.test.stcecilias.ed.ac.uk/visit/" title="Visit St Cecilia's Hall" target="_blank">Visit St Cecilia's</a>
-                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
-            </div>
-            <div class="navbar-right sch-link" id="xtra-smol-visit">
-                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
-                <a href="http://www.test.stcecilias.ed.ac.uk/visit/" title="Visit St Cecilia's Hall" target="_blank">Visit Us</a>
-                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
-            </div>
-        </div>
-        <div class="hidden-lg hidden-md hidden-sm col-xs-7">
-            <div class="nav-logo">
-                    <!-- WILL NEED CHANGED WHEN SWITCH TO LIVE -->
-                    <a class="nav-logo-link" href="https://test.stcecilias.ed.ac.uk">
-                        <img class="nav-logo-img" src="<?php echo base_url()?>theme/stcecilia/images/StCsNavLogo.png">
-                    </a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <!-- <a href="./" class="home-icon"><i class="fa fa-home fa-lg"></i></a> -->
-            <form id="nav-cont" class="navbar-form navbar-left" role="search" action="./redirect/" method="post">
-                <div class="input-group search-box">
-                    <input id="uoe-search-sm" type="text" class="form-control" placeholder="Search" name="q" value="<?php if (isset($searchbox_query)) echo str_replace('"', '', urldecode($searchbox_query)); ?>" />
-                    <span class="input-group-btn">
-                        <button type="submit" class="btn btn-default" name="submit_search" value="Search" id="submit_search2">
-                            <i class="glyphicon glyphicon-search"></i>
-                        </button>
-                    </span>
-                </div>
-            </form>
-            <div class="navbar-right sch-link" id="full-visit">
-                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
-                <a href="http://www.test.stcecilias.ed.ac.uk/visit/" title="Visit St Cecilia's Hall" target="_blank">Visit St Cecilia's Hall</a>
-                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
-            </div>
-            <div class="navbar-right sch-link" id="smol-visit">
-                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
-                <a href="http://www.test.stcecilias.ed.ac.uk/visit/" title="Visit St Cecilia's Hall" target="_blank">Visit St Cecilia's</a>
-                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
-            </div>
-            <div class="navbar-right sch-link" id="xtra-smol-visit">
-                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
-                <a href="http://www.test.stcecilias.ed.ac.uk/visit/" title="Visit St Cecilia's Hall" target="_blank">Visit Us</a>
-                <!-- NEEDS TO BE ADJUSTED WHEN SWITCHING TO LIVE SERVER -->
-            </div>
+                <!--<img class="nav-banner" src="<?php echo base_url()?>theme/pointsofarrival/images/banner/poa-banner.jpg">-->
         </div>
         
     </nav><!-- end of header container -->

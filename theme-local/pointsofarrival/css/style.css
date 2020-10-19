@@ -1,27 +1,24 @@
 /** added for UoE */
 * {
-    font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif!important;
+    font-family: "Roboto Condensed","Helvetica Neue",Helvetica,Arial,sans-serif!important;
     color: #222;
 }
 i{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif!important;
 }
-
+a {
+    color: #114250;
+}
+a:focus, a:hover {
+    color: #114250!important;
+    text-decoration: none!important;
+    -webkit-box-shadow: inset 0 0 0 rgb(19,67,79,0), 0 3px 0 rgba(19,67,79,1)!important;
+    box-shadow: inset 0 0 0 rgb(19,67,79,0), 0 3px 0 rgba(19,67,79,1)!important;  
+}
 body
 {
-    /*font-family: 'Hind', Frutiger, ‘Frutiger Linotype’, Univers, Calibri, ‘Gill Sans’, ‘Gill Sans MT’, ‘Myriad Pro’, Myriad, ‘DejaVu Sans Condensed’, ‘Liberation Sans’, ‘Nimbus Sans L’, Tahoma, Geneva, ‘Helvetica Neue’, Helvetica, Arial, sans-serif;*/
+    font-family: "Roboto Condensed","Helvetica Neue",Helvetica,Arial,sans-serif!important;
     padding-top: 50px;
-}
-.container-fluid {
-    margin-top: 100px;
-}
-@media (max-width: 767px)
-{
-    .container-fluid,
-    .container-full
-    {
-        margin-top: 0px!important;
-    }
 }
 
 .carousel-control.left, .carousel-control.right {
@@ -120,15 +117,14 @@ body
     width: 200px !important;
 }
 
-a:focus, a:hover {
+/*a:focus, a:hover {
     color: #333;
     text-decoration: underline;
 }
-
 .byEditor a {
     color: #333;
     text-decoration: underline;
-}
+}*/
 
 .main-image {
     width: 100%;
@@ -203,12 +199,12 @@ div.resized-image img.record-main-image {
     display: none;
 }
 .suggestion a {
-    color: #650100!important;
+    color: #114250!important;
 }
 .suggestion a:hover {
     text-decoration: none;
-    -webkit-box-shadow: inset 0 0 0 rgba(101,1,0,0), 0 3px 0 rgba(101,1,0,1);
-    box-shadow: inset 0 0 0 rgba(101,1,0,0), 0 3px 0 rgba(101,1,0,1);
+    -webkit-box-shadow: inset 0 0 0 rgb(19,67,79,0), 0 3px 0 rgba(19,67,79,1);
+    box-shadow: inset 0 0 0 rgb(19,67,79,0), 0 3px 0 rgba(19,67,79,1);
 }
 
 .bg-primary {
@@ -218,13 +214,13 @@ div.resized-image img.record-main-image {
     margin-top: 10rem;
 }
 .bg-primary a {
-    color: #650100;
+    color: #114250;
     text-decoration: none;
 }
 .bg-primary a:hover {
-    color: #650100;
-    -webkit-box-shadow: inset 0 0 0 rgba(101,1,0,0), 0 3px 0 rgba(101,1,0,1);
-    box-shadow: inset 0 0 0 rgba(101,1,0,0), 0 3px 0 rgba(101,1,0,1);
+    color: #114250;
+    -webkit-box-shadow: inset 0 0 0 rgb(19,67,79,0), 0 3px 0 rgba(19,67,79,1);
+    box-shadow: inset 0 0 0 rgb(19,67,79,0), 0 3px 0 rgba(19,67,79,1);
 }
 
 .btn-primary {
@@ -244,10 +240,6 @@ div.resized-image img.record-main-image {
 
 .text-primary {
     color: #999999;
-}
-
-a {
-    color: #333;
 }
 
 .pagination > .active > span {
@@ -364,15 +356,30 @@ div.spacer {
     color: #dddddd;
 }
 
+/* NAVBAR STYLES */
 .navbar{
-    background-color: #650100;
+    background-color: #114250;
     border-radius: 0;
-    color: #000;
+    color: #fff;
     margin-bottom: 0;
     border: 0;
     height: 100px;
 }
-
+.navbar-fixed-top {
+    border-width: 0;
+    height: 120px;
+}
+.nav-title p {
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 275px;
+}
+.nav-logo
+{
+    width: 500px;
+}
 .navbar a {
     color: #EEEEEE;
     text-decoration: none;
@@ -381,8 +388,8 @@ div.spacer {
 .nav > li > a:focus {
     background-color: none!important;
     text-decoration: none;
-    -webkit-box-shadow: inset 0 0 0 rgba(101,1,0,0), 0 3px 0 rgba(101,1,0,1);
-    box-shadow: inset 0 0 0 rgba(101,1,0,0), 0 3px 0 rgba(101,1,0,1);
+    -webkit-box-shadow: inset 0 0 0 rgb(19,67,79,0), 0 3px 0 rgba(19,67,79,1);
+    box-shadow: inset 0 0 0 rgb(19,67,79,0), 0 3px 0 rgba(19,67,79,1);
 }
 
 .navbar-form {
@@ -642,7 +649,7 @@ div.spacer {
     margin: none;
 }
 .navbar-nav>li>a {
-    color: #650100;
+    color: #114250;
     text-transform: uppercase;
     font-size: 16px;
 }
@@ -671,21 +678,20 @@ div.spacer {
 }
 .cnav-link {
     margin: 0px 20px;
-    color: #650100;
+    color: #114250;
     text-transform: uppercase;
     font-size: 16px;
 }
 .cnav-link:hover, .cnav-link:focus {
-    color: #650100!important;
+    color: #114250!important;
     text-decoration: none;
-    -webkit-box-shadow: inset 0 0 0 rgba(101,1,0,0), 0 3px 0 rgba(101,1,0,1);
-    box-shadow: inset 0 0 0 rgba(101,1,0,0), 0 3px 0 rgba(101,1,0,1);
+    -webkit-box-shadow: inset 0 0 0 rgb(19,67,79,0), 0 3px 0 rgba(19,67,79,1);
+    box-shadow: inset 0 0 0 rgb(19,67,79,0), 0 3px 0 rgba(19,67,79,1);
 }
 /* END OF RECORD PAGE NAVIGATION */
 
 .sch-link a {
     color: #ffffff;
-    font-family: 'Hind', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-variant: normal;
@@ -854,7 +860,7 @@ figcaption {
     width: 100%;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #650100;
+    color: #114250;
 }
 
 .searchDate{
@@ -882,7 +888,7 @@ figcaption {
 }
 
 .record-thumbnail-search{
-    border: solid 2px #650100;
+    border: solid 2px #114250;
 }
 
 .uoe_logo
@@ -949,9 +955,7 @@ figcaption {
     padding: 0;
 }
 
-.navbar-fixed-top {
-    border-width: 0;
-}
+
 
 .icon-bar {
     color: black;
@@ -964,13 +968,13 @@ figcaption {
     margin: 5em 0;
 }
 .grid-item.thumbnail img {
-    border: 2px solid #650100;
+    border: 2px solid #114250;
     border-radius: 0;
     margin-bottom: 20px;
 }
 .link-uppercase {
     text-transform: uppercase;
-    color: #650100;
+    color: #114250;
     letter-spacing: 1px;
 }
 
@@ -1002,13 +1006,13 @@ figcaption {
     letter-spacing: .1em;
 }
 .panel-body a {
-    color: #650100;
+    color: #114250;
     text-decoration: none!important;
 }
 .panel-body a:hover {
     text-decoration: none;
-    -webkit-box-shadow: inset 0 0 0 rgba(101,1,0,0), 0 3px 0 rgba(101,1,0,1);
-    box-shadow: inset 0 0 0 rgba(101,1,0,0), 0 3px 0 rgba(101,1,0,1);
+    -webkit-box-shadow: inset 0 0 0 rgb(19,67,79,0), 0 3px 0 rgba(19,67,79,1);
+    box-shadow: inset 0 0 0 rgb(19,67,79,0), 0 3px 0 rgba(19,67,79,1);
 }
 .panel-facets {
     color: #777;
@@ -1237,35 +1241,31 @@ div[id$="info"] {
 /***** Index Page *****/
 
 .container-full {
-    margin: 100px 0 0 0;
     padding-left: 0;
     padding-right: 0;
 }
 
-#sch_banner {
-    float: left;
+#poa_banner {
+    float: right;
     background-position: center;
-    width: 100%;
+    width: 70%;
     height: auto;
     background-size: 100%;
-    padding-top: 50px;
+    padding-top: 200px;
     padding-bottom: 50px;
     padding-right: auto;
     padding-left: auto;
 }
-@media (max-width: 600px)
-{
-    #sch_banner
-    {
-        padding-bottom: 0px!important;
-    }
+.index-para {
+    float: right;
+    font-size: 18px;
+    text-align: justify;
+    margin: 10px 70px 10px 200px;
 }
 
-.sch_logo {
-    width: 100%;
-    height: auto;
+#galleries {
+    padding: 100px 50px 0 210px;
 }
-
 #galleries .grid-sizer {
     width: 32%;
 }
@@ -1273,9 +1273,9 @@ div[id$="info"] {
 div[id^="gallery"].grid-item {
     width: 32%;
     margin: 5px;
-    height: 500px;
+    height: 250px;
     float: left;
-    border: 5px solid #650100;
+    border: 5px solid #114250;
 }
 
 div[id^="gallery"] {
@@ -1336,12 +1336,10 @@ div[id^="gallery"] {
     font-size: 20px;
     text-transform: uppercase;
     cursor: pointer;
-    font-family: 'Hind', Frutiger, ‘Frutiger Linotype’, Univers, Calibri, ‘Gill Sans’, ‘Gill Sans MT’, ‘Myriad Pro’, Myriad, ‘DejaVu Sans Condensed’, ‘Liberation Sans’, ‘Nimbus Sans L’, Tahoma, Geneva, ‘Helvetica Neue’, Helvetica, Arial, sans-serif
-
 }
-
-.gallery-title a:hover {
-    color: #630d0d;
+.text-hover {
+    height: 50px;
+    padding: 0px 20px;
 }
 
 div[id^="gallery"] .gallery-title{
@@ -1352,8 +1350,9 @@ div[id^="gallery"]:hover .gallery-title{
     display: block;
     color: #fff;
     letter-spacing: 2px;
-    background: rgb(101, 1, 0); /* Fallback for browsers that don't support RGBA */
-    background: rgba(101, 1, 0, 0.8);
+    background: rgb(19,67,79); /* Fallback for browsers that don't support RGBA */
+    background: rgba(19,67,79, 0.8);
+    width: 75%;
 }
 
 /* category title for mobile/tablet */
@@ -1376,7 +1375,7 @@ div[id^="openseadragon"] {
     margin: 0 auto;
     width: 50%;
     height: 600px;
-    border: 2px solid #650100;
+    border: 2px solid #114250;
 }
 .portrait-img, .portrait-img-lrg {
     width: 100%!important;
@@ -1574,6 +1573,7 @@ label
 }
 .col-lg-8 {
     width: 100%!important;
+    height: 110px!important;
 }
 
 .panel-default>.panel-heading {
@@ -1592,7 +1592,7 @@ dl {
     display: inline;
 }
 .dl-horizontal dt {
-    color: #650100;
+    color: #114250;
 }
 .dl-horizontal dd {
     margin-bottom: 20px!important;

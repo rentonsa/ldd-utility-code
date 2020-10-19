@@ -3,7 +3,7 @@
 $config['skylight_appname'] = 'pointsofarrival';
 
 // Uncomment this if you are using a url of the form http://.../art/...
-$config['skylight_url_prefix'] = 'pointsofarrival';
+$config['skylight_url_prefix'] = 'pointsofarrival'; 
 
 $config['skylight_theme'] = 'pointsofarrival';
 
