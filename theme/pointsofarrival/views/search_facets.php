@@ -1,4 +1,4 @@
- <div class="col-lg-3 col-md-3 hidden-sm hidden-xs" id="side_facet">
+<div class="col-lg-3 col-md-3 hidden-sm hidden-xs" id="side_facet">
         <h3>Refine Results</h3>
     <?php
         $index = 0;
@@ -93,4 +93,4 @@
         } ?>
 
     <?php } ?>
-  </div><!-- end of side_facet -->
+</div><!-- end of side_facet -->

@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div id="poa_banner">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <img class="img-responsive sch-logo" alt="St_Cecilias_Hall_logo" src="<?php echo base_url(); ?>theme/pointsofarrival/images/site-logos/navbar-logo-b.png">
+            <img class="img-responsive sch-logo" alt="Points of Arrival logo" src="<?php echo base_url(); ?>theme/pointsofarrival/images/site-logos/navbar-logo-b.png">
             <p class="index-para">
                 <a href="https://media.ed.ac.uk/playlist/dedicated/143796462/0_b0sex7tl/0_5h16vc0r" title="External link to Points of Arrival video playlist">Points of Arrival</a> 
                 is a series of five short films about Jewish migration to Scotland in the 19th and 20th centuries. 
@@ -15,7 +15,7 @@
         </div>
         <div id="galleries" class="grid"<?php /* Prevent script from loading on homepage */ if($this->config->item('skylight_appname') != str_replace('/', '', $_SERVER['REQUEST_URI'])) { ?> data-masonry='{ "itemSelector": ".grid-item index-grid", "percentPosition": true, "columnWidth": .grid-sizer}'<?php } ?>>
             <div class="grid-sizer"></div>
-            <a href="./search/%22Keyboard+grouping%22"><div id="gallerykb" class="grid-item index-grid">
+            <a href="./films"><div id="gallerykb" class="grid-item index-grid">
                 <div class="gallery-title">
                     <img class="text-hover" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/films-hover.png">
                 </div>
