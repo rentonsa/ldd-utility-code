@@ -9,7 +9,8 @@ i{
 a {
     color: #114250;
 }
-a:focus, a:hover {
+a:focus, a:hover,
+.film-info p a:focus, .film-info p a:hover {
     color: #114250!important;
     text-decoration: none!important;
     -webkit-box-shadow: inset 0 0 0 rgb(19,67,79,0), 0 3px 0 rgba(19,67,79,1)!important;
@@ -20,6 +21,19 @@ p {
 }
 h1, h2, h3, h4, h5, h6 {
     color: #114250;
+}
+ul {
+    font-size: 18px;
+    list-style: none;
+}
+ul li {
+    margin-bottom: 20px;
+}
+.parent-ul {
+    margin-right: 70px;
+}
+.child-ul {
+    margin-top: 20px;
 }
 body
 {
@@ -366,6 +380,9 @@ div.spacer {
     border-width: 0;
     height: 120px;
 }
+.nav-title {
+    float: left;
+}
 .nav-title p {
     color: #fff;
     font-size: 16px;
@@ -388,7 +405,14 @@ div.spacer {
     -webkit-box-shadow: inset 0 0 0 rgb(19,67,79,0), 0 3px 0 rgba(19,67,79,1);
     box-shadow: inset 0 0 0 rgb(19,67,79,0), 0 3px 0 rgba(19,67,79,1);
 }
-
+.right-nav img {
+    width: 75px;
+    margin-top: 15px;
+    margin-right: 30px;
+}
+.right-nav {
+    float: right;
+}
 .navbar-form {
     border: 0 none;
     box-shadow: none;
@@ -809,7 +833,7 @@ div.spacer {
 
 strong {
     font-weight: 500!important;
-    color: #500100;
+    color: #114650;
 }
 .box {
     display: flex;
@@ -832,8 +856,7 @@ strong {
     display: block;
     margin: 0 0 1em;
     float: none;
-    padding-right: 10px;
-    padding-left: 10px;
+    background: #114650;
 }
 
 .grid-item-content {
@@ -1268,11 +1291,11 @@ div[id$="info"] {
 }
 
 div[id^="gallery"].grid-item {
-    width: 32%;
     margin: 5px;
     height: 250px;
     float: left;
     border: 5px solid #114250;
+    transition: .8s ease-in-out;
 }
 
 div[id^="gallery"] {
@@ -1281,6 +1304,7 @@ div[id^="gallery"] {
     display: flex;
     align-items: center;
     text-align: center;
+    opacity: 1;
 }
 
 
@@ -1289,7 +1313,7 @@ div[id^="gallery"] {
 }
 
 #galleryethpe {
-    background-image: url(https://images.is.ed.ac.uk/luna/servlet/iiif/uoeart~2~2~73247~166273/167,213,5092,4725/1024,/0/default.jpg);
+    background-image: url(https://test.collections.ed.ac.uk/theme/pointsofarrival/images/index-links/resources.png);
 }
 
 #galleryethbw {
@@ -1301,7 +1325,7 @@ div[id^="gallery"] {
 }
 
 #gallerykb {
-    background-image: url(https://images.is.ed.ac.uk/luna/servlet/iiif/uoeart~2~2~73063~164073/1028,444,5471,4782/1024,/0/default.jpg);
+    background-image: url(https://test.collections.ed.ac.uk/theme/pointsofarrival/images/index-links/films.png);
 }
 
 #gallerywesst {
@@ -1309,7 +1333,7 @@ div[id^="gallery"] {
 }
 
 #gallerywespe {
-    background-image: url(https://images.is.ed.ac.uk/luna/servlet/iiif/uoeart~2~2~73510~166932/27,0,5279,3511/1024,/0/default.jpg);
+    background-image: url(https://test.collections.ed.ac.uk/theme/pointsofarrival/images/index-links/themes.png);
 }
 
 #gallerywesbw {
@@ -1327,29 +1351,80 @@ div[id^="gallery"] {
     display: flex;
     align-items: center;
     text-align: center;
-    padding: 10px;
     font-size: 18px;
     text-align: center;
     font-size: 20px;
     text-transform: uppercase;
     cursor: pointer;
+    background: rgb(19,67,79); /* Fallback for browsers that don't support RGBA */
+    background: rgba(19,67,79, 0.8);
+    transition: .8s ease;
+}
+.text-hover, .text-overlay {
+    height: 100px;
+    padding: 0px 20px;
+    position: absolute;
+    margin: -55px -124px;
 }
 .text-hover {
-    height: 50px;
-    padding: 0px 20px;
+    margin-left: -122px;
+}
+.rsrc {
+    position: absolute;
+    margin-left: -175px;
+}
+.thht {
+    position: absolute;
+    margin-left: -150px;
+}
+.text-overlay.thht {
+    margin-left: -152px;
+}
+#rsrc-hov {
+    margin-left: -173px;
 }
 
 div[id^="gallery"] .gallery-title{
     display: none;
+    display: block;
+    color: #fff;
+    letter-spacing: 2px;
+    background: rgb(19,67,79); /* Fallback for browsers that don't support RGBA */
+    background: rgba(19,67,79, 0.8);
+    width: 100%;
+    transition: .8s ease;
 }
 
 div[id^="gallery"]:hover .gallery-title{
     display: block;
     color: #fff;
     letter-spacing: 2px;
-    background: rgb(19,67,79); /* Fallback for browsers that don't support RGBA */
+    background: rgb(19,67,79); /* Fallback for browsers that don't support RGBA*/
     background: rgba(19,67,79, 0.8);
-    width: 75%;
+    width: 100%;
+    height: 100%;
+}
+div[id^="gallery"]:hover {
+    opacity: .7;
+}
+div[id^="gallery"]:hover .text-hover {
+    margin: 65px -128px;
+    z-index: 1;
+}
+div[id^="gallery"]:hover .text-overlay {
+    margin: 65px -125px;
+}
+div[id^="gallery"]:hover .rsrc {
+    margin-left: -173px;
+}
+div[id^="gallery"]:hover .thht {
+    margin-left: -150px;
+}
+div[id^="gallery"]:hover #thht-hov {
+    margin-left: -155px;
+}
+div[id^="gallery"]:hover #rsrc-hov {
+    margin-left: -175px;
 }
 
 /* catagory title for mobile/tablet */
@@ -1588,8 +1663,12 @@ dl {
     content: '';
     display: block;
 }
+.index-grid
+{
+    width: 48%!important;
+}
 
-@media (min-width: 768px)
+/*@media (min-width: 768px)
 {
     .dl-horizontal dt
     {
@@ -1608,7 +1687,7 @@ dl {
     }
     .index-grid
     {
-        width: 32%!important;
+        width: 48%!important;
     }
 }
 
@@ -1712,7 +1791,7 @@ dl {
     {
         width: 50%;
     }
-}
+}*/
 /* INSTRUMENT METADATA TABLE END */
 
 
@@ -1754,25 +1833,28 @@ dl {
     background: #114250;
     margin: 10px 10px 10px 0px;
 }
-.films-list img {
+.film-img-cont .video-still {
     border: 5px solid #114250;
     width: 250px;
     height: 150px;
+    transition: .5s ease;    
 }
-.films-list .video-still:hover{
+.film-img-cont:hover .video-still {
     opacity: 0.5;
 }
-.eye-overlay {
-    display: none;
+.film-img-cont .eye-overlay {
+    opacity: 0;
     border: none!important;
     position: absolute!important;
     width: 100px!important;
     height: auto!important;
     left: 75px;
     top: 25px;
+    transition: .8s ease;
 }
-.films-list li img:hover .eye-overlay {
-    display: block;
+.film-img-cont:hover .eye-overlay {
+    opacity: .7;
+    transition: .8s ease;
 }
 .film-info {
     display: flex;
@@ -1813,4 +1895,61 @@ dl {
 }
 .resource-cont p {
     margin-bottom: 30px;
+    margin-right: 70px;
+}
+/* -----> Resources END <----- */
+
+/* -----> Introduction <----- */
+#poa-intro {
+    float: right;
+    background-position: center;
+    width: 50%;
+    height: auto;
+    background-size: 100%;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    padding-right: auto;
+    padding-left: auto;
+}
+#intro-title {
+    width: 80%;
+    margin-left: -350px;
+    margin-bottom: 50px;
+}
+#howto-title {
+    width: 50%;
+    margin-left: -350px;
+    margin-bottom: 50px;
+}
+.intro-cont {
+    margin-left: -250px;
+}
+.intro-cont p {
+    margin-bottom: 30px;
+    margin-right: 70px;
+}
+/* -----> Introduction END <----- */
+
+/* -----> Themes <----- */
+#poa-themes {
+    float: right;
+    background-position: center;
+    width: 50%;
+    height: auto;
+    background-size: 100%;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    padding-right: auto;
+    padding-left: auto;
+}
+#themes-title {
+    width: 55%;
+    margin-left: -400px;
+}
+.themes-cont {
+    margin-left: -250px;
+}
+.themes-cont p {
+    margin-bottom: 30px;
+    margin-right: 70px;
 }

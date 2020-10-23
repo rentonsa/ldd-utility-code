@@ -15,29 +15,49 @@
         </div>
         <div id="galleries" class="grid"<?php /* Prevent script from loading on homepage */ if($this->config->item('skylight_appname') != str_replace('/', '', $_SERVER['REQUEST_URI'])) { ?> data-masonry='{ "itemSelector": ".grid-item index-grid", "percentPosition": true, "columnWidth": .grid-sizer}'<?php } ?>>
             <div class="grid-sizer"></div>
-            <a href="./films"><div id="gallerykb" class="grid-item index-grid">
-                <div class="gallery-title">
-                    <img class="text-hover" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/films-hover.png">
+            <a href="./films">
+                <div id="gallerykb" class="grid-item index-grid">
+                    <div class="gallery-title">
+                        <img class="text-hover" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/films-hover.png">
+                        <img class="text-overlay" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/films-overlay.png">
+                    </div>
+                    <div class="mob-title">
+                        <img class="text-hover" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/films-hover.png">
+                    </div>
                 </div>
-                <div class="mob-title">
-                    <img class="text-hover" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/films-hover.png">
-                </div></div>
             </a>
-            <a href="./search/%22Western+percussion+grouping%22">
-                <div id="gallerywespe" class="grid-item index-grid"><div class="gallery-title">
-                    <img class="text-hover" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/themes-hover.png">   
+            <a href="./themes">
+                <div id="gallerywespe" class="grid-item index-grid">
+                    <div class="gallery-title">
+                        <img class="text-hover thht" id="thht-hov" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/themes-hover.png">  
+                        <img class="text-overlay thht" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/themes-overlay.png">  
+                    </div>
+                    <div class="mob-title">
+                        <img class="text-hover" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/themes-hover.png">
+                    </div>
                 </div>
-                <div class="mob-title">
-                    <img class="text-hover" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/themes-hover.png">
-                </div></div>
             </a>
-            <a href="./search/%22Ethnographic+percussion+grouping%22">
-                <div id="galleryethpe" class="grid-item index-grid"><div class="gallery-title">
-                    <img class="text-hover" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/resources-hover.png">
+            <a href="./resources">
+                <div id="galleryethpe" class="grid-item index-grid">
+                    <div class="gallery-title">
+                        <img class="text-hover rsrc" id="rsrc-hov" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/resources-hover.png">
+                        <img class="text-overlay rsrc" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/resources-overlay.png">
+                    </div>
+                    <div class="mob-title">
+                        <img class="text-hover" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/resources-hover.png">
+                    </div>
                 </div>
-                <div class="mob-title">
-                    <img class="text-hover" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/resources-hover.png">
-                </div></div>
+            </a>
+            <a href="./introduction">
+                <div id="galleryethst" class="grid-item index-grid">
+                    <div class="gallery-title">
+                        <img class="text-hover thht" id="thht-hov" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/howto-hover.png">
+                        <img class="text-overlay thht" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/howto-overlay.png">
+                    </div>
+                    <div class="mob-title">
+                        <img class="text-hover" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/howto-hover.png">
+                    </div>
+                </div>
             </a>
             <!--<a href="./search/%22Ethnographic+brasswind+grouping%22"><div id="galleryethbw" class="grid-item index-grid"><div class="gallery-title"><h4>Non-western Brasswind</h4></div>
             <div class="mob-title"><h4>Non-western Brasswind</h4></div></div></a>
