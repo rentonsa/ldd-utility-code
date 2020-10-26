@@ -170,6 +170,7 @@ def map_md(key, value, et_out, outroot):
                 dcvalue = et_out.SubElement(outroot, mdschema)
                 dcvalue.set('element', mdelement)
                 dcvalue.set('qualifier', mdqualifier)
+                dcvalue.set('language', 'en')
                 dcvalue.text = value
         map_row = map_row + 1
     return et_out
@@ -213,6 +214,7 @@ def get_subfolder(item_acc_no):
             subfolder = EXISTING_FOLDER + item_acc_no
         else:
             subfolder = NEW_FOLDER + item_acc_no
+            #print(subfolder)
     file_master.close()
     return subfolder
 
@@ -401,7 +403,7 @@ def main():
         sound_video_amount = 0
         manifest_total = 0
         image_total = 0
-
+        logger.info("No records = " + str(data_len))
         while records < data_len:
             id_link = str(data["_embedded"]["records"][records]["_links"]["self"]["href"])
             objectpoint = id_link.find('object')
@@ -419,13 +421,16 @@ def main():
 
             try:
                 subfolder = get_subfolder(item_acc_no)
+                print("working with " + item_acc_no + subfolder)
             except Exception:
                 logger.info("bad accession no")
                 bad_acc_no_array.append(system_id)
 
             if os.path.exists(subfolder):
+                print("duplicate")
                 duplicate_array.append(item_acc_no)
             else:
+                print("creating subfolder")
                 os.makedirs(subfolder)
                 os.chmod(subfolder, 0o777)
                 out_file = subfolder + "/dublin_core.xml"
