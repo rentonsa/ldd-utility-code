@@ -1872,6 +1872,85 @@ dl {
     font-size: 18px;
 }
 /* -----> Films END <----- */
+/* -----> Individual Film <----- */
+#poa-film {
+    float: right;
+    background-position: center;
+    width: 50%;
+    height: auto;
+    background-size: 100%;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    padding-right: auto;
+    padding-left: auto;
+}
+#film-title {
+    width: 100%;
+    margin-left: -350px;
+}
+.film-cont {
+    margin-left: -250px;
+    margin-top: 50px;
+}
+.film-cont p {
+    margin-right: 70px;
+    text-align: justify;
+}
+.ifilm-img-cont {
+    float: left;
+    margin-right: -25px;
+}
+.ifilm-text-cont {
+    padding-top: 9px;
+}
+.ifilm-text-cont strong {
+    color: #222;
+}
+p.film-themes-p {
+    margin-top: 25px;
+}
+.ivideo-still {
+    border: 5px solid #114250;
+    width: 400px;
+}
+.film-credits{
+    color: #114650;
+    font-size: 15px;
+    width: 400px;
+}
+.film-themes-p a {
+    cursor: pointer;
+}
+.hirshow-title {
+    margin-left: -400px!important;
+}
+#hirshow-text {
+    padding-top: 0px;
+}
+.lindey-title {
+    margin-left: -400px!important;
+}
+#lindey-text {
+    padding-top: 28px;
+}
+.sim-title {
+    margin-left: -475px!important;
+}
+#sim-text {
+    padding-top: 1px;
+}
+.wuga-title {
+    margin-left: -425px!important;
+}
+#wuga-text {
+    padding-top: 0px;
+}
+
+/*.film-themes-p a::after {
+    content: " | ";
+
+}*/
+
 
 /* -----> Resources <----- */
 #poa-resources {
@@ -1953,3 +2032,5 @@ dl {
     margin-bottom: 30px;
     margin-right: 70px;
 }
+/* -----> Themes END <----- */
+

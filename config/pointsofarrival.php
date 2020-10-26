@@ -7,7 +7,7 @@ $config['skylight_url_prefix'] = 'pointsofarrival';
 
 $config['skylight_theme'] = 'pointsofarrival';
 
-$config['skylight_fullname'] = 'Poiunts Of rrival';
+$config['skylight_fullname'] = 'Points Of Arrival';
 
 // Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
 if (ENVIRONMENT == 'development') {
