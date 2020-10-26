@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div id="poa-theme">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
+            <img id="theme-title" class="img-responsive sch-logo nazigermany-theme" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/naziger-title.png">
+            <div class="theme-cont">
+                <div class="theme-img-cont">
+                    <img class="ivideo-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme/.png">
+                    <p class="film-credits">Narrated by artist Emma Newcombe, film by Chris Leslie.<p>
+                </div>
+                <p>
+                    After the Nazi party came into government in 1933 life for Jews in Germany changed. In 1934 and 1935 laws were introduced which excluded Jews from participating in 
+                    social and professional life: Jews could only go grocery shopping at particular times of the day, Jews could no longer work as civil servants, Jewish doctors could 
+                    only treat Jewish patients, Jewish children had to go to a Jewish school, Jews could only marry Jews, couples where one partner was Jewish and the other not were 
+                    asked to divorce (few did), Jews were forced to sell their shops or factories to non-Jews, Jews were forced to leave their homes and live in flats and houses with 
+                    other Jews. Slowly, there was less and less contact between Jews and non-Jews. Jews were excluded from society and discriminated against in every area of life. 
+                    <br><br>
+                    Many Jews tried to leave Germany and begin a new life in a different country. Being able to do so depended on having a visa (permission to enter) for another country, 
+                    and gaining such permission required evidence of enough money to leave the country and set up home elsewhere, or a relative or friend in the new country to write a 
+                    guarantee (affidavit) that they would look after the emigrants. Countries such as the United Kingdom offered working visas, that is it allowed Jews from Germany to 
+                    enter Britain to work in particular occupations. Many women applied to become domestic servants in British homes as that was a way to gain permission to come to the 
+                    UK and it guaranteed an income. Many Jews did not have enough money and connections to leave Germany. 
+                    <br><br>
+                    The situation became even more stressful for Jews in November 1938 when the government organised terrorist attacks on the homes and businesses of Jews and on Jewish 
+                    religious buildings such as synagogues (the state organised terror on 9-10 November 1938 is also known as ‘Kristallnacht’, the night of broken glass). Many buildings 
+                    and homes were destroyed, c.1,000 Jews were killed in violence by paramilitary organisations, and c.3,000 Jews were arrested and imprisoned.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

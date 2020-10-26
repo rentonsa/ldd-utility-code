@@ -1872,6 +1872,7 @@ dl {
     font-size: 18px;
 }
 /* -----> Films END <----- */
+
 /* -----> Individual Film <----- */
 #poa-film {
     float: right;
@@ -1945,12 +1946,7 @@ p.film-themes-p {
 #wuga-text {
     padding-top: 0px;
 }
-
-/*.film-themes-p a::after {
-    content: " | ";
-
-}*/
-
+/* -----> Individual Film END <----- */
 
 /* -----> Resources <----- */
 #poa-resources {
@@ -2034,3 +2030,77 @@ p.film-themes-p {
 }
 /* -----> Themes END <----- */
 
+/* -----> Individual Theme <----- */
+#poa-theme {
+    float: right;
+    background-position: center;
+    width: 50%;
+    height: auto;
+    background-size: 100%;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    padding-right: auto;
+    padding-left: auto;
+}
+#theme-title {
+    width: 100%;
+    margin-left: -420px;
+}
+.theme-cont {
+    margin-left: -250px;
+}
+.theme-cont p {
+    text-align: justify;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-right: 70px;
+}
+
+.fam-theme {
+    width: 50%!important;
+    margin-left: -350px!important;
+}
+.gorbals-theme {
+    margin-left: -480px!important;
+}
+.greatmigration-theme {
+    margin-left: -350px!important;
+}
+.history-theme {
+    margin-left: -350px!important;
+}
+.arts-theme {
+    margin-left: -350px!important;
+}
+.culture-theme {
+    width: 50%!important;
+    margin-left: -350px!important;
+}
+.food-theme {
+    width: 50%!important;
+    margin-left: -350px!important;
+}
+.fam-theme {
+    width: 50%!important;
+    margin-left: -350px!important;
+}
+.fam-theme {
+    width: 50%!important;
+    margin-left: -350px!important;
+}
+.fam-theme {
+    width: 50%!important;
+    margin-left: -350px!important;
+}
+.fam-theme {
+    width: 50%!important;
+    margin-left: -350px!important;
+}
+.fam-theme {
+    width: 50%!important;
+    margin-left: -350px!important;
+}
+
+/* -----> Individual Theme END <----- */
+
+/* STATIC PAGE CUSTOMISATIONS END */

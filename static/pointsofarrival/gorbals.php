@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <div id="poa-theme">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
+            <img id="theme-title" class="img-responsive sch-logo gorbals-theme" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/gorbals-title.png">
+            <div class="theme-cont">
+                <div class="theme-img-cont">
+                    <img class="ivideo-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme/.png">
+                    <p class="film-credits">Narrated by artist Emma Newcombe, film by Chris Leslie.<p>
+                </div>
+                <p>
+                    The Gorbals is an area on the south side of Glasgow, the first official part of the city south of the River Clyde. Coal mining was an early Gorbals industry, 
+                    and in the 1790s it became a fashionable spot for those wanting to move out of the old city centre, with elegant suburban houses built along its broad streets.
+                    <br><br>
+                    From the middle of the 19th century onwards, the Gorbals saw the arrival of large numbers of immigrant groups. These included Highland Gaels, Italians, Irish, 
+                    Lithuanians and Jews, often living in subdivided tenement flats or even single rooms. Many of these immigrants would have found themselves in close proximity to 
+                    different languages, foods, songs, and religious traditions – some of which would have been new to them. Immigrants maintained ties through societies, unions and 
+                    social events, but many also mixed more freely with other nationalities and ethnicities.
+                    <br><br>
+                    From approximately 1880 until after World War II, the Gorbals was the centre of Jewish life in Glasgow. The city’s largest synagogue was built on South Portland 
+                    Street in 1901, and in the 1930s the Glasgow Jewish Institute was founded next door. The Jewish Institute hosted sports clubs, youth groups, dances, concerts and 
+                    other social events. It had its own theatre, and the Jewish Institute Players – under their leader Avrom Greenbaum – won many amateur dramatic awards. From the 
+                    1940s onwards, increasing numbers of Jews moved out of the Gorbals and further south to areas such as Giffnock, which is now home to the majority of Glasgow’s 
+                    Jewish population.
+                    <br><br>
+                    The Gorbals in the first half of the 20th century was a very deprived area, with the dubious distinction of Europe’s largest slum. In the 1960s and 1970s, 
+                    the area’s tenement housing was pulled down and replaced with some of Glasgow’s first high-rise flats. These, however, did not prove a good idea, and they too 
+                    have now been demolished.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

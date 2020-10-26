@@ -4,36 +4,36 @@
             <img id="themes-title" class="img-responsive sch-logo" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/themes-title.png">
 
             <div class="themes-cont">
-                <h2><a href="https://encyclopedia.ushmm.org/" rel="noopener">Antisemitism</a></h2>
+                <h2><a href="./" rel="noopener">Antisemitism</a></h2>
                 <p>
                     In simple terms, antisemitism is hatred of Jews. Like all racisms it picks on a characteristic (here, being Jewish) that is an unchangeable part of a person, 
                     and fills this characteristic with nasty ideas. Antisemitism is something that is brought to the Jewish people from the outside and to which Jews are asked to react.
                 </p>
-                <h2><a href="https://encyclopedia.ushmm.org/" rel="noopener">Family</a></h2>
+                <h2><a href="./" rel="noopener">Family</a></h2>
                 <p>
                     One of the most difficult things that child refugees face was their dislocation from home and family. Children like Dorrith and Henry had to make the journey 
                     from their homes in Europe to their new life in Britain in groups led by young adult volunteers. Children as young as two years old travelled without their 
                     parents and were collected in Harwich and London by people they didn’t know and who spoke a language they didn’t understand.
                 </p>
-                <h2><a href="https://encyclopedia.ushmm.org/" rel="noopener">The Gorbals</a></h2>
+                <h2><a href="./" rel="noopener">The Gorbals</a></h2>
                 <p>
                     The Gorbals is an area on the south side of Glasgow, the first official part of the city south of the River Clyde. Coal mining was an early Gorbals industry, 
                     and in the 1790s it became a fashionable spot for those wanting to move out of the old city centre, with elegant suburban houses built along its broad streets.
                 </p>
-                <h2><a href="https://encyclopedia.ushmm.org/" rel="noopener">The Great Migration</a></h2>
+                <h2><a href="./" rel="noopener">The Great Migration</a></h2>
                 <p>
                     The late nineteenth and early twentieth century saw the mass migration of many people from Eastern Europe towards ‘the West’. Included among them were close to 
                     2 million Jews who moved from the Pale of Settlement towards North America, western Europe, the United Kingdom, and other parts of the English-speaking 
                     (Anglophone) world.
                 </p>
-                <h2><a href="https://encyclopedia.ushmm.org/" rel="noopener">History of Jews in Scotland</a></h2>
+                <h2><a href="./" rel="noopener">History of Jews in Scotland</a></h2>
                 <p>
                     Records of Jews in Scotland date back at least to the 17th century. Julius Conradus Otto, a Christian convert who later reverted to Judaism, became the first chair 
                     of Hebrew and Oriental Languages at Edinburgh University in 1642. Herman Lyon’s 1795 mausoleum on Calton Hill is thought to be the first Jewish gravesite in Edinburgh.
                 </p>
                 <p> 
                 </p>
-                <h2><a href="https://encyclopedia.ushmm.org/" rel="noopener">Jewish Art and Artists</a></h2>
+                <h2><a href="./" rel="noopener">Jewish Art and Artists</a></h2>
                 <p>   
                     Religious iconography has not played the kind of role in Judaism in the way that it has in Christianity, and until recent centuries much Jewish artistic creativity 
                     was directed towards the decoration of ritual objects and manuscripts, often to high levels of detail and craftsmanship.                 
