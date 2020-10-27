@@ -229,6 +229,7 @@ def iiif_md(dealing_image, et_out, outroot, ):
     dcvalue = et_out.SubElement(outroot, 'dcvalue')
     dcvalue.set('element', 'identifier')
     dcvalue.set('qualifier', 'imageUri')
+    dcvalue.set('language', 'en')
     dcvalue.text = str(dealing_image)
     return et_out
 
