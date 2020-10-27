@@ -47,7 +47,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
     {
         $mp4ok = false;
         $b_segments = explode("##", $bitstream);
-        $b_filename = $b_segments[1];
+        $b_filename = urlencode($b_segments[1]);
         if($image_id == "")
         {
             $image_id = substr($b_filename,0,7);
@@ -64,7 +64,7 @@ if(isset($solr[$bitstream_field]) && $link_bitstream)
                 foreach ($solr[$thumbnail_field] as $thumbnail)
                 {
                     $t_segments = explode("##", $thumbnail);
-                    $t_filename = $t_segments[1];
+                    $t_filename = urlencode($t_segments[1]);
                     if ($t_filename === $b_filename . ".jpg")
                     {
                         $t_handle = $t_segments[3];
