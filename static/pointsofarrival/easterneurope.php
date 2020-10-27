@@ -1,5 +1,15 @@
 <div class="container-fluid">
+
+    <!-- Include custom sidebar -->
+    <?php include 'poa_sidebar.php'; ?> 
+    <!-- Include custom sidebar -->
+    
     <div id="poa-theme">
+
+        <div class="back-link">
+            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"> </span><a href="./themes">Back to Themes List</a>
+        </div>
+
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
             <img id="theme-title" class="img-responsive sch-logo easterneu-theme" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/easterneu-title.png">
             <div class="theme-cont">
@@ -7,7 +17,7 @@
                     <img class="ivideo-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme/.png">
                     <p class="film-credits">Narrated by artist Emma Newcombe, film by Chris Leslie.<p>
                 </div>
-                <p>
+                <p class="theme-info">
                     Eastern European Jews are known as Ashkenazi Jews. Jews began to settle in Poland, Russia and other parts of Eastern Europe from around the 15th century. 
                     Many moved there from countries further West, looking for better opportunities and sometimes escaping persecution. They worked as artisans, as merchants, 
                     as musicians, as innkeepers, and in many other trades. Some collected taxes and revenue for Polish landowners. Jews in Eastern Europe mostly spoke a language 

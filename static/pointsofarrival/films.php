@@ -1,4 +1,9 @@
 <div class="container-fluid">
+
+    <!-- Include custom sidebar -->
+    <?php include 'poa_sidebar.php'; ?> 
+    <!-- Include custom sidebar -->
+
     <div id="poa-films">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
             <img id="films-title" class="img-responsive sch-logo" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/films-title.png">
@@ -41,7 +46,7 @@
                 <li>
                     <h2>Hilda Goldwag</h2>
                     <div class="film-info">
-                        <a href="https://media.ed.ac.uk/playlist/dedicated/143796462/0_b0sex7tl/0_0uw6a2ca" alt="External link to video" title="Link to video">
+                        <a href="./goldwag" alt="External link to video" title="Link to video">
                             <div class="film-img-cont">
                                 <img class="video-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/video-stills/goldwag.jpg">
                                 <img class="eye-overlay" src="<?php echo base_url(); ?>theme/pointsofarrival/images/video-stills/eye-icon.png">
@@ -58,7 +63,7 @@
                 <li>
                     <h2>Isaac Hirshow</h2>
                     <div class="film-info">
-                        <a href="https://media.ed.ac.uk/playlist/dedicated/143796462/0_b0sex7tl/0_lb5tqgvj" alt="External link to video" title="Link to video">
+                        <a href="./hirshow" alt="External link to video" title="Link to video">
                             <div class="film-img-cont">
                                 <img class="video-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/video-stills/hirshow.jpg">
                                 <img class="eye-overlay" src="<?php echo base_url(); ?>theme/pointsofarrival/images/video-stills/eye-icon.png">
@@ -76,7 +81,7 @@
                 <li>
                     <h2>Annie Lindey</h2>
                     <div class="film-info">
-                        <a href="https://media.ed.ac.uk/playlist/dedicated/143796462/0_b0sex7tl/0_7amxtxuy" alt="External link to video" title="Link to video">
+                        <a href="./lindey" alt="External link to video" title="Link to video">
                             <div class="film-img-cont">
                                 <img class="video-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/video-stills/lindey.jpg">
                                 <img class="eye-overlay" src="<?php echo base_url(); ?>theme/pointsofarrival/images/video-stills/eye-icon.png">
@@ -93,7 +98,7 @@
                 <li>
                     <h2>Dorrith Sim</h2>
                     <div class="film-info">
-                        <a href="https://media.ed.ac.uk/playlist/dedicated/143796462/0_b0sex7tl/0_hk75k72k" alt="External link to video" title="Link to video">
+                        <a href="./sim" alt="External link to video" title="Link to video">
                             <div class="film-img-cont">
                                 <img class="video-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/video-stills/sim.jpg">
                                 <img class="eye-overlay" src="<?php echo base_url(); ?>theme/pointsofarrival/images/video-stills/eye-icon.png">
@@ -110,7 +115,7 @@
                 <li>
                     <h2>Henry Wuga</h2>
                     <div class="film-info">
-                        <a href="https://media.ed.ac.uk/playlist/dedicated/143796462/0_b0sex7tl/0_gtrcwk4o" alt="External link to video" title="Link to video">
+                        <a href="./wuga" alt="External link to video" title="Link to video">
                             <div class="film-img-cont">
                                 <img class="video-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/video-stills/wuga.jpg">
                                 <img class="eye-overlay" src="<?php echo base_url(); ?>theme/pointsofarrival/images/video-stills/eye-icon.png">

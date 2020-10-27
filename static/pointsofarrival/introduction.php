@@ -1,4 +1,9 @@
 <div class="container-fluid">
+
+    <!-- Include custom sidebar -->
+    <?php include 'poa_sidebar.php'; ?> 
+    <!-- Include custom sidebar -->
+    
     <div id="poa-intro">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
             <img id="intro-title" class="img-responsive sch-logo" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/introduction-title.png">

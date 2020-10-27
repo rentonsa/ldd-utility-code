@@ -1,5 +1,15 @@
 <div class="container-fluid">
+
+    <!-- Include custom sidebar -->
+    <?php include 'poa_sidebar.php'; ?> 
+    <!-- Include custom sidebar -->
+    
     <div id="poa-theme">
+
+        <div class="back-link">
+            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"> </span><a href="./themes">Back to Themes List</a>
+        </div>
+
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
             <img id="theme-title" class="img-responsive sch-logo arts-theme" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/art-title.png">
             <div class="theme-cont">
@@ -7,7 +17,7 @@
                     <img class="ivideo-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme/.png">
                     <p class="film-credits">Narrated by artist Emma Newcombe, film by Chris Leslie.<p>
                 </div>
-                <p>
+                <p class="theme-info">
                     The Second Commandment against the creation of graven images or likenesses has largely been interpreted in Judaism as a prohibition on idols or ‘false’ objects of 
                     worship, rather than an outright ban on figurative art. From antiquity onwards, synagogue interiors have often been decorated with images of animals, flora, or 
                     more abstract patterns and designs (although very rarely human figures). However, religious iconography has not played the kind of role in Judaism in the way that 

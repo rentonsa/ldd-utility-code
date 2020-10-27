@@ -1,5 +1,15 @@
 <div class="container-fluid">
+
+    <!-- Include custom sidebar -->
+    <?php include 'poa_sidebar.php'; ?> 
+    <!-- Include custom sidebar -->
+    
     <div id="poa-theme">
+
+        <div class="back-link">
+            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"> </span><a href="./themes">Back to Themes List</a>
+        </div>
+
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
             <img id="theme-title" class="img-responsive sch-logo" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/antisemitism-title.png">
             <div class="theme-cont">
@@ -7,7 +17,7 @@
                     <img class="ivideo-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme/.png">
                     <p class="film-credits">Narrated by artist Emma Newcombe, film by Chris Leslie.<p>
                 </div>
-                <p>
+                <p class="theme-info">
                     In simple terms, antisemitism is hatred of Jews. Like all racisms it picks on a characteristic (here, being Jewish) that is an unchangeable part of a person, and fills 
                     this characteristic with nasty ideas. Antisemitism is something that is brought to the Jewish people from the outside and to which Jews are asked to react.
                     <br><br>

@@ -1,5 +1,15 @@
 <div class="container-fluid">
+
+    <!-- Include custom sidebar -->
+    <?php include 'poa_sidebar.php'; ?> 
+    <!-- Include custom sidebar -->
+    
     <div id="poa-theme">
+
+        <div class="back-link">
+            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"> </span><a href="./theme">Back to Themes List</a>
+        </div>
+
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
             <img id="theme-title" class="img-responsive sch-logo music-theme" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/music-title.png">
             <div class="theme-cont">
@@ -7,7 +17,7 @@
                     <img class="ivideo-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme/.png">
                     <p class="film-credits">Narrated by artist Emma Newcombe, film by Chris Leslie.<p>
                 </div>
-                <p>
+                <p class="theme-info">
                     Music is sometimes described as the one language shared by all humans. Even though many cultures have no single word for ‘music’, every group of people around the 
                     world takes part in activities that we could call ‘music-making’. For many of us, major life-events (weddings, births, deaths) would be unthinkable without music, 
                     and music is often an important part of everyday life. Across Scotland, and especially in the Hebridean Islands, women used to sing waulking songs to help keep 

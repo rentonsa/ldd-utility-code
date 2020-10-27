@@ -1,5 +1,15 @@
 <div class="container-fluid">
+
+    <!-- Include custom sidebar -->
+    <?php include 'poa_sidebar.php'; ?> 
+    <!-- Include custom sidebar -->
+    
     <div id="poa-theme">
+
+        <div class="back-link">
+            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"> </span><a href="./theme">Back to Themes List</a>
+        </div>
+
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
             <img id="theme-title" class="img-responsive sch-logo languages-theme" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/languages-title.png">
             <div class="theme-cont">
@@ -7,7 +17,7 @@
                     <img class="ivideo-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme/.png">
                     <p class="film-credits">Narrated by artist Emma Newcombe, film by Chris Leslie.<p>
                 </div>
-                <p>
+                <p class="theme-info">
                     For the majority of Jewish history, Jews have not had a land of their own. This means that Jewish languages have often been shared across many countries, connecting 
                     diasporic groups through sacred texts, in poetry and song, and more recently with books, newspapers and broadcasting.
                     <br><br>

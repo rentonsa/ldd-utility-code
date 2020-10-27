@@ -40,6 +40,9 @@ body
     font-family: "Roboto Condensed","Helvetica Neue",Helvetica,Arial,sans-serif!important;
     padding-top: 50px;
 }
+.container-fluid.container-full {
+    background: aliceblue;
+}
 
 .carousel-control.left, .carousel-control.right {
     background-image: none
@@ -389,6 +392,7 @@ div.spacer {
     position: absolute;
     bottom: 0;
     margin-left: 275px;
+    margin-bottom: 15px;
 }
 .nav-logo
 {
@@ -1632,7 +1636,8 @@ label
 }
 .col-lg-8 {
     width: 100%!important;
-    height: 110px!important;
+    height: 100%!important;
+    border-bottom: #47838f 5px solid ;
 }
 
 .panel-default>.panel-heading {
@@ -1892,6 +1897,7 @@ dl {
 .film-cont {
     margin-left: -250px;
     margin-top: 50px;
+    margin-bottom: 50%;
 }
 .film-cont p {
     margin-right: 70px;
@@ -1971,6 +1977,9 @@ p.film-themes-p {
 .resource-cont p {
     margin-bottom: 30px;
     margin-right: 70px;
+}
+.resource-cont h2 {
+    top: -500px;
 }
 /* -----> Resources END <----- */
 
@@ -2055,6 +2064,9 @@ p.film-themes-p {
     margin-bottom: 30px;
     margin-right: 70px;
 }
+.theme-info {
+    margin-bottom: 50%!important;
+}
 
 .fam-theme {
     width: 50%!important;
@@ -2101,6 +2113,83 @@ p.film-themes-p {
     margin-left: -350px!important;
 }
 
+.religion-list {
+    padding: 0;
+    font-size: 18px;
+    margin-right: 70px;
+    text-align: justify;
+}
+.title-religion-li, 
+.title-religion-li em {
+    color: #114250;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.inner-religion-list {
+    margin-top: 20px;
+    font-weight: 400;
+}
+.inner-religion-list em {
+    font-weight: 500;
+}
 /* -----> Individual Theme END <----- */
 
 /* STATIC PAGE CUSTOMISATIONS END */
+
+/* -----> Custom Sidebar <----- */
+.poa-sidebar {
+    float: left;
+    position: fixed;
+    padding-top: 70px;
+    width: 18%;
+    height: 100%;
+    left: 0;
+    background-color: #114250;
+    border-right: #47838f 5px solid;
+    border-bottom: #47838f 5px solid;
+}
+.accordion, .non-accordion {
+    background-color: #114250;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    height: 75px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 24px;
+    transition: 0.4s;
+}
+.active, .accordion:hover, .non-accordion:hover, .panel p:hover {
+    background-color: #47838f; 
+}
+.panel {
+    display: none;
+    background-color: #145263;
+    overflow: hidden;
+    border: #47838f 2px solid;
+    border-radius: 0!important;
+    margin: none!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    margin-bottom: 0!important;
+}
+.panel p {
+    color: #fff;
+    padding: 10px 18px;
+    margin: 0!important;
+}
+
+/* -----> Custom Sidebar END <----- */
+
+.back-link {
+    position: absolute;
+    left: 20%;
+    margin-top: -4%;
+    font-size: 18px;
+    color: #114250;
+}
+.back-link span {
+    color: #114250!important;
+}

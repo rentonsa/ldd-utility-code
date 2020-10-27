@@ -120,7 +120,7 @@
                 <p alt="A series of short films on historical Jewish immigrantion to Scotland" title="Points of Arrival tagline"> A digital resource pack for secondary schools on historical Jewish immigrantion to Scotland
             </div>
             <div class="right-nav">
-                <img src="<?php echo base_url()?>theme/pointsofarrival/images/site-logos/sjac_logo_clear.png">
+                <a href="https://www.sjac.org.uk/" target="_blank"><img src="<?php echo base_url()?>theme/pointsofarrival/images/site-logos/sjac_logo_clear.png"></a>
             </div>
         </div>
         

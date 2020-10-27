@@ -1,5 +1,17 @@
 <div class="container-fluid">
+
+    <!-- Include custom sidebar -->
+    <?php include 'poa_sidebar.php'; ?> 
+    <!-- Include custom sidebar -->
+
+    
+    
     <div id="poa-film">
+
+        <div class="back-link">
+            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"> </span><a href="./films">Back to Film List</a>
+        </div>
+        
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
             <img id="film-title" class="img-responsive sch-logo" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/goldwag-title.png">
 

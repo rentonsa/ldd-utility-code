@@ -1,4 +1,9 @@
 <div class="container-fluid">
+
+    <!-- Include custom sidebar -->
+    <?php include 'poa_sidebar.php'; ?> 
+    <!-- Include custom sidebar -->
+
     <div id="poa_banner">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <img class="img-responsive sch-logo" alt="Points of Arrival logo" src="<?php echo base_url(); ?>theme/pointsofarrival/images/site-logos/navbar-logo-b.png">

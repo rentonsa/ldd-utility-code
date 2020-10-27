@@ -1,4 +1,4 @@
-        <footer class="footer bg-primary">
+        <!--<footer class="footer bg-primary">
                 <div class="row">
                     <div class="col-md-3 hidden-sm hidden-xs">
                     </div>
@@ -75,7 +75,7 @@
                     </div>
                 </div>
                 <div class="spacer"></div>
-        </footer>
+        </footer> -->
         </div>
         <!-- Add mousewheel plugin (this is optional) -->
         <script src="<?php echo base_url()?>assets/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
