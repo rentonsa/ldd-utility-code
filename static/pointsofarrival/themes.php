@@ -87,6 +87,11 @@
                     Music is sometimes described as the one language shared by all humans. Even though many cultures have no single word for ‘music’, every group of people around the 
                     world takes part in activities that we could call ‘music-making’.
                 </p>
+                <h2><a href="./muisc" rel="noopener">Synagogue Music</a></h2>
+                <p>
+                    Music is a central part of Jewish worship. Many prayers are sung together by the whole congregation in synagogue, and some Jewish families sing prayers and songs around 
+                    the table at a Friday night Sabbath meal.
+                </p>
                 <h2><a href="./holocaust" rel="noopener">War and Holocaust</a></h2>
                 <p>
                     World War II had consequences for Germany’s antisemitic policies. The Nazis were motivated by a fascist ideology which divided people up into nations and placed nations 

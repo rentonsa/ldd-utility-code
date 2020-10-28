@@ -38,6 +38,7 @@
         <a href="./religion"><p>Jewish Religion</p></a>
         <a href="./kindertransport"><p>Kindertransport</p></a>
         <a href="./music"><p>Music as a Global Language</p></a>
+        <a href="./synagoguemusic"><p>Synagogue Music</p></a>
         <a href="./holocaust"><p>War and Holocaust</p></a>
         <a href="./welfare"><p>Welfare</p></a>
     </div>

@@ -35,10 +35,14 @@ ul li {
 .child-ul {
     margin-top: 20px;
 }
+html {
+    background: aliceblue;
+}
 body
 {
     font-family: "Roboto Condensed","Helvetica Neue",Helvetica,Arial,sans-serif!important;
     padding-top: 50px;
+    background: aliceblue;
 }
 .container-fluid.container-full {
     background: aliceblue;
@@ -1275,7 +1279,7 @@ div[id$="info"] {
     width: 70%;
     height: auto;
     background-size: 100%;
-    padding-top: 200px;
+    padding-top: 150px;
     padding-bottom: 50px;
     padding-right: auto;
     padding-left: auto;
@@ -1313,39 +1317,16 @@ div[id^="gallery"] {
 
 
 #galleryethst {
-    background-image: url(https://images.is.ed.ac.uk/luna/servlet/iiif/uoeart~2~2~73256~166246/2193,782,2761,2081/1024,/0/default.jpg);
+    background-image: url(https://test.collections.ed.ac.uk/theme/pointsofarrival/images/index-links/films.png);
 }
-
 #galleryethpe {
     background-image: url(https://test.collections.ed.ac.uk/theme/pointsofarrival/images/index-links/resources.png);
 }
-
-#galleryethbw {
-    background-image: url(https://images.is.ed.ac.uk/luna/servlet/iiif/uoeart~2~2~52856~104487/1465,1713,1713,1400/800,/0/default.jpg);
-}
-
-#galleryethww {
-    background-image: url(https://images.is.ed.ac.uk/luna/servlet/iiif/uoeart~2~2~74189~168009/930,2243,1285,1045/1024,/0/default.jpg);
-}
-
 #gallerykb {
     background-image: url(https://test.collections.ed.ac.uk/theme/pointsofarrival/images/index-links/films.png);
 }
-
-#gallerywesst {
-    background-image: url(https://images.is.ed.ac.uk/luna/servlet/iiif/uoeart~2~2~73040~164096/45,18,7083,5774/1024,/0/default.jpg);
-}
-
 #gallerywespe {
     background-image: url(https://test.collections.ed.ac.uk/theme/pointsofarrival/images/index-links/themes.png);
-}
-
-#gallerywesbw {
-    background-image: url(https://images.is.ed.ac.uk/luna/servlet/iiif/uoeart~2~2~73226~166227/257,418,6926,3924/1024,/0/default.jpg);
-}
-
-#gallerywesww {
-    background-image: url(https://images.is.ed.ac.uk/luna/servlet/iiif/uoeart~2~2~34378~103849/1143,2404,2373,1863/1024,/0/default.jpg);
 }
 
 .gallery-title {
@@ -1360,8 +1341,6 @@ div[id^="gallery"] {
     font-size: 20px;
     text-transform: uppercase;
     cursor: pointer;
-    background: rgb(19,67,79); /* Fallback for browsers that don't support RGBA */
-    background: rgba(19,67,79, 0.8);
     transition: .8s ease;
 }
 .text-hover, .text-overlay {
@@ -1393,8 +1372,6 @@ div[id^="gallery"] .gallery-title{
     display: block;
     color: #fff;
     letter-spacing: 2px;
-    background: rgb(19,67,79); /* Fallback for browsers that don't support RGBA */
-    background: rgba(19,67,79, 0.8);
     width: 100%;
     transition: .8s ease;
 }
@@ -1404,12 +1381,10 @@ div[id^="gallery"]:hover .gallery-title{
     color: #fff;
     letter-spacing: 2px;
     background: rgb(19,67,79); /* Fallback for browsers that don't support RGBA*/
-    background: rgba(19,67,79, 0.8);
+    background: rgba(19,67,79, 0.7);
     width: 100%;
     height: 100%;
-}
-div[id^="gallery"]:hover {
-    opacity: .7;
+    transition: .8s ease;
 }
 div[id^="gallery"]:hover .text-hover {
     margin: 65px -128px;
@@ -1802,11 +1777,12 @@ dl {
 
 
 /* STATIC PAGE CUSTOMISATIONS */
-
+/* -----> Global <----- */
 .page-tagline {
     margin-left: -250px;
     margin-bottom: 50px;
 }
+/* -----> Global END <----- */
 
 /* -----> Films <----- */
 #poa-films {
@@ -1815,7 +1791,7 @@ dl {
     width: 50%;
     height: auto;
     background-size: 100%;
-    padding-top: 200px;
+    padding-top: 150px;
     padding-bottom: 50px;
     padding-right: auto;
     padding-left: auto;
@@ -1885,7 +1861,7 @@ dl {
     width: 50%;
     height: auto;
     background-size: 100%;
-    padding-top: 200px;
+    padding-top: 150px;
     padding-bottom: 50px;
     padding-right: auto;
     padding-left: auto;
@@ -1897,7 +1873,6 @@ dl {
 .film-cont {
     margin-left: -250px;
     margin-top: 50px;
-    margin-bottom: 50%;
 }
 .film-cont p {
     margin-right: 70px;
@@ -1961,7 +1936,7 @@ p.film-themes-p {
     width: 50%;
     height: auto;
     background-size: 100%;
-    padding-top: 200px;
+    padding-top: 150px;
     padding-bottom: 50px;
     padding-right: auto;
     padding-left: auto;
@@ -1981,16 +1956,23 @@ p.film-themes-p {
 .resource-cont h2 {
     top: -500px;
 }
+#learning, #viruallibrary, #virtualshetl, #synagogues,
+#holocaustexplained, #migration, #artmusicculture, #scotland {
+    top: -250px;
+    display: block;
+    position: relative;
+    visibility: hidden;
+}
 /* -----> Resources END <----- */
 
-/* -----> Introduction <----- */
+/* -----> Introduction / How to <----- */
 #poa-intro {
     float: right;
     background-position: center;
     width: 50%;
     height: auto;
     background-size: 100%;
-    padding-top: 200px;
+    padding-top: 150px;
     padding-bottom: 50px;
     padding-right: auto;
     padding-left: auto;
@@ -2012,7 +1994,7 @@ p.film-themes-p {
     margin-bottom: 30px;
     margin-right: 70px;
 }
-/* -----> Introduction END <----- */
+/* -----> Introduction / How to END <----- */
 
 /* -----> Themes <----- */
 #poa-themes {
@@ -2021,7 +2003,7 @@ p.film-themes-p {
     width: 50%;
     height: auto;
     background-size: 100%;
-    padding-top: 200px;
+    padding-top: 150px;
     padding-bottom: 50px;
     padding-right: auto;
     padding-left: auto;
@@ -2046,7 +2028,7 @@ p.film-themes-p {
     width: 50%;
     height: auto;
     background-size: 100%;
-    padding-top: 200px;
+    padding-top: 150px;
     padding-bottom: 50px;
     padding-right: auto;
     padding-left: auto;
@@ -2133,9 +2115,10 @@ p.film-themes-p {
     font-weight: 500;
 }
 /* -----> Individual Theme END <----- */
-
 /* STATIC PAGE CUSTOMISATIONS END */
 
+
+/* GLOBAL FUNCTIONALITY CUSTOMISATIONS */
 /* -----> Custom Sidebar <----- */
 .poa-sidebar {
     float: left;
@@ -2180,16 +2163,18 @@ p.film-themes-p {
     padding: 10px 18px;
     margin: 0!important;
 }
-
 /* -----> Custom Sidebar END <----- */
 
+/* -----> Quick Back Links for Films & Themes <----- */
 .back-link {
     position: absolute;
     left: 20%;
-    margin-top: -4%;
+    margin-top: -2%;
     font-size: 18px;
     color: #114250;
 }
 .back-link span {
     color: #114250!important;
 }
+/* -----> Quick Back Links END <----- */
+/* GLOBAL FUNCTIONALITY CUSTOMISATIONS END */
