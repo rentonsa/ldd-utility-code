@@ -1,6 +1,6 @@
     <div class="col-md-9 col-sm-9 col-xs-12" style="margin-top: 20px;">
         <div class="pull-left" id="image-container"></div>
-        <!--<h1 class="itemtitle">Medical records revived: <small>Case Note Catalogues at Lothian Health Services Archive</small></h1>-->
+        <!--<h1 class="itemtitle"></h1>-->
         <p>
             The EERC in conjunction with the Centre for Research Collections at the University of Edinburgh have created an
             online resource to aid the discovery of a collection of primary source material generated during the first phase
@@ -11,7 +11,6 @@
             and working life to place-names and changing patterns in land use.
 
         </p>
-        <!--<img src="<?php echo base_url()?>/theme/lhsacasenotes/images/P_PL1_B_E_101-RIE-Exterior-1985.gif" alt="Royal Infirmary Edinburgh Exterior" class="img-responsive pull-right img-circle" />-->
 
         <p>
             The recording of first-hand accounts of people’s lives is one of the richest sources we have to study everyday
@@ -23,9 +22,6 @@
         <p>
             This resource will continue to grow as work continues in regions beyond Dumfries and Galloway.
         </p>
-
-        <!--<img src="<?php echo base_url()?>/theme/lhsacasenotes/images/dott-index-image.gif" alt="Norman Dott Case Notes" class="img-responsive pull-right index-img" />-->
-
 
     </div>
 
@@ -45,7 +41,7 @@
                 maxRowHeight: 150,
                 template: function(data) {
                     return '<div class="photo-container" style="height:' + data.displayHeight + 'px;margin-right:' + data.marginRight + 'px;">' +
-                        '<a href="./record/' + data.id + '">' +
+                        '<a href="./record/' + data.id + '" title="' + data.title + '">' +
                         '<img class="image-thumb" src="' + data.src + '" alt="' + data.title + '"' + '" title="' + data.title + '"' +
                         ' style="width:' + data.displayWidth + 'px;height:' + data.displayHeight + 'px;" >' +
                         '</a></div>';

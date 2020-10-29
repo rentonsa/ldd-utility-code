@@ -1,8 +1,6 @@
 <div class="col-md-9 col-sm-9 col-xs-12">
     <div class="content byEditor">
         <h1 class="itemtitle">People</h1>
-        <!--<img src="<?php echo base_url()?>/theme/lhsacasenotes/images/LHB1CC24-PR1-1536d.gif" alt="Royal Infirmary of Edinburgh" class="img-responsive pull-right img-circle" />-->
-
 
         <p>During the Study, 276 people aged between 8 and 103 were interviewed by 49 volunteer fieldworkers. This resulted in over 300 interviews and nearly 300 hours of audio material.</p>
 
@@ -31,7 +29,7 @@
             maxRowHeight: 250,
             template: function(data) {
                     return '<div class="photo-container" style="height:' + data.displayHeight + 'px;margin-right:' + data.marginRight + 'px;">' +
-                            '<a href="./record/' + data.id + '">' +
+                            '<a href="./record/' + data.id + '" title="' + data.title + '">' +
                         '<img class="image-thumb" src="' + data.src + '" alt="' + data.title + '"' + '" title="' + data.title + '"' +
                         ' style="width:' + data.displayWidth + 'px;height:' + data.displayHeight + 'px;" >' +
                         '</a></div>';
