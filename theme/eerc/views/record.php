@@ -12,8 +12,65 @@ function exceptions_error_handler($severity, $message, $filename, $lineno) {
     }
 }
 
+function endsWith( $haystack, $needles ) {
+
+    foreach ($needles as $needle) {
+        if (substr($haystack, -strlen($needle)) === $needle) {
+            return true;
+        }
+    }
+    return false;
+}
+
+function humanFileSize($size,$unit="") {
+    if( (!$unit && $size >= 1<<30) || $unit == "GB")
+        return number_format($size/(1<<30),2)."GB";
+    if( (!$unit && $size >= 1<<20) || $unit == "MB")
+        return number_format($size/(1<<20),2)."MB";
+    if( (!$unit && $size >= 1<<10) || $unit == "KB")
+        return number_format($size/(1<<10),2)."KB";
+    return number_format($size)." bytes";
+}
+
+function curl_get_file_size( $url ) {
+    // Assume failure.
+    $result = -1;
+
+    $curl = curl_init( $url );
+
+    // Issue a HEAD request and follow any redirects.
+    curl_setopt( $curl, CURLOPT_NOBODY, true );
+    curl_setopt( $curl, CURLOPT_HEADER, true );
+    curl_setopt( $curl, CURLOPT_RETURNTRANSFER, true );
+    curl_setopt( $curl, CURLOPT_FOLLOWLOCATION, true );
+
+    $data = curl_exec( $curl );
+    curl_close( $curl );
+
+    if( $data ) {
+        $content_length = "unknown";
+        $status = "unknown";
+
+        if( preg_match( "/^HTTP\/1\.[01] (\d\d\d)/", $data, $matches ) ) {
+            $status = (int)$matches[1];
+        }
+
+        if( preg_match( "/Content-Length: (\d+)/", $data, $matches ) ) {
+            $content_length = (int)$matches[1];
+        }
+
+        // http://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+        if( $status == 200 || ($status > 300 && $status <= 308) ) {
+            $result = $content_length;
+        }
+    }
+
+    return humanFileSize($result);
+}
+
+
 $author_field = $this->skylight_utilities->getField("Creator");
-$type_field = $this->skylight_utilities->getField("Type");
+$type_field = $this->skylight_utilities->getField   ("Type");
 $date_field = $this->skylight_utilities->getField("Date");
 $parent_id_field = $this->skylight_utilities->getField("Parent_Id");
 $parent_type_field = $this->skylight_utilities->getField("Parent_Type");
@@ -116,34 +173,44 @@ $bitstreamLinks = array();
                                     foreach($json_array as $digital_obj)  {
                                         try {
                                             $digital_obj = json_decode($digital_obj, TRUE);
-                                            $do_title = $digital_obj['title'];
-                                            $do_title_short = substr($do_title, 0, strpos($do_title, '.'));
-                                            $do_url = $digital_obj['file_versions'][0]['file_uri'];
 
-                                            if (strpos($do_title, '.wav') !== false || strpos($do_title, '.mp3') !== false) {
-                                                $audio .= '<audio controls src="' . $do_url . '" title="Embedded audio file ' . $do_title . '" style="margin-top: 8px;">';
-                                                $audio .= 'Your browser does not support the <code>audio</code> element.</audio></br>';
-                                            } else if (strpos($do_title, '.jpg') !== false || strpos($do_title, '.jpeg') !== false) {
-                                                $photo .= '<a href="' . $do_url . '" title="Photograph ' . $do_title_short . '">';
-                                                $photo .= '<img src="' . $do_url . '" alt="Photograph ' . $do_title_short . '" style="width: 300px; padding: 8px;"></a>';
-                                            } else if (strpos($do_title, '.doc') !== false) {
+                                            $do_file = $digital_obj['title'];
+                                            $do_title_short = substr($do_file, 0, strpos($do_file, '.'));
+                                            $do_url = $digital_obj['file_versions'][0]['file_uri'];
+                                            $file_size = curl_get_file_size($do_url);
+
+                                            if (endsWith($do_file, ['.wav', '.mp3'])) {
+                                                $audio .= '<audio controls src="' . $do_url . '" title="Embedded audio file ' . $do_file . '" style="margin-top: 8px; margin-right: 8px;">';
+                                                $audio .= 'Your browser does not support the <code>audio</code> element.</audio>';
+                                                $audio .= '&nbsp;(' . $file_size . ')';
+                                            } else if (endsWith($do_file, ['.mp4','.mov'])) {
+                                                $audio .= '<video controls width="480" preload="metadata">';
+                                                $audio .= '<source src="' . $do_url . '">';
+                                                $audio .= 'Sorry, your browser doesn\'t support embedded videos.</video>';
+                                                $audio .= '&nbsp;(' . curl_get_file_size($do_url) . ')';
+                                            } else if (endsWith($do_file, ['.jpg','.jpeg'])) {
+                                                $photo .= '<a href="' . $do_url . '" title="Photograph ' . $do_title_short . ' (' . $file_size . ')">';
+                                                $photo .= '<img src="' . $do_url . '" alt="Photograph ' . $do_title_short . ' (' . $file_size . ')" style="width: 300px; padding: 8px;"></a>';
+                                            } /*else if (endsWith($do_file, ['.doc'])) {
                                                 $do_title_short = substr($do_title_short, 0, -2);
                                                 $trans .= '<a href="' . $do_url . '" title="Transcript of interview ' . $do_title_short . ' in Microsoft Word format">';
                                                 $trans .= '<img src="/theme/eerc/images/file-word-icon.png" alt="Transcript of interview ' . $do_title_short . ' in Microsoft Word format"></a>';
-                                            } else if (strpos($do_title, '.odt') !== false) {
+                                            } else if (strpos($do_file, '.odt') !== false) {
                                                 $do_title_short = substr($do_title_short, 0, -2);
                                                 $trans .= '<a href="' . $do_url . '" title="Transcript of interview ' . $do_title_short . ' in ODT format">';
                                                 $trans .= '<img src="/theme/eerc/images/file-odt-icon.png" alt="Transcript of interiew ' . $do_title_short . ' in ODT format"></a>';
-                                            } else if (strpos($do_title, '.pdf') !== false) {
+                                            }*/ else if (endsWith($do_file, ['.pdf'])) {
                                                 $do_title_short = substr($do_title_short, 0, -2);
-                                                $trans .= '<a href="' . $do_url . '" title="Transcript of interview ' . $do_title_short . ' in PDF format">';
-                                                $trans .= '<img src="/theme/eerc/images/file-pdf-icon.png" alt="Transcript of interiew ' . $do_title_short . ' in PDF format"></a>';
+                                                $trans .= '<a href="' . $do_url . '" title="Transcript of interview ' . $do_title_short . ' in PDF format (' . $file_size . ')" target="_blank">';
+                                                $trans .= '<img src="/theme/eerc/images/file-pdf-icon.png" alt="Transcript of interview ' . $do_title_short . ' in PDF format (' . $file_size . ')"></a>';
+                                                $trans .= '(' . $file_size . ')';
                                             }
                                         }
                                         catch (Exception $e) {
                                             // Something was wrong in the digital object data
-                                            // but we're not going to do anything about it.
+                                            // but well log it
                                             // echo 'Caught exception: ',  $e->getMessage(), "\n";
+                                            log_error('Error parsing digital object: ' . $e->getMessage());
                                         }
                                     }
 
