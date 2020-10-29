@@ -120,11 +120,11 @@ else {
                     ?>
                 </div>
             <?php } ?>
-            <?php if(array_key_exists('interview_summary',$doc)) { ?>
+            <?php if(array_key_exists('summary',$doc)) { ?>
                 <div class="interview_summary">
                     <?php
 
-                    $text = $doc['interview_summary'];
+                    $text = $doc['summary'];
                     $needle = urldecode($query);
                     $hits = explode($needle, $text);
                     $max_length_summary = 200;
