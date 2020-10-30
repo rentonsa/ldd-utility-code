@@ -115,6 +115,7 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li><a href="./" title="EERC Home Link">Home</a></li>
+                        <li><a href="./overview" title="Overview Link">Overview</a></li>
                         <li><a href="./people" title="People Link">People</a></li>
                         <li><a href="./history" title="Oral History Link">Oral History</a></li>
                         <li><a href="./publications" title="Publications">Publications</a></li>
