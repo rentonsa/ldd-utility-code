@@ -4,7 +4,7 @@
 $config['skylight_hostnames'] = array('sjac-collection.is.ed.ac.uk', 'stuartsound.is.ed.ac.uk','www.fairbairn.ac.uk', 'exampapers.ed.ac.uk', 'test.scottishgovernmentyearbooks.ed.ac.uk', 'www.scottishgovernmentyearbooks.ed.ac.uk','openbooks.is.ed.ac.uk','sopacollection.ph.ed.ac.uk', 'exhibitions.ed.ac.uk', 'lac-projects.is.ed.ac.uk', 'www.stuartsound.is.ed.ac.uk');
 
 // Uncomment this if you want to use urls of the form http://.../prefix/...
-$config['skylight_url_prefixes'] = array('eerc','exhibitions','umis','cockburn','coimbra-colls', 'public-art','archivemedia', 'geddes', 'lhsacasenotes','stcecilias','mimed', 'art', 'calendars', 'iconics', 'towardsdolly', 'alumni', 'coimbra', 'guardbook', 'openbooks');
+$config['skylight_url_prefixes'] = array('pointsofarrival','eerc','exhibitions','umis','cockburn','coimbra-colls', 'public-art','archivemedia', 'geddes', 'lhsacasenotes','stcecilias','mimed', 'art', 'calendars', 'iconics', 'towardsdolly', 'alumni', 'coimbra', 'guardbook', 'openbooks');
 
 $config['skylight_handle_prefixes'] = array(3 => "art", 11 => "mimed");
 

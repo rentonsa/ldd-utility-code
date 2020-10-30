@@ -23,8 +23,8 @@
         <div class="searchFoundRow">
             <span class="searchFound"><?php echo $rows ?> instruments found </span>
         </div>
-        <div id="results-container">
-            <div class="results-row">
+        <div id="results-grid" class="grid">
+            <div class="grid-sizer col-xs-3"></div>
             <?php
             $link_uri_field = $this->skylight_utilities->getField("ImageURI");
 
@@ -88,21 +88,24 @@
 
                 ?>
 
-                    <div class="column">
-                        <div class="thumbnail-cont">
-                            <a <?php echo $thumbnailLink; ?> >
+                <div class="grid-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                    <a <?php echo $thumbnailLink; ?> >
+                        <div class="grid-item-container">
+                            <div class="grid-item-content box">
+
                                 <?php echo $thumbnailImg; ?>
-                            </a>
-                            <figcaption>
-                                <span class="searchTitle"><?php echo $doc[$title_field][0]; ?></span><br>
-                                <span class="searchDate"><?php echo empty($doc[$maker_field][0]) ? "unknown" : $doc[$maker_field][0] ; ?></span><br>
-                                <span class="searchDate"><?php echo empty($doc[$date_field][0]) ? "unknown" : $doc[$date_field][0] ; ?></span><br>
-                                <span class="searchDate">Accession Number: <strong><?php echo empty($doc[$acc_field][0]) ? "unnumbered" : $doc[$acc_field][0] ; ?></strong></span>
-                            </figcaption>
+
+                                <figcaption>
+                                    <span class="searchTitle"><?php echo $doc[$title_field][0]; ?></span><br>
+                                    <span class="searchDate"><?php echo empty($doc[$maker_field][0]) ? "unknown" : $doc[$maker_field][0] ; ?></span><br>
+                                    <span class="searchDate"><?php echo empty($doc[$date_field][0]) ? "unknown" : $doc[$date_field][0] ; ?></span><br>
+                                    <span class="searchDate">Accession Number: <strong><?php echo empty($doc[$acc_field][0]) ? "unnumbered" : $doc[$acc_field][0] ; ?></strong></span>
+                                </figcaption>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+                </div>
             <?php }?>
-            </div>
         </div>
         <div class="row">
             <div class="centered text-center">
