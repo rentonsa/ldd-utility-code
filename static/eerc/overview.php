@@ -48,6 +48,10 @@
 
         $curl = curl_init($url);
         curl_setopt($curl, CURLOPT_POST, $post);
+        // Set connection timeout to 1 second
+        //curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 1);
+        curl_setopt($curl, CURLOPT_CONNECTTIMEOUT_MS, 1000);
+
         if($data) {
             curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query($data));
         }
@@ -66,8 +70,11 @@
         //$url = $this->base_url . $this->solr_collection . "/select?";
         $base_url = 'http://lac-archives-live.is.ed.ac.uk:8089';
 
+        // Login
         $result = request($base_url . "/users/admin/login", ['password' => 'Z"/)}4ck{Z[}73Q)']);
         $json_obj = json_decode($result, TRUE);
+
+        log_message("debug", "Logged in to ArchivesSpace REST API.");
 
         $session = $json_obj['session'];
 
@@ -134,7 +141,6 @@
         return $output;
     }
 
-    //$tree = getTree();
     ?>
     <ul>
         <?php

@@ -13,7 +13,6 @@ function exceptions_error_handler($severity, $message, $filename, $lineno) {
 }
 
 function endsWith( $haystack, $needles ) {
-
     foreach ($needles as $needle) {
         if (substr($haystack, -strlen($needle)) === $needle) {
             return true;
@@ -37,6 +36,9 @@ function curl_get_file_size( $url ) {
     $result = -1;
 
     $curl = curl_init( $url );
+
+    //curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 1);
+    curl_setopt($curl, CURLOPT_CONNECTTIMEOUT_MS, 1000);
 
     // Issue a HEAD request and follow any redirects.
     curl_setopt( $curl, CURLOPT_NOBODY, true );
@@ -65,7 +67,15 @@ function curl_get_file_size( $url ) {
         }
     }
 
-    return humanFileSize($result);
+    // Result is -1 if the connection times out
+    // Timeout set at 1 second, we don't want to have the user waiting
+    // just to print out file size
+    if($result != -1) {
+        return " (" . humanFileSize($result) . ")";
+    }
+    else {
+        return "";
+    }
 }
 
 
@@ -182,15 +192,15 @@ $bitstreamLinks = array();
                                             if (endsWith($do_file, ['.wav', '.mp3'])) {
                                                 $audio .= '<audio controls src="' . $do_url . '" title="Embedded audio file ' . $do_file . '" style="margin-top: 8px; margin-right: 8px;">';
                                                 $audio .= 'Your browser does not support the <code>audio</code> element.</audio>';
-                                                $audio .= '&nbsp;(' . $file_size . ')';
+                                                $audio .= $file_size;
                                             } else if (endsWith($do_file, ['.mp4','.mov'])) {
                                                 $audio .= '<video controls width="480" preload="metadata">';
                                                 $audio .= '<source src="' . $do_url . '">';
                                                 $audio .= 'Sorry, your browser doesn\'t support embedded videos.</video>';
-                                                $audio .= '&nbsp;(' . curl_get_file_size($do_url) . ')';
+                                                $audio .= $file_size;
                                             } else if (endsWith($do_file, ['.jpg','.jpeg'])) {
-                                                $photo .= '<a href="' . $do_url . '" title="Photograph ' . $do_title_short . ' (' . $file_size . ')">';
-                                                $photo .= '<img src="' . $do_url . '" alt="Photograph ' . $do_title_short . ' (' . $file_size . ')" style="width: 300px; padding: 8px;"></a>';
+                                                $photo .= '<a href="' . $do_url . '" title="Photograph ' . $do_title_short .  $file_size . '">';
+                                                $photo .= '<img src="' . $do_url . '" alt="Photograph ' . $do_title_short .  $file_size . '" style="width: 300px; padding: 8px;"></a>';
                                             } /*else if (endsWith($do_file, ['.doc'])) {
                                                 $do_title_short = substr($do_title_short, 0, -2);
                                                 $trans .= '<a href="' . $do_url . '" title="Transcript of interview ' . $do_title_short . ' in Microsoft Word format">';
@@ -201,9 +211,9 @@ $bitstreamLinks = array();
                                                 $trans .= '<img src="/theme/eerc/images/file-odt-icon.png" alt="Transcript of interiew ' . $do_title_short . ' in ODT format"></a>';
                                             }*/ else if (endsWith($do_file, ['.pdf'])) {
                                                 $do_title_short = substr($do_title_short, 0, -2);
-                                                $trans .= '<a href="' . $do_url . '" title="Transcript of interview ' . $do_title_short . ' in PDF format (' . $file_size . ')" target="_blank">';
-                                                $trans .= '<img src="/theme/eerc/images/file-pdf-icon.png" alt="Transcript of interview ' . $do_title_short . ' in PDF format (' . $file_size . ')"></a>';
-                                                $trans .= '(' . $file_size . ')';
+                                                $trans .= '<a href="' . $do_url . '" title="Transcript of interview ' . $do_title_short . ' in PDF format' . $file_size . '" target="_blank">';
+                                                $trans .= '<img src="/theme/eerc/images/file-pdf-icon.png" alt="Transcript of interview ' . $do_title_short . ' in PDF format' . $file_size . '"></a>';
+                                                $trans .= $file_size;
                                             }
                                         }
                                         catch (Exception $e) {
@@ -252,8 +262,9 @@ $bitstreamLinks = array();
             <!--<tr><th>Consult at</th>
                     <?php
 
-                        echo '<td><a href="http://www.lhsa.lib.ed.ac.uk/" target="_blank"
+                        /*echo '<td><a href="http://www.lhsa.lib.ed.ac.uk/" target="_blank"
                         title="Lothian Health Services Archive">Lothian Health Services Archive</a></td>';
+                        */
                     ?>
                 </tr>-->
             </tbody>
