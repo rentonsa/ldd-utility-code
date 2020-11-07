@@ -1,6 +1,6 @@
 <div class="container-fluid">
 
-    <!-- Include custom sidebar -->
+    <!-- Include custom sidebar --> 
     <?php include 'poa_sidebar.php'; ?> 
     <!-- Include custom sidebar -->
     
@@ -23,6 +23,7 @@
                         Dorrith Sim was one of the thousands of Jewish children who arrived in the UK in 1939 on what became known as the Kindertransport. Travelling alone and speaking 
                         little English, she was taken in by an Edinburgh family. After the war, Dorrith chose to remain in Edinburgh. She wrote a book about her experiences and became 
                         an ambassador and spokesperson for her fellow refugees.
+                        <br><br>
                         Available in <a href="https://media.ed.ac.uk/playlist/dedicated/143796462/0_b0sex7tl/0_0uw6a2ca" alt="External link to video" title="Link to video">Original</a> 
                         or <a href="https://media.ed.ac.uk/playlist/dedicated/143796462/0_b0sex7tl/0_45a0nz8u" alt="External link to subtitled video" title="Link to subtitled video">Subtitled</a> versions.
                     </p>

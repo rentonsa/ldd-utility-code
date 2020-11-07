@@ -28,7 +28,7 @@
                 </li>
                 <li>
                     <h2>Trailer</h2>
-                    <div class="film-info">
+                    <div class="film-info"> 
                         <a href="https://media.ed.ac.uk/playlist/dedicated/143796462/0_b0sex7tl/0_wivoswb5" alt="External link to video" title="Link to video">
                             <div class="film-img-cont">
                                 <img class="video-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/video-stills/full.jpg">

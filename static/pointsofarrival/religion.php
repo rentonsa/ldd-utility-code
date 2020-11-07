@@ -1,6 +1,6 @@
 <div class="container-fluid">
 
-    <!-- Include custom sidebar -->
+    <!-- Include custom sidebar --> 
     <?php include 'poa_sidebar.php'; ?> 
     <!-- Include custom sidebar -->
     
@@ -14,8 +14,10 @@
             <img id="theme-title" class="img-responsive sch-logo religion" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/religion-title.png">
             <div class="theme-cont">
                 <div class="theme-img-cont">
-                    <img class="ivideo-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme/.png">
-                    <p class="film-credits">Narrated by artist Emma Newcombe, film by Chris Leslie.<p>
+                    <img class="theme-still theme-top" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/religion.png">
+                    <p class="theme-credits">
+                        Interior of Garnethill Synagogue, Glasgow. Courtesy of the Scottish Jewish Archives Centre
+                    <p>
                 </div>
                 <p>
                     A person is a Jew if they have Jewish parents. A Jew may choose to express their Jewishness by following the religion of Judaism. However, 

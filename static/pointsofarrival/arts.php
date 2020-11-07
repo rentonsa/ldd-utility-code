@@ -14,10 +14,12 @@
             <img id="theme-title" class="img-responsive sch-logo arts-theme" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/art-title.png">
             <div class="theme-cont">
                 <div class="theme-img-cont">
-                    <img class="ivideo-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme/.png">
-                    <p class="film-credits">Narrated by artist Emma Newcombe, film by Chris Leslie.<p>
+                    <img class="theme-still theme-top" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/arts.png">
+                    <p class="theme-credits">
+                        Josef Herman, Refugees (1941). Ben Uri Collection (c) Josef Herman Estate
+                    <p>
                 </div>
-                <p class="theme-info">
+                <p>
                     The Second Commandment against the creation of graven images or likenesses has largely been interpreted in Judaism as a prohibition on idols or ‘false’ objects of 
                     worship, rather than an outright ban on figurative art. From antiquity onwards, synagogue interiors have often been decorated with images of animals, flora, or 
                     more abstract patterns and designs (although very rarely human figures). However, religious iconography has not played the kind of role in Judaism in the way that 
@@ -32,6 +34,14 @@
                     known as the People’s Art School, in his home city of Vitebsk (in present-day Belarus). In 1980s Britain, the American Jewish artist RB Kitaj produced a ‘Diasporist 
                     Manifesto’, declaring that ‘The Diasporist lives and paints in two societies at once.’
                     <br><br>
+                </p> 
+                <div class="theme-img-cont">
+                    <img class="theme-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/arts2.png">
+                    <p class="theme-credits">
+                        Garnethill Boys Hostel, 1939. Courtesy of the Scottish Jewish Archives Centre
+                    <p>
+                </div>
+                <p class="theme-info">
                     Scotland was home to several important Jewish like artists who were welcomed by the artistic community and influenced Scottish art. Sculptor Benno Schotz (RSO), 
                     for example, came to Glasgow from Estonia in 1912 and was Head of Sculpture and Ceramic at the Glasgow School of Art. There were also a number of influential 
                     painters who came as refugees to escape Nazi persecution in the 1930-40s. Alongside Hilda Goldwag, the painter Josef Herman, who fled his native Poland in 1938, 

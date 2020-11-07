@@ -27,7 +27,7 @@
                         Available in <a href="https://media.ed.ac.uk/playlist/dedicated/143796462/0_b0sex7tl/0_0uw6a2ca" alt="External link to video" title="Link to video">Original</a> 
                         or <a href="https://media.ed.ac.uk/playlist/dedicated/143796462/0_b0sex7tl/0_45a0nz8u" alt="External link to subtitled video" title="Link to subtitled video">Subtitled</a> versions.
                     </p>
-                    <p class="film-themes-p">
+                    <p class="film-themes-p"> 
                         <strong>Themes:</strong><br>
                         <a>Jewish Culture</a> || 
                         <a>Antisemitism</a> || 

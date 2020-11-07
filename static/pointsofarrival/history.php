@@ -14,10 +14,12 @@
             <img id="theme-title" class="img-responsive sch-logo history-theme" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/histories-title.png">
             <div class="theme-cont">
                 <div class="theme-img-cont">
-                    <img class="ivideo-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme/.png">
-                    <p class="film-credits">Narrated by artist Emma Newcombe, film by Chris Leslie.<p>
+                    <img class="theme-still theme-top" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/scotland.png">
+                    <p class="theme-credits">
+                        Glasgow Jewish linen merchant. Courtesy of the Scottish Jewish Archives Centre
+                    <p>
                 </div>
-                <p class="theme-info">
+                <p>
                     Records of Jews in Scotland date back at least to the 17th century. Julius Conradus Otto, a Christian convert who later reverted to Judaism, became the first chair of 
                     Hebrew and Oriental Languages at Edinburgh University in 1642. Herman Lyon’s 1795 mausoleum on Calton Hill is thought to be the first Jewish gravesite in Edinburgh.
                     <br><br>
@@ -35,6 +37,14 @@
                     Other Jewish community centres established themselves in Scotland at the turn of the century. In Dundee, German Jewish merchants established a community in 1874, 
                     and in 1893 the Aberdeen Hebrew Congregation was founded. Other smaller communities also grew in Inverness, Dunfermline, Ayr, Falkirk, and Greenock.
                     <br><br>
+                </p>
+                <div class="theme-img-cont">
+                    <img class="theme-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/scotland2.png">
+                    <p class="theme-credits">
+                        Hilda Goldwag, In Cowcaddens (1967).
+                    <p>
+                </div> 
+                <p class="theme-info">
                     Although the numbers of Jews in Scotland was small (numbering c. 1,600 in 1881), from 1880 onwards, Scotland’s population of began to receive a significant number 
                     of Jewish immigrants from Eastern Europe. Many came with the large waves of late nineteenth-century East-West Jewish migration, escaping economic hardship and 
                     persecution in Russia, Poland and Rumania to seek out better lives in the West. These Eastern European arrivals signalled a new phase in the country’s Jewish life. 

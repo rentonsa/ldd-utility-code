@@ -1,6 +1,6 @@
 <div class="container-fluid">
 
-    <!-- Include custom sidebar -->
+    <!-- Include custom sidebar --> 
     <?php include 'poa_sidebar.php'; ?> 
     <!-- Include custom sidebar -->
     
@@ -22,6 +22,7 @@
                     <p>
                         This is the story of Annie Lindey, who moved to Edinburgh from Russia in the late 19th century. Annie was a tireless worker for her community and an early advocate 
                         of mutual support and social welfare for women.
+                        <br><br>
                         Available in <a href="https://media.ed.ac.uk/playlist/dedicated/143796462/0_b0sex7tl/0_0uw6a2ca" alt="External link to video" title="Link to video">Original</a> 
                         or <a href="https://media.ed.ac.uk/playlist/dedicated/143796462/0_b0sex7tl/0_45a0nz8u" alt="External link to subtitled video" title="Link to subtitled video">Subtitled</a> versions.
                     </p>
