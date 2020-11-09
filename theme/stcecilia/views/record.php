@@ -699,23 +699,20 @@ foreach($recorddisplay as $key)
 
 <div id="stc-section5" class="panel panel-default container-fluid">
     <div class="panel-heading straight-borders">
-        <h3 class="panel-title hidden-sm hidden-xs inst-desc">
-            <a class="accordion-toggle" data-toggle="collapse" href="#collapse1">Instrument Data <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </a>
-        </h3>
-        <h4 class="panel-title hidden-md hidden-lg ">
+        <h3 class="panel-title hidden-sm hidden-xs inst-desc">Instrument Data</h3>
+        <!--<h4 class="panel-title hidden-md hidden-lg ">
             <a class="accordion-toggle" data-toggle="collapse" href="#collapse1">Instrument Data <i class="fa fa-chevron-down" aria-hidden="true"></i>
 
             </a>
-        </h4>
+        </h4>-->
     </div>
-    <div id="collapse1" class="panel-collapse collapse">
+    <div class="panel-collapse">
         <div class="panel-body">
             <div class="col-sm-6 col-xs-12 col-md-8 col-lg-12 metadata" itemscope itemtype="https://schema.org/instrument">
 
                 <div class="info-box">
 
-                    <h3>Identification Information</h3>
+                    <h4>Identification Information</h4>
                     <dl class="dl-horizontal">
                         <?php
                         $infofound = false;
@@ -776,8 +773,8 @@ foreach($recorddisplay as $key)
                     </dl>
                 </div> <!-- main-info -->
 
-                <div class="info-box">
-                    <h3>Date Information</h3>
+                <div class="info-box child-box">
+                    <h4>Date Information</h4>
                     <dl class="dl-horizontal">
                         <?php
                         $infofound = false;
@@ -838,8 +835,8 @@ foreach($recorddisplay as $key)
                     </dl>
                 </div> <!-- meta-info -->
 
-                <div class="info-box">
-                    <h3>Maker</h3>
+                <div class="info-box child-box">
+                    <h4>Maker</h4>
                         <dl class="dl-horizontal" id="table-text-desc">
                         <?php
                         $infofound = false;
@@ -953,8 +950,8 @@ foreach($recorddisplay as $key)
                     </dl>
                 </div> <!-- creator-info -->
 
-                <div class="info-box">
-                    <h3>Production Place</h3>
+                <div class="info-box child-box">
+                    <h4>Production Place</h4>
                     <dl class="dl-horizontal">
                         <?php
                         $infofound = false;
@@ -1014,8 +1011,8 @@ foreach($recorddisplay as $key)
                     </dl>
                 </div> <!--place-info -->
 
-                <div class="info-box">
-                    <h3>Object Type Information</h3>
+                <div class="info-box child-box">
+                    <h4>Object Type Information</h4>
                     <dl class="dl-horizontal">
                         <?php
                         $infofound = false;
@@ -1076,8 +1073,8 @@ foreach($recorddisplay as $key)
                     </dl>
                 </div> <!--type-info -->
 
-                <div class="info-box">
-                    <h3>Location</h3>
+                <div class="info-box child-box">
+                    <h4>Location</h4>
                     <dl class="dl-horizontal">
                         <?php
                         $infofound = false;
@@ -1254,8 +1251,8 @@ foreach($recorddisplay as $key)
                     </dl>
                 </div> measurement-info -->
 
-                <div class="info-box">
-                    <h3>Description</h3>
+                <div class="info-box child-box">
+                    <h4>Description</h4>
                     <dl class="dl-horizontal" id="table-text-desc">
                         <?php
                         $infofound = false;
