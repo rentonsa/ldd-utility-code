@@ -122,12 +122,12 @@ body
 
 a:focus, a:hover {
     color: #333;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .byEditor a {
     color: #333;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .main-image {
@@ -529,7 +529,6 @@ div.spacer {
 #smol-visit a, #xtra-smol-visit a {
     font-size: 16px;
 }
-
 @media (max-width: 770px)
 {
     .navbar-right
@@ -643,7 +642,7 @@ div.spacer {
 }
 .navbar-nav>li>a {
     color: #650100;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 16px;
 }
 
@@ -672,7 +671,7 @@ div.spacer {
 .cnav-link {
     margin: 0px 20px;
     color: #650100;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 16px;
 }
 .cnav-link:hover, .cnav-link:focus {
@@ -693,7 +692,7 @@ div.spacer {
     padding-top: 30px;
     padding-right: 30px;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 1px;
     line-height: 2.5;
 }
@@ -852,13 +851,13 @@ figcaption {
     font-size: 18px;
     font-weight: bold;
     width: 100%;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 2px;
     color: #650100;
 }
 
 .searchDate{
-    font-size: 15px;
+    font-size: 16px;
     width: 100%;
 }
 
@@ -873,7 +872,7 @@ figcaption {
     font-size: 24px;
     color: #333;
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 1px;
 }
 
@@ -977,12 +976,24 @@ figcaption {
 /** Facets */
 
 .facet_title{
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: capitalize;
 }
 .facet_title .fa {
     margin-left: 5px;
     font: normal normal normal 14px/1 FontAwesome!important;
+}
+.panel-group {
+    margin-bottom: 0px!important;
+}
+.panel-body {
+    padding: 0px!important;
+    margin-top: -20px;
+}
+.panel-body a {
+    font-size: 16px;
 }
 
 .collapse.in {
@@ -994,7 +1005,7 @@ figcaption {
     padding-right: 50px;
 }
 #side_facet h3 {
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: bolder;
     color: #222;
     margin-left: 12px;
@@ -1016,7 +1027,7 @@ figcaption {
     box-shadow: none;
 }
 .panel-heading {
-    text-transform: uppercase!important;
+    text-transform: capitalize!important;
     font-weight: bold!important;
 }
 .panel-group .panel-heading + .panel-collapse > .list-group, .panel-group .panel-heading + .panel-collapse > .panel-body {
@@ -1024,6 +1035,10 @@ figcaption {
 }
 .panel-default>.panel-heading {
     background-color: #fff!important;
+}
+.metadata h4 {
+    font-size: 20px;
+    font-weight: 500;
 }
 .full-metadata {
     margin-top: -60px!important;
@@ -1033,8 +1048,7 @@ figcaption {
     padding-bottom: 20px;
 }
 .description {
-    padding: 1px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .straight-borders
@@ -1070,7 +1084,7 @@ figcaption {
     text-align: center;
 }
 #stc-section1 h2 {
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: bold;
     background: none!important;
 }
@@ -1101,9 +1115,8 @@ figcaption {
     padding-bottom: 20px;
 }
 .col-description {
-    text-align: justify;
-    margin: auto;
-    width: 50%;
+    text-align: center;
+    margin-bottom: 30px;
 }
 /* description */
 #stc-section3 {
@@ -1111,7 +1124,7 @@ figcaption {
 }
 h3.inst-desc {
     font-size: 24px!important;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 1px;
     margin-bottom: 20px;
     margin-top: 0px;
@@ -1147,7 +1160,7 @@ audio {
 h2.itemtitle.hidden-sm.hidden-xs {
     font-size: 24px!important;
     padding: 20px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-align: center;
 }
 #centered-grid {
@@ -1187,12 +1200,23 @@ h2.itemtitle.hidden-sm.hidden-xs {
     padding-left: 0;
 }
 
-.stc-tags                   { margin-top: 5px; margin: 0; display: inline;}
-.stc-tags a                 { font-size: 16px; color: #fff;background: #630d0d; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding: 2px 6px; line-height: 20px; margin-right: 8px; margin-top: 5px; text-decoration: none; display:inline-block; 
-                                margin-top: 20px;
-                                margin-bottom: 20px;
+.stc-tags                   { margin-top: 5px; 
+                                margin: 0; 
+                                display: inline;}
+.stc-tags a                 { font-size: 16px; 
+                                color: #fff;
+                                background: #630d0d; 
+                                -webkit-border-radius: 5px; 
+                                -moz-border-radius: 5px; 
+                                border-radius: 5px; 
+                                padding: 2px 6px; 
+                                line-height: 20px; 
+                                margin-right: 8px; 
+                                margin-top: 5px; 
+                                text-decoration: none; 
+                                display:inline-block; 
                                 display: inline-block;
-                                text-transform: uppercase;
+                                text-transform: capitalize;
                                 letter-spacing: 2px;
                                 padding: 10px 15px;
                             }
@@ -1519,6 +1543,9 @@ div[id^="openseadragon"] {
     width:100%;
     padding: 10px;
 }
+.child-box {
+    margin-top: -30px;
+}
 
 /* Manifest iteration additions */
 .iiiflogo                        { display: inline-block; width: 50px; height: 50px;  background: url(../images/iiiflogo.png) no-repeat 0px 0px;}
@@ -1593,6 +1620,7 @@ dl {
 }
 .dl-horizontal dt {
     color: #650100;
+    font-size: 16px;
 }
 .dl-horizontal dd {
     margin-bottom: 20px!important;
