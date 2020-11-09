@@ -6,7 +6,7 @@
 <ul>
     <li>change colours, contrast levels and fonts.</li>
     <li>experience no time limits to content</li>
-    <li>navigate most of the website using just a keyboard</li>
+    <li>navigate most of the website using just a keyboard</li> 
     <li>magnify up to 200%</li>
 </ul>
 <p>We&rsquo;ve also made the website text as simple as possible to understand.</p>

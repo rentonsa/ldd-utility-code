@@ -17,7 +17,7 @@
                 <div class="ifilm-img-cont">
                     <img class="ivideo-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/video-stills/hirshow.jpg">
                     <p class="film-credits">Narrated by Syrian-Kurdish musician Adnan Shamdin, film by Chris Leslie.<p>
-                </div>
+                </div> 
                 <div class="ifilm-text-cont" id="hirshow-text">
                     <p>
                         Synagogue cantor Isaac Hirshow was born to a poor family in Russia in 1883. In 1922, he and his family emigrated to Glasgow and Isaac began work in the Gorbals. 

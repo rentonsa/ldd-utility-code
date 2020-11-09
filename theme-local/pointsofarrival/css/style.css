@@ -36,16 +36,16 @@ ul li {
     margin-top: 20px;
 }
 html {
-    background: aliceblue;
+    background: rgb(247, 251, 255);
 }
 body
 {
     font-family: "Roboto Condensed","Helvetica Neue",Helvetica,Arial,sans-serif!important;
     padding-top: 50px;
-    background: aliceblue;
+    background: rgb(247, 251, 255);
 }
 .container-fluid.container-full {
-    background: aliceblue;
+    background: rgb(247, 251, 255);
 }
 
 .carousel-control.left, .carousel-control.right {
@@ -1317,7 +1317,7 @@ div[id^="gallery"] {
 
 
 #galleryethst {
-    background-image: url(https://test.collections.ed.ac.uk/theme/pointsofarrival/images/index-links/films.png);
+    background-image: url(https://test.collections.ed.ac.uk/theme/pointsofarrival/images/index-links/howto.png);
 }
 #galleryethpe {
     background-image: url(https://test.collections.ed.ac.uk/theme/pointsofarrival/images/index-links/resources.png);
@@ -1899,6 +1899,7 @@ p.film-themes-p {
     color: #114650;
     font-size: 15px;
     width: 400px;
+    margin: 5px 0px 0px 0px!important;
 }
 .film-themes-p a {
     cursor: pointer;
@@ -2046,8 +2047,21 @@ p.film-themes-p {
     margin-bottom: 30px;
     margin-right: 70px;
 }
-.theme-info {
+/*.theme-info {
     margin-bottom: 50%!important;
+}*/ 
+.theme-still {
+    border: 5px solid #114250;
+    width: 600px;
+}
+.theme-credits{
+    color: #114650;
+    font-size: 15px;
+    width: 600px;
+    margin: 5px 0px 0px 0px!important;
+}
+.theme-top {
+    margin-top: 50px;
 }
 
 .fam-theme {

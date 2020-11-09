@@ -13,7 +13,7 @@
             the eighteenth century and remains at the heart of the Georgian building, but is now complemented by four
             galleries on both ground and first floor. The restoration work, which began work in 2015, allows the University
             to offer more performances, enhance access by increasing the opening hours of the museum and provide new
-            ways for more visitors to engage, participate and learn about its world-class collection of instruments.</p>
+            ways for more visitors to engage, participate and learn about its world-class collection of instruments.</p> 
 
         <p>The museum re-opened its doors to the public in May 2017. Find out more about visiting the museum at the
          <a href="http://www.stcecilias.ed.ac.uk" title="Visit St Cecilia's Hall" target="_blank">St Cecilia's Hall website</a>.</p>

@@ -2,7 +2,7 @@
 
     <!-- Include custom sidebar -->
     <?php include 'poa_sidebar.php'; ?> 
-    <!-- Include custom sidebar -->
+    <!-- Include custom sidebar --> 
     
     <div id="poa-theme">
 
@@ -14,8 +14,10 @@
             <img id="theme-title" class="img-responsive sch-logo languages-theme" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/languages-title.png">
             <div class="theme-cont">
                 <div class="theme-img-cont">
-                    <img class="ivideo-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme/.png">
-                    <p class="film-credits">Narrated by artist Emma Newcombe, film by Chris Leslie.<p>
+                    <img class="theme-still theme-top" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/languages.png">
+                    <p class="theme-credits">
+                        Hebrew primer, published in 1931 by H M Langman, Glasgow. Courtesy of the Scottish Jewish Archives Centre
+                    <p>
                 </div>
                 <p class="theme-info">
                     For the majority of Jewish history, Jews have not had a land of their own. This means that Jewish languages have often been shared across many countries, connecting 

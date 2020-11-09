@@ -12,16 +12,27 @@
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
             <img id="theme-title" class="img-responsive sch-logo greatmigration-theme" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/migration-title.png">
-            <div class="theme-cont">
+            <div class="theme-cont"> 
                 <div class="theme-img-cont">
-                    <img class="ivideo-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme/.png">
-                    <p class="film-credits">Narrated by artist Emma Newcombe, film by Chris Leslie.<p>
+                    <img class="theme-still theme-top" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/greatmigration.png">
+                    <p class="theme-credits">
+                        Warsaw Hebrew newspaper advertisement for Canadian Pacific Ocean Services. 
+                        Sailing from Danzig (Gdansk), Antwerp, Liverpool, London, Glasgow and Southampton.
+                    <p>
                 </div>
-                <p class="theme-info">
+                <p>
                     The late nineteenth and early twentieth century saw the mass migration of many people from Eastern Europe towards ‘the West’. Included among them were close to 2 
                     million Jews who moved from the Pale of Settlement towards North America, western Europe, the United Kingdom, and other parts of the English-speaking (Anglophone) 
                     world.
                     <br><br>
+                </p>
+                <div class="theme-img-cont">
+                    <img class="theme-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/greatmigration2.png">
+                    <p class="theme-credits">
+                        Sarah Jacobson Alien Registration Certificate (1916). Courtesy of the Scottish Jewish Archives Centre
+                    <p>
+                </div>
+                <p class="theme-info">
                     The Pale of Settlement was an area of the Russian Empire in which Jews had been permitted to settle in early modern times (the 15th and 16th centuries) following 
                     the movement of Jews from western and southern Europe towards the eastern Europe. This early modern migration was caused in part by antisemitic attacks and policies 
                     that drove Jews from western European countries and the expulsion of Jews from Christianised Spain in 1492. The Russian Empire allowed Jews to settle and form their 

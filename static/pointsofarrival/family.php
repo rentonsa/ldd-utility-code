@@ -12,10 +12,12 @@
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
             <img id="theme-title" class="img-responsive sch-logo fam-theme" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/family-title.png">
-            <div class="theme-cont">
+            <div class="theme-cont"> 
                 <div class="theme-img-cont">
-                    <img class="ivideo-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme/.png">
-                    <p class="film-credits">Narrated by artist Emma Newcombe, film by Chris Leslie.<p>
+                    <img class="theme-still theme-top" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/family.png">
+                    <p class="theme-credits">
+                        Garnethill Boys Hostel, 1939. Courtesy of the Scottish Jewish Archives Centre.
+                    <p>
                 </div>
                 <p class="theme-info">
                     One of the most difficult things that child refugees face was their dislocation from home and family. Children like <a href="./sim">Dorrith</a> and <a href="./wuga">Henry</a> had to make the journey from 

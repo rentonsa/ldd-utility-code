@@ -2,7 +2,7 @@
 
     <!-- Include custom sidebar -->
     <?php include 'poa_sidebar.php'; ?> 
-    <!-- Include custom sidebar -->
+    <!-- Include custom sidebar --> 
     
     <div id="poa-theme">
 
@@ -14,8 +14,10 @@
             <img id="theme-title" class="img-responsive sch-logo welfare-theme" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/welfare-title.png">
             <div class="theme-cont">
                 <div class="theme-img-cont">
-                    <img class="ivideo-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme/.png">
-                    <p class="film-credits">Narrated by artist Emma Newcombe, film by Chris Leslie.<p>
+                    <img class="theme-still theme-top" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/welfare.png">
+                    <p class="theme-credits">
+                        Female Friendly Society. Courtesy of the Scottish Jewish Archives Centre
+                    <p>
                 </div>
                 <p class="theme-info">
                     Throughout the world, synagogues have often been owned by their local Jewish community. Communities themselves raise funds to build a synagogue, and wealthier members 

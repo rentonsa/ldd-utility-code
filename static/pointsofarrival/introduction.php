@@ -16,7 +16,7 @@
                 <p>
                     To supplement these films, we have designed this site to offer a series of digital resources to students and teachers. 
                     <strong>How to use this site</strong> below gives some suggestions about getting the most from these resources. <!--Alternatively, 
-                    click on any of the images to the right to get started.  COMMENTED OUT AWAITING CONTENT-->
+                    click on any of the images to the right to get started.  COMMENTED OUT AWAITING CONTENT--> 
                 </p>
             </div>
             <br><br><br>

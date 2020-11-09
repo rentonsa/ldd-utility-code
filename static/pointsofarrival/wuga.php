@@ -1,6 +1,6 @@
 <div class="container-fluid">
 
-    <!-- Include custom sidebar -->
+    <!-- Include custom sidebar --> 
     <?php include 'poa_sidebar.php'; ?> 
     <!-- Include custom sidebar -->
     
