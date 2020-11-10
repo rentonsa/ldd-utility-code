@@ -16,7 +16,7 @@ if (ENVIRONMENT == 'development') {
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-9';
-    $config['skylight_container_id'] = '49';
+    $config['skylight_container_id'] = '5f407bc8-1f6c-4ab7-830a-66fac8e07c7f';
 }
 
 $config['skylight_adminemail'] = 'lddt@mlist.is.ed.ac.uk';
