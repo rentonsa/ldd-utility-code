@@ -1473,7 +1473,7 @@ div[id^="openseadragon"] {
 }
 
 
-@media only screen and (max-width : 1800px) {
+/*@media only screen and (max-width : 1800px) {
     div.grid-item[id^="gallery"]
     {
         width: 32%;
@@ -1562,7 +1562,7 @@ div[id^="openseadragon"] {
         font-size: 17px;
         padding-right: 10px;
     }
-}
+}*/
 
 .info-box{
     width:100%;
