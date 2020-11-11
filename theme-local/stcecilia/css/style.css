@@ -122,12 +122,12 @@ body
 
 a:focus, a:hover {
     color: #333;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .byEditor a {
     color: #333;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .main-image {
@@ -235,7 +235,7 @@ div.resized-image img.record-main-image {
     height: 50px;
     width: 150px;
     font-size: 18px;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 .btn-primary:hover {
     background-color: #eeeeee;
@@ -327,7 +327,7 @@ input.btn {
     margin-left: 8px;
     padding: 0 18px;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 div.spacer {
@@ -529,6 +529,7 @@ div.spacer {
 #smol-visit a, #xtra-smol-visit a {
     font-size: 16px;
 }
+
 @media (max-width: 770px)
 {
     .navbar-right
@@ -857,7 +858,7 @@ figcaption {
 }
 
 .searchDate{
-    font-size: 16px;
+    font-size: 15px;
     width: 100%;
 }
 
@@ -967,8 +968,8 @@ figcaption {
     border-radius: 0;
     margin-bottom: 20px;
 }
-.link-uppercase {
-    text-transform: uppercase;
+.link-capitalize {
+    text-transform: capitalize;
     color: #650100;
     letter-spacing: 1px;
 }
@@ -976,24 +977,12 @@ figcaption {
 /** Facets */
 
 .facet_title{
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1px;
-    font-weight: 600;
-    text-transform: capitalize;
 }
 .facet_title .fa {
     margin-left: 5px;
     font: normal normal normal 14px/1 FontAwesome!important;
-}
-.panel-group {
-    margin-bottom: 0px!important;
-}
-.panel-body {
-    padding: 0px!important;
-    margin-top: -20px;
-}
-.panel-body a {
-    font-size: 16px;
 }
 
 .collapse.in {
@@ -1036,10 +1025,6 @@ figcaption {
 .panel-default>.panel-heading {
     background-color: #fff!important;
 }
-.metadata h4 {
-    font-size: 20px;
-    font-weight: 500;
-}
 .full-metadata {
     margin-top: -60px!important;
     font-size: 16px;
@@ -1048,7 +1033,8 @@ figcaption {
     padding-bottom: 20px;
 }
 .description {
-    font-size: 18px;
+    padding: 1px;
+    font-size: 16px;
 }
 
 .straight-borders
@@ -1114,11 +1100,11 @@ figcaption {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.col-description {
-    text-align: center;
-    margin-bottom: 30px;
-}
 /* description */
+.col-description {
+    text-align: justify;
+    margin: auto;
+}
 #stc-section3 {
     color: #333;
 }
@@ -1200,21 +1186,10 @@ h2.itemtitle.hidden-sm.hidden-xs {
     padding-left: 0;
 }
 
-.stc-tags                   { margin-top: 5px; 
-                                margin: 0; 
-                                display: inline;}
-.stc-tags a                 { font-size: 16px; 
-                                color: #fff;
-                                background: #630d0d; 
-                                -webkit-border-radius: 5px; 
-                                -moz-border-radius: 5px; 
-                                border-radius: 5px; 
-                                padding: 2px 6px; 
-                                line-height: 20px; 
-                                margin-right: 8px; 
-                                margin-top: 5px; 
-                                text-decoration: none; 
-                                display:inline-block; 
+.stc-tags                   { margin-top: 5px; margin: 0; display: inline;}
+.stc-tags a                 { font-size: 16px; color: #fff;background: #630d0d; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding: 2px 6px; line-height: 20px; margin-right: 8px; margin-top: 5px; text-decoration: none; display:inline-block; 
+                                margin-top: 20px;
+                                margin-bottom: 20px;
                                 display: inline-block;
                                 text-transform: capitalize;
                                 letter-spacing: 2px;
@@ -1358,7 +1333,7 @@ div[id^="gallery"] {
     font-size: 18px;
     text-align: center;
     font-size: 20px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     cursor: pointer;
     font-family: 'Hind', Frutiger, ‘Frutiger Linotype’, Univers, Calibri, ‘Gill Sans’, ‘Gill Sans MT’, ‘Myriad Pro’, Myriad, ‘DejaVu Sans Condensed’, ‘Liberation Sans’, ‘Nimbus Sans L’, Tahoma, Geneva, ‘Helvetica Neue’, Helvetica, Arial, sans-serif
 
@@ -1387,7 +1362,7 @@ div[id^="gallery"]:hover .gallery-title{
     display: none;
     color: #fff;
     letter-spacing: 2px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     background: rgb(101, 1, 0); /* Fallback for browsers that don't support RGBA */
     background: rgba(101, 1, 0, 0.8);
     padding: 0 10px;
@@ -1543,9 +1518,6 @@ div[id^="openseadragon"] {
     width:100%;
     padding: 10px;
 }
-.child-box {
-    margin-top: -30px;
-}
 
 /* Manifest iteration additions */
 .iiiflogo                        { display: inline-block; width: 50px; height: 50px;  background: url(../images/iiiflogo.png) no-repeat 0px 0px;}
@@ -1620,7 +1592,6 @@ dl {
 }
 .dl-horizontal dt {
     color: #650100;
-    font-size: 16px;
 }
 .dl-horizontal dd {
     margin-bottom: 20px!important;
