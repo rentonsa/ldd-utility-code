@@ -986,7 +986,7 @@ figcaption {
 }
 
 .collapse.in {
-    display: block;
+    display: block!important;
 }
 
 #side_facet {
@@ -1102,7 +1102,7 @@ figcaption {
 }
 /* description */
 .col-description {
-    text-align: justify;
+    text-align: center;
     margin: auto;
 }
 #stc-section3 {
@@ -1162,6 +1162,8 @@ h2.itemtitle.hidden-sm.hidden-xs {
 #stc-section5 .panel-heading {
     padding-left: 0;
     border: 0;
+    width: 200%;
+    margin-left: -50%;
 }
 
 #stc-section5 .panel-title > a {
@@ -1183,7 +1185,6 @@ h2.itemtitle.hidden-sm.hidden-xs {
 #stc-section5 .panel-body {
     border: none;
     box-shadow: none;
-    padding-left: 0;
 }
 
 .stc-tags                   { margin-top: 5px; margin: 0; display: inline;}
@@ -1514,11 +1515,6 @@ div[id^="openseadragon"] {
     }
 }
 
-.info-box{
-    width:100%;
-    padding: 10px;
-}
-
 /* Manifest iteration additions */
 .iiiflogo                        { display: inline-block; width: 50px; height: 50px;  background: url(../images/iiiflogo.png) no-repeat 0px 0px;}
 .lunalogo                        { display: inline-block; width: 50px; height: 50px;  background: url(../images/LUNAIIIF.png) no-repeat 0px 0px;}
@@ -1580,6 +1576,44 @@ label
 }
 
 /* INSTRUMENT METADATA TABLE */
+
+.col-sm-6.col-xs-12.col-md-8.col-lg-12.metadata {
+    display: flex!important;
+    width: 200%;
+    margin-left: -50%;
+    padding: 0 75px;
+}
+.info-box{
+    width:100%;
+    margin-top: -30px;
+    border: 2px solid #500100;
+    margin-right: 5px;
+}
+.info-box h3 {
+    font-size: 20px;
+}
+.info-box h4 {
+    font-size: 18px;
+    color: #500100;
+}
+.child-meta-container {
+    display: flex;
+    width: 100%;
+    padding: 0 10px;
+}
+.child-meta-container-wide {
+    padding: 0 10px;
+}
+.meta-spacing {
+    padding-top: 20px;
+    border-top: solid 1px #650100;
+}
+.child-meta {
+    width: 33.3%;
+    margin: auto;
+    margin-top: 0;
+}
+
 dl {
     margin-bottom: 25px;
 }
@@ -1592,6 +1626,7 @@ dl {
 }
 .dl-horizontal dt {
     color: #650100;
+    line-height: 2.3;
 }
 .dl-horizontal dd {
     margin-bottom: 20px!important;
@@ -1603,6 +1638,9 @@ dl {
     content: '';
     display: block;
 }
+.collapse .in, #collapse1 {
+    display: block!important;
+}
 
 @media (min-width: 768px)
 {
@@ -1613,10 +1651,6 @@ dl {
     dd {
         margin-left: 0px!important;
     }   
-    .col-sm-6
-    {
-        width: 100%!important;
-    }
     .grid-item
     {
         width: unset!important;
@@ -1629,10 +1663,6 @@ dl {
 
 @media (max-width: 1199px)
 {
-    .col-sm-6 .col-xs-12 .col-md-8 .col-lg-12 metadata
-    {
-        width: 100%!important;
-    }
     .grid-item
     {
         width: unset!important;
