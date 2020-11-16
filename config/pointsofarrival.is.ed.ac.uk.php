@@ -2,24 +2,25 @@
 
 $config['skylight_appname'] = 'pointsofarrival';
 
-// Uncomment this if you are using a url of the form http://.../art/...
-$config['skylight_url_prefix'] = 'pointsofarrival'; 
 
-$config['skylight_theme'] = 'pointsofarrival';
-
-$config['skylight_fullname'] = 'Points Of Arrival';
 
 // Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
 if (ENVIRONMENT == 'development') {
     $config['skylight_ga_code'] = '';
     $config['skylight_container_id'] = 'bac433ed-36a9-4660-b49c-49d3fd0bed2c';
+    $config['base_url'] = 'https://test.pointsofarrival.is.ed.ac.uk/';
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-9';
-    $config['skylight_container_id'] = '5f407bc8-1f6c-4ab7-830a-66fac8e07c7f';
+    $config['skylight_container_id'] = '49';
+    $config['base_url'] = 'https://pointsofarrival.is.ed.ac.uk/';
 }
 
 $config['skylight_adminemail'] = 'lddt@mlist.is.ed.ac.uk';
+
+$config['skylight_theme'] = 'pointsofarrival';
+
+$config['skylight_fullname'] = 'Points of Arrival';
 
 $config['skylight_oaipmhcollection'] = 'hdl_10683_14558';
 
