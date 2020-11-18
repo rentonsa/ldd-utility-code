@@ -38,7 +38,7 @@ function curl_get_file_size( $url ) {
     $curl = curl_init( $url );
 
     //curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 1);
-    curl_setopt($curl, CURLOPT_CONNECTTIMEOUT_MS, 1000);
+    //curl_setopt($curl, CURLOPT_CONNECTTIMEOUT_MS, 1000);
 
     // Issue a HEAD request and follow any redirects.
     curl_setopt( $curl, CURLOPT_NOBODY, true );
@@ -46,8 +46,13 @@ function curl_get_file_size( $url ) {
     curl_setopt( $curl, CURLOPT_RETURNTRANSFER, true );
     curl_setopt( $curl, CURLOPT_FOLLOWLOCATION, true );
 
+    /* For some reason digitalpreservation isn't verified */
+    curl_setopt( $curl, CURLOPT_SSL_VERIFYPEER, false );
+
     $data = curl_exec( $curl );
     curl_close( $curl );
+
+    //log_message('debug', $data);
 
     if( $data ) {
         $content_length = "unknown";
@@ -65,6 +70,7 @@ function curl_get_file_size( $url ) {
         if( $status == 200 || ($status > 300 && $status <= 308) ) {
             $result = $content_length;
         }
+
     }
 
     // Result is -1 if the connection times out
@@ -190,17 +196,18 @@ $bitstreamLinks = array();
                                             $file_size = curl_get_file_size($do_url);
 
                                             if (endsWith($do_file, ['.wav', '.mp3'])) {
-                                                $audio .= '<audio controls src="' . $do_url . '" title="Embedded audio file ' . $do_file . '" style="margin-top: 8px; margin-right: 8px;">';
+                                                $audio .= '<audio controls src="' . $do_url . '" title="Embedded audio file ' . $do_file . $file_size . '">';
                                                 $audio .= 'Your browser does not support the <code>audio</code> element.</audio>';
-                                                $audio .= $file_size;
+                                                //$audio .= $file_size;
                                             } else if (endsWith($do_file, ['.mp4','.mov'])) {
-                                                $audio .= '<video controls width="480" preload="metadata">';
+                                                $audio .= '<video controls width="480" preload="metadata" title="Embedded video file ' . $do_file . $file_size . '">';
                                                 $audio .= '<source src="' . $do_url . '">';
                                                 $audio .= 'Sorry, your browser doesn\'t support embedded videos.</video>';
-                                                $audio .= $file_size;
+                                                //$audio .= $file_size;
                                             } else if (endsWith($do_file, ['.jpg','.jpeg'])) {
+                                                log_message('debug', print_r($digital_obj, true));
                                                 $photo .= '<a href="' . $do_url . '" title="Photograph ' . $do_title_short .  $file_size . '">';
-                                                $photo .= '<img src="' . $do_url . '" alt="Photograph ' . $do_title_short .  $file_size . '" style="width: 300px; padding: 8px;"></a>';
+                                                $photo .= '<img src="' . $do_url . '" alt="Photograph ' . $do_title_short .  $file_size . '" class="photos"></a>';
                                             } /*else if (endsWith($do_file, ['.doc'])) {
                                                 $do_title_short = substr($do_title_short, 0, -2);
                                                 $trans .= '<a href="' . $do_url . '" title="Transcript of interview ' . $do_title_short . ' in Microsoft Word format">';
@@ -213,14 +220,14 @@ $bitstreamLinks = array();
                                                 $do_title_short = substr($do_title_short, 0, -2);
                                                 $trans .= '<a href="' . $do_url . '" title="Transcript of interview ' . $do_title_short . ' in PDF format' . $file_size . '" target="_blank">';
                                                 $trans .= '<img src="/theme/eerc/images/file-pdf-icon.png" alt="Transcript of interview ' . $do_title_short . ' in PDF format' . $file_size . '"></a>';
-                                                $trans .= $file_size;
+                                                //$trans .= $file_size;
                                             }
                                         }
                                         catch (Exception $e) {
                                             // Something was wrong in the digital object data
                                             // but well log it
                                             // echo 'Caught exception: ',  $e->getMessage(), "\n";
-                                            log_error('Error parsing digital object: ' . $e->getMessage());
+                                            log_message('error', 'Error parsing digital object: ' . $e->getMessage());
                                         }
                                     }
 
