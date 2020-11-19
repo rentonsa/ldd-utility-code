@@ -207,7 +207,7 @@ $bitstreamLinks = array();
                                             } else if (endsWith($do_file, ['.jpg','.jpeg'])) {
                                                 log_message('debug', print_r($digital_obj, true));
                                                 $photo .= '<a href="' . $do_url . '" title="Photograph ' . $do_title_short .  $file_size . '">';
-                                                $photo .= '<img src="' . $do_url . '" alt="Photograph ' . $do_title_short .  $file_size . '" class="photos"></a>';
+                                                $photo .= '<img src="' . $do_url . '" alt="Photograph ' . $do_title_short .  $file_size . '" class="photos" style="width: 300px; padding: 8px;"></a>';
                                             } /*else if (endsWith($do_file, ['.doc'])) {
                                                 $do_title_short = substr($do_title_short, 0, -2);
                                                 $trans .= '<a href="' . $do_url . '" title="Transcript of interview ' . $do_title_short . ' in Microsoft Word format">';
