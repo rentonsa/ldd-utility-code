@@ -269,4 +269,8 @@ $config['skylight_homepage_recentitems'] = false;
 $config['skylight_homepage_randomitems'] = false;
 $config['skylight_homepage_fullwidth'] = true;
 
+
+
+
+
 ?>
