@@ -997,7 +997,7 @@ foreach($recorddisplay as $key)
                     </div> meta-info -->
 
                     <div class="info-box">
-                        <h3>Maker</h3>
+                        <h3>Maker Information</h3>
                             <div class="meta-container" id="table-text-desc">
                             <div class="child-meta-container-wide">
                                 <?php
@@ -1089,7 +1089,14 @@ foreach($recorddisplay as $key)
 
                                                     if (isset ($schema[$key]))
                                                     {
+                                                        if ($key === "Maker Name")
+                                                        {
+                                                            echo '<span itemprop="' . $schema[$key] . '"><a href="./search/%22'.$metadatavalue.'%22">'.$metadatavalue.'</a></span>';
+                                                        }
+                                                        else
+                                                        {
                                                         echo '<span itemprop="' . $schema[$key] . '" class="offset-dd">' . $metadatavalue . "</span>";
+                                                        }
                                                     }
                                                     else
                                                     {
@@ -1150,11 +1157,11 @@ foreach($recorddisplay as $key)
 
                                                 if (isset ($schema[$key]))
                                                 {
-                                                    echo '<span itemprop="' . $schema[$key] . '">' . $metadatavalue . "</span>";
+                                                    echo '<span itemprop="' . $schema[$key] . '"><a href="./search/%22'.$metadatavalue.'%22">'.$metadatavalue.'</a></span>';
                                                 }
                                                 else
                                                 {
-                                                    echo $metadatavalue;
+                                                    echo '<span itemprop=""><a href="./search/%22'.$metadatavalue.'%22">'.$metadatavalue.'</a></span>';
                                                 }
                                             }
                                             if($index < sizeof($solr[$element]) - 1) {
@@ -1236,7 +1243,7 @@ foreach($recorddisplay as $key)
                     </div> place-info -->
 
                     <!-- <div class="info-box">
-                        <h3>Object Type Information</h3>
+                        <h3>Classification Information</h3>
                         <div class="meta-container">
                             <?php
                             $infofound = false;
@@ -1510,7 +1517,7 @@ foreach($recorddisplay as $key)
                                 }?>
                             </div>
 
-                            <h3 class="meta-spacing">Object Type Information</h3>
+                            <h3 class="meta-spacing">Classification</h3>
                             <div class="child-meta-container">
                                 <?php
                                 $infofound = false;
@@ -1566,7 +1573,11 @@ foreach($recorddisplay as $key)
 
                                                     if (isset ($schema[$key]))
                                                     {
-                                                        echo '<span itemprop="' . $schema[$key] . '"><a href="./search/%22'.$metadatavalue.'%22">'.$metadatavalue.'</a></span>';
+                                                        if ($metadatavalue === "musical instrument") { echo ''; }
+                                                        else
+                                                        {
+                                                            echo '<span itemprop="' . $schema[$key] . '"><a href="./search/%22'.$metadatavalue.'%22">'.$metadatavalue.'</a></span>';
+                                                        }
                                                     }
                                                     else
                                                     {
@@ -1854,7 +1865,7 @@ foreach($recorddisplay as $key)
                     </div> meta-info -->
 
                     <div class="info-box">
-                        <h3>Maker</h3>
+                        <h3>Maker Information</h3>
                             <div class="meta-container" id="table-text-desc">
                             <div class="child-meta-container-wide">
                                 <?php
@@ -1946,8 +1957,14 @@ foreach($recorddisplay as $key)
 
                                                     if (isset ($schema[$key]))
                                                     {
+                                                        if ($key === "Maker Name")
+                                                        {
+                                                            echo '<span itemprop="' . $schema[$key] . '"><a href="./search/%22'.$metadatavalue.'%22">'.$metadatavalue.'</a></span>';
+                                                        }
+                                                        else
+                                                        {
                                                         echo '<span itemprop="' . $schema[$key] . '" class="offset-dd">' . $metadatavalue . "</span>";
-                                                    }
+                                                        }                                                    }
                                                     else
                                                     {
                                                         echo $metadatavalue;
@@ -2007,7 +2024,7 @@ foreach($recorddisplay as $key)
 
                                                 if (isset ($schema[$key]))
                                                 {
-                                                    echo '<span itemprop="' . $schema[$key] . '">' . $metadatavalue . "</span>";
+                                                    echo '<span itemprop="' . $schema[$key] . '"><a href="./search/%22'.$metadatavalue.'%22">'.$metadatavalue.'</a></span>';
                                                 }
                                                 else
                                                 {
@@ -2093,7 +2110,7 @@ foreach($recorddisplay as $key)
                     </div> place-info -->
 
                     <!-- <div class="info-box">
-                        <h3>Object Type Information</h3>
+                        <h3>Classification Information</h3>
                         <div class="meta-container">
                             <?php
                             $infofound = false;
@@ -2367,7 +2384,7 @@ foreach($recorddisplay as $key)
                                 }?>
                             </div>
 
-                            <h3 class="meta-spacing">Object Type Information</h3>
+                            <h3 class="meta-spacing">Classification</h3>
                             <div class="child-meta-container">
                             <?php
                                 $infofound = false;
@@ -2423,7 +2440,11 @@ foreach($recorddisplay as $key)
 
                                                     if (isset ($schema[$key]))
                                                     {
-                                                        echo '<span itemprop="' . $schema[$key] . '"><a href="./search/%22'.$metadatavalue.'%22">'.$metadatavalue.'</a></span>';
+                                                        if ($metadatavalue === "musical instrument") { echo ''; }
+                                                        else
+                                                        {
+                                                            echo '<span itemprop="' . $schema[$key] . '"><a href="./search/%22'.$metadatavalue.'%22">'.$metadatavalue.'</a></span>';
+                                                        }
                                                     }
                                                     else
                                                     {

@@ -713,6 +713,20 @@ div.spacer {
     color: #fff!important;
 }
 
+/* related images */
+.related-col
+{
+    height: 250px!important;
+}
+.related-img
+{
+    border: solid 2px #650100;
+}
+.reated-p
+{
+    color: #650100;
+    font-weight: 500;
+}
 #uoe-search {
     width: 350px;
     font-size: 18px;
