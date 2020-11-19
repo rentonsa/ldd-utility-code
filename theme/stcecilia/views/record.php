@@ -744,7 +744,7 @@ foreach($recorddisplay as $key)
 
                     <div class="info-box">
 
-                        <h3>Identification Information</h3>
+                        <h3>Instrument Information</h3>
                         <div class="meta-container">
                             <div class="child-meta-container">
                                 <?php
@@ -860,7 +860,7 @@ foreach($recorddisplay as $key)
                                             }
                                         }
                                         $infofound = true;
-                                        echo '</dd>';
+                                        echo '</p>';
                                         echo '</div>';
                                     }
 
@@ -871,69 +871,7 @@ foreach($recorddisplay as $key)
                                 ?>
                             </div>
 
-                            <h3 class="meta-spacing">Production Place</h3>
-                            <div class="child-meta-container">
-                                <?php
-                                $infofound = false;
-                                foreach($placedisplay as $key) {
-
-                                    $element = $this->skylight_utilities->getField($key);
-
-                                    if(isset($solr[$element])) {
-
-                                        echo '<div class="child-meta">';
-
-                                        echo '<h4>' . $key . '</h4>';
-
-                                        echo '<p>';
-                                        foreach($solr[$element] as $index => $metadatavalue) {
-                                            // if it's a facet search
-                                            // make it a clickable search link
-                                            if(in_array($key, $filters)) {
-
-                                                $orig_filter = urlencode($metadatavalue);
-                                                $lower_orig_filter = strtolower($metadatavalue);
-                                                $lower_orig_filter = urlencode($lower_orig_filter);
-
-                                                //Insert Schema.org
-                                                if (isset ($schema[$key]))
-                                                {
-                                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
-                                                }
-                                                else
-                                                {
-                                                    echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
-                                                }
-                                            }
-                                            else {
-
-                                                //Insert Schema.org
-
-                                                if (isset ($schema[$key]))
-                                                {
-                                                    echo '<span itemprop="' . $schema[$key] . '">' . $metadatavalue . "</span>";
-                                                }
-                                                else
-                                                {
-                                                    echo $metadatavalue;
-                                                }
-                                            }
-                                            if($index < sizeof($solr[$element]) - 1) {
-
-                                                echo '; ';
-                                            }
-                                        }
-                                        $infofound = true;
-                                        echo '</dd>';
-                                        echo '</div>';
-                                    }
-                                }
-                                if (!$infofound) {
-                                    echo '<h4 class="no-meta">No information recorded.</h4><p></p>';
-                                }?>
-                            </div>
-
-                            <h3 class="meta-spacing">Location</h3>
+                            <h3 class="meta-spacing">Gallery Infoformation</h3>
                             <div class="child-meta-container">
                                 <?php
                                 $infofound = false;
@@ -1047,7 +985,7 @@ foreach($recorddisplay as $key)
                                         }
                                     }
                                     $infofound = true;
-                                    echo '</dd>';
+                                    echo '</p>';
                                 }
 
                             }
@@ -1172,11 +1110,72 @@ foreach($recorddisplay as $key)
                                     echo '<h4 class="no-meta">No information recorded.</h4><p></p>';
                                 }?>
                             </div>
+                            <h3 class="meta-spacing">Made In</h3>
+                            <div class="child-meta-container">
+                                <?php
+                                $infofound = false;
+                                foreach($placedisplay as $key) {
+
+                                    $element = $this->skylight_utilities->getField($key);
+
+                                    if(isset($solr[$element])) {
+
+                                        echo '<div class="child-meta">';
+
+                                        echo '<h4>' . $key . '</h4>';
+
+                                        echo '<p>';
+                                        foreach($solr[$element] as $index => $metadatavalue) {
+                                            // if it's a facet search
+                                            // make it a clickable search link
+                                            if(in_array($key, $filters)) {
+
+                                                $orig_filter = urlencode($metadatavalue);
+                                                $lower_orig_filter = strtolower($metadatavalue);
+                                                $lower_orig_filter = urlencode($lower_orig_filter);
+
+                                                //Insert Schema.org
+                                                if (isset ($schema[$key]))
+                                                {
+                                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                }
+                                                else
+                                                {
+                                                    echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                }
+                                            }
+                                            else {
+
+                                                //Insert Schema.org
+
+                                                if (isset ($schema[$key]))
+                                                {
+                                                    echo '<span itemprop="' . $schema[$key] . '">' . $metadatavalue . "</span>";
+                                                }
+                                                else
+                                                {
+                                                    echo $metadatavalue;
+                                                }
+                                            }
+                                            if($index < sizeof($solr[$element]) - 1) {
+
+                                                echo '; ';
+                                            }
+                                        }
+                                        $infofound = true;
+                                        echo '</p>';
+                                        echo '</div>';
+                                    }
+                                }
+                                if (!$infofound) {
+                                    echo '<h4 class="no-meta">No information recorded.</h4><p></p>';
+                                }?>
+                            </div>
                         </div>
                     </div> <!-- creator-info -->
 
                     <!-- <div class="info-box">
-                        <h3>Production Place</h3>
+                        <h3>Made In</h3>
                         <div class="meta-container">
                             <?php
                             $infofound = false;
@@ -1227,7 +1226,7 @@ foreach($recorddisplay as $key)
                                         }
                                     }
                                     $infofound = true;
-                                    echo '</dd>';
+                                    echo '</p>';
                                 }
                             }
                             if (!$infofound) {
@@ -1289,7 +1288,7 @@ foreach($recorddisplay as $key)
                                         }
                                     }
                                     $infofound = true;
-                                    echo '</dd>';
+                                    echo '</p>';
                                 }
                             }
                             if (!$infofound) {
@@ -1515,6 +1514,8 @@ foreach($recorddisplay as $key)
                             <div class="child-meta-container">
                                 <?php
                                 $infofound = false;
+                                $instrumentFound = false;
+                                $familyFound = false;
                                 foreach($typedisplay as $key) {
 
                                     $element = $this->skylight_utilities->getField($key);
@@ -1523,49 +1524,64 @@ foreach($recorddisplay as $key)
 
                                         echo '<div class="child-meta">';
 
-                                        echo '<h4>' . $key . '</h4>';
-
-                                        echo '<p>';
-                                        foreach($solr[$element] as $index => $metadatavalue) {
-                                            // if it's a facet search
-                                            // make it a clickable search link
-                                            if(in_array($key, $filters)) {
-
-                                                $orig_filter = urlencode($metadatavalue);
-                                                $lower_orig_filter = strtolower($metadatavalue);
-                                                $lower_orig_filter = urlencode($lower_orig_filter);
-
-                                                //Insert Schema.org
-                                                if (isset ($schema[$key]))
-                                                {
-                                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
-                                                }
-                                                else
-                                                {
-                                                    echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
-                                                }
-                                            }
-                                            else {
-
-                                                //Insert Schema.org
-
-                                                if (isset ($schema[$key]))
-                                                {
-                                                    echo '<span itemprop="' . $schema[$key] . '">' . $metadatavalue . "</span>";
-                                                }
-                                                else
-                                                {
-                                                    echo $metadatavalue;
-                                                }
-                                            }
-
-                                            if($index < sizeof($solr[$element]) - 1) {
-
-                                                echo '; ';
-                                            }
+                                        // Quick bit of logic to limit the number of subcategories shown
+                                        // avoid duplication of metadata being displayed
+                                        if ($key === "Instrument")
+                                        {
+                                            $instrumentFound = true;
                                         }
-                                        $infofound = true;
-                                        echo '</dd>';
+                                        if ($key === "Instrument Family")
+                                        {
+                                            $familyFound = true;
+                                        }
+                                        // Do not display duplicte info if "found" conditions are true
+                                        if ($key === "Genus" && $instrumentFound || $key === "Grouping" && $familyFound) {}
+                                        else
+                                        {
+                                            echo '<h4>' . $key . '</h4>';
+
+                                            echo '<p>';
+                                            foreach($solr[$element] as $index => $metadatavalue) {
+                                                // if it's a facet search
+                                                // make it a clickable search link
+                                                if(in_array($key, $filters)) {
+
+                                                    $orig_filter = urlencode($metadatavalue);
+                                                    $lower_orig_filter = strtolower($metadatavalue);
+                                                    $lower_orig_filter = urlencode($lower_orig_filter);
+
+                                                    //Insert Schema.org
+                                                    if (isset ($schema[$key]))
+                                                    {
+                                                        echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                    }
+                                                    else
+                                                    {
+                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                    }
+                                                }
+                                                else {
+
+                                                    //Insert Schema.org
+
+                                                    if (isset ($schema[$key]))
+                                                    {
+                                                        echo '<span itemprop="' . $schema[$key] . '"><a href="./search/%22'.$metadatavalue.'%22">'.$metadatavalue.'</a></span>';
+                                                    }
+                                                    else
+                                                    {
+                                                        echo $metadatavalue;
+                                                    }
+                                                }
+
+                                                if($index < sizeof($solr[$element]) - 1) {
+
+                                                    echo '; ';
+                                                }
+                                            }
+                                            $infofound = true;
+                                            echo '</p>';
+                                        }
                                         echo '</div>';
                                     }
                                 }
@@ -1585,7 +1601,7 @@ foreach($recorddisplay as $key)
 
                     <div class="info-box">
 
-                        <h3>Identification Information</h3>
+                        <h3>Instrument Information</h3>
                         <div class="meta-container">
                             <div class="child-meta-container">
                                 <?php
@@ -1701,7 +1717,7 @@ foreach($recorddisplay as $key)
                                             }
                                         }
                                         $infofound = true;
-                                        echo '</dd>';
+                                        echo '</p>';
                                         echo '</div>';
                                     }
 
@@ -1712,69 +1728,7 @@ foreach($recorddisplay as $key)
                                 ?>
                             </div>
 
-                            <h3 class="meta-spacing">Production Place</h3>
-                            <div class="child-meta-container">
-                                <?php
-                                $infofound = false;
-                                foreach($placedisplay as $key) {
-
-                                    $element = $this->skylight_utilities->getField($key);
-
-                                    if(isset($solr[$element])) {
-
-                                        echo '<div class="child-meta">';
-
-                                        echo '<h4>' . $key . '</h4>';
-
-                                        echo '<p>';
-                                        foreach($solr[$element] as $index => $metadatavalue) {
-                                            // if it's a facet search
-                                            // make it a clickable search link
-                                            if(in_array($key, $filters)) {
-
-                                                $orig_filter = urlencode($metadatavalue);
-                                                $lower_orig_filter = strtolower($metadatavalue);
-                                                $lower_orig_filter = urlencode($lower_orig_filter);
-
-                                                //Insert Schema.org
-                                                if (isset ($schema[$key]))
-                                                {
-                                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
-                                                }
-                                                else
-                                                {
-                                                    echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
-                                                }
-                                            }
-                                            else {
-
-                                                //Insert Schema.org
-
-                                                if (isset ($schema[$key]))
-                                                {
-                                                    echo '<span itemprop="' . $schema[$key] . '">' . $metadatavalue . "</span>";
-                                                }
-                                                else
-                                                {
-                                                    echo $metadatavalue;
-                                                }
-                                            }
-                                            if($index < sizeof($solr[$element]) - 1) {
-
-                                                echo '; ';
-                                            }
-                                        }
-                                        $infofound = true;
-                                        echo '</dd>';
-                                        echo '</div>';
-                                    }
-                                }
-                                if (!$infofound) {
-                                    echo '<h4 class="no-meta">No information recorded.</h4><p></p>';
-                                }?>
-                            </div>
-
-                            <h3 class="meta-spacing">Location</h3>
+                            <h3 class="meta-spacing">Gallery Information</h3>
                             <div class="child-meta-container">
                                 <?php
                                 $infofound = false;
@@ -1888,7 +1842,7 @@ foreach($recorddisplay as $key)
                                         }
                                     }
                                     $infofound = true;
-                                    echo '</dd>';
+                                    echo '</p>';
                                 }
 
                             }
@@ -2013,11 +1967,72 @@ foreach($recorddisplay as $key)
                                     echo '<h4 class="no-meta">No information recorded.</h4><p></p>';
                                 }?>
                             </div>
+                            <h3 class="meta-spacing">Made In</h3>
+                            <div class="child-meta-container">
+                                <?php
+                                $infofound = false;
+                                foreach($placedisplay as $key) {
+
+                                    $element = $this->skylight_utilities->getField($key);
+
+                                    if(isset($solr[$element])) {
+
+                                        echo '<div class="child-meta">';
+
+                                        echo '<h4>' . $key . '</h4>';
+
+                                        echo '<p>';
+                                        foreach($solr[$element] as $index => $metadatavalue) {
+                                            // if it's a facet search
+                                            // make it a clickable search link
+                                            if(in_array($key, $filters)) {
+
+                                                $orig_filter = urlencode($metadatavalue);
+                                                $lower_orig_filter = strtolower($metadatavalue);
+                                                $lower_orig_filter = urlencode($lower_orig_filter);
+
+                                                //Insert Schema.org
+                                                if (isset ($schema[$key]))
+                                                {
+                                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                }
+                                                else
+                                                {
+                                                    echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                }
+                                            }
+                                            else {
+
+                                                //Insert Schema.org
+
+                                                if (isset ($schema[$key]))
+                                                {
+                                                    echo '<span itemprop="' . $schema[$key] . '">' . $metadatavalue . "</span>";
+                                                }
+                                                else
+                                                {
+                                                    echo $metadatavalue;
+                                                }
+                                            }
+                                            if($index < sizeof($solr[$element]) - 1) {
+
+                                                echo '; ';
+                                            }
+                                        }
+                                        $infofound = true;
+                                        echo '</p>';
+                                        echo '</div>';
+                                    }
+                                }
+                                if (!$infofound) {
+                                    echo '<h4 class="no-meta">No information recorded.</h4><p></p>';
+                                }?>
+                            </div>
                         </div>
                     </div> <!-- creator-info -->
 
                     <!-- <div class="info-box">
-                        <h3>Production Place</h3>
+                        <h3>Made In</h3>
                         <div class="meta-container">
                             <?php
                             $infofound = false;
@@ -2055,7 +2070,7 @@ foreach($recorddisplay as $key)
 
                                             if (isset ($schema[$key]))
                                             {
-                                                echo '<span itemprop="' . $schema[$key] . '">' . $metadatavalue . "</span>";
+                                                echo '<span itemprop="' . $schema[$key] . '"><a href="./search/%22'.$metadatavalue.'%22">'.$metadatavalue.'</a></span>';
                                             }
                                             else
                                             {
@@ -2068,7 +2083,7 @@ foreach($recorddisplay as $key)
                                         }
                                     }
                                     $infofound = true;
-                                    echo '</dd>';
+                                    echo '</p>';
                                 }
                             }
                             if (!$infofound) {
@@ -2130,7 +2145,7 @@ foreach($recorddisplay as $key)
                                         }
                                     }
                                     $infofound = true;
-                                    echo '</dd>';
+                                    echo '</p>';
                                 }
                             }
                             if (!$infofound) {
@@ -2354,8 +2369,10 @@ foreach($recorddisplay as $key)
 
                             <h3 class="meta-spacing">Object Type Information</h3>
                             <div class="child-meta-container">
-                                <?php
+                            <?php
                                 $infofound = false;
+                                $instrumentFound = false;
+                                $familyFound = false;
                                 foreach($typedisplay as $key) {
 
                                     $element = $this->skylight_utilities->getField($key);
@@ -2364,49 +2381,64 @@ foreach($recorddisplay as $key)
 
                                         echo '<div class="child-meta">';
 
-                                        echo '<h4>' . $key . '</h4>';
-
-                                        echo '<p>';
-                                        foreach($solr[$element] as $index => $metadatavalue) {
-                                            // if it's a facet search
-                                            // make it a clickable search link
-                                            if(in_array($key, $filters)) {
-
-                                                $orig_filter = urlencode($metadatavalue);
-                                                $lower_orig_filter = strtolower($metadatavalue);
-                                                $lower_orig_filter = urlencode($lower_orig_filter);
-
-                                                //Insert Schema.org
-                                                if (isset ($schema[$key]))
-                                                {
-                                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
-                                                }
-                                                else
-                                                {
-                                                    echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
-                                                }
-                                            }
-                                            else {
-
-                                                //Insert Schema.org
-
-                                                if (isset ($schema[$key]))
-                                                {
-                                                    echo '<span itemprop="' . $schema[$key] . '">' . $metadatavalue . "</span>";
-                                                }
-                                                else
-                                                {
-                                                    echo $metadatavalue;
-                                                }
-                                            }
-
-                                            if($index < sizeof($solr[$element]) - 1) {
-
-                                                echo '; ';
-                                            }
+                                        // Quick bit of logic to limit the number of subcategories shown
+                                        // avoid duplication of metadata being displayed
+                                        if ($key === "Instrument")
+                                        {
+                                            $instrumentFound = true;
                                         }
-                                        $infofound = true;
-                                        echo '</dd>';
+                                        if ($key === "Instrument Family")
+                                        {
+                                            $familyFound = true;
+                                        }
+                                        // Do not display duplicte info if "found" conditions are true
+                                        if ($key === "Genus" && $instrumentFound || $key === "Grouping" && $familyFound) {}
+                                        else
+                                        {
+                                            echo '<h4>' . $key . '</h4>';
+
+                                            echo '<p>';
+                                            foreach($solr[$element] as $index => $metadatavalue) {
+                                                // if it's a facet search
+                                                // make it a clickable search link
+                                                if(in_array($key, $filters)) {
+
+                                                    $orig_filter = urlencode($metadatavalue);
+                                                    $lower_orig_filter = strtolower($metadatavalue);
+                                                    $lower_orig_filter = urlencode($lower_orig_filter);
+
+                                                    //Insert Schema.org
+                                                    if (isset ($schema[$key]))
+                                                    {
+                                                        echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                    }
+                                                    else
+                                                    {
+                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                    }
+                                                }
+                                                else {
+
+                                                    //Insert Schema.org
+
+                                                    if (isset ($schema[$key]))
+                                                    {
+                                                        echo '<span itemprop="' . $schema[$key] . '"><a href="./search/%22'.$metadatavalue.'%22">'.$metadatavalue.'</a></span>';
+                                                    }
+                                                    else
+                                                    {
+                                                        echo $metadatavalue;
+                                                    }
+                                                }
+
+                                                if($index < sizeof($solr[$element]) - 1) {
+
+                                                    echo '; ';
+                                                }
+                                            }
+                                            $infofound = true;
+                                            echo '</p>';
+                                        }
                                         echo '</div>';
                                     }
                                 }
