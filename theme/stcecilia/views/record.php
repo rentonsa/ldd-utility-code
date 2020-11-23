@@ -1529,7 +1529,7 @@ foreach($recorddisplay as $key)
 
                                     if(isset($solr[$element])) {
 
-                                        echo '<div class="child-meta">';
+                                        
 
                                         // Quick bit of logic to limit the number of subcategories shown
                                         // avoid duplication of metadata being displayed
@@ -1545,6 +1545,7 @@ foreach($recorddisplay as $key)
                                         if ($key === "Genus" && $instrumentFound || $key === "Grouping" && $familyFound) {}
                                         else
                                         {
+                                            echo '<div class="child-meta">';
                                             echo '<h4>' . $key . '</h4>';
 
                                             echo '<p>';
@@ -1592,8 +1593,8 @@ foreach($recorddisplay as $key)
                                             }
                                             $infofound = true;
                                             echo '</p>';
+                                            echo '</div>';
                                         }
-                                        echo '</div>';
                                     }
                                 }
                                 if (!$infofound) {
@@ -2028,7 +2029,7 @@ foreach($recorddisplay as $key)
                                                 }
                                                 else
                                                 {
-                                                    echo $metadatavalue;
+                                                    echo '<span itemprop=""><a href="./search/%22'.$metadatavalue.'%22">'.$metadatavalue.'</a></span>';
                                                 }
                                             }
                                             if($index < sizeof($solr[$element]) - 1) {
@@ -2396,8 +2397,6 @@ foreach($recorddisplay as $key)
 
                                     if(isset($solr[$element])) {
 
-                                        echo '<div class="child-meta">';
-
                                         // Quick bit of logic to limit the number of subcategories shown
                                         // avoid duplication of metadata being displayed
                                         if ($key === "Instrument")
@@ -2412,6 +2411,7 @@ foreach($recorddisplay as $key)
                                         if ($key === "Genus" && $instrumentFound || $key === "Grouping" && $familyFound) {}
                                         else
                                         {
+                                            echo '<div class="child-meta">';
                                             echo '<h4>' . $key . '</h4>';
 
                                             echo '<p>';
@@ -2459,8 +2459,9 @@ foreach($recorddisplay as $key)
                                             }
                                             $infofound = true;
                                             echo '</p>';
+                                            echo '</div>';
                                         }
-                                        echo '</div>';
+                                        
                                     }
                                 }
                                 if (!$infofound) {
