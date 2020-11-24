@@ -1,4 +1,4 @@
-<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 ">
+<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 inst-results">
     <?php
 
     // Set up some variables to easily refer to particular fields you've configured
