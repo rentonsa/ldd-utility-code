@@ -127,7 +127,7 @@
     </nav><!-- end of header container -->
 
 <!-- SEARCH BAR FOR MOBILE/SMALL SCREENS -->
-<form id="body-cont" class="navbar-form navbar-left" role="search" action="./redirect/" method="post">
+<!--<form id="body-cont" class="navbar-form navbar-left" role="search" action="./redirect/" method="post">
     <div class="input-group search-box">
         <input id="uoe-search" type="text" class="form-control" placeholder="Search the museum collections" name="q" value="<?php if (isset($searchbox_query)) echo str_replace('"', '', urldecode($searchbox_query)); ?>" />
         <span class="input-group-btn">
@@ -136,7 +136,7 @@
             </button>
         </span>
     </div>
-</form>
+</form>-->
 <!-- SEARCH BAR FOR MOBILE/SMALL SCREENS END -->
 
 

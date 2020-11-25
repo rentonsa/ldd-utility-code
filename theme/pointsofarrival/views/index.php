@@ -6,7 +6,7 @@
 
     <div id="poa_banner">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <img class="img-responsive sch-logo" alt="Points of Arrival logo" src="<?php echo base_url(); ?>theme/pointsofarrival/images/site-logos/navbar-logo-b.png">
+            <!--<img class="img-responsive sch-logo" alt="Points of Arrival logo" src="<?php echo base_url(); ?>theme/pointsofarrival/images/site-logos/navbar-logo-b.png">-->
             <p class="index-para">
                 <a href="https://media.ed.ac.uk/playlist/dedicated/143796462/0_b0sex7tl/0_5h16vc0r" title="External link to Points of Arrival video playlist">Points of Arrival</a> 
                 is a series of five short films about Jewish migration to Scotland in the 19th and 20th centuries. 

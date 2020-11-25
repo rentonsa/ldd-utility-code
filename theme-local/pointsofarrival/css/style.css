@@ -1273,10 +1273,14 @@ div[id$="info"] {
     padding-right: 0;
 }
 
+.col-lg-12 {
+    width: 100%;
+    z-index: 0;
+}
+
 #poa_banner {
     float: right;
     background-position: center;
-    width: 70%;
     height: auto;
     background-size: 100%;
     padding-top: 150px;
@@ -1288,11 +1292,12 @@ div[id$="info"] {
     float: right;
     font-size: 18px;
     text-align: justify;
-    margin: 10px 70px 10px 200px;
+    margin: 10px 0px 10px 20%;
 }
 
 #galleries {
-    padding: 100px 50px 0 210px;
+    padding: 100px 50px 0 20%;
+    width: 107%;
 }
 #galleries .grid-sizer {
     width: 32%;
@@ -1300,7 +1305,7 @@ div[id$="info"] {
 
 div[id^="gallery"].grid-item {
     margin: 5px;
-    height: 250px;
+    height: 150px;
     float: left;
     border: 5px solid #114250;
     transition: .8s ease-in-out;
@@ -1344,27 +1349,29 @@ div[id^="gallery"] {
     transition: .8s ease;
 }
 .text-hover, .text-overlay {
-    height: 100px;
+    height: 50px;
     padding: 0px 20px;
     position: absolute;
-    margin: -55px -124px;
+    margin: -25px -75px;
 }
 .text-hover {
     margin-left: -122px;
+    margin: -25px -75px 25px -73px;
 }
 .rsrc {
     position: absolute;
     margin-left: -175px;
+    margin: -25px -110px;
 }
 .thht {
     position: absolute;
-    margin-left: -150px;
+    margin: -25px -80px 25px -78px;
 }
 .text-overlay.thht {
-    margin-left: -152px;
+    margin: -25px -80px;
 }
 #rsrc-hov {
-    margin-left: -173px;
+    margin: -25px -110px -25px -108px;
 }
 
 div[id^="gallery"] .gallery-title{
@@ -1387,23 +1394,30 @@ div[id^="gallery"]:hover .gallery-title{
     transition: .8s ease;
 }
 div[id^="gallery"]:hover .text-hover {
-    margin: 65px -128px;
     z-index: 1;
+    margin: 45px;
+    margin-left: -75px;
 }
 div[id^="gallery"]:hover .text-overlay {
-    margin: 65px -125px;
-}
-div[id^="gallery"]:hover .rsrc {
-    margin-left: -173px;
+    margin: 45px;
+    margin-left: -72px;
 }
 div[id^="gallery"]:hover .thht {
-    margin-left: -150px;
+    margin-left: -77px;
 }
-div[id^="gallery"]:hover #thht-hov {
-    margin-left: -155px;
+div[id^="gallery"]:hover .text-hover .thht {
+    margin-left: -80px;
+}
+div[id^="gallery"]:hover .text-overlay .thht {
+    margin-left: -77px;
+}
+div[id^="gallery"]:hover .rsrc {
+    margin: 45px;
+    margin-left: -107px;
 }
 div[id^="gallery"]:hover #rsrc-hov {
-    margin-left: -175px;
+    margin: 45px;
+    margin-left: -110px;
 }
 
 /* catagory title for mobile/tablet */
@@ -1645,7 +1659,7 @@ dl {
 }
 .index-grid
 {
-    width: 48%!important;
+    width: 23%!important;
 }
 
 /*@media (min-width: 768px)
@@ -2144,6 +2158,8 @@ p.film-themes-p {
     background-color: #114250;
     border-right: #47838f 5px solid;
     border-bottom: #47838f 5px solid;
+    z-index: 999;
+    overflow-y: scroll;
 }
 .accordion, .non-accordion {
     background-color: #114250;
@@ -2151,12 +2167,13 @@ p.film-themes-p {
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    height: 75px;
+    height: 50px;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 24px;
+    font-size: 18px;
     transition: 0.4s;
+    text-transform: capitalize;
 }
 .active, .accordion:hover, .non-accordion:hover, .panel p:hover {
     background-color: #47838f; 
