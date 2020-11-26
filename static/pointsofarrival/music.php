@@ -11,12 +11,8 @@
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
-            <img id="theme-title" class="img-responsive sch-logo music-theme" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/music-title.png">
+            <h1 class="poa-page-title ind-film-title">Music as a Global Language</h1>   
             <div class="theme-cont">
-                <!--<div class="theme-img-cont">
-                    <img class="ivideo-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme/.png">
-                    <p class="film-credits">Narrated by artist Emma Newcombe, film by Chris Leslie.<p>
-                </div>-->
                 <p class="theme-info">
                     Music is sometimes described as the one language shared by all humans. Even though many cultures have no single word for ‘music’, every group of people around the 
                     world takes part in activities that we could call ‘music-making’. For many of us, major life-events (weddings, births, deaths) would be unthinkable without music, 

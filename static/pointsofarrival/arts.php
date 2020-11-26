@@ -11,7 +11,7 @@
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
-            <img id="theme-title" class="img-responsive sch-logo arts-theme" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/art-title.png">
+            <h1 class="poa-page-title ind-film-title">Jewish Arts and Artists</h1>
             <div class="theme-cont">
                 <div class="theme-img-cont">
                     <img class="theme-still theme-top" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/arts.png">
@@ -19,7 +19,7 @@
                         Josef Herman, Refugees (1941). Ben Uri Collection (c) Josef Herman Estate
                     <p>
                 </div>
-                <p>
+                <p  class="theme-info">
                     The Second Commandment against the creation of graven images or likenesses has largely been interpreted in Judaism as a prohibition on idols or ‘false’ objects of 
                     worship, rather than an outright ban on figurative art. From antiquity onwards, synagogue interiors have often been decorated with images of animals, flora, or 
                     more abstract patterns and designs (although very rarely human figures). However, religious iconography has not played the kind of role in Judaism in the way that 
@@ -35,7 +35,7 @@
                     Manifesto’, declaring that ‘The Diasporist lives and paints in two societies at once.’
                     <br><br>
                 </p> 
-                <div class="theme-img-cont">
+                <div class="theme-img-cont" id="theme-img-offset">
                     <img class="theme-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/arts2.png">
                     <p class="theme-credits">
                         Garnethill Boys Hostel, 1939. Courtesy of the Scottish Jewish Archives Centre

@@ -11,12 +11,8 @@
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
-            <img id="theme-title" class="img-responsive sch-logo welfare-theme" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/synagogue-title.png">
+            <h1 class="poa-page-title ind-film-title">Synagogue Music</h1>   
             <div class="theme-cont">
-                <!--<div class="theme-img-cont">
-                    <img class="ivideo-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme/.png">
-                    <p class="film-credits">Narrated by artist Emma Newcombe, film by Chris Leslie.<p>
-                </div>-->
                 <p class="theme-info">
                     Music is a central part of <a href="./religion">Jewish worship</a>. Many prayers are sung together by the whole congregation in synagogue, and some Jewish families sing 
                     prayers and songs around the table at a Friday night Sabbath meal. Jewish holidays and festivals often have particular songs associated with them, such as dayenu at a 

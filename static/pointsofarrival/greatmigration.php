@@ -11,7 +11,7 @@
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
-            <img id="theme-title" class="img-responsive sch-logo greatmigration-theme" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/migration-title.png">
+            <h1 class="poa-page-title ind-film-title">The Great Migration</h1>
             <div class="theme-cont"> 
                 <div class="theme-img-cont">
                     <img class="theme-still theme-top" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/greatmigration.png">
@@ -20,13 +20,13 @@
                         Sailing from Danzig (Gdansk), Antwerp, Liverpool, London, Glasgow and Southampton.
                     <p>
                 </div>
-                <p>
+                <p class="theme-info">
                     The late nineteenth and early twentieth century saw the mass migration of many people from Eastern Europe towards ‘the West’. Included among them were close to 2 
                     million Jews who moved from the Pale of Settlement towards North America, western Europe, the United Kingdom, and other parts of the English-speaking (Anglophone) 
                     world.
                     <br><br>
                 </p>
-                <div class="theme-img-cont">
+                <div class="theme-img-cont" id="theme-img-offset">
                     <img class="theme-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/greatmigration2.png">
                     <p class="theme-credits">
                         Sarah Jacobson Alien Registration Certificate (1916). Courtesy of the Scottish Jewish Archives Centre

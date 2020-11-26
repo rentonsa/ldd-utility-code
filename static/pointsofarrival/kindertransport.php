@@ -7,11 +7,11 @@
     <div id="poa-theme">
 
         <div class="back-link">
-            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"> </span><a href="./theme">Back to Themes List</a>
+            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"> </span><a href="./themes">Back to Themes List</a>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
-            <img id="theme-title" class="img-responsive sch-logo kindertransport-theme" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/kinder-title.png">
+            <h1 class="poa-page-title ind-film-title">Kindertransport</h1>            
             <div class="theme-cont">
                 <div class="theme-img-cont">
                     <img class="theme-still theme-top" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/kindertransport.png">
@@ -19,7 +19,7 @@
                         Kindertransport children. Courtesy of the Association of Jewish Refugees.
                     <p>
                 </div>
-                <p>
+                <p class="theme-info">
                     After the state organised terror on 9-10 November 1938 (also known as ‘Kristallnacht’, the night of broken glass), the British government gave in to pressure from 
                     British citizens to allow children to take refuge in the United Kingdom as long as families and refugee organisations paid for their maintenance (food, clothes, 
                     education, housing and so on). This project is known as the Kindertransport (children’s transport) and it allowed c.10,000 children from Germany, Austria, and the 
@@ -27,7 +27,7 @@
                     British. Only very few children were reunited with their parents after the war. Most parents had been murdered by the Nazis.
                     <br><br>
                 </p>
-                <div class="theme-img-cont"> 
+                <div class="theme-img-cont" id="theme-img-offset"> 
                     <img class="theme-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/kindertransport2.png">
                     <p class="theme-credits">
                         Kinderstransportee Henry Wuga’s landing card. Courtesy of Henry Wuga.
