@@ -37,6 +37,7 @@ ul li {
 }
 html {
     background: rgb(247, 251, 255);
+    overflow-x: hidden;
 }
 body
 {
@@ -1402,14 +1403,11 @@ div[id^="gallery"]:hover .text-overlay {
     margin: 45px;
     margin-left: -72px;
 }
-div[id^="gallery"]:hover .thht {
-    margin-left: -77px;
-}
 div[id^="gallery"]:hover .text-hover .thht {
     margin-left: -80px;
 }
-div[id^="gallery"]:hover .text-overlay .thht {
-    margin-left: -77px;
+div[id^="gallery"]:hover .text-overlay.thht {
+    margin-left: -72px;
 }
 div[id^="gallery"]:hover .rsrc {
     margin: 45px;
@@ -1802,13 +1800,22 @@ dl {
 #poa-films {
     float: right;
     background-position: center;
-    width: 50%;
     height: auto;
     background-size: 100%;
-    padding-top: 150px;
+    padding-top: 120px;
     padding-bottom: 50px;
-    padding-right: auto;
-    padding-left: auto;
+    padding-left: 620px;
+    position: absolute;
+}
+.poa-page-title
+{
+    font-size: 52px;
+    margin-left: -213px;
+    margin-bottom: 50px;
+}
+.ind-film-title
+{
+    margin-top: 50px;
 }
 #films-title {
     width: 40%;
@@ -1826,7 +1833,7 @@ dl {
     position: relative;
     width: 250px;
     background: #114250;
-    margin: 10px 10px 10px 0px;
+    margin: 10px 25px 10px 0px;
 }
 .film-img-cont .video-still {
     border: 5px solid #114250;
@@ -1872,20 +1879,19 @@ dl {
 #poa-film {
     float: right;
     background-position: center;
-    width: 50%;
     height: auto;
     background-size: 100%;
-    padding-top: 150px;
+    padding-top: 120px;
     padding-bottom: 50px;
-    padding-right: auto;
-    padding-left: auto;
+    padding-left: 620px;
+    position: absolute;
 }
 #film-title {
     width: 100%;
     margin-left: -350px;
 }
 .film-cont {
-    margin-left: -250px;
+    margin-left: -210px;
     margin-top: 50px;
 }
 .film-cont p {
@@ -1894,7 +1900,7 @@ dl {
 }
 .ifilm-img-cont {
     float: left;
-    margin-right: -25px;
+    margin-right: 25px;
 }
 .ifilm-text-cont {
     padding-top: 9px;
@@ -2152,7 +2158,7 @@ p.film-themes-p {
     float: left;
     position: fixed;
     padding-top: 70px;
-    width: 18%;
+    width: 325px;
     height: 100%;
     left: 0;
     background-color: #114250;
@@ -2165,15 +2171,18 @@ p.film-themes-p {
     background-color: #114250;
     color: #fff;
     cursor: pointer;
-    padding: 18px;
     width: 100%;
-    height: 50px;
+    height: 42px;
     border: none;
     text-align: left;
     outline: none;
     font-size: 18px;
     transition: 0.4s;
     text-transform: capitalize;
+}
+.acc-btn
+{
+    padding-left: 38px;
 }
 .active, .accordion:hover, .non-accordion:hover, .panel p:hover {
     background-color: #47838f; 
@@ -2199,8 +2208,7 @@ p.film-themes-p {
 /* -----> Quick Back Links for Films & Themes <----- */
 .back-link {
     position: absolute;
-    left: 20%;
-    margin-top: -2%;
+    left: 420px;
     font-size: 18px;
     color: #114250;
 }
