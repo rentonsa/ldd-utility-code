@@ -13,7 +13,7 @@
     <a href="./pointsofarrival/wuga"><button class="accordion acc-btn">Henry Wuga Film</button></a>
     <!-- THEMES -->
     <a href="./pointsofarrival/themes"><button class="accordion acc-btn">Full Theme List</button></a>
-    <a href="./pointsofarrival/adnan"><button class="accordion acc-btn">Adnan Shamdin</button></a>
+    <!--<a href="./pointsofarrival/adnan"><button class="accordion acc-btn">Adnan Shamdin</button></a>-->
     <a href="./pointsofarrival/antisemitism"><button class="accordion acc-btn">Antisemitism</button></a>
     <a href="./pointsofarrival/family"><button class="accordion acc-btn">Family</button></a>
     <a href="./pointsofarrival/gorbals"><button class="accordion acc-btn">The Gorbals</button></a>

@@ -6,14 +6,14 @@
     
     <div id="poa-intro">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
-            <img id="intro-title" class="img-responsive sch-logo" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/introduction-title.png">
 
+            <h1 class="poa-page-title">Introduction</h4>
             <div class="intro-cont">
-                <p>
+                <p class="intro-info">
                     <em>Points of Arrival</em> is a series of five short films about Jewish migration to Scotland in the 19<sup>th</sup> and 20<sup>th</sup> centuries. 
                     Each film tells the story of one person – in their own words and also through a contemporary narrator who shares a connection.
                 </p>
-                <p>
+                <p class="intro-info">
                     To supplement these films, we have designed this site to offer a series of digital resources to students and teachers. 
                     <strong>How to use this site</strong> below gives some suggestions about getting the most from these resources. <!--Alternatively, 
                     click on any of the images to the right to get started.  COMMENTED OUT AWAITING CONTENT--> 
@@ -21,14 +21,13 @@
             </div>
             <br><br><br>
 
-            <img id="howto-title" class="img-responsive sch-logo" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/howto-title.png">
-
+            <h1 class="poa-page-title">How To</h4>
             <div class="intro-cont">
                 <ul class="parent-ul">
                     <li>First of all, watch the <a href="./films"><strong>films!</strong></a> Or at least one or two of them.
                         <ul class="child-ul">
                             <li>You can view all the films in one go <a href="https://media.ed.ac.uk/playlist/dedicated/143796462/0_b0sex7tl/0_5h16vc0r" target="_blank" rel="noopener"><strong>here</strong></a>&nbsp; (about 18 mins total).</li>
-                            <li>To see the full blurb for each film and it's list of <a href="./themes">themes</a> click on the individual films image on the <a href="./films"><strong>films page.</strong></a></li>
+                            <li>To see the full blurb for each film and it's list of <a href="./themes"><strong>themes</strong></a> click on the individual films image on the <a href="./films"><strong>films page.</strong></a></li>
                             <li>Or choose to watch one film at a time by clicking one of the options to the right of the image on the <a href="./films"><strong>films page.</strong></a></li>
                         </ul>
                     </li>

@@ -10,10 +10,10 @@
             <h1 class="poa-page-title">Theme List</h4>
 
             <div class="themes-cont">
-                <h2>Adnan Shamdin</h2>
+                <!--<h2>Adnan Shamdin</h2>
                 <p>
                     <a href="./adnan" rel="noopener"><i class="fa fa-eye"></i> Read More</a>
-                </p>
+                </p>-->
                 <h2>Antisemitism</h2>
                 <p>
                     In simple terms, antisemitism is hatred of Jews. Like all racisms it picks on a characteristic (here, being Jewish) that is an unchangeable part of a person, 
