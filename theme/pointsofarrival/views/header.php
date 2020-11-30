@@ -121,23 +121,15 @@
             </div>
             <div class="right-nav">
                 <a href="https://www.sjac.org.uk/" target="_blank"><img src="<?php echo base_url()?>theme/pointsofarrival/images/site-logos/sjac_logo_clear.png"></a>
+                <a href="https://www.ed.ac.uk/" target="_blank"><img id="uoe" src="<?php echo base_url()?>theme/pointsofarrival/images/logos/uoe-logo.png"></a>
+                <a href="https://www.gla.ac.uk/" target="_blank"><img id="uog" src="<?php echo base_url()?>theme/pointsofarrival/images/logos/uog-logo.png"></a>
             </div>
         </div>
         
     </nav><!-- end of header container -->
-
-<!-- SEARCH BAR FOR MOBILE/SMALL SCREENS -->
-<form id="body-cont" class="navbar-form navbar-left" role="search" action="./redirect/" method="post">
-    <div class="input-group search-box">
-        <input id="uoe-search" type="text" class="form-control" placeholder="Search the museum collections" name="q" value="<?php if (isset($searchbox_query)) echo str_replace('"', '', urldecode($searchbox_query)); ?>" />
-        <span class="input-group-btn">
-            <button type="submit" class="btn btn-default" name="submit_search" value="Search" id="submit_search1">
-                <i class="glyphicon glyphicon-search"></i>&nbsp;Search
-            </button>
-        </span>
+    <div class="poa-img-banner">
+        <div><img class="video-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/video-stills/stills-banner.png"></div>
     </div>
-</form>
-<!-- SEARCH BAR FOR MOBILE/SMALL SCREENS END -->
 
 
 

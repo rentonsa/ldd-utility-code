@@ -1,63 +1,42 @@
 <div class="poa-sidebar">
-    <a href="./"><button class="non-accordion">Home</button></a>
-    <!--<div class="panel"> 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>-->
-
-    <button class="accordion">Introduction</button>
-    <div class="panel">
-        <a href="./introduction"><p>Introduction</p></a>
-        <a href="./introduction#howto-title"><p>How to use this site</p></a>
-    </div>
-
-    <button class="accordion">Points of Arrival Films</button>
-    <div class="panel">
-        <a href="./films"><p>Full Catalogue</p></a>
-        <a href="./goldwag"><p>Hilda Goldwag</p></a>
-        <a href="./hirshow"><p>Isaac Hirshow</p></a>
-        <a href="./lindey"><p>Annie Lindey</p></a>
-        <a href="./sim"><p>Dorrith Sim</p></a>
-        <a href="./wuga"><p>Henry Wuga</p></a>
-    </div>
-
-    <button class="accordion">Themes</button>
-    <div class="panel">
-        <a href="./themes"><p>Full Theme List</p></a>
-        <a href="./adnan"><p>Adnan Shamdin</p></a>
-        <a href="./antisemitism"><p>Antisemitism</p></a>
-        <a href="./family"><p>Family</p></a>
-        <a href="./gorbals"><p>The Gorbals</p></a>
-        <a href="./greatmigration"><p>The Great Migration</p></a>
-        <a href="./history"><p>History of Jews in Scotland</p></a>
-        <a href="./arts"><p>Jewish Art and Artists</p></a>
-        <a href="./culture"><p>Jewish Culture</p></a>
-        <a href="./food"><p>Jewish Food</p></a>
-        <a href="./easterneurope"><p>Jewish Life in Eastern Europe</p></a>
-        <a href="./languages"><p>Jewish Languages</p></a>
-        <a href="./nazigermany"><p>Jewish Life in Nazi Germany</p></a>
-        <a href="./religion"><p>Jewish Religion</p></a>
-        <a href="./kindertransport"><p>Kindertransport</p></a>
-        <a href="./music"><p>Music as a Global Language</p></a>
-        <a href="./synagoguemusic"><p>Synagogue Music</p></a>
-        <a href="./holocaust"><p>War and Holocaust</p></a>
-        <a href="./welfare"><p>Welfare</p></a>
-    </div>
-
-    <button class="accordion">Resources</button>
-    <div class="panel">
-        <a href="./resources"><p>Full Resource List</p></a>
-        <a href="./resources#learning"><p>My Jewish Learning</p></a>
-        <a href="./resources#viruallibrary"><p>Jewish Virtual Library</p></a>
-        <a href="./resources#virtualshetl"><p>Virtual Shetl</p></a>
-        <a href="./resources#synagogues"><p>Synagogues Around the World</p></a>
-        <a href="./resources#holocaustexplained"><p>The Holocaust Explained</p></a>
-        <a href="./resources#holocaustencyclopedia"><p>Holocaust Encyclopedia</p></a>
-        <a href="./resources#migration"><p>Migration Museum</p></a>
-        <a href="./resources#artmusicculture"><p>Jewish Art, Music, and Culture</p></a>
-        <a href="./resources#scotland"><p>Focus on Scotland</p></a>
-    </div>
+    <!-- HOME -->
+    <a href="./"><button class="non-accordion acc-btn">Home</button></a>
+    <!-- INTRO/HOW TO -->
+    <a href="./pointsofarrival/introduction"><button class="accordion acc-btn">Introduction</button></a>
+    <a href="./pointsofarrival/introduction#howto-title"><button class="accordion acc-btn">How to use this site</button></a>
+    <!-- FILMS -->
+    <a href="./pointsofarrival/films"><button class="accordion acc-btn">Points of Arrival Films</button></a>
+    <a href="../pointsofarrival/goldwag"><button class="accordion acc-btn">Hilda Goldwag Film</button></a>
+    <a href="./pointsofarrival/hirshow"><button class="accordion acc-btn">Isaac Hirshow Film</button></a>
+    <a href="./pointsofarrival/lindey"><button class="accordion acc-btn">Annie Lindey Film</button></a>
+    <a href="./pointsofarrival/sim"><button class="accordion acc-btn">Dorrith Sim Film</button></a>
+    <a href="./pointsofarrival/wuga"><button class="accordion acc-btn">Henry Wuga Film</button></a>
+    <!-- THEMES -->
+    <a href="./pointsofarrival/themes"><button class="accordion acc-btn">Full Theme List</button></a>
+    <!--<a href="./pointsofarrival/adnan"><button class="accordion acc-btn">Adnan Shamdin</button></a>-->
+    <a href="./pointsofarrival/antisemitism"><button class="accordion acc-btn">Antisemitism</button></a>
+    <a href="./pointsofarrival/family"><button class="accordion acc-btn">Family</button></a>
+    <a href="./pointsofarrival/gorbals"><button class="accordion acc-btn">The Gorbals</button></a>
+    <a href="./pointsofarrival/greatmigration"><button class="accordion acc-btn">The Great Migration</button></a>
+    <a href="./pointsofarrival/history"><button class="accordion acc-btn">History of Jews in Scotland</button></a>
+    <a href="./pointsofarrival/arts"><button class="accordion acc-btn">Jewish Art and Artists</button></a>
+    <a href="./pointsofarrival/culture"><button class="accordion acc-btn">Jewish Culture</button></a>
+    <a href="./pointsofarrival/food"><button class="accordion acc-btn">Jewish Food</button></a>
+    <a href="./pointsofarrival/easterneurope"><button class="accordion acc-btn">Jewish Life in Eastern Europe</button></a>
+    <a href="./pointsofarrival/languages"><button class="accordion acc-btn">Jewish Languages</button></a>
+    <a href="./pointsofarrival/nazigermany"><button class="accordion acc-btn">Jewish Life in Nazi Germany</button></a>
+    <a href="./pointsofarrival/religion"><button class="accordion acc-btn">Jewish Religion</button></a>
+    <a href="./pointsofarrival/kindertransport"><button class="accordion acc-btn">Kindertransport</button></a>
+    <a href="./pointsofarrival/music"><button class="accordion acc-btn">Music as a Global Language</button></a>
+    <a href="./pointsofarrival/synagoguemusic"><button class="accordion acc-btn">Synagogue Music</button></a>
+    <a href="./pointsofarrival/holocaust"><button class="accordion acc-btn">War and Holocaust</button></a>
+    <a href="./pointsofarrival/welfare"><button class="accordion acc-btn">Welfare</button></a>
+    <!-- RESOURCES -->
+    <a href="./pointsofarrival/resources"><button class="accordion acc-btn">Resources List</button></a>
 </div>
 
+<!-- Probably depricated since removal of accordion sidebar -->
+<!-- Kept in just in-case it effects functionality -->
 <script>
 var acc = document.getElementsByClassName("accordion");
 var i;

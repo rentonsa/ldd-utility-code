@@ -7,11 +7,11 @@
     <div id="poa-theme">
 
         <div class="back-link">
-            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"> </span><a href="./theme">Back to Themes List</a>
+            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"> </span><a href="./themes">Back to Themes List</a>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
-            <img id="theme-title" class="img-responsive sch-logo history-theme" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/histories-title.png">
+            <h1 class="poa-page-title ind-film-title">The History of Jews in Scotland</h1>            
             <div class="theme-cont">
                 <div class="theme-img-cont">
                     <img class="theme-still theme-top" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/scotland.png">
@@ -19,7 +19,7 @@
                         Glasgow Jewish linen merchant. Courtesy of the Scottish Jewish Archives Centre
                     <p>
                 </div>
-                <p>
+                <p  class="theme-info">
                     Records of Jews in Scotland date back at least to the 17th century. Julius Conradus Otto, a Christian convert who later reverted to Judaism, became the first chair of 
                     Hebrew and Oriental Languages at Edinburgh University in 1642. Herman Lyon’s 1795 mausoleum on Calton Hill is thought to be the first Jewish gravesite in Edinburgh.
                     <br><br>
@@ -38,7 +38,7 @@
                     and in 1893 the Aberdeen Hebrew Congregation was founded. Other smaller communities also grew in Inverness, Dunfermline, Ayr, Falkirk, and Greenock.
                     <br><br>
                 </p>
-                <div class="theme-img-cont">
+                <div class="theme-img-cont" id="theme-img-offset">
                     <img class="theme-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/scotland2.png">
                     <p class="theme-credits">
                         Hilda Goldwag, In Cowcaddens (1967).

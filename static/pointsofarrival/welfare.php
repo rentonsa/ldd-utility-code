@@ -11,7 +11,7 @@
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
-            <img id="theme-title" class="img-responsive sch-logo welfare-theme" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/welfare-title.png">
+            <h1 class="poa-page-title ind-film-title">Welfare</h1>   
             <div class="theme-cont">
                 <div class="theme-img-cont">
                     <img class="theme-still theme-top" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/welfare.png">

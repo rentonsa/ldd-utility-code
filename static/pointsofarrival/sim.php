@@ -11,8 +11,8 @@
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
-            <img id="film-title" class="img-responsive sch-logo sim-title" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/sim-title.png">
 
+            <h1 class="poa-page-title ind-film-title">Dorrith Sim</h4>
             <div class="film-cont">
                 <div class="ifilm-img-cont">
                     <img class="ivideo-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/video-stills/sim.jpg">

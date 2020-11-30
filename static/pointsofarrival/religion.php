@@ -11,15 +11,15 @@
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
-            <img id="theme-title" class="img-responsive sch-logo religion" alt="Points of Arrival films" src="<?php echo base_url(); ?>theme/pointsofarrival/images/titles/religion-title.png">
-            <div class="theme-cont">
+            <h1 class="poa-page-title ind-film-title">Jewish Religion</h1>   
+            <div class="theme-cont" class="theme-info">
                 <div class="theme-img-cont">
                     <img class="theme-still theme-top" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/religion.png">
                     <p class="theme-credits">
                         Interior of Garnethill Synagogue, Glasgow. Courtesy of the Scottish Jewish Archives Centre
                     <p>
                 </div>
-                <p>
+                <p class="theme-info">
                     A person is a Jew if they have Jewish parents. A Jew may choose to express their Jewishness by following the religion of Judaism. However, 
                     a person’s ‘Jewish status’ does not depend on them holding particular beliefs or following particular practices. A person may be identified 
                     as a Jew by others, and not feel that they would choose this identification themselves. Sometimes, non-Jews wish to identify people as Jewish 
@@ -116,7 +116,7 @@
                     </li>
                 </ul>
 
-                <p>
+                <p class="theme-info">
                     There are many different ways to be Jewish. While all the above elements will be relevant to religious Jews, they may be expressed very differently 
                     in the various Jewish religious movements.
                 </p>
