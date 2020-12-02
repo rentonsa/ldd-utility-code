@@ -33,16 +33,16 @@
         echo '<div class = "box">';
 
         $error = '';
-        $docbase = '/Users/srenton1/Projects/lddutilities/';
-        $infile = $docbase.'/files/input.csv';
+        $docbase = '/Users/srenton1/Projects/ldd-utility-code/theses-CSV';
+        $infile = $docbase.'/files/input_wave-work.csv';
         $infile_open = fopen($infile, "r") or die ("can't open in file");
-        $mappingfile = $docbase.'/files/mappingCSV.txt';
+        $mappingfile = $docbase.'/files/mappingCSV_wave.txt';
         $file_handle_map_in = fopen($mappingfile, "r") or die ("can't open mapping file");
         $dublincorefile = 'dublin_core.xml';
         $contentsfile = 'contents';
         $logfile = $docbase.'/files/csv_output.txt';
         $file_handle_log_out = fopen($logfile, "a+")or die("<p>Sorry. I can't open the logfile.</p>");
-        $photodirectory =  '/Users/srenton1/Projects/theses/';
+        $photodirectory =  '/Users/srenton1/Documents/ScholComms/pdf/';
         $delimiter = ",";
         $framer = '"';
         $header = null;
@@ -62,6 +62,7 @@
             $mapping[$k][3] = $map[3];
             $k++;
         }
+        $mapped_items = $k;
         $line = '';
         $numcols = 0;
         $batchcount = 0;
@@ -73,7 +74,9 @@
         fclose ($infile_open);
         $file = file_get_contents($infile);
         $data = array_map("str_getcsv", preg_split('/\r*\n+|\r+/', $file));
+        print_r($data);
         $directory = $docbase.'/files/dspaceNew/';
+        print_r($directory);
         $nomatchfiles = 0;
 
         foreach ($data as $key=>$value)
@@ -89,6 +92,7 @@
            {
 
                 $subfolder = str_pad($directory.$key,5,"0");
+                print_r($subfolder);
                 if (!(file_exists($subfolder)))
                 {
                     mkdir($subfolder);
@@ -100,11 +104,13 @@
                 }
 
                 $j = 0;
+                print_r("\n COLS: ".$numcols);
                 for ($j = 0; $j<$numcols; $j ++)
                 {
-                    $pos = strpos($headerarray[$j],'file');
+                    $pos = strpos($headerarray[$j],'File');
                     if ($pos !== false)
                     {
+                        //$photono = str_replace("<br>","",$value[$j]);
                         $photono = $value[$j];
                         $matchedname = false;
 
@@ -116,11 +122,15 @@
                             {
                                 while (($file = readdir($dh)) !== false)
                                 {
-                                   // echo $photono."versus".$file."<br>";
-                                    if (strtoupper($file) == strtoupper($photono))
+                                    $file_match = strtoupper(str_replace(" ","_",$file));
+                                    $photono = strtoupper(str_replace(" ","_",$photono));  
+
+                                    if ($file_match == $photono)
                                     {
+                                        print_r("in");
                                         $matchedname = true;
                                         $filepath = $photodirectory.$file;
+                                        print_r($filepath);
                                         $copypath = $subfolder.'/'.$file;
                                         if (!copy($filepath, $copypath))
                                         {
@@ -152,22 +162,29 @@
                     } 
                     else
                     {
-                    	$item = special_chars($value[$j]);
+                        if (strlen($value[$j]) > 0)
+                        {
+                            for ($m = 0; $m<$mapped_items; $m ++)
+                            {
+                                if ($headerarray[$j] == $mapping[$m][0])
+                                {
+                                    if( $mapping[$m][3] == "noqual")
+                                    {
+                                        
+                                        $qualifier = "";
+                                    }
+                                    else
+                                    {
+                                        $qualifier = $mapping[$m][3];
+                                    }
+                                    $item = special_chars($value[$j]);
 
-                        if( $mapping[$j][3] == "noqual")
-                        {
-                            
-                            $qualifier = "";
-                        }
-                        else
-                        {
-                        	$qualifier = $mapping[$j][3];
-                        }
-                        fwrite($file_handle_log_out, "KEY: dc.".$mapping[$j][2].'.'.$qualifier." VALUE: ".$item."\n");
-                        if ($headerarray[$j] == $mapping[$j][0]) {
-                            $outline = '<' . $mapping[$j][1] . 'value element = "' . $mapping[$j][2] . '" qualifier = "' . $qualifier . '">' . $item . "</dcvalue>\n";
-                            fwrite($file_handle_dc_out, $outline);
-                        }  
+                                    $outline = '<' . $mapping[$m][1] . 'value element = "' . $mapping[$m][2] . '" qualifier = "' . $qualifier . '" language = "en">' . $item . "</dcvalue>\n";
+                                    fwrite($file_handle_dc_out, $outline);
+                                    fwrite($file_handle_log_out, "KEY: dc.".$mapping[$m][2].'.'.$qualifier." VALUE: ".$item."\n");
+                                }    
+                            } 
+                        }     
                     } 
                 }
                 fwrite($file_handle_dc_out, '</dublin_core>');

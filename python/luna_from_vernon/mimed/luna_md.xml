@@ -1,0 +1,1110 @@
+<?xml version="1.0" ?>
+<recordList>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Fox-hunting horn. (Monzani) : Side View</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0037000-0037999\0037300c.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0037300c.tif</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucjh6441t.tif</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Fox-hunting horn.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6441</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0037300</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Monzani</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Lied horn. Nominal pitch: 4-ft C, 4½-ft B♭, and 5-ft A. (Boosey &amp; Co) : Quarter view</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0037000-0037999\0037301c.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0037301c.tif</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucjh6442qtfl.tif</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Lied horn. Nominal pitch: 4-ft C, 4½-ft B♭, and 5-ft A.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6442</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0037301</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Boosey &amp; Co</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Lied horn. Nominal pitch: 4-ft C, 4½-ft B♭, and 5-ft A. (Boosey &amp; Co) : Quarter view</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0037000-0037999\0037301c-0001.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0037301c-0001.tif</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucjh6442qufr.tif</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Lied horn. Nominal pitch: 4-ft C, 4½-ft B♭, and 5-ft A.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6442</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0037301</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Boosey &amp; Co</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Mouthpiece for cornet. (Auguste Mille (estab. 1880, closed 1898)) : Side View</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0037000-0037999\0037302d.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0037302d.jpg</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucji6443s128.jpg</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Mouthpiece for cornet.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6443</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0037302</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Auguste Mille</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Mouthpiece for cornet. (Auguste Mille (estab. 1880, closed 1898)) : Side View</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0037000-0037999\0037302d-0001.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0037302d-0001.jpg</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucji6443s201.jpg</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Mouthpiece for cornet.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6443</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0037302</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Auguste Mille</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Mouthpiece for cornet. (Couesnon &amp; Cie) : Side View</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0037000-0037999\0037303d.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0037303d.jpg</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucji6444s226.jpg</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Mouthpiece for cornet.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6444</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0037303</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Couesnon &amp; Cie</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Chromatic bass horn. Nominal pitch: 8-ft C. (Probably J. Streitwolf) : Side View</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0037000-0037999\0037304c.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0037304c.tif</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucjh6445b.tif</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Chromatic bass horn. Nominal pitch: 8-ft C.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6445</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0037304</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Probably J. Streitwolf</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Chromatic bass horn. Nominal pitch: 8-ft C. (Probably J. Streitwolf) : Front view</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0037000-0037999\0037304c-0001.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0037304c-0001.tif</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucjh6445f.tif</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Chromatic bass horn. Nominal pitch: 8-ft C.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6445</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0037304</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Probably J. Streitwolf</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Mouthpiece for chromatic bass horn. (Possibly J. Streitwolf) : Side View</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0037000-0037999\0037314d.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0037314d.jpg</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucji6446s544.jpg</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Mouthpiece for chromatic bass horn.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6446</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0037314</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Possibly J. Streitwolf</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Cornet. Nominal pitch: B♭ / A. (E.A. Couturier Co.) : Left</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0075000-0075999\0075011c.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0075011c.tif</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucjh6447l.tif</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Cornet. Nominal pitch: B♭ / A.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6447</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0075011</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>E.A. Couturier Co.</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Baritone. Nominal pitch: B♭. (Unknown) : Quarter view</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0075000-0075999\0075012c.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0075012c.tif</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucjh6448qfr.tif</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Baritone. Nominal pitch: B♭.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6448</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0075012</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Unknown</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Tuba. Nominal pitch: 18-ft B♭. (Marc Jandard (estab. Circa 1871, closed Circa 1878)) : Quarter view</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0075000-0075999\0075013c.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0075013c.tif</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucjh6449qfr.tif</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Tuba. Nominal pitch: 18-ft B♭.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6449</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0075013</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Marc Jandard</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Piccolo trumpet. Nominal pitch: 2¼-ft B♭. (J. Smits, successor to C. Mahillon.) : Right</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0075000-0075999\0075014c.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0075014c.tif</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucjh6450r.tif</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Piccolo trumpet. Nominal pitch: 2¼-ft B♭.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6450</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0075014</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>J. Smits, successor to C. Mahillon.</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Trumpet. Nominal pitch: B♭-A. (Boosey &amp; Hawkes) : Left</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0075000-0075999\0075015c.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0075015c.tif</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucjh6451l.tif</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Trumpet. Nominal pitch: B♭-A.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6451</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0075015</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Boosey &amp; Hawkes</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Slide and valve trumpet. Nominal pitch: F etc. (F. Besson) : Left</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0075000-0075999\0075016c.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0075016c.tif</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucjh6452l.tif</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Slide and valve trumpet. Nominal pitch: F etc.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6452</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0075016</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Besson, F.</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Tenor valve trombone. Nominal pitch: C, B-flat and A. (C.G. Conn) : Quarter view</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0075000-0075999\0075017c.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0075017c.tif</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucjh6453qlt.tif</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Tenor valve trombone. Nominal pitch: C, B-flat and A.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6453</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0075017</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Conn, C.G.</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Mouthpiece for tenor trombone. (C.G. Conn) : Side View</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0075000-0075999\0075018d.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0075018d.jpg</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucji6454s512.jpg</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Mouthpiece for tenor trombone.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6454</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0075018</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Conn, C.G.</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Valve trombone. Nominal pitch: B♭. (J. Smits, successor to C. Mahillon.) : Right</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0075000-0075999\0075019c.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0075019c.tif</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucjh6455r.tif</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Valve trombone. Nominal pitch: B♭.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6455</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0075019</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>J. Smits, successor to C. Mahillon.</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Tenor slide trombone. Nominal pitch: B♭. (Auguste Mille (estab. 1880, closed 1898)) : Quarter view</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0075000-0075999\0075020c.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0075020c.tif</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucjh6456qlt.tif</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Tenor slide trombone. Nominal pitch: B♭.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6456</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0075020</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Auguste Mille</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Tenor trombone. Nominal pitch: B♭. (Johann Christoph Penzel) : Quarter view</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0075000-0075999\0075021c.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0075021c.tif</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucjh6457qlt.tif</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Tenor trombone. Nominal pitch: B♭.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6457</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0075021</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Penzel, Johann Christoph</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Mouthpiece for tenor trombone. (Unknown) : Side View</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0075000-0075999\0075022d.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0075022d.jpg</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucji6458s344.jpg</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Mouthpiece for tenor trombone.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6458</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0075022</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Unknown</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Tenor trombone. Nominal pitch: B♭. (Holton) : Quarter view</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0075000-0075999\0075023c.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0075023c.tif</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucjh6459qlt.tif</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Tenor trombone. Nominal pitch: B♭.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6459</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0075023</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Holton</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Buccin trombone. Nominal pitch: B♭. (Unknown) : Left</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0075000-0075999\0075024c.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0075024c.tif</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucjh6460l.tif</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Buccin trombone. Nominal pitch: B♭.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6460</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0075024</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Unknown</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Mouthpiece for tenor trombone. (Unknown) : Side View</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0075000-0075999\0075025d.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0075025d.jpg</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucji6461s253.jpg</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Mouthpiece for tenor trombone.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6461</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0075025</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Unknown</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Bass valve trombone. Nominal pitch: 13-ft E♭. (Boosey &amp; Co) : Quarter view</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0075000-0075999\0075026c.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0075026c.tif</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucjh6462qtl.tif</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Bass valve trombone. Nominal pitch: 13-ft E♭.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6462</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0075026</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Boosey &amp; Co</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Bass valve trombone. Nominal pitch: 13-ft E♭. (Karl Schamal) : Front view</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0075000-0075999\0075027c.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0075027c.tif</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucjh6463f.tif</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Bass valve trombone. Nominal pitch: 13-ft E♭.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6463</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0075027</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Schamal, Karl</value>
+			</field>
+		</entity>
+	</record>
+	<record>
+		<entity name="repro_title">
+			<field name="repro_title">
+				<value>Mouthpiece for euphonium or bass trombone. (Boosey &amp; Co) : Side View</value>
+			</field>
+		</entity>
+		<entity name="repro_rights">
+			<field name="repro_rights_statement">
+				<value>© The University of Edinburgh</value>
+			</field>
+		</entity>
+		<entity name="repro_id_number">
+			<field name="repro_id_number">
+				<value>0075000-0075999\0075028d.jpg</value>
+			</field>
+			<field name="repro_record_id">
+				<value>0075028d.jpg</value>
+			</field>
+			<field name="repro_old_id_number">
+				<value>ucji6464s641.jpg</value>
+			</field>
+		</entity>
+		<entity name="title">
+			<field name="work_title">
+				<value>Mouthpiece for euphonium or bass trombone.</value>
+			</field>
+		</entity>
+		<entity name="id_number">
+			<field name="work_catalogue_number">
+				<value>6464</value>
+			</field>
+		</entity>
+		<field name="work_record_id">
+			<value>0075028</value>
+		</field>
+		<entity name="creator">
+			<field name="work_creator_details">
+				<value>Boosey &amp; Co</value>
+			</field>
+		</entity>
+	</record>
+</recordList>

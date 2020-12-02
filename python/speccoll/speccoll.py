@@ -1,3 +1,18 @@
+"""
+This program generates IIIF manifests at volume level for
+all content in LUNA.
+It loops round the LUNA API, by collection,
+updating an underlying Postgres DB
+with manifest and image information.
+It creates manifests, which it puts into the
+DSpace static-content folder for access by
+collectionsmedia.is.ed.ac.uk.
+It creates dspace dublin_core.xml records for
+load into dspace using simple archive format.
+It will also interrogate Alma where possible for further
+searchable information.
+"""
+
 import os
 import shutil
 import json
@@ -7,15 +22,30 @@ import time
 import sys
 import re
 import csv
+import codecs
+import random
+import string
+from urllib.request import urlopen
+from urllib.request import FancyURLopener
+from xml.dom import minidom
+import psycopg2
 from speccoll_variables import ALL_VARS
 
 ENVIRONMENT = ''
 
 PARSER = argparse.ArgumentParser()
-PARSER.add_argument('-e', '--environment', action="store", dest="environment", help="environment- test or live",
+PARSER.add_argument('-e', '--environment',
+                    action="store",
+                    dest="environment",
+                    help="environment- test or live",
                     default="live")
 ARGS = PARSER.parse_args()
 ENVIRONMENT = str(ARGS.environment)
+if ENVIRONMENT == 'test':
+    FULL_STOP = '.'
+else:
+    ENVIRONMENT = ''
+    FULL_STOP = ''
 
 # Clear down dspace folders
 EXISTING_FOLDER = ALL_VARS['EX_FOLD']
@@ -30,7 +60,7 @@ for root, dirs, files in os.walk(NEW_FOLDER):
         os.unlink(os.path.join(root, f))
     for d in dirs:
         shutil.rmtree(os.path.join(root, d))
-MAN_FOLDER = "manifests"
+MAN_FOLDER = ALL_VARS['M_FOLD']
 for root, dirs, files in os.walk(MAN_FOLDER):
     for f in files:
         os.unlink(os.path.join(root, f))
@@ -42,11 +72,11 @@ CSV_FILE = open(ALL_VARS['MAP_FILE'], 'r')
 MAPPING = csv.DictReader(CSV_FILE, delimiter=':')
 MAP_ARRAY = list(MAPPING)
 MAP_LEN = len(MAP_ARRAY)
+BAD_IMAGE_ARRAY = []
 
 FM = open(ENVIRONMENT + "mapfile.txt", "w")
 
 TIME_STR = time.strftime("%Y%m%d")
-
 
 def setup_custom_logger(name):
     """
@@ -59,11 +89,11 @@ def setup_custom_logger(name):
     handler.setFormatter(formatter)
     screen_handler = logging.StreamHandler(stream=sys.stdout)
     screen_handler.setFormatter(formatter)
-    logger = logging.getLogger(name)
-    logger.setLevel(logging.DEBUG)
-    logger.addHandler(handler)
-    logger.addHandler(screen_handler)
-    return logger
+    logger_process = logging.getLogger(name)
+    logger_process.setLevel(logging.DEBUG)
+    logger_process.addHandler(handler)
+    logger_process.addHandler(screen_handler)
+    return logger_process
 
 
 logger = setup_custom_logger('myapp')
@@ -93,6 +123,7 @@ def map_md(key, value, et_out, outroot):
                 dcvalue = et_out.SubElement(outroot, mdschema)
                 dcvalue.set('element', mdelement)
                 dcvalue.set('qualifier', mdqualifier)
+                dcvalue.set('language', 'en')
                 dcvalue.text = value
         map_row = map_row + 1
     return et_out
@@ -109,8 +140,8 @@ def create_dspace_record(manifest_array, out_file, et_out, outroot, manifest_id,
     :param manifest_shelf: shelfmark or DOR
     """
     image_count = 0
-    from urllib.request import urlopen
-    import json
+
+    cat_no = ''
     for manifest_ref in manifest_array:
         # Get first page image, used for thumbnail
         manifest = manifest_ref[0].replace('detail', 'iiif/m') + '/manifest'
@@ -120,38 +151,41 @@ def create_dspace_record(manifest_array, out_file, et_out, outroot, manifest_id,
             resp_data = response.read().decode("utf-8")
             data = json.loads(resp_data)
         except ValueError:
+            BAD_IMAGE_ARRAY.append(manifest)
             break
-            bad_image_array.append(manifest)
 
         if image_count == 0:
             attribution = data["attribution"]
-            type = []
-            type_value = ''
-            if ("-" in manifest_shelf):
-                type = manifest_shelf.split("-")
-                if type[0] == '':
-                    type_value = str(type[1])
+
+            type_value = 'manifest_shelf'
+            if "-" in manifest_shelf:
+                type_bits = manifest_shelf.split("-")
+                if type_bits[0] == '':
+                    type_value = str(type_bits[1])
                 else:
-                    type_value = str(type[0])
-            else:
-                type_value = manifest_shelf
+                    type_value = str(type_bits[0])
+
             # Set DC fields needed for all- need a better way
             dcvalue = et_out.SubElement(outroot, 'dcvalue')
             dcvalue.set('element', 'type')
             dcvalue.set('qualifier', '')
+            dcvalue.set('language', 'en')
             dcvalue.text = type_value
             dcvalue = et_out.SubElement(outroot, 'dcvalue')
             dcvalue.set('element', 'identifier')
             dcvalue.set('qualifier', 'imageUri')
+            dcvalue.set('language', 'en')
             dcvalue.text = str(dealing_image)
             dcvalue = et_out.SubElement(outroot, 'dcvalue')
             dcvalue.set('element', 'relation')
             dcvalue.set('qualifier', 'ispartof')
+            dcvalue.set('language', 'en')
             dcvalue.text = str(attribution)
             dcvalue = et_out.SubElement(outroot, 'dcvalue')
             dcvalue.set('element', 'identifier')
             dcvalue.set('qualifier', 'manifest')
-            dcvalue.text = str(manifest_id)
+            dcvalue.set('language', 'en')
+            dcvalue.text = str(manifest_id.strip())
 
             canvas_array = data["sequences"][0]["canvases"][0]
             metadata = canvas_array["metadata"]
@@ -161,15 +195,18 @@ def create_dspace_record(manifest_array, out_file, et_out, outroot, manifest_id,
                 value = value.replace("</span>", "")
                 value = value.replace("&amp;", "and")
                 if item["label"] == 'Catalogue Number':
-                    # If we have an Alma ID, go off to Alma to get metadata (this makes it searchable)
+                    # If we have an Alma ID, go off to Alma to get metadata
+                    # (this makes Alma content searchable by appearing on DSpace record)
                     out = re.match(r"^99", value)
                     logger.info(str(out))
-                    if out is not None:
-                        alma_url = 'https://open-na.hosted.exlibrisgroup.com/alma/44UOE_INST/bibs/' + value
-                        alma_data = get_data(alma_url)
+                    if out is not None and cat_no != value:
+                        cat_no = value
+                        alma_url = ALL_VARS['ALMA_BASE'] + value
                         logger.info(alma_url)
+                        alma_data = get_data(alma_url)
+
                         if alma_data == '':
-                            logger.info("dead_url " + alma_url)
+                            logger.info("dead_url %s", alma_url)
                         else:
                             for alma_key, alma_value in alma_data.items():
                                 logger.info(str(alma_key) + str(alma_value))
@@ -178,10 +215,10 @@ def create_dspace_record(manifest_array, out_file, et_out, outroot, manifest_id,
                                     try:
                                         for subkey, subvalue in alma_value[0].items():
                                             twod = True
-                                    except:
+                                    except Exception:
                                         twod = False
                                         for child in alma_value:
-                                            if not (isinstance(child, list)):
+                                            if not isinstance(child, list):
                                                 et_out = map_md(alma_key, child, et_out, outroot)
                                     if twod:
                                         value_len = len(alma_value)
@@ -202,10 +239,9 @@ def create_dspace_record(manifest_array, out_file, et_out, outroot, manifest_id,
                                         et_out = map_md(alma_key, alma_value, et_out, outroot)
                 else:
                     if item['label'] == "Shelfmark":
+                        value = str(value)
                         if "ADO-" in manifest_shelf:
                             value = manifest_shelf
-                        else:
-                            value = str(value)
                         # Write dublin core md
                         et_out = map_md(key, value, et_out, outroot)
                     else:
@@ -215,14 +251,14 @@ def create_dspace_record(manifest_array, out_file, et_out, outroot, manifest_id,
     dcvalue = et_out.SubElement(outroot, 'dcvalue')
     dcvalue.set('element', 'format')
     dcvalue.set('qualifier', 'extent')
+    dcvalue.set('language', 'en')
     dcvalue.text = str(image_count)
 
     # Write file
-    from xml.dom import minidom
     rough_string = et_out.tostring(outroot, 'utf-8')
     reparsed = minidom.parseString(rough_string)
     pretty_string = reparsed.toprettyxml(indent="\t")
-    import codecs
+
     with codecs.open(out_file, "w", encoding='utf-8') as file:
         file.write(pretty_string)
     file.close()
@@ -240,7 +276,7 @@ def get_images(connection, image_get_sql):
         image_cursor.execute(image_get_sql)
         while True:
             row = image_cursor.fetchone()
-            if row == None:
+            if row is None:
                 break
             manifest_array.append(row)
     except Exception:
@@ -292,11 +328,10 @@ def create_manifests(manifest_array, manifest_id, env, paged, need_dummy, manife
     :param manifest_id: Name of the manifest
     :param env: test or live
     :param paged: if the paged value is to be attributed for display
-    :need_dummy: if the sequence suggests we will get out of line trying to page, we can create a blank canvas
+    :need_dummy: if the sequence suggests page will fail, create a blank canvas
     :manifest_shelf: shelfmark/DOR
     """
-    from urllib.request import urlopen
-    bad_image_array = []
+
     image_count = 0
     viewing_hint = 'individuals'
     canvases_array = []
@@ -304,7 +339,7 @@ def create_manifests(manifest_array, manifest_id, env, paged, need_dummy, manife
     label = ''
     attribution = ''
     logo = ''
-    type = ''
+    man_type = ''
     context = ''
     man_id = ''
     related = ''
@@ -321,21 +356,23 @@ def create_manifests(manifest_array, manifest_id, env, paged, need_dummy, manife
             resp_data = response.read().decode("utf-8")
             data = json.loads(resp_data)
         except ValueError:
+            BAD_IMAGE_ARRAY.append(manifest)
             break
-            bad_image_array.append(manifest)
         if image_count == 0:
             label = 'IIIF manifest for ' + str(manifest_shelf)
             attribution = data["attribution"]
             logo = data["logo"]
             # Set location for manifest
-            man_id = "http://" + env + "collectionsmedia.is.ed.ac.uk/iiif/" + str(manifest_id.strip()) + "/manifest"
-            type = "sc:Manifest"
+            man_id = "http://" + env + FULL_STOP +\
+                     "collectionsmedia.is.ed.ac.uk/iiif/" + \
+                     str(manifest_id.strip()) + "/manifest"
+            man_type = "sc:Manifest"
             context = data["@context"]
             related = data["@id"]
+            viewing_hint = 'individuals'
             if paged:
                 viewing_hint = 'paged'
-            else:
-                viewing_hint = 'individuals'
+
         canvas_array = data["sequences"][0]["canvases"][0]
         metadata = canvas_array["metadata"]
 
@@ -357,11 +394,11 @@ def create_manifests(manifest_array, manifest_id, env, paged, need_dummy, manife
         "@id": man_id,
         "related": related,
         "sequences": sequences_array,
-        "@type": type,
+        "@type": man_type,
         "viewingHint": viewing_hint,
         "@context": context
     }
-    manifest_folder = "manifests/" + str(manifest_id.strip())
+    manifest_folder = MAN_FOLDER + str(manifest_id.strip())
     os.makedirs(manifest_folder)
     os.chmod(manifest_folder, 0o777)
 
@@ -375,26 +412,30 @@ def get_subfolder(manifest_id):
     Create a subfolder for the new dspace record
     :param manifest_id:  Folder name will match the manifest id or name passed to it
     """
-    existing = False
+    # Working off a MASTER mapfile. If content is removed, import will
+    # fail if anything on mapfile is not used. Build mapfile of master as
+    # items are needed.
     mapfile_name = ENVIRONMENT + "mapfile-master.txt"
     file_master = open(mapfile_name)
+
+    # by default subfolder will be 'new'. If an existing mappingis found,
+    # that changes to 'existing'.
+    subfolder = NEW_FOLDER + manifest_id
+
     # Populate mapfile with mapping from manifest to dspace handle from master file (if exists)
     for line in file_master.readlines():
+        manifest_id = manifest_id.strip()
         manifest_id_len = len(manifest_id)
-        if manifest_id.strip() == line[:manifest_id_len]:
-            existing = True
+        if manifest_id == line[:manifest_id_len]:
             FM.write(line)
-    # If it already exists, we run in with dspace import replace, otherwise add, so separate folders
-    if existing:
-        subfolder = EXISTING_FOLDER + manifest_id
-    else:
-        subfolder = NEW_FOLDER + manifest_id
+            subfolder = EXISTING_FOLDER + manifest_id
+
     file_master.close()
     logger.info(subfolder)
     if os.path.exists(subfolder):
         logger.info("duplicate")
     else:
-        # Creare subfolder if new
+        # Create subfolder if not already created
         logger.info(os.path.abspath(subfolder))
         os.makedirs(subfolder)
         os.chmod(subfolder, 0o777)
@@ -411,15 +452,15 @@ def manifest_check_insert(connection, manifest_shelf, collection, manifest_type)
     :manifest_type: Archive or shelfmark
     :return man_name: the name of the manifest and dspace record
     """
-    import random
-    import string
     manifest_id = ''
     manifest_name = ''
     try:
         manifest_shelf_cursor = connection.cursor()
         # Check if the manifest exists
-        manifest_shelf_sql = "select manifest_id, manifest_name from MANIFEST_SHELFMARK where upper(shelfmark) = upper('" + str(
-            manifest_shelf.strip()) + "') and collection ='" + str(collection.strip()) + "';"
+        manifest_shelf_sql = "select manifest_id, manifest_name " \
+                             "from MANIFEST_SHELFMARK " \
+                             "where upper(shelfmark) = upper('" + str(manifest_shelf.strip()) + "') " \
+                             "and collection ='" + str(collection.strip()) + "';"
         manifest_shelf_cursor.execute(manifest_shelf_sql)
         row = manifest_shelf_cursor.fetchone()
         if row:
@@ -429,11 +470,11 @@ def manifest_check_insert(connection, manifest_shelf, collection, manifest_type)
         else:
             # If we do not find one (i.e. new volume)
             inserted = False
-            while inserted == False:
-                stringLength = 8
+            while not inserted:
+                string_length = 8
                 # Generate a random identifier
                 letters = string.ascii_lowercase + string.digits
-                manifest_id = ''.join(random.choice(letters) for i in range(stringLength))
+                manifest_id = ''.join(random.choice(letters) for i in range(string_length))
                 manifest_id = str(manifest_id.strip())
                 # The name of the manifest will be the DOR if an archive, the randomised id if not
                 if manifest_type == 'ARCHIVE':
@@ -443,20 +484,24 @@ def manifest_check_insert(connection, manifest_shelf, collection, manifest_type)
                 try:
                     # Insert a new row
                     insert_man_cursor = connection.cursor()
-                    insert_man_sql = "insert into MANIFEST_SHELFMARK (manifest_id, shelfmark, collection, manifest_name) VALUES (%s,%s, %s, %s);"
-                    insert_man_values = (manifest_id, manifest_shelf.strip(), str(collection.strip()), manifest_name)
-                    print(insert_man_values)
+                    insert_man_sql = "insert into MANIFEST_SHELFMARK (manifest_id, shelfmark, collection, manifest_name) " \
+                                     "VALUES (%s,%s, %s, %s);"
+                    insert_man_values = (manifest_id,
+                                         manifest_shelf.strip(),
+                                         str(collection.strip()),
+                                         manifest_name)
+
                     insert_man_cursor.execute(insert_man_sql, insert_man_values)
                     connection.commit()
                     inserted = True
                 except Exception:
                     logger.info("trying again as I have hit a duplicate")
                     if connection:
-                        logger.info("Failed to insert record into manifest_shelfmark table" + manifest_name)
+                        logger.info("Failed to insert into manifest_shelfmark %s", manifest_name)
     except Exception:
         logger.error("exception")
 
-    logger.info("I am returning this manifest_id" + manifest_name)
+    logger.info("I am returning this manifest_id %s", manifest_name)
     return str(manifest_name)
 
 
@@ -465,20 +510,30 @@ def get_data(url):
     Get JSON data for URL
     :param url: LUNA API string for collection
     """
-    from urllib.request import FancyURLopener
     class MyOpener(FancyURLopener):
+        """
+        MyOpener class
+        """
         # Using FancyURLopener rather than straight request
         version = 'My new User-Agent'  # Set this to a string you want for your user agent
 
     myopener = MyOpener()
-    response = myopener.open(url)
+
+    #All of the following steps could fail
+    try:
+        response = myopener.open(url)
+    except ConnectionError:
+        logger.error("Could not open URL %s", url)
+        image_data = ''
     try:
         data = response.read().decode("utf-8")
-    except:
+    except Exception:
+        logger.error("Could not read response for %s", url)
         image_data = ''
     try:
         image_data = json.loads(data)
-    except:
+    except Exception:
+        logger.error("Could not convert to JSON for %s", url)
         image_data = ''
     return image_data
 
@@ -513,7 +568,6 @@ def main():
     It uses the psycopg2 library which allows interaction between Python and postgres
     to take place.
     """
-    import psycopg2
     # Set up postgres connection from variables
     connection = psycopg2.connect(user=ALL_VARS['DB_USER'],
                                   password=ALL_VARS['DB_PASSWORD'],
@@ -527,12 +581,12 @@ def main():
         cursor.execute("SELECT id, dspace_record from COLLECTION where run = 'Y' order by id;")
         while True:
             row = cursor.fetchone()
-            if row == None:
+            if row is None:
                 break
             collection = row[0]
             # DSpace determines whether we want to create a dspace record, or just a manifest
             dspace = str(row[1].strip())
-            api_string = "https://images.is.ed.ac.uk/luna/servlet/as/fetchMediaSearch?fullData=true&bs=10000&lc=" + collection
+            api_string = ALL_VARS['API_STRING'] + collection
             logger.info(api_string)
             # Get data from LUNA API for each record within the collection
             image_data = get_data(api_string)
@@ -548,10 +602,11 @@ def main():
                     link_id = size.rsplit('/', 1)[-1]
                     image_id = link_id.split('.', 1)[0]
                     image_id = str(image_id).strip()
-                    identity = "https://images.is.ed.ac.uk/luna/servlet/detail/" + record["identity"]
+                    identity = ALL_VARS['LUNA_DETAIL'] + record["identity"]
                     metadata = record["attributes"]
                     first_split = metadata.split('"],')
-                    # Split out metadata items- identifying this is quite nasty. There should be a better way.
+                    # Split out metadata items- identifying this is quite nasty.
+                    # There should be a better way.
                     for bit in first_split:
                         data_items = bit.split('",')
                         for item in data_items:
@@ -581,7 +636,8 @@ def main():
                                 dor = value
                     try:
                         if dor != '':
-                            # If we are working with an Archive, DOR is king, so shelfmark can just be "Archive"
+                            # If we are working with an Archive, DOR is king,
+                            # so shelfmark can just be "Archive"
                             shelfmark = 'Archive'
                         # Simplification of shelfmark makes it easier to process
                         manifest_shelf = shelfmark.replace(" ", "-")
@@ -592,37 +648,48 @@ def main():
                         insert_cursor = connection.cursor()
                         # Create row in IMAGE table
                         postgres_insert_query = """ INSERT INTO IMAGE (image_id, collection, jpeg_path, shelfmark, sequence) VALUES (%s, %s, %s,%s, %s)"""
-                        record_to_insert = (image_id, collection, identity, manifest_shelf, sequence)
+                        record_to_insert = (image_id,
+                                            collection,
+                                            identity,
+                                            manifest_shelf,
+                                            sequence)
                         insert_cursor.execute(postgres_insert_query, record_to_insert)
                         connection.commit()
                     except (Exception, psycopg2.Error) as error:
                         insert_cursor.close()
                         if connection:
                             logger.info(record_to_insert)
-                            logger.info("Failed to insert record into IMAGE table with" + str(image_id) + str(identity),
+                            logger.info("Failed insert to IMAGE " + str(image_id) + str(identity),
                                         error)
                     if dor != '':
                         try:
-                            # If Archive, also create row on IMAGE_DOR (idea is to allow multiple DORs for an image)
+                            # If Archive, also create row on IMAGE_DOR
+                            # (idea is to allow multiple DORs for an image)
                             insert_dor_cursor = connection.cursor()
                             postgres_insert_dor_query = """ INSERT INTO IMAGE_DOR (image_id, dor_id) VALUES (%s,%s)"""
                             record_to_insert_dor = (image_id, dor)
-                            insert_dor_cursor.execute(postgres_insert_dor_query, record_to_insert_dor)
+                            insert_dor_cursor.execute(postgres_insert_dor_query,
+                                                      record_to_insert_dor)
                             connection.commit()
                         except (Exception, psycopg2.Error) as error:
                             insert_dor_cursor.close()
-                            logger.info("Error while connecting to PostgreSQL", error)
-
+                            logger.error(error)
     finally:
         # closing database connection.
         if connection:
             cursor.close()
-            logger.info("END OF LUNA LOADER cursor is closed")
+            logger.info("END OF LUNA LOADER- cursor is closed")
 
     try:
-        # The LUNA API has done its work and the IMAGE table is populated. Now loop round IMAGE table getting shelfmarks
+        # The LUNA API has done its work and the IMAGE table is populated.
+        # Now loop round IMAGE table getting shelfmarks
         loop_shelf_cursor = connection.cursor()
-        loop_shelf_sql = "select distinct(upper(i.shelfmark)), i.collection, c.dspace_record, c.paged from IMAGE i, COLLECTION c where i.collection = c.id group by upper(i.shelfmark), i.collection, c.dspace_record, c.paged order by upper(i.shelfmark), i.collection;;"
+        loop_shelf_sql = "select distinct(upper(i.shelfmark)), " \
+                         "i.collection, c.dspace_record, c.paged " \
+                         "from IMAGE i, COLLECTION c " \
+                         "where i.collection = c.id " \
+                         "group by upper(i.shelfmark), i.collection, c.dspace_record, c.paged " \
+                         "order by upper(i.shelfmark), i.collection;"
         loop_shelf_cursor.execute(loop_shelf_sql)
         while True:
             row = loop_shelf_cursor.fetchone()
@@ -634,90 +701,123 @@ def main():
             dspace = str(row[2]).strip()
             if manifest_shelf == 'N/A':
                 break
-            else:
-                # Big IF statement, processing differently for Archives/normal shelfmarks
-                if manifest_shelf == 'ARCHIVE':
-                    # To set appropriate manifest name, we need to know type
-                    manifest_type = manifest_shelf
-                    logger.info("working on an Archive")
-                    try:
-                        dor_cursor = connection.cursor()
-                        dor_sql = "select distinct(dor_id) from IMAGE_DOR;"
-                        dor_cursor.execute(dor_sql)
-                        # This brings back the DOR ID as a volume level to work with
-                        while True:
-                            row = dor_cursor.fetchone()
-                            if row is None:
-                                break
-                            else:
-                                manifest_shelf = row[0]
-                                # Check if this DOR already has a manifest, or if a new one needs to be created
-                                manifest_name = manifest_check_insert(connection, manifest_shelf, collection, manifest_type)
-                                # Get all images for DOR
-                                image_get_sql = "select i.jpeg_path, i.sequence from IMAGE i, IMAGE_DOR id where id.dor_id ='" + manifest_shelf + "' and collection = '" + collection + "' and id.image_id = i.image_id order by i.sequence, i.jpeg_path;"
-                                manifest_array = get_images(connection, image_get_sql)
-                                logger.info(manifest_array)
-                                if len(manifest_array) > 0:
-                                    paged = False
-                                    need_dummy = False
-                                    # If unsequenced (99999), do not attempt to set page paramater
-                                    if int(manifest_array[0][1]) == 99999:
-                                        paged = False
-                                    else:
-                                        paged = True
-                                        if (int(manifest_array[0][1]) % 2) == 0:
-                                            #If we need to set a fake manifest at the top so paging works
-                                            need_dummy = True
-                                        else:
-                                            need_dummy = False
-                                    # Now create the manifest
-                                    create_manifests(manifest_array, manifest_name, ENVIRONMENT, paged, need_dummy,
-                                                     manifest_shelf)
-                                    if dspace == 'Y':
-                                        # Now create the dspace record in usual directory structure
-                                        out_file = get_subfolder(manifest_name)
-                                        import xml.etree.cElementTree as et_out
-                                        outroot = et_out.Element(ALL_VARS['DC_HEADER'])
-                                        create_dspace_record(manifest_array, out_file, et_out, outroot, manifest_name,
-                                                             manifest_shelf)
-                                else:
-                                    logger.error("DEAD MANIFEST NAME" + str(manifest_name))
-                    except (Exception, psycopg2.Error) as error:
-                        logger.info("Failed to get from IMAGE_DOR", error)
-                else:
-                    # If we are not working on an Archive, we can use the image info we brought back in the first select
-                    logger.info("Working on " + manifest_shelf)
-                    # Check if this shelfmark already has a manifest, or if a new one needs to be created
-                    # To set appropriate manifest name, we need to know type
-                    manifest_type = manifest_shelf
-                    manifest_name = manifest_check_insert(connection, manifest_shelf, collection, manifest_type)
-                    # Get all images for shelfmark
-                    image_get_sql = "select jpeg_path, sequence from IMAGE where upper(shelfmark) =upper('" + manifest_shelf + "') and collection = '" + collection + "' order by sequence, jpeg_path;"
-                    manifest_array = get_images(connection, image_get_sql)
-                    logger.info(manifest_array)
-                    if len(manifest_array) > 0:
-                        paged = False
-                        need_dummy = False
-                        if int(manifest_array[0][1]) == 99999:
+            #removed an else
+            # Big IF statement, processing differently for Archives/normal shelfmarks
+            if manifest_shelf == 'ARCHIVE':
+                # To set appropriate manifest name, we need to know type
+                manifest_type = manifest_shelf
+                logger.info("working on an Archive")
+                try:
+                    dor_cursor = connection.cursor()
+                    dor_sql = "select distinct(dor_id) from IMAGE_DOR;"
+                    dor_cursor.execute(dor_sql)
+                    # This brings back the DOR ID as a volume level to work with
+                    while True:
+                        row = dor_cursor.fetchone()
+                        if row is None:
+                            break
+
+                        manifest_shelf = row[0]
+                        # Check if this DOR already has a manifest,
+                        # or if a new one needs to be created
+                        manifest_name = manifest_check_insert(connection,
+                                                              manifest_shelf,
+                                                              collection,
+                                                              manifest_type)
+                        # Get all images for DOR
+                        image_get_sql = "select i.jpeg_path, " \
+                                        "i.sequence from IMAGE i, IMAGE_DOR id " \
+                                        "where id.dor_id ='" + manifest_shelf + "' " \
+                                        "and collection = '" + collection + "' " \
+                                        "and id.image_id = i.image_id " \
+                                        "order by i.sequence, i.jpeg_path;"
+                        manifest_array = get_images(connection, image_get_sql)
+                        logger.info(manifest_array)
+                        if len(manifest_array) > 0:
+                            need_dummy = False
                             paged = False
+                            # If unsequenced (99999), do not attempt to set page paramater
+                            if int(manifest_array[0][1]) != 99999:
+                                paged = True
+                                if (int(manifest_array[0][1]) % 2) == 0:
+                                    # If we need to set a fake manifest at the top so paging works
+                                    need_dummy = True
+
+                            # Now create the manifest
+                            create_manifests(manifest_array,
+                                             manifest_name,
+                                             ENVIRONMENT,
+                                             paged,
+                                             need_dummy,
+                                             manifest_shelf)
+                            if dspace == 'Y':
+                                # Now create the dspace record in usual directory structure
+                                out_file = get_subfolder(manifest_name)
+                                import xml.etree.cElementTree as et_out
+                                outroot = et_out.Element(ALL_VARS['DC_HEADER'])
+                                create_dspace_record(manifest_array,
+                                                     out_file,
+                                                     et_out,
+                                                     outroot,
+                                                     manifest_name,
+                                                     manifest_shelf)
                         else:
-                            paged = True
-                            if (int(manifest_array[0][1]) % 2) == 0:
-                                need_dummy = True
-                            else:
-                                need_dummy = False
-                        # Now create the manifest
-                        create_manifests(manifest_array, manifest_name, ENVIRONMENT, paged, need_dummy, manifest_shelf)
-                        if dspace == 'Y':
-                            # Now create the dspace record if necessary
-                            out_file = get_subfolder(manifest_name)
-                            import xml.etree.cElementTree as et_out
-                            outroot = et_out.Element(ALL_VARS['DC_HEADER'])
-                            create_dspace_record(manifest_array, out_file, et_out, outroot, manifest_name, manifest_shelf)
+                            logger.error("DEAD MANIFEST NAME %s", str(manifest_name))
+                except (Exception, psycopg2.Error) as error:
+                    logger.error(error)
+            else:
+                # If we are not working on an Archive, we can use
+                # the image info we brought back in the first select
+                logger.info("Working on %s", manifest_shelf)
+                # Check if this shelfmark already has a manifest,
+                # or if a new one needs to be created
+                # To set appropriate manifest name, we need to know type
+                manifest_type = manifest_shelf
+                manifest_name = manifest_check_insert(connection,
+                                                      manifest_shelf,
+                                                      collection,
+                                                      manifest_type)
+                # Get all images for shelfmark
+                image_get_sql = "select jpeg_path, sequence " \
+                                "from IMAGE " \
+                                "where upper(shelfmark) =upper('" + manifest_shelf + "') " \
+                                "and collection = '" + collection + "' " \
+                                "order by sequence, jpeg_path;"
+                manifest_array = get_images(connection, image_get_sql)
+                logger.info(manifest_array)
+                if len(manifest_array) > 0:
+                    paged = False
+                    need_dummy = False
+                    if int(manifest_array[0][1]) == 99999:
+                        paged = False
                     else:
-                        logger.error("DEAD MANIFEST ID" + str(manifest_name))
+                        paged = True
+                        if (int(manifest_array[0][1]) % 2) == 0:
+                            need_dummy = True
+                        else:
+                            need_dummy = False
+                        # Now create the manifest
+                    create_manifests(manifest_array,
+                                     manifest_name,
+                                     ENVIRONMENT,
+                                     paged,
+                                     need_dummy,
+                                     manifest_shelf)
+                    if dspace == 'Y':
+                        # Now create the dspace record if necessary
+                        out_file = get_subfolder(manifest_name)
+                        import xml.etree.cElementTree as et_out
+                        outroot = et_out.Element(ALL_VARS['DC_HEADER'])
+                        create_dspace_record(manifest_array,
+                                             out_file,
+                                             et_out,
+                                             outroot,
+                                             manifest_name,
+                                             manifest_shelf)
+                else:
+                    logger.error("DEAD MANIFEST ID %s", str(manifest_name))
     except (Exception, psycopg2.Error) as error:
-        logger.info("Failed along the way", error)
+        logger.info("Failed along the way %s", error)
 
     finally:
         # closing database connection.
@@ -726,7 +826,6 @@ def main():
             connection.close()
             logger.info("END OF PROG PostgreSQL connection is closed")
     FM.close()
-
 
 if __name__ == '__main__':
     main()

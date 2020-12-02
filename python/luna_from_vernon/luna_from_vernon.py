@@ -115,6 +115,11 @@ def map_md(key, value, flat_array):
                     link = value[16:]
                     value_bits = link.split(".")
                     value = value_bits[0]
+                    if "c" in value:
+                        value = value+".tif"
+                    if "d" in value:
+                        value = value+".jpg"
+
                     print("working with " + str(value))
                 if key == 'im_ref':
                     print('I am un im_ref')
@@ -198,6 +203,7 @@ def main():
                 else:
                     flat_array = map_md(key, value, flat_array)
             for item in flat_array:
+                print(item)
                 if item["field"] == "work_catalogue_number":
                     accession_ok = True
                 if item["field"] == "work_record_id":
@@ -207,18 +213,22 @@ def main():
 
 
             if not im_ref_ok and not audio_video:
+                print("bad record")
                 bad_im_ref_array.append(str(system_id))
             if not work_record_id_ok:
+                print("bad record")
                 bad_work_record_id_array.append(str(system_id))
             if not accession_ok:
+                print("bad record")
                 bad_accession_no_array.append(str(system_id))
 
 
             if accession_ok and work_record_id_ok and im_ref_ok:
                 doc = ET.SubElement(root, "record")
                 for item in flat_array:
-                    if item["field"] == "repro_link_id":
-                        summary_array.append(item["value"])
+                    if item["field"] == "repro_record_id":
+                        sum_file = item["value"]
+                        summary_array.append(sum_file)
                     if item["field_group"] == 'none':
                         field = ET.SubElement(doc, "field")
                         field.set("name", item["field"])
@@ -256,7 +266,7 @@ def main():
         while sum_row < sum_len:
             sum_file.write(summary_array[sum_row] + "\n")
             sum_row+=1
-
+        print(summary_array)
         print('Processed ' + str(records) + ' items.')
         print('Skipped ' + str(len(bad_accession_no_array)) + ' records with no accession number.')
         print('Skipped ' + str(len(bad_work_record_id_array)) + ' records with no work record id.')
