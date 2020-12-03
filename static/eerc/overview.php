@@ -66,19 +66,22 @@
         return $response;
     }
 
-    function getTree() {
+    function getTree($as_base_url, $as_url, $as_user, $as_password) {
         //$url = $this->base_url . $this->solr_collection . "/select?";
-        $base_url = 'http://lac-archives-live.is.ed.ac.uk:8089';
+        $base_url = $as_base_url;
 
         // Login
-        $result = request($base_url . "/users/admin/login", ['password' => 'Z"/)}4ck{Z[}73Q)']);
+        $result = request($base_url . "/users/" . $as_user . "/login",
+            ['password' => $as_password]);
+        log_message('debug', $base_url . "/users/" . $as_user . "/login");
         $json_obj = json_decode($result, TRUE);
 
-        log_message("debug", "Logged in to ArchivesSpace REST API.");
 
+        if($json_obj !== NULL)  {
+        log_message("debug", "Logged in to ArchivesSpace REST API.");
         $session = $json_obj['session'];
 
-        $url = $base_url . '/repositories/15/resources/86984/tree';
+        $url = $base_url . $as_url;
         //$url = $base_url . '/repositories/15/archival_objects/164991';
 
         $result = request($url, null, false, $session);
@@ -86,6 +89,12 @@
         $json_obj = json_decode($result, TRUE);
 
         // Logout?
+
+        }
+        else {
+            log_message('debug', "Could not log into ArchivesSpace REST API");
+            return array('children' => array());
+        }
 
         return $json_obj;
 
@@ -159,13 +168,21 @@
 
         }
 
+        //log_message('debug', 'OUTPUT: ' . $output);
+
         return $output;
     }
 
     ?>
     <!--<ul>-->
         <?php
-    foreach(getTree()['children'] as $index => $branch) {
+
+        $as_base_url = $this->config->item('skylight_archivesspace_url');
+        $as_url = $this->config->item('skylight_archivesspace_tree');
+        $as_user = $this->config->item('skylight_archivesspace_user');
+        $as_password = $this->config->item('skylight_archivesspace_password');
+
+    foreach(getTree($as_base_url, $as_url, $as_user, $as_password)['children'] as $index => $branch) {
         //print($index);
         /* <li class="overview_list" style="margin: 0.5em; font-size: 18px;"><button class="plus-button" onclick="toggleButton(this, '#ul_<?= $index ?>');">+</button>&nbsp;<?= cleanTitle($branch['title']) ?></li> */
         if($index == 0) { ?>
