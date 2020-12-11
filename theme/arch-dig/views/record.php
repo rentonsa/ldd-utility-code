@@ -117,10 +117,10 @@ $videoLink = "";
                 }
                 else
                 {
-                    $manifest = 'https://librarylabs.ed.ac.uk/iiif/speccollprototype/manifest/'.$solr[$manifest_field][0].'/manifest';
+                    $manifest = 'https://test.collectionsmedia.is.ed.ac.uk/iiif/'.$solr[$manifest_field][0].'/manifest';
                     if (!file_get_contents($manifest))
                     {
-                        $manifest = 'https://librarylabs.ed.ac.uk/iiif/speccollprototype/manifest/'.$solr[$manifest_field][0].'.json';
+                        $manifest = 'https://test.collectionsmedia.is.ed.ac.uk/iiif/'.$solr[$manifest_field][0].'.json';
 
                     }
                     //$manifest = 'http://test.collectionsmedia.is.ed.ac.uk/manifests/'.$solr[$manifest_field][0].'.json';
@@ -164,7 +164,7 @@ $videoLink = "";
                     }
 
 
-                    if ($label == 'Catalogue Link') {
+                    if ($label == 'Catalogue Link'||$label == 'Catalogue Entry') {
                         $value = str_replace("<span>", "", $value);
                         $value = str_replace("</span>", "", $value);
                         if ($value !== 'N/A') {
@@ -240,17 +240,6 @@ $videoLink = "";
                 </div>
 
                 <div id="stc-section5" class="panel panel-default container-fluid">
-                   <!-- <div class="panel-heading straight-borders">
-                        <h2 class="panel-title hidden-sm hidden-xs ">
-                            <a class="accordion-toggle" data-toggle="collapse" href="#collapse1">Catalogue Data <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                            </a>
-                        </h2>
-                        <h4 class="panel-title hidden-md hidden-lg ">
-                            <a class="accordion-toggle" data-toggle="collapse" href="#collapse1">Catalogue Data <i class="fa fa-chevron-down" aria-hidden="true"></i>
-
-                            </a>
-                        </h4>
-                    </div>-->
 
 
                     <?php
@@ -261,74 +250,6 @@ $videoLink = "";
                     if ($hasalma == 'Y' or $hasprimo == 'Y') {
 
 
-                        if ($hasprimo == 'Y') {
-                            echo '<p><a href= "' . $primourl . '" target="_blank">See this item on DiscoverEd.</a></p>';
-                        }
-
-                        if ($hasalma == 'Y') {
-                            /*
-                            $curl = curl_init();
-                            // $fp = fopen("/var/tmp/curl.json", "w");
-                            curl_setopt($curl, CURLOPT_URL, $almaurl);
-                            //curl_setopt($curl, CURLOPT_FILE, $fp);
-                            curl_setopt($curl, CURLOPT_HEADER, 0);
-                            curl_setopt($curl,  CURLOPT_RETURNTRANSFER, TRUE);
-                            $response = curl_exec($curl);
-                            $httpCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-
-                            if ( $httpCode == 404 ) {
-                                echo "404";
-                            }
-                            else
-                            {
-                                //fwrite($fp, $response);
-                                $alma_json = json_decode($response, true);
-
-                            }
-                            // var_dump($response);
-                            curl_close($curl);
-                            echo "<h3>Main volume data</h3>";
-
-                            foreach($alma_json as $key=>$value)
-                            {
-                                if (($key !== 'creator') and ($key !== 'note')and ($key !== 'contributor')  and ($key !== 'subject')and ($key !== 'identifier'))
-                                {
-                                    $key =str_replace("@", "", $key);
-                                    echo "<p>".ucfirst($key)." : ".$value."</p>";
-                                }
-                            }
-
-                            process_items($alma_json, 'creator');
-                            process_items($alma_json, 'contributor');
-                            process_items($alma_json, 'subject');
-                            process_items($alma_json, 'identifier');
-
-                            echo "<h3>Notes</h3>";
-                            $j=1;
-                            foreach ($alma_json['note'] as $note)
-                            {
-
-                                echo "<p>" .$j. ". ".$note."</p>";
-                                $j++;
-                            }
-                        }
-                        */
-                            echo "<table>";
-                            foreach ($recorddisplay as $key) {
-
-                                $element = $this->skylight_utilities->getField($key);
-
-                                if (isset($solr[$element])) {
-
-                                    foreach ($solr[$element] as $index => $metadatavalue)
-                                    {
-                                        echo "<tr><td>". $key . "</td><td> " . $metadatavalue."</td></tr>";
-                                    }
-
-                                }
-                            }
-                            echo "</table>";
-                        }
                         foreach ($recorddisplay as $key) {
 
                             $element = $this->skylight_utilities->getField($key);
