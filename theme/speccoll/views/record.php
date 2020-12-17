@@ -89,6 +89,8 @@ $short_field = $this->skylight_utilities->getField("Short Description");
 $date_field = $this->skylight_utilities->getField("Date");
 $media_uri = $this->config->item("skylight_media_url_prefix");
 $theme = $this->config->item("skylight_theme");
+$manifest_endpoint = $this->config->item("skylight_manifest_endpoint");
+echo '<!--'.$manifest_endpoint.'-->';
 $acc_no_field = $this->skylight_utilities->getField("Accession Number");
 $manifest_field =  $this->skylight_utilities->getField("Manifest");
 
@@ -105,93 +107,7 @@ $audioFile = false;
 $audioLink = "";
 $videoLink = "";
 
-require_once('SimpleRDFElement.php');
-
-
-if(isset($solr[$bitstream_field]) && $link_bitstream) {
-
-    foreach ($solr[$bitstream_field] as $bitstream_for_array) {
-        $b_segments = explode("##", $bitstream_for_array);
-        $b_seq = $b_segments[4];
-        $bitstream_array[$b_seq] = $bitstream_for_array;
-    }
-
-    ksort($bitstream_array);
-
-    $mainImage = false;
-    $videoFile = false;
-    $audioFile = false;
-
-    $b_seq = "";
-
-    foreach ($bitstream_array as $bitstream) {
-        $mp4ok = false;
-        $b_segments = explode("##", $bitstream);
-        $b_filename = $b_segments[1];
-        if ($image_id == "") {
-            $image_id = substr($b_filename, 0, 7);
-        }
-        $b_handle = $b_segments[3];
-        $b_seq = $b_segments[4];
-        $b_handle_id = preg_replace('/^.*\//', '', $b_handle);
-        $b_uri = './record/' . $b_handle_id . '/' . $b_seq . '/' . $b_filename;
-        $hasalma = 'N';
-        if ((strpos($b_filename, ".json") > 0) or (strpos($b_filename, ".JSON") > 0))
-        {
-            $manifest = base_url() . 'speccoll/record/' . $b_handle_id . '/' . $b_seq . '/' . $b_filename;
-
-
-            $json = file_get_contents($manifest);
-            $jobj = json_decode($json, true);
-            $error = json_last_error();
-
-            $linkURI = $jobj['related'];
-            $linkURI = str_replace('detail', 'iiif', $linkURI);
-            $linkURI = $linkURI.'/full/!300,300/0/default.jpg';
-
-            $jsonLink = '<span class ="json-link-item"><a href="https://librarylabs.ed.ac.uk/iiif/uv/?manifest=' . $manifest . '" target="_blank" class="uvlogo" title="View in UV"></a></span>';
-            $jsonLink .= '<span class ="json-link-item"><a target="_blank" title="View in Mirador" href="https://librarylabs.ed.ac.uk/iiif/mirador/?manifest='.$manifest.'" class="miradorlogo"></a></span>';
-            //  $jsonLink .= '<span class ="json-link-item"><a href="https://images.is.ed.ac.uk/luna/servlet/view/search?search=SUBMIT&q=' . $accno . '" class="lunalogo" title="View in LUNA"></a></span>';
-            $jsonLink .= '<span class ="json-link-item"><a href="' . $manifest . '" target="_blank"  class="iiiflogo" title="IIIF manifest"></a></span>';
-            //$jsonLink .= '<span class ="json-link-item"><a href = "https://creativecommons.org/licenses/by/3.0/" class ="ccbylogo" title="All images CC-BY" target="_blank" ></a></span>';
-            $hasprimo = '';
-            $hasalma ='';
-            foreach ( $jobj['sequences'][0]['canvases'][0]['metadata']as $metadatapair) {
-                $label = $metadatapair['label'];
-                $value = $metadatapair['value'];
-
-                if (strpos($value, "discovered") !== false) {
-                    $value = str_replace("<span>", "",$value);
-                    $value = str_replace("</span>","",$value);
-                    $primourl = $value;
-                    $hasprimo = 'Y';
-
-                }
-
-                if ($label == 'Catalogue Number')
-                {
-                    $value =str_replace("<span>","",$value);
-                    $value =str_replace("</span>","",$value);
-                    $almaurl = "https://open-na.hosted.exlibrisgroup.com/alma/44UOE_INST/bibs/".$value;
-
-                    $hasalma = 'Y';
-                }
-            }
-        }
-    }
-
-}
-else
-{
-    $manifest = 'https://librarylabs.ed.ac.uk/iiif/speccollprototype/manifest/'.$solr[$manifest_field][0].'/manifest';
-    if (!file_get_contents($manifest))
-    {
-        $manifest = 'https://librarylabs.ed.ac.uk/iiif/speccollprototype/manifest/'.$solr[$manifest_field][0].'.json';
-
-    }
-    //$manifest = 'http://test.collectionsmedia.is.ed.ac.uk/manifests/'.$solr[$manifest_field][0].'.json';
-}
-
+$manifest = $manifest_endpoint.$solr[$manifest_field][0].'/manifest';
 
 $json = file_get_contents($manifest);
 $jobj = json_decode($json, true);
@@ -228,7 +144,6 @@ foreach ( $jobj['sequences'][0]['canvases'][0]['metadata']as $metadatapair) {
 
         $hasalma = 'Y';
     }
-
 
     if ($label == 'Catalogue Link') {
         $value = str_replace("<span>", "", $value);
@@ -356,53 +271,7 @@ echo $viewlink;
         }
 
         if ($hasalma == 'Y') {
-            /*
-            $curl = curl_init();
-            // $fp = fopen("/var/tmp/curl.json", "w");
-            curl_setopt($curl, CURLOPT_URL, $almaurl);
-            //curl_setopt($curl, CURLOPT_FILE, $fp);
-            curl_setopt($curl, CURLOPT_HEADER, 0);
-            curl_setopt($curl,  CURLOPT_RETURNTRANSFER, TRUE);
-            $response = curl_exec($curl);
-            $httpCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
 
-            if ( $httpCode == 404 ) {
-                echo "404";
-            }
-            else
-            {
-                //fwrite($fp, $response);
-                $alma_json = json_decode($response, true);
-
-            }
-            // var_dump($response);
-            curl_close($curl);
-            echo "<h3>Main volume data</h3>";
-
-            foreach($alma_json as $key=>$value)
-            {
-                if (($key !== 'creator') and ($key !== 'note')and ($key !== 'contributor')  and ($key !== 'subject')and ($key !== 'identifier'))
-                {
-                    $key =str_replace("@", "", $key);
-                    echo "<p>".ucfirst($key)." : ".$value."</p>";
-                }
-            }
-
-            process_items($alma_json, 'creator');
-            process_items($alma_json, 'contributor');
-            process_items($alma_json, 'subject');
-            process_items($alma_json, 'identifier');
-
-            echo "<h3>Notes</h3>";
-            $j=1;
-            foreach ($alma_json['note'] as $note)
-            {
-
-                echo "<p>" .$j. ". ".$note."</p>";
-                $j++;
-            }
-        }
-        */
             echo "<table>";
             foreach ($recorddisplay as $key) {
 
