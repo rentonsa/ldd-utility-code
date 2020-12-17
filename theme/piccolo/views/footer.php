@@ -19,7 +19,7 @@
                     <div class="col-md-6 col-sm-6 hidden-xs hidden-lg hidden-md">
                         <ul>
                             <li><a href="https://www.ed.ac.uk/about/website/privacy" title="Privacy and Cookies Link" target="_blank">Privacy &amp; Cookies</a></li>
-                            <li><a href="./takedown" title="Takedown Policy Link">Takedown Policy</a></li>
+                            <li><a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc/services/copying-and-digitisation/image-licensing/takedown-policy" target="_blank" title="Takedown Policy Link">Takedown Policy</a></li>
                         </ul>
                     </div>
                     <div class="col-md-6 col-sm-6 hidden-xs hidden-lg hidden-md ">

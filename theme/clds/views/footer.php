@@ -50,7 +50,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <p>Unless explicitly stated otherwise, all material is copyright &copy; The University of Edinburgh 2017.</p>
+                    <p>Unless explicitly stated otherwise, all material is copyright &copy; The University of Edinburgh 2017. Information about our <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc/services/copying-and-digitisation/image-licensing/takedown-policy" target="_blank" title="Takedown Policy">Takedown Policy</a></p>
                 </div>
             </div>
         </div>
