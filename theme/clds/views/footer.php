@@ -25,6 +25,7 @@
                         <ul>
                             <li><a href="./accessibility">Website accessibility</a></li>
                             <li><a href="https://www.ed.ac.uk/about/website/freedom-information">Freedom of information publication scheme</a></li>
+                            <li><a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc/services/copying-and-digitisation/image-licensing/takedown-policy" target="_blank" title="Takedown Policy">Takedown Policy</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-xs-6">
@@ -50,7 +51,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <p>Unless explicitly stated otherwise, all material is copyright &copy; The University of Edinburgh 2017. Information about our <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc/services/copying-and-digitisation/image-licensing/takedown-policy" target="_blank" title="Takedown Policy">Takedown Policy</a></p>
+                    <p>Unless explicitly stated otherwise, all material is copyright &copy; The University of Edinburgh 2017.</p>
                 </div>
             </div>
         </div>
