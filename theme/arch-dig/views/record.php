@@ -79,10 +79,13 @@
                         $hasalma = 'Y';
                     }
 
-
+                    echo '<!--'.$label.'-->';
                     if ($label == 'Catalogue Entry' || $label == 'Catalogue Link') {
+
+                        echo "<!--in here with ".$value."-->";
                         $value = str_replace("<span>", "", $value);
                         $value = str_replace("</span>", "", $value);
+
                         if ($value !== 'N/A') {
                             $catalogue_link = '<h3><a  class ="cat-link"href="' . $value . '" target = "_blank">Visit the catalogue entry  in Archives Space</a></h3>';
                         }
@@ -159,6 +162,8 @@
 
 
                     <?php
+                    echo '<!--'.$catalogue_link.'-->';
+
                     if ($catalogue_link !== '' and $catalogue_link !== 'N/A')
                     {
                         echo $catalogue_link;
