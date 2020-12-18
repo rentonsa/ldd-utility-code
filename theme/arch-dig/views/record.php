@@ -80,7 +80,7 @@
                     }
 
 
-                    if ($label == 'Catalogue Link'||$label == 'Catalogue Entry') {
+                    if ($label == 'Catalogue Entry' || $label == 'Catalogue Link') {
                         $value = str_replace("<span>", "", $value);
                         $value = str_replace("</span>", "", $value);
                         if ($value !== 'N/A') {
