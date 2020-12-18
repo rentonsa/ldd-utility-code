@@ -1,5 +1,6 @@
 <div class="poa-sidebar">
     <!-- HOME -->
+
     <a href="./"><button class="non-accordion acc-btn">Home</button></a>
     <!-- INTRO/HOW TO -->
     <a href="./introduction"><button class="accordion acc-btn">Introduction</button></a>
