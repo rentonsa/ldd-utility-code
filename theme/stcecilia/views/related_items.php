@@ -35,7 +35,7 @@ if ($numrel > 0)
                             foreach ($doc[$link_uri_field] as $linkURI) {
                                 if (strpos($linkURI, 'luna') > 0 and $needlink == true) {
 
-                                    $thumbnailLink = '<a href="./record/' . $doc['id'] . '" title = "' . $doc[$title_field][0] . '" >';
+                                    $thumbnailLink = '<a href="./record/' . $doc['id'] . '" title="Read more about the ' . $doc[$title_field][0] . '" >';
 
                                     list($width, $height) = getimagesize($linkURI);
                                     $portrait = true;
@@ -43,9 +43,9 @@ if ($numrel > 0)
                                         $portrait = false;
                                     }
                                     if ($portrait) {
-                                        $thumbnailLink .= '<img src = "' . $linkURI . '" class="record-thumbnail-portrait related-img" title="' . $doc[$title_field][0] . '" /></a>';
+                                        $thumbnailLink .= '<img src = "' . $linkURI . '" class="record-thumbnail-portrait related-img" title="Read more about the ' . $doc[$title_field][0] . '" /></a>';
                                     } else {
-                                        $thumbnailLink .= '<img src = "' . $linkURI . '" class="record-thumbnail-landscape related-img" title="' . $doc[$title_field][0] . '" /></a>';
+                                        $thumbnailLink .= '<img src = "' . $linkURI . '" class="record-thumbnail-landscape related-img" title="Read more about the ' . $doc[$title_field][0] . '" /></a>';
                                     }
 
                                     echo $thumbnailLink;
@@ -59,7 +59,7 @@ if ($numrel > 0)
                             <div class="column related-col">
                                 <div class="thumbnail-cont">
                                     <?php
-                                        $thumbnailLink  =  '<a href="./record/'.$doc['id'].'" title = "'. $doc[$title_field][0].'" > No Image for this </a>';
+                                        $thumbnailLink  =  '<a href="./record/'.$doc['id'].'" title="Read more about the ' . $doc[$title_field][0] . '"> No Image for this </a>';
                                         echo $thumbnailLink;
                                         $needlink = false;
                                     }
