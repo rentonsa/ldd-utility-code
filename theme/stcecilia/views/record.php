@@ -209,24 +209,24 @@ foreach($recorddisplay as $key)
         <?php if(isset($solr[$link_uri_field]))
             {
                 // CHECK RECORD HAS IMAGE
-                echo '<li><a class="cnav-link" href="' . $_SERVER['REQUEST_URI'] . '#stc-section2">Image</a></li>';
+                echo '<li><a class="cnav-link" href="' . $_SERVER['REQUEST_URI'] . '#stc-section2" title="Skip to instruments image(s)">Image</a></li>';
             }
             if(!$audioLink == '' || !$videoLink == '')
             {
                 // CHECK RECORD HAS AUDIO OR VIDEO FILES
-                echo '<li><a class="cnav-link" href="' . $_SERVER['REQUEST_URI'] . '#stc-section4">Audio/Visual</a></li>';
+                echo '<li><a class="cnav-link" href="' . $_SERVER['REQUEST_URI'] . '#stc-section4" title="Skip to instruments audio or video recordings)">Audio/Visual</a></li>';
             }
 
             if(!$recorddisplay == NULL)
             {
                 // CHECK RECORD HAS TAGS
-                echo '<li><a class="cnav-link" href="' . $_SERVER['REQUEST_URI'] . '#stc-section3">Categories</a></li>';
+                echo '<li><a class="cnav-link" href="' . $_SERVER['REQUEST_URI'] . '#stc-section3" title="Skip to instruments category tags">Categories</a></li>';
             }
 
             if(!$identificationdisplay == NULL)
             {
                 // CHECK RECORD HAS INSTRUMENT METADATA
-                echo '<li><a class="cnav-link" href="' . $_SERVER['REQUEST_URI'] . '#stc-section5">Instrument Data</a></li>';
+                echo '<li><a class="cnav-link" href="' . $_SERVER['REQUEST_URI'] . '#stc-section5" title="Skip to instruments full information">Instrument Data</a></li>';
             }
 
             // GET NO. OF RELATED ITEMS
@@ -234,7 +234,7 @@ foreach($recorddisplay as $key)
             if($numrel > 0)
             {
                 // CHECK RECORD HAS ANY RELATED ITEMS
-                echo '<li><a class="cnav-link" href="' . $_SERVER['REQUEST_URI'] . '#stc-section6">Related Items</a></li>';
+                echo '<li><a class="cnav-link" href="' . $_SERVER['REQUEST_URI'] . '#stc-section6" title="Skip to related instruments">Related Items</a></li>';
             } ?>
     </ul>
 </div>
@@ -268,10 +268,10 @@ foreach($recorddisplay as $key)
             $imageCounter++;
         }
 
-        echo "<div id='imageCounter' style='display:none;'>$imageCounter</div>
+        /*echo "<div id='imageCounter' style='display:none;'>$imageCounter</div>
             <div>". $numThumbnails . "</div>
             <div>" . $numLandscape . " : " . $numPortrait . "</div>
-            <div>" . $width . "</div>";
+            <div>" . $width . "</div>";*/
         ?>
 
 
@@ -713,7 +713,7 @@ foreach($recorddisplay as $key)
                             $lower_orig_filter = urlencode($lower_orig_filter);
 
 
-                            echo '<a href="./search/*:*/' . urlencode($key) . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a>';
+                            echo '<a href="./search/*:*/' . urlencode($key) . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a>';
                         }
                     }
                     echo '</div>';
@@ -772,11 +772,11 @@ foreach($recorddisplay as $key)
                                                 //Insert Schema.org
                                                 if (isset ($schema[$key]))
                                                 {
-                                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                                 }
                                                 else
                                                 {
-                                                    echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="' . $metadatavalue . '">' . $metadatavalue . '</a>';
+                                                    echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a>';
                                                 }
                                             }
                                             else {
@@ -835,11 +835,11 @@ foreach($recorddisplay as $key)
                                                 //Insert Schema.org
                                                 if (isset ($schema[$key]))
                                                 {
-                                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                                 }
                                                 else
                                                 {
-                                                    echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="' . $metadatavalue . '">' . $metadatavalue . '</a>';
+                                                    echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a>';
                                                 }
                                             }
                                             else {
@@ -898,11 +898,11 @@ foreach($recorddisplay as $key)
                                                 //Insert Schema.org
                                                 if (isset ($schema[$key]))
                                                 {
-                                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                                 }
                                                 else
                                                 {
-                                                    echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                    echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a>';
                                                 }
                                             }
                                             else {
@@ -960,11 +960,11 @@ foreach($recorddisplay as $key)
                                             //Insert Schema.org
                                             if (isset ($schema[$key]))
                                             {
-                                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                             }
                                             else
                                             {
-                                                echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="' . $metadatavalue . '">' . $metadatavalue . '</a>';
+                                                echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a>';
                                             }
                                         }
                                         else {
@@ -997,7 +997,7 @@ foreach($recorddisplay as $key)
                     </div> meta-info -->
 
                     <div class="info-box">
-                        <h3>Maker</h3>
+                        <h3>Maker Information</h3>
                             <div class="meta-container" id="table-text-desc">
                             <div class="child-meta-container-wide">
                                 <?php
@@ -1035,11 +1035,11 @@ foreach($recorddisplay as $key)
                                                     //Insert Schema.org
                                                     if (isset ($schema[$key]))
                                                     {
-                                                        echo '<span itemprop="'.$schema[$key].'" class="offset-dd"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                        echo '<span itemprop="'.$schema[$key].'" class="offset-dd"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                                     }
                                                     else
                                                     {
-                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a>';
                                                     }
                                                 }
             
@@ -1076,11 +1076,11 @@ foreach($recorddisplay as $key)
                                                     //Insert Schema.org
                                                     if (isset ($schema[$key]))
                                                     {
-                                                        echo '<span itemprop="'.$schema[$key].'" class="offset-dd"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                        echo '<span itemprop="'.$schema[$key].'" class="offset-dd"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                                     }
                                                     else
                                                     {
-                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a>';
                                                     }
                                                 }
 
@@ -1089,7 +1089,14 @@ foreach($recorddisplay as $key)
 
                                                     if (isset ($schema[$key]))
                                                     {
+                                                        if ($key === "Maker Name")
+                                                        {
+                                                            echo '<span itemprop="' . $schema[$key] . '"><a href="./search/%22'.$metadatavalue.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a></span>';
+                                                        }
+                                                        else
+                                                        {
                                                         echo '<span itemprop="' . $schema[$key] . '" class="offset-dd">' . $metadatavalue . "</span>";
+                                                        }
                                                     }
                                                     else
                                                     {
@@ -1137,11 +1144,11 @@ foreach($recorddisplay as $key)
                                                 //Insert Schema.org
                                                 if (isset ($schema[$key]))
                                                 {
-                                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                                 }
                                                 else
                                                 {
-                                                    echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                    echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a>';
                                                 }
                                             }
                                             else {
@@ -1150,11 +1157,11 @@ foreach($recorddisplay as $key)
 
                                                 if (isset ($schema[$key]))
                                                 {
-                                                    echo '<span itemprop="' . $schema[$key] . '">' . $metadatavalue . "</span>";
+                                                    echo '<span itemprop="' . $schema[$key] . '"><a href="./search/%22'.$metadatavalue.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a></span>';
                                                 }
                                                 else
                                                 {
-                                                    echo $metadatavalue;
+                                                    echo '<span itemprop=""><a href="./search/%22'.$metadatavalue.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a></span>';
                                                 }
                                             }
                                             if($index < sizeof($solr[$element]) - 1) {
@@ -1200,11 +1207,11 @@ foreach($recorddisplay as $key)
                                             //Insert Schema.org
                                             if (isset ($schema[$key]))
                                             {
-                                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                             }
                                             else
                                             {
-                                                echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a>';
                                             }
                                         }
                                         else {
@@ -1236,7 +1243,7 @@ foreach($recorddisplay as $key)
                     </div> place-info -->
 
                     <!-- <div class="info-box">
-                        <h3>Object Type Information</h3>
+                        <h3>Classification Information</h3>
                         <div class="meta-container">
                             <?php
                             $infofound = false;
@@ -1261,11 +1268,11 @@ foreach($recorddisplay as $key)
                                             //Insert Schema.org
                                             if (isset ($schema[$key]))
                                             {
-                                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                             }
                                             else
                                             {
-                                                echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a>';
                                             }
                                         }
                                         else {
@@ -1323,11 +1330,11 @@ foreach($recorddisplay as $key)
                                             //Insert Schema.org
                                             if (isset ($schema[$key]))
                                             {
-                                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                             }
                                             else
                                             {
-                                                echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a>';
                                             }
                                         }
                                         else {
@@ -1397,11 +1404,11 @@ foreach($recorddisplay as $key)
 
                                                     if (isset ($schema[$key]))
                                                     {
-                                                        echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                        echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                                     }
                                                     else
                                                     {
-                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a>';
                                                     }
                                                 }
                                                 else {
@@ -1437,11 +1444,11 @@ foreach($recorddisplay as $key)
 
                                                     if (isset ($schema[$key]))
                                                     {
-                                                        echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                        echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                                     }
                                                     else
                                                     {
-                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a>';
                                                     }
                                                 }
                                                 else {
@@ -1477,11 +1484,11 @@ foreach($recorddisplay as $key)
 
                                                     if (isset ($schema[$key]))
                                                     {
-                                                        echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                        echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                                     }
                                                     else
                                                     {
-                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a>';
                                                     }
                                                 }
                                                 else {
@@ -1510,7 +1517,7 @@ foreach($recorddisplay as $key)
                                 }?>
                             </div>
 
-                            <h3 class="meta-spacing">Object Type Information</h3>
+                            <h3 class="meta-spacing">Classification</h3>
                             <div class="child-meta-container">
                                 <?php
                                 $infofound = false;
@@ -1522,7 +1529,7 @@ foreach($recorddisplay as $key)
 
                                     if(isset($solr[$element])) {
 
-                                        echo '<div class="child-meta">';
+                                        
 
                                         // Quick bit of logic to limit the number of subcategories shown
                                         // avoid duplication of metadata being displayed
@@ -1538,6 +1545,7 @@ foreach($recorddisplay as $key)
                                         if ($key === "Genus" && $instrumentFound || $key === "Grouping" && $familyFound) {}
                                         else
                                         {
+                                            echo '<div class="child-meta">';
                                             echo '<h4>' . $key . '</h4>';
 
                                             echo '<p>';
@@ -1553,11 +1561,11 @@ foreach($recorddisplay as $key)
                                                     //Insert Schema.org
                                                     if (isset ($schema[$key]))
                                                     {
-                                                        echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                        echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                                     }
                                                     else
                                                     {
-                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a>';
                                                     }
                                                 }
                                                 else {
@@ -1566,7 +1574,11 @@ foreach($recorddisplay as $key)
 
                                                     if (isset ($schema[$key]))
                                                     {
-                                                        echo '<span itemprop="' . $schema[$key] . '"><a href="./search/%22'.$metadatavalue.'%22">'.$metadatavalue.'</a></span>';
+                                                        if ($metadatavalue === "musical instrument") { echo ''; }
+                                                        else
+                                                        {
+                                                            echo '<span itemprop="' . $schema[$key] . '" title="Read more about the ' .$metadatavalue.'" ><a href="./search/%22'.$metadatavalue.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a></span>';
+                                                        }
                                                     }
                                                     else
                                                     {
@@ -1581,8 +1593,8 @@ foreach($recorddisplay as $key)
                                             }
                                             $infofound = true;
                                             echo '</p>';
+                                            echo '</div>';
                                         }
-                                        echo '</div>';
                                     }
                                 }
                                 if (!$infofound) {
@@ -1629,11 +1641,11 @@ foreach($recorddisplay as $key)
                                                 //Insert Schema.org
                                                 if (isset ($schema[$key]))
                                                 {
-                                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                                 }
                                                 else
                                                 {
-                                                    echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="' . $metadatavalue . '">' . $metadatavalue . '</a>';
+                                                    echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a>';
                                                 }
                                             }
                                             else {
@@ -1692,11 +1704,11 @@ foreach($recorddisplay as $key)
                                                 //Insert Schema.org
                                                 if (isset ($schema[$key]))
                                                 {
-                                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                                 }
                                                 else
                                                 {
-                                                    echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="' . $metadatavalue . '">' . $metadatavalue . '</a>';
+                                                    echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a>';
                                                 }
                                             }
                                             else {
@@ -1755,11 +1767,11 @@ foreach($recorddisplay as $key)
                                                 //Insert Schema.org
                                                 if (isset ($schema[$key]))
                                                 {
-                                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                                 }
                                                 else
                                                 {
-                                                    echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                    echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a>';
                                                 }
                                             }
                                             else {
@@ -1817,11 +1829,11 @@ foreach($recorddisplay as $key)
                                             //Insert Schema.org
                                             if (isset ($schema[$key]))
                                             {
-                                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                             }
                                             else
                                             {
-                                                echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="' . $metadatavalue . '">' . $metadatavalue . '</a>';
+                                                echo '<a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a>';
                                             }
                                         }
                                         else {
@@ -1854,7 +1866,7 @@ foreach($recorddisplay as $key)
                     </div> meta-info -->
 
                     <div class="info-box">
-                        <h3>Maker</h3>
+                        <h3>Maker Information</h3>
                             <div class="meta-container" id="table-text-desc">
                             <div class="child-meta-container-wide">
                                 <?php
@@ -1892,11 +1904,11 @@ foreach($recorddisplay as $key)
                                                     //Insert Schema.org
                                                     if (isset ($schema[$key]))
                                                     {
-                                                        echo '<span itemprop="'.$schema[$key].'" class="offset-dd"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                        echo '<span itemprop="'.$schema[$key].'" class="offset-dd"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                                     }
                                                     else
                                                     {
-                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a>';
                                                     }
                                                 }
 
@@ -1933,11 +1945,11 @@ foreach($recorddisplay as $key)
                                                     //Insert Schema.org
                                                     if (isset ($schema[$key]))
                                                     {
-                                                        echo '<span itemprop="'.$schema[$key].'" class="offset-dd"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                        echo '<span itemprop="'.$schema[$key].'" class="offset-dd"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                                     }
                                                     else
                                                     {
-                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a>';
                                                     }
                                                 }
 
@@ -1946,8 +1958,14 @@ foreach($recorddisplay as $key)
 
                                                     if (isset ($schema[$key]))
                                                     {
+                                                        if ($key === "Maker Name")
+                                                        {
+                                                            echo '<span itemprop="' . $schema[$key] . '"><a href="./search/%22'.$metadatavalue.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a></span>';
+                                                        }
+                                                        else
+                                                        {
                                                         echo '<span itemprop="' . $schema[$key] . '" class="offset-dd">' . $metadatavalue . "</span>";
-                                                    }
+                                                        }                                                    }
                                                     else
                                                     {
                                                         echo $metadatavalue;
@@ -1994,11 +2012,11 @@ foreach($recorddisplay as $key)
                                                 //Insert Schema.org
                                                 if (isset ($schema[$key]))
                                                 {
-                                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                    echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                                 }
                                                 else
                                                 {
-                                                    echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                    echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a>';
                                                 }
                                             }
                                             else {
@@ -2007,11 +2025,11 @@ foreach($recorddisplay as $key)
 
                                                 if (isset ($schema[$key]))
                                                 {
-                                                    echo '<span itemprop="' . $schema[$key] . '">' . $metadatavalue . "</span>";
+                                                    echo '<span itemprop="' . $schema[$key] . '"><a href="./search/%22'.$metadatavalue.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a></span>';
                                                 }
                                                 else
                                                 {
-                                                    echo $metadatavalue;
+                                                    echo '<span itemprop=""><a href="./search/%22'.$metadatavalue.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a></span>';
                                                 }
                                             }
                                             if($index < sizeof($solr[$element]) - 1) {
@@ -2057,11 +2075,11 @@ foreach($recorddisplay as $key)
                                             //Insert Schema.org
                                             if (isset ($schema[$key]))
                                             {
-                                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                             }
                                             else
                                             {
-                                                echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a>';
                                             }
                                         }
                                         else {
@@ -2070,7 +2088,7 @@ foreach($recorddisplay as $key)
 
                                             if (isset ($schema[$key]))
                                             {
-                                                echo '<span itemprop="' . $schema[$key] . '"><a href="./search/%22'.$metadatavalue.'%22">'.$metadatavalue.'</a></span>';
+                                                echo '<span itemprop="' . $schema[$key] . '"><a href="./search/%22'.$metadatavalue.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a></span>';
                                             }
                                             else
                                             {
@@ -2093,7 +2111,7 @@ foreach($recorddisplay as $key)
                     </div> place-info -->
 
                     <!-- <div class="info-box">
-                        <h3>Object Type Information</h3>
+                        <h3>Classification Information</h3>
                         <div class="meta-container">
                             <?php
                             $infofound = false;
@@ -2118,11 +2136,11 @@ foreach($recorddisplay as $key)
                                             //Insert Schema.org
                                             if (isset ($schema[$key]))
                                             {
-                                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                             }
                                             else
                                             {
-                                                echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a>';
                                             }
                                         }
                                         else {
@@ -2180,11 +2198,11 @@ foreach($recorddisplay as $key)
                                             //Insert Schema.org
                                             if (isset ($schema[$key]))
                                             {
-                                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                             }
                                             else
                                             {
-                                                echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a>';
                                             }
                                         }
                                         else {
@@ -2254,11 +2272,11 @@ foreach($recorddisplay as $key)
 
                                                     if (isset ($schema[$key]))
                                                     {
-                                                        echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                        echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                                     }
                                                     else
                                                     {
-                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a>';
                                                     }
                                                 }
                                                 else {
@@ -2294,11 +2312,11 @@ foreach($recorddisplay as $key)
 
                                                     if (isset ($schema[$key]))
                                                     {
-                                                        echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                        echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                                     }
                                                     else
                                                     {
-                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a>';
                                                     }
                                                 }
                                                 else {
@@ -2334,11 +2352,11 @@ foreach($recorddisplay as $key)
 
                                                     if (isset ($schema[$key]))
                                                     {
-                                                        echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                        echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                                     }
                                                     else
                                                     {
-                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a>';
                                                     }
                                                 }
                                                 else {
@@ -2367,7 +2385,7 @@ foreach($recorddisplay as $key)
                                 }?>
                             </div>
 
-                            <h3 class="meta-spacing">Object Type Information</h3>
+                            <h3 class="meta-spacing">Classification</h3>
                             <div class="child-meta-container">
                             <?php
                                 $infofound = false;
@@ -2378,8 +2396,6 @@ foreach($recorddisplay as $key)
                                     $element = $this->skylight_utilities->getField($key);
 
                                     if(isset($solr[$element])) {
-
-                                        echo '<div class="child-meta">';
 
                                         // Quick bit of logic to limit the number of subcategories shown
                                         // avoid duplication of metadata being displayed
@@ -2395,6 +2411,7 @@ foreach($recorddisplay as $key)
                                         if ($key === "Genus" && $instrumentFound || $key === "Grouping" && $familyFound) {}
                                         else
                                         {
+                                            echo '<div class="child-meta">';
                                             echo '<h4>' . $key . '</h4>';
 
                                             echo '<p>';
@@ -2410,11 +2427,11 @@ foreach($recorddisplay as $key)
                                                     //Insert Schema.org
                                                     if (isset ($schema[$key]))
                                                     {
-                                                        echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22">' . $metadatavalue . '</a></span>';
+                                                        echo '<span itemprop="'.$schema[$key].'"><a href="./search/*:*/' . $key . ':%22' . $lower_orig_filter . '+%7C%7C%7C+' . $orig_filter . '%22" title="Read more about the ' .$metadatavalue.'">' . $metadatavalue . '</a></span>';
                                                     }
                                                     else
                                                     {
-                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="'.$metadatavalue.'">'.$metadatavalue.'</a>';
+                                                        echo '<a href="./search/*:*/' . $key . ':%22'.$lower_orig_filter.'+%7C%7C%7C+'.$orig_filter.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a>';
                                                     }
                                                 }
                                                 else {
@@ -2423,7 +2440,11 @@ foreach($recorddisplay as $key)
 
                                                     if (isset ($schema[$key]))
                                                     {
-                                                        echo '<span itemprop="' . $schema[$key] . '"><a href="./search/%22'.$metadatavalue.'%22">'.$metadatavalue.'</a></span>';
+                                                        if ($metadatavalue === "musical instrument") { echo ''; }
+                                                        else
+                                                        {
+                                                            echo '<span itemprop="' . $schema[$key] . '"><a href="./search/%22'.$metadatavalue.'%22" title="Read more about the ' .$metadatavalue.'">'.$metadatavalue.'</a></span>';
+                                                        }
                                                     }
                                                     else
                                                     {
@@ -2438,8 +2459,9 @@ foreach($recorddisplay as $key)
                                             }
                                             $infofound = true;
                                             echo '</p>';
+                                            echo '</div>';
                                         }
-                                        echo '</div>';
+                                        
                                     }
                                 }
                                 if (!$infofound) {

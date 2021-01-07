@@ -1,5 +1,5 @@
  <div class="col-lg-3 col-md-3 hidden-sm hidden-xs" id="side_facet">
-        <h3>Refine Results</h3>
+        <h3 title="Use sidebar to refine your search results">Refine Results</h3>
     <?php
         $index = 0;
 
@@ -14,7 +14,7 @@
             <div class="panel panel-facets">
                 <div class="panel-heading">
                     <span class="facet_title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="?query=h#collapse<?php echo $index ?>">
+                    <a data-toggle="collapse" data-parent="#accordion" href="?query=h#collapse<?php echo $index ?>" title="Collapse <?php echo $facet['name'] ?> sidebar">
 
                         <?php echo $facet['name'] ?><i class="fa fa-chevron-down" aria-hidden="true"></i>
 
@@ -55,7 +55,7 @@
 
                     }
                     foreach($inactive_terms as $term) { ?>
-                        <a href='<?php echo $base_search; ?>/<?php echo $facet['name']; ?>:"<?php echo $term['name']; ?>"<?php echo $base_parameters ?>'><?php echo $term['display_name'];?>
+                        <a href='<?php echo $base_search; ?>/<?php echo $facet['name']; ?>:"<?php echo $term['name']; ?>"<?php echo $base_parameters ?>' title="View instruments relating to '<?php echo $term['display_name'];?>'"><?php echo $term['display_name'];?>
                                 <span><?php echo $term['count']; ?></span></a>
                         <br><br>
                         <?php

@@ -12,8 +12,11 @@ if ($numrel > 0)
         {
             $type_field = $this->skylight_utilities->getField('Type');
             $i = 0;?>
-            <div id="centered-grid">
-                <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 150 }'>
+
+            <div id="results-container">
+            <div class="results-row">
+            <!--<div id="centered-grid">
+                <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 150 }'>-->
                 <?php
 
                 $link_uri_field = $this->skylight_utilities->getField("ImageURI");
@@ -21,7 +24,8 @@ if ($numrel > 0)
                 {
 
                     ?>
-                    <div class="grid-item thumbnail">
+                    <div class="column related-col">
+                        <div class="thumbnail-cont">
                         <?php
 
                         $needlink = true;
@@ -31,7 +35,7 @@ if ($numrel > 0)
                             foreach ($doc[$link_uri_field] as $linkURI) {
                                 if (strpos($linkURI, 'luna') > 0 and $needlink == true) {
 
-                                    $thumbnailLink = '<a href="./record/' . $doc['id'] . '" title = "' . $doc[$title_field][0] . '" >';
+                                    $thumbnailLink = '<a href="./record/' . $doc['id'] . '" title="Read more about the ' . $doc[$title_field][0] . '" >';
 
                                     list($width, $height) = getimagesize($linkURI);
                                     $portrait = true;
@@ -39,9 +43,9 @@ if ($numrel > 0)
                                         $portrait = false;
                                     }
                                     if ($portrait) {
-                                        $thumbnailLink .= '<img src = "' . $linkURI . '" class="record-thumbnail-portrait" title="' . $doc[$title_field][0] . '" /></a>';
+                                        $thumbnailLink .= '<img src = "' . $linkURI . '" class="record-thumbnail-portrait related-img" title="Read more about the ' . $doc[$title_field][0] . '" /></a>';
                                     } else {
-                                        $thumbnailLink .= '<img src = "' . $linkURI . '" class="record-thumbnail-landscape" title="' . $doc[$title_field][0] . '" /></a>';
+                                        $thumbnailLink .= '<img src = "' . $linkURI . '" class="record-thumbnail-landscape related-img" title="Read more about the ' . $doc[$title_field][0] . '" /></a>';
                                     }
 
                                     echo $thumbnailLink;
@@ -51,30 +55,37 @@ if ($numrel > 0)
                             }
                         }
                         else
-                        {
-                            $thumbnailLink  =  '<a href="./record/'.$doc['id'].'" title = "'. $doc[$title_field][0].'" > No Image for this </a>';
-                            echo $thumbnailLink;
-                            $needlink = false;
-                        }
-                        ?>
-                        <p class="text-center hidden-xs">
-                            <a href="./record/<?php echo $doc['id'] ?>"><?php echo $doc[$title_field][0]; ?></a>
-                        </p>
-                        <p class="text-center hidden-md hidden-sm hidden-lg">
-                            <small><a href="./record/<?php echo $doc['id'] ?>"><?php echo $doc[$title_field][0]; ?></a>
-                            </small>
-                        </p>
-                    </div>
-                <?php
-                }?>
-                    <script>
-                        var $grid = $('.grid').imagesLoaded( function() {
-                            // init Masonry after all images have loaded
-                            $grid.masonry({
-                                // options...
+                        {?>
+                            <div class="column related-col">
+                                <div class="thumbnail-cont">
+                                    <?php
+                                        $thumbnailLink  =  '<a href="./record/'.$doc['id'].'" title="Read more about the ' . $doc[$title_field][0] . '"> No Image for this </a>';
+                                        echo $thumbnailLink;
+                                        $needlink = false;
+                                    }
+                                    ?>
+                                    <p class="text-center hidden-xs reated-p">
+                                        <?php echo $doc[$title_field][0]; ?>
+                                    </p>
+                                    <p class="text-center hidden-md hidden-sm hidden-lg reated-p">
+                                        <small>
+                                            <?php echo $doc[$title_field][0]; ?>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        <?php
+                        }?>
+                        <script>
+                            var $grid = $('.grid').imagesLoaded( function() {
+                                // init Masonry after all images have loaded
+                                $grid.masonry({
+                                    // options...
+                                });
                             });
-                        });
-                    </script>
+                        </script>
+                        </div>
+                    </div>
                 </div>
             </div>
     <?php

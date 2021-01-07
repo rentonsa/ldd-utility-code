@@ -78,9 +78,24 @@ body
 .col-md-6 {
     width: 100%;
 }
-@media (min-width: 992px){
+@media (min-width: 992px)
+{
     .col-md-6 {
         width: 100%;
+    }
+    .col-sm-6.col-xs-12.col-md-8.col-lg-12.meta-smol
+    {
+        width: 100%!important;
+    }
+}
+@media (min-width: 768px)
+{
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-6.col-xs-12.col-md-8.col-lg-12.meta-smol
+    {
+        width: 100%!important;
     }
 }
 
@@ -657,6 +672,85 @@ div.spacer {
     .nav-logo-img
     {
         width: 350px;
+        margin-top: -5px;
+    }
+}
+@media (max-width: 440px)
+{
+    .nav-logo-img
+    {
+        margin-left: -35px;
+        margin-top: 15px;
+    }
+}
+@media (max-width: 440px)
+{
+    .nav-logo-img
+    {
+        margin-left: -35px;
+    }
+}
+@media (max-width: 420px)
+{
+    .nav-logo-img
+    {
+        margin-left: -40px;
+    }
+}
+@media (max-width: 400px)
+{
+    .nav-logo-img
+    {
+        margin-left: -45px;
+    }
+}
+@media (max-width: 380px)
+{
+    .nav-logo-img
+    {
+        margin-left: -50px;
+    }
+}
+@media (max-width: 360px)
+{
+    .nav-logo-img
+    {
+        margin-left: -55px;
+    }
+}
+@media (max-width: 340px)
+{
+    .nav-logo-img
+    {
+        margin-left: -60px;
+    }
+}
+@media (max-width: 320px)
+{
+    .nav-logo-img
+    {
+        margin-left: -75px;
+    }
+}
+@media (max-width: 300px)
+{
+    .nav-logo-img
+    {
+        margin-left: -80px;
+    }
+}
+@media (max-width: 290px)
+{
+    .nav-logo-img
+    {
+        margin-left: -85px;
+    }
+}
+@media (max-width: 280px)
+{
+    .nav-logo-img
+    {
+        margin-left: -90px;
     }
 }
 .nav-pills .fa,
@@ -711,6 +805,21 @@ div.spacer {
 
 .sch-link a:hover {
     color: #fff!important;
+}
+
+/* related images */
+.related-col
+{
+    height: 250px!important;
+}
+.related-img
+{
+    border: solid 2px #650100;
+}
+.reated-p
+{
+    color: #650100;
+    font-weight: 500;
 }
 
 #uoe-search {
@@ -868,6 +977,15 @@ figcaption {
     text-align: center;
     margin-bottom: 10rem;
 }
+@media (max-width: 768px)
+{
+    .searchFoundRow 
+    {
+        width: auto;
+        margin-bottom: 5rem;
+        margin-top: 8rem;
+    }
+}
 
 .searchFound {
     font-size: 24px;
@@ -990,6 +1108,7 @@ figcaption {
 }
 
 #side_facet {
+    float: right;
     text-align: right;
     padding-right: 50px;
 }
@@ -1001,6 +1120,29 @@ figcaption {
     font-size: 2em;
     letter-spacing: .1em;
 }
+.panel {
+    background: transparent!important;
+}
+@media (max-width: 1000px)
+{
+    #side_facet
+    {
+        float: right;
+        padding-right: 25px;
+        width: 250px;
+        right: 0;
+        position: absolute;
+    }
+}
+@media (max-width: 560px)
+{
+    #side_facet
+    {
+        padding-right: 10px;
+        width: 200px;
+    }
+}
+
 .panel-body a {
     color: #650100;
     text-decoration: none!important;
@@ -1074,6 +1216,13 @@ figcaption {
     font-weight: bold;
     background: none!important;
 }
+@media (max-width: 768px)
+{
+    #stc-section1
+    {
+        width: 100%;
+    }
+}
 
 /* item navigation */
 #item-nav {
@@ -1090,9 +1239,17 @@ figcaption {
 /* image */
 #stc-section2 {
     color: #fff;
-    width:50%;
+    width:75%;
     padding:0;
     margin-top: 40px!important;
+}
+@media (max-width: 1750px)
+{
+    #stc-section2,
+    div[id^="openseadragon"]
+    {
+        width: 75%!important;
+    }
 }
 #stc-section3, #stc-section4, #stc-section5 {
     text-align: center;
@@ -1106,7 +1263,13 @@ figcaption {
     margin: auto;
 }
 .desc-smol {
-    width: 50%;
+    width: 75%;
+}
+@media (max-width: 768px)
+{
+    .desc-smol {
+        width: 75%;
+    }
 }
 #stc-section3 {
     color: #333;
@@ -1377,7 +1540,7 @@ div[id^="gallery"]:hover .gallery-title{
 
 div[id^="openseadragon"] {
     margin: 0 auto;
-    width: 50%;
+    width: 75%;
     height: 600px;
     border: 2px solid #650100;
 }
@@ -1590,8 +1753,27 @@ label
     display: flex!important;
     padding: 0 75px;
 }
+@media (max-width: 1000px)
+{
+    .col-sm-6.col-xs-12.col-md-8.col-lg-12.metadata,
+    .col-sm-6.col-xs-12.col-md-8.col-lg-12.meta-smol
+    {
+        display: block!important;
+        margin-top: -30px;
+    }
+    .child-meta-container
+    {
+        display: flex!important;
+    }
+    .info-box
+    {
+        width: 100%!important;
+        margin-top: 0px!important;
+        margin-bottom: 8px;
+    }
+}
 .info-box{
-    width:100%;
+    width: 33.3%;
     margin-top: -30px;
     border: 2px solid #500100;
     margin-right: 5px;
@@ -1610,6 +1792,20 @@ label
 }
 .child-meta-container-wide {
     padding: 0 20px;
+}
+@media (max-width: 1200px)
+{
+    .child-meta-container
+    {
+        display: grid!important;
+    }
+}
+@media (max-width: 1000px)
+{
+    .child-meta-container
+    {
+        display: flex!important;
+    }
 }
 .meta-spacing {
     padding-top: 20px;
@@ -1795,7 +1991,125 @@ dl {
     width: 100%;
     height: 100%;
 }
-/*figcaption {
-    position: absolute;
-    bottom: 50px;
-}*/
+@media (max-width: 1100px)
+{
+    .column
+    {
+        width: 33.3%;
+    }
+}
+@media (max-width: 768px)
+{
+    .column
+    {
+        width: 50%;
+    }
+}
+@media (max-width: 560px)
+{
+    .column
+    {
+        width: 100%;
+        height: auto;
+        padding: 15px 10px;
+    }
+}
+.pagination {
+    display: block;
+    width: 50%;
+    padding-left: 0;
+    margin: auto;
+    border-radius: 4px;
+}
+@media (min-width: 2115px)
+{
+    .pagination
+    {
+        width: 15%;
+    }
+}
+@media (max-width: 1595px)
+{
+    .pagination
+    {
+        width: 25%;
+    }
+}
+@media (max-width: 1280px)
+{
+    .pagination
+    {
+        width: 30%;
+    }
+}
+@media (max-width: 1078px)
+{
+    .pagination
+    {
+        width: 35%;
+    }
+}
+@media (max-width: 928px)
+{
+    .pagination
+    {
+        width: 40%;
+    }
+}
+@media (max-width: 810px)
+{
+    .pagination
+    {
+        width: 50%;
+    }
+}
+
+.hidden-md
+{
+    display: none!important;
+    visibility: hidden!important;
+}
+@media (max-width: 991px) and (min-width: 768px)
+{
+    .hidden-sm {
+        display: block!important;
+    }
+}
+@media (max-width: 992px) and (min-width: 768px)
+{
+    .hidden-md 
+    {
+        display: none!important;
+        visibility: hidden!important;
+    }
+    .inst-results 
+    {
+        width: 75%;
+    }
+}
+@media (max-width: 768px)
+{
+    .hidden-xs {
+        display: block!important;
+    }
+    .col-xs-12 {
+        width: 75%;
+    }
+}
+@media (max-width: 768px)
+{
+    .inst-results 
+    {
+        width: 75%;
+    }
+}
+@media (max-width: 560px)
+{
+    .inst-results 
+    {
+        width: 60%;
+    }
+}
+
+
+

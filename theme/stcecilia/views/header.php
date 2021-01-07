@@ -116,7 +116,7 @@
         <div class="col-lg-8 col-md-8 col-sm-9 hidden-xs">
             <div class="nav-logo">
                     <!-- WILL NEED CHANGED WHEN SWITCH TO LIVE -->
-                    <a class="nav-logo-link" href="https://test.stcecilias.ed.ac.uk">
+                    <a class="nav-logo-link" href="https://test.stcecilias.ed.ac.uk" title="Return to the home page">
                         <img class="nav-logo-img" src="<?php echo base_url()?>theme/stcecilia/images/StCsNavLogo.png">
                     </a>
             </div>
@@ -124,9 +124,9 @@
             <!--<a href="./" class="home-icon"><i class="fa fa-home fa-lg"></i></a>-->
             <form id="nav-cont" class="navbar-form navbar-left" role="search" action="./redirect/" method="post">
                 <div class="input-group search-box">
-                    <input id="uoe-search" type="text" class="form-control" placeholder="Search the museum collections" name="q" value="<?php if (isset($searchbox_query)) echo str_replace('"', '', urldecode($searchbox_query)); ?>" />
+                    <input id="uoe-search" type="text" class="form-control" placeholder="Search the museum collections" name="q" value="<?php if (isset($searchbox_query)) echo str_replace('"', '', urldecode($searchbox_query)); ?>" title="Enter a search for St Cecilia's Collection"/>
                     <span class="input-group-btn">
-                        <button type="submit" class="btn btn-default" name="submit_search" value="Search" id="submit_search1">
+                        <button type="submit" class="btn btn-default" name="submit_search" value="Search" id="submit_search1" title="Search St Cecilia's Collection">
                             <i class="glyphicon glyphicon-search"></i>&nbsp;Search
                         </button>
                     </span>
