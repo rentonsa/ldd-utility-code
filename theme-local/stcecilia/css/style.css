@@ -151,7 +151,7 @@ a:focus, a:hover {
     text-align: center;
     padding: 0;
     background-color: #fefefe;
-    margin-top: -57px;
+    margin-top: -20px;
     margin-bottom: 20px;
 }
 
@@ -763,8 +763,10 @@ div.spacer {
     list-style: none;
     display: inline-flex;
 }
+.center-nav li {
+    padding: 0px 10px;
+}
 .cnav-link {
-    margin: 0px 20px;
     color: #650100;
     text-transform: capitalize;
     font-size: 16px;
@@ -1188,6 +1190,17 @@ figcaption {
 }
 
 /***** Record Page *****/
+body.record {
+    overflow-x: hidden;
+    width: 100%;
+}
+@media (max-width: 768px)
+{
+    body.record
+    {
+        width: 768px;
+    }
+}
 
 .stc-resized-image {
     text-align:center;
@@ -1242,14 +1255,6 @@ figcaption {
     width:75%;
     padding:0;
     margin-top: 40px!important;
-}
-@media (max-width: 1750px)
-{
-    #stc-section2,
-    div[id^="openseadragon"]
-    {
-        width: 75%!important;
-    }
 }
 #stc-section3, #stc-section4, #stc-section5 {
     text-align: center;
@@ -1391,6 +1396,11 @@ h2.itemtitle.hidden-sm.hidden-xs {
 
 .image-toggler {
     margin-bottom: 0;
+    border: 2px solid #650100;
+    margin-right: 5px;
+}
+.image-toggler:hover, .image-toggler:active, .image-toggler:focus {
+    border: 2px solid rgb(175,31,36);
 }
 
 div[id$="info"] {
@@ -1540,7 +1550,7 @@ div[id^="gallery"]:hover .gallery-title{
 
 div[id^="openseadragon"] {
     margin: 0 auto;
-    width: 75%;
+    width: 100%;
     height: 600px;
     border: 2px solid #650100;
 }
@@ -1550,6 +1560,15 @@ div[id^="openseadragon"] {
 
 #toolbarDiv {
     z-index: 50;
+    margin: 0 auto;
+    width: 100%;
+}
+@media(min-width: 1751px)
+{
+    #toolbarDiv
+    {
+        width: 100%;
+    }
 }
 
 .toolbarItem {
@@ -1743,10 +1762,16 @@ label
 
 /* INSTRUMENT METADATA TABLE */
 
-.col-sm-6.col-xs-12.col-md-8.col-lg-12.metadata {
+.col-sm-6.col-xs-12.col-md-8.col-lg-12.meta-big {
     display: flex!important;
     width: 200%;
     margin-left: -50%;
+    padding: 0 75px;
+}
+.col-sm-6.col-xs-12.col-md-8.col-lg-12.meta-mid {
+    display: flex!important;
+    width: 120%;
+    margin-left: -10%;
     padding: 0 75px;
 }
 .col-sm-6.col-xs-12.col-md-8.col-lg-12.meta-smol {
@@ -1756,14 +1781,11 @@ label
 @media (max-width: 1000px)
 {
     .col-sm-6.col-xs-12.col-md-8.col-lg-12.metadata,
+    .col-sm-6.col-xs-12.col-md-8.col-lg-12.meta-mid,
     .col-sm-6.col-xs-12.col-md-8.col-lg-12.meta-smol
     {
         display: block!important;
         margin-top: -30px;
-    }
-    .child-meta-container
-    {
-        display: flex!important;
     }
     .info-box
     {
@@ -1783,7 +1805,7 @@ label
 }
 .info-box h4 {
     font-size: 18px;
-    color: #500100;
+    color: #320604;
 }
 .child-meta-container {
     display: flex;
@@ -1792,6 +1814,16 @@ label
 }
 .child-meta-container-wide {
     padding: 0 20px;
+}
+@media (max-width: 1400px)
+{
+    .child-meta {
+        width: 100%!important;
+    }
+    .child-meta-container
+    {
+        display: grid!important;
+    }
 }
 @media (max-width: 1200px)
 {
@@ -1804,7 +1836,7 @@ label
 {
     .child-meta-container
     {
-        display: flex!important;
+        display: block!important;
     }
 }
 .meta-spacing {
@@ -1815,6 +1847,9 @@ label
     width: 33.3%;
     margin: auto;
     margin-top: 0;
+}
+.child-meta h4 {
+    color:  #320604;
 }
 .table-text-justify {
     text-align: justify;
