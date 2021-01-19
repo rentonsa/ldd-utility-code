@@ -39,7 +39,9 @@
                 <div id="synagogues"></div>
                 <h2>A visual and historical record of synagogues from around the world</h2>
                 <p>
-                    Developed in association with the Museum of the Diaspora in Tel Aviv, this website gives visual access to the history of Jewish religious buildings. 
+                    Developed in association with the Museum of the <abbr data-title="Diaspora (from Ancient Greek) Term given for the dispersion of the Israelites 
+                    or Jewish people from Land of Israel and subsequent communities scattered around the world. It has come to refer to the involuntary dispersal 
+                    of any people from their geographic place of origin.">Diaspora</abbr> in Tel Aviv, this website gives visual access to the history of Jewish religious buildings. 
                     The website allows viewers to ‘visit’ synagogues in different places of the world today and brings to life historical buildings.
                     <br>
                     <a href="https://sztetl.org.pl/en/" target="_blank" rel="noopener"><i class="fa fa-eye"></i> Read More</a>

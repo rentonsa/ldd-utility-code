@@ -33,7 +33,9 @@
                     and to combat religious intolerance.
                     <br><br>
                     As Jews began to settle in Glasgow in larger numbers in the second half of the 19th century, several societies formed in order to offer financial assistance to those 
-                    who were struggling or even destitute. The Glasgow Hebrew Philanthropic Society, first mentioned in 1858, offered medical provision before the arrival of the welfare 
+                    who were struggling or even destitute. The Glasgow <abbr data-title="Hebrew: Ancient language of the Jews originating in land of Canaan in which the Torah and other holy 
+                    books and prayers are written. Hebrew was revived and modernised under Jewish nationalism in the 19th century. Modern Hebrew, 
+                    (Ivrit) is the official language of the State of Israel. See also Torah">Hebrew</abbr> Philanthropic Society, first mentioned in 1858, offered medical provision before the arrival of the welfare 
                     state. This society later became the Glasgow Jewish Board of Guardians, and is nowadays known as Jewish Care Scotland. It has its own purpose-build community centre, 
                     from which it runs a number of social clubs and services, as well as supporting the care in the community of more vulnerable groups.
                 </p>

@@ -16,8 +16,10 @@
                 </p>-->
                 <h2>Antisemitism</h2>
                 <p>
-                    In simple terms, antisemitism is hatred of Jews. Like all racisms it picks on a characteristic (here, being Jewish) that is an unchangeable part of a person, 
-                    and fills this characteristic with nasty ideas. Antisemitism is something that is brought to the Jewish people from the outside and to which Jews are asked to react.
+                    In simple terms, <abbr data-title="Antisemitism: Prejudiced beliefs, unfair treatment, persecu¬tion and/or hatred of Jewish people; incl. attacking or desecrating 
+                    Jewish institutions or symbols.">antisemitism</abbr> is hatred of Jews. Like all racisms it picks on a characteristic (here, being Jewish) that is an unchangeable part of a person, 
+                    and fills this characteristic with nasty ideas. <abbr data-title="Antisemitism: Prejudiced beliefs, unfair treatment, persecu¬tion and/or hatred of Jewish people; incl. attacking or desecrating 
+                    Jewish institutions or symbols.">Antisemitism</abbr> is something that is brought to the Jewish people from the outside and to which Jews are asked to react.
                     <br>
                     <a href="./antisemitism" rel="noopener"><i class="fa fa-eye"></i> Read More</a>
                 </p>
@@ -47,7 +49,9 @@
                 <h2>History of Jews in Scotland</h2>
                 <p>
                     Records of Jews in Scotland date back at least to the 17th century. Julius Conradus Otto, a Christian convert who later reverted to Judaism, became the first chair 
-                    of Hebrew and Oriental Languages at Edinburgh University in 1642. Herman Lyon’s 1795 mausoleum on Calton Hill is thought to be the first Jewish gravesite in Edinburgh.
+                    of <abbr data-title="Hebrew: Ancient language of the Jews originating in land of Canaan in which the Torah and other holy 
+                    books and prayers are written. Hebrew was revived and modernised under Jewish nationalism in the 19th century. Modern Hebrew, 
+                    (Ivrit) is the official language of the State of Israel. See also Torah">Hebrew</abbr> and Oriental Languages at Edinburgh University in 1642. Herman Lyon’s 1795 mausoleum on Calton Hill is thought to be the first Jewish gravesite in Edinburgh.
                     <br>
                     <a href="./history" rel="noopener"><i class="fa fa-eye"></i> Read More</a>
                 </p>
@@ -76,7 +80,9 @@
                 </p>
                 <h2>Jewish Life in Eastern Europe</h2>
                 <p>
-                    Eastern European Jews are known as Ashkenazi Jews. Jews began to settle in Poland, Russia and other parts of Eastern Europe from around the 15th century. Many moved 
+                    Eastern European Jews are known as <abbr data-title="Ashkenazi (pl. Ashkenazim; Hebrew). From Hebrew word for ‘Germany’. The term refers to Jews whose origins 
+                    and traditions can be traced to the communities that settled in Western Germany Northern France in the middle ages and then later to Eastern Europe 
+                    (Poland-Lithuania commonwealth). Their spoken language was predominantly Yiddish. See also Yiddish">Ashkenazi</abbr> Jews. Jews began to settle in Poland, Russia and other parts of Eastern Europe from around the 15th century. Many moved 
                     there from countries further West, looking for better opportunities and sometimes escaping persecution.
                     <br>
                     <a href="./easterneurope" rel="noopener"><i class="fa fa-eye"></i> Read More</a>

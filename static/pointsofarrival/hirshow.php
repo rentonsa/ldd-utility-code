@@ -20,7 +20,7 @@
                 </div> 
                 <div class="ifilm-text-cont" id="hirshow-text">
                     <p>
-                        Synagogue cantor Isaac Hirshow was born to a poor family in Russia in 1883. In 1922, he and his family emigrated to Glasgow and Isaac began work in the Gorbals. 
+                        <abbr data-title="Synagogue: Jewish place of worship.">Synagogue</abbr> cantor Isaac Hirshow was born to a poor family in Russia in 1883. In 1922, he and his family emigrated to Glasgow and Isaac began work in the Gorbals. 
                         An inspirational teacher and community leader, Isaac also became – at the age of 45 – Glasgow University’s first ever graduate in music.
                         <br><br>
                         Available in <a href="https://media.ed.ac.uk/playlist/dedicated/143796462/0_b0sex7tl/0_0uw6a2ca" alt="External link to video" title="Link to video">Original</a> 
@@ -28,15 +28,15 @@
                     </p>
                     <p class="film-themes-p">
                         <strong>Themes:</strong><br>
-                        <a>Jewish Religion</a> || 
-                        <a>Jewish Life in Eastern Europe</a> || 
-                        <a>Synagogue Music</a> || 
-                        <a>The Great Migration</a> || 
-                        <a>Jewish languages</a> || 
-                        <a>History of Jews in Scotland</a> || 
-                        <a>The Gorbals</a> || 
-                        <a>Music as a Global Language</a> || 
-                        <a>Adnan Shamdin</a>
+                        <a href="./religion">Jewish Religion</a> || 
+                        <a href="./easterneurope">Jewish Life in Eastern Europe</a> || 
+                        <a href="./synagoguemusic">Synagogue Music</a> || 
+                        <a href="./greatmigration">The Great Migration</a> || 
+                        <a href="./languages">Jewish languages</a> || 
+                        <a href="./history">History of Jews in Scotland</a> || 
+                        <a href="./gorbals">The Gorbals</a> || 
+                        <a href="./muisc">Music as a Global Language</a> || 
+                        <a href="./adnan">Adnan Shamdin</a>
                     </p>
                 </div>
             </div>

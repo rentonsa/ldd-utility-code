@@ -27,7 +27,7 @@
                     British. Only very few children were reunited with their parents after the war. Most parents had been murdered by the Nazis.
                     <br><br>
                 </p>
-                <div class="theme-img-cont" id="theme-img-offset"> 
+                <div class="theme-img-cont img-xtr"> 
                     <img class="theme-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/kindertransport2.png">
                     <p class="theme-credits">
                         Kinderstransportee Henry Wuga’s landing card. Courtesy of Henry Wuga.

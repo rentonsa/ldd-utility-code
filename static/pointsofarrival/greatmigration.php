@@ -16,7 +16,9 @@
                 <div class="theme-img-cont">
                     <img class="theme-still theme-top" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/greatmigration.png">
                     <p class="theme-credits">
-                        Warsaw Hebrew newspaper advertisement for Canadian Pacific Ocean Services. 
+                        Warsaw <abbr data-title="Hebrew: Ancient language of the Jews originating in land of Canaan in which the Torah and other holy 
+                        books and prayers are written. Hebrew was revived and modernised under Jewish nationalism in the 19th century. Modern Hebrew, 
+                        (Ivrit) is the official language of the State of Israel. See also Torah">Hebrew</abbr> newspaper advertisement for Canadian Pacific Ocean Services. 
                         Sailing from Danzig (Gdansk), Antwerp, Liverpool, London, Glasgow and Southampton.
                     <p>
                 </div>
@@ -26,7 +28,7 @@
                     world.
                     <br><br>
                 </p>
-                <div class="theme-img-cont" id="theme-img-offset">
+                <div class="theme-img-cont img-xtr">
                     <img class="theme-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/greatmigration2.png">
                     <p class="theme-credits">
                         Sarah Jacobson Alien Registration Certificate (1916). Courtesy of the Scottish Jewish Archives Centre

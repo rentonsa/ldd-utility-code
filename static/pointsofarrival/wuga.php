@@ -28,13 +28,13 @@
                     </p>
                     <p class="film-themes-p">
                         <strong>Themes:</strong><br>
-                        <a>Antisemitism</a> || 
-                        <a>Jewish Life in Nazi Germany</a> || 
-                        <a>Kindertransport</a> || 
-                        <a>War and Holocaust</a> || 
-                        <a>Welfare</a> || 
-                        <a>Jewish Food</a> || 
-                        <a>History of Jews in Scotland</a>
+                        <a href="./antisemitism">Antisemitism</a> || 
+                        <a href="./nazigermany">Jewish Life in Nazi Germany</a> || 
+                        <a href="./kindertransport">Kindertransport</a> || 
+                        <a href="./holocaust">War and Holocaust</a> || 
+                        <a href="./welfare">Welfare</a> || 
+                        <a href="./food">Jewish Food</a> || 
+                        <a href="./history">History of Jews in Scotland</a>
                     </p>
                 </div>
             </div>

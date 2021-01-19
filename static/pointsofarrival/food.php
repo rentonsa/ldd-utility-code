@@ -22,15 +22,21 @@
                 <br><br>
                 Like all aspects of Jewish culture, Jewish food is often influenced by the part of the world in which it developed. Sephardi cuisine, with its roots in Spain, 
                 Southern Europe, and the Middle East, often includes the aromatic spices, dried fruits and grains that are characteristic of those regions. By contrast, the food 
-                of Eastern European Ashkenazi Jews is known for its borsht, pickles, gefilte fish, dumplings, black bread and other dishes adapted from German and later Russian 
+                of Eastern European <abbr data-title="Ashkenazi (pl. Ashkenazim; Hebrew). From Hebrew word for ‘Germany’. The term refers to Jews whose origins 
+                and traditions can be traced to the communities that settled in Western Germany Northern France in the middle ages and then later to Eastern Europe 
+                (Poland-Lithuania commonwealth). Their spoken language was predominantly Yiddish. See also Yiddish">Ashkenazi</abbr> Jews is known for its borsht, pickles, gefilte fish, dumplings, black bread and other dishes adapted from German and later Russian 
                 and Polish cuisine. Reflecting more recent migration patterns, Israeli food incorporates many dishes and ingredients from North African and Middle Eastern Arab 
-                cuisines, such as falafel, couscous and pastries.
+                cuisines, such as <abbr data-title="Falafel: Fried chickpea croquettes, popular in Israel and Middle East.">falafel</abbr>, <abbr data-title="Couscous:  A popular North African eastern dish made from very small balls of durum wheat and served with a slow roasted chickpea stew. Often eaten on Sabbath day in Sephardic homes.  
+                See also Sephardi">couscous</abbr> and pastries.
                 <br><br>
-                Many Jewish holidays are linked with particular foods, sometimes through scripture and sometimes through tradition. Plaited challah bread is often eaten on a 
-                Friday night Sabbath meal, with a slow-cooked cholent stew on Saturday – this can be cooked before sundown on Friday, thus making sure that the Sabbath prohibition 
+                Many Jewish holidays are linked with particular foods, sometimes through scripture and sometimes through tradition. Plaited <abbr data-title="Challah: (pl. challot; Hebrew) Braided egg bread 
+                traditionally eaten on the Sabbath and other Jewish holidays.">challah</abbr> bread is often eaten on a 
+                Friday night Sabbath meal, with a slow-cooked <abbr data-title="Cholent (also chulent, tsholent; Yiddish). A slow-cooked stew, traditionally prepared for Sabbath and eaten on Saturday lunch in 
+                Ashkenazi homes.">cholent</abbr> stew on Saturday – this can be cooked before sundown on Friday, thus making sure that the Sabbath prohibition 
                 against lighting a fire (cooking) is not broken. At Passover, unleavened matzoh bread (pronounced motsah) reminds Jews of their hurried escape from bondage. 
                 The Passover seder plate also holds six other foods that symbolise the Jews’ exodus from Egypt, including bitter herbs that stand for the bitter experience of slavery, 
-                and haroset – a sticky paste of nuts, fruit, and sweet wine – to represent the building mortar used by Hebrew slaves. Observant Jews will fast on Yom Kippur, 
+                and <abbr data-title="Haroset: (also charoset; Hebrew) A dark coloured paste made of nuts, apples and sweet wine eaten at the Passover seder to commemorate the bricks and mortar the Hebrew slaves made 
+                n ancient Egypt. See also Passover; seder">haroset</abbr> – a sticky paste of nuts, fruit, and sweet wine – to represent the building mortar used by Hebrew slaves. Observant Jews will fast on Yom Kippur, 
                 the Day of Atonement, and at New Year (Rosh Hashanah) apples are dipped in honey to wish for a sweet year to come.
             </p>
         </div>

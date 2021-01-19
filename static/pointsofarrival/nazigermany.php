@@ -13,10 +13,6 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
             <h1 class="poa-page-title ind-film-title">Jewish Life in Nazi Germany</h1>   
             <div class="theme-cont">
-                <div class="theme-img-cont">
-                    <img class="ivideo-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme/.png">
-                    <p class="film-credits">Narrated by artist Emma Newcombe, film by Chris Leslie.<p>
-                </div>
                 <p class="theme-info">
                     After the Nazi party came into government in 1933 life for Jews in Germany changed. In 1934 and 1935 laws were introduced which excluded Jews from participating in 
                     social and professional life: Jews could only go grocery shopping at particular times of the day, Jews could no longer work as civil servants, Jewish doctors could 

@@ -24,10 +24,13 @@
                     a person’s ‘Jewish status’ does not depend on them holding particular beliefs or following particular practices. A person may be identified 
                     as a Jew by others, and not feel that they would choose this identification themselves. Sometimes, non-Jews wish to identify people as Jewish 
                     for reasons that have nothing to do with a person’s self-understanding. Such motivation can be racist and 
-                    <a href="./antisemitism/">antisemitic</a>. Sometimes, Jews are interested in identifying others as Jewish, whether or not such an identification is 
+                    <abbr data-title="Antisemitism: Prejudiced beliefs, unfair treatment, persecu¬tion and/or hatred of Jewish people; incl. attacking or desecrating 
+                    Jewish institutions or symbols."><a href="./antisemitism/">antisemitic</a></abbr>. Sometimes, Jews are interested in identifying others as Jewish, whether or not such an identification is 
                     meaningful to them.
                     <br><br>
-                    Ethnically, Jews divide into three major categories: <em>Ashkenazi</em> Jews whose cultures and rituals originate in northern Europe, 
+                    Ethnically, Jews divide into three major categories: <abbr data-title="Ashkenazi (pl. Ashkenazim; Hebrew). From Hebrew word for ‘Germany’. The term refers to Jews whose origins 
+                    and traditions can be traced to the communities that settled in Western Germany Northern France in the middle ages and then later to Eastern Europe 
+                    (Poland-Lithuania commonwealth). Their spoken language was predominantly Yiddish. See also Yiddish"><em>Ashkenazi</em></abbr> Jews whose cultures and rituals originate in northern Europe, 
                     <em>Sephardi</em> Jews who trace their origins to the Iberian peninsular, and <em>Mizrachi</em> Jews who hail from the Arab world, 
                     North Africa and the Middle East. Beyond that there are Jews identifying with smaller ethnic groupings such as Italian Jews, Chinese Jews, 
                     Afro-Carribbean Jews and so on.
@@ -40,7 +43,9 @@
                         <ul class="inner-religion-list">
                             <li>Saturday is the ‘day of rest’ and Jews celebrate this by taking time off from work and spending it with their family and friends. 
                                 The Jewish day begins at sunset and on Friday night is marked by the lighting of <em>shabbat</em> candles followed by a festive meal. 
-                                On Saturday morning Jews may attend religious services in the synagogue during which the <em>Torah</em> (the Hebrew Bible) is read. 
+                                On Saturday morning Jews may attend religious services in the synagogue during which the <em>Torah</em> (the <abbr data-title="Hebrew: Ancient language of the Jews originating in land of Canaan in which the Torah and other holy 
+                            books and prayers are written. Hebrew was revived and modernised under Jewish nationalism in the 19th century. Modern Hebrew, 
+                            (Ivrit) is the official language of the State of Israel. See also Torah">Hebrew</abbr> Bible) is read. 
                                 On Saturday evening shabbat is concluded by a ritual called <em>Havdalah</em> (separation) which formally separates the holy time of 
                                 <em>shabbat</em> from the ordinary time of the working week.</li>
                         </ul>
@@ -64,18 +69,34 @@
                     <li class="title-religion-li">Hebrew:
                         <ul class="inner-religion-list">
                             <li>
-                                Is the language of the Hebrew Bible. The Hebrew Bible contains 24 books that tell Jews important stories about the origins of the Jewish people, 
-                                that give guidance about right conduct, and that remember events and lessons in poetry and song. Many Jews will know some Hebrew which helps in 
+                                Is the language of the <abbr data-title="Hebrew: Ancient language of the Jews originating in land of Canaan in which the Torah and other holy 
+                            books and prayers are written. Hebrew was revived and modernised under Jewish nationalism in the 19th century. Modern Hebrew, 
+                            (Ivrit) is the official language of the State of Israel. See also Torah">Hebrew</abbr> Bible. The <abbr data-title="Hebrew: Ancient language of the Jews originating in land of Canaan in which the Torah and other holy 
+                            books and prayers are written. Hebrew was revived and modernised under Jewish nationalism in the 19th century. Modern Hebrew, 
+                            (Ivrit) is the official language of the State of Israel. See also Torah">Hebrew</abbr> Bible contains 24 books that tell Jews important stories about the origins of the Jewish people, 
+                                that give guidance about right conduct, and that remember events and lessons in poetry and song. Many Jews will know some <abbr data-title="Hebrew: Ancient language of the Jews originating in land of Canaan in which the Torah and other holy 
+                            books and prayers are written. Hebrew was revived and modernised under Jewish nationalism in the 19th century. Modern Hebrew, 
+                            (Ivrit) is the official language of the State of Israel. See also Torah">Hebrew</abbr> which helps in 
                                 getting to know biblical stories and follow the <a href="./synagoguemusic">liturgy of the synagogue</a>.
                             </li>
                             <li>
-                                Hebrew and the closely related language of Aramaic are also important in understanding the Talmud, the largest compilation of commentaries on the 
-                                Hebrew Bible and its early interpretations.
+                            <abbr data-title="Hebrew: Ancient language of the Jews originating in land of Canaan in which the Torah and other holy 
+                            books and prayers are written. Hebrew was revived and modernised under Jewish nationalism in the 19th century. Modern Hebrew, 
+                            (Ivrit) is the official language of the State of Israel. See also Torah">Hebrew</abbr> and the closely related language of <abbr data-title="Aramaic: Language spoken in Syria and much of Middle East 
+                                from the 6th century (BCE); it replaced Hebrew as the main language spoken by Jews for a few hundred years. Although it is now considered a dead language, 
+                                numerous Jewish books and prayers continue to be read and recited in Aramaic.">Aramaic</abbr> are also important in understanding the Talmud, the largest compilation of commentaries on the 
+                                <abbr data-title="Hebrew: Ancient language of the Jews originating in land of Canaan in which the Torah and other holy 
+                            books and prayers are written. Hebrew was revived and modernised under Jewish nationalism in the 19th century. Modern Hebrew, 
+                            (Ivrit) is the official language of the State of Israel. See also Torah">Hebrew</abbr> Bible and its early interpretations.
                             </li>
                             <li>
-                                Hebrew has been important as a scholarly language of the Jewish people for thousands of years. In the nineteenth century Hebrew was 
+                            <abbr data-title="Hebrew: Ancient language of the Jews originating in land of Canaan in which the Torah and other holy 
+                                books and prayers are written. Hebrew was revived and modernised under Jewish nationalism in the 19th century. Modern Hebrew, 
+                                (Ivrit) is the official language of the State of Israel. See also Torah">Hebrew</abbr> has been important as a scholarly language of the Jewish people for thousands of years. In the nineteenth century Hebrew was 
                                 ‘brought up to date’ and began to be taught as a Jewish language for everyday use. Today, almost half of the Jewish population of the world speaks 
-                                Hebrew as a native language as it is one of the official languages of the State of Israel. See also: <a href="./languages/">Jewish languages</a>.
+                                <abbr data-title="Hebrew: Ancient language of the Jews originating in land of Canaan in which the Torah and other holy 
+                            books and prayers are written. Hebrew was revived and modernised under Jewish nationalism in the 19th century. Modern Hebrew, 
+                            (Ivrit) is the official language of the State of Israel. See also Torah">Hebrew</abbr> as a native language as it is one of the official languages of the State of Israel. See also: <a href="./languages/">Jewish languages</a>.
                             </li>
                         </ul>
                     </li>
@@ -106,7 +127,9 @@
                         <ul class="inner-religion-list">
                             <li>
                                 Jews distinguish between a number of different categories of food which inform the way in which dishes are prepared and eaten. These dietary laws 
-                                originate in the Hebrew Bible and are interpreted in different ways, including a complete rejection of their relevance. Basic distinctions are the 
+                                originate in the <abbr data-title="Hebrew: Ancient language of the Jews originating in land of Canaan in which the Torah and other holy 
+                            books and prayers are written. Hebrew was revived and modernised under Jewish nationalism in the 19th century. Modern Hebrew, 
+                            (Ivrit) is the official language of the State of Israel. See also Torah">Hebrew</abbr> Bible and are interpreted in different ways, including a complete rejection of their relevance. Basic distinctions are the 
                                 following: food can be either <em>kosher</em> (that is, fit to be eaten by Jews) or <em>treif</em> (that is unfit to be eaten by Jews). 
                                 Among <em>kosher</em> foods the main distinctions are foods that contain meat (<em>fleishig</em>), foods that contain milk products (<em>milchig</em>) 
                                 and foods that are neutral (<em>parev</em>). Meat and milk may not be consumed together in the same meal. Neutral foods can be eaten with either a meat 

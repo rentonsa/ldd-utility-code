@@ -35,7 +35,7 @@
                     Manifesto’, declaring that ‘The Diasporist lives and paints in two societies at once.’
                     <br><br>
                 </p> 
-                <div class="theme-img-cont" id="theme-img-offset">
+                <div class="theme-img-cont img-xtr">
                     <img class="theme-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/arts2.png">
                     <p class="theme-credits">
                         Garnethill Boys Hostel, 1939. Courtesy of the Scottish Jewish Archives Centre
@@ -47,7 +47,8 @@
                     painters who came as refugees to escape Nazi persecution in the 1930-40s. Alongside Hilda Goldwag, the painter Josef Herman, who fled his native Poland in 1938, 
                     lived and worked in Glasgow from 1940 to 1943. Several of his paintings – such as Refugees and Memory of a Pogrom – directly address the uneasy and frightening 
                     experience of persecution and forced migration. Holocaust survivor Marianne Grant (1921-2007) also lived Glasgow, creating powerful paintings of her time as a 
-                    prisoner in Auschwitz-Birkenau and Bergen-Belsen. These paintings were reproduced in a 2002 book, entitled I knew I was painting for my life. Other significant 
+                    prisoner in <abbr data-title="Auschwitz:  German name for the Polish town Oświęcim in southern Poland and the name of the largest complex of concentration camps 
+                    built nearby during the Holocaust.">Auschwitz</abbr>-Birkenau and Bergen-Belsen. These paintings were reproduced in a 2002 book, entitled I knew I was painting for my life. Other significant 
                     Scottish Jewish artists active in Glasgow included Hannah Frank, Yankl Adler, and Paul Zuntersteinor.
                 </p>
             </div>
