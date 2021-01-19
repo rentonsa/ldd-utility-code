@@ -27,18 +27,18 @@
                     <br><br>
                     The Edinburgh <abbr data-title="Hebrew: Ancient language of the Jews originating in land of Canaan in which the Torah and other holy 
                     books and prayers are written. Hebrew was revived and modernised under Jewish nationalism in the 19th century. Modern Hebrew, 
-                    (Ivrit) is the official language of the State of Israel. See also Torah">Hebrew</abbr> Congregation was founded in 1817. The majority of Edinburgh’s Jews lived in the southside and worshipped at synagogues in Park Place and later 
+                    (Ivrit) is the official language of the State of Israel. See also Torah">Hebrew</abbr> Congregation was founded in 1817. The majority of Edinburgh’s Jews lived in the southside and worshipped at <abbr data-title="Synagogue: Jewish place of worship.">synagogues</abbr> in Park Place and later 
                     Graham Street, while a smaller hall in Richmond Court catered to newer immigrants. For a time, the rubber workers in Dalry, to the west of the centre, had their own 
-                    blekhene (‘tin roof’) synagogue. In 1932, the different groups of Edinburgh Jews were brought together, largely through the efforts of Rabbi Salis Daiches, within 
-                    the newly-built Salisbury Road synagogue, which remains the only fixed site of Jewish worship in the city.
+                    blekhene (‘tin roof’) <abbr data-title="Synagogue: Jewish place of worship.">synagogue</abbr>. In 1932, the different groups of Edinburgh Jews were brought together, largely through the efforts of Rabbi Salis Daiches, within 
+                    the newly-built Salisbury Road <abbr data-title="Synagogue: Jewish place of worship.">synagogue</abbr>, which remains the only fixed site of Jewish worship in the city.
                     <br><br>
                     Glasgow, Scotland’s largest city, has also always been home to the greatest number of the country’s Jews. The Glasgow <abbr data-title="Hebrew: Ancient language of the Jews originating in land of Canaan in which the Torah and other holy 
                     books and prayers are written. Hebrew was revived and modernised under Jewish nationalism in the 19th century. Modern Hebrew, 
                     (Ivrit) is the official language of the State of Israel. See also Torah">Hebrew</abbr> Congregation was formed in 1823, 
-                    and over the next fifty years a number of small synagogues opened around Glasgow’s city centre. In 1875, an imposing hilltop site was purchased on the corner of 
-                    Garnet and Hill Streets, followed by the construction and consecration—in 1879—of an equally impressive “Moorish” style synagogue. Garnethill Synagogue continues 
+                    and over the next fifty years a number of small <abbr data-title="Synagogue: Jewish place of worship.">synagogues</abbr> opened around Glasgow’s city centre. In 1875, an imposing hilltop site was purchased on the corner of 
+                    Garnet and Hill Streets, followed by the construction and consecration—in 1879—of an equally impressive “Moorish” style <abbr data-title="Synagogue: Jewish place of worship.">synagogue</abbr>. Garnethill <abbr data-title="Synagogue: Jewish place of worship.">Synagogue</abbr> continues 
                     to host a small and welcoming congregation, as well as being home to the Scottish Jewish Archives Centre. The majority of Glasgow’s Jewish population now live to 
-                    the southwest of the city, which has been home to several synagogues since the middle of the twentieth century.
+                    the southwest of the city, which has been home to several <abbr data-title="Synagogue: Jewish place of worship.">synagogues</abbr> since the middle of the twentieth century.
                     <br><br>
                     Other Jewish community centres established themselves in Scotland at the turn of the century. In Dundee, German Jewish merchants established a community in 1874, 
                     and in 1893 the Aberdeen <abbr data-title="Hebrew: Ancient language of the Jews originating in land of Canaan in which the Torah and other holy 
@@ -57,7 +57,7 @@
                     of Jewish immigrants from Eastern Europe. Many came with the large waves of late nineteenth-century East-West Jewish migration, escaping economic hardship and 
                     persecution in Russia, Poland and Rumania to seek out better lives in the West. These Eastern European arrivals signalled a new phase in the country’s Jewish life. 
                     Whereas the relatively small number of urban-based Jews in Scotland had already established themselves economically and were integrated into society (, many of 
-                    the post-1880 Jews were poorer and less quick to assimilate. They spoke Yiddish, or the short-lived Scots-Yiddish dialect. They were often more radical in their 
+                    the post-1880 Jews were poorer and less quick to assimilate. They spoke <abbr data-title="Yiddish: Language predominantly spoken by European Ashkenazi Jews, a mixture of medieval German, Hebrew, Aramaic and Slavic languages.">Yiddish</abbr>, or the short-lived Scots-Yiddish dialect. They were often more radical in their 
                     politics, or more orthodox in their observance. Some simply passed through Scotland on their way to America, but ended up staying – working as shopkeepers, tradesmen, 
                     tailors, furniture-makers, or sometimes travelling salesmen (known as trebblers). In Glasgow, the vast majority lived south of the river Clyde, in the Gorbals, one of 
                     the worst slums in Europe, later often moving out to suburbs such as Giffnock and Newton Mearns. In Edinburgh, most took up residence on the city’s Southside, many also 

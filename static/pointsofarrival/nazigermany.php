@@ -27,7 +27,7 @@
                     UK and it guaranteed an income. Many Jews did not have enough money and connections to leave Germany. 
                     <br><br>
                     The situation became even more stressful for Jews in November 1938 when the government organised terrorist attacks on the homes and businesses of Jews and on Jewish 
-                    religious buildings such as synagogues (the state organised terror on 9-10 November 1938 is also known as ‘Kristallnacht’, the night of broken glass). Many buildings 
+                    religious buildings such as <abbr data-title="Synagogue: Jewish place of worship.">synagogues</abbr> (the state organised terror on 9-10 November 1938 is also known as ‘Kristallnacht’, the night of broken glass). Many buildings 
                     and homes were destroyed, c.1,000 Jews were killed in violence by paramilitary organisations, and c.3,000 Jews were arrested and imprisoned.
                 </p>
             </div>

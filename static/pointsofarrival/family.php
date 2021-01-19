@@ -24,7 +24,7 @@
                     their homes in Europe to their new life in Britain in groups led by young adult volunteers. Children as young as two years old travelled without their parents and 
                     were collected in Harwich and London by people they didn’t know and who spoke a language they didn’t understand. The <abbr data-title="Kindertransport: (German for 
                     ‘children’s transport’) Rescue of c.10,000 unaccompanied Jewish children from Germany and Nazi-occupied Europe to Britain 1938-1939. The last transport was 1940 
-                    when the start of World War II made further rescue impossible."><a href="./kindertransport">Kindertransport</a></abbr> was organised very quickly, 
+                    when the start of World War II made further rescue impossible.">Kindertransport</abbr> was organised very quickly, 
                     transporting children from Germany, Austria and Czechoslovakia to Britain from December 1938 to September 1939. Most often children had to leave quickly, with little 
                     opportunity to learn English before they left Europe. 
                     <br><br>

@@ -28,8 +28,8 @@
                     different languages, foods, songs, and religious traditions – some of which would have been new to them. Immigrants maintained ties through societies, unions and 
                     social events, but many also mixed more freely with other nationalities and ethnicities.
                     <br><br>
-                    From approximately 1880 until after World War II, the Gorbals was the centre of Jewish life in Glasgow. The city’s largest synagogue was built on South Portland 
-                    Street in 1901, and in the 1930s the Glasgow Jewish Institute was founded next door. The Jewish Institute hosted sports clubs, youth groups, dances, concerts and 
+                    From approximately 1880 until after World War II, the Gorbals was the centre of Jewish life in Glasgow. The city’s largest <abbr data-title="Synagogue: Jewish place of worship.">synagogue</abbr> 
+                    was built on South Portland Street in 1901, and in the 1930s the Glasgow Jewish Institute was founded next door. The Jewish Institute hosted sports clubs, youth groups, dances, concerts and 
                     other social events. It had its own theatre, and the Jewish Institute Players – under their leader Avrom Greenbaum – won many amateur dramatic awards. From the 
                     1940s onwards, increasing numbers of Jews moved out of the Gorbals and further south to areas such as Giffnock, which is now home to the majority of Glasgow’s 
                     Jewish population.

@@ -29,7 +29,7 @@
                     Music, however, can also lead to an increased perception of ‘difference’. In the 1950s and 60s, the calypso and ska music that Afro-Caribbean immigrants brought to 
                     the UK elicited both positive and negative reactions. Some saw it as an exciting and new sound, others as a threat. The same was true of African American hip-hop in 
                     the 1980s. Nevertheless, young people from different backgrounds often find common ground through music. Musical styles such as Bhangra and Grime developed as a result 
-                    0f the mixing of different cultures. And in a similar way, people from different parts of the world can find joy and meaning in music that comes from the other side of 
+                    of the mixing of different cultures. And in a similar way, people from different parts of the world can find joy and meaning in music that comes from the other side of 
                     the globe.
                 </p>
             </div>

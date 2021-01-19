@@ -70,7 +70,7 @@
                             </div>
                         </a>
                         <p>
-                            Synagogue cantor Isaac Hirshow was born to a poor family in Russia in 1883. In 1922, 
+                            <abbr data-title="Synagogue: Jewish place of worship.">Synagogue</abbr> cantor Isaac Hirshow was born to a poor family in Russia in 1883. In 1922, 
                             he and his family emigrated to Glasgow and Isaac began work in the Gorbals.
                             <br><br>
                             Available in <a href="https://media.ed.ac.uk/playlist/dedicated/143796462/0_b0sex7tl/0_lb5tqgvj" alt="External link to video" title="Link to video">Original</a> 
@@ -105,7 +105,9 @@
                             </div>
                         </a>
                         <p>
-                            Dorrith Sim was one of the thousands of Jewish children who arrived in the UK in 1939 on what became known as the Kindertransport.
+                            Dorrith Sim was one of the thousands of Jewish children who arrived in the UK in 1939 on what became known as the <abbr data-title="Kindertransport: (German for 
+                            ‘children’s transport’) Rescue of c.10,000 unaccompanied Jewish children from Germany and Nazi-occupied Europe to Britain 1938-1939. The last transport was 1940 
+                            when the start of World War II made further rescue impossible.">Kindertransport</abbr>.
                             <br><br>
                             Available in <a href="https://media.ed.ac.uk/playlist/dedicated/143796462/0_b0sex7tl/0_hk75k72k" alt="External link to video" title="Link to video">Original</a> 
                             or <a href="https://media.ed.ac.uk/playlist/dedicated/143796462/0_b0sex7tl/0_oz3g2szj" alt="External link to subtitled video" title="Link to subtitled video">Subtitled</a> versions.

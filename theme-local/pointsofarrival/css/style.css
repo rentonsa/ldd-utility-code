@@ -1115,8 +1115,7 @@ figcaption {
     letter-spacing: .1em;
 }
 .panel-body a {
-    color: 
-#393e3f;
+    color: #393e3f;
     text-decoration: none!important;
 }
 .panel-body a:hover {
@@ -2180,16 +2179,14 @@ p.theme-info {
     width: 325px;
     height: 100%;
     left: 0;
-    background-color: 
-#393e3f;
+    background-color: #393e3f;
     border-right: #758d92 5px solid;
     border-bottom: #758d92 5px solid;
     z-index: 999;
     overflow-y: scroll;
 }
 .accordion, .non-accordion {
-    background-color: 
-#393e3f;
+    background-color: #393e3f;
     color: #fff;
     cursor: pointer;
     width: 100%;
