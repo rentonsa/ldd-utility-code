@@ -14,7 +14,7 @@
             </p>
             <br>
             <p class="index-para">
-                The films are part of the work of the AHRC-funded project <a href="http://jewishmigrationtoscotland.is.ed.ac.uk">Jewish Lives, Scottish Spaces: Jewish Migration to Scotland, 1880-1950</a>, 
+                The films are part of the work of the AHRC-funded project <a href="http://jewishmigrationtoscotland.is.ed.ac.uk"><strong>Jewish Lives, Scottish Spaces: Jewish Migration to Scotland, 1880-1950</strong></a>, 
                 and they were produced by documentary film-maker Chris Leslie, whose artistry, imagination and respect for his subject brings alive each of these five histories.
             </p>
         </div>
@@ -45,8 +45,8 @@
                     <div id="gallerywespe" class="film-info landing-grid">
                     </div>
                     <div class="gallery-title">
-                        <h2 class="grid-item-title" id="title-ofset1">Themes</h2>
-                        <h2 class="grid-item-title-shadow" id="title-ofset1-shadow">Themes</h2>
+                        <h2 class="grid-item-title">Themes</h2>
+                        <h2 class="grid-item-title-shadow">Themes</h2>
                     </div>
                 </div>
             </a>
@@ -55,8 +55,8 @@
                     <div id="galleryethpe" class="film-info landing-grid">
                     </div>
                     <div class="gallery-title">
-                        <h2 class="grid-item-title" id="title-ofset2">Resources</h2>
-                        <h2 class="grid-item-title-shadow" id="title-ofset2-shadow">Resources</h2>
+                        <h2 class="grid-item-title" id="title-ofset">Resources</h2>
+                        <h2 class="grid-item-title-shadow" id="title-ofset-shadow">Resources</h2>
                     </div>
                 </div>
             </a>
