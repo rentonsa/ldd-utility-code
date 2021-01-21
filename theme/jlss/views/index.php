@@ -1,9 +1,8 @@
 <div class="col-md-9 col-sm-9 col-xs-12">
-   
-   
+
     <div id="index-blurb">
         <p alt="SJAC site blurb">
-        SJAC’s diverse collections include old Synagogue minute books and registers, membership lists, photographs, oral histories, 
+        SJAC’s diverse collections include old <abbr data-title="Synagogue: Jewish place of worship.">Synagogue</abbr> minute books and registers, membership lists, photographs, oral histories, 
         testimonies, annual reports of communal organisations, books of Scottish Jewish interest, friendly society regalia, personal 
         papers, war medals, ceremonial keys, newspapers, magazines, trophies, plaques, paintings and sculptures, immigration and 
         naturalisation papers, passports and correspondence.
@@ -11,7 +10,7 @@
         We also hold copies of records of all of the 17 Jewish cemeteries in Scotland, indexed on our computer database.
 
         We have a computer database of almost 40,000 Scottish Jews. Information is constantly being added to this database, which 
-        includes information from over 70 sources such as cemetery lists, synagogue registers, charity subscription lists and census 
+        includes information from over 70 sources such as cemetery lists, <abbr data-title="Synagogue: Jewish place of worship.">synagogue</abbr> registers, charity subscription lists and census 
         records.
         </p>
     </div>
@@ -20,7 +19,7 @@
     <div class="content-divider-index"><p>divider</p></div>
 
     <!--<?php print_r($docs);?>-->
-   
+
     <div class="row">
             <div class="col-sm-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="clickbox-margin">
