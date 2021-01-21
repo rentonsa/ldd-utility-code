@@ -1372,11 +1372,11 @@ div[id$="info"] {
     float: right;
     font-size: 18px;
     text-align: justify;
-    margin: 10px 0px 10px 25vh;
+    margin: 10px 0px 10px 350px;
 }
 
 #galleries {
-    padding: 100px 50px 0 25vh;
+    padding: 100px 50px 0 350px;
     width: 107%;
 }
 #galleries .grid-sizer {
@@ -1475,47 +1475,161 @@ div[id^="gallery"] .gallery-title{
 #title-ofset-shadow {
     margin-left: 38px;
 }
-/*.landing-background:hover .grid-item-title {
-    color: #2b2e2e;
-}*/
-
-/*.landing-background:hover .grid-item-title-shadow {
-    color: #fff;
-}*/
-/*div[id^="gallery"]:hover .gallery-title{
-    display: block;
-    color: #fff;
-    letter-spacing: 2px;
-    background: rgb(57,62,63); 
-    background: rgba(57,62,63, 0.7);
-    width: 100%;
-    height: 100%;
-    transition: .8s ease;
+@media (max-width: 2000px)
+{
+    .grid-item-title
+    {
+        margin-left: 40px;
+    }
+    .grid-item-title-shadow
+    {
+        margin-left: 43px;
+    }
+    #title-ofset 
+    {
+        margin-left: 25px;
+    }
+    #title-ofset-shadow 
+    {
+        margin-left: 28px;
+    }
 }
-div[id^="gallery"]:hover .text-hover {
-    z-index: 1;
-    margin: 45px;
-    margin-left: -75px;
+@media (max-width: 1800px)
+{
+    .grid-item-title
+    {
+        margin-left: 30px;
+    }
+    .grid-item-title-shadow
+    {
+        margin-left: 33px;
+    }
+    #title-ofset 
+    {
+        margin-left: 15px;
+    }
+    #title-ofset-shadow 
+    {
+        margin-left: 18px;
+    }
 }
-div[id^="gallery"]:hover .text-overlay {
-    margin: 45px;
-    margin-left: -72px;
+@media (max-width: 1600px)
+{
+    .grid-item-title
+    {
+        margin-left: 20px;
+    }
+    .grid-item-title-shadow
+    {
+        margin-left: 23px;
+    }
+    #title-ofset 
+    {
+        margin-left: 5px;
+    }
+    #title-ofset-shadow 
+    {
+        margin-left: 8px;
+    }
 }
-div[id^="gallery"]:hover .text-hover .thht {
-    margin-left: -80px;
+@media (max-width: 1600px)
+{
+    .grid-item-title
+    {
+        font-size: 24px;
+    }
+    .grid-item-title-shadow
+    {
+        font-size: 24px; 
+        margin-left: 22px;   
+    }
+    #title-ofset 
+    {
+        font-size: 24px;    
+    }
+    #title-ofset-shadow 
+    {
+        font-size: 24px; 
+        margin-left: 7px;  
+    }
 }
-div[id^="gallery"]:hover .text-overlay.thht {
-    margin-left: -72px;
+@media (max-width: 1400px)
+{
+    .grid-item-title
+    {
+        margin-left: 10px;
+    }
+    .grid-item-title-shadow
+    {
+        margin-left: 12px;
+    }
+    #title-ofset 
+    {
+        margin-left: -8px;
+    }
+    #title-ofset-shadow 
+    {
+        margin-left: -6px;
+    }
+    .right-nav 
+    {
+        margin-top: 20px;
+    }
+    .right-nav img {
+        width: 40px;
+        margin-right: 20px;
+    }
+    #uoe {
+        width: 60px;
+    }
+    #uog {
+        width: 90px;
+        height: 80px;
+    }
 }
-div[id^="gallery"]:hover .rsrc {
-    margin: 45px;
-    margin-left: -107px;
+@media (max-width: 1200px)
+{
+    .nav-logo {
+        width: 400px;
+        margin-top: 20px;
+    }
+    .nav-title p
+    {
+        margin-left: 200px;
+    }
+    .grid-item-title
+    {
+        margin-left: 0px;
+        font-size: 20px;
+    }
+    .grid-item-title-shadow
+    {
+        margin-left: 2px;
+        font-size: 20px;
+    }
+    #title-ofset 
+    {
+        margin-left: -18px;
+        font-size: 20px;
+    }
+    #title-ofset-shadow 
+    {
+        margin-left: -16px;
+        font-size: 20px;
+    }
 }
-div[id^="gallery"]:hover #rsrc-hov {
-    margin: 45px;
-    margin-left: -110px;
-}*/
-
+@media (max-width: 1000px)
+{
+    .right-nav {
+        margin-top: 40px;
+    }
+    #uoe {
+        display: none;
+    }
+    #uog {
+        display: none;
+    }
+}
 /* catagory title for mobile/tablet */
 .mob-title
 {
@@ -1668,134 +1782,6 @@ dl {
 {
     width: 23%!important;
 }
-
-/*@media (min-width: 768px)
-{
-    .dl-horizontal dt
-    {
-        float: unset!important;
-    }
-    dd {
-        margin-left: 0px!important;
-    }   
-    .col-sm-6
-    {
-        width: 100%!important;
-    }
-    .grid-item
-    {
-        width: unset!important;
-    }
-    .index-grid
-    {
-        width: 48%!important;
-    }
-}
-
-@media (max-width: 1199px)
-{
-    .col-sm-6 .col-xs-12 .col-md-8 .col-lg-12 metadata
-    {
-        width: 100%!important;
-    }
-    .grid-item
-    {
-        width: unset!important;
-    }
-    .index-grid
-    {
-        width: 32%!important;
-    }
-}
-
-@media (max-width: 809px)
-{
-    .index-grid
-    {
-        width: 31%!important;
-    }
-}
-@media (max-width: 488px)
-{
-    .index-grid
-    {
-        width: 100%!important;
-    }
-}
-
-@media (max-width: 1124px)
-{
-    .index-grid h4,
-    .mob-title h4 
-    {
-        font-size: 14px!important;
-    }
-    .gallery-title,
-    .mob-title
-    {
-        width: 65%;
-    }
-}
-@media (max-width: 900px)
-{
-    .index-grid h4,
-    .mob-title h4  
-    {
-        font-size: 12px!important;
-    }
-}
-@media (max-width: 830px)
-{
-    .index-grid h4,
-    .mob-title h4 
-    {
-        font-size: 10px!important;
-    }
-}
-@media (max-width: 768px)
-{
-    .gallery-title
-    {
-        display: none!important;
-    }
-    .mob-title
-    {
-        visibility: visible!important;
-        display: block!important;
-    }
-}
-@media (max-width: 650px)
-{
-    .gallery-title,
-    .mob-title
-    {
-        width: 75%;
-    }
-}
-@media (max-width: 550px)
-{
-    .gallery-title,
-    .mob-title
-    {
-        width: 100%;
-    }
-}
-@media (max-width: 488px)
-{
-    .index-grid h4,
-    .mob-title h4 
-    {
-        font-size: 14px!important;
-    }
-    .gallery-title,
-    .mob-title
-    {
-        width: 50%;
-    }
-}*/
-/* INSTRUMENT METADATA TABLE END */
-
-
 
 /* STATIC PAGE CUSTOMISATIONS */
 /* -----> Global <----- */
