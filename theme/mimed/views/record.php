@@ -404,6 +404,11 @@ if(isset($solr[$bitstream_field]) && $link_bitstream) {
                     foreach($solr[$element] as $index => $metadatavalue) {
                         // if it's a facet search
                         // make it a clickable search link
+
+                        // SR - for Arnold 2020/12/04
+                        // replace | with nbsp;
+
+                        $metadatavalue = str_replace('|', '&nbsp;', $metadatavalue);
                         if(in_array($key, $filters)) {
 
                             $orig_filter = urlencode($metadatavalue);

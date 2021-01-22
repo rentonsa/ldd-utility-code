@@ -39,7 +39,7 @@
 
 </script>
 <div class="col-md-9 col-sm-9 col-xs-12">
-    <h1>Overview</h1>
+    <h1>Browse the Collections</h1>
     <p></p>
 
     <?php
@@ -66,19 +66,22 @@
         return $response;
     }
 
-    function getTree() {
+    function getTree($as_base_url, $as_url, $as_user, $as_password) {
         //$url = $this->base_url . $this->solr_collection . "/select?";
-        $base_url = 'http://lac-archives-live.is.ed.ac.uk:8089';
+        $base_url = $as_base_url;
 
         // Login
-        $result = request($base_url . "/users/admin/login", ['password' => 'Z"/)}4ck{Z[}73Q)']);
+        $result = request($base_url . "/users/" . $as_user . "/login",
+            ['password' => $as_password]);
+        log_message('debug', $base_url . "/users/" . $as_user . "/login");
         $json_obj = json_decode($result, TRUE);
 
-        log_message("debug", "Logged in to ArchivesSpace REST API.");
 
+        if($json_obj !== NULL)  {
+        log_message("debug", "Logged in to ArchivesSpace REST API.");
         $session = $json_obj['session'];
 
-        $url = $base_url . '/repositories/15/resources/86984/tree';
+        $url = $base_url . $as_url;
         //$url = $base_url . '/repositories/15/archival_objects/164991';
 
         $result = request($url, null, false, $session);
@@ -87,13 +90,30 @@
 
         // Logout?
 
+        }
+        else {
+            log_message('debug', "Could not log into ArchivesSpace REST API");
+            return array('children' => array());
+        }
+
         return $json_obj;
 
     }
 
-    function getArchivalObj($record_uri) {
+    function getArchivalObj($record_uri, $number_of_units=1) {
         $units = explode('/', $record_uri);
-        return $units[count($units)-1];
+        $len_units = count($units);
+        $return_string = '';
+
+        for ($i = $len_units - $number_of_units; $i < $len_units ; $i++) {
+            $return_string .= $units[$i];
+
+            if($i != $len_units -1) {
+
+                $return_string .= '/';
+            }
+        }
+        return $return_string;
 
     }
 
@@ -112,7 +132,7 @@
                 $output = '<ul id="ul_' . $branch_count . '_' . $sub_branch_count . '" style="display: none;">';
             }
             else {
-                $output = '<ul id="ul_' . $branch_count . '" style="display: none;">';
+                $output = '<ul id="ul_' . $branch_count . '">';
                 $sub_branch_count = 0;
             }
 
@@ -129,8 +149,18 @@
 
                 }
 
-                $output .= '<a href="record/' . getArchivalObj($sub_branch["record_uri"]) . '/archival_object">' . cleanTitle($sub_branch['title']) . '</a></li>';
-                $output .= $sub_output;
+                $output .= '<a href="record/' . getArchivalObj($sub_branch["record_uri"]) . '/archival_object">';
+                $title = cleanTitle($sub_branch['title']);
+                $output .= $title . ' <span style="font-size: smaller;">(';
+
+                if(strpos($title, 'Interviews of') > -1) {
+                    $output .= getArchivalObj($sub_branch['component_id'], 2);
+                }
+                else {
+                    $output .= getArchivalObj($sub_branch['component_id']);
+                }
+
+                $output .=  ')</span></a></li>' . $sub_output;
                 $branch_count++;
 
             }
@@ -138,20 +168,31 @@
 
         }
 
+        //log_message('debug', 'OUTPUT: ' . $output);
+
         return $output;
     }
 
     ?>
-    <ul>
+    <!--<ul>-->
         <?php
-    foreach(getTree()['children'] as $index => $branch) { ?>
-        <li class="overview_list" style="margin: 0.5em; font-size: 18px;"><button class="plus-button" onclick="toggleButton(this, '#ul_<?= $index ?>');">+</button>&nbsp;<?= cleanTitle($branch['title']) ?></li>
+
+        $as_base_url = $this->config->item('skylight_archivesspace_url');
+        $as_url = $this->config->item('skylight_archivesspace_tree');
+        $as_user = $this->config->item('skylight_archivesspace_user');
+        $as_password = $this->config->item('skylight_archivesspace_password');
+
+    foreach(getTree($as_base_url, $as_url, $as_user, $as_password)['children'] as $index => $branch) {
+        //print($index);
+        /* <li class="overview_list" style="margin: 0.5em; font-size: 18px;"><button class="plus-button" onclick="toggleButton(this, '#ul_<?= $index ?>');">+</button>&nbsp;<?= cleanTitle($branch['title']) ?></li> */
+        if($index == 0) { ?>
+        <li class="overview_list" style="margin: 0.5em; font-size: 18px; font-weight: bold;"><button class="plus-button" onclick="toggleButton(this, '#ul_<?= $index ?>');">-</button>&nbsp;<?= cleanTitle($branch['title']) ?></li>
         <?= getChildren($branch, $index, null) ?>
 
-        <?php //print($value['title'] . '<br/>');
+        <?php  } //print($value['title'] . '<br/>');
         //print_r($key . '=' . $value . '<br/>');
     }
 
     ?>
-    </ul>
+    <!--</ul>-->
 </div>

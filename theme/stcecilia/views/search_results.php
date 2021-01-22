@@ -1,4 +1,4 @@
-<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 ">
+<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 inst-results">
     <?php
 
     // Set up some variables to easily refer to particular fields you've configured
@@ -21,7 +21,7 @@
 
     <div class="container-fluid">
         <div class="searchFoundRow">
-            <span class="searchFound"><?php echo $rows ?> instruments found </span>
+            <span class="searchFound" title="Number of instruments found related to your search"><?php echo $rows ?> instruments found </span>
         </div>
         <div id="results-container">
             <div class="results-row">
@@ -52,8 +52,8 @@
                         //change to stop LUNA erroring on redirect
                         $linkURI = str_replace('http://', 'https://', $linkURI);
                         if (false === $content) {
-                            $thumbnailLink = 'href="./record/' . $doc['id'] . '" title = "' . $doc[$title_field][0] . '"';
-                            $thumbnailImg = '<img class="img-responsive record-thumbnail-search" src="../theme/stcecilia/images/comingsoon.gif"  title="' . $doc[$title_field][0] . '" />';
+                            $thumbnailLink = 'href="./record/' . $doc['id'] . '" title = "View ' . $doc[$title_field][0] . '"';
+                            $thumbnailImg = '<img class="img-responsive record-thumbnail-search" src="../theme/stcecilia/images/comingsoon.gif"  title="Read more about the ' . $doc[$title_field][0] . '" />';
                         }
                         else
                         {
@@ -70,27 +70,27 @@
                             }
                             $linkURI = str_replace('full/96,', 'full'.$parms, $linkURI);
 
-                            $thumbnailLink = 'href="./record/' . $doc['id'] . '" title = "' . $doc[$title_field][0] . '"';
-                            $thumbnailImg = '<img class="img-responsive record-thumbnail-search" src="' . $linkURI . '"  title="' . $doc[$title_field][0] . '" />';
+                            $thumbnailLink = 'href="./record/' . $doc['id'] . '" title = "View ' . $doc[$title_field][0] . '"';
+                            $thumbnailImg = '<img class="img-responsive record-thumbnail-search" src="' . $linkURI . '"  title="Read more about the ' . $doc[$title_field][0] . '" />';
                         }
                     }
                     else
                     {
-                        $thumbnailLink  =  'href="./record/'.$doc['id'].'" title = "'. $doc[$title_field][0].'"';
-                        $thumbnailImg = '<img class="img-responsive record-thumbnail-search" src="../theme/stcecilia/images/comingsoon1.gif"  title="' . $doc[$title_field][0] . '" />';
+                        $thumbnailLink  =  'href="./record/'.$doc['id'].'" title = "View '. $doc[$title_field][0].'"';
+                        $thumbnailImg = '<img class="img-responsive record-thumbnail-search" src="../theme/stcecilia/images/comingsoon1.gif"  title="Read more about the ' . $doc[$title_field][0] . '" />';
                     }
                 }
                 else
                 {
-                    $thumbnailLink  =  'href="./record/'.$doc['id'].'" title = "'. $doc[$title_field][0].'"';
-                    $thumbnailImg = '<img class="img-responsive record-thumbnail-search" src="../theme/stcecilia/images/comingsoon.gif"  title="' . $doc[$title_field][0] . '" />';
+                    $thumbnailLink  =  'href="./record/'.$doc['id'].'" title = "View '. $doc[$title_field][0].'"';
+                    $thumbnailImg = '<img class="img-responsive record-thumbnail-search" src="../theme/stcecilia/images/comingsoon.gif"  title="Read more about the ' . $doc[$title_field][0] . '" />';
                 }
 
                 ?>
 
                     <div class="column">
                         <div class="thumbnail-cont">
-                            <a <?php echo $thumbnailLink; ?> >
+                            <a <?php echo $thumbnailLink; ?> title = "Read more about the '. $doc[$title_field][0].'">
                                 <?php echo $thumbnailImg; ?>
                             </a>
                             <figcaption>

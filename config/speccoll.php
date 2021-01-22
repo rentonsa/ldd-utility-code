@@ -12,11 +12,13 @@ $config['skylight_fullname'] = 'Special Collections';
 // Global CodeIgniter ENVIRONMENT variable is set in skylight/index.php
 if (ENVIRONMENT == 'development') {
     $config['skylight_ga_code'] = '';
-    $config['skylight_container_id'] = '91';
+    $config['skylight_container_id'] = '89c89f7c-a883-443e-8bf4-431234e91d3e';
+    $config['skylight_manifest_endpoint'] = 'https://test.collectionsmedia.is.ed.ac.uk/iiif/';
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-9';
-    $config['skylight_container_id'] = '91';
+    $config['skylight_container_id'] = '05a4fd68-f752-4d4e-a4fc-030d2642091c';
+    $config['skylight_manifest_endpoint'] = 'https://collectionsmedia.is.ed.ac.uk/iiif/';
 }
 
 $config['skylight_adminemail'] = 'lddt@mlist.is.ed.ac.uk';
@@ -40,7 +42,15 @@ $config['skylight_fields'] = array(
     'Bitstream'=> 'dc.format.original.en',
     'ImageURI'=> 'dc.identifier.imageUri.en',
     'Images'=>'dc.format.extent.en',
-    'Manifest'=> 'dc.identifier.manifest.en'
+    'Manifest'=> 'dc.identifier.manifest.en',
+    'Contributor'=>'dc.contributor.other.en',
+    'Notes'=>'dc.description.comments.en',
+    'Publisher'=>'dc.publisher.en',
+    'Date of publication'=>'dc.date.issued.en',
+    'Creator'=>'dc.creator.en',
+    'Place of publication'=>'dc.coverage.spatial.en',
+    'Full Title' => 'dc.title.alternative.en'
+
 );
 
 $config['skylight_recorddisplay'] = array(
@@ -48,7 +58,14 @@ $config['skylight_recorddisplay'] = array(
     'Author',
     'Shelfmark',
     'Date',
-    'Collection');
+    'Collection',
+    'Contributor',
+    'Notes',
+    'Publisher',
+    'Date of publication',
+    'Creator',
+    'Place of Publication', 
+    'Type');
 
 $config['skylight_date_filters'] = array();
 $config['skylight_filters'] = array('Author' => 'author_filter', 'Type' => 'type_filter', 'Collection'=> 'collection_filter');

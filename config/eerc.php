@@ -1,5 +1,4 @@
 <?php
-
 $config['skylight_appname'] = 'eerc';
 
 // Uncomment this if you are using a url of the form http://.../art/...
@@ -26,6 +25,11 @@ else {
     //$config['skylight_solrbase'] = 'http://lac-repo-live11.is.ed.ac.uk:8090/';
     //    $config['skylight_link_url'] = 'http://archives.collections.ed.ac.uk';
 }
+
+$config['skylight_archivesspace_user'] = 'admin';
+$config['skylight_archivesspace_password'] = '?';
+$config['skylight_archivesspace_url'] = 'http://lac-archives-live.is.ed.ac.uk:8089';
+$config['skylight_archivesspace_tree'] = '/repositories/15/resources/86984/tree';
 
 $config['skylight_repository_type'] = 'archivesspace'; // Demo 'dspace'
 $config['skylight_repository_version'] = '1';

@@ -25,6 +25,7 @@
                         <ul>
                             <li><a href="./accessibility">Website accessibility</a></li>
                             <li><a href="https://www.ed.ac.uk/about/website/freedom-information">Freedom of information publication scheme</a></li>
+                            <li><a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc/services/copying-and-digitisation/image-licensing/takedown-policy" target="_blank" title="Takedown Policy">Takedown Policy</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-xs-6">

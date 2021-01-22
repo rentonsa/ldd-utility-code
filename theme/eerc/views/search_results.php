@@ -140,7 +140,7 @@ else {
                                 if (strlen($b) > $max_length_summary)
                                     $after = substr($b, 0, $max_length_summary);
 
-                                echo $before . '<b>' . $needle . '</b>' . $after . '...<br/>';
+                                echo $before . '<b class="hit">' . $needle . '</b>' . $after . '...<br/>';
                             }
 
                         }
