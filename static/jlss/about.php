@@ -46,7 +46,7 @@
         <div class="content-divider-inline"><p>divider</p></div>
 
         <div class="about-para">
-            <p>The Centre collects a wide range of material, and its large collection includes old synagogue minute books and registers, 
+            <p>The Centre collects a wide range of material, and its large collection includes old <abbr data-title="Synagogue: Jewish place of worship.">synagogue</abbr> minute books and registers, 
                 membership lists, over 6,000 photographs, oral history recordings, annual reports of many communal organisations, a small 
                 library of books of Scottish Jewish interest, friendly society regalia, personal papers, war medals, ceremonial keys, 
                 newspapers, magazines, trophies, plaques, paintings and sculptures.

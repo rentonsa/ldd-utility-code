@@ -27,12 +27,12 @@
                     </p>
                     <p class="film-themes-p"> 
                         <strong>Themes:</strong><br>
-                        <a>Jewish Culture</a> || 
-                        <a>Antisemitism</a> || 
-                        <a>Jewish Life in Nazi Germany</a> || 
-                        <a>War and Holocaust</a> || 
-                        <a>History of Jews in Scotland</a> || 
-                        <a>Jewish Art and Artists</a>
+                        <a href="./culture">Jewish Culture</a> || 
+                        <a href="./antisemitism">Antisemitism</a> || 
+                        <a href="./nazigermany">Jewish Life in Nazi Germany</a> || 
+                        <a href="./holocaust">War and Holocaust</a> || 
+                        <a href="./history">History of Jews in Scotland</a> || 
+                        <a href="./arts">Jewish Art and Artists</a>
                     </p>
                 </div>
             </div>

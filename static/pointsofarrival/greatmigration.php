@@ -16,7 +16,9 @@
                 <div class="theme-img-cont">
                     <img class="theme-still theme-top" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/greatmigration.png">
                     <p class="theme-credits">
-                        Warsaw Hebrew newspaper advertisement for Canadian Pacific Ocean Services. 
+                        Warsaw <abbr data-title="Hebrew: Ancient language of the Jews originating in land of Canaan in which the Torah and other holy 
+                        books and prayers are written. Hebrew was revived and modernised under Jewish nationalism in the 19th century. Modern Hebrew, 
+                        (Ivrit) is the official language of the State of Israel. See also Torah">Hebrew</abbr> newspaper advertisement for Canadian Pacific Ocean Services. 
                         Sailing from Danzig (Gdansk), Antwerp, Liverpool, London, Glasgow and Southampton.
                     <p>
                 </div>
@@ -26,7 +28,7 @@
                     world.
                     <br><br>
                 </p>
-                <div class="theme-img-cont" id="theme-img-offset">
+                <div class="theme-img-cont img-xtr">
                     <img class="theme-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/greatmigration2.png">
                     <p class="theme-credits">
                         Sarah Jacobson Alien Registration Certificate (1916). Courtesy of the Scottish Jewish Archives Centre
@@ -36,7 +38,9 @@
                     The Pale of Settlement was an area of the Russian Empire in which Jews had been permitted to settle in early modern times (the 15th and 16th centuries) following 
                     the movement of Jews from western and southern Europe towards the eastern Europe. This early modern migration was caused in part by antisemitic attacks and policies 
                     that drove Jews from western European countries and the expulsion of Jews from Christianised Spain in 1492. The Russian Empire allowed Jews to settle and form their 
-                    own communities in relative safety. The safety was regularly disrupted by pogroms (anti-Jewish riots), particularly during Christian religious festivals such as Easter. 
+                    own communities in relative safety. The safety was regularly disrupted by <abbr data-title="pogrom Mob violence against Jewish people, 
+                    homes, and property. Usually the term refers more specifically to the anti-Jewish riots in the former Russian empire in the 19th and 20th centuries.">pogroms</abbr> 
+                    (anti-Jewish riots), particularly during Christian religious festivals such as Easter. 
                     Easter celebrates the crucifixion and resurrection of Jesus Christ and the biblical stories in the New Testament lay part of the blame for Jesus’s death on the Jewish 
                     authorities of the time.  Although the Roman justice system was responsible for carrying out crucifixions, many Christians throughout the ages blamed Jews for the death 
                     of Jesus and used the opportunity to take their anger and other frustrations out on their Jewish neighbours. While Jews were able to prosper in the Pale of Settlement, 

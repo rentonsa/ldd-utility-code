@@ -28,12 +28,12 @@
                     </p>
                     <p class="film-themes-p">
                         <strong>Themes:</strong><br>
-                        <a>Jewish Life in Eastern Europe</a> || 
-                        <a>The Great Migration</a> || 
-                        <a>History of Jews in Scotland</a> || 
-                        <a>Jewish Languages</a> || 
-                        <a>Welfare</a> || 
-                        <a>Jewish Religion</a>
+                        <a href="./easterneurope">Jewish Life in Eastern Europe</a> || 
+                        <a href="./greatmigration">The Great Migration</a> || 
+                        <a href="./history">History of Jews in Scotland</a> || 
+                        <a href="./languages">Jewish Languages</a> || 
+                        <a href="./welfare">Welfare</a> || 
+                        <a href="./religion">Jewish Religion</a>
                     </p>
                 </div>
             </div>

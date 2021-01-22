@@ -20,7 +20,7 @@
                 <div class="ifilm-text-cont" id="wuga-text">
                     <p>
                         Henry Wuga arrived in Glasgow from Nuremberg as a teenage refugee. On leaving school, he began a successful career as a caterer and raised a family with his wife 
-                        Ingrid. Henry often spoke about his experiences of being a refugee and the ongoing dangers of persecution. Now in his 90s he is still an outspoken advocate of 
+                        Ingrid. Henry often spoke about his experiences of being a refugee and the ongoing dangers of persecution. Now in his 90's he is still an outspoken advocate of 
                         tolerance, acceptance and mutual understanding.
                         <br><br>
                         Available in <a href="https://media.ed.ac.uk/playlist/dedicated/143796462/0_b0sex7tl/0_0uw6a2ca" alt="External link to video" title="Link to video">Original</a> 
@@ -28,13 +28,13 @@
                     </p>
                     <p class="film-themes-p">
                         <strong>Themes:</strong><br>
-                        <a>Antisemitism</a> || 
-                        <a>Jewish Life in Nazi Germany</a> || 
-                        <a>Kindertransport</a> || 
-                        <a>War and Holocaust</a> || 
-                        <a>Welfare</a> || 
-                        <a>Jewish Food</a> || 
-                        <a>History of Jews in Scotland</a>
+                        <a href="./antisemitism">Antisemitism</a> || 
+                        <a href="./nazigermany">Jewish Life in Nazi Germany</a> || 
+                        <a href="./kindertransport">Kindertransport</a> || 
+                        <a href="./holocaust">War and Holocaust</a> || 
+                        <a href="./welfare">Welfare</a> || 
+                        <a href="./food">Jewish Food</a> || 
+                        <a href="./history">History of Jews in Scotland</a>
                     </p>
                 </div>
             </div>

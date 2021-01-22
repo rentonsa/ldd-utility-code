@@ -116,8 +116,8 @@
         <div class="col-lg-8 col-md-8 col-sm-9 hidden-xs">
             <div class="nav-title">
                 <!--<h1>Points of Arrival</h1>-->
-                <a alt="Points of Arrival Logo" title="Home link" href="<?php echo base_url()?>pointsofarrival" alt="Points of Arrival"><img class="nav-logo" src="<?php echo base_url()?>theme/pointsofarrival/images/site-logos/navbar-logo-w.png"></a>
-                <p alt="A series of short films on historical Jewish immigrantion to Scotland" title="Points of Arrival tagline"> A digital resource pack for secondary schools on historical Jewish immigrantion to Scotland
+                <a alt="Points of Arrival Logo" title="Home link" href="./" alt="Points of Arrival"><img class="nav-logo" src="<?php echo base_url()?>theme/pointsofarrival/images/site-logos/navbar-logo-w.png"></a>
+                <p alt="A series of short films on historical Jewish immigrantion to Scotland" title="Points of Arrival tagline"> A digital resource pack for schools on historical Jewish immigration to Scotland
             </div>
             <div class="right-nav">
                 <a href="https://www.sjac.org.uk/" target="_blank"><img src="<?php echo base_url()?>theme/pointsofarrival/images/site-logos/sjac_logo_clear.png"></a>

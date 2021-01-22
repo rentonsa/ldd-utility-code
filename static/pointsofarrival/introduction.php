@@ -27,13 +27,13 @@
                     <li>First of all, watch the <a href="./films"><strong>films!</strong></a> Or at least one or two of them.
                         <ul class="child-ul">
                             <li>You can view all the films in one go <a href="https://media.ed.ac.uk/playlist/dedicated/143796462/0_b0sex7tl/0_5h16vc0r" target="_blank" rel="noopener"><strong>here</strong></a>&nbsp; (about 18 mins total).</li>
-                            <li>To see the full blurb for each film and it's list of <a href="./themes"><strong>themes</strong></a> click on the individual films image on the <a href="./films"><strong>films page.</strong></a></li>
+                            <li>To see the full blurb for each film and its list of <a href="./themes"><strong>themes</strong></a> click on the individual films image on the <a href="./films"><strong>films page.</strong></a></li>
                             <li>Or choose to watch one film at a time by clicking one of the options to the right of the image on the <a href="./films"><strong>films page.</strong></a></li>
                         </ul>
                     </li>
-                    <li>With each film, you will find a series of one-page <strong>topic cards</strong>. These cards will give you background information about the details, themes and questions that the film raises.
+                    <li>With each film, you will find a series of one-page <a href="./themes"><strong>themes</strong></a>. These cards will give you background information about the details, themes and questions that the film raises.
                         <ul class="child-ul">
-                            <li>The topic cards are a chance for you to delve deeper into these fascinating and moving stories and to think about how they may connect with issues facing us today.</li>
+                            <li>The <a href="./themes"><strong>themes</strong></a> are a chance for you to delve deeper into these fascinating and moving stories and to think about how they may connect with issues facing us today.</li>
                         </ul>
                     </li>
                     <li>At the bottom of the menu on the left, you will also find a <a href="./resources" rel="noopener"><strong>resources page</strong></a>. This page links you to suggested online resources to expand on your own discoveries. These will be particularly helpful for students wishing to put together their own presentations or projects.</li>

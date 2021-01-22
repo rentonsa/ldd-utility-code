@@ -13,10 +13,6 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
             <h1 class="poa-page-title ind-film-title">Jewish Life in Nazi Germany</h1>   
             <div class="theme-cont">
-                <div class="theme-img-cont">
-                    <img class="ivideo-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme/.png">
-                    <p class="film-credits">Narrated by artist Emma Newcombe, film by Chris Leslie.<p>
-                </div>
                 <p class="theme-info">
                     After the Nazi party came into government in 1933 life for Jews in Germany changed. In 1934 and 1935 laws were introduced which excluded Jews from participating in 
                     social and professional life: Jews could only go grocery shopping at particular times of the day, Jews could no longer work as civil servants, Jewish doctors could 
@@ -31,7 +27,7 @@
                     UK and it guaranteed an income. Many Jews did not have enough money and connections to leave Germany. 
                     <br><br>
                     The situation became even more stressful for Jews in November 1938 when the government organised terrorist attacks on the homes and businesses of Jews and on Jewish 
-                    religious buildings such as synagogues (the state organised terror on 9-10 November 1938 is also known as ‘Kristallnacht’, the night of broken glass). Many buildings 
+                    religious buildings such as <abbr data-title="Synagogue: Jewish place of worship.">synagogues</abbr> (the state organised terror on 9-10 November 1938 is also known as ‘Kristallnacht’, the night of broken glass). Many buildings 
                     and homes were destroyed, c.1,000 Jews were killed in violence by paramilitary organisations, and c.3,000 Jews were arrested and imprisoned.
                 </p>
             </div>

@@ -14,53 +14,49 @@
             </p>
             <br>
             <p class="index-para">
-                The films are part of the work of the AHRC-funded project Jewish Lives, Scottish Spaces: Jewish Migration to Scotland, 1880-1950, 
+                The films are part of the work of the AHRC-funded project <a href="http://jewishmigrationtoscotland.is.ed.ac.uk"><strong>Jewish Lives, Scottish Spaces: Jewish Migration to Scotland, 1880-1950</strong></a>, 
                 and they were produced by documentary film-maker Chris Leslie, whose artistry, imagination and respect for his subject brings alive each of these five histories.
             </p>
         </div>
         <div id="galleries" class="grid"<?php /* Prevent script from loading on homepage */ if($this->config->item('skylight_appname') != str_replace('/', '', $_SERVER['REQUEST_URI'])) { ?> data-masonry='{ "itemSelector": ".grid-item index-grid", "percentPosition": true, "columnWidth": .grid-sizer}'<?php } ?>>
             <div class="grid-sizer"></div>
             <a href="./introduction">
-                <div id="galleryethst" class="grid-item index-grid">
-                    <div class="gallery-title">
-                        <img class="text-hover thht" id="thht-hov" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/howto-hover.png">
-                        <img class="text-overlay thht" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/howto-overlay.png">
+                <div class="landing-background">
+                    <div id="galleryethst" class="film-info landing-grid">
                     </div>
-                    <div class="mob-title">
-                        <img class="text-hover" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/howto-hover.png">
+                    <div class="gallery-title">
+                        <h2 class="grid-item-title">How To</h2>
+                        <h2 class="grid-item-title-shadow">How To</h2>
                     </div>
                 </div>
             </a>
             <a href="./films">
-                <div id="gallerykb" class="grid-item index-grid">
-                    <div class="gallery-title">
-                        <img class="text-hover" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/films-hover.png">
-                        <img class="text-overlay" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/films-overlay.png">
+                <div class="landing-background">
+                    <div id="gallerykb" class="film-info landing-grid">
                     </div>
-                    <div class="mob-title">
-                        <img class="text-hover" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/films-hover.png">
+                    <div class="gallery-title">
+                        <h2 class="grid-item-title">Films</h2>
+                        <h2 class="grid-item-title-shadow">Films</h2>
                     </div>
                 </div>
             </a>
             <a href="./themes">
-                <div id="gallerywespe" class="grid-item index-grid">
-                    <div class="gallery-title">
-                        <img class="text-hover thht" id="thht-hov" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/themes-hover.png">  
-                        <img class="text-overlay thht" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/themes-overlay.png">  
+                <div class="landing-background">
+                    <div id="gallerywespe" class="film-info landing-grid">
                     </div>
-                    <div class="mob-title">
-                        <img class="text-hover" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/themes-hover.png">
+                    <div class="gallery-title">
+                        <h2 class="grid-item-title">Themes</h2>
+                        <h2 class="grid-item-title-shadow">Themes</h2>
                     </div>
                 </div>
             </a>
             <a href="./resources">
-                <div id="galleryethpe" class="grid-item index-grid">
-                    <div class="gallery-title">
-                        <img class="text-hover rsrc" id="rsrc-hov" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/resources-hover.png">
-                        <img class="text-overlay rsrc" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/resources-overlay.png">
+                <div class="landing-background">
+                    <div id="galleryethpe" class="film-info landing-grid">
                     </div>
-                    <div class="mob-title">
-                        <img class="text-hover" src="<?php echo base_url()?>theme/pointsofarrival/images/site-text-overlays/resources-hover.png">
+                    <div class="gallery-title">
+                        <h2 class="grid-item-title" id="title-ofset">Resources</h2>
+                        <h2 class="grid-item-title-shadow" id="title-ofset-shadow">Resources</h2>
                     </div>
                 </div>
             </a>

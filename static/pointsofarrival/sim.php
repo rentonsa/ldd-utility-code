@@ -20,7 +20,9 @@
                 </div>
                 <div class="ifilm-text-cont" id="sim-text">
                     <p>
-                        Dorrith Sim was one of the thousands of Jewish children who arrived in the UK in 1939 on what became known as the Kindertransport. Travelling alone and speaking 
+                        Dorrith Sim was one of the thousands of Jewish children who arrived in the UK in 1939 on what became known as the <abbr data-title="Kindertransport: (German for 
+                        ‘children’s transport’) Rescue of c.10,000 unaccompanied Jewish children from Germany and Nazi-occupied Europe to Britain 1938-1939. The last transport was 1940 
+                        when the start of World War II made further rescue impossible.">Kindertransport.</abbr> Travelling alone and speaking 
                         little English, she was taken in by an Edinburgh family. After the war, Dorrith chose to remain in Edinburgh. She wrote a book about her experiences and became 
                         an ambassador and spokesperson for her fellow refugees.
                         <br><br>
@@ -29,12 +31,12 @@
                     </p>
                     <p class="film-themes-p">
                         <strong>Themes:</strong><br>
-                        <a>Antisemitism</a> || 
-                        <a>Jewish Life in Nazi Germany</a> || 
-                        <a>Kindertransport</a> || 
-                        <a>War and Holocaust</a> || 
-                        <a>Family</a> || 
-                        <a>History of Jews in Scotland</a>
+                        <a href="./antisemitism">Antisemitism</a> || 
+                        <a href="./nazigermany">Jewish Life in Nazi Germany</a> || 
+                        <a href="./kindertransport">Kindertransport</a> || 
+                        <a href="./holocaust">War and Holocaust</a> || 
+                        <a href="./family">Family</a> || 
+                        <a href="./history">History of Jews in Scotland</a>
                     </p>
                 </div>
             </div>

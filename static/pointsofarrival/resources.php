@@ -32,15 +32,18 @@
                 <p>
                     Associated with Polin – Museum of the History of Polish Jews this website collects articles and images about Jewish life in Eastern Europe. 
                     Materials are written in English accessible to secondary school students, but teacher guidance is necessary to collect useful information for 
-                    class discussion. The site is regularly updated and students can research the history of specific shtetls and their inhabitants.&nbsp;
+                    class discussion. The site is regularly updated and students can research the history of specific <abbr data-title="Shtetl (‘little’ town; Yiddish): Term used for a small village or 
+                    market town in Eastern Europe with a large Jewish population before the Second World War.">shtetls</abbr> and their inhabitants.&nbsp;
                     <br>
                     <a href="https://sztetl.org.pl/en/" target="_blank" rel="noopener"><i class="fa fa-eye"></i> Read More</a>
                 </p>
                 <div id="synagogues"></div>
                 <h2>A visual and historical record of synagogues from around the world</h2>
                 <p>
-                    Developed in association with the Museum of the Diaspora in Tel Aviv, this website gives visual access to the history of Jewish religious buildings. 
-                    The website allows viewers to ‘visit’ synagogues in different places of the world today and brings to life historical buildings.
+                    Developed in association with the Museum of the <abbr data-title="Diaspora (from Ancient Greek) Term given for the dispersion of the Israelites 
+                    or Jewish people from Land of Israel and subsequent communities scattered around the world. It has come to refer to the involuntary dispersal 
+                    of any people from their geographic place of origin.">Diaspora</abbr> in Tel Aviv, this website gives visual access to the history of Jewish religious buildings. 
+                    The website allows viewers to ‘visit’ <abbr data-title="Synagogue: Jewish place of worship.">synagogues</abbr> in different places of the world today and brings to life historical buildings.
                     <br>
                     <a href="https://sztetl.org.pl/en/" target="_blank" rel="noopener"><i class="fa fa-eye"></i> Read More</a>
                 </p>

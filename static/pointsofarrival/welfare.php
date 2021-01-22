@@ -20,8 +20,11 @@
                     <p>
                 </div>
                 <p class="theme-info">
-                    Throughout the world, synagogues have often been owned by their local Jewish community. Communities themselves raise funds to build a synagogue, and wealthier members 
-                    often donate items such as Torah scrolls. Synagogue congregations organise khevrot (societies) in order to provide services to their community such as ritual bathing 
+                    Throughout the world, <abbr data-title="Synagogue: Jewish place of worship.">synagogues</abbr> have often been owned by their local Jewish community. Communities themselves 
+                    raise funds to build a <abbr data-title="Synagogue: Jewish place of worship.">synagogue</abbr>, and wealthier members 
+                    often donate items such as <abbr data-title="Torah: Hebrew Bible, consisting of the first five books of Moses. In synagogue, 
+                a different portion of the Torah is read aloud each Sabbath, usually from a handwritten Torah scroll.">Torah</abbr> scrolls. <abbr data-title="Synagogue: Jewish place of worship.">Synagogue</abbr> congregations organise khevrot 
+                    (societies) in order to provide services to their community such as ritual bathing 
                     and burial – both of which have specific processes according to traditional Jewish law (halakhah).
                     <br><br>
                     More generally, the act of philanthropy (tzedakah) is considered an important mitzvah (good deed). This means that a Jewish community will often provide welfare for 
@@ -33,7 +36,9 @@
                     and to combat religious intolerance.
                     <br><br>
                     As Jews began to settle in Glasgow in larger numbers in the second half of the 19th century, several societies formed in order to offer financial assistance to those 
-                    who were struggling or even destitute. The Glasgow Hebrew Philanthropic Society, first mentioned in 1858, offered medical provision before the arrival of the welfare 
+                    who were struggling or even destitute. The Glasgow <abbr data-title="Hebrew: Ancient language of the Jews originating in land of Canaan in which the Torah and other holy 
+                    books and prayers are written. Hebrew was revived and modernised under Jewish nationalism in the 19th century. Modern Hebrew, 
+                    (Ivrit) is the official language of the State of Israel. See also Torah">Hebrew</abbr> Philanthropic Society, first mentioned in 1858, offered medical provision before the arrival of the welfare 
                     state. This society later became the Glasgow Jewish Board of Guardians, and is nowadays known as Jewish Care Scotland. It has its own purpose-build community centre, 
                     from which it runs a number of social clubs and services, as well as supporting the care in the community of more vulnerable groups.
                 </p>

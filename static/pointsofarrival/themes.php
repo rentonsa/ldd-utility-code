@@ -16,8 +16,10 @@
                 </p>-->
                 <h2>Antisemitism</h2>
                 <p>
-                    In simple terms, antisemitism is hatred of Jews. Like all racisms it picks on a characteristic (here, being Jewish) that is an unchangeable part of a person, 
-                    and fills this characteristic with nasty ideas. Antisemitism is something that is brought to the Jewish people from the outside and to which Jews are asked to react.
+                    In simple terms, <abbr data-title="Antisemitism: Prejudiced beliefs, unfair treatment, persecu¬tion and/or hatred of Jewish people; incl. attacking or desecrating 
+                    Jewish institutions or symbols.">antisemitism</abbr> is hatred of Jews. Like all racisms it picks on a characteristic (here, being Jewish) that is an unchangeable part of a person, 
+                    and fills this characteristic with nasty ideas. <abbr data-title="Antisemitism: Prejudiced beliefs, unfair treatment, persecu¬tion and/or hatred of Jewish people; incl. attacking or desecrating 
+                    Jewish institutions or symbols.">Antisemitism</abbr> is something that is brought to the Jewish people from the outside and to which Jews are asked to react.
                     <br>
                     <a href="./antisemitism" rel="noopener"><i class="fa fa-eye"></i> Read More</a>
                 </p>
@@ -39,7 +41,9 @@
                 <h2>The Great Migration</h2>
                 <p>
                     The late nineteenth and early twentieth century saw the mass migration of many people from Eastern Europe towards ‘the West’. Included among them were close to 
-                    2 million Jews who moved from the Pale of Settlement towards North America, western Europe, the United Kingdom, and other parts of the English-speaking 
+                    2 million Jews who moved from the <abbr data-title="Pale of Settlement: Geographic area in the western part of the 
+                    Russian Empire (1791-1917) in which Jews were permitted to live and travel. Unless issued special permits, Jews were forbidden to reside beyond outside these areas 
+                    and in urban centres.">Pale of Settlement</abbr> towards North America, western Europe, the United Kingdom, and other parts of the English-speaking 
                     (Anglophone) world.
                     <br>
                     <a href="./greatmigration" rel="noopener"><i class="fa fa-eye"></i> Read More</a>
@@ -47,7 +51,9 @@
                 <h2>History of Jews in Scotland</h2>
                 <p>
                     Records of Jews in Scotland date back at least to the 17th century. Julius Conradus Otto, a Christian convert who later reverted to Judaism, became the first chair 
-                    of Hebrew and Oriental Languages at Edinburgh University in 1642. Herman Lyon’s 1795 mausoleum on Calton Hill is thought to be the first Jewish gravesite in Edinburgh.
+                    of <abbr data-title="Hebrew: Ancient language of the Jews originating in land of Canaan in which the Torah and other holy 
+                    books and prayers are written. Hebrew was revived and modernised under Jewish nationalism in the 19th century. Modern Hebrew, 
+                    (Ivrit) is the official language of the State of Israel. See also Torah">Hebrew</abbr> and Oriental Languages at Edinburgh University in 1642. Herman Lyon’s 1795 mausoleum on Calton Hill is thought to be the first Jewish gravesite in Edinburgh.
                     <br>
                     <a href="./history" rel="noopener"><i class="fa fa-eye"></i> Read More</a>
                 </p>
@@ -69,14 +75,21 @@
                 </p>
                 <h2>Jewish Food</h2>
                 <p>
-                    Kosher food is governed by the laws of kashrut, which have their basis in the Torah and have been interpreted over the centuries by religious authorities so that 
+                <abbr data-title="Kosher (Hebrew): Label attached to food that is permitted 
+                    to eat under Jewish dietary laws. See also Kashrut">Kosher</abbr> food is governed by the laws of <abbr data-title="Kashrut (Hebrew) Complex set of 
+                    Jewish dietary laws that are biblical in origin. Main characteristics are to regulate the kinds of meat permitted (notably exclusion of shellfish and pork products), 
+                    how meat and poultry are slaughtered, the prohibition of the consumption of blood, and separation of meat from dairy foods. Food that follows these regulations is 
+                    deemed kosher. See also kosher">kashrut</abbr>, which have their basis in the <abbr data-title="Torah: Hebrew Bible, consisting of the first five books of Moses. In synagogue, 
+                a different portion of the Torah is read aloud each Sabbath, usually from a handwritten Torah scroll.">Torah</abbr> and have been interpreted over the centuries by religious authorities so that 
                     they can be followed by Jews throughout the world. These laws determine which foods may be eaten, how they should be prepared, and what they can be eaten with.
                     <br>
                     <a href="./food" rel="noopener"><i class="fa fa-eye"></i> Read More</a>
                 </p>
                 <h2>Jewish Life in Eastern Europe</h2>
                 <p>
-                    Eastern European Jews are known as Ashkenazi Jews. Jews began to settle in Poland, Russia and other parts of Eastern Europe from around the 15th century. Many moved 
+                    Eastern European Jews are known as <abbr data-title="Ashkenazi (pl. Ashkenazim; Hebrew). From Hebrew word for ‘Germany’. The term refers to Jews whose origins 
+                    and traditions can be traced to the communities that settled in Western Germany Northern France in the middle ages and then later to Eastern Europe 
+                    (Poland-Lithuania commonwealth). Their spoken language was predominantly Yiddish. See also Yiddish">Ashkenazi</abbr> Jews. Jews began to settle in Poland, Russia and other parts of Eastern Europe from around the 15th century. Many moved 
                     there from countries further West, looking for better opportunities and sometimes escaping persecution.
                     <br>
                     <a href="./easterneurope" rel="noopener"><i class="fa fa-eye"></i> Read More</a>
@@ -119,8 +132,9 @@
                 </p>
                 <h2>Synagogue Music</h2>
                 <p>
-                    Music is a central part of Jewish worship. Many prayers are sung together by the whole congregation in synagogue, and some Jewish families sing prayers and songs around 
-                    the table at a Friday night Sabbath meal.
+                    Music is a central part of Jewish worship. Many prayers are sung together by the whole congregation in <abbr data-title="Synagogue: Jewish place of worship.">synagogue</abbr>, and some Jewish families sing prayers and songs around 
+                    the table at a Friday night <abbr data-title="Sabbath/Shabbat: Jewish day of rest, beginning on Friday at sundown and 
+                    lasting until Saturday evening. Many Jews attend synagogue on the morning of the Sabbath, and refrain from most forms of work.">Sabbath</abbr> meal.
                     <br>
                     <a href="./synagoguemusic" rel="noopener"><i class="fa fa-eye"></i> Read More</a>
                 </p>
@@ -133,8 +147,9 @@
                 </p>
                 <h2>Welfare</h2>
                 <p>
-                    Throughout the world, synagogues have often been owned by their local Jewish community. Communities themselves raise funds to build a synagogue, and wealthier members 
-                    often donate items such as Torah scrolls. Synagogue congregations organise khevrot (societies) in order to provide services to their community such as ritual bathing 
+                    Throughout the world, <abbr data-title="Synagogue: Jewish place of worship.">synagogues</abbr> have often been owned by their local Jewish community. Communities themselves raise funds to build a <abbr data-title="Synagogue: Jewish place of worship.">synagogue</abbr>, and wealthier members 
+                    often donate items such as <abbr data-title="Torah: Hebrew Bible, consisting of the first five books of Moses. In synagogue, 
+                a different portion of the Torah is read aloud each Sabbath, usually from a handwritten Torah scroll.">Torah</abbr> scrolls. <abbr data-title="Synagogue: Jewish place of worship.">Synagogue</abbr> congregations organise khevrot (societies) in order to provide services to their community such as ritual bathing 
                     and burial – both of which have specific processes according to traditional Jewish law (halakhah).
                     <br>
                     <a href="./welfare" rel="noopener"><i class="fa fa-eye"></i> Read More</a>
