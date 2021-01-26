@@ -26,23 +26,19 @@
                     (Ivrit) is the official language of the State of Israel. See also Torah">Hebrew</abbr>.
                     <br><br>
                     <abbr data-title="Synagogue: Jewish place of worship.">Synagogue</abbr> singing is often lead by a prayer leader. This may be a rabbi, or it may be a <em>cantor</em> – normally a trained musician and singer who is also well-versed in Jewish 
-                    liturgy (like <a href="./hirshow">Isaac Hirshow</a>). Many <abbr data-title="Synagogue: Jewish place of worship.">synagogues</abbr> also have choirs, often trained by the cantor. In Reform and Liberal <abbr data-title="Synagogue: Jewish place of worship.">synagogues</abbr>, the choir is mixed; 
+                    liturgy (like <a href="./hirshow">Isaac Hirshow</a>). Many synagogues also have choirs, often trained by the cantor. In Reform and Liberal synagogues, the choir is mixed; 
                     in most Orthodox congregations it consists only of men.
                     <br><br>
-                    At <abbr data-title="Synagogue: Jewish place of worship.">synagogue</abbr> every Saturday morning, a different portion of the Jewish <abbr data-title="Torah: Hebrew Bible, consisting of the first five books of Moses. In synagogue, 
+                    At synagogue every Saturday morning, a different portion of the Jewish <abbr data-title="Torah: Hebrew Bible, consisting of the first five books of Moses. In synagogue, 
                     a different portion of the Torah is read aloud each Sabbath, usually from a handwritten Torah scroll."><em>Torah</em></abbr> (bible) is chanted aloud by the prayer leader. Over the course of a year 
-                    (in some congregations three years), then entire <abbr data-title="Torah: Hebrew Bible, consisting of the first five books of Moses. In synagogue, 
-                    a different portion of the Torah is read aloud each Sabbath, usually from a handwritten Torah scroll.">Torah</abbr> is chanted. This system of chanting is known as <em>cantillation</em>, and it uses small symbols written above the <abbr data-title="Hebrew: Ancient language of the Jews originating in land of Canaan in which the Torah and other holy 
-                    books and prayers are written. Hebrew was revived and modernised under Jewish nationalism in the 19th century. Modern Hebrew, 
-                    (Ivrit) is the official language of the State of Israel. See also Torah">Hebrew</abbr> 
-                    letters in a <abbr data-title="Torah: Hebrew Bible, consisting of the first five books of Moses. In synagogue, 
-                    a different portion of the Torah is read aloud each Sabbath, usually from a handwritten Torah scroll.">Torah</abbr> scroll. Jews around the world use different cantillation melodies, known as <em>nusakh</em>. The Eastern European <abbr data-title="Ashkenazi (pl. Ashkenazim; Hebrew). From Hebrew word for ‘Germany’. The term refers to Jews whose origins 
+                    (in some congregations three years), then entire Torah is chanted. This system of chanting is known as <em>cantillation</em>, and it uses small symbols written above the Hebrew 
+                    letters in a Torah scroll. Jews around the world use different cantillation melodies, known as <em>nusakh</em>. The Eastern European <abbr data-title="Ashkenazi (pl. Ashkenazim; Hebrew). From Hebrew word for ‘Germany’. The term refers to Jews whose origins 
                     and traditions can be traced to the communities that settled in Western Germany Northern France in the middle ages and then later to Eastern Europe 
                     (Poland-Lithuania commonwealth). Their spoken language was predominantly Yiddish. See also Yiddish">Ashkenazi</abbr> <em>nusakh</em> that Isaac Hirshow was 
                     trained in has a very dramatic, decorative sound, and requires great virtuosity from the cantor. The best-known Eastern European cantors like Gershon Sirota (1874-1943) 
                     and Yossele Rosenblatt (1882-1933) were as famous as opera stars in their day.
                     <br><br>
-                    <abbr data-title="Synagogue: Jewish place of worship.">Synagogue</abbr> music performs a very particular function, but it has also been a source of inspiration for many musicians outside the <abbr data-title="Synagogue: Jewish place of worship.">synagogue</abbr>. The German composer Max Bruch, 
+                    Synagogue music performs a very particular function, but it has also been a source of inspiration for many musicians outside the synagogue. The German composer Max Bruch, 
                     the French composer Maurice Ravel, and the Russian composer Dimitri Shostakovich have all used Jewish themes and motifs in their work, even though none of them was Jewish.
                 </p>
             </div>

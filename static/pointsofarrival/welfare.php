@@ -21,9 +21,9 @@
                 </div>
                 <p class="theme-info">
                     Throughout the world, <abbr data-title="Synagogue: Jewish place of worship.">synagogues</abbr> have often been owned by their local Jewish community. Communities themselves 
-                    raise funds to build a <abbr data-title="Synagogue: Jewish place of worship.">synagogue</abbr>, and wealthier members 
+                    raise funds to build a synagogue, and wealthier members 
                     often donate items such as <abbr data-title="Torah: Hebrew Bible, consisting of the first five books of Moses. In synagogue, 
-                a different portion of the Torah is read aloud each Sabbath, usually from a handwritten Torah scroll.">Torah</abbr> scrolls. <abbr data-title="Synagogue: Jewish place of worship.">Synagogue</abbr> congregations organise khevrot 
+                    a different portion of the Torah is read aloud each Sabbath, usually from a handwritten Torah scroll.">Torah</abbr> scrolls. Synagogue congregations organise khevrot 
                     (societies) in order to provide services to their community such as ritual bathing 
                     and burial – both of which have specific processes according to traditional Jewish law (halakhah).
                     <br><br>

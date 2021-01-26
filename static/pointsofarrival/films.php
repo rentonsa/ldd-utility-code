@@ -7,7 +7,7 @@
     <div id="poa-films">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
 
-            <h1 class="poa-page-title">Film List</h4>
+            <h1 class="poa-page-title">Points of Arrival Films</h4>
             <ul class="films-list">
                 <li>
                     <h2>Full Compilation</h2>

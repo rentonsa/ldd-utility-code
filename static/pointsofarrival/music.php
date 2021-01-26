@@ -7,7 +7,7 @@
     <div id="poa-theme">
 
         <div class="back-link">
-            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"> </span><a href="./theme">Back to Themes List</a>
+            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"> </span><a href="./themes">Back to Themes List</a>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">

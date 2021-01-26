@@ -20,16 +20,16 @@
                     <p>
                 </div>
                 <p class="theme-info">
-                    One of the most difficult things that child refugees face was their dislocation from home and family. Children like <a href="./sim">Dorrith</a> and <a href="./wuga">Henry</a> had to make the journey from 
-                    their homes in Europe to their new life in Britain in groups led by young adult volunteers. Children as young as two years old travelled without their parents and 
-                    were collected in Harwich and London by people they didn’t know and who spoke a language they didn’t understand. The <abbr data-title="Kindertransport: (German for 
+                    One of the most difficult things that child refugees face was their dislocation from home and family. Children like <a href="./sim">Dorrith</a> and <a href="./wuga">Henry</a> 
+                    had to make the journey from their homes in Europe to their new life in Britain in groups led by young adult volunteers. Children as young as two years old travelled without 
+                    their parents and were collected in Harwich and London by people they didn’t know and who spoke a language they didn’t understand. The <abbr data-title="Kindertransport: (German for 
                     ‘children’s transport’) Rescue of c.10,000 unaccompanied Jewish children from Germany and Nazi-occupied Europe to Britain 1938-1939. The last transport was 1940 
                     when the start of World War II made further rescue impossible.">Kindertransport</abbr> was organised very quickly, 
                     transporting children from Germany, Austria and Czechoslovakia to Britain from December 1938 to September 1939. Most often children had to leave quickly, with little 
                     opportunity to learn English before they left Europe. 
                     <br><br>
-                    Many parents and children hoped they would be together again soon, but the beginning of <a href="./holocaust">World War II</a> in September 1939 made it impossible for most parents to come to 
-                    Britain. 
+                    Many parents and children hoped they would be together again soon, but the beginning of <a href="./holocaust">World War II</a> in September 1939 made it impossible for 
+                    most parents to come to Britain. 
                     <br><br>
                     While the Kindertransport saved the lives of 10,000 children, it did not save their parents. Most children did never see their birth families again, because all were 
                     murdered in the <a href="./holocaust">Holocaust.</a>

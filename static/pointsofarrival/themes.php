@@ -7,7 +7,7 @@
     <div id="poa-themes">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
 
-            <h1 class="poa-page-title">Theme List</h4>
+            <h1 class="poa-page-title">Themes</h4>
 
             <div class="themes-cont">
                 <!--<h2>Adnan Shamdin</h2>
@@ -16,10 +16,9 @@
                 </p>-->
                 <h2>Antisemitism</h2>
                 <p>
-                    In simple terms, <abbr data-title="Antisemitism: Prejudiced beliefs, unfair treatment, persecu¬tion and/or hatred of Jewish people; incl. attacking or desecrating 
+                    In simple terms, <abbr data-title="Antisemitism: Prejudiced beliefs, unfair treatment, persecution and/or hatred of Jewish people; incl. attacking or desecrating 
                     Jewish institutions or symbols.">antisemitism</abbr> is hatred of Jews. Like all racisms it picks on a characteristic (here, being Jewish) that is an unchangeable part of a person, 
-                    and fills this characteristic with nasty ideas. <abbr data-title="Antisemitism: Prejudiced beliefs, unfair treatment, persecu¬tion and/or hatred of Jewish people; incl. attacking or desecrating 
-                    Jewish institutions or symbols.">Antisemitism</abbr> is something that is brought to the Jewish people from the outside and to which Jews are asked to react.
+                    and fills this characteristic with nasty ideas. Antisemitism is something that is brought to the Jewish people from the outside and to which Jews are asked to react.
                     <br>
                     <a href="./antisemitism" rel="noopener"><i class="fa fa-eye"></i> Read More</a>
                 </p>
@@ -147,9 +146,8 @@
                 </p>
                 <h2>Welfare</h2>
                 <p>
-                    Throughout the world, <abbr data-title="Synagogue: Jewish place of worship.">synagogues</abbr> have often been owned by their local Jewish community. Communities themselves raise funds to build a <abbr data-title="Synagogue: Jewish place of worship.">synagogue</abbr>, and wealthier members 
-                    often donate items such as <abbr data-title="Torah: Hebrew Bible, consisting of the first five books of Moses. In synagogue, 
-                a different portion of the Torah is read aloud each Sabbath, usually from a handwritten Torah scroll.">Torah</abbr> scrolls. <abbr data-title="Synagogue: Jewish place of worship.">Synagogue</abbr> congregations organise khevrot (societies) in order to provide services to their community such as ritual bathing 
+                    Throughout the world, synagogues have often been owned by their local Jewish community. Communities themselves raise funds to build a synagogue, and wealthier members 
+                    often donate items such as Torah scrolls. Synagogue congregations organise khevrot (societies) in order to provide services to their community such as ritual bathing 
                     and burial – both of which have specific processes according to traditional Jewish law (halakhah).
                     <br>
                     <a href="./welfare" rel="noopener"><i class="fa fa-eye"></i> Read More</a>

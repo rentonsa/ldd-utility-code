@@ -13,8 +13,8 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
             <h1 class="poa-page-title ind-film-title">Kindertransport</h1>            
             <div class="theme-cont">
-                <div class="theme-img-cont">
-                    <img class="theme-still theme-top" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/kindertransport.png">
+                <div class="theme-img-cont-right">
+                    <img class="theme-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/kindertransport.png">
                     <p class="theme-credits">
                         Kindertransport children. Courtesy of the Association of Jewish Refugees.
                     <p>
@@ -22,14 +22,12 @@
                 <p class="theme-info">
                     After the state organised terror on 9-10 November 1938 (also known as ‘Kristallnacht’, the night of broken glass), the British government gave in to pressure from 
                     British citizens to allow children to take refuge in the United Kingdom as long as families and refugee organisations paid for their maintenance (food, clothes, 
-                    education, housing and so on). This project is known as the <abbr data-title="Kindertransport: (German for 
-                    ‘children’s transport’) Rescue of c.10,000 unaccompanied Jewish children from Germany and Nazi-occupied Europe to Britain 1938-1939. The last transport was 1940 
-                    when the start of World War II made further rescue impossible.">Kindertransport</abbr> (children’s transport) and it allowed c.10,000 children from Germany, Austria, and the 
+                    education, housing and so on). This project is known as the Kindertransport (children’s transport) and it allowed c.10,000 children from Germany, Austria, and the 
                     Czech Republic and Poland to come to Britain without their parents. The children stayed here until after the war and many remained in Britain and eventually became 
                     British. Only very few children were reunited with their parents after the war. Most parents had been murdered by the Nazis.
                     <br><br>
                 </p>
-                <div class="theme-img-cont img-xtr"> 
+                <div class="theme-img-cont-right"> 
                     <img class="theme-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/kindertransport2.png">
                     <p class="theme-credits">
                         Kinderstransportee Henry Wuga’s landing card. Courtesy of Henry Wuga.

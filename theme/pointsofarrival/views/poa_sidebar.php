@@ -1,28 +1,27 @@
 <div class="poa-sidebar">
     <!-- HOME -->
-
     <a href="./"><button class="non-accordion acc-btn">Home</button></a>
     <!-- INTRO/HOW TO -->
-    <button class="accordion acc-btn">How To Information</button>
-    <div class="panel">
+    <a href="./introduction"><button class="accordion acc-btn">Information</button></a>
+    <!--<div class="panel">
         <a href="./introduction"><button class="accordion acc-btn">Introduction</button></a>
         <a href="./introduction#howto-title"><button class="accordion acc-btn">How to use this site</button></a>
-    </div>
+    </div>-->
     <!-- FILMS -->
-    <button class="accordion acc-btn">Points of Arrival Films</button>
-    <div class="panel">
+    <a href="./films"><button class="accordion acc-btn">Points of Arrival Films</button></a>
+    <!--<div class="panel">
         <a href="./films"><button class="accordion acc-btn">Full Film List</button></a>
         <a href="../goldwag"><button class="accordion acc-btn">Hilda Goldwag Film</button></a>
         <a href="./hirshow"><button class="accordion acc-btn">Isaac Hirshow Film</button></a>
         <a href="./lindey"><button class="accordion acc-btn">Annie Lindey Film</button></a>
         <a href="./sim"><button class="accordion acc-btn">Dorrith Sim Film</button></a>
         <a href="./wuga"><button class="accordion acc-btn">Henry Wuga Film</button></a>
-    </div>
+    </div>-->
     <!-- THEMES -->
-    <button class="accordion acc-btn">Points of Arrival Themes</button>
-    <div class="panel">
+    <a href="./themes"><button class="accordion acc-btn">Themes</button></a>
+    <!--<div class="panel">
         <a href="./themes"><button class="accordion acc-btn">Full Theme List</button></a>
-        <!--<a href="./adnan"><button class="accordion acc-btn">Adnan Shamdin</button></a>-->
+        <a href="./adnan"><button class="accordion acc-btn">Adnan Shamdin</button></a>
         <a href="./antisemitism"><button class="accordion acc-btn">Antisemitism</button></a>
         <a href="./family"><button class="accordion acc-btn">Family</button></a>
         <a href="./gorbals"><button class="accordion acc-btn">The Gorbals</button></a>
@@ -40,11 +39,11 @@
         <a href="./synagoguemusic"><button class="accordion acc-btn">Synagogue Music</button></a>
         <a href="./holocaust"><button class="accordion acc-btn">War and Holocaust</button></a>
         <a href="./welfare"><button class="accordion acc-btn">Welfare</button></a>
-    </div>
+    </div>-->
     <!-- RESOURCES -->
-    <a href="./resources"><button class="accordion acc-btn">Resources List</button></a>
+    <a href="./resources"><button class="accordion acc-btn">Resource List</button></a>
     <!-- CONTACT -->
-    <a href="./contact"><button class="accordion acc-btn">Contact Details</button></a>
+    <a href="./contact"><button class="accordion acc-btn">Contact</button></a>
 </div>
 
 <!-- Probably depricated since removal of accordion sidebar -->

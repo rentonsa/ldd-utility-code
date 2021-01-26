@@ -15,12 +15,11 @@
                 </p>
                 <p class="intro-info">
                     To supplement these films, we have designed this site to offer a series of digital resources to students and teachers. 
-                    <strong>How to use this site</strong> below gives some suggestions about getting the most from these resources. <!--Alternatively, 
+                    How to use this site below gives some suggestions about getting the most from these resources. <!--Alternatively, 
                     click on any of the images to the right to get started.  COMMENTED OUT AWAITING CONTENT--> 
                 </p>
             </div>
-            <br><br><br>
-
+            <br>
             <h1 class="poa-page-title">How To</h4>
             <div class="intro-cont">
                 <ul class="parent-ul">
@@ -31,7 +30,7 @@
                             <li>Or choose to watch one film at a time by clicking one of the options to the right of the image on the <a href="./films"><strong>films page.</strong></a></li>
                         </ul>
                     </li>
-                    <li>With each film, you will find a series of one-page <a href="./themes"><strong>themes</strong></a>. These cards will give you background information about the details, themes and questions that the film raises.
+                    <li>With each film, you will find a series of one-page <a href="./themes"><strong>themes</strong></a>. These themes will give you background information about the details, themes and questions that the film raises.
                         <ul class="child-ul">
                             <li>The <a href="./themes"><strong>themes</strong></a> are a chance for you to delve deeper into these fascinating and moving stories and to think about how they may connect with issues facing us today.</li>
                         </ul>

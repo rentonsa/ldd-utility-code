@@ -13,18 +13,18 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
             <h1 class="poa-page-title ind-film-title">Jewish Arts and Artists</h1>
             <div class="theme-cont">
-                <div class="theme-img-cont">
-                    <img class="theme-still theme-top" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/arts.png">
+                <div class="theme-img-cont-right">
+                    <img class="theme-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/arts.png">
                     <p class="theme-credits">
                         Josef Herman, Refugees (1941). Ben Uri Collection (c) Josef Herman Estate
                     <p>
                 </div>
                 <p  class="theme-info">
                     The Second Commandment against the creation of graven images or likenesses has largely been interpreted in Judaism as a prohibition on idols or ‘false’ objects of 
-                    worship, rather than an outright ban on figurative art. From antiquity onwards, <abbr data-title="Synagogue: Jewish place of worship.">synagogue</abbr> interiors have often been decorated with images of animals, flora, or 
-                    more abstract patterns and designs (although very rarely human figures). However, religious iconography has not played the kind of role in Judaism in the way that 
-                    it has in Christianity, and until recent centuries much Jewish artistic creativity was directed towards the decoration of ritual objects and manuscripts, often to 
-                    high levels of detail and craftsmanship.
+                    worship, rather than an outright ban on figurative art. From antiquity onwards, <abbr data-title="Synagogue: Jewish place of worship.">synagogue</abbr> interiors 
+                    have often been decorated with images of animals, flora, or more abstract patterns and designs (although very rarely human figures). However, religious iconography 
+                    has not played the kind of role in Judaism in the way that it has in Christianity, and until recent centuries much Jewish artistic creativity was directed towards 
+                    the decoration of ritual objects and manuscripts, often to high levels of detail and craftsmanship.
                     <br><br>
                     Jews have frequently appeared as artistic subjects. The famous Dutch painter Rembrandt, who lived in the Jewish quarter of Amsterdam, created powerful images of 
                     Moses and other biblical figures, as well as finely-observed portraits of his Jewish contemporaries. Conversely, antisemitic stereotypes of Jews holding coins or 
@@ -35,7 +35,7 @@
                     Manifesto’, declaring that ‘The Diasporist lives and paints in two societies at once.’
                     <br><br>
                 </p> 
-                <div class="theme-img-cont img-xtr">
+                <div class="theme-img-cont-right">
                     <img class="theme-still" src="<?php echo base_url(); ?>theme/pointsofarrival/images/theme-images/arts2.png">
                     <p class="theme-credits">
                         Garnethill Boys Hostel, 1939. Courtesy of the Scottish Jewish Archives Centre
@@ -45,7 +45,7 @@
                     Scotland was home to several important Jewish like artists who were welcomed by the artistic community and influenced Scottish art. Sculptor Benno Schotz (RSO), 
                     for example, came to Glasgow from Estonia in 1912 and was Head of Sculpture and Ceramic at the Glasgow School of Art. There were also a number of influential 
                     painters who came as refugees to escape Nazi persecution in the 1930-40s. Alongside Hilda Goldwag, the painter Josef Herman, who fled his native Poland in 1938, 
-                    lived and worked in Glasgow from 1940 to 1943. Several of his paintings – such as Refugees and Memory of a <abbr data-title="pogrom Mob violence against Jewish people, 
+                    lived and worked in Glasgow from 1940 to 1943. Several of his paintings – such as Refugees and Memory of a <abbr data-title="Pogrom: Mob violence against Jewish people, 
                     homes, and property. Usually the term refers more specifically to the anti-Jewish riots in the former Russian empire in the 19th and 20th centuries.">Pogrom</abbr> 
                     – directly address the uneasy and frightening 
                     experience of persecution and forced migration. Holocaust survivor Marianne Grant (1921-2007) also lived Glasgow, creating powerful paintings of her time as a 
