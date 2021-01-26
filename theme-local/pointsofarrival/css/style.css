@@ -1364,7 +1364,7 @@ div[id$="info"] {
     background-position: center;
     height: auto;
     background-size: 100%;
-    padding-top: 18%; 
+    padding-top: 16%; 
     padding-bottom: 50px;
     /* margin-top: 200px; */
 }
@@ -1404,18 +1404,17 @@ div[id^="gallery"] {
     opacity: 1;
 }
 
-
 #galleryethst {
-    background-image: url(https://test.collections.ed.ac.uk/theme/pointsofarrival/images/index-links/howto.png);
+    background-image: url(../images/index-links/howto.png);
 }
 #galleryethpe {
-    background-image: url(https://test.collections.ed.ac.uk/theme/pointsofarrival/images/index-links/resources.png);
+    background-image: url(../images/index-links/resources.png);
 }
 #gallerykb {
-    background-image: url(https://test.collections.ed.ac.uk/theme/pointsofarrival/images/index-links/films.png);
+    background-image: url(../images/index-links/films.png);
 }
 #gallerywespe {
-    background-image: url(https://test.collections.ed.ac.uk/theme/pointsofarrival/images/index-links/themes.png);
+    background-image: url(../images/index-links/themes.png);
 }
 
 .gallery-title {

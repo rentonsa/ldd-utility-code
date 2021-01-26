@@ -7,7 +7,7 @@
     <div id="poa-theme">
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 byEditor">
-            <h1 class="poa-page-title ind-film-title">Contact Details</h1>
+            <h1 class="poa-page-title contact-title">Contact Details</h1>
             <p class="theme-info">
                 Jewish Lives, Scottish Spaces project team and contact details<br/>
                 <a href="jewishmigrationtoscotland.is.ed.ac.uk">jewishmigrationtoscotland.is.ed.ac.uk</a>
