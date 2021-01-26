@@ -2129,7 +2129,6 @@ p.theme-info {
     font-size: 18px;
     margin-right: 50px;
     text-align: justify;
-    margin-left: -210px;
     margin-top: 8vh;
 }
 .title-religion-li, 
@@ -2142,6 +2141,7 @@ p.theme-info {
 .inner-religion-list {
     margin-top: 20px;
     font-weight: 400;
+    padding-inline-start: 0px;      
 }
 .inner-religion-list em {
     font-weight: 500;
