@@ -1,29 +1,57 @@
-<div class="record">
-    <div class="content byEditor">
-        <h1>Discover over 8,000 works of art collected over 400 years. <a class="heading-link" href="./about">Read more...</a></h1>
-
-        <div id="tile-block">
-            <a href="./record/20739" title="S.J. Peploe Nude in Studio Interior"><div id="tile-1" class="art-tile"></div></a>
-            <a href="./record/379" title="Henry Raeburn, John Robison"><div id="tile-2" class="art-tile"></div></a>
-            <a href="./record/20741" title="John Bellany, Self Portrait"><div id="tile-3" class="art-tile"></div></a>
-            <a href="./record/19900" title="Hendrick ten Oever, Canal Landscape with Figures Bathing"><div id="tile-4" class="art-tile"></div></a>
-            <a href="./record/19818" title="De Vries, Cain and Abel"><div id="tile-5" class="art-tile"></div></a>
-            <a href="./record/20735" title="Anne Redpath, Life Painting"><div id="tile-6" class="art-tile"></div></a>
-            <a href="./record/22044" title="David Batchelor, Blob 5 (blue)"><div id="tile-7" class="art-tile"></div></a>
-            <a href="./record/19816" title="Giambologna, Horse"><div id="tile-8" class="art-tile"></div></a>
-            <a href="./record/22035" title="Eduardo Paolozzi, Krokadeel"><div id="tile-9" class="art-tile"></div></a>
-
-            <div class="artuk-links">
-                <div class = "footer-logo">
-                    <a href="https://artuk.org/visit/venues/university-of-edinburgh-5095" class = "artukgreen" target="_blank" title="University of Edinburgh Art Collection on Art UK"></a>
+<section class="introduction">
+    <div class="container-fluid">
+        <!--<div class="centered-text">
+            <h2>8,000 artworks spanning two millenia</h2>
+        </div>-->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                    <a href="./record/112492"><img class="d-block w-100" src="https://images.is.ed.ac.uk/luna/servlet/iiif/UoEart~1~1~76079~393273/1651,2210,7000,3500/1000,500/0/default.jpg" alt="Whittle"></a>
                 </div>
-                <p class = "artuk-text">Art UK, previously called the Public Catalogue Foundation, is a small charity. They work in partnership with 3,000 public collections, the BBC and other organisations to showcase the art the UK owns.
-                    The University of Edinburgh has two discrete areas on Art UK, one for the University's Art Collection (left link), and one for Edinburgh College of Art (right).</p>
-                <div class = "footer-logo">
-                    <a href="https://artuk.org/visit/venues/edinburgh-college-of-art-university-of-edinburgh-7553" class = "artukred" target="_blank" title="Edinburgh College of Art on Art UK"></a>
+                <div class="carousel-item">
+                    <a href="./record/19899"><img class="d-block w-100" src="https://images.is.ed.ac.uk/luna/servlet/iiif/UoEart~1~1~5887~100332/215,2069,7358,3529/1000,500/0/default.jpg" alt="Neefs"></a>
                 </div>
+                <div class="carousel-item">
+                    <a href="./record/20488"><img class="d-block w-100" src="https://images.is.ed.ac.uk/luna/servlet/iiif/UoEart~1~1~14262~101327/597,1660,6000,3000/1000,500/0/default.jpg" alt="Gandharan"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="./record/529"><img class="d-block w-100" src="https://images.is.ed.ac.uk/luna/servlet/iiif/UoEart~1~1~6175~100070/294,270,4264,2132/1000,500/0/default.jpg" alt="Eardley"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="./record/99223"><img class="d-block w-100" src="https://images.is.ed.ac.uk/luna/servlet/iiif/UoEart~1~1~76052~216417/34,229,934,462/full/0/default.jpg" alt="Paolozzi"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="./record/113746"><img class="d-block w-100" src="https://images.is.ed.ac.uk/luna/servlet/iiif/UoEart~1~1~76084~393290/1534,963,5602,2801/1000,500/0/default.jpg" alt="Howden"></a>
+                </div>
+                <!--<div class="carousel-item">
+                    <a href="./record/100016"><img class="d-block w-100" src="https://images.is.ed.ac.uk/luna/servlet/iiif/UoEart~1~1~75437~198392/213,919,9940,4970/1000,500/0/default.jpg" alt="Geiling"></a>
+                </div>-->
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-
+    </div>
+</section>
+<div class="background-banner">
+    <div class="container-fluid text">
+        <h2>About</h2>
+        <p class="paragraph-part">
+            The University of Edinburgh has been engaged with the practices of commissioning, purchasing and displaying the work of artists for nearly 350 years. The early stages of this collecting were closely linked with galvanising the institution’s identity and status as a place of learning and inspiration, through the commissioning and collecting of portraits and busts of Professors and key alumni.<br><br>
+            The present day Art Collection is comprised of two institutional collections – the University of Edinburgh Fine Art Collection and the Edinburgh College of Art Collection. Now amounting to nearly 8,000 artworks spanning two millennia, the collection is divided into twelve named sub-collections which can be viewed <a href="https://collections.ed.ac.uk/art/browse/Collection">here</a>.
+            <br><br>
+            Alongside <a href="./comissioning">commissioning</a> new work, displaying the collection across campus, and lending to external venues, greater emphasis is now placed on the acquisition and use of artworks in the support and development of research and teaching.
+            <br><br>
+            In addition to searching the collection via these pages, The University of Edinburgh Art Collection also has two discrete areas on <a href="https://www.artuk.org/about/about">Art UK</a>; one for the <a href="https://artuk.org/visit/venues/university-of-edinburgh-5095">University's Fine Art Collection</a> and one for <a href="https://artuk.org/visit/venues/edinburgh-college-of-art-university-of-edinburgh-7553">Edinburgh College of Art</a>.
+        </p>
     </div>
 </div>
+
+
+
+

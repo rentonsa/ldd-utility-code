@@ -128,6 +128,13 @@ body {
     text-align: center;
 }
 
+.tab-list-cod {
+    background-color: #fff;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+
 .tab-list2 {
     background-color: #F3E3D4;
     padding: 20px 20px;
@@ -828,4 +835,28 @@ fieldset[disabled] .btn-custom.active {
     max-width:170px;
     text-align: center;
     display: inline-block;
+}
+
+.zipimage{
+    filter: grayscale(50%) !important;
+    
+}
+
+.banimage {
+    height:65% !important;
+    width:65% !important;
+}
+
+.message {
+    padding-left: 30px;
+}
+
+.ccby {
+    height:20% !important;
+    width:20% !important;
+}
+
+.wrap{
+    font-size:15pt;
+    text-align: justify;
 }
