@@ -117,10 +117,10 @@
                         <li><a href="./" title="EERC Home Link">Home</a></li>
                         <li><a href="./overview" title="Browse the Collections Link">Browse the Collections</a></li>
                         <li><a href="./people" title="People Link">People</a></li>
-                        <li><a href="./history" title="Oral History Link">Oral History</a></li>
-                        <li><a href="./publications" title="Publications">Publications</a></li>
+                        <li><a href="./resp" title="Regional Ethnology Scotland Archive Project">Regional Ethnology Scotland Archive Project</a></li>
+                        <li><a href="./using" title="Searching and Using the Collection">Using the Collection</a></li>
                         <li><a href="./contact" title="Contact">Contact</a></li>
-                        <li><a href="./about" title="About Link">About</a></li>
+                        <!--<li><a href="./about" title="About Link">About</a></li>-->
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>

@@ -1,27 +1,17 @@
     <div class="col-md-9 col-sm-9 col-xs-12" style="margin-top: 20px;">
         <div class="pull-left" id="image-container"></div>
         <!--<h1 class="itemtitle"></h1>-->
-        <p>
-            The EERC in conjunction with the Centre for Research Collections at the University of Edinburgh have created an
-            online resource to aid the discovery of a collection of primary source material generated during the first phase
-            of the Regional Ethnology of Scotland Project (RESP), which was carried out in Dumfries and Galloway (2011-2018).
+        <p>The purpose of the Regional Ethnology of Scotland Project (RESP) is to enable communities across Scotland to work together to record information about their local life and society. This work is carried out on a regional basis by conducting fieldwork interviews.</p>
 
-            The focus of this project is a series of audio interviews collected by local volunteer fieldworkers. The
-            interviews can be as short as 10 minutes or as long as 2 hours and cover every aspect of life from schooldays
-            and working life to place-names and changing patterns in land use.
+        <p>The RESP is managed by the European Ethnological Research Centre (EERC) at the University of Edinburgh. In conducting the RESP, the EERC works in partnership with individuals and organisations such as local authority library and archive services, voluntary organisations and schools.</p>
 
-        </p>
+        <p>The interviews are conducted by local volunteers who are trained and supported by the EERC. Those who conduct the interviews and those that they interview discuss what is of interest to them about their lives and the places they live. This website provides access to the RESP Archive, a collection of fieldwork interviews rich in detail about all aspects of life, place and memory.</p>
 
-        <p>
-            The recording of first-hand accounts of people’s lives is one of the richest sources we have to study everyday
-            life. A strength of these recordings is that we hear from people in their own voice. This enables us to hear
-            local accents and dialects as well as letting us gain an insight into how people feel about their lives as the
-            spoken words convey emotion as well as detailed content. Each recording provides us with a detailed account of
-            aspects of a person’s life and their experiences.
-        </p>
-        <p>
-            This resource will continue to grow as work continues in regions beyond Dumfries and Galloway.
-        </p>
+        <p>In order that the collection is of greatest use to researchers and others, detailed summaries for each item are provided in the collections catalogue and all the interviews have been transcribed in full and are available on this site. The collection can be browsed in a number of ways or can be interrogated by free-text searching.</p>
+
+        <p>The ethos of the RESP is that the collection is the creation of those who have made the recordings. As such, it is a central aim of the RESP that the recordings are made freely available in an easily accessible way. This archive interface and the presentation of materials under Creative Commons are the main ways in which we seek to meet this objective.</p>
+
+        <p>More information about the RESP and the EERC can be found here:<br/> <a href="https://www.regionalethnologyscotland.llc.ed.ac.uk/spoken-word" target="_blank">https://www.regionalethnologyscotland.llc.ed.ac.uk/spoken-word</a>.</p>
 
     </div>
 

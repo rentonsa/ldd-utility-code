@@ -284,6 +284,14 @@ footer                          { padding-top: 10px; padding-bottom: 10px;}
     margin-right: 30px;
 }
 
+.padded_images {
+    padding: 1em;
+}
+
+ul.content {
+    margin: 1em;
+}
+
 @media only screen and (max-width: 480px) {
     .eerc-logo {
         width: 100px;
