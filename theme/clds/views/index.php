@@ -78,6 +78,27 @@
         <div class="row">
             <figure class="clickbox">
                 <img
+                    src="https://images.is.ed.ac.uk/luna/servlet/iiif/UoEwmm~2~2~56057~103607/117,350,3802,570/800,/0/default.jpg"
+                    alt="Laing Collection, Treasures Room" class="img-responsive">
+
+                <div>
+                    <h2>Collections as Data</h2><i class="fa fa-file-pdf-o"></i>
+                    <i class="fa fa-camera"></i>
+                    <i class="ion-arrow-right-c"></i>
+
+                    <div class="curl"></div>
+                    <a href="<?php echo base_url(); ?>/collections-as-data" class="caption"
+                       title="Collections as Data"></a>
+                </div>
+            </figure>
+        </div>
+    </div>
+</div>
+<div class="tab-col">
+    <div class="container-full">
+        <div class="row">
+            <figure class="clickbox">
+                <img
                     src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/0016491cropped.jpg"
                     alt="Robert Barker, Panorama of Edinburgh, 1792" class="img-responsive">
 
