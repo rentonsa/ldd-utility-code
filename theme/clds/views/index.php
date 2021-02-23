@@ -87,7 +87,7 @@
                     <i class="ion-arrow-right-c"></i>
 
                     <div class="curl"></div>
-                    <a href="<?php echo base_url(); ?>/collections-as-data" class="caption"
+                    <a href="<?php echo base_url(); ?>collections-as-data" class="caption"
                        title="Collections as Data"></a>
                 </div>
             </figure>
