@@ -860,3 +860,8 @@ fieldset[disabled] .btn-custom.active {
     font-size:15pt;
     text-align: justify;
 }
+.wrap-bold{
+    font-size:15pt;
+    text-align: justify;
+    font-weight:bold;
+}
