@@ -69,9 +69,11 @@ $config['skylight_fields'] = array('Title' => 'title',
     'Notes' => 'notes',
     'Language' => 'langmaterial',
     'Interview summary' => 'scopecontent',
+    'Biographical history' => 'bioghist',
     'Related' => 'relatedmaterial',
     'Physical' => 'phystech',
     'Access' => 'accessrestrict',
+    'Usage Statement' => 'userestrict',
     'Rights' => 'rights_statements',
     'Dates' =>'dates',
     'Extent' => 'extents',
@@ -97,7 +99,8 @@ $config['skylight_meta_fields'] = array('Title' => 'title',
     'Level' => 'level',);
 
 $config['skylight_recorddisplay'] = array('Identifier','Interviewer','Dates','Extent','Extent Type','Notable persons / organisations','Subject',
-    'Rights','Interview summary','Related','Bibliography','Physical','Access','Alternative Format', 'Audio links and images', 'Language' );
+    'Biographical history', 'Rights','Interview summary','Related','Bibliography','Physical','Access', 'Usage Statement', 'Alternative Format',
+    'Audio links and images', 'Language');
 
 $config['skylight_searchresult_display'] = array('Title','Interviewer','Subject','Notable persons/organisations', 'Identifier', 'Interview summary');
 
