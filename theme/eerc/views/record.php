@@ -13,6 +13,7 @@ function exceptions_error_handler($severity, $message, $filename, $lineno) {
 }
 
 function endsWith( $haystack, $needles ) {
+    $haystack = strtolower($haystack);
     foreach ($needles as $needle) {
         if (substr($haystack, -strlen($needle)) === $needle) {
             return true;
@@ -37,7 +38,7 @@ function curl_get_file_size( $url ) {
 
     $curl = curl_init( $url );
 
-    //curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 1);
+    curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 1);
     //curl_setopt($curl, CURLOPT_CONNECTTIMEOUT_MS, 1000);
 
     // Issue a HEAD request and follow any redirects.
@@ -132,7 +133,9 @@ $bitstreamLinks = array();
             }*/
             ?>
 
-            <?php $excludes = array("");
+            <?php
+
+            $excludes = array("");
             $idset = false;
             $interviewer = '';
             foreach($recorddisplay as $key) {
