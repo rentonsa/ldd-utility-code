@@ -14,9 +14,21 @@
             if(substr($strip_title, -2, 1) == ',') {
                 $page_title = substr($strip_title, 0, strlen($strip_title) - 2) . substr($strip_title, -1);
             }
+
+            $pt = trim(strip_tags($page_title));
+
+            if($pt == "Resp") {
+                $pt = "Regional Ethnology Scotland Archive Project";
+            }
+            else if($pt == "Using") {
+                $pt = "Searching and Using the Collection";
+            }
+            else if($pt == "Overview") {
+                $pt = "Browse the Collections";
+            }
         ?>
 
-        <title><?php echo strip_tags($page_title); ?></title>
+        <title><?php echo $pt; ?></title>
 
         <link rel="pingback" href="<?php echo base_url() . index_page(); if (index_page() !== '') { echo '/'; } echo 'pingback'; ?>" />
 
