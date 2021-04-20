@@ -1,8 +1,15 @@
 <div class="col-md-9 col-sm-9 col-xs-12">
     <div class="content byEditor">
+
+        <img src="<?php echo base_url()?>/theme/eerc/images/thumbs_processed/thumbnail_DG38-3-4-1.JPG" alt="Interviews of Ena Forteath aged 78" width="300" class="img-responsive pull-left padded_images" />
+
         <h1 class="itemtitle">Searching and Using the Collection</h1>
 
         <p>At the heart of the Regional Ethnology of Scotland Project (RESP) is a collection of digital audio files containing hundreds of hours of fieldwork recordings which provide a rich and fascinating insight into many aspects of life and society in Scotland. The collections are arranged initially by geographic study area, then named interviewer and then by interviewee. When searching the catalogue you will find all digital files, including audio recordings, transcriptions and any available photographs located on the individual interviewee pages or fieldworker page.</p>
+
+        <img src="<?php echo base_url()?>/theme/eerc/images/resp-handwriting2.png" alt="Part of a handwritten transcription from an interview" class="img-responsive center-block padded_images" style="margin-top: 1em; clear:both;" />
+
+        <img src="<?php echo base_url()?>/theme/eerc/images/thumbs_processed/thumbnail_DG3-3-4-14.JPG" alt="Interviews of John Armstrong aged 72" width="300" class="img-responsive pull-right padded_images" />
 
         <p><strong>Browse the Collections</strong></p>
 
@@ -15,6 +22,8 @@
         <p>You can also search using the thumbnail images located on the ‘Home’ and ‘People’ pages. Click on any image from the montage to link through to that person’s page within the resource.</p>
 
         <p>The full archival catalogue can also be searched via the <a href="https://archives.collections.ed.ac.uk/" target="_blank">University of Edinburgh Archives on-line catalogue</a>.</p>
+
+        <img src="<?php echo base_url()?>/theme/eerc/images/resp-montage.png" alt="Montage of interview photographs" class="img-responsive center-block padded_images" style="margin-top: 1em; clear:both;" />
 
         <p><strong>Access and Restrictions</strong></p>
 
@@ -45,6 +54,8 @@
         <p><strong>Takedown Policy</strong></p>
 
         <p>In making material available online RESP acts in good faith. However, despite appropriate safeguards and due diligence searches prior to the release of any material, we recognise that from time to time material published online may be in breach of GDPR, contain sensitive personal data, or include content that may be regarded by some as offensive or defamatory. If you are concerned that you have found material on this website, which you feel is offensive or defamatory, or you are concerned that material pertaining to yourself is on this website without your permission, please contact us in writing and this issue will be dealt with immediately. For further advice regarding appropriate reporting procedures please follow this link Takedown Policy.</p>
+
+        <img src="<?php echo base_url()?>/theme/eerc/images/resp-handwriting3.png" alt="Part of a handwritten transcription from an interview" class="img-responsive center-block padded_images" style="margin-top: 1em; clear:both;" />
 
     </div>
 </div>

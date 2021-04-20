@@ -36,9 +36,9 @@
         Remove this if you use the .htaccess -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <meta name="title" content="<?= $page_title ?>">
+        <meta name="description" content="The purpose of the Regional Ethnology of Scotland Project (RESP) is to enable communities across Scotland to work together to record information about their local life and society. This work is carried out on a regional basis by conducting fieldwork interviews. The RESP is managed by the European Ethnological Research Centre (EERC) at the University of Edinburgh. In conducting the RESP, the EERC works in partnership with individuals and organisations such as local authority library and archive services, voluntary organisations and schools.">
+        <meta name="author" content="The European Ethnological Research Centre">
+        <meta name="title" content="<?= $pt ?>">
 
         <!-- Mobile viewport optimized: j.mp/bplateviewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,7 +52,6 @@
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/fancybox/source/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/flowplayer-7.0.4/skin/skin.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/css/style.css?v=2">
         <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
@@ -86,14 +85,6 @@
         </script>
         <!-- End Google Analytics -->
 
-        <script src="<?php echo base_url(); ?>assets/flowplayer-7.0.4/flowplayer.min.js"></script>
-
-        <!-- global options -->
-        <script>
-            flowplayer.conf = {
-                analytics: "<?php echo $ga_code ?>"
-            };
-        </script>
 
         <?php if (isset($solr)) { ?><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
             <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />

@@ -4,7 +4,7 @@
                 <div class="col-md-12 col-sm-12 col-xs-12 footer-logos ">
                     <div class="center-block">
                         <a href="https://www.ed.ac.uk" target="_blank" title="The University of Edinburgh"><div class="uoe-logo"></div></a>
-                        <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc" target="_blank" title="Centre for Research Collections"><div class="crc-logo"></div></a>
+                        <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/cultural-heritage-collections/crc" target="_blank" title="Centre for Research Collections"><div class="crc-logo"></div></a>
                         <a href="/" target="_blank" title="Regional Ethnology of Scotland Project"><div class="eerc-logo-small"></div></a>
                     </div>
                 </div>

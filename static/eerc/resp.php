@@ -2,9 +2,10 @@
     <div class="content byEditor">
         <h1 class="itemtitle">Regional Ethnology Scotland Archive Project</h1>
 
-        <img src="<?php echo base_url()?>/theme/eerc/images/thumbs_processed/thumbnail_DG8-1-4-4.JPG" alt="Royal Infirmary of Edinburgh" width="300" class="img-responsive pull-right padded_images" />
-        <img src="<?php echo base_url()?>/theme/eerc/images/thumbs_processed/thumbnail_DG38-5-4-1.JPG" alt="Royal Infirmary of Edinburgh" width="300" class="img-responsive pull-right padded_images" style="margin-top: 1em; clear:both;" />
-
+        <img src="<?php echo base_url()?>/theme/eerc/images/thumbs_processed/thumbnail_DG8-1-4-4.JPG" alt="Interviews of Isobel Sutherland aged 57" width="300" class="img-responsive pull-right padded_images" />
+        <img src="<?php echo base_url()?>/theme/eerc/images/thumbs_processed/thumbnail_DG11-1-4-2.JPG" alt="Interviews of Nancy McLucas, Christine Wilson and Eric Wilson" width="300" class="img-responsive pull-right padded_images" style="margin-top: 1em; clear:both;" />
+        <img src="<?php echo base_url()?>/theme/eerc/images/eerc_logo.png" alt="European Etnological Research Centre" width="250" class="img-responsive pull-right padded_images" style="margin-top: 1em; clear:both;" />
+        <img src="<?php echo base_url()?>/theme/eerc/images/CRC_logo.gif" alt="Centre for Research Collections" width="150" class="img-responsive pull-right padded_images" style="margin-top: 1em; clear:both;" />
 
         <p>The EERC has been working with the <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/cultural-heritage-collections/crc" target="_new">Centre for Research Collections at the University of Edinburgh</a> since 2018 cataloguing and digitally preserving a collection centred around hundreds of audio recordings and developing and building an on-line platform to aid the discovery of the RESP Archive and ensure its long term preservation and stability.</p>
 
@@ -28,7 +29,11 @@
             <li>Mark Mulhern, Senior Research Fellow (EERC)</li>
         </ul>
 
+        <img src="<?php echo base_url()?>/theme/eerc/images/resp-handwriting.png" alt="Part of a handwritten transcription from an interview" class="img-responsive center-block padded_images" style="margin-top: 1em; clear:both;" />
+
         <p>Enquiries regarding the RESP Archive should be directed in the first instance to: <a href="mailto:is-crc@ed.ac.uk">is-crc@ed.ac.uk</a> Please address your enquiry to ‘<i>RESP Archive</i>’.</p>
+
+        <img src="<?php echo base_url()?>/theme/eerc/images/partnerships-resp.jpg" alt="Partnerships" width="300" class="img-responsive pull-right padded_images" style="margin-top: 1em; clear:both;" />
 
         <p><strong>Partnerships</strong></p>
 
@@ -49,6 +54,8 @@
 
             <li>Kirkcudbright Harbour Cottage Trust</li>
         </ul>
+
+        <img src="<?php echo base_url()?>/theme/eerc/images/books_resp.jpg" alt="People holding books" class="img-responsive center-block padded_images" style="margin-top: 2em; margin-bottom: 2em; clear:both;" />
 
     </div>
 </div>
