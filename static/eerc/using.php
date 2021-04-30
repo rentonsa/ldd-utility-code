@@ -15,9 +15,9 @@
 
         <p>The <a href="/eerc/overview">Browse the Collections</a> page will take you to full searchable catalogue of the collection. To browse you can click through a series of drop down lists. The arrangement reflects the full archival catalogue and is by regional study, fieldworker, then individual interviewee.</p>
 
-        <p>All audio recordings relating to individual interviews will be found by clicking on Interviews of pages.</p>
+        <p>All audio recordings relating to individual interviews will be found by clicking on <i>Interviews of</i> pages.</p>
 
-        <p>If you know the name of the individual interviewer or interviewee you are looking for, have the unique reference number or an idea of the subject area that you would like to explore you can search using the search box located on the header of each page. For best results search when carrying out a name search, search using surname only in the first instance. Alternatively you can click through listing of subjects and named person, which are located on the left of each web page.</p>
+        <p>If you know the name of the individual interviewer or interviewee you are looking for, have the unique reference number or an idea of the subject area that you would like to explore you can search using the search box located on the header of each page. For best results when carrying out a name search, use surname only in the first instance. Alternatively you can click through listings of subjects and named persons, which are located on the left of each web page.</p>
 
         <p>You can also search using the thumbnail images located on the ‘Home’ and ‘People’ pages. Click on any image from the montage to link through to that person’s page within the resource.</p>
 
@@ -35,7 +35,7 @@
 
         <p><strong>Redactions</strong></p>
 
-        <p>To ensure compliance with General Data Protection Regulations (GDPR) requirements, redactions have been made to some audio files where there may be personal or sensitive material. Should you experience short gaps in any of the recording or notice episodes of ‘brown noise’ this may be where sound files have been redacted.</p>
+        <p>To ensure compliance with General Data Protection Regulations (GDPR) requirements, redactions have been made to some audio files where there may be personal or sensitive material. Should you experience short gaps in any of the recordings or notice episodes of ‘brown noise’ this may be where sound files have been redacted.</p>
 
         <p>In all cases the original unredacted sound file has been digitally preserved and is securely stored.</p>
 
@@ -53,7 +53,7 @@
 
         <p><strong>Takedown Policy</strong></p>
 
-        <p>In making material available online RESP acts in good faith. However, despite appropriate safeguards and due diligence searches prior to the release of any material, we recognise that from time to time material published online may be in breach of GDPR, contain sensitive personal data, or include content that may be regarded by some as offensive or defamatory. If you are concerned that you have found material on this website, which you feel is offensive or defamatory, or you are concerned that material pertaining to yourself is on this website without your permission, please contact us in writing and this issue will be dealt with immediately. For further advice regarding appropriate reporting procedures please follow this link Takedown Policy.</p>
+        <p>In making material available online RESP acts in good faith. However, despite appropriate safeguards and due diligence searches prior to the release of any material, we recognise that from time to time material published online may be in breach of GDPR, contain sensitive personal data, or include content that may be regarded by some as offensive or defamatory. If you are concerned that you have found material on this website, which you feel is offensive or defamatory, or you are concerned that material pertaining to yourself is on this website without your permission, please contact us in writing and this issue will be dealt with immediately. For further advice regarding appropriate reporting procedures please follow this link <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc/services/copying-and-digitisation/image-licensing/takedown-policy" target="_blank">Takedown Policy</a>.</p>
 
         <img src="<?php echo base_url()?>/theme/eerc/images/resp-handwriting3.png" alt="Part of a handwritten transcription from an interview" class="img-responsive center-block padded_images" style="margin-top: 1em; clear:both;" />
 

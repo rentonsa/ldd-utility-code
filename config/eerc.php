@@ -112,7 +112,7 @@ $config['skylight_search_fields'] = array('Title' => 'title',
     'Interview summary' => 'scopecontent',
 );
 
-$config['skylight_sort_fields'] = array('Title' => 'title_sort');
+$config['skylight_sort_fields'] = array(); //array('Title' => 'title_sort');
 
 $config['skylight_related_fields'] = array('Parent' => 'parent', 'Id' => 'id');
 

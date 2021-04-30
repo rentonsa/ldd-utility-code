@@ -149,6 +149,7 @@ $bitstreamLinks = array();
                         $audio = '';
                         $trans = '';
                         $interview_summary = '';
+                        $biographical_history = '';
 
                         foreach($solr[$element] as $index => $metadatavalue) {
                             // if it's a facet search
@@ -202,7 +203,7 @@ $bitstreamLinks = array();
                                                 $audio .= '<audio controls src="' . $do_url . '" title="Embedded audio file ' . $do_file . $file_size . '">';
                                                 $audio .= 'Your browser does not support the <code>audio</code> element.</audio>';
                                                 //$audio .= $file_size;
-                                            } else if (endsWith($do_file, ['.mp4','.mov'])) {
+                                            } else if (endsWith($do_file, ['.mp4','.mov', '.m4v'])) {
                                                 $audio .= '<video controls width="480" preload="metadata" title="Embedded video file ' . $do_file . $file_size . '">';
                                                 $audio .= '<source src="' . $do_url . '">';
                                                 $audio .= 'Sorry, your browser doesn\'t support embedded videos.</video>';
@@ -239,6 +240,14 @@ $bitstreamLinks = array();
                                     }
                                     //echo sizeof($solr[$element]);
 
+                                }
+                                else if($key == 'Biographical history')    {
+                                    $biographical_history .= '<p>' . $metadatavalue . '</p>';
+
+                                    if(sizeof($solr[$element])-1 == $index) {
+                                        $value .= '<div>' . $biographical_history . '</div>';
+                                    }
+                                    //$value .= '<div>' . $metadatavalue . '</div><script>$("#intsum").readmore({"collapsedHeight": 50, "moreLink": \'<a href="#" class="moreless">...read more</a>\', "lessLink": \'<a href="#" class="moreless">...read less</a>\'});</script>';
                                 }
                                 else if($key == 'Interview summary')    {
                                     $interview_summary .= '<p>' . $metadatavalue . '</p>';
