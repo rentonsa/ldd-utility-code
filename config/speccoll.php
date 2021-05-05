@@ -13,12 +13,14 @@ $config['skylight_fullname'] = 'Special Collections';
 if (ENVIRONMENT == 'development') {
     $config['skylight_ga_code'] = '';
     $config['skylight_container_id'] = '89c89f7c-a883-443e-8bf4-431234e91d3e';
-    $config['skylight_manifest_endpoint'] = 'https://test.collectionsmedia.is.ed.ac.uk/iiif/';
+   // $config['skylight_manifest_endpoint'] = 'https://test.collectionsmedia.is.ed.ac.uk/iiif/';
+    $config['skylight_manifest_endpoint'] = 'https://librarylabs.ed.ac.uk/iiif/speccollprototype/manifest/';
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-9';
     $config['skylight_container_id'] = '05a4fd68-f752-4d4e-a4fc-030d2642091c';
-    $config['skylight_manifest_endpoint'] = 'https://collectionsmedia.is.ed.ac.uk/iiif/';
+    //$config['skylight_manifest_endpoint'] = 'https://collectionsmedia.is.ed.ac.uk/iiif/';
+    $config['skylight_manifest_endpoint'] = 'https://librarylabs.ed.ac.uk/iiif/speccollprototype/manifest/';
 }
 
 $config['skylight_adminemail'] = 'lddt@mlist.is.ed.ac.uk';
