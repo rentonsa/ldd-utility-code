@@ -25,6 +25,7 @@ import csv
 import codecs
 import random
 import string
+from pprint import pprint
 from urllib.request import urlopen
 from urllib.request import FancyURLopener
 from xml.dom import minidom
@@ -248,6 +249,7 @@ def create_dspace_record(manifest_array, out_file, et_out, outroot, manifest_id,
                         et_out = map_md(key, value, et_out, outroot)
 
         image_count += 1
+
     dcvalue = et_out.SubElement(outroot, 'dcvalue')
     dcvalue.set('element', 'format')
     dcvalue.set('qualifier', 'extent')
@@ -266,7 +268,7 @@ def create_dspace_record(manifest_array, out_file, et_out, outroot, manifest_id,
 
 def get_images(connection, image_get_sql):
     """
-    Get images for manifest
+    Get images-test for manifest
     :param connection: postgres connection
     :param image_get_sql: SQL to collect IMAGE table data
     """
@@ -294,7 +296,7 @@ def get_dummy_array():
         "height": 200,
         "width": 200,
         "description": "",
-        "images": [
+        "images-test": [
             {
                 "motivation": "sc:painting",
                 "on": "https://librarylabs.ed.ac.uk/iiif/media/dummy/c1",
@@ -561,6 +563,18 @@ def truncate_tables(connection):
     except Exception:
         logger.error("Error while truncating IMAGE_DOR")
 
+def get_attribute(data, attribute, default_value):
+    """
+    Check presence of item in JSON
+    :param data: JSON object
+    :param attribute: item sought
+    :paeam default_value: something to set if not found
+    """
+    try:
+        value = data.get(attribute)
+    except ValueError as e:
+        logger.info("couldn't do it")
+    return value or default_value
 
 def main():
     """
@@ -591,11 +605,8 @@ def main():
             # Get data from LUNA API for each record within the collection
             image_data = get_data(api_string)
             for record in image_data:
-                shelfmark = 'N/A'
-                sequence = 99999
-                dor = ''
                 size = record["urlSize1"]
-                # Only interested in images, not Book Reader objects
+                # Only interested in images-test, not Book Reader objects
                 if record["mediaType"] == 'Book':
                     logger.info("This is a book- I do no more on it")
                 else:
@@ -603,37 +614,75 @@ def main():
                     image_id = link_id.split('.', 1)[0]
                     image_id = str(image_id).strip()
                     identity = ALL_VARS['LUNA_DETAIL'] + record["identity"]
-                    metadata = record["attributes"]
-                    first_split = metadata.split('"],')
+
+                    #logger.info("IMAGE " + identity)
+
+                    #We need to interrogate the API data for shelfmarks, dors and sequence nos only
+                    metadata = json.loads(record['attributes'])
+                    if dspace == 'Y':
+                        shelf_val = get_attribute(metadata, 'work_shelfmark', 'N/A')
+                    if dspace == 'N':
+                        shelf_val = get_attribute(metadata, 'work_id_number', 'N/A')
+                    if isinstance(shelf_val, list):
+                        shelfmark = str(shelf_val[0])
+                    else:
+                        shelfmark = str(shelf_val)
+                    sequence_val = get_attribute(metadata, 'sequence', '99999')
+                    #Sequence should be an int- if it's not, set to 99999
+                    try:
+                        sequence = int(sequence_val)
+                    except Exception:
+                    # If unpaged, set all sequences to 99999 so we know not to page
+                        sequence = 99999
+                    dor_val = get_attribute(metadata, 'digital_object_reference', '')
+                    if isinstance(dor_val, list):
+                        dor = str(dor_val[0])
+                    else:
+                        dor = str(dor_val)
+
+                    #logger.info("SHELFMARK is " + shelfmark + " DOR is " + dor + " sequence is " + str(sequence))
+                    #########################################
+
+                    ##########################################
+                    #HOPING I CAN REMOVE THIS
+                    # metadata = record["attributes"]
+                    # first_split = metadata.split('"],')
                     # Split out metadata items- identifying this is quite nasty.
                     # There should be a better way.
-                    for bit in first_split:
-                        data_items = bit.split('",')
-                        for item in data_items:
-                            if '["' in item:
-                                item_pair = item.split(':["')
-                            else:
-                                item_pair = item.split(":")
-                            try:
-                                key = item_pair[0].replace('"', '')
-                                value = item_pair[1].replace('"', '')
-                            except Exception:
-                                break
-                            # Capture shelfmark and sequence for the image
-                            if key == "work_shelfmark":
-                                if dspace == 'Y':
-                                    shelfmark = value
-                            if key == "work_id_number":
-                                if dspace == 'N':
-                                    shelfmark = value
-                            if key == "sequence":
-                                try:
-                                    sequence = int(value)
-                                except Exception:
-                                    # If unpaged, set all sequences to 99999 so we know not to page
-                                    sequence = 99999
-                            if key == "digital_object_reference":
-                                dor = value
+                    # for bit in first_split:
+                    #
+                    #     data_items = bit.split('",')
+                    #
+                    #     for item in data_items:
+                    #         if '["' in item:
+                    #             item_pair = item.split(':["')
+                    #         else:
+                    #             item_pair = item.split(":")
+                    #         try:
+                    #             key = item_pair[0].replace('"', '')
+                    #             logger.info("KEY " + key)
+                    #             value = item_pair[1].replace('"', '')
+                    #             logger.info("VALUE " + value)
+                    #         except Exception:
+                    #             break
+                    #         # Capture shelfmark and sequence for the image
+                    #         #logging.info(str(key) + str(value))
+                    #         if key == "work_shelfmark":
+                    #             if dspace == 'Y':
+                    #                 shelfmark = value
+                    #                 logger.info('SHELFMARK is ' + shelfmark)
+                    #         if key == "work_id_number":
+                    #             if dspace == 'N':
+                    #                 shelfmark = value
+                    #         if key == "sequence":
+                    #             try:
+                    #                 sequence = int(value)
+                    #             except Exception:
+                    #                 # If unpaged, set all sequences to 99999 so we know not to page
+                    #                 sequence = 99999
+                    #         if key == "digital_object_reference":
+                    #             dor = value
+                    ###########################
                     try:
                         if dor != '':
                             # If we are working with an Archive, DOR is king,
@@ -724,7 +773,7 @@ def main():
                                                               manifest_shelf,
                                                               collection,
                                                               manifest_type)
-                        # Get all images for DOR
+                        # Get all images-test for DOR
                         image_get_sql = "select i.jpeg_path, " \
                                         "i.sequence from IMAGE i, IMAGE_DOR id " \
                                         "where id.dor_id ='" + manifest_shelf + "' " \
@@ -777,7 +826,7 @@ def main():
                                                       manifest_shelf,
                                                       collection,
                                                       manifest_type)
-                # Get all images for shelfmark
+                # Get all images-test for shelfmark
                 image_get_sql = "select jpeg_path, sequence " \
                                 "from IMAGE " \
                                 "where upper(shelfmark) =upper('" + manifest_shelf + "') " \
