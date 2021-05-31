@@ -70,14 +70,14 @@
         //$url = $this->base_url . $this->solr_collection . "/select?";
         $base_url = $as_base_url;
 
+
         // Login
         $result = request($base_url . "/users/" . $as_user . "/login",
             ['password' => $as_password]);
         log_message('debug', $base_url . "/users/" . $as_user . "/login");
         $json_obj = json_decode($result, TRUE);
 
-
-        if($json_obj !== NULL)  {
+        if($json_obj !== NULL && !array_key_exists('error', $json_obj))  {
         log_message("debug", "Logged in to ArchivesSpace REST API.");
         $session = $json_obj['session'];
 
@@ -118,8 +118,8 @@
     }
 
     function cleanTitle($title) {
-        if(substr($title, strlen($title)-3, 1) == ',') {
-            return substr($title, 0, strlen($title)-3);
+        if(strpos($title, ',')) {
+            return substr($title, 0, strpos($title, ','));
         }
 
         return $title;
