@@ -338,9 +338,9 @@ ul.content {
 
 b.hit                               { color: #000; padding: 2px; background-color: #9AAEBB; }
 .tags					            { margin-top: 5px;  }
-.tags a 				            { color: #000; font-size: 13px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; padding: 2px 4px; line-height: 20px; margin-right: 8px; margin-top: 6px; text-decoration: none; display:inline-block; }
+.tags a 				            { color: #000 !important; font-size: 13px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; padding: 2px 4px; line-height: 20px; margin-right: 8px; margin-top: 6px; text-decoration: none; display:inline-block; }
 .tags a.bold			            { font-weight: bold; }
-.tags a:hover			            { background: #33535e !important; color: #ffffff; text-decoration: none; }
+.tags a:hover			            { background: #33535e !important; color: #ffffff !important; text-decoration: none; }
 .tags a:visited			            { background: #999; color: #ffffff; text-decoration: none; }
 .tags a:visited:hover		        { background: #33535e; color: #ffffff; text-decoration: none; }
 
