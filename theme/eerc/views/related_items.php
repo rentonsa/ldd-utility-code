@@ -16,8 +16,8 @@
 
                 $strip_rec_title = strip_tags($doc[$title_field][0]);
 
-                if(substr($strip_rec_title, -1) == ',') {
-                    $strip_rec_title = substr($strip_rec_title, 0, strlen($strip_rec_title) - 1);
+                if(strpos($strip_rec_title, ',')) {
+                    $strip_rec_title = substr($strip_rec_title, 0, strpos($strip_rec_title, ','));
                 }
 
             ?>

@@ -112,8 +112,8 @@ $bitstreamLinks = array();
 
             $strip_rec_title = strip_tags($record_title);
 
-            if(substr($strip_rec_title, -1) == ',') {
-                echo substr($strip_rec_title, 0, strlen($strip_rec_title) - 1);
+            if(strpos($strip_rec_title, ',')) {
+                echo substr($strip_rec_title, 0, strpos($strip_rec_title, ','));
             }
             else    {
                 echo $strip_rec_title;
