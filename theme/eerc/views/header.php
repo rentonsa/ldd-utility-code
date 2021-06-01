@@ -11,8 +11,9 @@
         <base href="<?php echo base_url() . index_page(); if (index_page() !== '') { echo '/'; } echo $this->config->item('skylight_url_prefix'); echo '/' ?>">
         <?php
             $strip_title = strip_tags($page_title);
-            if(substr($strip_title, -2, 1) == ',') {
-                $page_title = substr($strip_title, 0, strlen($strip_title) - 2) . substr($strip_title, -1);
+
+            if(strpos($strip_title, ',')) {
+                $page_title =  substr($page_title, 0, strpos($page_title, ','));
             }
 
             $pt = trim(strip_tags($page_title));
