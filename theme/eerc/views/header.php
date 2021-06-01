@@ -15,6 +15,7 @@
             if(strpos($strip_title, ',')) {
                 $page_title =  substr($page_title, 0, strpos($page_title, ','));
             }
+            $page_title = str_replace('"', '', $page_title);
 
             $pt = trim(strip_tags($page_title));
 
