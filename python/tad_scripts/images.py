@@ -25,7 +25,7 @@ csv_path = "image_rights.csv"
 api_base_url = "https://digitalpreservation.is.ed.ac.uk"
 endpoint_path = "/rest/login"
 endpoint = "{}{}".format(api_base_url,endpoint_path)
-ds_collection = "377e93ba-c66f-46a1-930b-553323f98398"
+ds_collection = "xxxxxxxx"
 
 ds_user = input("Enter your email for DSpace:")
 ds_password = input("Enter your password for DSpace:")

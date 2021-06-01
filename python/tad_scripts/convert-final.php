@@ -40,7 +40,6 @@
 
 // I need permission to delete agents and archival objects
 
-// &tf(}9VZY4Xs*!m<
 
 // Database
 $host="localhost";
@@ -73,7 +72,7 @@ $api = [
 	'test' => [
 		"base" => "http://lac-archives-test.is.ed.ac.uk:8089",
 		"user" => "gvanbre",
-		"password" => "%9W;:CN93p#T)HfM",
+		"password" => "xxxxxxxx",
 		"agentColumn" => "test_remote_agent_id",
 		"tapeColumn" => "test_remote_resource_id",
 		"trackColumn" => "test_remote_object_id",
@@ -93,7 +92,7 @@ $api = [
 	'live' => [
 		"base" => "http://lac-archivesspace-live2.is.ed.ac.uk:8089",
 		"user" => "gvanbre",
-		"password" => "f0r-ch@ng1ng",
+		"password" => "xxxxxxxx",
 		"agentColumn" => "live_remote_agent_id",
 		"tapeColumn" => "live_remote_resource_id",
 		"trackColumn" => "live_remote_object_id",

@@ -27,8 +27,8 @@ updated_archival_object_csv = os.path.normpath("subjects_out.csv")
 # Modify your ArchivesSpace backend url, username, and password as necessary
 aspace_url = 'http://lac-archivesspace-live2.is.ed.ac.uk:8089'  # Backend URL for ASpace
 username = 'admin'
-#password = 'quZ36sVYDvy3Tjct'
-password = '3KPhJutXV5LGg5kP'
+
+password = 'xxxxxxx'
 # Login to ASpace backend and store the session token and some header info
 auth = requests.post(aspace_url + '/users/' + username + '/login?password=' + password).json()
 session = auth["session"]
