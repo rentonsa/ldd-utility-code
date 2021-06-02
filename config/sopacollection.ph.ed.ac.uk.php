@@ -6,10 +6,12 @@ $config['skylight_appname'] = 'physics';
 if (ENVIRONMENT == 'development') {
     $config['base_url'] = 'https://test.sopacollection.ph.ed.ac.uk/';
     $config['skylight_ga_code'] = 'UA-25737241-6';
+    $config['skylight_container_id'] = 'e4988bc0-6c32-4f3e-a280-92a222158789';
 }
 else {
     $config['base_url'] = 'https://sopacollection.ph.ed.ac.uk/';
     $config['skylight_ga_code'] = 'UA-25737241-10';
+    $config['skylight_container_id'] = 'df0d9c26-2b73-4cce-8ed7-d047b1a0884e';
 }
 
 $config['skylight_theme'] = 'physics';
@@ -26,7 +28,7 @@ $config['skylight_adminemail'] = 'lddt@mlist.is.ed.ac.uk';
 $config['skylight_oaipmhcollection'] = 'hdl_10683_8';
 
 // Container ID and the field used in solr index to store this ID. Used for restricting search/browse scope.
-$config['skylight_container_id'] = 'df0d9c26-2b73-4cce-8ed7-d047b1a0884e';
+
 $config['skylight_container_field'] = 'location.coll';
 $config['skylight_sitemap_type'] = 'internal';
 
