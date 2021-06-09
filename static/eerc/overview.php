@@ -76,7 +76,6 @@
             ['password' => $as_password]);
         log_message('debug', $base_url . "/users/" . $as_user . "/login");
         $json_obj = json_decode($result, TRUE);
-        print_r($json_obj);
 
         if($json_obj !== NULL && !array_key_exists('error', $json_obj))  {
         log_message("debug", "Logged in to ArchivesSpace REST API.");
