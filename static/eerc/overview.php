@@ -76,6 +76,7 @@
             ['password' => $as_password]);
         log_message('debug', $base_url . "/users/" . $as_user . "/login");
         $json_obj = json_decode($result, TRUE);
+        print_r($json_obj);
 
         if($json_obj !== NULL && !array_key_exists('error', $json_obj))  {
         log_message("debug", "Logged in to ArchivesSpace REST API.");
@@ -185,7 +186,7 @@
     foreach(getTree($as_base_url, $as_url, $as_user, $as_password)['children'] as $index => $branch) {
         //print($index);
         /* <li class="overview_list" style="margin: 0.5em; font-size: 18px;"><button class="plus-button" onclick="toggleButton(this, '#ul_<?= $index ?>');">+</button>&nbsp;<?= cleanTitle($branch['title']) ?></li> */
-        if($index == 0) { ?>
+        if($index == 0 || $index == 1) { ?>
         <li class="overview_list" style="margin: 0.5em; font-size: 18px; font-weight: bold;"><button class="plus-button" onclick="toggleButton(this, '#ul_<?= $index ?>');">-</button>&nbsp;<?= cleanTitle($branch['title']) ?></li>
         <?= getChildren($branch, $index, null) ?>
 

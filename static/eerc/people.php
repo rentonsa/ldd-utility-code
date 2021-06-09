@@ -2,17 +2,17 @@
     <div class="content byEditor">
         <h1 class="itemtitle">People</h1>
 
-        <p>The RESP began in Dumfries and Galloway and now continues in other parts of the country. The recordings collected in Dumfries & Galloway are available here and, over time, collections from other areas will be added to this resource.</p>
+        <p>The RESP began in Dumfries and Galloway and now continues in East Lothian and elsewhere. The recordings collected in Dumfries & Galloway and many of those from East Lothian are available here. Over time, collections from other areas will be added to this resource.</p>
 
         <p>A number of individuals and groups have participated in the RESP as both fieldworkers and as interviewees. The collection also includes recordings made before the RESP was created by groups and individuals. One group, the Stranraer and District Local History Trust, shared their recordings (made between 1999 and 2016) and these formed the, foundation of the D&G collection.</p>
 
-        <p>The Dumfries and Galloway interviewees range in age from 8 years old to 102 years old. The proportion of male and female interviewees and fieldworkers is approximately 50:50.</p>
+        <p>The interviewees range in age from 8 years old to 102 years old. The proportion of male and female interviewees and fieldworkers is approximately 50:50.</p>
 
         <p>Local people, whether volunteer fieldworkers or interviewees, are central to the RESP. Fieldworkers are provided with training and ongoing support and guidance. Participation in follow-up community based events is also encouraged and community participation and life-long learning are integral to the ethos of the RESP.</p>
 
-        <p>Beyond D&G, the RESP is currently active in East Lothian, the North-East, Dundee, Edinburgh and Lewis and Harris.</p>
+        <p>The RESP is currently active in East Lothian, the North-East, Dundee, Edinburgh and Lewis and Harris.</p>
 
-        <p>Further information on the conduct of the RESP can be found here: <a href="https://www.regionalethnologyscotland.llc.ed.ac.uk/spoken-word" target="_blank">https://www.regionalethnologyscotland.llc.ed.ac.uk/spoken-word</a>.</p>
+        <p>Further information on the conduct of the RESP can be found here: <a href="https://www.regionalethnologyscotland.llc.ed.ac.uk/spoken-word" target="_blank">https://www.regionalethnologyscotland.llc.ed.ac.uk/spoken-word</a></p>
 
         <div id="image-container-people"></div>
 
