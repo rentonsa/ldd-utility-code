@@ -10,17 +10,17 @@ $config['skylight_url_prefix'] = 'towardsdolly';
 if(ENVIRONMENT == 'development') {
     if (strpos($_SERVER['HTTP_HOST'], "localhost") !== false) {
         $config['skylight_ga_code'] = '';
-        $config['skylight_solrbase'] = 'http://lac-archives-live.is.ed.ac.uk:8090/';
-        $config['skylight_link_url'] = 'http://lac-archives-test.is.ed.ac.uk:8081';
+        $config['skylight_solrbase'] = 'http://lac-archivesspace-live1.is.ed.ac.uk:8090/';
+        $config['skylight_link_url'] = 'http://lac-archivesspace-test1.is.ed.ac.uk:8081';
     } else if (strpos($_SERVER['HTTP_HOST'], "test") !== false) {
         $config['skylight_ga_code'] = '';
-        $config['skylight_solrbase'] = 'http://lac-archives-live.is.ed.ac.uk:8090/';
-        $config['skylight_link_url'] = 'http://lac-archives-test.is.ed.ac.uk:8081';
+        $config['skylight_solrbase'] = 'http://lac-archivesspace-live1.is.ed.ac.uk:8090/';
+        $config['skylight_link_url'] = 'http://lac-archivesspace-test1.is.ed.ac.uk:8081';
     }
 }
 else {
     $config['skylight_ga_code'] = 'UA-25737241-9';
-    $config['skylight_solrbase'] = 'http://lac-archives-live.is.ed.ac.uk:8090/';
+    $config['skylight_solrbase'] = 'http://lac-archives-live1.is.ed.ac.uk:8090/';
     $config['skylight_link_url'] = 'http://archives.collections.ed.ac.uk';
 }
 
