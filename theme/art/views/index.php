@@ -18,7 +18,7 @@
                     <a href="./record/529"><img class="d-block w-100" src="https://images.is.ed.ac.uk/luna/servlet/iiif/UoEart~1~1~6175~100070/294,270,4264,2132/1000,500/0/default.jpg" alt="Eardley"></a>
                 </div>
                 <div class="carousel-item">
-                    <a href="./record/99223"><img class="d-block w-100" src="https://images.is.ed.ac.uk/luna/servlet/iiif/UoEart~1~1~76052~216417/0,200,1000,500/full/0/default.jpg" alt="Paolozzi"></a>
+                    <a href="./record/99223"><img class="d-block w-100" src="https://images.is.ed.ac.uk/luna/servlet/iiif/UoEart~1~1~76052~216417/0,200,1000,500/1000,500/0/default.jpg" alt="Paolozzi"></a>
                 </div>
                 <div class="carousel-item">
                     <a href="./record/113746"><img class="d-block w-100" src="https://images.is.ed.ac.uk/luna/servlet/iiif/UoEart~1~1~76084~393290/1534,963,5602,2801/1000,500/0/default.jpg" alt="Howden"></a>
