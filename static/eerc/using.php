@@ -31,6 +31,8 @@
 
         <p>We give permission for the re-use of our collections material for non-commercial purposes under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution Non-commercial 4.0 International Licence</a>.</p>
 
+        <p>If you intend to re-use any of the material with this collection please ensure that you attribute appropriately. We suggest use of the following statement ‘Recording courtesy of the Regional Ethnology of Scotland Project, European Ethnological Research Centre, University of Edinburgh. Copyright: Creative Commons Attribution Non-commercial 4.0 International Licence.’ </p>
+
         <p>Please note that there may be instances of poor sound quality within recordings due to unavoidable issues with legacy recordings.</p>
 
         <p><strong>Redactions</strong></p>
