@@ -43,6 +43,7 @@ Sub CreateXML()
     Dim maparray(1000) As String
     Dim walarray(1000) As String
     Dim blaarray(1000) As String
+    Dim artarray(1000) As String
 
     'Initialise file objects
     Dim fwmm As Object
@@ -85,6 +86,8 @@ Sub CreateXML()
     Set fwal = CreateObject("ADODB.Stream")
     Dim fbla As Object
     Set fbla = CreateObject("ADODB.Stream")
+    Dim fart As Object
+    Set fart = CreateObject("ADODB.Stream")
 
     'Need a second object so we can get rid of the BOM character
     Dim fwmmb As Object
@@ -127,6 +130,8 @@ Sub CreateXML()
     Set fwalb = CreateObject("ADODB.Stream")
     Dim fblab As Object
     Set fblab = CreateObject("ADODB.Stream")
+    Dim fartb As Object
+    Set fartb = CreateObject("ADODB.Stream")
 
     'Set file object properties
     fwmm.Type = 2
@@ -189,6 +194,9 @@ Sub CreateXML()
     fbla.Type = 2
     fbla.Charset = "utf-8"
     fbla.Open
+    fart.Type = 2
+    fart.Charset = "utf-8"
+    fart.Open
 
     'Set binary file object properties and open
     fwmmb.Type = 1
@@ -251,6 +259,9 @@ Sub CreateXML()
     fblab.Type = 1
     fblab.Mode = 3
     fblab.Open
+    fartb.Type = 1
+    fartb.Mode = 3
+    fartb.Open
 
     'Declare final file names
     wmmxml = "T:\diu\Worksheets\csv\WMM.xml"
@@ -273,6 +284,7 @@ Sub CreateXML()
     mapxml = "T:\diu\Worksheets\csv\MAP.xml"
     walxml = "T:\diu\Worksheets\csv\WAL.xml"
     blaxml = "T:\diu\Worksheets\csv\BLA.xml"
+    artxml = "T:\diu\Worksheets\csv\ART.xml"
 
     summfile = "T:\diu\Worksheets\csv\summary.txt"
 
@@ -298,6 +310,7 @@ Sub CreateXML()
     mapcount = 0
     walcount = 0
     blacount = 0
+    artcount = 0
 
      Close #99
     Open summfile For Output Lock Write As #99
@@ -436,6 +449,9 @@ Sub CreateXML()
                     Case "Blackie"
                         blacoll = coll
                         shortcoll = "bla"
+                    Case "University of Edinburgh Art Collection"
+                        artcoll = coll
+                        shortcoll = "art"
                    Case Else
                         badcoll = "Y"
                   End Select
@@ -1009,6 +1025,17 @@ Sub CreateXML()
                         blaarray(blacount) = Cells(i, 8) & " ; " & Cells(i, 11)
                         blacount = blacount + 1
                     End If
+
+                    If shortcoll = "art" Then
+                        If artcount = 0 Then
+                            fart.WriteText Header & Chr(10)
+                        End If
+                        fart.WriteText recordLine
+                        fart.WriteText dataLine & Chr(10)
+                        fart.WriteText recordCloser
+                        artarray(artcount) = Cells(i, 8) & " ; " & Cells(i, 11)
+                        artcount = artcount + 1
+                    End If
                     'SR - changing from (i,40) 2019/11/22
                     Cells(i, 41) = "V"
 
@@ -1262,7 +1289,19 @@ Sub CreateXML()
             fbla.Close
             fblab.Close
          End If
-         
+
+         If artcount > 0 Then
+            fart.WriteText "</recordList>"
+            fart.Position = 3
+            fart.CopyTo fartb
+            fart.Flush
+            fart.Close
+            fartb.SaveToFile artxml, 2
+         Else
+            fart.Close
+            fartb.Close
+         End If
+
          i = 0
 
          If wmmcount > 0 Then
@@ -1461,6 +1500,16 @@ Sub CreateXML()
             Print #99, "===================="
             For i = 0 To blacount
                 Print #99, blaarray(i)
+            Next
+        End If
+
+        i = 0
+
+        If artcount > 0 Then
+            Print #99, artcoll
+            Print #99, "===================="
+            For i = 0 To artcount
+                Print #99, artarray(i)
             Next
         End If
         
