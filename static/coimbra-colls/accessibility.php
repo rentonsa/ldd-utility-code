@@ -99,18 +99,18 @@
         <li><a href="https://www.w3.org/TR/WCAG21/#help">3.3.5 - Help</a></li>
     </ul>
 </ul>
-<p>&nbsp;Unless specified otherwise a complete solution or significant improvement will be in place by March 2021 for the issues within our control.</p>
+<p>&nbsp;Unless specified otherwise a complete solution or significant improvement will be in place by April 2022 for the issues within our control.</p>
 <h3>Disproportionate burden</h3>
 <p>We are not currently claiming that any accessibility problems would be a disproportionate burden to fix.</p>
 <h2>Content that&rsquo;s not within the scope of the accessibility regulations</h2>
 <h3>Reproduction of Heritage Collections</h3>
 <p>There are representations of <a href="https://collections.ed.ac.uk/coimbra-colls/search">the heritage collections and its institutional location</a> across the website. There is technical information about the images of these items, including titles and description. However, reproducing items within heritage collections would be <a href="https://www.legislation.gov.uk/uksi/2018/952/regulation/4/made">exempt from meeting the accessibility regulations</a>, but all effort has been made to make the reproduction of these heritage collections as accessible as possible.</p>
 <h2>What we&rsquo;re doing to improve accessibility</h2>
-<p>We will continue to work to address these issues and deliver a solution or suitable workaround. Where issues are under our control we will work to rectify to correct issues. We plan to resolve the issues that are within our control by March 2021.</p>
+<p>We will continue to work to address these issues and deliver a solution or suitable workaround. Where issues are under our control we will work to rectify to correct issues. We plan to resolve the issues that are within our control by April 2022.</p>
 <p>We will carry out further accessibility testing if significant changes are made to the user interface or if a service user raises an issue.</p>
 <p>While we are in the process of resolving these accessibility issues, or where we are unable to, we will ensure reasonable adjustments are in place to make sure no user is disadvantaged.</p>
 <p>Preparation of this accessibility statement</p>
-<p><strong>This statement was prepared on 11<sup>th</sup> June 2020. It was last reviewed on 14<sup>th</sup> September 2020</strong></p>
+<p><strong>This statement was prepared on 15<sup>th</sup> September 2021. It was last reviewed on 15<sup>th</sup> September 2021</strong></p>
 <p>This website was tested by the University of Edinburgh&rsquo;s Deputy Disability Information Officer on a PC using Internet Explorer (11.0.9600.19236) browser and also using the automated <a href="https://wave.webaim.org/">WebAIM WAVE tool</a>. Internet Explorer was chosen as the browser due to it being the most commonly used browser by disabled people as shown in the government survey: <a href="https://accessibility.blog.gov.uk/2016/11/01/results-of-the-2016-gov-uk-assistive-technology-survey/">Government Assistive Technology Browser Survey</a>. We tested the home page and a selection of pages throughout the site to ensure all the main features of the website were tested.</p>
 <p>&nbsp;We tested:</p>
 <ul>

@@ -314,7 +314,7 @@
                 We will continue to work with the developer to address these issues and deliver a solution or suitable workaround.
             </p>
             <p id="" class="privacy-p" alt="exhibitions accessability details">
-                We will continue to monitor system accessibility and will carry out further accessibility testing as these issues are resolved. However, due to the complex nature of the information displayed it may not be possible to resolve all accessibility issues. If this is the case, we will ensure reasonable adjustments are in place to make sure no user is disadvantaged. We plan to have resolved the majority of accessibility issues by September 2020 at the latest.
+                We will continue to monitor system accessibility and will carry out further accessibility testing as these issues are resolved. However, due to the complex nature of the information displayed it may not be possible to resolve all accessibility issues. If this is the case, we will ensure reasonable adjustments are in place to make sure no user is disadvantaged. We plan to have resolved the majority of accessibility issues by April 2022 at the latest.
             </p>
 
             <br>
@@ -336,7 +336,7 @@
             <br>
 
             <p id="" class="privacy-p" alt="exhibitions accessability details">
-                <strong>This statement was prepared on 16 September 2019. It was last updated on 18 September 2019.</strong>
+                <strong>This statement was prepared on 15 September 2021. It was last updated on 15 September 2021.</strong>
             </p>
         </div>
 
