@@ -146,7 +146,7 @@
         <div class="content-divider-inline"><p>divider</p></div>
         <div class="about-para">
             <p>We will continue to work with the developer to address these issues and deliver a solution or suitable workaround.</p>
-            <p>We will continue to monitor system accessibility and will carry out further accessibility testing as these issues are resolved. However, due to the complex nature of the information displayed it may not be possible to resolve all accessibility issues. If this is the case, we will ensure reasonable adjustments are in place to make sure no user is disadvantaged. We plan to have resolved the majority of accessibility issues by September 2020 at the latest.</p>
+            <p>We will continue to monitor system accessibility and will carry out further accessibility testing as these issues are resolved. However, due to the complex nature of the information displayed it may not be possible to resolve all accessibility issues. If this is the case, we will ensure reasonable adjustments are in place to make sure no user is disadvantaged. We plan to have resolved the majority of accessibility issues by April 2022 at the latest.</p>
         </div>
 
         <h1> Information Services and accessibility</h1>
@@ -155,7 +155,7 @@
             <p>Information Services (IS) has further information on accessibility including assistive technology, creating accessible documents, and services IS provides for disabled users.</p>
             <p><a href="https://www.ed.ac.uk/information-services/help-consultancy/accessibility">Assistive technology, creating accessible documents, and services IS provides for disabled users</a></p>
             <br>
-            <p><strong>This statement was prepared on 16 September 2019. It was last updated on 18 September 2019.</strong></p>
+            <p><strong>This statement was prepared on 15 September 2021. It was last updated on 15 September 2021.</strong></p>
         </div>
 
     </div>

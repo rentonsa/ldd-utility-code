@@ -110,7 +110,7 @@
         <ul>
             <li><a href="https://www.w3.org/TR/WCAG21/">1. - Compatible</a></li>
         </ul>
-        <p>Unless specified otherwise a complete solution or significant improvement will be in place by September 2020.</p>
+        <p>Unless specified otherwise a complete solution or significant improvement will be in place by April 2022.</p>
         <p>How we tested this website</p>
         <p>This website was last tested in November 2019. The website was tested by the University of Edinburgh&rsquo;s Disability Information Officer on a PC using Internet Explorer (11.0.9600.19236) browser and also using the automated Webaim WAVE tool. Internet Explorer was chosen as the browser due to it being the most commonly used browser by disabled people as shown in the government survey: <a href="https://accessibility.blog.gov.uk/2016/11/01/results-of-the-2016-gov-uk-assistive-technology-survey/">the Government Assistive Technology Browser Survey</a></p>
         <p>We tested:</p>
@@ -136,7 +136,7 @@
         <p>Whist we are in the process of resolving these accessibility issues we will of course ensure reasonable adjustments are in place to make sure no user is disadvantaged.</p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
-        <p><strong>This statement was prepared in November 2019. It was last updated on 21st November 2019. </strong></p>
+        <p><strong>This statement was prepared in September 2021. It was last updated on 15th September 2021. </strong></p>
     </div>
 </div>
 
