@@ -131,7 +131,7 @@
         </ul>
         <p>.</p>
         <p>What we're doing to improve accessibility</p>
-        <p>We will continue to work with developers to address these issues and deliver a solution or suitable workaround and correct issues directly. We hope to have the majority of issues resolved by September 2020.</p>
+        <p>We will continue to work with developers to address these issues and deliver a solution or suitable workaround and correct issues directly. We hope to have the majority of issues resolved by April 2022.</p>
         <p>We will continue to monitor the website will carry out further accessibility testing if significant changes are made to the user interface or if a service user raises an issue.</p>
         <p>Whist we are in the process of resolving these accessibility issues we will of course ensure reasonable adjustments are in place to make sure no user is disadvantaged.</p>
         <p>&nbsp;</p>
