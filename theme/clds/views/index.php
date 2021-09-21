@@ -697,15 +697,15 @@
                     <figure class="clickbox">
                         <img
                             src="<?php echo base_url(); ?>theme/<?php echo $this->config->item('skylight_theme'); ?>/images/clickboxes/exhib.jpg"
-                            alt="Current exhibition"/>
+                            alt="Exhibitions"/>
 
                         <div>
-                            <h4><span>Current</span> Exhibition</h4>
+                            <h4><span>Exhibitions</span></h4>
                             <i class="fa fa-external-link"></i>
                             <i class="ion-arrow-right-c"></i>
 
                             <div class="curl"></div>
-                            <a href="https://www.ed.ac.uk/information-services/library-museum-gallery/crc/exhibitions"></a>
+                            <a href="https://exhibitions.ed.ac.uk"></a>
                         </div>
                     </figure>
                 </div>
