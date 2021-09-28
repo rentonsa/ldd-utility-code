@@ -4,7 +4,7 @@
 # Interrogates API, pulls out relevant Vernon data
 # and generates:
 #    dublin core metadata
-#    IIIF images
+#    IIIF images-test
 #    IIIF manifests
 #    non-image AVs
 #    contents file
@@ -33,7 +33,7 @@ PARSER = argparse.ArgumentParser()
 
 PARSER.add_argument('-c', '--collection', action="store", dest="collection", help="collection loading", default="art")
 PARSER.add_argument('-e', '--environment', action="store", dest="environment", help="environment- test or live", default="live")
-PARSER.add_argument('-f', '--filtered', action="store", dest="filtered", help="filtering of images", default="0")
+PARSER.add_argument('-f', '--filtered', action="store", dest="filtered", help="filtering of images-test", default="0")
 PARSER.add_argument('-d', '--days', action="store", dest="days", help="number of days", default="1")
 
 ARGS = PARSER.parse_args()
@@ -220,7 +220,7 @@ def get_subfolder(item_acc_no):
 
 def iiif_md(dealing_image, et_out, outroot, ):
     """
-    Generate linkuri for IIIF in MD- no physical images any more
+    Generate linkuri for IIIF in MD- no physical images-test any more
     :param dealing_image: Current image
     :param et_out: XML Tree before
     :param outroot: dublin core header
@@ -247,6 +247,23 @@ def manifest_url(manifest_array, dealing_image):
     manifest_array.append(iiif_manifest)
     return manifest_array
 
+def open_manifest(url):
+    '''
+    Separate def for opening manifests as this is prone to 429- too many requests
+    :param url: manifest url
+    '''
+    from urllib.request import urlopen
+    import urllib.error
+    try:
+        response = urlopen(url)
+        return response
+    except urllib.error.HTTPError as e:
+        if e.code == 429:
+            logger.info("retrying as got 429")
+            time.sleep(5)
+            logger.info("Retrying " + url)
+            return open_manifest(url)
+
 def create_image_manifest(manifest_array, subfolder, cfile, item_acc_no, bad_image_array):
     """
     Generate a manifest for the record if min 1 image associated
@@ -254,7 +271,7 @@ def create_image_manifest(manifest_array, subfolder, cfile, item_acc_no, bad_ima
     :param subfolder: path to put in
     :param cfile: contents file (list of ass'd files)
     :param item_acc_no: accession no- we need to label it something (not right! but for new stuff, we cannot predict)
-    :param bad_image_array: bad images noted here
+    :param bad_image_array: bad images-test noted here
     :param manifest_total: running total of manifests produced
     :return: manifest_total
     """
@@ -273,7 +290,7 @@ def create_image_manifest(manifest_array, subfolder, cfile, item_acc_no, bad_ima
     from urllib.request import urlopen
     if manifest_count > 0:
         while images < manifest_count:
-            response = urlopen(manifest_array[images])
+            response = open_manifest(manifest_array[images])
             try:
                 resp_data = response.read().decode("utf-8")
                 data = json.loads(resp_data)
@@ -357,9 +374,9 @@ def write_md_to_file(out_file, et_out, outroot):
 
 def get_ok_images(coll):
     """
-    Get JSON for OK images for collection and turn into list to check against
+    Get JSON for OK images-test for collection and turn into list to check against
     :param coll: collection
-    :return: list of ok images
+    :return: list of ok images-test
     """
     from urllib.request import FancyURLopener
 
@@ -533,7 +550,7 @@ def main():
             write_md_to_file(out_file, et_out, outroot)
             records += 1
         logger.info('Processed ' + str(records) + ' items.')
-        logger.info('Processed ' + str(image_total) + ' IIIF images.')
+        logger.info('Processed ' + str(image_total) + ' IIIF images-test.')
         logger.info('Processed ' + str(sound_video_total) + ' non-image media.')
         logger.info('Processed ' + str(manifest_total) + ' IIIF manifests.')
         logger.info('Skipped ' + str(len(bad_acc_no_array)) + ' records with no accession number.')
