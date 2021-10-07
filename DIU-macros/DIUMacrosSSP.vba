@@ -372,7 +372,7 @@ MsgBox "Hello DIU!"
             Print #2, "set Xmp.iptc.CreatorContactInfo/Iptc4xmpCore:CiUrlWork XmpText " & Chr(34) & URL & Chr(34)
 
             Close #2
-            Print #1, "exiv2 -m" & commands & " " & Chr(34) & "T:\diu\Crops\" & folder & "Process\" & imageno & "m.tif" & Chr(34) & " >> " & Chr(34) & "T:\diu\Worksheets\error\" & imageno & ".txt" & Chr(34) & " 2>>&1"
+            Print #1, "exiv2 -m" & commands & " " & Chr(34) & "T:\diu\Production_Files\" & folder & imageno & ".tif" & Chr(34) & " >> " & Chr(34) & "T:\diu\Worksheets\error\" & imageno & ".txt" & Chr(34) & " 2>>&1"
 
             Cells(i, 21) = "E"
 
