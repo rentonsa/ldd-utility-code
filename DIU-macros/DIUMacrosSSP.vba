@@ -142,8 +142,8 @@ Sub CreateXML()
                 fields = "<field name=" & Chr(34)
                 entitye = "</entity>" & Chr(10)
                 valueefieldeentitye = "</value>" & Chr(10) & "</field>" & Chr(10) & "</entity>" & Chr(10)
-                ccby = "<![CDATA[<a href = " & Chr(34) & "https://creativecommons.org/licenses/by/3.0/" & Chr(34) & " target=" & Chr(34) & "_blank" & Chr(34) & "><img src = " & Chr(34) & "http://lac-luna-live4.is.ed.ac.uk:8181/graphics/by.jpg" & Chr(34) & "/></a>]]>"
-                ccbyncnd = "<![CDATA[<a href = " & Chr(34) & "https://creativecommons.org/licenses/by-nc-nd/3.0/" & Chr(34) & " target=" & Chr(34) & "_blank" & Chr(34) & "><img src = " & Chr(34) & "http://lac-luna-live4.is.ed.ac.uk:8181/graphics/byncnd.jpg" & Chr(34) & "/></a>]]>"
+                ccby = "<![CDATA[<a href = " & Chr(34) & "https://creativecommons.org/licenses/by/3.0/" & Chr(34) & " target=" & Chr(34) & "_blank" & Chr(34) & "><img src = " & Chr(34) & "https://images.is.ed.ac.uk/graphics/by.jpg" & Chr(34) & "/></a>]]>"
+                ccbyncnd = "<![CDATA[<a href = " & Chr(34) & "https://creativecommons.org/licenses/by-nc-nd/3.0/" & Chr(34) & " target=" & Chr(34) & "_blank" & Chr(34) & "><img src = " & Chr(34) & "https://images.is.ed.ac.uk/graphics/byncnd.jpg" & Chr(34) & "/></a>]]>"
                 reproFileType = fields & "repro_file_type" & fieldcvalues & "Cropped TIFF" & valueefielde
                 If Cells(i, 5) = "" Then
                    holding = "Unassigned"
@@ -172,7 +172,8 @@ Sub CreateXML()
                 If Cells(i, 8) = "" Then
                     goodrecord = "N"
                 Else
-                    workString = Left(Cells(i, 8), 7)
+                    'workString = Left(Cells(i, 8), 7)
+                    workString = Cells(i, 8)
                 End If
 
                 If workString = "" Then
@@ -204,10 +205,10 @@ Sub CreateXML()
                      '   End If
                     'End If
 
-                    reproRecordId = entitys & "repro_record" & entitycfieldst & "repro_record_id" & fieldcvalues & workString & "c.tif" & valueefielde
-                    reproLinkId = fields & "repro_link_id" & fieldcvalues & workString & "c" & valueefielde
+                    reproRecordId = entitys & "repro_record" & entitycfieldst & "repro_record_id" & fieldcvalues & workString & ".tif" & valueefielde
+                    reproLinkId = fields & "repro_link_id" & fieldcvalues & workString & valueefielde
                     workRecordId = fields & "work_record_id" & fieldcvalues & workString & valueefielde
-                    reproIdNumber = entitys & "repro_id_number" & entitycfieldst & "repro_id_number" & fieldcvalues & workString & "c" & valueefieldeentitye
+                    reproIdNumber = entitys & "repro_id_number" & entitycfieldst & "repro_id_number" & fieldcvalues & workString & valueefieldeentitye
 
                     Title = entitys & "title" & entitycfieldst & "work_title" & fieldcvalues & titleString & valueefieldeentitye
                     Subset = entitys & "subset" & entitycfieldst & "work_subset" & fieldcvalues & titleString & valueefielde
@@ -235,12 +236,12 @@ Sub CreateXML()
                     repository = entitys & "repository" & entitycfieldst & "work_repository" & fieldcvalues & Cells(i, 7) & valueefieldeentitye
                     reproRepository = entitys & "repro_repository" & entitycfieldst & "repro_repository" & fieldcvalues & Cells(i, 7) & valueefieldeentitye
 
-                    If Cells(i, 21) = "" Then
-                        catalogueEntry = ""
-                    Else
-                        catString = Replace(Cells(i, 21), "&", "%26")
-                        catalogueEntry = entitys & "navigation" & entitycfieldst & "catalogue_entry" & fieldcvalues & catString & valueefieldeentitye
-                    End If
+                    'If Cells(i, 21) = "" Then
+                    '    catalogueEntry = ""
+                    'Else
+                    '    catString = Replace(Cells(i, 21), "&", "%26")
+                    '    catalogueEntry = entitys & "navigation" & entitycfieldst & "catalogue_entry" & fieldcvalues & catString & valueefieldeentitye
+                    'End If
 
                    ' If Cells(i, 27) = "N/A" Or Cells(i, 27) = "Unknown" Or Cells(i, 27) = "-" Or Cells(i, 27) = "" Then
                         reproNotes = entitye
@@ -333,9 +334,10 @@ MsgBox "Hello DIU!"
 
     For i = 4 To lRows
         If Cells(i, 21) = "R" Then
-            folder = Left(Cells(i, 8), 4) & "000-" & Left(Cells(i, 8), 4) & "999\"
-            imageno = Left(Cells(i, 8), 7)
-
+            'folder = Left(Cells(i, 8), 4) & "000-" & Left(Cells(i, 8), 4) & "999\"
+            folder = Left(Cells(i, 8), 13)
+            'imageno = Left(Cells(i, 8), 7)
+            imageno = Cells(i, 8)
 
             copyrightstring = "Holding Institution: " & Cells(i, 5) & ". Digital Image: Copyright University of Edinburgh Library. Original: Out of Copyright."
 
@@ -368,7 +370,7 @@ MsgBox "Hello DIU!"
             Print #2, "set Xmp.iptc.CreatorContactInfo/Iptc4xmpCore:CiEmailWork XmpText " & Chr(34) & eml & Chr(34)
             Print #2, "set Iptc.Application2.Headline String " & Chr(34) & imageno & Chr(34)
             Print #2, "set Xmp.iptc.CreatorContactInfo/Iptc4xmpCore:CiUrlWork XmpText " & Chr(34) & URL & Chr(34)
-            Print #2, "del Exif.Image.ImageDescription"
+
             Close #2
             Print #1, "exiv2 -m" & commands & " " & Chr(34) & "T:\diu\Crops\" & folder & "Process\" & imageno & "m.tif" & Chr(34) & " >> " & Chr(34) & "T:\diu\Worksheets\error\" & imageno & ".txt" & Chr(34) & " 2>>&1"
 
